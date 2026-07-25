@@ -39,6 +39,8 @@ THROTTLE_SECONDS = 0.3
 
 # Regular-season windows (wide on purpose; schedule walk filters precisely)
 SEASONS = {
+    "20222023": (date(2022, 10, 1), date(2023, 4, 25)),
+    "20232024": (date(2023, 10, 1), date(2024, 4, 25)),
     "20242025": (date(2024, 10, 1), date(2025, 4, 25)),
     "20252026": (date(2025, 10, 1), date(2026, 4, 25)),
 }
