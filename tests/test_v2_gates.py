@@ -138,3 +138,21 @@ def test_liiga_ground_truth():
             if e["pulled"]:
                 assert e["pull_evidence_secs"] == a["pull_evidence_secs"]
                 assert e["pull_classification"] == a["pull_classification"]
+
+
+def test_clean_window_consistency():
+    """Clean-window coach analysis (Seb directive 2026-07-25): structural
+    invariants only (rule 14) — reasons partition the no-pulls, dilution
+    removal must RAISE the league rate, per-coach ledgers must be coherent."""
+    rows = json.load(open(DER / "clean_window_instances.json"))
+    tab = json.load(open(DER / "clean_window_coach.json"))
+    nop = [r for r in rows if not r["pulled"]]
+    assert all(r["reason"] for r in nop) and all(r["reason"] is None for r in rows if r["pulled"])
+    naive = sum(r["pulled"] for r in rows) / len(rows)
+    clear = [r for r in rows if r["pulled"] or r["frac"] >= 0.7]
+    assert sum(r["pulled"] for r in clear) / len(clear) > naive * 2  # dilution was real
+    for t in tab:
+        assert 0 <= t["clear_taken"] <= t["clear_chances"] <= t["instances"]
+        assert t["clear_taken"] == t["pulls"]  # every pull is a taken chance
+        if t["clean_rate"] is not None:
+            assert 0 <= t["clean_rate"] <= 1
