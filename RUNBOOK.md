@@ -24,7 +24,8 @@ green or the output does not ship. A pre-commit hook enforces this on commit.
 | Dense pricing grid (~13 min) | `python3 hockeycore/fit/make_dense_grid.py` | after refit |
 | Per-second lines CSV | `python3 hockeycore/fit/build_persecond_lines.py` | after grid |
 | Calculator xlsx | `python3 hockeycore/io/build_calculator.py` | after grid |
-| 30s friendly lines table | `python3 hockeycore/io/build_lines_table.py` | after grid |
+| Coach profiles | `python3 hockeycore/fit/build_coach_profiles.py` | after clean_window + pp analyses |
+| 30s friendly lines table (needs profiles) | `python3 hockeycore/io/build_lines_table.py` | after grid |
 
 Formatting/cosmetic changes: edit the two build_* scripts (labels, colors,
 intervals are all near the top), rerun, done. No modeling knowledge needed.

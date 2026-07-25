@@ -46,6 +46,7 @@ def american(p, edge=EDGE):
 
 def main():
     grid = json.load(open(DER / "pricing_grid_dense.json"))
+    profiles = json.load(open(DER / "coach_profiles.json"))
     Rs = np.array(sorted({r["R"] for r in grid}))
     by = {(r["state"], r["tier"], r["R"]): r for r in grid}
     states = ["not_pulled_EV", "not_pulled_PP", "pulled"]
@@ -110,20 +111,87 @@ def main():
                            mid_type="percentile", mid_value=50, mid_color="FFEB84",
                            end_type="max", end_color="63BE7B"))
 
+
+    # ---------- COACH GUIDE ----------
+    cg = wb.create_sheet("COACH GUIDE", 1)
+    cg.sheet_view.showGridLines = False
+    cg["A1"] = ("WHO PULLS, AND WHEN — pull %% counted on REAL chances only "
+                "(gap still 3, net available, no penalty problem, inside the pull zone). "
+                "League average on a real chance: 64%%. 5v5 pulls happen around 4:19 left; power-play pulls around 3:33.")
+    cg["A1"].font = Font(name="Arial", bold=True, size=11)
+    cg.merge_cells("A1:H1")
+    ghdr = ["Team", "Coach", "Pull % (real chances)", "Record", "Range (95%)",
+            "Typical pull time left", "LINES row to use", "Notes"]
+    for j, h in enumerate(ghdr, 1):
+        c = cg.cell(row=2, column=j, value=h)
+        c.font = HDR_FONT; c.fill = HDR_FILL
+        c.alignment = Alignment(horizontal="center", wrap_text=True)
+
+    def tier_of(m):
+        best = min(TIER_LABEL, key=lambda t: abs(t - m))
+        return TIER_LABEL[best]
+
+    # current coach = latest last_seen per team
+    cur = {}
+    for p in profiles:
+        if p["team"] not in cur or p["last_seen"] > cur[p["team"]]["last_seen"]:
+            cur[p["team"]] = p
+    rowg = 3
+    ordered = sorted(profiles, key=lambda p: (p["team"], p is not cur.get(p["team"]), p["coach"]))
+    for p in ordered:
+        is_cur = cur.get(p["team"]) is p
+        pp_only = "PP-ONLY puller" in p["flags"]
+        notes = list(p["flags"])
+        if pp_only:
+            notes.append("only pulls ON the power play -> see HOW TO USE")
+        rows_to_use = ("5v5: very passive | on PP: league avg" if pp_only
+                       else tier_of(p["m_prod"]))
+        med = p["median_pull_R"]
+        timing = f"{med//60}:{med%60:02d}" if med and p["n_pulls"] >= 3 else "~4:19 (league, few pulls)"
+        vals = [p["team"], p["coach"] + ("" if is_cur else " (former)"),
+                p["clean_rate"], f'{p["clear_taken"]}/{p["clear_chances"]}',
+                (f'{p["ci"][0]:.0%}-{p["ci"][1]:.0%}' if p["ci"] else "n/a"),
+                timing, rows_to_use, "; ".join(notes)]
+        for j, v in enumerate(vals, 1):
+            c = cg.cell(row=rowg, column=j, value=v)
+            c.font = BOLD if (j == 2 and is_cur) else ARIAL
+            c.border = THIN
+            if j == 3:
+                c.number_format = "0%"
+            if not is_cur:
+                c.font = Font(name="Arial", color="999999")
+        rowg += 1
+    lastg = rowg - 1
+    cg.auto_filter.ref = f"A2:H{lastg}"
+    cg.freeze_panes = "A3"
+    for col, w in zip("ABCDEFGH", (7, 26, 12, 9, 12, 15, 30, 46)):
+        cg.column_dimensions[col].width = w
+    cg.conditional_formatting.add(
+        f"C3:C{lastg}",
+        ColorScaleRule(start_type="num", start_value=0, start_color="F8696B",
+                       mid_type="num", mid_value=0.64, mid_color="FFEB84",
+                       end_type="num", end_value=1, end_color="63BE7B"))
+
     # legend sheet
     lg = wb.create_sheet("HOW TO USE")
     notes = [
-        "HOW TO USE",
-        "1. Filter 'Situation' to the current state and 'Coach type' to the trailing coach's tier (COACHES tab of the calculator).",
-        "2. Find the time remaining (rows are 30-second steps; for in-between times use the calculator, which takes any mm:ss).",
-        "3. The TRUE line shows the fair price (0% EV, break-even). The line @10% is the worst price at which the bet still clears +10% EV. Better than @10% = bet; worse = pass.",
+        "HOW TO USE (3 steps)",
+        "1. COACH GUIDE tab: find the trailing team -> current coach (bold). Read his pull % on real chances, his typical pull time, and which LINES row to use.",
+        "2. LINES tab: filter 'Situation' + 'Coach type' to what the guide told you, find the time remaining.",
+        "3. TRUE line = fair price (break-even). Line @10% = worst price that still pays +10%% EV. Book offering better than the @10%% number = bet. Worse = pass.",
+        "",
+        "THE POWER-PLAY THING, PLAINLY:",
+        "'Net in — POWER PLAY' rows = the team that is DOWN 3 has a power play. Pulling the goalie then gives 6 skaters vs 4 — the best pull there is.",
+        "Every coach pulls more on the PP (league: ~4x). But four coaches — Tortorella, McLellan, Cronin, Huska — basically ONLY pull then:",
+        "two full seasons, ZERO 5v5 pulls between them, yet on the PP they pull at league rate or higher.",
+        "So for those four: down 3 at 5v5 -> assume NO pull is coming (very passive rows). They get a power play under ~7:00 -> switch to the",
+        "POWER PLAY rows at league-avg aggression. That is the moment their pull (and your over/-3.5 value) actually arrives.",
         "",
         "Reading lines: -196 means bet only at -196 or better (e.g. -180, -150, +110). +150 means +150 or longer.",
-        "Coach type: multiplier applied to pull aggressiveness. 1.00 = league average. Bednar-class ~1.3-1.85; "
-        "PP-only coaches (Tortorella, McLellan, Cronin, Huska): use 'Net in — POWER PLAY' rows when they have a PP, else assume near-zero pull.",
+        "Pull % caveat: 9/9 does NOT mean a guaranteed 100%% — small samples, read the Range column (9/9 -> can't rule out ~82%).",
         "Colors: green = likely, red = unlikely. Blue rows = trailing team on power play. Orange rows = net already empty.",
-        "Provenance: dense MC grid n=30k seed 7, fits both seasons, blind-validated 25-26 (leader TT +30.7% ROI at these lines).",
-        "Rebuild (cheap session): python3 hockeycore/io/build_lines_table.py",
+        "NO-GO for real money (Seb ruling). Leader market = Overs only. Provenance: MC grid n=30k seed 7, blind-validated 25-26.",
+        "Rebuild (cheap session): python3 hockeycore/io/build_lines_table.py  (needs data/derived/coach_profiles.json)",
     ]
     for i, t in enumerate(notes, 1):
         lg.cell(row=i, column=1, value=t).font = BOLD if i == 1 else ARIAL
