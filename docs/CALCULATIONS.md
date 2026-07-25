@@ -63,9 +63,11 @@ Empirical Bayes Gamma prior with mean 1, shape k:
 k [FIT] by method of moments: Var_between = Var(O_c/E_c weighted) - Σ Poisson
 noise; k = 1 / Var_between (floor k at 4 if Var_between ≤ 0 — i.e., no
 detectable coach signal ⇒ heavy shrinkage, and D8 still holds).
-Coach-team pair with instances < N_min [Seb decision, provisional 5]:
-NEW_SITUATION flag; pricing interval widened by refitting with m_c set to both
-its 10th and 90th percentile posterior quantiles.
+Coach-team pair with < 5 real pull chances: RISKY flag only (Seb ruling
+2026-07-25: no N_min gate, no stake mandate — "just flagged as risky").
+Estimates are still used at whatever evidence exists (shrinkage handles the
+small-n); the flag widens the shown interval by refitting with m_c at its
+10th/90th posterior quantiles so the risk is visible, not hidden.
 
 ## 4. Goal intensities
 
@@ -144,7 +146,7 @@ on p_model. Bet rule uses p_model_5th percentile.
 | hazard bin width 30s | provisional; sensitivity-test 15/60s |
 | pull band 0-600s | [FIT] from data |
 | k (coach shrinkage) | [FIT] §3 |
-| N_min = 5 | Seb decision pending |
+| coach small-n policy | RULED 2026-07-25: no N_min gate — RISKY flag only |
 | bootstrap B=1000, MC 100k | fixed, seed-logged |
 | de-vig method | proportional + power sensitivity |
 | checkpoints R set | provisional, match v1 calculator rows for shadow-diff |
