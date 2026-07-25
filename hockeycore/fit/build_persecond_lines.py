@@ -14,7 +14,7 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[2]
 DER = ROOT / "data" / "derived"
 EDGE = 0.10
-MARKETS = ["P_leader_ge1", "P_total_ge1", "P_margin_ge4", "P_total_ge2"]
+MARKETS = ["P_leader_ge1", "P_total_ge1", "P_margin_ge4"]
 MK_LABEL = {"P_leader_ge1": "leaderTT_over", "P_total_ge1": "gametotal_over",
             "P_margin_ge4": "leader_-3.5", "P_total_ge2": "total2plus"}
 

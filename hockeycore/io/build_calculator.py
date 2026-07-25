@@ -52,7 +52,7 @@ lines = [
     "",
     "STANDING WARNINGS:",
     "- Leader market: model runs ~5pts LOW (under investigation). Overs ONLY — never bet leader-market unders off this sheet.",
-    "- WITHDRAWN: 2+ more goals while net is ALREADY empty. Model overshoots that corner; do not bet it (docs/WITHDRAWN_MARKETS.md).",
+    "- DROPPED (Seb 2026-07-25): all 2+-more-goals markets. Not part of the product.",
     "- Low-tail coaches (Huska, Tortorella, McLellan): home/fav context multipliers do NOT apply — enter 'n'/'even' for them.",
     "- Timing: Roy-type late pullers shift the curve; production shifts applied in the fits, not user-adjustable here.",
 ]
@@ -117,9 +117,8 @@ put("E12", '=E11&"|"&D4&"|"&TEXT(E10,"0.00")')
 put("A14", "MARKET", BOLD); put("D14", "PROBABILITY", BOLD); put("E14", "LINE for +edge EV", BOLD)
 markets = [
     ("P(any more goal) — game total over", "F", 15),
-    ("P(2+ more goals) — WITHDRAWN if pulled", "G", 16),
-    ("P(LEADER scores again) — team total over (model ~5pts LOW; Overs only)", "H", 17),
-    ("P(leader wins by 4+) — the -3.5", "I", 18),
+    ("P(LEADER scores again) — team total over (model ~5pts LOW; Overs only)", "H", 16),
+    ("P(leader wins by 4+) — the -3.5", "I", 17),
 ]
 # helper corner block rows 22-25: cols B..E = corners (Rlo,tlo) (Rlo,thi) (Rhi,tlo) (Rhi,thi)
 put("A21", "helper: corner probabilities (do not edit)", BOLD)
@@ -140,7 +139,7 @@ for label, col, orow in markets:
 
 put("A19", "Warnings:")
 put("D19", '=IF(AND(D4="pulled",D9>420),"EXTRAPOLATED — no real pulls this early","ok")', RED)
-put("E19", '=IF(D4="pulled","2+ goals market WITHDRAWN in pulled state — do not bet","")', RED)
+
 
 # ---------- COACHES ----------
 ws = wb.create_sheet("COACHES")
