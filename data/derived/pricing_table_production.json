@@ -4,220 +4,220 @@
   "state": "not_pulled_EV",
   "coach": "conservative_0.80",
   "shift": 0,
-  "P_leader_ge1": 0.6833,
-  "P_leader_ge2": 0.2399,
-  "P_total_ge1": 0.7974,
-  "P_total_ge2": 0.4829,
-  "P_margin_ge4": 0.4497
+  "P_leader_ge1": 0.6876,
+  "P_leader_ge2": 0.2448,
+  "P_total_ge1": 0.7983,
+  "P_total_ge2": 0.4894,
+  "P_margin_ge4": 0.449
  },
  {
   "R": 900,
   "state": "not_pulled_EV",
   "coach": "league_avg_1.00",
   "shift": 0,
-  "P_leader_ge1": 0.709,
-  "P_leader_ge2": 0.2541,
-  "P_total_ge1": 0.8171,
-  "P_total_ge2": 0.4951,
-  "P_margin_ge4": 0.473
+  "P_leader_ge1": 0.7135,
+  "P_leader_ge2": 0.2591,
+  "P_total_ge1": 0.8182,
+  "P_total_ge2": 0.5014,
+  "P_margin_ge4": 0.4725
  },
  {
   "R": 900,
   "state": "not_pulled_EV",
   "coach": "Roy_1.39",
   "shift": 67,
-  "P_leader_ge1": 0.7661,
-  "P_leader_ge2": 0.2945,
-  "P_total_ge1": 0.8609,
-  "P_total_ge2": 0.5279,
-  "P_margin_ge4": 0.5279
+  "P_leader_ge1": 0.7706,
+  "P_leader_ge2": 0.3002,
+  "P_total_ge1": 0.8625,
+  "P_total_ge2": 0.5346,
+  "P_margin_ge4": 0.5273
  },
  {
   "R": 900,
   "state": "not_pulled_EV",
   "coach": "Bednar_1.85",
   "shift": -17,
-  "P_leader_ge1": 0.7758,
-  "P_leader_ge2": 0.2939,
-  "P_total_ge1": 0.871,
-  "P_total_ge2": 0.5222,
-  "P_margin_ge4": 0.5409
+  "P_leader_ge1": 0.7812,
+  "P_leader_ge2": 0.3011,
+  "P_total_ge1": 0.874,
+  "P_total_ge2": 0.5309,
+  "P_margin_ge4": 0.5414
  },
  {
   "R": 900,
   "state": "not_pulled_PP",
   "coach": "conservative_0.80",
   "shift": 0,
-  "P_leader_ge1": 0.6811,
-  "P_leader_ge2": 0.2402,
-  "P_total_ge1": 0.8063,
-  "P_total_ge2": 0.5075,
-  "P_margin_ge4": 0.4263
+  "P_leader_ge1": 0.6858,
+  "P_leader_ge2": 0.2462,
+  "P_total_ge1": 0.8071,
+  "P_total_ge2": 0.5138,
+  "P_margin_ge4": 0.4265
  },
  {
   "R": 900,
   "state": "not_pulled_PP",
   "coach": "league_avg_1.00",
   "shift": 0,
-  "P_leader_ge1": 0.7068,
-  "P_leader_ge2": 0.2557,
-  "P_total_ge1": 0.8249,
-  "P_total_ge2": 0.5196,
-  "P_margin_ge4": 0.4501
+  "P_leader_ge1": 0.7117,
+  "P_leader_ge2": 0.2615,
+  "P_total_ge1": 0.826,
+  "P_total_ge2": 0.5259,
+  "P_margin_ge4": 0.4502
  },
  {
   "R": 900,
   "state": "not_pulled_PP",
   "coach": "Roy_1.39",
   "shift": 67,
-  "P_leader_ge1": 0.7624,
-  "P_leader_ge2": 0.2972,
-  "P_total_ge1": 0.867,
-  "P_total_ge2": 0.5517,
-  "P_margin_ge4": 0.504
+  "P_leader_ge1": 0.7676,
+  "P_leader_ge2": 0.3034,
+  "P_total_ge1": 0.8687,
+  "P_total_ge2": 0.5585,
+  "P_margin_ge4": 0.5043
  },
  {
   "R": 900,
   "state": "not_pulled_PP",
   "coach": "Bednar_1.85",
   "shift": -17,
-  "P_leader_ge1": 0.7734,
-  "P_leader_ge2": 0.2976,
-  "P_total_ge1": 0.8772,
-  "P_total_ge2": 0.5468,
+  "P_leader_ge1": 0.7791,
+  "P_leader_ge2": 0.3056,
+  "P_total_ge1": 0.8801,
+  "P_total_ge2": 0.5553,
+  "P_margin_ge4": 0.5195
+ },
+ {
+  "R": 900,
+  "state": "pulled",
+  "coach": "conservative_0.80",
+  "shift": 0,
+  "P_leader_ge1": 0.9854,
+  "P_leader_ge2": 0.6677,
+  "P_total_ge1": 0.9989,
+  "P_total_ge2": 0.743,
+  "P_margin_ge4": 0.8318
+ },
+ {
+  "R": 900,
+  "state": "pulled",
+  "coach": "league_avg_1.00",
+  "shift": 0,
+  "P_leader_ge1": 0.9854,
+  "P_leader_ge2": 0.6688,
+  "P_total_ge1": 0.9989,
+  "P_total_ge2": 0.744,
+  "P_margin_ge4": 0.8318
+ },
+ {
+  "R": 900,
+  "state": "pulled",
+  "coach": "Roy_1.39",
+  "shift": 67,
+  "P_leader_ge1": 0.9855,
+  "P_leader_ge2": 0.6707,
+  "P_total_ge1": 0.9989,
+  "P_total_ge2": 0.7455,
+  "P_margin_ge4": 0.832
+ },
+ {
+  "R": 900,
+  "state": "pulled",
+  "coach": "Bednar_1.85",
+  "shift": -17,
+  "P_leader_ge1": 0.9854,
+  "P_leader_ge2": 0.6729,
+  "P_total_ge1": 0.9989,
+  "P_total_ge2": 0.7475,
+  "P_margin_ge4": 0.8322
+ },
+ {
+  "R": 780,
+  "state": "not_pulled_EV",
+  "coach": "conservative_0.80",
+  "shift": 0,
+  "P_leader_ge1": 0.6533,
+  "P_leader_ge2": 0.2118,
+  "P_total_ge1": 0.7648,
+  "P_total_ge2": 0.4364,
+  "P_margin_ge4": 0.4391
+ },
+ {
+  "R": 780,
+  "state": "not_pulled_EV",
+  "coach": "league_avg_1.00",
+  "shift": 0,
+  "P_leader_ge1": 0.6812,
+  "P_leader_ge2": 0.2261,
+  "P_total_ge1": 0.7871,
+  "P_total_ge2": 0.4511,
+  "P_margin_ge4": 0.4637
+ },
+ {
+  "R": 780,
+  "state": "not_pulled_EV",
+  "coach": "Roy_1.39",
+  "shift": 67,
+  "P_leader_ge1": 0.7418,
+  "P_leader_ge2": 0.2635,
+  "P_total_ge1": 0.8349,
+  "P_total_ge2": 0.4864,
   "P_margin_ge4": 0.5183
  },
  {
-  "R": 900,
-  "state": "pulled",
-  "coach": "conservative_0.80",
-  "shift": 0,
-  "P_leader_ge1": 0.9854,
-  "P_leader_ge2": 0.663,
-  "P_total_ge1": 0.9989,
-  "P_total_ge2": 0.7359,
-  "P_margin_ge4": 0.84
- },
- {
-  "R": 900,
-  "state": "pulled",
-  "coach": "league_avg_1.00",
-  "shift": 0,
-  "P_leader_ge1": 0.9854,
-  "P_leader_ge2": 0.6641,
-  "P_total_ge1": 0.9989,
-  "P_total_ge2": 0.737,
-  "P_margin_ge4": 0.8399
- },
- {
-  "R": 900,
-  "state": "pulled",
-  "coach": "Roy_1.39",
-  "shift": 67,
-  "P_leader_ge1": 0.9854,
-  "P_leader_ge2": 0.6662,
-  "P_total_ge1": 0.9989,
-  "P_total_ge2": 0.7386,
-  "P_margin_ge4": 0.8402
- },
- {
-  "R": 900,
-  "state": "pulled",
-  "coach": "Bednar_1.85",
-  "shift": -17,
-  "P_leader_ge1": 0.9854,
-  "P_leader_ge2": 0.6684,
-  "P_total_ge1": 0.9989,
-  "P_total_ge2": 0.7407,
-  "P_margin_ge4": 0.8403
- },
- {
-  "R": 780,
-  "state": "not_pulled_EV",
-  "coach": "conservative_0.80",
-  "shift": 0,
-  "P_leader_ge1": 0.649,
-  "P_leader_ge2": 0.2073,
-  "P_total_ge1": 0.7634,
-  "P_total_ge2": 0.43,
-  "P_margin_ge4": 0.439
- },
- {
-  "R": 780,
-  "state": "not_pulled_EV",
-  "coach": "league_avg_1.00",
-  "shift": 0,
-  "P_leader_ge1": 0.6761,
-  "P_leader_ge2": 0.221,
-  "P_total_ge1": 0.7852,
-  "P_total_ge2": 0.4438,
-  "P_margin_ge4": 0.4636
- },
- {
-  "R": 780,
-  "state": "not_pulled_EV",
-  "coach": "Roy_1.39",
-  "shift": 67,
-  "P_leader_ge1": 0.7373,
-  "P_leader_ge2": 0.2582,
-  "P_total_ge1": 0.8335,
-  "P_total_ge2": 0.4792,
-  "P_margin_ge4": 0.5188
- },
- {
   "R": 780,
   "state": "not_pulled_EV",
   "coach": "Bednar_1.85",
   "shift": -17,
-  "P_leader_ge1": 0.7486,
-  "P_leader_ge2": 0.2611,
-  "P_total_ge1": 0.8476,
-  "P_total_ge2": 0.477,
-  "P_margin_ge4": 0.5327
+  "P_leader_ge1": 0.7551,
+  "P_leader_ge2": 0.2671,
+  "P_total_ge1": 0.8512,
+  "P_total_ge2": 0.4847,
+  "P_margin_ge4": 0.5353
  },
  {
   "R": 780,
   "state": "not_pulled_PP",
   "coach": "conservative_0.80",
   "shift": 0,
-  "P_leader_ge1": 0.6527,
-  "P_leader_ge2": 0.2152,
-  "P_total_ge1": 0.7775,
-  "P_total_ge2": 0.4593,
-  "P_margin_ge4": 0.4222
+  "P_leader_ge1": 0.6575,
+  "P_leader_ge2": 0.2205,
+  "P_total_ge1": 0.7786,
+  "P_total_ge2": 0.4657,
+  "P_margin_ge4": 0.423
  },
  {
   "R": 780,
   "state": "not_pulled_PP",
   "coach": "league_avg_1.00",
   "shift": 0,
-  "P_leader_ge1": 0.68,
-  "P_leader_ge2": 0.2311,
-  "P_total_ge1": 0.7985,
-  "P_total_ge2": 0.4743,
-  "P_margin_ge4": 0.4474
+  "P_leader_ge1": 0.6856,
+  "P_leader_ge2": 0.2369,
+  "P_total_ge1": 0.8004,
+  "P_total_ge2": 0.4813,
+  "P_margin_ge4": 0.448
  },
  {
   "R": 780,
   "state": "not_pulled_PP",
   "coach": "Roy_1.39",
   "shift": 67,
-  "P_leader_ge1": 0.7345,
-  "P_leader_ge2": 0.2615,
-  "P_total_ge1": 0.8409,
-  "P_total_ge2": 0.5042,
-  "P_margin_ge4": 0.4946
+  "P_leader_ge1": 0.739,
+  "P_leader_ge2": 0.2675,
+  "P_total_ge1": 0.8422,
+  "P_total_ge2": 0.5113,
+  "P_margin_ge4": 0.495
  },
  {
   "R": 780,
   "state": "not_pulled_PP",
   "coach": "Bednar_1.85",
   "shift": -17,
-  "P_leader_ge1": 0.7495,
-  "P_leader_ge2": 0.2701,
-  "P_total_ge1": 0.8566,
-  "P_total_ge2": 0.5059,
-  "P_margin_ge4": 0.513
+  "P_leader_ge1": 0.7587,
+  "P_leader_ge2": 0.2805,
+  "P_total_ge1": 0.8617,
+  "P_total_ge2": 0.5158,
+  "P_margin_ge4": 0.5195
  },
  {
   "R": 780,
@@ -225,10 +225,10 @@
   "coach": "conservative_0.80",
   "shift": 0,
   "P_leader_ge1": 0.9802,
-  "P_leader_ge2": 0.5986,
+  "P_leader_ge2": 0.6022,
   "P_total_ge1": 0.997,
-  "P_total_ge2": 0.6882,
-  "P_margin_ge4": 0.823
+  "P_total_ge2": 0.6947,
+  "P_margin_ge4": 0.8165
  },
  {
   "R": 780,
@@ -236,10 +236,10 @@
   "coach": "league_avg_1.00",
   "shift": 0,
   "P_leader_ge1": 0.9802,
-  "P_leader_ge2": 0.5992,
+  "P_leader_ge2": 0.603,
   "P_total_ge1": 0.997,
-  "P_total_ge2": 0.6888,
-  "P_margin_ge4": 0.823
+  "P_total_ge2": 0.6956,
+  "P_margin_ge4": 0.8164
  },
  {
   "R": 780,
@@ -247,10 +247,10 @@
   "coach": "Roy_1.39",
   "shift": 67,
   "P_leader_ge1": 0.9802,
-  "P_leader_ge2": 0.6008,
+  "P_leader_ge2": 0.6045,
   "P_total_ge1": 0.997,
-  "P_total_ge2": 0.6901,
-  "P_margin_ge4": 0.823
+  "P_total_ge2": 0.6968,
+  "P_margin_ge4": 0.8163
  },
  {
   "R": 780,
@@ -258,230 +258,230 @@
   "coach": "Bednar_1.85",
   "shift": -17,
   "P_leader_ge1": 0.9803,
-  "P_leader_ge2": 0.6031,
+  "P_leader_ge2": 0.6068,
   "P_total_ge1": 0.997,
-  "P_total_ge2": 0.6919,
-  "P_margin_ge4": 0.8233
+  "P_total_ge2": 0.6986,
+  "P_margin_ge4": 0.8166
  },
  {
   "R": 660,
   "state": "not_pulled_EV",
   "coach": "conservative_0.80",
   "shift": 0,
-  "P_leader_ge1": 0.6097,
-  "P_leader_ge2": 0.1704,
-  "P_total_ge1": 0.7217,
-  "P_total_ge2": 0.3727,
-  "P_margin_ge4": 0.4218
- },
- {
-  "R": 660,
-  "state": "not_pulled_EV",
-  "coach": "league_avg_1.00",
-  "shift": 0,
-  "P_leader_ge1": 0.641,
-  "P_leader_ge2": 0.184,
-  "P_total_ge1": 0.7475,
-  "P_total_ge2": 0.3868,
-  "P_margin_ge4": 0.4491
- },
- {
-  "R": 660,
-  "state": "not_pulled_EV",
-  "coach": "Roy_1.39",
-  "shift": 67,
-  "P_leader_ge1": 0.7161,
-  "P_leader_ge2": 0.2279,
-  "P_total_ge1": 0.8073,
-  "P_total_ge2": 0.4301,
-  "P_margin_ge4": 0.5152
- },
- {
-  "R": 660,
-  "state": "not_pulled_EV",
-  "coach": "Bednar_1.85",
-  "shift": -17,
-  "P_leader_ge1": 0.7268,
-  "P_leader_ge2": 0.2191,
-  "P_total_ge1": 0.8219,
-  "P_total_ge2": 0.423,
-  "P_margin_ge4": 0.5254
- },
- {
-  "R": 660,
-  "state": "not_pulled_PP",
-  "coach": "conservative_0.80",
-  "shift": 0,
-  "P_leader_ge1": 0.6076,
-  "P_leader_ge2": 0.1732,
-  "P_total_ge1": 0.7329,
-  "P_total_ge2": 0.4008,
-  "P_margin_ge4": 0.397
- },
- {
-  "R": 660,
-  "state": "not_pulled_PP",
-  "coach": "league_avg_1.00",
-  "shift": 0,
-  "P_leader_ge1": 0.6391,
-  "P_leader_ge2": 0.1876,
-  "P_total_ge1": 0.7581,
-  "P_total_ge2": 0.4151,
-  "P_margin_ge4": 0.4248
- },
- {
-  "R": 660,
-  "state": "not_pulled_PP",
-  "coach": "Roy_1.39",
-  "shift": 67,
-  "P_leader_ge1": 0.7161,
-  "P_leader_ge2": 0.2358,
-  "P_total_ge1": 0.8178,
-  "P_total_ge2": 0.4603,
-  "P_margin_ge4": 0.4935
- },
- {
-  "R": 660,
-  "state": "not_pulled_PP",
-  "coach": "Bednar_1.85",
-  "shift": -17,
-  "P_leader_ge1": 0.724,
-  "P_leader_ge2": 0.2255,
-  "P_total_ge1": 0.8295,
-  "P_total_ge2": 0.4511,
-  "P_margin_ge4": 0.5007
- },
- {
-  "R": 660,
-  "state": "pulled",
-  "coach": "conservative_0.80",
-  "shift": 0,
-  "P_leader_ge1": 0.9691,
-  "P_leader_ge2": 0.5173,
-  "P_total_ge1": 0.9929,
-  "P_total_ge2": 0.6287,
-  "P_margin_ge4": 0.8007
- },
- {
-  "R": 660,
-  "state": "pulled",
-  "coach": "league_avg_1.00",
-  "shift": 0,
-  "P_leader_ge1": 0.9691,
-  "P_leader_ge2": 0.5179,
-  "P_total_ge1": 0.9929,
-  "P_total_ge2": 0.6293,
-  "P_margin_ge4": 0.8007
- },
- {
-  "R": 660,
-  "state": "pulled",
-  "coach": "Roy_1.39",
-  "shift": 67,
-  "P_leader_ge1": 0.9692,
-  "P_leader_ge2": 0.5199,
-  "P_total_ge1": 0.9929,
-  "P_total_ge2": 0.6308,
-  "P_margin_ge4": 0.8009
- },
- {
-  "R": 660,
-  "state": "pulled",
-  "coach": "Bednar_1.85",
-  "shift": -17,
-  "P_leader_ge1": 0.9696,
-  "P_leader_ge2": 0.5221,
-  "P_total_ge1": 0.9929,
-  "P_total_ge2": 0.6322,
-  "P_margin_ge4": 0.8014
- },
- {
-  "R": 600,
-  "state": "not_pulled_EV",
-  "coach": "conservative_0.80",
-  "shift": 0,
-  "P_leader_ge1": 0.5864,
-  "P_leader_ge2": 0.1543,
-  "P_total_ge1": 0.6958,
-  "P_total_ge2": 0.3445,
-  "P_margin_ge4": 0.4111
- },
- {
-  "R": 600,
-  "state": "not_pulled_EV",
-  "coach": "league_avg_1.00",
-  "shift": 0,
-  "P_leader_ge1": 0.6203,
-  "P_leader_ge2": 0.1669,
-  "P_total_ge1": 0.7248,
-  "P_total_ge2": 0.3594,
-  "P_margin_ge4": 0.4405
- },
- {
-  "R": 600,
-  "state": "not_pulled_EV",
-  "coach": "Roy_1.39",
-  "shift": 67,
-  "P_leader_ge1": 0.6969,
-  "P_leader_ge2": 0.2102,
-  "P_total_ge1": 0.7862,
-  "P_total_ge2": 0.4037,
-  "P_margin_ge4": 0.5074
- },
- {
-  "R": 600,
-  "state": "not_pulled_EV",
-  "coach": "Bednar_1.85",
-  "shift": -17,
-  "P_leader_ge1": 0.7097,
-  "P_leader_ge2": 0.2007,
-  "P_total_ge1": 0.8044,
-  "P_total_ge2": 0.3956,
-  "P_margin_ge4": 0.5205
- },
- {
-  "R": 600,
-  "state": "not_pulled_PP",
-  "coach": "conservative_0.80",
-  "shift": 0,
-  "P_leader_ge1": 0.5882,
-  "P_leader_ge2": 0.1614,
-  "P_total_ge1": 0.7107,
-  "P_total_ge2": 0.3762,
-  "P_margin_ge4": 0.3905
- },
- {
-  "R": 600,
-  "state": "not_pulled_PP",
-  "coach": "league_avg_1.00",
-  "shift": 0,
-  "P_leader_ge1": 0.6221,
+  "P_leader_ge1": 0.6147,
   "P_leader_ge2": 0.1748,
-  "P_total_ge1": 0.7387,
-  "P_total_ge2": 0.3911,
-  "P_margin_ge4": 0.4202
+  "P_total_ge1": 0.7235,
+  "P_total_ge2": 0.379,
+  "P_margin_ge4": 0.4224
+ },
+ {
+  "R": 660,
+  "state": "not_pulled_EV",
+  "coach": "league_avg_1.00",
+  "shift": 0,
+  "P_leader_ge1": 0.6468,
+  "P_leader_ge2": 0.1888,
+  "P_total_ge1": 0.7505,
+  "P_total_ge2": 0.3933,
+  "P_margin_ge4": 0.4505
+ },
+ {
+  "R": 660,
+  "state": "not_pulled_EV",
+  "coach": "Roy_1.39",
+  "shift": 67,
+  "P_leader_ge1": 0.7212,
+  "P_leader_ge2": 0.2337,
+  "P_total_ge1": 0.8087,
+  "P_total_ge2": 0.437,
+  "P_margin_ge4": 0.5159
+ },
+ {
+  "R": 660,
+  "state": "not_pulled_EV",
+  "coach": "Bednar_1.85",
+  "shift": -17,
+  "P_leader_ge1": 0.7329,
+  "P_leader_ge2": 0.2248,
+  "P_total_ge1": 0.8257,
+  "P_total_ge2": 0.4304,
+  "P_margin_ge4": 0.527
+ },
+ {
+  "R": 660,
+  "state": "not_pulled_PP",
+  "coach": "conservative_0.80",
+  "shift": 0,
+  "P_leader_ge1": 0.6141,
+  "P_leader_ge2": 0.1794,
+  "P_total_ge1": 0.7352,
+  "P_total_ge2": 0.4079,
+  "P_margin_ge4": 0.3995
+ },
+ {
+  "R": 660,
+  "state": "not_pulled_PP",
+  "coach": "league_avg_1.00",
+  "shift": 0,
+  "P_leader_ge1": 0.6463,
+  "P_leader_ge2": 0.1947,
+  "P_total_ge1": 0.7617,
+  "P_total_ge2": 0.4225,
+  "P_margin_ge4": 0.4281
+ },
+ {
+  "R": 660,
+  "state": "not_pulled_PP",
+  "coach": "Roy_1.39",
+  "shift": 67,
+  "P_leader_ge1": 0.7209,
+  "P_leader_ge2": 0.242,
+  "P_total_ge1": 0.819,
+  "P_total_ge2": 0.4663,
+  "P_margin_ge4": 0.495
+ },
+ {
+  "R": 660,
+  "state": "not_pulled_PP",
+  "coach": "Bednar_1.85",
+  "shift": -17,
+  "P_leader_ge1": 0.7303,
+  "P_leader_ge2": 0.2317,
+  "P_total_ge1": 0.8332,
+  "P_total_ge2": 0.4581,
+  "P_margin_ge4": 0.5031
+ },
+ {
+  "R": 660,
+  "state": "pulled",
+  "coach": "conservative_0.80",
+  "shift": 0,
+  "P_leader_ge1": 0.9691,
+  "P_leader_ge2": 0.5205,
+  "P_total_ge1": 0.9929,
+  "P_total_ge2": 0.6351,
+  "P_margin_ge4": 0.7944
+ },
+ {
+  "R": 660,
+  "state": "pulled",
+  "coach": "league_avg_1.00",
+  "shift": 0,
+  "P_leader_ge1": 0.9691,
+  "P_leader_ge2": 0.521,
+  "P_total_ge1": 0.9929,
+  "P_total_ge2": 0.6356,
+  "P_margin_ge4": 0.7944
+ },
+ {
+  "R": 660,
+  "state": "pulled",
+  "coach": "Roy_1.39",
+  "shift": 67,
+  "P_leader_ge1": 0.9693,
+  "P_leader_ge2": 0.5227,
+  "P_total_ge1": 0.9929,
+  "P_total_ge2": 0.6369,
+  "P_margin_ge4": 0.7947
+ },
+ {
+  "R": 660,
+  "state": "pulled",
+  "coach": "Bednar_1.85",
+  "shift": -17,
+  "P_leader_ge1": 0.9695,
+  "P_leader_ge2": 0.525,
+  "P_total_ge1": 0.9929,
+  "P_total_ge2": 0.6382,
+  "P_margin_ge4": 0.7953
+ },
+ {
+  "R": 600,
+  "state": "not_pulled_EV",
+  "coach": "conservative_0.80",
+  "shift": 0,
+  "P_leader_ge1": 0.5911,
+  "P_leader_ge2": 0.1583,
+  "P_total_ge1": 0.6974,
+  "P_total_ge2": 0.3506,
+  "P_margin_ge4": 0.412
+ },
+ {
+  "R": 600,
+  "state": "not_pulled_EV",
+  "coach": "league_avg_1.00",
+  "shift": 0,
+  "P_leader_ge1": 0.6255,
+  "P_leader_ge2": 0.1713,
+  "P_total_ge1": 0.7271,
+  "P_total_ge2": 0.3658,
+  "P_margin_ge4": 0.4416
+ },
+ {
+  "R": 600,
+  "state": "not_pulled_EV",
+  "coach": "Roy_1.39",
+  "shift": 67,
+  "P_leader_ge1": 0.7017,
+  "P_leader_ge2": 0.217,
+  "P_total_ge1": 0.788,
+  "P_total_ge2": 0.4113,
+  "P_margin_ge4": 0.5087
+ },
+ {
+  "R": 600,
+  "state": "not_pulled_EV",
+  "coach": "Bednar_1.85",
+  "shift": -17,
+  "P_leader_ge1": 0.7157,
+  "P_leader_ge2": 0.2077,
+  "P_total_ge1": 0.8081,
+  "P_total_ge2": 0.4039,
+  "P_margin_ge4": 0.5228
+ },
+ {
+  "R": 600,
+  "state": "not_pulled_PP",
+  "coach": "conservative_0.80",
+  "shift": 0,
+  "P_leader_ge1": 0.5933,
+  "P_leader_ge2": 0.1661,
+  "P_total_ge1": 0.7123,
+  "P_total_ge2": 0.382,
+  "P_margin_ge4": 0.3923
+ },
+ {
+  "R": 600,
+  "state": "not_pulled_PP",
+  "coach": "league_avg_1.00",
+  "shift": 0,
+  "P_leader_ge1": 0.6276,
+  "P_leader_ge2": 0.18,
+  "P_total_ge1": 0.741,
+  "P_total_ge2": 0.3975,
+  "P_margin_ge4": 0.4221
  },
  {
   "R": 600,
   "state": "not_pulled_PP",
   "coach": "Roy_1.39",
   "shift": 67,
-  "P_leader_ge1": 0.7062,
-  "P_leader_ge2": 0.2262,
-  "P_total_ge1": 0.8048,
-  "P_total_ge2": 0.4412,
-  "P_margin_ge4": 0.4945
+  "P_leader_ge1": 0.7121,
+  "P_leader_ge2": 0.2343,
+  "P_total_ge1": 0.8075,
+  "P_total_ge2": 0.4493,
+  "P_margin_ge4": 0.4974
  },
  {
   "R": 600,
   "state": "not_pulled_PP",
   "coach": "Bednar_1.85",
   "shift": -17,
-  "P_leader_ge1": 0.7108,
-  "P_leader_ge2": 0.2129,
-  "P_total_ge1": 0.8159,
-  "P_total_ge2": 0.428,
-  "P_margin_ge4": 0.5011
+  "P_leader_ge1": 0.7176,
+  "P_leader_ge2": 0.2203,
+  "P_total_ge1": 0.8198,
+  "P_total_ge2": 0.4365,
+  "P_margin_ge4": 0.5045
  },
  {
   "R": 600,
@@ -489,10 +489,10 @@
   "coach": "conservative_0.80",
   "shift": 0,
   "P_leader_ge1": 0.96,
-  "P_leader_ge2": 0.4682,
+  "P_leader_ge2": 0.4706,
   "P_total_ge1": 0.9886,
-  "P_total_ge2": 0.5932,
-  "P_margin_ge4": 0.7871
+  "P_total_ge2": 0.5988,
+  "P_margin_ge4": 0.7815
  },
  {
   "R": 600,
@@ -500,10 +500,10 @@
   "coach": "league_avg_1.00",
   "shift": 0,
   "P_leader_ge1": 0.96,
-  "P_leader_ge2": 0.4687,
+  "P_leader_ge2": 0.4712,
   "P_total_ge1": 0.9886,
-  "P_total_ge2": 0.5936,
-  "P_margin_ge4": 0.7872
+  "P_total_ge2": 0.5993,
+  "P_margin_ge4": 0.7816
  },
  {
   "R": 600,
@@ -511,120 +511,120 @@
   "coach": "Roy_1.39",
   "shift": 67,
   "P_leader_ge1": 0.9602,
-  "P_leader_ge2": 0.4702,
+  "P_leader_ge2": 0.4724,
   "P_total_ge1": 0.9886,
-  "P_total_ge2": 0.5946,
-  "P_margin_ge4": 0.7874
+  "P_total_ge2": 0.6002,
+  "P_margin_ge4": 0.7818
  },
  {
   "R": 600,
   "state": "pulled",
   "coach": "Bednar_1.85",
   "shift": -17,
-  "P_leader_ge1": 0.9607,
-  "P_leader_ge2": 0.4723,
+  "P_leader_ge1": 0.9606,
+  "P_leader_ge2": 0.4746,
   "P_total_ge1": 0.9886,
-  "P_total_ge2": 0.5959,
-  "P_margin_ge4": 0.7882
+  "P_total_ge2": 0.6015,
+  "P_margin_ge4": 0.7826
  },
  {
   "R": 480,
   "state": "not_pulled_EV",
   "coach": "conservative_0.80",
   "shift": 0,
-  "P_leader_ge1": 0.537,
-  "P_leader_ge2": 0.1219,
-  "P_total_ge1": 0.6405,
-  "P_total_ge2": 0.2806,
-  "P_margin_ge4": 0.3915
+  "P_leader_ge1": 0.5414,
+  "P_leader_ge2": 0.1251,
+  "P_total_ge1": 0.643,
+  "P_total_ge2": 0.2857,
+  "P_margin_ge4": 0.3926
  },
  {
   "R": 480,
   "state": "not_pulled_EV",
   "coach": "league_avg_1.00",
   "shift": 0,
-  "P_leader_ge1": 0.5751,
-  "P_leader_ge2": 0.134,
-  "P_total_ge1": 0.6743,
-  "P_total_ge2": 0.2963,
-  "P_margin_ge4": 0.4242
+  "P_leader_ge1": 0.5796,
+  "P_leader_ge2": 0.1378,
+  "P_total_ge1": 0.6768,
+  "P_total_ge2": 0.3018,
+  "P_margin_ge4": 0.4254
  },
  {
   "R": 480,
   "state": "not_pulled_EV",
   "coach": "Roy_1.39",
   "shift": 67,
-  "P_leader_ge1": 0.6551,
-  "P_leader_ge2": 0.1739,
-  "P_total_ge1": 0.7402,
-  "P_total_ge2": 0.3434,
-  "P_margin_ge4": 0.4903
+  "P_leader_ge1": 0.6595,
+  "P_leader_ge2": 0.1802,
+  "P_total_ge1": 0.7418,
+  "P_total_ge2": 0.3505,
+  "P_margin_ge4": 0.4915
  },
  {
   "R": 480,
   "state": "not_pulled_EV",
   "coach": "Bednar_1.85",
   "shift": -17,
-  "P_leader_ge1": 0.6775,
-  "P_leader_ge2": 0.1666,
-  "P_total_ge1": 0.7682,
-  "P_total_ge2": 0.3397,
+  "P_leader_ge1": 0.6832,
+  "P_leader_ge2": 0.1709,
+  "P_total_ge1": 0.7723,
+  "P_total_ge2": 0.3453,
+  "P_margin_ge4": 0.5128
+ },
+ {
+  "R": 480,
+  "state": "not_pulled_PP",
+  "coach": "conservative_0.80",
+  "shift": 0,
+  "P_leader_ge1": 0.5616,
+  "P_leader_ge2": 0.1421,
+  "P_total_ge1": 0.6744,
+  "P_total_ge2": 0.3303,
+  "P_margin_ge4": 0.3864
+ },
+ {
+  "R": 480,
+  "state": "not_pulled_PP",
+  "coach": "league_avg_1.00",
+  "shift": 0,
+  "P_leader_ge1": 0.6007,
+  "P_leader_ge2": 0.1574,
+  "P_total_ge1": 0.708,
+  "P_total_ge2": 0.3483,
+  "P_margin_ge4": 0.42
+ },
+ {
+  "R": 480,
+  "state": "not_pulled_PP",
+  "coach": "Roy_1.39",
+  "shift": 67,
+  "P_leader_ge1": 0.7146,
+  "P_leader_ge2": 0.2208,
+  "P_total_ge1": 0.8023,
+  "P_total_ge2": 0.4163,
+  "P_margin_ge4": 0.5191
+ },
+ {
+  "R": 480,
+  "state": "not_pulled_PP",
+  "coach": "Bednar_1.85",
+  "shift": -17,
+  "P_leader_ge1": 0.7068,
+  "P_leader_ge2": 0.1973,
+  "P_total_ge1": 0.8025,
+  "P_total_ge2": 0.396,
   "P_margin_ge4": 0.5104
  },
  {
   "R": 480,
-  "state": "not_pulled_PP",
-  "coach": "conservative_0.80",
-  "shift": 0,
-  "P_leader_ge1": 0.5572,
-  "P_leader_ge2": 0.1383,
-  "P_total_ge1": 0.6728,
-  "P_total_ge2": 0.325,
-  "P_margin_ge4": 0.3851
- },
- {
-  "R": 480,
-  "state": "not_pulled_PP",
-  "coach": "league_avg_1.00",
-  "shift": 0,
-  "P_leader_ge1": 0.5968,
-  "P_leader_ge2": 0.1529,
-  "P_total_ge1": 0.7066,
-  "P_total_ge2": 0.343,
-  "P_margin_ge4": 0.419
- },
- {
-  "R": 480,
-  "state": "not_pulled_PP",
-  "coach": "Roy_1.39",
-  "shift": 67,
-  "P_leader_ge1": 0.6948,
-  "P_leader_ge2": 0.2059,
-  "P_total_ge1": 0.7875,
-  "P_total_ge2": 0.4019,
-  "P_margin_ge4": 0.5029
- },
- {
-  "R": 480,
-  "state": "not_pulled_PP",
-  "coach": "Bednar_1.85",
-  "shift": -17,
-  "P_leader_ge1": 0.6991,
-  "P_leader_ge2": 0.1911,
-  "P_total_ge1": 0.7973,
-  "P_total_ge2": 0.3889,
-  "P_margin_ge4": 0.506
- },
- {
-  "R": 480,
   "state": "pulled",
   "coach": "conservative_0.80",
   "shift": 0,
   "P_leader_ge1": 0.929,
-  "P_leader_ge2": 0.3592,
+  "P_leader_ge2": 0.3607,
   "P_total_ge1": 0.9735,
-  "P_total_ge2": 0.5111,
-  "P_margin_ge4": 0.7499
+  "P_total_ge2": 0.516,
+  "P_margin_ge4": 0.745
  },
  {
   "R": 480,
@@ -632,10 +632,10 @@
   "coach": "league_avg_1.00",
   "shift": 0,
   "P_leader_ge1": 0.929,
-  "P_leader_ge2": 0.3594,
+  "P_leader_ge2": 0.361,
   "P_total_ge1": 0.9735,
-  "P_total_ge2": 0.5114,
-  "P_margin_ge4": 0.7499
+  "P_total_ge2": 0.5163,
+  "P_margin_ge4": 0.745
  },
  {
   "R": 480,
@@ -643,109 +643,109 @@
   "coach": "Roy_1.39",
   "shift": 67,
   "P_leader_ge1": 0.9297,
-  "P_leader_ge2": 0.3604,
+  "P_leader_ge2": 0.362,
   "P_total_ge1": 0.9735,
-  "P_total_ge2": 0.5124,
-  "P_margin_ge4": 0.75
+  "P_total_ge2": 0.5173,
+  "P_margin_ge4": 0.7452
  },
  {
   "R": 480,
   "state": "pulled",
   "coach": "Bednar_1.85",
   "shift": -17,
-  "P_leader_ge1": 0.9305,
-  "P_leader_ge2": 0.3619,
+  "P_leader_ge1": 0.9306,
+  "P_leader_ge2": 0.3638,
   "P_total_ge1": 0.9735,
-  "P_total_ge2": 0.5135,
-  "P_margin_ge4": 0.7503
+  "P_total_ge2": 0.5186,
+  "P_margin_ge4": 0.7456
  },
  {
   "R": 360,
   "state": "not_pulled_EV",
   "coach": "conservative_0.80",
   "shift": 0,
-  "P_leader_ge1": 0.4648,
-  "P_leader_ge2": 0.0904,
-  "P_total_ge1": 0.561,
-  "P_total_ge2": 0.217,
-  "P_margin_ge4": 0.3517
+  "P_leader_ge1": 0.4625,
+  "P_leader_ge2": 0.0909,
+  "P_total_ge1": 0.5581,
+  "P_total_ge2": 0.2185,
+  "P_margin_ge4": 0.3475
  },
  {
   "R": 360,
   "state": "not_pulled_EV",
   "coach": "league_avg_1.00",
   "shift": 0,
-  "P_leader_ge1": 0.503,
-  "P_leader_ge2": 0.1004,
-  "P_total_ge1": 0.5968,
-  "P_total_ge2": 0.2324,
-  "P_margin_ge4": 0.3835
+  "P_leader_ge1": 0.4995,
+  "P_leader_ge2": 0.1011,
+  "P_total_ge1": 0.5924,
+  "P_total_ge2": 0.2344,
+  "P_margin_ge4": 0.3778
  },
  {
   "R": 360,
   "state": "not_pulled_EV",
   "coach": "Roy_1.39",
   "shift": 67,
-  "P_leader_ge1": 0.5278,
-  "P_leader_ge2": 0.1162,
-  "P_total_ge1": 0.6138,
-  "P_total_ge2": 0.2509,
-  "P_margin_ge4": 0.4029
+  "P_leader_ge1": 0.5186,
+  "P_leader_ge2": 0.1147,
+  "P_total_ge1": 0.6041,
+  "P_total_ge2": 0.2496,
+  "P_margin_ge4": 0.3925
  },
  {
   "R": 360,
   "state": "not_pulled_EV",
   "coach": "Bednar_1.85",
   "shift": -17,
-  "P_leader_ge1": 0.6181,
-  "P_leader_ge2": 0.1282,
-  "P_total_ge1": 0.7089,
-  "P_total_ge2": 0.2751,
-  "P_margin_ge4": 0.4811
+  "P_leader_ge1": 0.6222,
+  "P_leader_ge2": 0.1313,
+  "P_total_ge1": 0.7117,
+  "P_total_ge2": 0.2806,
+  "P_margin_ge4": 0.4813
  },
  {
   "R": 360,
   "state": "not_pulled_PP",
   "coach": "conservative_0.80",
   "shift": 0,
-  "P_leader_ge1": 0.5634,
-  "P_leader_ge2": 0.1309,
-  "P_total_ge1": 0.6698,
-  "P_total_ge2": 0.2961,
-  "P_margin_ge4": 0.4123
+  "P_leader_ge1": 0.5681,
+  "P_leader_ge2": 0.1333,
+  "P_total_ge1": 0.6738,
+  "P_total_ge2": 0.3005,
+  "P_margin_ge4": 0.4138
  },
  {
   "R": 360,
   "state": "not_pulled_PP",
   "coach": "league_avg_1.00",
   "shift": 0,
-  "P_leader_ge1": 0.6112,
-  "P_leader_ge2": 0.1456,
-  "P_total_ge1": 0.7148,
-  "P_total_ge2": 0.3166,
-  "P_margin_ge4": 0.4529
+  "P_leader_ge1": 0.6149,
+  "P_leader_ge2": 0.148,
+  "P_total_ge1": 0.7175,
+  "P_total_ge2": 0.3215,
+  "P_margin_ge4": 0.4531
  },
  {
   "R": 360,
   "state": "not_pulled_PP",
   "coach": "Roy_1.39",
   "shift": 67,
-  "P_leader_ge1": 0.6942,
-  "P_leader_ge2": 0.181,
-  "P_total_ge1": 0.7896,
-  "P_total_ge2": 0.3597,
-  "P_margin_ge4": 0.5229
+  "P_leader_ge1": 0.6893,
+  "P_leader_ge2": 0.1806,
+  "P_total_ge1": 0.784,
+  "P_total_ge2": 0.3602,
+  "P_margin_ge4": 0.5159
  },
  {
   "R": 360,
   "state": "not_pulled_PP",
   "coach": "Bednar_1.85",
   "shift": -17,
-  "P_leader_ge1": 0.7168,
-  "P_leader_ge2": 0.1769,
-  "P_total_ge1": 0.8143,
-  "P_total_ge2": 0.3593,
-  "P_margin_ge4": 0.542
+  "P_leader_ge1": 0.728,
+  "P_leader_ge2": 0.1839,
+  "P_total_ge1": 0.8229,
+  "P_total_ge2": 0.3689,
+  "P_margin_ge4": 0.5483
  },
  {
   "R": 360,
@@ -753,10 +753,10 @@
   "coach": "conservative_0.80",
   "shift": 0,
   "P_leader_ge1": 0.8638,
-  "P_leader_ge2": 0.2374,
+  "P_leader_ge2": 0.2376,
   "P_total_ge1": 0.9341,
-  "P_total_ge2": 0.4012,
-  "P_margin_ge4": 0.697
+  "P_total_ge2": 0.4051,
+  "P_margin_ge4": 0.6925
  },
  {
   "R": 360,
@@ -766,8 +766,8 @@
   "P_leader_ge1": 0.8638,
   "P_leader_ge2": 0.2377,
   "P_total_ge1": 0.9341,
-  "P_total_ge2": 0.4014,
-  "P_margin_ge4": 0.6971
+  "P_total_ge2": 0.4052,
+  "P_margin_ge4": 0.6925
  },
  {
   "R": 360,
@@ -777,8 +777,8 @@
   "P_leader_ge1": 0.8647,
   "P_leader_ge2": 0.2388,
   "P_total_ge1": 0.9341,
-  "P_total_ge2": 0.4022,
-  "P_margin_ge4": 0.6975
+  "P_total_ge2": 0.4059,
+  "P_margin_ge4": 0.6928
  },
  {
   "R": 360,
@@ -786,98 +786,98 @@
   "coach": "Bednar_1.85",
   "shift": -17,
   "P_leader_ge1": 0.8662,
-  "P_leader_ge2": 0.2409,
+  "P_leader_ge2": 0.2408,
   "P_total_ge1": 0.9341,
-  "P_total_ge2": 0.4038,
-  "P_margin_ge4": 0.698
+  "P_total_ge2": 0.4076,
+  "P_margin_ge4": 0.6936
  },
  {
   "R": 300,
   "state": "not_pulled_EV",
   "coach": "conservative_0.80",
   "shift": 0,
-  "P_leader_ge1": 0.3856,
-  "P_leader_ge2": 0.062,
-  "P_total_ge1": 0.4824,
-  "P_total_ge2": 0.1636,
-  "P_margin_ge4": 0.2977
+  "P_leader_ge1": 0.3789,
+  "P_leader_ge2": 0.0617,
+  "P_total_ge1": 0.4747,
+  "P_total_ge2": 0.1637,
+  "P_margin_ge4": 0.2898
  },
  {
   "R": 300,
   "state": "not_pulled_EV",
   "coach": "league_avg_1.00",
   "shift": 0,
-  "P_leader_ge1": 0.4169,
-  "P_leader_ge2": 0.0695,
-  "P_total_ge1": 0.5128,
+  "P_leader_ge1": 0.4099,
+  "P_leader_ge2": 0.0689,
+  "P_total_ge1": 0.5048,
   "P_total_ge2": 0.1761,
-  "P_margin_ge4": 0.3236
+  "P_margin_ge4": 0.3155
  },
  {
   "R": 300,
   "state": "not_pulled_EV",
   "coach": "Roy_1.39",
   "shift": 67,
-  "P_leader_ge1": 0.394,
-  "P_leader_ge2": 0.0699,
-  "P_total_ge1": 0.4826,
-  "P_total_ge2": 0.1744,
-  "P_margin_ge4": 0.3011
+  "P_leader_ge1": 0.3803,
+  "P_leader_ge2": 0.068,
+  "P_total_ge1": 0.4684,
+  "P_total_ge2": 0.1722,
+  "P_margin_ge4": 0.2875
  },
  {
   "R": 300,
   "state": "not_pulled_EV",
   "coach": "Bednar_1.85",
   "shift": -17,
-  "P_leader_ge1": 0.5344,
-  "P_leader_ge2": 0.0928,
-  "P_total_ge1": 0.6307,
-  "P_total_ge2": 0.217,
-  "P_margin_ge4": 0.4228
+  "P_leader_ge1": 0.5314,
+  "P_leader_ge2": 0.0931,
+  "P_total_ge1": 0.626,
+  "P_total_ge2": 0.2189,
+  "P_margin_ge4": 0.4173
  },
  {
   "R": 300,
   "state": "not_pulled_PP",
   "coach": "conservative_0.80",
   "shift": 0,
-  "P_leader_ge1": 0.5225,
-  "P_leader_ge2": 0.1022,
-  "P_total_ge1": 0.6378,
-  "P_total_ge2": 0.2519,
-  "P_margin_ge4": 0.3901
+  "P_leader_ge1": 0.5176,
+  "P_leader_ge2": 0.1026,
+  "P_total_ge1": 0.6317,
+  "P_total_ge2": 0.2529,
+  "P_margin_ge4": 0.3838
  },
  {
   "R": 300,
   "state": "not_pulled_PP",
   "coach": "league_avg_1.00",
   "shift": 0,
-  "P_leader_ge1": 0.5662,
-  "P_leader_ge2": 0.1134,
-  "P_total_ge1": 0.6803,
-  "P_total_ge2": 0.2694,
-  "P_margin_ge4": 0.4263
+  "P_leader_ge1": 0.5617,
+  "P_leader_ge2": 0.1138,
+  "P_total_ge1": 0.6744,
+  "P_total_ge2": 0.2704,
+  "P_margin_ge4": 0.4201
  },
  {
   "R": 300,
   "state": "not_pulled_PP",
   "coach": "Roy_1.39",
   "shift": 67,
-  "P_leader_ge1": 0.5751,
-  "P_leader_ge2": 0.1205,
-  "P_total_ge1": 0.6824,
-  "P_total_ge2": 0.2787,
-  "P_margin_ge4": 0.4308
+  "P_leader_ge1": 0.5568,
+  "P_leader_ge2": 0.118,
+  "P_total_ge1": 0.6627,
+  "P_total_ge2": 0.2742,
+  "P_margin_ge4": 0.4139
  },
  {
   "R": 300,
   "state": "not_pulled_PP",
   "coach": "Bednar_1.85",
   "shift": -17,
-  "P_leader_ge1": 0.6821,
-  "P_leader_ge2": 0.1424,
-  "P_total_ge1": 0.7919,
-  "P_total_ge2": 0.3145,
-  "P_margin_ge4": 0.5231
+  "P_leader_ge1": 0.6861,
+  "P_leader_ge2": 0.1446,
+  "P_total_ge1": 0.795,
+  "P_total_ge2": 0.3194,
+  "P_margin_ge4": 0.5236
  },
  {
   "R": 300,
@@ -887,8 +887,8 @@
   "P_leader_ge1": 0.8082,
   "P_leader_ge2": 0.1731,
   "P_total_ge1": 0.8957,
-  "P_total_ge2": 0.3328,
-  "P_margin_ge4": 0.6563
+  "P_total_ge2": 0.3363,
+  "P_margin_ge4": 0.6523
  },
  {
   "R": 300,
@@ -898,8 +898,8 @@
   "P_leader_ge1": 0.8082,
   "P_leader_ge2": 0.1731,
   "P_total_ge1": 0.8957,
-  "P_total_ge2": 0.3328,
-  "P_margin_ge4": 0.6563
+  "P_total_ge2": 0.3363,
+  "P_margin_ge4": 0.6523
  },
  {
   "R": 300,
@@ -909,107 +909,107 @@
   "P_leader_ge1": 0.809,
   "P_leader_ge2": 0.1739,
   "P_total_ge1": 0.8957,
-  "P_total_ge2": 0.3339,
-  "P_margin_ge4": 0.6567
+  "P_total_ge2": 0.3373,
+  "P_margin_ge4": 0.6528
  },
  {
   "R": 300,
   "state": "pulled",
   "coach": "Bednar_1.85",
   "shift": -17,
-  "P_leader_ge1": 0.8109,
+  "P_leader_ge1": 0.8111,
   "P_leader_ge2": 0.1756,
   "P_total_ge1": 0.8957,
-  "P_total_ge2": 0.3357,
-  "P_margin_ge4": 0.6576
+  "P_total_ge2": 0.3389,
+  "P_margin_ge4": 0.6538
  },
  {
   "R": 240,
   "state": "not_pulled_EV",
   "coach": "conservative_0.80",
   "shift": 0,
-  "P_leader_ge1": 0.2759,
-  "P_leader_ge2": 0.0341,
-  "P_total_ge1": 0.3666,
-  "P_total_ge2": 0.107,
-  "P_margin_ge4": 0.2143
- },
- {
-  "R": 240,
-  "state": "not_pulled_EV",
-  "coach": "league_avg_1.00",
-  "shift": 0,
-  "P_leader_ge1": 0.2989,
-  "P_leader_ge2": 0.0377,
-  "P_total_ge1": 0.3891,
-  "P_total_ge2": 0.1148,
-  "P_margin_ge4": 0.2331
- },
- {
-  "R": 240,
-  "state": "not_pulled_EV",
-  "coach": "Roy_1.39",
-  "shift": 67,
-  "P_leader_ge1": 0.251,
+  "P_leader_ge1": 0.269,
   "P_leader_ge2": 0.0334,
-  "P_total_ge1": 0.3322,
-  "P_total_ge2": 0.1054,
-  "P_margin_ge4": 0.1896
+  "P_total_ge1": 0.3591,
+  "P_total_ge2": 0.106,
+  "P_margin_ge4": 0.2074
+ },
+ {
+  "R": 240,
+  "state": "not_pulled_EV",
+  "coach": "league_avg_1.00",
+  "shift": 0,
+  "P_leader_ge1": 0.2904,
+  "P_leader_ge2": 0.0369,
+  "P_total_ge1": 0.3796,
+  "P_total_ge2": 0.1137,
+  "P_margin_ge4": 0.2246
+ },
+ {
+  "R": 240,
+  "state": "not_pulled_EV",
+  "coach": "Roy_1.39",
+  "shift": 67,
+  "P_leader_ge1": 0.2423,
+  "P_leader_ge2": 0.0323,
+  "P_total_ge1": 0.3231,
+  "P_total_ge2": 0.1039,
+  "P_margin_ge4": 0.181
  },
  {
   "R": 240,
   "state": "not_pulled_EV",
   "coach": "Bednar_1.85",
   "shift": -17,
-  "P_leader_ge1": 0.4012,
-  "P_leader_ge2": 0.0542,
-  "P_total_ge1": 0.4947,
-  "P_total_ge2": 0.1475,
-  "P_margin_ge4": 0.3198
+  "P_leader_ge1": 0.3895,
+  "P_leader_ge2": 0.0532,
+  "P_total_ge1": 0.482,
+  "P_total_ge2": 0.1464,
+  "P_margin_ge4": 0.3079
  },
  {
   "R": 240,
   "state": "not_pulled_PP",
   "coach": "conservative_0.80",
   "shift": 0,
-  "P_leader_ge1": 0.4067,
-  "P_leader_ge2": 0.0609,
-  "P_total_ge1": 0.5277,
-  "P_total_ge2": 0.1838,
-  "P_margin_ge4": 0.3019
+  "P_leader_ge1": 0.3951,
+  "P_leader_ge2": 0.0602,
+  "P_total_ge1": 0.5142,
+  "P_total_ge2": 0.1822,
+  "P_margin_ge4": 0.2902
  },
  {
   "R": 240,
   "state": "not_pulled_PP",
   "coach": "league_avg_1.00",
   "shift": 0,
-  "P_leader_ge1": 0.4465,
-  "P_leader_ge2": 0.0683,
-  "P_total_ge1": 0.5666,
-  "P_total_ge2": 0.198,
-  "P_margin_ge4": 0.3345
+  "P_leader_ge1": 0.4321,
+  "P_leader_ge2": 0.0669,
+  "P_total_ge1": 0.5505,
+  "P_total_ge2": 0.1957,
+  "P_margin_ge4": 0.3204
  },
  {
   "R": 240,
   "state": "not_pulled_PP",
   "coach": "Roy_1.39",
   "shift": 67,
-  "P_leader_ge1": 0.3667,
-  "P_leader_ge2": 0.0592,
-  "P_total_ge1": 0.4753,
-  "P_total_ge2": 0.1787,
-  "P_margin_ge4": 0.2631
+  "P_leader_ge1": 0.3458,
+  "P_leader_ge2": 0.0568,
+  "P_total_ge1": 0.4521,
+  "P_total_ge2": 0.1735,
+  "P_margin_ge4": 0.2443
  },
  {
   "R": 240,
   "state": "not_pulled_PP",
   "coach": "Bednar_1.85",
   "shift": -17,
-  "P_leader_ge1": 0.5778,
-  "P_leader_ge2": 0.0919,
-  "P_total_ge1": 0.7004,
-  "P_total_ge2": 0.2442,
-  "P_margin_ge4": 0.4431
+  "P_leader_ge1": 0.5701,
+  "P_leader_ge2": 0.0911,
+  "P_total_ge1": 0.6919,
+  "P_total_ge2": 0.2436,
+  "P_margin_ge4": 0.4346
  },
  {
   "R": 240,
@@ -1017,10 +1017,10 @@
   "coach": "conservative_0.80",
   "shift": 0,
   "P_leader_ge1": 0.7305,
-  "P_leader_ge2": 0.1142,
+  "P_leader_ge2": 0.114,
   "P_total_ge1": 0.8362,
-  "P_total_ge2": 0.2576,
-  "P_margin_ge4": 0.6013
+  "P_total_ge2": 0.2603,
+  "P_margin_ge4": 0.5981
  },
  {
   "R": 240,
@@ -1028,120 +1028,120 @@
   "coach": "league_avg_1.00",
   "shift": 0,
   "P_leader_ge1": 0.7305,
-  "P_leader_ge2": 0.1142,
+  "P_leader_ge2": 0.114,
   "P_total_ge1": 0.8362,
-  "P_total_ge2": 0.2576,
-  "P_margin_ge4": 0.6013
+  "P_total_ge2": 0.2603,
+  "P_margin_ge4": 0.5981
  },
  {
   "R": 240,
   "state": "pulled",
   "coach": "Roy_1.39",
   "shift": 67,
-  "P_leader_ge1": 0.7317,
-  "P_leader_ge2": 0.1149,
+  "P_leader_ge1": 0.7316,
+  "P_leader_ge2": 0.1148,
   "P_total_ge1": 0.8362,
-  "P_total_ge2": 0.2587,
-  "P_margin_ge4": 0.6019
+  "P_total_ge2": 0.2614,
+  "P_margin_ge4": 0.5988
  },
  {
   "R": 240,
   "state": "pulled",
   "coach": "Bednar_1.85",
   "shift": -17,
-  "P_leader_ge1": 0.7343,
-  "P_leader_ge2": 0.1163,
+  "P_leader_ge1": 0.7342,
+  "P_leader_ge2": 0.1161,
   "P_total_ge1": 0.8362,
-  "P_total_ge2": 0.2611,
-  "P_margin_ge4": 0.6029
+  "P_total_ge2": 0.2636,
+  "P_margin_ge4": 0.5998
  },
  {
   "R": 180,
   "state": "not_pulled_EV",
   "coach": "conservative_0.80",
   "shift": 0,
-  "P_leader_ge1": 0.1685,
-  "P_leader_ge2": 0.0158,
-  "P_total_ge1": 0.2471,
-  "P_total_ge2": 0.057,
-  "P_margin_ge4": 0.1354
- },
- {
-  "R": 180,
-  "state": "not_pulled_EV",
-  "coach": "league_avg_1.00",
-  "shift": 0,
-  "P_leader_ge1": 0.1779,
-  "P_leader_ge2": 0.0169,
-  "P_total_ge1": 0.2555,
-  "P_total_ge2": 0.0609,
-  "P_margin_ge4": 0.1424
- },
- {
-  "R": 180,
-  "state": "not_pulled_EV",
-  "coach": "Roy_1.39",
-  "shift": 67,
-  "P_leader_ge1": 0.1515,
+  "P_leader_ge1": 0.1643,
   "P_leader_ge2": 0.0152,
-  "P_total_ge1": 0.2212,
-  "P_total_ge2": 0.0577,
-  "P_margin_ge4": 0.1164
+  "P_total_ge1": 0.2427,
+  "P_total_ge2": 0.0562,
+  "P_margin_ge4": 0.1311
+ },
+ {
+  "R": 180,
+  "state": "not_pulled_EV",
+  "coach": "league_avg_1.00",
+  "shift": 0,
+  "P_leader_ge1": 0.1726,
+  "P_leader_ge2": 0.0163,
+  "P_total_ge1": 0.2501,
+  "P_total_ge2": 0.0598,
+  "P_margin_ge4": 0.1372
+ },
+ {
+  "R": 180,
+  "state": "not_pulled_EV",
+  "coach": "Roy_1.39",
+  "shift": 67,
+  "P_leader_ge1": 0.1502,
+  "P_leader_ge2": 0.0149,
+  "P_total_ge1": 0.2206,
+  "P_total_ge2": 0.0572,
+  "P_margin_ge4": 0.1153
  },
  {
   "R": 180,
   "state": "not_pulled_EV",
   "coach": "Bednar_1.85",
   "shift": -17,
-  "P_leader_ge1": 0.2416,
-  "P_leader_ge2": 0.0239,
-  "P_total_ge1": 0.3209,
-  "P_total_ge2": 0.0795,
-  "P_margin_ge4": 0.1952
+  "P_leader_ge1": 0.2269,
+  "P_leader_ge2": 0.0223,
+  "P_total_ge1": 0.3051,
+  "P_total_ge2": 0.0762,
+  "P_margin_ge4": 0.1819
  },
  {
   "R": 180,
   "state": "not_pulled_PP",
   "coach": "conservative_0.80",
   "shift": 0,
-  "P_leader_ge1": 0.2346,
-  "P_leader_ge2": 0.0253,
-  "P_total_ge1": 0.35,
-  "P_total_ge2": 0.1058,
-  "P_margin_ge4": 0.1694
+  "P_leader_ge1": 0.224,
+  "P_leader_ge2": 0.0246,
+  "P_total_ge1": 0.3378,
+  "P_total_ge2": 0.1036,
+  "P_margin_ge4": 0.1597
  },
  {
   "R": 180,
   "state": "not_pulled_PP",
   "coach": "league_avg_1.00",
   "shift": 0,
-  "P_leader_ge1": 0.2573,
-  "P_leader_ge2": 0.028,
-  "P_total_ge1": 0.3727,
-  "P_total_ge2": 0.1132,
-  "P_margin_ge4": 0.1877
+  "P_leader_ge1": 0.245,
+  "P_leader_ge2": 0.0271,
+  "P_total_ge1": 0.3585,
+  "P_total_ge2": 0.1106,
+  "P_margin_ge4": 0.1763
  },
  {
   "R": 180,
   "state": "not_pulled_PP",
   "coach": "Roy_1.39",
   "shift": 67,
-  "P_leader_ge1": 0.1856,
-  "P_leader_ge2": 0.0231,
-  "P_total_ge1": 0.2843,
-  "P_total_ge2": 0.1003,
-  "P_margin_ge4": 0.1219
+  "P_leader_ge1": 0.1822,
+  "P_leader_ge2": 0.023,
+  "P_total_ge1": 0.2811,
+  "P_total_ge2": 0.0995,
+  "P_margin_ge4": 0.119
  },
  {
   "R": 180,
   "state": "not_pulled_PP",
   "coach": "Bednar_1.85",
   "shift": -17,
-  "P_leader_ge1": 0.382,
-  "P_leader_ge2": 0.0425,
-  "P_total_ge1": 0.5032,
-  "P_total_ge2": 0.1501,
-  "P_margin_ge4": 0.2914
+  "P_leader_ge1": 0.3594,
+  "P_leader_ge2": 0.0402,
+  "P_total_ge1": 0.4787,
+  "P_total_ge2": 0.1447,
+  "P_margin_ge4": 0.2716
  },
  {
   "R": 180,
@@ -1149,10 +1149,10 @@
   "coach": "conservative_0.80",
   "shift": 0,
   "P_leader_ge1": 0.6253,
-  "P_leader_ge2": 0.0662,
+  "P_leader_ge2": 0.0658,
   "P_total_ge1": 0.7444,
-  "P_total_ge2": 0.1762,
-  "P_margin_ge4": 0.531
+  "P_total_ge2": 0.1781,
+  "P_margin_ge4": 0.5286
  },
  {
   "R": 180,
@@ -1160,10 +1160,10 @@
   "coach": "league_avg_1.00",
   "shift": 0,
   "P_leader_ge1": 0.6253,
-  "P_leader_ge2": 0.0662,
+  "P_leader_ge2": 0.0658,
   "P_total_ge1": 0.7444,
-  "P_total_ge2": 0.1762,
-  "P_margin_ge4": 0.531
+  "P_total_ge2": 0.1781,
+  "P_margin_ge4": 0.5286
  },
  {
   "R": 180,
@@ -1171,20 +1171,20 @@
   "coach": "Roy_1.39",
   "shift": 67,
   "P_leader_ge1": 0.627,
-  "P_leader_ge2": 0.0671,
+  "P_leader_ge2": 0.0666,
   "P_total_ge1": 0.7444,
-  "P_total_ge2": 0.1777,
-  "P_margin_ge4": 0.5316
+  "P_total_ge2": 0.1795,
+  "P_margin_ge4": 0.5292
  },
  {
   "R": 180,
   "state": "pulled",
   "coach": "Bednar_1.85",
   "shift": -17,
-  "P_leader_ge1": 0.6304,
-  "P_leader_ge2": 0.0683,
+  "P_leader_ge1": 0.6301,
+  "P_leader_ge2": 0.0679,
   "P_total_ge1": 0.7444,
-  "P_total_ge2": 0.1811,
-  "P_margin_ge4": 0.5323
+  "P_total_ge2": 0.1827,
+  "P_margin_ge4": 0.53
  }
 ]

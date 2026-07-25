@@ -23,6 +23,10 @@ try:
     _REPULL = json.load(open(DER / "repull_fit.json"))["h_repull"]
 except Exception:
     _REPULL = 0.0356
+try:
+    _LAG = round(json.load(open(DER / "evidence_lag.json"))["evidence_lag_half_2425"])
+except Exception:
+    _LAG = 9  # evidence-lag midpoint correction: true pull precedes first evidence
 
 GAPKEY = {2: "2", 3: "3", 4: "4"}
 
@@ -74,8 +78,9 @@ def price(R0, pulled0=False, strength0="EV", m_coach=1.0, gap0=3,
         gb = np.clip(margin, 2, 4)                     # gap bucket (margin 1 -> gap-2 proxy, documented)
         # --- pull / return decisions (margins 1..4 pull; PK can't pull)
         can_pull = (~pulled) & (margin >= 1) & (strength >= 0)
-        u3 = min(max(u - 1 - coach_shift, 0), 1199)  # coach timing shift applies to the 3-gap decision only
-        hz = np.where(gb == 2, _HAZ[2][u - 1], np.where(gb == 3, _HAZ[3][u3], _HAZ[4][u - 1]))
+        u3 = min(max(u - 1 - coach_shift - _LAG, 0), 1199)  # coach shift + evidence-lag correction (3-gap)
+        uL = min(max(u - 1 - _LAG, 0), 1199)
+        hz = np.where(gb == 2, _HAZ[2][uL], np.where(gb == 3, _HAZ[3][u3], _HAZ[4][uL]))
         mpp = np.where(gb == 2, _MPP[2], np.where(gb == 3, _MPP[3], _MPP[4]))
         h_eff = hz * np.where(strength == 1, mpp, 1.0) * m_coach
         # re-pull dynamics: once committed, return to empty net is ~10x faster (fitted 24-25)
@@ -137,7 +142,7 @@ def p_next_goal_recursion(R0, m_coach=1.0, gap0=3, coach_shift=0):
     Vp = np.zeros(R0 + 1); Vf = np.zeros(R0 + 1); Vc = np.zeros(R0 + 1)
     Vp[0] = Vf[0] = Vc[0] = 1.0
     for u in range(1, R0 + 1):
-        q = _HAZ[gap0][min(max(u - 1 - coach_shift, 0), 1199)] * m_coach
+        q = _HAZ[gap0][min(max(u - 1 - coach_shift - _LAG, 0), 1199)] * m_coach
         qc = max(q, _REPULL)
         Vp[u] = a_en * (_ret * Vc[u - 1] + (1 - _ret) * Vp[u - 1])
         Vc[u] = a_full * ((1 - qc) * Vc[u - 1] + qc * Vp[u - 1])
