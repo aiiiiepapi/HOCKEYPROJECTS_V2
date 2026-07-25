@@ -6,7 +6,7 @@ Merges: clean_window_coach.json (pull % on real chances), pp_pull_coach.json
 Output: data/derived/coach_profiles.json
 Run:    python3 hockeycore/fit/build_coach_profiles.py
 """
-import json
+import json, math
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -30,30 +30,42 @@ def main():
 
     pull_Rs = {}
     for i in insts:
-        if i["pulled"] and i["pull_segments"]:
+        if i["pulled"] and i["pull_segments"] and i["pull_classification"] != "pp_pull":
             pull_Rs.setdefault(i["trailing_coach"], []).append(
                 1200 - i["pull_segments"][0]["empty_from"])
 
+    def jeffreys(k, n):
+        if not n:
+            return None
+        a, b = k + 0.5, n - k + 0.5
+        mu = a / (a + b)
+        sd = math.sqrt(a * b / ((a + b) ** 2 * (a + b + 1)))
+        return [max(0, round(mu - 1.96 * sd, 3)), min(1, round(mu + 1.96 * sd, 3))]
+
     profiles = []
     for coach, c in clean.items():
-        n, k = c["clear_chances"], c["clear_taken"]
+        n, k = c["ev_clear"], c["ev_taken"]          # 5v5-ONLY: the bettable number
         date, team = latest.get(coach, ("", "?"))
         rs = sorted(pull_Rs.get(coach, []))
         med = rs[len(rs) // 2] if rs else None
         p = pp.get(coach, {})
         flags = []
         if p.get("pp_only"):
-            flags.append("PP-ONLY puller")
+            flags.append("pulls ONLY on PP (0% at 5v5 = the bettable number)")
         elif coach in low_tail:
             flags.append("rarely pulls")
         if n < 5:
             flags.append(f"small sample ({n} chances)")
-        if c["clean_rate"] is not None and c["clean_rate"] >= 0.99 and n >= 5:
-            flags.append("pulls EVERY real chance so far")
+        if n and k == n and n >= 5:
+            flags.append("pulls EVERY clean 5v5 chance so far")
+        ppl = p.get("pulls_pp", 0)
+        if ppl and not p.get("pp_only"):
+            flags.append(f"+{ppl} PP pulls (excluded above)")
         profiles.append({
             "team": team, "coach": coach, "last_seen": date,
             "clear_chances": n, "clear_taken": k,
-            "clean_rate": c["clean_rate"], "ci": c["ci"],
+            "clean_rate": (round(k / n, 3) if n else None), "ci": jeffreys(k, n),
+            "overall_rate": c["clean_rate"],
             "median_pull_R": med, "n_pulls": len(rs),
             "m_prod": prod.get(coach, {}).get("m_prod", 1.0),
             "pp_share": p.get("pp_share_of_pulls"), "flags": flags,

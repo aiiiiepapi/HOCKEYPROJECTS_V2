@@ -58,6 +58,7 @@ def analyze():
         goal_secs = [x["secs"] for x in inst["goals_in_window"]]
 
         Hsum = 0.0
+        Hsum_ev = 0.0                # 5v5-only chance mass (PP mass excluded)
         blocked = defaultdict(int)   # reason -> seconds (inside chance-relevant time)
         pullable_secs = 0
         end = min(c, first_pull) if first_pull is not None else c
@@ -69,6 +70,8 @@ def analyze():
             if st in ("EV_full", "TPP_full") and not dead and not dp:
                 pullable_secs += 1
                 Hsum += H[R] * (M_PP if st == "TPP_full" else 1.0)
+                if st == "EV_full":
+                    Hsum_ev += H[R]
             elif H[R] > 0:  # only count blockage where the league actually pulls
                 if st == "TPK_full":
                     blocked["shorthanded"] += 1
@@ -82,6 +85,9 @@ def analyze():
                     blocked["other"] += 1
         q = 1 - math.exp(-Hsum)
         frac = Hsum / H_FULL
+        frac_ev = Hsum_ev / H_FULL
+        pull_type = (inst["pull_classification"] and
+                     ("pp" if inst["pull_classification"] == "pp_pull" else "ev")) if pulled else None
 
         # reason taxonomy for NO-pull instances with little/no real chance
         reason = None
@@ -110,6 +116,7 @@ def analyze():
             "opened_R": 1200 - o, "closed_R": 1200 - c,
             "pulled": pulled, "pull_R": (1200 - first_pull) if first_pull is not None else None,
             "pullable_secs": pullable_secs, "q": round(q, 4), "frac": round(frac, 3),
+            "frac_ev": round(frac_ev, 3), "pull_type": pull_type,
             "blocked": dict(blocked), "reason": reason,
         })
     return out
@@ -140,10 +147,15 @@ def main():
     # ---- coach table
     co = defaultdict(lambda: {"n": 0, "O": 0, "sumq_nopull": 0.0,
                               "clear": 0, "clear_pulled": 0, "declines": [],
-                              "ruined": 0})
+                              "ruined": 0, "ev_clear": 0, "ev_taken": 0})
     for r in rows:
         d = co[r["coach"]]
         d["n"] += 1
+        # ---- 5v5-only ledger (PP pulls are NOT 5v5 willingness evidence)
+        if r["pulled"] and r["pull_type"] == "ev":
+            d["ev_clear"] += 1; d["ev_taken"] += 1
+        elif r["frac_ev"] >= 0.7:      # clean 5v5 mass passed with no EV pull
+            d["ev_clear"] += 1
         if r["pulled"]:
             d["O"] += 1
             d["clear"] += 1          # a pull IS a taken chance
@@ -170,8 +182,11 @@ def main():
             lo, hi = max(0, mu - 1.96 * sd), min(1, mu + 1.96 * sd)
         else:
             mu, lo, hi = None, None, None
+        ek, en = d["ev_taken"], d["ev_clear"]
         table.append({
             "coach": coach, "instances": d["n"], "pulls": d["O"],
+            "ev_clear": en, "ev_taken": ek,
+            "clean_rate_5v5": round(ek / en, 3) if en else None,
             "naive_rate": round(d["O"] / d["n"], 3),
             "clear_chances": n, "clear_taken": k,
             "clean_rate": round(k / n, 3) if n else None,

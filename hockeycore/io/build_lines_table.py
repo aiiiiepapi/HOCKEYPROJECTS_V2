@@ -115,12 +115,13 @@ def main():
     # ---------- COACH GUIDE ----------
     cg = wb.create_sheet("COACH GUIDE", 1)
     cg.sheet_view.showGridLines = False
-    cg["A1"] = ("WHO PULLS, AND WHEN — pull %% counted on REAL chances only "
-                "(gap still 3, net available, no penalty problem, inside the pull zone). "
-                "League average on a real chance: 64%%. 5v5 pulls happen around 4:19 left; power-play pulls around 3:33.")
+    cg["A1"] = ("WHO PULLS, AND WHEN — pull % counted on clean 5v5 chances ONLY "
+                "(gap still 3, net available, 5-on-5, inside the pull zone). PP pulls are EXCLUDED "
+                "on purpose: no line is available once a PP starts, so only 5v5 willingness is bettable. "
+                "5v5 pulls happen around 4:19 left.")
     cg["A1"].font = Font(name="Arial", bold=True, size=11)
     cg.merge_cells("A1:H1")
-    ghdr = ["Team", "Coach", "Pull % (real chances)", "Record", "Range (95%)",
+    ghdr = ["Team", "Coach", "5v5 pull % (bettable)", "Record", "Range (95%)",
             "Typical pull time left", "LINES row to use", "Notes"]
     for j, h in enumerate(ghdr, 1):
         c = cg.cell(row=2, column=j, value=h)
@@ -140,11 +141,9 @@ def main():
     ordered = sorted(profiles, key=lambda p: (p["team"], p is not cur.get(p["team"]), p["coach"]))
     for p in ordered:
         is_cur = cur.get(p["team"]) is p
-        pp_only = "PP-ONLY puller" in p["flags"]
+        pp_only = any("ONLY on PP" in f for f in p["flags"])
         notes = list(p["flags"])
-        if pp_only:
-            notes.append("only pulls ON the power play -> see HOW TO USE")
-        rows_to_use = ("5v5: very passive | on PP: league avg" if pp_only
+        rows_to_use = ("very passive (treat as no-pull)" if pp_only
                        else tier_of(p["m_prod"]))
         med = p["median_pull_R"]
         timing = f"{med//60}:{med%60:02d}" if med and p["n_pulls"] >= 3 else "~4:19 (league, few pulls)"
@@ -180,12 +179,13 @@ def main():
         "2. LINES tab: filter 'Situation' + 'Coach type' to what the guide told you, find the time remaining.",
         "3. TRUE line = fair price (break-even). Line @10% = worst price that still pays +10%% EV. Book offering better than the @10%% number = bet. Worse = pass.",
         "",
-        "THE POWER-PLAY THING, PLAINLY:",
-        "'Net in — POWER PLAY' rows = the team that is DOWN 3 has a power play. Pulling the goalie then gives 6 skaters vs 4 — the best pull there is.",
-        "Every coach pulls more on the PP (league: ~4x). But four coaches — Tortorella, McLellan, Cronin, Huska — basically ONLY pull then:",
-        "two full seasons, ZERO 5v5 pulls between them, yet on the PP they pull at league rate or higher.",
-        "So for those four: down 3 at 5v5 -> assume NO pull is coming (very passive rows). They get a power play under ~7:00 -> switch to the",
-        "POWER PLAY rows at league-avg aggression. That is the moment their pull (and your over/-3.5 value) actually arrives.",
+        "WHY PP PULLS ARE SHOWN SEPARATELY (NOT a betting trigger):",
+        "You will never get a line once the trailing team is on a power play — books pull the market. So PP pulls can never be bet on.",
+        "They matter for one reason: getting a coach's TRUE 5v5 willingness right. Four coaches (Tortorella, McLellan, Cronin, Huska)",
+        "look like occasional pullers in raw stats, but every one of their pulls came on a PP. Counting those would trick you into",
+        "pricing some 5v5 pull chance for them. The truth: at 5v5 they are 0-for-23 combined on clean chances — treat as no-pull teams.",
+        "Same logic everywhere: the guide's pull % counts ONLY clean 5v5 chances, so e.g. Keefe is 38% (not the 53% raw) and",
+        "Bednar's 100% is 6/6 pure 5v5. The POWER PLAY rows stay in the LINES tab for understanding the game, not for betting.",
         "",
         "Reading lines: -196 means bet only at -196 or better (e.g. -180, -150, +110). +150 means +150 or longer.",
         "Pull % caveat: 9/9 does NOT mean a guaranteed 100%% — small samples, read the Range column (9/9 -> can't rule out ~82%).",
