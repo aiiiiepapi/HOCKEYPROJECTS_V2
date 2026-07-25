@@ -35,7 +35,7 @@ def test_directions_fits():
 
 def test_directions_pricing():
     t = json.load(open(DER / "pricing_table_production.json"))
-    avg = [r for r in t if r["coach"] == "league_avg_1.00"]
+    avg = [r for r in t if r.get("tier") == 1.0 or r.get("coach") == "league_avg_1.00"]
     ev = sorted([r for r in avg if r["state"] == "not_pulled_EV"], key=lambda r: -r["R"])
     assert all(a["P_total_ge1"] >= b["P_total_ge1"] - 0.01 for a, b in zip(ev, ev[1:]))     # D1
     for R in (600, 300, 180):                                                                # D2
