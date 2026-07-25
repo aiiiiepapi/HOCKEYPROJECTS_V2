@@ -19,6 +19,14 @@
    lines, NOT by market availability.
 6. **Other leagues (incl. AHL): parked.** "Finalize NHL first and make sure
    we are 100% ready and accurate."
+7. **2+-more-goals markets DROPPED entirely** ("we dont want the over 1.5
+   goals thing"). Removed from calculator and line tables. The pulled-state
+   overshoot gate survives as a model-health diagnostic only — no more
+   convergence hunts on it.
+8. **PP-pull directive**: PP pulls need their own per-coach weighting ("some
+   teams only pull on PP" — CONFIRMED: Tortorella/McLellan/Cronin/Huska, 0 EV
+   pulls in 35k+ EV secs, league+ rate on PP). Coach layer to become
+   (m_EV, m_PP). Covariate backlog to be triaged: keep signal, drop noise.
 
 ## Earlier standing rulings
 - 2026-07-24: full v2 rebuild, trust nothing from v1 except raw data + docs.
