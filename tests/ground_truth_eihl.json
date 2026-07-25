@@ -1,0 +1,133 @@
+{
+ "_meta": {
+  "derived": "2026-07-25 hand-traced from raw EIHL HTML feeds (cumulative clock; P3 secs = t-2400)",
+  "games_files": {
+   "4719": "gla_man",
+   "4716": "gui_gla",
+   "4715": "she_dun",
+   "4730": "not_dun"
+  }
+ },
+ "games": {
+  "4719": {
+   "instances": [
+    {
+     "n": 1,
+     "trailing": "Glasgow Clan",
+     "opened_secs": 463,
+     "closed_secs": 1071,
+     "closed_reason": "widened",
+     "pulled": true,
+     "pull_evidence_secs": 1048,
+     "pull_classification": "pull",
+     "segments": [
+      [
+       1048,
+       1071
+      ]
+     ],
+     "goals": [
+      {
+       "secs": 1071,
+       "by_trailer": false,
+       "en": true,
+       "closes": true
+      }
+     ],
+     "notes": "0:3 at 47:43 PP goal opens; GLA pulls 57:28 down 3 (2:32 left); EN goal 57:51; keeper back same second [GT corrected: hand arithmetic slip 1151->1071, caught by engine cross-validation]"
+    }
+   ]
+  },
+  "4716": {
+   "instances": [
+    {
+     "n": 1,
+     "trailing": "Glasgow Clan",
+     "opened_secs": 482,
+     "closed_secs": 969,
+     "closed_reason": "widened",
+     "pulled": true,
+     "pull_evidence_secs": 936,
+     "pull_classification": "pp_pull",
+     "segments": [
+      [
+       936,
+       969
+      ]
+     ],
+     "goals": [
+      {
+       "secs": 969,
+       "by_trailer": false,
+       "en": true,
+       "closes": true
+      }
+     ],
+     "notes": "pull at 55:36 same second as GUI slashing penalty -> 6v4 pp_pull; EN against 56:09"
+    }
+   ]
+  },
+  "4715": {
+   "instances": [
+    {
+     "n": 1,
+     "trailing": "Dundee Stars",
+     "opened_secs": 0,
+     "closed_secs": 117,
+     "closed_reason": "widened",
+     "pulled": false,
+     "pull_evidence_secs": null,
+     "goals": [
+      {
+       "secs": 117,
+       "by_trailer": false,
+       "en": false,
+       "closes": true
+      }
+     ],
+     "notes": "gap 3 at P3 start; SHE shorthanded goal 41:57 widens; no pull"
+    }
+   ]
+  },
+  "4730": {
+   "instances": [
+    {
+     "n": 1,
+     "trailing": "Dundee Stars",
+     "opened_secs": 0,
+     "closed_secs": 558,
+     "closed_reason": "widened",
+     "pulled": false,
+     "pull_evidence_secs": null,
+     "goals": [
+      {
+       "secs": 558,
+       "by_trailer": false,
+       "en": false,
+       "closes": true
+      }
+     ],
+     "notes": "entered P3 at 4:1; NOT PP goal 49:18 widens"
+    },
+    {
+     "n": 2,
+     "trailing": "Dundee Stars",
+     "opened_secs": 838,
+     "closed_secs": 961,
+     "closed_reason": "narrowed",
+     "pulled": false,
+     "pull_evidence_secs": null,
+     "goals": [
+      {
+       "secs": 961,
+       "by_trailer": true,
+       "en": false,
+       "closes": true
+      }
+     ],
+     "notes": "reopened by DUN PP goal 53:58 (5:2); closed by DUN shorthanded goal 56:01 (5:3)"
+    }
+   ]
+  }
+ }
+}

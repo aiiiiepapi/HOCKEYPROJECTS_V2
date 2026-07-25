@@ -1,0 +1,121 @@
+{
+  "_meta": {
+    "derived": "2026-07-24, hand-traced from raw pbp by Manager session (v2, independent of v1 ground truth)",
+    "time_convention": "seconds elapsed in period 3 (0-1200)",
+    "situation_code": "[awayGoalieIn][awaySkaters][homeSkaters][homeGoalieIn]; goalie digit 0 = net empty",
+    "pull_time_convention": "pull_evidence_secs = timeInPeriod of FIRST raw event showing trailing net empty; true pull occurred at or before this moment",
+    "rules": "3rd period regulation only; instance = |gap|==3 window; gap-creating goal excluded from scoring window; gap-closing goal included and closes it; delayed-penalty goalie-off is NOT a pull"
+  },
+  "games": {
+    "2024020001": {
+      "matchup": "NJD(away,teamId 1) @ BUF(home,teamId 7)", "p3_entry_score": "3-0",
+      "instances": [
+        {"n": 1, "trailing": "BUF", "opened_secs": 0, "opened_by": "pre-existing at P3 start",
+         "closed_secs": 607, "closed_reason": "narrowed", "closing_goal_event": 1731224,
+         "pulled": false, "notes": "BUF on PP 343-463s (NJD holding #1731164) — did NOT pull during PP",
+         "goals_in_window": [{"secs": 607, "team": "BUF", "en": false, "closes": true}]},
+        {"n": 2, "trailing": "BUF", "opened_secs": 1048, "opened_by": "EN goal #1731328 (NJD, vs 2-gap pull [1560])",
+         "closed_secs": 1200, "closed_reason": "end_of_game",
+         "pulled": false, "goals_in_window": [],
+         "notes": "opened with 2:32 left; gap-creating goal was an empty-netter against BUF's 2-gap pull"}
+      ]
+    },
+    "2024020010": {
+      "matchup": "COL(away,21) @ VGK(home,54)", "p3_entry_score": "3-5",
+      "instances": [
+        {"n": 1, "trailing": "COL", "opened_secs": 834, "opened_by": "goal #989 (VGK 4-7)",
+         "closed_secs": 1164, "closed_reason": "widened", "closing_goal_event": 1053,
+         "pulled": true, "pull_evidence_secs": 880, "pull_evidence_event": 78,
+         "pull_classification": "pull", "pull_strength_at_evidence": "0651 (6v5, even)",
+         "pull_end": {"secs": 1164, "reason": "en_goal_against", "event": 1053},
+         "goals_in_window": [{"secs": 1164, "team": "VGK", "en": true, "closes": true}],
+         "notes": "very early pull — net empty by 14:40 faceoff, 5:20 remaining"}
+      ]
+    },
+    "2024020047": {
+      "matchup": "NYI(away,2) @ COL(home,21)", "p3_entry_score": "4-1",
+      "instances": [
+        {"n": 1, "trailing": "COL", "opened_secs": 0, "opened_by": "pre-existing at P3 start (COL on PP, sit 1451)",
+         "closed_secs": 39, "closed_reason": "narrowed", "closing_goal_event": 905,
+         "pulled": false, "goals_in_window": [{"secs": 39, "team": "COL", "en": false, "closes": true, "strength": "PP"}]},
+        {"n": 2, "trailing": "COL", "opened_secs": 408, "opened_by": "goal #996 (NYI 5-2)",
+         "closed_secs": 1128, "closed_reason": "widened", "closing_goal_event": 1190,
+         "pulled": true, "pull_evidence_secs": 926, "pull_evidence_event": 621,
+         "pull_classification": "pull", "pull_strength_at_evidence": "1560 (5v6, even)",
+         "pull_end": {"secs": 1128, "reason": "en_goal_against", "event": 1190},
+         "goals_in_window": [{"secs": 1128, "team": "NYI", "en": true, "closes": true}],
+         "notes": "LEADING team (NYI) net empty 769-771s during delayed penalty ON COL (#428, sit 0651) — NOT a pull, and not by the trailing team. COL on PK 771-891s (81s inside the 810-900 decision window) then pulled anyway at ~926s."}
+      ]
+    },
+    "2024020027": {
+      "matchup": "OTT(away,9) @ MTL(home,8)", "p3_entry_score": "0-2",
+      "instances": [
+        {"n": 1, "trailing": "OTT", "opened_secs": 230, "opened_by": "goal #803 (MTL 0-3)",
+         "closed_secs": 330, "closed_reason": "narrowed", "closing_goal_event": 823,
+         "pulled": false, "goals_in_window": [{"secs": 330, "team": "OTT", "en": false, "closes": true}]},
+        {"n": 2, "trailing": "OTT", "opened_secs": 463, "opened_by": "goal #907 (MTL 1-4) — SAME timestamp as delayed-penalty #463 on OTT",
+         "closed_secs": 1200, "closed_reason": "end_of_game",
+         "pulled": true, "pull_evidence_secs": 986, "pull_evidence_event": 615,
+         "pull_classification": "pull", "pull_strength_at_evidence": "0651 (6v5, even; OTT PP 810-930 had already expired)",
+         "pull_end": {"secs": 1185, "reason": "goalie_returned", "event": 619},
+         "goals_in_window": [],
+         "notes": "ZERO-GOAL GOALIE-RETURNED pull: net empty 986→1185, goalie back for 19:45 faceoff, no goal either way, game ends 2-4. OTT had a PP 810-930s during the gap and did NOT pull during it."}
+      ]
+    },
+    "2024020004": {
+      "matchup": "BOS(away,6) @ FLA(home,13)", "p3_entry_score": "2-5",
+      "instances": [
+        {"n": 1, "trailing": "BOS", "opened_secs": 0, "opened_by": "pre-existing at P3 start (FLA shorthanded, sit 1541 — BOS on PP)",
+         "closed_secs": 386, "closed_reason": "widened", "closing_goal_event": 970,
+         "pulled": false, "goals_in_window": [{"secs": 386, "team": "FLA", "en": false, "closes": true}]},
+        {"n": 2, "trailing": "BOS", "opened_secs": 1011, "opened_by": "goal #1115 (BOS 3-6) narrowing 4-gap",
+         "closed_secs": 1095, "closed_reason": "narrowed", "closing_goal_event": 1136,
+         "pulled": false,
+         "goals_in_window": [{"secs": 1095, "team": "BOS", "en": false, "closes": true, "strength": "PP (1541)"}],
+         "notes": "opened 3:09 before horn (just above v1's 3:00 cutoff); BOS pulled only AFTER gap narrowed to 2 (sit 0651 at 1095s faceoff — outside instance)"}
+      ]
+    },
+    "2024020053": {
+      "matchup": "SEA(away,55) @ NSH(home,18)", "p3_entry_score": "3-3",
+      "instances": [
+        {"n": 1, "trailing": "NSH", "opened_secs": 717, "opened_by": "goal #1031 (SEA 6-3)",
+         "closed_secs": 1076, "closed_reason": "widened", "closing_goal_event": 1093,
+         "pulled": true, "pull_evidence_secs": 853, "pull_evidence_event": 100,
+         "pull_classification": "pull", "pull_strength_at_evidence": "1560 (5v6, even)",
+         "pull_segments": [
+           {"empty_from": 853, "empty_until": 926, "return_event": 602, "return_reason": "no goal — voluntary return"},
+           {"empty_from": 985, "empty_until": 1016, "return_event": 605, "return_reason": "no goal — voluntary return"},
+           {"empty_from": 1052, "empty_until": 1076, "return_reason": "en_goal_against", "end_event": 1093}
+         ],
+         "pull_end": {"secs": 1076, "reason": "en_goal_against", "event": 1093},
+         "goals_in_window": [{"secs": 1076, "team": "SEA", "en": true, "closes": true}],
+         "notes": "TRIPLE PULL: net empty 853-926, 985-1016, 1052-1076. First evidence at 14:13 = 5:47 remaining, extremely early. Tests event-level state tracking."}
+      ]
+    },
+    "2024020048": {
+      "matchup": "VAN(away,23) @ TBL(home,14)", "p3_entry_score": "0-2",
+      "instances": [
+        {"n": 1, "trailing": "VAN", "opened_secs": 39, "opened_by": "goal #935 (TBL 0-3)",
+         "closed_secs": 254, "closed_reason": "narrowed", "closing_goal_event": 983,
+         "pulled": false, "pull_classification_note": "delayed_penalty",
+         "trailing_net_empty_delayed_penalty": {"from": 129, "until": 135, "evidence_events": [970, 966], "sit": "0541",
+           "cause": "delayed penalty #552 ON TBL during 4v4 — VAN goalie off for the delayed call, back at 4v3 PP faceoff"},
+         "goals_in_window": [{"secs": 254, "team": "VAN", "en": false, "closes": true, "strength": "PP 4v3"}],
+         "notes": "the delayed-penalty classification case: trailing team's net empty inside the gap window but ONLY during a delayed call — not a pull decision"},
+        {"n": 2, "trailing": "VAN", "opened_secs": 1094, "opened_by": "EN goal #1217 (TBL 1-4, vs VAN 2-gap pull [0651])",
+         "closed_secs": 1200, "closed_reason": "end_of_game",
+         "pulled": false, "goals_in_window": [],
+         "notes": "opened 1:46 before horn; VAN shorthanded (double minor #1233) from 1165s to end — could not pull"}
+      ]
+    },
+    "2024020005": {
+      "matchup": "CHI(away,16) @ UTA(home,59)", "p3_entry_score": "1-3",
+      "instances": [
+        {"n": 1, "trailing": "CHI", "opened_secs": 1178, "opened_by": "goal #1128 (UTA 2-5)",
+         "closed_secs": 1200, "closed_reason": "end_of_game",
+         "pulled": false, "goals_in_window": [],
+         "notes": "extreme late open — 22 seconds of instance; the control case for duration flags. Gap chain that night: CHI pulled at 1-gap (0651 at 1086s), conceded EN #1123 → 2-gap, then UTA scored again #1128 → 3-gap at 19:38"}
+      ]
+    }
+  }
+}

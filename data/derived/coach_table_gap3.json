@@ -1,0 +1,272 @@
+[
+ {
+  "coach": "Jared Bednar",
+  "pulls": 9,
+  "expected": 1.25,
+  "m_shrunk": 3.386
+ },
+ {
+  "coach": "Dan Muse",
+  "pulls": 8,
+  "expected": 2.19,
+  "m_shrunk": 2.386
+ },
+ {
+  "coach": "Joe Sacco",
+  "pulls": 5,
+  "expected": 1.08,
+  "m_shrunk": 2.272
+ },
+ {
+  "coach": "Patrick Roy",
+  "pulls": 12,
+  "expected": 4.68,
+  "m_shrunk": 2.097
+ },
+ {
+  "coach": "Craig Berube",
+  "pulls": 15,
+  "expected": 7.54,
+  "m_shrunk": 1.781
+ },
+ {
+  "coach": "Peter Laviolette",
+  "pulls": 3,
+  "expected": 0.83,
+  "m_shrunk": 1.764
+ },
+ {
+  "coach": "Glen Gulutzan",
+  "pulls": 5,
+  "expected": 2.36,
+  "m_shrunk": 1.607
+ },
+ {
+  "coach": "Travis Green",
+  "pulls": 11,
+  "expected": 7.06,
+  "m_shrunk": 1.435
+ },
+ {
+  "coach": "D.J. Smith",
+  "pulls": 1,
+  "expected": 0.12,
+  "m_shrunk": 1.414
+ },
+ {
+  "coach": "Dan Bylsma",
+  "pulls": 7,
+  "expected": 4.57,
+  "m_shrunk": 1.371
+ },
+ {
+  "coach": "Kris Knoblauch",
+  "pulls": 7,
+  "expected": 4.68,
+  "m_shrunk": 1.348
+ },
+ {
+  "coach": "Lindy Ruff",
+  "pulls": 11,
+  "expected": 7.76,
+  "m_shrunk": 1.332
+ },
+ {
+  "coach": "Joel Quenneville",
+  "pulls": 3,
+  "expected": 1.79,
+  "m_shrunk": 1.32
+ },
+ {
+  "coach": "Jon Cooper",
+  "pulls": 9,
+  "expected": 6.48,
+  "m_shrunk": 1.298
+ },
+ {
+  "coach": "Scott Arniel",
+  "pulls": 6,
+  "expected": 4.26,
+  "m_shrunk": 1.278
+ },
+ {
+  "coach": "John Hynes",
+  "pulls": 7,
+  "expected": 5.68,
+  "m_shrunk": 1.171
+ },
+ {
+  "coach": "Jeff Blashill",
+  "pulls": 3,
+  "expected": 2.27,
+  "m_shrunk": 1.171
+ },
+ {
+  "coach": "Derek Lalonde",
+  "pulls": 3,
+  "expected": 2.39,
+  "m_shrunk": 1.138
+ },
+ {
+  "coach": "Paul Maurice",
+  "pulls": 7,
+  "expected": 6.34,
+  "m_shrunk": 1.079
+ },
+ {
+  "coach": "Martin St. Louis",
+  "pulls": 6,
+  "expected": 5.44,
+  "m_shrunk": 1.075
+ },
+ {
+  "coach": "Adam Foote",
+  "pulls": 8,
+  "expected": 7.6,
+  "m_shrunk": 1.042
+ },
+ {
+  "coach": "Dean Evason",
+  "pulls": 6,
+  "expected": 6.06,
+  "m_shrunk": 0.993
+ },
+ {
+  "coach": "Mike Sullivan",
+  "pulls": 6,
+  "expected": 6.06,
+  "m_shrunk": 0.993
+ },
+ {
+  "coach": "Rick Tocchet",
+  "pulls": 5,
+  "expected": 5.5,
+  "m_shrunk": 0.933
+ },
+ {
+  "coach": "Rick Bowness",
+  "pulls": 0,
+  "expected": 0.16,
+  "m_shrunk": 0.925
+ },
+ {
+  "coach": "Drew Bannister",
+  "pulls": 0,
+  "expected": 0.22,
+  "m_shrunk": 0.903
+ },
+ {
+  "coach": "Jim Hiller",
+  "pulls": 4,
+  "expected": 4.93,
+  "m_shrunk": 0.865
+ },
+ {
+  "coach": "Peter DeBoer",
+  "pulls": 1,
+  "expected": 1.6,
+  "m_shrunk": 0.833
+ },
+ {
+  "coach": "Bruce Cassidy",
+  "pulls": 7,
+  "expected": 8.98,
+  "m_shrunk": 0.819
+ },
+ {
+  "coach": "Sheldon Keefe",
+  "pulls": 8,
+  "expected": 11.02,
+  "m_shrunk": 0.768
+ },
+ {
+  "coach": "Brad Shaw",
+  "pulls": 0,
+  "expected": 0.65,
+  "m_shrunk": 0.755
+ },
+ {
+  "coach": "Jim Montgomery",
+  "pulls": 4,
+  "expected": 6.16,
+  "m_shrunk": 0.736
+ },
+ {
+  "coach": "Lane Lambert",
+  "pulls": 4,
+  "expected": 6.31,
+  "m_shrunk": 0.722
+ },
+ {
+  "coach": "Rod Brind'Amour",
+  "pulls": 4,
+  "expected": 6.31,
+  "m_shrunk": 0.722
+ },
+ {
+  "coach": "Ryan Warsofsky",
+  "pulls": 5,
+  "expected": 8.17,
+  "m_shrunk": 0.688
+ },
+ {
+  "coach": "Marco Sturm",
+  "pulls": 1,
+  "expected": 2.44,
+  "m_shrunk": 0.675
+ },
+ {
+  "coach": "Spencer Carbery",
+  "pulls": 3,
+  "expected": 5.85,
+  "m_shrunk": 0.637
+ },
+ {
+  "coach": "Greg Cronin",
+  "pulls": 2,
+  "expected": 4.54,
+  "m_shrunk": 0.612
+ },
+ {
+  "coach": "Luke Richardson",
+  "pulls": 0,
+  "expected": 1.27,
+  "m_shrunk": 0.611
+ },
+ {
+  "coach": "Andr\u00c3\u00a9 Tourigny",
+  "pulls": 2,
+  "expected": 5.84,
+  "m_shrunk": 0.51
+ },
+ {
+  "coach": "Todd McLellan",
+  "pulls": 2,
+  "expected": 5.96,
+  "m_shrunk": 0.502
+ },
+ {
+  "coach": "Andrew Brunette",
+  "pulls": 4,
+  "expected": 10.66,
+  "m_shrunk": 0.474
+ },
+ {
+  "coach": "John Tortorella",
+  "pulls": 2,
+  "expected": 6.56,
+  "m_shrunk": 0.467
+ },
+ {
+  "coach": "Ryan Huska",
+  "pulls": 1,
+  "expected": 8.32,
+  "m_shrunk": 0.291
+ },
+ {
+  "coach": "Anders Sorensen",
+  "pulls": 0,
+  "expected": 6.05,
+  "m_shrunk": 0.248
+ }
+]

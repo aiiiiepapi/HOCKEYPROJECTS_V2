@@ -1,0 +1,366 @@
+{
+ "attenuation": 0.355,
+ "k": 2.0,
+ "coaches": [
+  {
+   "coach": "Jared Bednar",
+   "pulls": 9,
+   "expected": 1.25,
+   "m_eb": 3.386,
+   "m_prod": 1.847,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Dan Muse",
+   "pulls": 8,
+   "expected": 2.19,
+   "m_eb": 2.386,
+   "m_prod": 1.492,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Joe Sacco",
+   "pulls": 5,
+   "expected": 1.08,
+   "m_eb": 2.272,
+   "m_prod": 1.452,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Patrick Roy",
+   "pulls": 12,
+   "expected": 4.68,
+   "m_eb": 2.097,
+   "m_prod": 1.39,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Craig Berube",
+   "pulls": 15,
+   "expected": 7.54,
+   "m_eb": 1.781,
+   "m_prod": 1.277,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Peter Laviolette",
+   "pulls": 3,
+   "expected": 0.83,
+   "m_eb": 1.764,
+   "m_prod": 1.271,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Glen Gulutzan",
+   "pulls": 5,
+   "expected": 2.36,
+   "m_eb": 1.607,
+   "m_prod": 1.215,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Travis Green",
+   "pulls": 11,
+   "expected": 7.06,
+   "m_eb": 1.435,
+   "m_prod": 1.154,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "D.J. Smith",
+   "pulls": 1,
+   "expected": 0.12,
+   "m_eb": 1.414,
+   "m_prod": 1.147,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Dan Bylsma",
+   "pulls": 7,
+   "expected": 4.57,
+   "m_eb": 1.371,
+   "m_prod": 1.132,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Kris Knoblauch",
+   "pulls": 7,
+   "expected": 4.68,
+   "m_eb": 1.348,
+   "m_prod": 1.123,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Lindy Ruff",
+   "pulls": 11,
+   "expected": 7.76,
+   "m_eb": 1.332,
+   "m_prod": 1.118,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Joel Quenneville",
+   "pulls": 3,
+   "expected": 1.79,
+   "m_eb": 1.32,
+   "m_prod": 1.114,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Jon Cooper",
+   "pulls": 9,
+   "expected": 6.48,
+   "m_eb": 1.298,
+   "m_prod": 1.106,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Scott Arniel",
+   "pulls": 6,
+   "expected": 4.26,
+   "m_eb": 1.278,
+   "m_prod": 1.099,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "John Hynes",
+   "pulls": 7,
+   "expected": 5.68,
+   "m_eb": 1.171,
+   "m_prod": 1.061,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Jeff Blashill",
+   "pulls": 3,
+   "expected": 2.27,
+   "m_eb": 1.171,
+   "m_prod": 1.061,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Derek Lalonde",
+   "pulls": 3,
+   "expected": 2.39,
+   "m_eb": 1.138,
+   "m_prod": 1.049,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Paul Maurice",
+   "pulls": 7,
+   "expected": 6.34,
+   "m_eb": 1.079,
+   "m_prod": 1.028,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Martin St. Louis",
+   "pulls": 6,
+   "expected": 5.44,
+   "m_eb": 1.075,
+   "m_prod": 1.027,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Adam Foote",
+   "pulls": 8,
+   "expected": 7.6,
+   "m_eb": 1.042,
+   "m_prod": 1.015,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Mike Sullivan",
+   "pulls": 6,
+   "expected": 6.06,
+   "m_eb": 0.993,
+   "m_prod": 0.997,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Dean Evason",
+   "pulls": 6,
+   "expected": 6.06,
+   "m_eb": 0.993,
+   "m_prod": 0.997,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Rick Tocchet",
+   "pulls": 5,
+   "expected": 5.5,
+   "m_eb": 0.933,
+   "m_prod": 0.976,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Rick Bowness",
+   "pulls": 0,
+   "expected": 0.16,
+   "m_eb": 0.925,
+   "m_prod": 0.973,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Drew Bannister",
+   "pulls": 0,
+   "expected": 0.22,
+   "m_eb": 0.903,
+   "m_prod": 0.966,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Jim Hiller",
+   "pulls": 4,
+   "expected": 4.93,
+   "m_eb": 0.865,
+   "m_prod": 0.952,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Peter DeBoer",
+   "pulls": 1,
+   "expected": 1.6,
+   "m_eb": 0.833,
+   "m_prod": 0.941,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Bruce Cassidy",
+   "pulls": 7,
+   "expected": 8.98,
+   "m_eb": 0.819,
+   "m_prod": 0.936,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Sheldon Keefe",
+   "pulls": 8,
+   "expected": 11.02,
+   "m_eb": 0.768,
+   "m_prod": 0.918,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Brad Shaw",
+   "pulls": 0,
+   "expected": 0.65,
+   "m_eb": 0.755,
+   "m_prod": 0.913,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Jim Montgomery",
+   "pulls": 4,
+   "expected": 6.16,
+   "m_eb": 0.736,
+   "m_prod": 0.906,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Rod Brind'Amour",
+   "pulls": 4,
+   "expected": 6.31,
+   "m_eb": 0.722,
+   "m_prod": 0.901,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Lane Lambert",
+   "pulls": 4,
+   "expected": 6.31,
+   "m_eb": 0.722,
+   "m_prod": 0.901,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Ryan Warsofsky",
+   "pulls": 5,
+   "expected": 8.17,
+   "m_eb": 0.688,
+   "m_prod": 0.889,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Marco Sturm",
+   "pulls": 1,
+   "expected": 2.44,
+   "m_eb": 0.675,
+   "m_prod": 0.885,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Spencer Carbery",
+   "pulls": 3,
+   "expected": 5.85,
+   "m_eb": 0.637,
+   "m_prod": 0.871,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Luke Richardson",
+   "pulls": 0,
+   "expected": 1.27,
+   "m_eb": 0.611,
+   "m_prod": 0.862,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Greg Cronin",
+   "pulls": 2,
+   "expected": 4.54,
+   "m_eb": 0.612,
+   "m_prod": 0.862,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Andr\u00c3\u00a9 Tourigny",
+   "pulls": 2,
+   "expected": 5.84,
+   "m_eb": 0.51,
+   "m_prod": 0.826,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Todd McLellan",
+   "pulls": 2,
+   "expected": 5.96,
+   "m_eb": 0.502,
+   "m_prod": 0.823,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Andrew Brunette",
+   "pulls": 4,
+   "expected": 10.66,
+   "m_eb": 0.474,
+   "m_prod": 0.813,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "John Tortorella",
+   "pulls": 2,
+   "expected": 6.56,
+   "m_eb": 0.467,
+   "m_prod": 0.811,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Ryan Huska",
+   "pulls": 1,
+   "expected": 8.32,
+   "m_eb": 0.291,
+   "m_prod": 0.748,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  },
+  {
+   "coach": "Anders Sorensen",
+   "pulls": 0,
+   "expected": 6.05,
+   "m_eb": 0.248,
+   "m_prod": 0.733,
+   "new_situation_note": "flag resets on team change; <5 instances with current team \u2192 widened band"
+  }
+ ]
+}

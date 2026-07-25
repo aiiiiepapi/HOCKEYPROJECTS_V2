@@ -1,0 +1,8 @@
+data/raw/
+data/derived/instances_gap*.json
+data/derived/backtest_rows.json
+data/derived/scan_results.json
+data/derived/coach_exposure*.json
+__pycache__/
+.pytest_cache/
+*.pyc

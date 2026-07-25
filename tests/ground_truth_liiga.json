@@ -1,0 +1,92 @@
+{
+ "_meta": {
+  "derived": "2026-07-25 hand-traced from raw Liiga JSON (gameTime cumulative secs; P3 secs = t-2400)"
+ },
+ "games": {
+  "3": {
+   "instances": [
+    {
+     "n": 1,
+     "trailing": "home",
+     "opened_secs": 0,
+     "closed_secs": 918,
+     "closed_reason": "widened",
+     "pulled": false
+    },
+    {
+     "n": 2,
+     "trailing": "home",
+     "opened_secs": 928,
+     "closed_secs": 1051,
+     "closed_reason": "widened",
+     "pulled": true,
+     "pull_evidence_secs": 971,
+     "pull_classification": "pull",
+     "segments": [
+      [
+       971,
+       1051
+      ]
+     ],
+     "notes": "EN goal closes; away penalty long expired at pull"
+    }
+   ]
+  },
+  "4": {
+   "instances": [
+    {
+     "n": 1,
+     "trailing": "home",
+     "opened_secs": 1110,
+     "closed_secs": 1200,
+     "closed_reason": "end_of_game",
+     "pulled": false,
+     "notes": "gap created BY the EN goal vs K\u00e4rp\u00e4t's 2-gap pull (empty 3424-3510 ends at creating goal) \u2014 carryover, correctly NOT a 3-gap pull"
+    }
+   ]
+  },
+  "9": {
+   "instances": [
+    {
+     "n": 1,
+     "trailing": "away",
+     "opened_secs": 0,
+     "closed_secs": 1170,
+     "closed_reason": "widened",
+     "pulled": true,
+     "pull_evidence_secs": 1083,
+     "pull_classification": "pull",
+     "segments": [
+      [
+       1083,
+       1170
+      ]
+     ],
+     "notes": "MATCHING minors both sides at 3404 -> 4v4 at pull time; NOT a power play. Adapter must use net penalty advantage, not leader-box-only"
+    }
+   ]
+  },
+  "13": {
+   "instances": [
+    {
+     "n": 1,
+     "trailing": "away",
+     "opened_secs": 459,
+     "closed_secs": 728,
+     "closed_reason": "narrowed",
+     "pulled": false,
+     "notes": "3-0 at 2859 opens (h2859 - entering P3 2-0); away PP goal 3128 narrows"
+    },
+    {
+     "n": 2,
+     "trailing": "away",
+     "opened_secs": 1070,
+     "closed_secs": 1200,
+     "closed_reason": "end_of_game",
+     "pulled": false,
+     "notes": "GT CORRECTED: 3374 'goal' was RL0 = FAILED penalty shot (official P3 totals prove non-goal). Real reopen = TM goal 3470 (4-1) vs HPK 2-gap pull (empty 3432-3470 = carryover, not a 3-gap pull). v1 was RIGHT here; my first trace was wrong."
+    }
+   ]
+  }
+ }
+}

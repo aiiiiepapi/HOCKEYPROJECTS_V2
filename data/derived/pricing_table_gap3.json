@@ -1,0 +1,812 @@
+[
+ {
+  "R": 900,
+  "state": "not_pulled_EV",
+  "coach": "Tortorella(0.47)",
+  "P_leader_ge1": 0.5731,
+  "P_leader_ge2": 0.1588,
+  "P_total_ge1": 0.7417,
+  "P_total_ge2": 0.4346,
+  "P_margin_ge4": 0.3551
+ },
+ {
+  "R": 900,
+  "state": "not_pulled_EV",
+  "coach": "league_avg(1.0)",
+  "P_leader_ge1": 0.643,
+  "P_leader_ge2": 0.1827,
+  "P_total_ge1": 0.7915,
+  "P_total_ge2": 0.4789,
+  "P_margin_ge4": 0.4034
+ },
+ {
+  "R": 900,
+  "state": "not_pulled_EV",
+  "coach": "Bednar(3.39)",
+  "P_leader_ge1": 0.7723,
+  "P_leader_ge2": 0.2523,
+  "P_total_ge1": 0.9006,
+  "P_total_ge2": 0.5488,
+  "P_margin_ge4": 0.5239
+ },
+ {
+  "R": 900,
+  "state": "not_pulled_PP",
+  "coach": "Tortorella(0.47)",
+  "P_leader_ge1": 0.5634,
+  "P_leader_ge2": 0.1512,
+  "P_total_ge1": 0.7522,
+  "P_total_ge2": 0.4568,
+  "P_margin_ge4": 0.3276
+ },
+ {
+  "R": 900,
+  "state": "not_pulled_PP",
+  "coach": "league_avg(1.0)",
+  "P_leader_ge1": 0.6339,
+  "P_leader_ge2": 0.176,
+  "P_total_ge1": 0.7997,
+  "P_total_ge2": 0.5028,
+  "P_margin_ge4": 0.3745
+ },
+ {
+  "R": 900,
+  "state": "not_pulled_PP",
+  "coach": "Bednar(3.39)",
+  "P_leader_ge1": 0.7609,
+  "P_leader_ge2": 0.248,
+  "P_total_ge1": 0.9049,
+  "P_total_ge2": 0.5716,
+  "P_margin_ge4": 0.4948
+ },
+ {
+  "R": 900,
+  "state": "pulled",
+  "coach": "Tortorella(0.47)",
+  "P_leader_ge1": 0.7993,
+  "P_leader_ge2": 0.3229,
+  "P_total_ge1": 0.9257,
+  "P_total_ge2": 0.6245,
+  "P_margin_ge4": 0.531
+ },
+ {
+  "R": 900,
+  "state": "pulled",
+  "coach": "league_avg(1.0)",
+  "P_leader_ge1": 0.8292,
+  "P_leader_ge2": 0.3498,
+  "P_total_ge1": 0.9403,
+  "P_total_ge2": 0.6483,
+  "P_margin_ge4": 0.5575
+ },
+ {
+  "R": 900,
+  "state": "pulled",
+  "coach": "Bednar(3.39)",
+  "P_leader_ge1": 0.8734,
+  "P_leader_ge2": 0.4207,
+  "P_total_ge1": 0.9708,
+  "P_total_ge2": 0.6843,
+  "P_margin_ge4": 0.6251
+ },
+ {
+  "R": 780,
+  "state": "not_pulled_EV",
+  "coach": "Tortorella(0.47)",
+  "P_leader_ge1": 0.5363,
+  "P_leader_ge2": 0.1299,
+  "P_total_ge1": 0.6999,
+  "P_total_ge2": 0.3793,
+  "P_margin_ge4": 0.3415
+ },
+ {
+  "R": 780,
+  "state": "not_pulled_EV",
+  "coach": "league_avg(1.0)",
+  "P_leader_ge1": 0.6158,
+  "P_leader_ge2": 0.1545,
+  "P_total_ge1": 0.7581,
+  "P_total_ge2": 0.426,
+  "P_margin_ge4": 0.3965
+ },
+ {
+  "R": 780,
+  "state": "not_pulled_EV",
+  "coach": "Bednar(3.39)",
+  "P_leader_ge1": 0.7656,
+  "P_leader_ge2": 0.2225,
+  "P_total_ge1": 0.8869,
+  "P_total_ge2": 0.5043,
+  "P_margin_ge4": 0.5274
+ },
+ {
+  "R": 780,
+  "state": "not_pulled_PP",
+  "coach": "Tortorella(0.47)",
+  "P_leader_ge1": 0.5299,
+  "P_leader_ge2": 0.1239,
+  "P_total_ge1": 0.714,
+  "P_total_ge2": 0.4047,
+  "P_margin_ge4": 0.3156
+ },
+ {
+  "R": 780,
+  "state": "not_pulled_PP",
+  "coach": "league_avg(1.0)",
+  "P_leader_ge1": 0.6111,
+  "P_leader_ge2": 0.1512,
+  "P_total_ge1": 0.7709,
+  "P_total_ge2": 0.455,
+  "P_margin_ge4": 0.371
+ },
+ {
+  "R": 780,
+  "state": "not_pulled_PP",
+  "coach": "Bednar(3.39)",
+  "P_leader_ge1": 0.7605,
+  "P_leader_ge2": 0.2258,
+  "P_total_ge1": 0.8973,
+  "P_total_ge2": 0.536,
+  "P_margin_ge4": 0.5046
+ },
+ {
+  "R": 780,
+  "state": "pulled",
+  "coach": "Tortorella(0.47)",
+  "P_leader_ge1": 0.7816,
+  "P_leader_ge2": 0.2797,
+  "P_total_ge1": 0.9114,
+  "P_total_ge2": 0.5717,
+  "P_margin_ge4": 0.5298
+ },
+ {
+  "R": 780,
+  "state": "pulled",
+  "coach": "league_avg(1.0)",
+  "P_leader_ge1": 0.8163,
+  "P_leader_ge2": 0.3069,
+  "P_total_ge1": 0.9284,
+  "P_total_ge2": 0.5988,
+  "P_margin_ge4": 0.5577
+ },
+ {
+  "R": 780,
+  "state": "pulled",
+  "coach": "Bednar(3.39)",
+  "P_leader_ge1": 0.8677,
+  "P_leader_ge2": 0.3726,
+  "P_total_ge1": 0.9654,
+  "P_total_ge2": 0.6369,
+  "P_margin_ge4": 0.6252
+ },
+ {
+  "R": 660,
+  "state": "not_pulled_EV",
+  "coach": "Tortorella(0.47)",
+  "P_leader_ge1": 0.4961,
+  "P_leader_ge2": 0.1016,
+  "P_total_ge1": 0.6502,
+  "P_total_ge2": 0.3199,
+  "P_margin_ge4": 0.3256
+ },
+ {
+  "R": 660,
+  "state": "not_pulled_EV",
+  "coach": "league_avg(1.0)",
+  "P_leader_ge1": 0.5794,
+  "P_leader_ge2": 0.123,
+  "P_total_ge1": 0.7137,
+  "P_total_ge2": 0.3689,
+  "P_margin_ge4": 0.3812
+ },
+ {
+  "R": 660,
+  "state": "not_pulled_EV",
+  "coach": "Bednar(3.39)",
+  "P_leader_ge1": 0.7477,
+  "P_leader_ge2": 0.1866,
+  "P_total_ge1": 0.8632,
+  "P_total_ge2": 0.4553,
+  "P_margin_ge4": 0.5228
+ },
+ {
+  "R": 660,
+  "state": "not_pulled_PP",
+  "coach": "Tortorella(0.47)",
+  "P_leader_ge1": 0.4864,
+  "P_leader_ge2": 0.0953,
+  "P_total_ge1": 0.6635,
+  "P_total_ge2": 0.346,
+  "P_margin_ge4": 0.2974
+ },
+ {
+  "R": 660,
+  "state": "not_pulled_PP",
+  "coach": "league_avg(1.0)",
+  "P_leader_ge1": 0.5706,
+  "P_leader_ge2": 0.1175,
+  "P_total_ge1": 0.7247,
+  "P_total_ge2": 0.3968,
+  "P_margin_ge4": 0.3527
+ },
+ {
+  "R": 660,
+  "state": "not_pulled_PP",
+  "coach": "Bednar(3.39)",
+  "P_leader_ge1": 0.7356,
+  "P_leader_ge2": 0.1843,
+  "P_total_ge1": 0.8683,
+  "P_total_ge2": 0.4826,
+  "P_margin_ge4": 0.4932
+ },
+ {
+  "R": 660,
+  "state": "pulled",
+  "coach": "Tortorella(0.47)",
+  "P_leader_ge1": 0.7659,
+  "P_leader_ge2": 0.2376,
+  "P_total_ge1": 0.8961,
+  "P_total_ge2": 0.5132,
+  "P_margin_ge4": 0.5337
+ },
+ {
+  "R": 660,
+  "state": "pulled",
+  "coach": "league_avg(1.0)",
+  "P_leader_ge1": 0.8015,
+  "P_leader_ge2": 0.2614,
+  "P_total_ge1": 0.9135,
+  "P_total_ge2": 0.5416,
+  "P_margin_ge4": 0.5597
+ },
+ {
+  "R": 660,
+  "state": "pulled",
+  "coach": "Bednar(3.39)",
+  "P_leader_ge1": 0.8612,
+  "P_leader_ge2": 0.3241,
+  "P_total_ge1": 0.9565,
+  "P_total_ge2": 0.5829,
+  "P_margin_ge4": 0.6292
+ },
+ {
+  "R": 600,
+  "state": "not_pulled_EV",
+  "coach": "Tortorella(0.47)",
+  "P_leader_ge1": 0.4731,
+  "P_leader_ge2": 0.0897,
+  "P_total_ge1": 0.6225,
+  "P_total_ge2": 0.2923,
+  "P_margin_ge4": 0.3158
+ },
+ {
+  "R": 600,
+  "state": "not_pulled_EV",
+  "coach": "league_avg(1.0)",
+  "P_leader_ge1": 0.5618,
+  "P_leader_ge2": 0.1105,
+  "P_total_ge1": 0.6932,
+  "P_total_ge2": 0.3419,
+  "P_margin_ge4": 0.3763
+ },
+ {
+  "R": 600,
+  "state": "not_pulled_EV",
+  "coach": "Bednar(3.39)",
+  "P_leader_ge1": 0.7398,
+  "P_leader_ge2": 0.1701,
+  "P_total_ge1": 0.853,
+  "P_total_ge2": 0.4296,
+  "P_margin_ge4": 0.5228
+ },
+ {
+  "R": 600,
+  "state": "not_pulled_PP",
+  "coach": "Tortorella(0.47)",
+  "P_leader_ge1": 0.4657,
+  "P_leader_ge2": 0.0846,
+  "P_total_ge1": 0.6386,
+  "P_total_ge2": 0.3201,
+  "P_margin_ge4": 0.2887
+ },
+ {
+  "R": 600,
+  "state": "not_pulled_PP",
+  "coach": "league_avg(1.0)",
+  "P_leader_ge1": 0.5563,
+  "P_leader_ge2": 0.108,
+  "P_total_ge1": 0.7073,
+  "P_total_ge2": 0.3735,
+  "P_margin_ge4": 0.3492
+ },
+ {
+  "R": 600,
+  "state": "not_pulled_PP",
+  "coach": "Bednar(3.39)",
+  "P_leader_ge1": 0.7312,
+  "P_leader_ge2": 0.1734,
+  "P_total_ge1": 0.8614,
+  "P_total_ge2": 0.4631,
+  "P_margin_ge4": 0.4948
+ },
+ {
+  "R": 600,
+  "state": "pulled",
+  "coach": "Tortorella(0.47)",
+  "P_leader_ge1": 0.7569,
+  "P_leader_ge2": 0.2142,
+  "P_total_ge1": 0.8861,
+  "P_total_ge2": 0.4805,
+  "P_margin_ge4": 0.5336
+ },
+ {
+  "R": 600,
+  "state": "pulled",
+  "coach": "league_avg(1.0)",
+  "P_leader_ge1": 0.7943,
+  "P_leader_ge2": 0.2354,
+  "P_total_ge1": 0.9053,
+  "P_total_ge2": 0.5088,
+  "P_margin_ge4": 0.5603
+ },
+ {
+  "R": 600,
+  "state": "pulled",
+  "coach": "Bednar(3.39)",
+  "P_leader_ge1": 0.8561,
+  "P_leader_ge2": 0.2898,
+  "P_total_ge1": 0.9505,
+  "P_total_ge2": 0.5495,
+  "P_margin_ge4": 0.6274
+ },
+ {
+  "R": 480,
+  "state": "not_pulled_EV",
+  "coach": "Tortorella(0.47)",
+  "P_leader_ge1": 0.4224,
+  "P_leader_ge2": 0.0654,
+  "P_total_ge1": 0.5586,
+  "P_total_ge2": 0.231,
+  "P_margin_ge4": 0.2949
+ },
+ {
+  "R": 480,
+  "state": "not_pulled_EV",
+  "coach": "league_avg(1.0)",
+  "P_leader_ge1": 0.5195,
+  "P_leader_ge2": 0.0827,
+  "P_total_ge1": 0.6391,
+  "P_total_ge2": 0.2811,
+  "P_margin_ge4": 0.3619
+ },
+ {
+  "R": 480,
+  "state": "not_pulled_EV",
+  "coach": "Bednar(3.39)",
+  "P_leader_ge1": 0.719,
+  "P_leader_ge2": 0.1393,
+  "P_total_ge1": 0.8214,
+  "P_total_ge2": 0.3755,
+  "P_margin_ge4": 0.5217
+ },
+ {
+  "R": 480,
+  "state": "not_pulled_PP",
+  "coach": "Tortorella(0.47)",
+  "P_leader_ge1": 0.425,
+  "P_leader_ge2": 0.0635,
+  "P_total_ge1": 0.5857,
+  "P_total_ge2": 0.266,
+  "P_margin_ge4": 0.274
+ },
+ {
+  "R": 480,
+  "state": "not_pulled_PP",
+  "coach": "league_avg(1.0)",
+  "P_leader_ge1": 0.5298,
+  "P_leader_ge2": 0.085,
+  "P_total_ge1": 0.669,
+  "P_total_ge2": 0.3237,
+  "P_margin_ge4": 0.3441
+ },
+ {
+  "R": 480,
+  "state": "not_pulled_PP",
+  "coach": "Bednar(3.39)",
+  "P_leader_ge1": 0.7307,
+  "P_leader_ge2": 0.1533,
+  "P_total_ge1": 0.8479,
+  "P_total_ge2": 0.4261,
+  "P_margin_ge4": 0.5065
+ },
+ {
+  "R": 480,
+  "state": "pulled",
+  "coach": "Tortorella(0.47)",
+  "P_leader_ge1": 0.7346,
+  "P_leader_ge2": 0.166,
+  "P_total_ge1": 0.8605,
+  "P_total_ge2": 0.4081,
+  "P_margin_ge4": 0.5354
+ },
+ {
+  "R": 480,
+  "state": "pulled",
+  "coach": "league_avg(1.0)",
+  "P_leader_ge1": 0.775,
+  "P_leader_ge2": 0.1822,
+  "P_total_ge1": 0.8811,
+  "P_total_ge2": 0.4376,
+  "P_margin_ge4": 0.5597
+ },
+ {
+  "R": 480,
+  "state": "pulled",
+  "coach": "Bednar(3.39)",
+  "P_leader_ge1": 0.8409,
+  "P_leader_ge2": 0.2278,
+  "P_total_ge1": 0.9296,
+  "P_total_ge2": 0.4783,
+  "P_margin_ge4": 0.6233
+ },
+ {
+  "R": 360,
+  "state": "not_pulled_EV",
+  "coach": "Tortorella(0.47)",
+  "P_leader_ge1": 0.3559,
+  "P_leader_ge2": 0.0423,
+  "P_total_ge1": 0.4757,
+  "P_total_ge2": 0.1659,
+  "P_margin_ge4": 0.2609
+ },
+ {
+  "R": 360,
+  "state": "not_pulled_EV",
+  "coach": "league_avg(1.0)",
+  "P_leader_ge1": 0.4578,
+  "P_leader_ge2": 0.0577,
+  "P_total_ge1": 0.565,
+  "P_total_ge2": 0.2148,
+  "P_margin_ge4": 0.3323
+ },
+ {
+  "R": 360,
+  "state": "not_pulled_EV",
+  "coach": "Bednar(3.39)",
+  "P_leader_ge1": 0.6732,
+  "P_leader_ge2": 0.1054,
+  "P_total_ge1": 0.7703,
+  "P_total_ge2": 0.3102,
+  "P_margin_ge4": 0.5016
+ },
+ {
+  "R": 360,
+  "state": "not_pulled_PP",
+  "coach": "Tortorella(0.47)",
+  "P_leader_ge1": 0.4016,
+  "P_leader_ge2": 0.0473,
+  "P_total_ge1": 0.5505,
+  "P_total_ge2": 0.2197,
+  "P_margin_ge4": 0.2721
+ },
+ {
+  "R": 360,
+  "state": "not_pulled_PP",
+  "coach": "league_avg(1.0)",
+  "P_leader_ge1": 0.5323,
+  "P_leader_ge2": 0.0703,
+  "P_total_ge1": 0.6625,
+  "P_total_ge2": 0.2878,
+  "P_margin_ge4": 0.3603
+ },
+ {
+  "R": 360,
+  "state": "not_pulled_PP",
+  "coach": "Bednar(3.39)",
+  "P_leader_ge1": 0.736,
+  "P_leader_ge2": 0.1282,
+  "P_total_ge1": 0.8477,
+  "P_total_ge2": 0.3892,
+  "P_margin_ge4": 0.5184
+ },
+ {
+  "R": 360,
+  "state": "pulled",
+  "coach": "Tortorella(0.47)",
+  "P_leader_ge1": 0.6926,
+  "P_leader_ge2": 0.1148,
+  "P_total_ge1": 0.8195,
+  "P_total_ge2": 0.3191,
+  "P_margin_ge4": 0.5265
+ },
+ {
+  "R": 360,
+  "state": "pulled",
+  "coach": "league_avg(1.0)",
+  "P_leader_ge1": 0.7306,
+  "P_leader_ge2": 0.124,
+  "P_total_ge1": 0.8363,
+  "P_total_ge2": 0.3476,
+  "P_margin_ge4": 0.5443
+ },
+ {
+  "R": 360,
+  "state": "pulled",
+  "coach": "Bednar(3.39)",
+  "P_leader_ge1": 0.7894,
+  "P_leader_ge2": 0.1529,
+  "P_total_ge1": 0.879,
+  "P_total_ge2": 0.3819,
+  "P_margin_ge4": 0.593
+ },
+ {
+  "R": 300,
+  "state": "not_pulled_EV",
+  "coach": "Tortorella(0.47)",
+  "P_leader_ge1": 0.2972,
+  "P_leader_ge2": 0.0304,
+  "P_total_ge1": 0.4098,
+  "P_total_ge2": 0.1241,
+  "P_margin_ge4": 0.2256
+ },
+ {
+  "R": 300,
+  "state": "not_pulled_EV",
+  "coach": "league_avg(1.0)",
+  "P_leader_ge1": 0.3864,
+  "P_leader_ge2": 0.0406,
+  "P_total_ge1": 0.4884,
+  "P_total_ge2": 0.1641,
+  "P_margin_ge4": 0.2882
+ },
+ {
+  "R": 300,
+  "state": "not_pulled_EV",
+  "coach": "Bednar(3.39)",
+  "P_leader_ge1": 0.5945,
+  "P_leader_ge2": 0.0754,
+  "P_total_ge1": 0.6922,
+  "P_total_ge2": 0.2497,
+  "P_margin_ge4": 0.4497
+ },
+ {
+  "R": 300,
+  "state": "not_pulled_PP",
+  "coach": "Tortorella(0.47)",
+  "P_leader_ge1": 0.3675,
+  "P_leader_ge2": 0.037,
+  "P_total_ge1": 0.5134,
+  "P_total_ge2": 0.1851,
+  "P_margin_ge4": 0.256
+ },
+ {
+  "R": 300,
+  "state": "not_pulled_PP",
+  "coach": "league_avg(1.0)",
+  "P_leader_ge1": 0.4983,
+  "P_leader_ge2": 0.0551,
+  "P_total_ge1": 0.628,
+  "P_total_ge2": 0.2472,
+  "P_margin_ge4": 0.3464
+ },
+ {
+  "R": 300,
+  "state": "not_pulled_PP",
+  "coach": "Bednar(3.39)",
+  "P_leader_ge1": 0.6912,
+  "P_leader_ge2": 0.0974,
+  "P_total_ge1": 0.8069,
+  "P_total_ge2": 0.3362,
+  "P_margin_ge4": 0.4943
+ },
+ {
+  "R": 300,
+  "state": "pulled",
+  "coach": "Tortorella(0.47)",
+  "P_leader_ge1": 0.6571,
+  "P_leader_ge2": 0.0888,
+  "P_total_ge1": 0.7861,
+  "P_total_ge2": 0.2648,
+  "P_margin_ge4": 0.5143
+ },
+ {
+  "R": 300,
+  "state": "pulled",
+  "coach": "league_avg(1.0)",
+  "P_leader_ge1": 0.6898,
+  "P_leader_ge2": 0.0944,
+  "P_total_ge1": 0.7983,
+  "P_total_ge2": 0.2907,
+  "P_margin_ge4": 0.5275
+ },
+ {
+  "R": 300,
+  "state": "pulled",
+  "coach": "Bednar(3.39)",
+  "P_leader_ge1": 0.7392,
+  "P_leader_ge2": 0.1127,
+  "P_total_ge1": 0.8318,
+  "P_total_ge2": 0.3199,
+  "P_margin_ge4": 0.5639
+ },
+ {
+  "R": 240,
+  "state": "not_pulled_EV",
+  "coach": "Tortorella(0.47)",
+  "P_leader_ge1": 0.2229,
+  "P_leader_ge2": 0.0182,
+  "P_total_ge1": 0.3207,
+  "P_total_ge2": 0.0832,
+  "P_margin_ge4": 0.1737
+ },
+ {
+  "R": 240,
+  "state": "not_pulled_EV",
+  "coach": "league_avg(1.0)",
+  "P_leader_ge1": 0.2827,
+  "P_leader_ge2": 0.0234,
+  "P_total_ge1": 0.3746,
+  "P_total_ge2": 0.1091,
+  "P_margin_ge4": 0.2158
+ },
+ {
+  "R": 240,
+  "state": "not_pulled_EV",
+  "coach": "Bednar(3.39)",
+  "P_leader_ge1": 0.4498,
+  "P_leader_ge2": 0.0421,
+  "P_total_ge1": 0.5429,
+  "P_total_ge2": 0.1674,
+  "P_margin_ge4": 0.3481
+ },
+ {
+  "R": 240,
+  "state": "not_pulled_PP",
+  "coach": "Tortorella(0.47)",
+  "P_leader_ge1": 0.2875,
+  "P_leader_ge2": 0.0227,
+  "P_total_ge1": 0.4254,
+  "P_total_ge2": 0.1349,
+  "P_margin_ge4": 0.2033
+ },
+ {
+  "R": 240,
+  "state": "not_pulled_PP",
+  "coach": "league_avg(1.0)",
+  "P_leader_ge1": 0.3997,
+  "P_leader_ge2": 0.0336,
+  "P_total_ge1": 0.5272,
+  "P_total_ge2": 0.1833,
+  "P_margin_ge4": 0.2822
+ },
+ {
+  "R": 240,
+  "state": "not_pulled_PP",
+  "coach": "Bednar(3.39)",
+  "P_leader_ge1": 0.5983,
+  "P_leader_ge2": 0.0604,
+  "P_total_ge1": 0.7214,
+  "P_total_ge2": 0.2612,
+  "P_margin_ge4": 0.4358
+ },
+ {
+  "R": 240,
+  "state": "pulled",
+  "coach": "Tortorella(0.47)",
+  "P_leader_ge1": 0.6067,
+  "P_leader_ge2": 0.0645,
+  "P_total_ge1": 0.739,
+  "P_total_ge2": 0.2041,
+  "P_margin_ge4": 0.4946
+ },
+ {
+  "R": 240,
+  "state": "pulled",
+  "coach": "league_avg(1.0)",
+  "P_leader_ge1": 0.632,
+  "P_leader_ge2": 0.0673,
+  "P_total_ge1": 0.7451,
+  "P_total_ge2": 0.2276,
+  "P_margin_ge4": 0.5009
+ },
+ {
+  "R": 240,
+  "state": "pulled",
+  "coach": "Bednar(3.39)",
+  "P_leader_ge1": 0.667,
+  "P_leader_ge2": 0.0756,
+  "P_total_ge1": 0.766,
+  "P_total_ge2": 0.2497,
+  "P_margin_ge4": 0.5224
+ },
+ {
+  "R": 180,
+  "state": "not_pulled_EV",
+  "coach": "Tortorella(0.47)",
+  "P_leader_ge1": 0.1478,
+  "P_leader_ge2": 0.0091,
+  "P_total_ge1": 0.2291,
+  "P_total_ge2": 0.0449,
+  "P_margin_ge4": 0.1211
+ },
+ {
+  "R": 180,
+  "state": "not_pulled_EV",
+  "coach": "league_avg(1.0)",
+  "P_leader_ge1": 0.1734,
+  "P_leader_ge2": 0.0107,
+  "P_total_ge1": 0.2498,
+  "P_total_ge2": 0.0575,
+  "P_margin_ge4": 0.1373
+ },
+ {
+  "R": 180,
+  "state": "not_pulled_EV",
+  "coach": "Bednar(3.39)",
+  "P_leader_ge1": 0.2556,
+  "P_leader_ge2": 0.017,
+  "P_total_ge1": 0.3337,
+  "P_total_ge2": 0.0843,
+  "P_margin_ge4": 0.2022
+ },
+ {
+  "R": 180,
+  "state": "not_pulled_PP",
+  "coach": "Tortorella(0.47)",
+  "P_leader_ge1": 0.1741,
+  "P_leader_ge2": 0.0095,
+  "P_total_ge1": 0.2989,
+  "P_total_ge2": 0.0791,
+  "P_margin_ge4": 0.1229
+ },
+ {
+  "R": 180,
+  "state": "not_pulled_PP",
+  "coach": "league_avg(1.0)",
+  "P_leader_ge1": 0.238,
+  "P_leader_ge2": 0.0138,
+  "P_total_ge1": 0.3557,
+  "P_total_ge2": 0.1075,
+  "P_margin_ge4": 0.1659
+ },
+ {
+  "R": 180,
+  "state": "not_pulled_PP",
+  "coach": "Bednar(3.39)",
+  "P_leader_ge1": 0.4002,
+  "P_leader_ge2": 0.0267,
+  "P_total_ge1": 0.5229,
+  "P_total_ge2": 0.1609,
+  "P_margin_ge4": 0.2936
+ },
+ {
+  "R": 180,
+  "state": "pulled",
+  "coach": "Tortorella(0.47)",
+  "P_leader_ge1": 0.5345,
+  "P_leader_ge2": 0.0421,
+  "P_total_ge1": 0.6688,
+  "P_total_ge2": 0.1386,
+  "P_margin_ge4": 0.4575
+ },
+ {
+  "R": 180,
+  "state": "pulled",
+  "coach": "league_avg(1.0)",
+  "P_leader_ge1": 0.5521,
+  "P_leader_ge2": 0.0431,
+  "P_total_ge1": 0.6704,
+  "P_total_ge2": 0.1572,
+  "P_margin_ge4": 0.4594
+ },
+ {
+  "R": 180,
+  "state": "pulled",
+  "coach": "Bednar(3.39)",
+  "P_leader_ge1": 0.574,
+  "P_leader_ge2": 0.0461,
+  "P_total_ge1": 0.6784,
+  "P_total_ge2": 0.1753,
+  "P_margin_ge4": 0.4677
+ }
+]
