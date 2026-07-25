@@ -1,8 +1,8 @@
 """Friendly 30-second lines workbook (Seb 2026-07-25).
 
 One filterable table: time (30s steps, 15:00->3:00) x state x coach tier,
-probabilities as %, 10%-EV American lines, color-coded, frozen header,
-autofilter. Pure values (no formulas) — cheap-session rebuildable:
+probabilities as %, fair (0% EV) lines + 10%-EV American lines, color-coded,
+frozen header, autofilter. Pure values (no formulas) — cheap-session rebuildable:
     python3 hockeycore/io/build_lines_table.py
 """
 import json
@@ -57,15 +57,15 @@ def main():
     ws.title = "LINES"
     ws.sheet_view.showGridLines = False
 
-    ws["A1"] = ("3-GOAL GAP, 3rd PERIOD — model probability + the line that pays +10% EV "
+    ws["A1"] = ("3-GOAL GAP, 3rd PERIOD — model probability + fair line (0% EV) + the line that pays +10% EV "
                 "(bet only at that number or BETTER). Filter any column. NO-GO for real money; "
                 "leader market = Overs only.")
     ws["A1"].font = Font(name="Arial", bold=True, size=11)
-    ws.merge_cells("A1:I1")
+    ws.merge_cells("A1:L1")
 
     headers = ["Time left", "Situation", "Coach type"]
     for _, lbl in MARKETS:
-        headers += [f"{lbl} — prob", f"{lbl} — line @10%"]
+        headers += [f"{lbl} — prob", f"{lbl} — TRUE line", f"{lbl} — line @10%"]
     for j, h in enumerate(headers, 1):
         c = ws.cell(row=2, column=j, value=h)
         c.font = HDR_FONT; c.fill = HDR_FILL
@@ -83,27 +83,27 @@ def main():
                 cells = []
                 for mk, _ in MARKETS:
                     p = curves[mk][t]
-                    cells += [p, american(p)]
+                    cells += [p, american(p, edge=0.0), american(p)]
                 for j, v in enumerate(vals + cells, 1):
                     c = ws.cell(row=row, column=j, value=v)
                     c.font = ARIAL
                     c.border = THIN
                     if j <= 3:
                         c.fill = STATE_FILL[st]
-                    if j in (4, 6, 8):
+                    if j in (4, 7, 10):
                         c.number_format = "0.0%"
-                    if j in (5, 7, 9):
+                    if j in (5, 6, 8, 9, 11, 12):
                         c.font = BOLD
                         c.alignment = Alignment(horizontal="center")
                 row += 1
 
     last = row - 1
-    ws.auto_filter.ref = f"A2:I{last}"
+    ws.auto_filter.ref = f"A2:L{last}"
     ws.freeze_panes = "A3"
-    for col, w in zip("ABCDEFGHI", (9, 22, 20, 14, 13, 14, 13, 14, 13)):
+    for col, w in zip("ABCDEFGHIJKL", (9, 22, 20, 14, 13, 13, 14, 13, 13, 14, 13, 13)):
         ws.column_dimensions[col].width = w
     # green->red scale on each probability column (high prob = green)
-    for col in ("D", "F", "H"):
+    for col in ("D", "G", "J"):
         ws.conditional_formatting.add(
             f"{col}3:{col}{last}",
             ColorScaleRule(start_type="min", start_color="F8696B",
@@ -116,7 +116,7 @@ def main():
         "HOW TO USE",
         "1. Filter 'Situation' to the current state and 'Coach type' to the trailing coach's tier (COACHES tab of the calculator).",
         "2. Find the time remaining (rows are 30-second steps; for in-between times use the calculator, which takes any mm:ss).",
-        "3. The LINE column is the worst price at which the bet still clears +10% EV. Better than that number = bet; worse = pass.",
+        "3. The TRUE line shows the fair price (0% EV, break-even). The line @10% is the worst price at which the bet still clears +10% EV. Better than @10% = bet; worse = pass.",
         "",
         "Reading lines: -196 means bet only at -196 or better (e.g. -180, -150, +110). +150 means +150 or longer.",
         "Coach type: multiplier applied to pull aggressiveness. 1.00 = league average. Bednar-class ~1.3-1.85; "
