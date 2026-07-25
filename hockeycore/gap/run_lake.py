@@ -24,7 +24,7 @@ def main():
     errors = []
     t0 = time.time()
     n = 0
-    for season in ["20242025", "20252026"]:
+    for season in ["20222023", "20232024", "20242025", "20252026"]:
         sd = LAKE / season
         idx = json.load(open(sd / "schedule_index.json", encoding="utf-8-sig"))
         for gmeta in idx["games"]:

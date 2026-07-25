@@ -61,7 +61,11 @@ def state_of(sit, trail_home, dp_active):
     return ("TPP_full" if d > 0 else "TPK_full" if d < 0 else "EV_full"), tsk, lsk
 
 
-def main(seasons=("20242025","20252026"), suffix=""):
+def main(seasons=("20222023","20232024","20242025","20252026"), suffix="",
+         hazard_seasons=("20242025", "20252026")):
+    """seasons -> goal-rate pooling (drift-gated OK across all 4).
+    hazard_seasons -> pull hazard, m_PP, coach exposure (behavior drifted
+    1.48x between eras, 2026-07-25 audit — never pool pulls across eras)."""
     frames = {}
     fits = {"hazard": {}, "m_PP": {}, "rates": {}, "coach": None}
     coach_rows = defaultdict(lambda: {"O": 0, "exp_secs": []})
@@ -81,19 +85,22 @@ def main(seasons=("20242025","20252026"), suffix=""):
             trail_id = g["home_id"] if trail_home else g["away_id"]
             o, c = inst["opened_secs"], inst["closed_secs"]
             first_pull = inst["pull_segments"][0]["empty_from"] if inst["pull_segments"] else None
+            in_hz = season in hazard_seasons
             # ---- exposure & states, second by second
             for u in range(o, c):
                 dp_active = any(s <= u < e for s, e in dpw)
                 st, tsk, lsk = state_of(sits[u], trail_home, dp_active)
                 if st != "DP_off":
                     T[(season, st)] += 1
-                # hazard exposure: pre-pull, full net, not PK, not DP
-                if (first_pull is None or u < first_pull) and st in ("EV_full", "TPP_full"):
+                # hazard exposure: pre-pull, full net, not PK, not DP (hazard era only)
+                if in_hz and (first_pull is None or u < first_pull) and st in ("EV_full", "TPP_full"):
                     b = (1200 - u) // BIN_W
                     haz_exp[(st, b)] += 1
                     if gap == 3:
                         coach_rows[inst["trailing_coach"]]["exp_secs"].append((st, 1200 - u))
-            # ---- pull event
+            # ---- pull event (hazard era only)
+            if not in_hz:
+                first_pull = None
             if first_pull is not None and first_pull < c:
                 st, _, _ = state_of(sits[first_pull] if first_pull < 1200 else sits[1199], trail_home, False)
                 strength = "TPP_full" if inst["pull_classification"] == "pp_pull" else "EV_full"
@@ -141,11 +148,11 @@ def main(seasons=("20242025","20252026"), suffix=""):
         states = sorted(set(s for (_, s) in T))
         for st in states:
             for d in ("for", "against"):
-                pooled_T = sum(T[(se, st)] for se in ("20242025", "20252026"))
-                pooled_G = sum(G[(se, st, d)] for se in ("20242025", "20252026"))
+                pooled_T = sum(T[(se, st)] for se in seasons)
+                pooled_G = sum(G[(se, st, d)] for se in seasons)
                 lo, hi = poisson_ci(pooled_G, pooled_T)
                 per = {}
-                for se in ("20242025", "20252026"):
+                for se in seasons:
                     per[se] = {"T": T[(se, st)], "G": G[(se, st, d)]}
                 rt[f"{st}:{d}"] = {"T": pooled_T, "G": pooled_G,
                                    "rate_per_60min": pooled_G / pooled_T * 3600 if pooled_T else None,

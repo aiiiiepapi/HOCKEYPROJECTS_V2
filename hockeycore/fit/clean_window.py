@@ -29,16 +29,21 @@ from hockeycore.fit.fit_curves import per_second_frame, state_of
 LAKE = Path("/home/claude/work/nhl_lake")
 DER = ROOT / "data" / "derived"
 DEAD = 18
-SEASONS = ("20242025", "20252026")
+SEASONS = ("20222023", "20232024", "20242025", "20252026")
+OLD = ("20222023", "20232024")
 
 # league gap-3 hazard per second of R (EV_full bins; PP seconds get m_PP)
-_f = json.load(open(DER / "fits.json"))
-H = [0.0] * 1200
-for r in _f["hazard"]["3"]["EV_full"]:
-    v = r["h"] or 0.0
-    for R in range(r["R_lo"], min(r["R_hi"], 1200)):
-        H[R] = v
-M_PP = _f["m_PP"]["3"]["m"]
+def _load_H(path):
+    f = json.load(open(path))
+    h = [0.0] * 1200
+    for r in f["hazard"]["3"]["EV_full"]:
+        v = r["h"] or 0.0
+        for R in range(r["R_lo"], min(r["R_hi"], 1200)):
+            h[R] = v
+    return h, f["m_PP"]["3"]["m"]
+
+H, M_PP = _load_H(DER / "fits.json")            # new-era hazard (24-26)
+H_OLD, M_PP_OLD = _load_H(DER / "fits_old2.json")  # old-era hazard (22-24)
 H_FULL = sum(H)  # total zone hazard mass; frac = Hsum/H_FULL in [0,1]
 
 
@@ -51,6 +56,7 @@ def analyze():
         if gid not in frames:
             frames[gid] = per_second_frame(load_pbp(LAKE / season / f"{gid}_pbp.json"))
         g, sits, dpw = frames[gid]
+        Hx, Mx = (H_OLD, M_PP_OLD) if season in OLD else (H, M_PP)
         trail_home = inst["trailing"] == g["home"]
         o, c = inst["opened_secs"], inst["closed_secs"]
         first_pull = inst["pull_segments"][0]["empty_from"] if inst["pull_segments"] else None
@@ -69,10 +75,10 @@ def analyze():
             dead = any(gs <= u < gs + DEAD for gs in goal_secs)
             if st in ("EV_full", "TPP_full") and not dead and not dp:
                 pullable_secs += 1
-                Hsum += H[R] * (M_PP if st == "TPP_full" else 1.0)
+                Hsum += Hx[R] * (Mx if st == "TPP_full" else 1.0)
                 if st == "EV_full":
-                    Hsum_ev += H[R]
-            elif H[R] > 0:  # only count blockage where the league actually pulls
+                    Hsum_ev += Hx[R]
+            elif Hx[R] > 0:  # only count blockage where the league actually pulls
                 if st == "TPK_full":
                     blocked["shorthanded"] += 1
                 elif dp or st == "DP_off":

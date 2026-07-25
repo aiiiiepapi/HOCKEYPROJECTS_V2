@@ -22,15 +22,20 @@ from hockeycore.fit.fit_curves import per_second_frame, state_of
 LAKE = Path("/home/claude/work/nhl_lake")
 DER = ROOT / "data" / "derived"
 DEAD = 18
-SEASONS = ("20242025", "20252026")
+SEASONS = ("20222023", "20232024", "20242025", "20252026")
+OLD = ("20222023", "20232024")
 
-_f = json.load(open(DER / "fits.json"))
-H = [0.0] * 1200
-for r in _f["hazard"]["3"]["EV_full"]:
-    v = r["h"] or 0.0
-    for R in range(r["R_lo"], min(r["R_hi"], 1200)):
-        H[R] = v
-M_PP = _f["m_PP"]["3"]["m"]
+def _load_H(path):
+    f = json.load(open(path))
+    h = [0.0] * 1200
+    for r in f["hazard"]["3"]["EV_full"]:
+        v = r["h"] or 0.0
+        for R in range(r["R_lo"], min(r["R_hi"], 1200)):
+            h[R] = v
+    return h, f["m_PP"]["3"]["m"]
+
+H, M_PP = _load_H(DER / "fits.json")            # new-era hazard (24-26)
+H_OLD, M_PP_OLD = _load_H(DER / "fits_old2.json")  # old-era hazard (22-24)
 
 
 def main():
@@ -43,6 +48,7 @@ def main():
         if gid not in frames:
             frames[gid] = per_second_frame(load_pbp(LAKE / season / f"{gid}_pbp.json"))
         g, sits, dpw = frames[gid]
+        Hx, Mx = (H_OLD, M_PP_OLD) if season in OLD else (H, M_PP)
         trail_home = inst["trailing"] == g["home"]
         o, c = inst["opened_secs"], inst["closed_secs"]
         first_pull = inst["pull_segments"][0]["empty_from"] if inst["pull_segments"] else None
@@ -57,9 +63,9 @@ def main():
             if dead or dp:
                 continue
             if st == "EV_full":
-                d["E_ev"] += H[R]; d["ev_secs"] += 1
+                d["E_ev"] += Hx[R]; d["ev_secs"] += 1
             elif st == "TPP_full":
-                d["E_pp"] += H[R] * M_PP; d["pp_secs"] += 1
+                d["E_pp"] += Hx[R] * Mx; d["pp_secs"] += 1
         if inst["pulled"]:
             R_pull = 1200 - first_pull if first_pull is not None else None
             if inst["pull_classification"] == "pp_pull":

@@ -1,21 +1,59 @@
 [
  {
-  "coach": "Jared Bednar",
-  "instances": 28,
-  "pulls": 9,
-  "ev_clear": 6,
-  "ev_taken": 6,
+  "coach": "Peter Laviolette",
+  "instances": 72,
+  "pulls": 15,
+  "ev_clear": 10,
+  "ev_taken": 10,
   "clean_rate_5v5": 1.0,
-  "naive_rate": 0.321,
-  "clear_chances": 9,
-  "clear_taken": 9,
+  "naive_rate": 0.208,
+  "clear_chances": 15,
+  "clear_taken": 15,
   "clean_rate": 1.0,
   "ci": [
-   0.821,
+   0.886,
    1
   ],
-  "ruined_windows": 19,
-  "league_expected_pulls_in_nopull": 0.07,
+  "ruined_windows": 51,
+  "league_expected_pulls_in_nopull": 3.18,
+  "declines": []
+ },
+ {
+  "coach": "Jared Bednar",
+  "instances": 61,
+  "pulls": 15,
+  "ev_clear": 11,
+  "ev_taken": 11,
+  "clean_rate_5v5": 1.0,
+  "naive_rate": 0.246,
+  "clear_chances": 15,
+  "clear_taken": 15,
+  "clean_rate": 1.0,
+  "ci": [
+   0.886,
+   1
+  ],
+  "ruined_windows": 44,
+  "league_expected_pulls_in_nopull": 0.86,
+  "declines": []
+ },
+ {
+  "coach": "Don Granato",
+  "instances": 46,
+  "pulls": 14,
+  "ev_clear": 11,
+  "ev_taken": 11,
+  "clean_rate_5v5": 1.0,
+  "naive_rate": 0.304,
+  "clear_chances": 14,
+  "clear_taken": 14,
+  "clean_rate": 1.0,
+  "ci": [
+   0.879,
+   1
+  ],
+  "ruined_windows": 29,
+  "league_expected_pulls_in_nopull": 1.52,
   "declines": []
  },
  {
@@ -76,22 +114,22 @@
   "declines": []
  },
  {
-  "coach": "Peter Laviolette",
-  "instances": 20,
-  "pulls": 3,
-  "ev_clear": 3,
-  "ev_taken": 3,
+  "coach": "David Quinn",
+  "instances": 62,
+  "pulls": 4,
+  "ev_clear": 2,
+  "ev_taken": 2,
   "clean_rate_5v5": 1.0,
-  "naive_rate": 0.15,
-  "clear_chances": 3,
-  "clear_taken": 3,
+  "naive_rate": 0.065,
+  "clear_chances": 4,
+  "clear_taken": 4,
   "clean_rate": 1.0,
   "ci": [
-   0.585,
+   0.66,
    1
   ],
-  "ruined_windows": 17,
-  "league_expected_pulls_in_nopull": 0.44,
+  "ruined_windows": 47,
+  "league_expected_pulls_in_nopull": 5.28,
   "declines": []
  },
  {
@@ -114,13 +152,70 @@
   "declines": []
  },
  {
-  "coach": "D.J. Smith",
-  "instances": 2,
-  "pulls": 1,
-  "ev_clear": 1,
-  "ev_taken": 1,
+  "coach": "Gerard Gallant",
+  "instances": 13,
+  "pulls": 2,
+  "ev_clear": 0,
+  "ev_taken": 0,
+  "clean_rate_5v5": null,
+  "naive_rate": 0.154,
+  "clear_chances": 2,
+  "clear_taken": 2,
+  "clean_rate": 1.0,
+  "ci": [
+   0.468,
+   1
+  ],
+  "ruined_windows": 8,
+  "league_expected_pulls_in_nopull": 1.12,
+  "declines": []
+ },
+ {
+  "coach": "Drew Bannister",
+  "instances": 19,
+  "pulls": 2,
+  "ev_clear": 2,
+  "ev_taken": 2,
   "clean_rate_5v5": 1.0,
-  "naive_rate": 0.5,
+  "naive_rate": 0.105,
+  "clear_chances": 2,
+  "clear_taken": 2,
+  "clean_rate": 1.0,
+  "ci": [
+   0.468,
+   1
+  ],
+  "ruined_windows": 17,
+  "league_expected_pulls_in_nopull": 0.24,
+  "declines": []
+ },
+ {
+  "coach": "Jacques Martin",
+  "instances": 19,
+  "pulls": 2,
+  "ev_clear": 2,
+  "ev_taken": 2,
+  "clean_rate_5v5": 1.0,
+  "naive_rate": 0.105,
+  "clear_chances": 2,
+  "clear_taken": 2,
+  "clean_rate": 1.0,
+  "ci": [
+   0.468,
+   1
+  ],
+  "ruined_windows": 12,
+  "league_expected_pulls_in_nopull": 1.7,
+  "declines": []
+ },
+ {
+  "coach": "Darryl Sutter",
+  "instances": 12,
+  "pulls": 1,
+  "ev_clear": 0,
+  "ev_taken": 0,
+  "clean_rate_5v5": null,
+  "naive_rate": 0.083,
   "clear_chances": 1,
   "clear_taken": 1,
   "clean_rate": 1.0,
@@ -128,28 +223,34 @@
    0.26,
    1
   ],
-  "ruined_windows": 1,
-  "league_expected_pulls_in_nopull": 0.05,
+  "ruined_windows": 7,
+  "league_expected_pulls_in_nopull": 1.42,
   "declines": []
  },
  {
   "coach": "Jon Cooper",
-  "instances": 25,
-  "pulls": 9,
-  "ev_clear": 4,
-  "ev_taken": 4,
+  "instances": 62,
+  "pulls": 22,
+  "ev_clear": 16,
+  "ev_taken": 16,
   "clean_rate_5v5": 1.0,
-  "naive_rate": 0.36,
-  "clear_chances": 10,
-  "clear_taken": 9,
-  "clean_rate": 0.9,
+  "naive_rate": 0.355,
+  "clear_chances": 24,
+  "clear_taken": 22,
+  "clean_rate": 0.917,
   "ci": [
-   0.669,
+   0.785,
    1
   ],
-  "ruined_windows": 12,
-  "league_expected_pulls_in_nopull": 2.3,
+  "ruined_windows": 33,
+  "league_expected_pulls_in_nopull": 4.0,
   "declines": [
+   {
+    "date": "2024-03-07",
+    "team": "TBL",
+    "q": 0.5186,
+    "game_id": 2023020999
+   },
    {
     "date": "2025-12-15",
     "team": "TBL",
@@ -160,21 +261,21 @@
  },
  {
   "coach": "Kris Knoblauch",
-  "instances": 36,
-  "pulls": 7,
-  "ev_clear": 8,
-  "ev_taken": 7,
-  "clean_rate_5v5": 0.875,
-  "naive_rate": 0.194,
-  "clear_chances": 8,
-  "clear_taken": 7,
-  "clean_rate": 0.875,
+  "instances": 48,
+  "pulls": 10,
+  "ev_clear": 10,
+  "ev_taken": 9,
+  "clean_rate_5v5": 0.9,
+  "naive_rate": 0.208,
+  "clear_chances": 11,
+  "clear_taken": 10,
+  "clean_rate": 0.909,
   "ci": [
-   0.602,
+   0.695,
    1
   ],
-  "ruined_windows": 27,
-  "league_expected_pulls_in_nopull": 1.79,
+  "ruined_windows": 36,
+  "league_expected_pulls_in_nopull": 2.23,
   "declines": [
    {
     "date": "2025-02-25",
@@ -186,21 +287,21 @@
  },
  {
   "coach": "Patrick Roy",
-  "instances": 40,
-  "pulls": 12,
-  "ev_clear": 14,
-  "ev_taken": 12,
-  "clean_rate_5v5": 0.857,
-  "naive_rate": 0.3,
-  "clear_chances": 14,
-  "clear_taken": 12,
-  "clean_rate": 0.857,
+  "instances": 55,
+  "pulls": 17,
+  "ev_clear": 15,
+  "ev_taken": 13,
+  "clean_rate_5v5": 0.867,
+  "naive_rate": 0.309,
+  "clear_chances": 19,
+  "clear_taken": 17,
+  "clean_rate": 0.895,
   "ci": [
-   0.651,
+   0.734,
    1
   ],
-  "ruined_windows": 24,
-  "league_expected_pulls_in_nopull": 2.56,
+  "ruined_windows": 33,
+  "league_expected_pulls_in_nopull": 3.36,
   "declines": [
    {
     "date": "2025-10-30",
@@ -218,21 +319,21 @@
  },
  {
   "coach": "Lindy Ruff",
-  "instances": 47,
-  "pulls": 11,
-  "ev_clear": 10,
-  "ev_taken": 8,
-  "clean_rate_5v5": 0.8,
-  "naive_rate": 0.234,
-  "clear_chances": 13,
-  "clear_taken": 11,
-  "clean_rate": 0.846,
+  "instances": 84,
+  "pulls": 15,
+  "ev_clear": 12,
+  "ev_taken": 10,
+  "clean_rate_5v5": 0.833,
+  "naive_rate": 0.179,
+  "clear_chances": 17,
+  "clear_taken": 15,
+  "clean_rate": 0.882,
   "ci": [
-   0.628,
+   0.706,
    1
   ],
-  "ruined_windows": 33,
-  "league_expected_pulls_in_nopull": 2.02,
+  "ruined_windows": 63,
+  "league_expected_pulls_in_nopull": 4.31,
   "declines": [
    {
     "date": "2025-11-19",
@@ -249,13 +350,39 @@
   ]
  },
  {
+  "coach": "D.J. Smith",
+  "instances": 35,
+  "pulls": 7,
+  "ev_clear": 7,
+  "ev_taken": 7,
+  "clean_rate_5v5": 1.0,
+  "naive_rate": 0.2,
+  "clear_chances": 8,
+  "clear_taken": 7,
+  "clean_rate": 0.875,
+  "ci": [
+   0.602,
+   1
+  ],
+  "ruined_windows": 22,
+  "league_expected_pulls_in_nopull": 2.62,
+  "declines": [
+   {
+    "date": "2023-10-21",
+    "team": "OTT",
+    "q": 0.4018,
+    "game_id": 2023020065
+   }
+  ]
+ },
+ {
   "coach": "Travis Green",
-  "instances": 34,
+  "instances": 40,
   "pulls": 11,
   "ev_clear": 8,
   "ev_taken": 5,
   "clean_rate_5v5": 0.625,
-  "naive_rate": 0.324,
+  "naive_rate": 0.275,
   "clear_chances": 13,
   "clear_taken": 11,
   "clean_rate": 0.846,
@@ -263,8 +390,8 @@
    0.628,
    1
   ],
-  "ruined_windows": 20,
-  "league_expected_pulls_in_nopull": 1.8,
+  "ruined_windows": 24,
+  "league_expected_pulls_in_nopull": 2.55,
   "declines": [
    {
     "date": "2025-01-03",
@@ -277,6 +404,32 @@
     "team": "OTT",
     "q": 0.5058,
     "game_id": 2024020901
+   }
+  ]
+ },
+ {
+  "coach": "Rick Bowness",
+  "instances": 43,
+  "pulls": 5,
+  "ev_clear": 4,
+  "ev_taken": 4,
+  "clean_rate_5v5": 1.0,
+  "naive_rate": 0.116,
+  "clear_chances": 6,
+  "clear_taken": 5,
+  "clean_rate": 0.833,
+  "ci": [
+   0.501,
+   1
+  ],
+  "ruined_windows": 33,
+  "league_expected_pulls_in_nopull": 2.88,
+  "declines": [
+   {
+    "date": "2022-10-17",
+    "team": "WPG",
+    "q": 0.7328,
+    "game_id": 2022020046
    }
   ]
  },
@@ -307,23 +460,67 @@
   ]
  },
  {
-  "coach": "Craig Berube",
-  "instances": 51,
-  "pulls": 15,
-  "ev_clear": 17,
-  "ev_taken": 13,
-  "clean_rate_5v5": 0.765,
-  "naive_rate": 0.294,
-  "clear_chances": 19,
-  "clear_taken": 15,
-  "clean_rate": 0.789,
+  "coach": "Derek Lalonde",
+  "instances": 58,
+  "pulls": 8,
+  "ev_clear": 7,
+  "ev_taken": 6,
+  "clean_rate_5v5": 0.857,
+  "naive_rate": 0.138,
+  "clear_chances": 10,
+  "clear_taken": 8,
+  "clean_rate": 0.8,
   "ci": [
-   0.596,
-   0.954
+   0.536,
+   1
   ],
-  "ruined_windows": 32,
-  "league_expected_pulls_in_nopull": 3.15,
+  "ruined_windows": 45,
+  "league_expected_pulls_in_nopull": 2.99,
   "declines": [
+   {
+    "date": "2022-12-17",
+    "team": "DET",
+    "q": 0.4046,
+    "game_id": 2022020485
+   },
+   {
+    "date": "2024-10-10",
+    "team": "DET",
+    "q": 0.4883,
+    "game_id": 2024020014
+   }
+  ]
+ },
+ {
+  "coach": "Craig Berube",
+  "instances": 90,
+  "pulls": 22,
+  "ev_clear": 24,
+  "ev_taken": 20,
+  "clean_rate_5v5": 0.833,
+  "naive_rate": 0.244,
+  "clear_chances": 28,
+  "clear_taken": 22,
+  "clean_rate": 0.786,
+  "ci": [
+   0.627,
+   0.925
+  ],
+  "ruined_windows": 59,
+  "league_expected_pulls_in_nopull": 6.14,
+  "declines": [
+   {
+    "date": "2023-02-18",
+    "team": "STL",
+    "q": 0.4057,
+    "game_id": 2022020883
+   },
+   {
+    "date": "2023-03-07",
+    "team": "STL",
+    "q": 0.6366,
+    "game_id": 2022021020
+   },
    {
     "date": "2025-01-11",
     "team": "TOR",
@@ -347,6 +544,182 @@
     "team": "TOR",
     "q": 0.466,
     "game_id": 2025021160
+   }
+  ]
+ },
+ {
+  "coach": "Rod Brind'Amour",
+  "instances": 60,
+  "pulls": 11,
+  "ev_clear": 8,
+  "ev_taken": 6,
+  "clean_rate_5v5": 0.75,
+  "naive_rate": 0.183,
+  "clear_chances": 14,
+  "clear_taken": 11,
+  "clean_rate": 0.786,
+  "ci": [
+   0.559,
+   0.974
+  ],
+  "ruined_windows": 42,
+  "league_expected_pulls_in_nopull": 3.81,
+  "declines": [
+   {
+    "date": "2023-03-17",
+    "team": "CAR",
+    "q": 0.5692,
+    "game_id": 2022021092
+   },
+   {
+    "date": "2025-04-08",
+    "team": "CAR",
+    "q": 0.5007,
+    "game_id": 2024021235
+   },
+   {
+    "date": "2026-04-05",
+    "team": "CAR",
+    "q": 0.4717,
+    "game_id": 2025021225
+   }
+  ]
+ },
+ {
+  "coach": "John Hynes",
+  "instances": 82,
+  "pulls": 16,
+  "ev_clear": 13,
+  "ev_taken": 10,
+  "clean_rate_5v5": 0.769,
+  "naive_rate": 0.195,
+  "clear_chances": 21,
+  "clear_taken": 16,
+  "clean_rate": 0.762,
+  "ci": [
+   0.573,
+   0.927
+  ],
+  "ruined_windows": 58,
+  "league_expected_pulls_in_nopull": 4.42,
+  "declines": [
+   {
+    "date": "2024-01-18",
+    "team": "MIN",
+    "q": 0.4827,
+    "game_id": 2023020695
+   },
+   {
+    "date": "2025-01-25",
+    "team": "MIN",
+    "q": 0.4209,
+    "game_id": 2024020784
+   },
+   {
+    "date": "2025-10-11",
+    "team": "MIN",
+    "q": 0.6947,
+    "game_id": 2025020033
+   },
+   {
+    "date": "2025-10-17",
+    "team": "MIN",
+    "q": 0.4724,
+    "game_id": 2025020073
+   },
+   {
+    "date": "2026-02-27",
+    "team": "MIN",
+    "q": 0.4568,
+    "game_id": 2025020932
+   }
+  ]
+ },
+ {
+  "coach": "Paul Maurice",
+  "instances": 82,
+  "pulls": 19,
+  "ev_clear": 18,
+  "ev_taken": 13,
+  "clean_rate_5v5": 0.722,
+  "naive_rate": 0.232,
+  "clear_chances": 25,
+  "clear_taken": 19,
+  "clean_rate": 0.76,
+  "ci": [
+   0.587,
+   0.913
+  ],
+  "ruined_windows": 55,
+  "league_expected_pulls_in_nopull": 4.83,
+  "declines": [
+   {
+    "date": "2023-11-24",
+    "team": "FLA",
+    "q": 0.5434,
+    "game_id": 2023020304
+   },
+   {
+    "date": "2024-12-14",
+    "team": "FLA",
+    "q": 0.5027,
+    "game_id": 2024020485
+   },
+   {
+    "date": "2025-03-22",
+    "team": "FLA",
+    "q": 0.5061,
+    "game_id": 2024021110
+   },
+   {
+    "date": "2025-10-18",
+    "team": "FLA",
+    "q": 0.513,
+    "game_id": 2025020076
+   },
+   {
+    "date": "2026-03-17",
+    "team": "FLA",
+    "q": 0.4309,
+    "game_id": 2025021074
+   },
+   {
+    "date": "2026-04-05",
+    "team": "FLA",
+    "q": 0.4736,
+    "game_id": 2025021223
+   }
+  ]
+ },
+ {
+  "coach": "Brad Larsen",
+  "instances": 35,
+  "pulls": 6,
+  "ev_clear": 4,
+  "ev_taken": 4,
+  "clean_rate_5v5": 1.0,
+  "naive_rate": 0.171,
+  "clear_chances": 8,
+  "clear_taken": 6,
+  "clean_rate": 0.75,
+  "ci": [
+   0.445,
+   1.0
+  ],
+  "ruined_windows": 22,
+  "league_expected_pulls_in_nopull": 3.45,
+  "declines": [
+   {
+    "date": "2022-10-14",
+    "team": "CBJ",
+    "q": 0.4177,
+    "game_id": 2022020021
+   },
+   {
+    "date": "2023-04-08",
+    "team": "CBJ",
+    "q": 0.4699,
+    "game_id": 2022021263
    }
   ]
  },
@@ -383,13 +756,13 @@
   ]
  },
  {
-  "coach": "Derek Lalonde",
-  "instances": 10,
+  "coach": "Bruce Boudreau",
+  "instances": 18,
   "pulls": 3,
-  "ev_clear": 4,
-  "ev_taken": 3,
-  "clean_rate_5v5": 0.75,
-  "naive_rate": 0.3,
+  "ev_clear": 1,
+  "ev_taken": 1,
+  "clean_rate_5v5": 1.0,
+  "naive_rate": 0.167,
   "clear_chances": 4,
   "clear_taken": 3,
   "clean_rate": 0.75,
@@ -397,25 +770,25 @@
    0.333,
    1
   ],
-  "ruined_windows": 6,
-  "league_expected_pulls_in_nopull": 0.68,
+  "ruined_windows": 11,
+  "league_expected_pulls_in_nopull": 1.63,
   "declines": [
    {
-    "date": "2024-10-10",
-    "team": "DET",
-    "q": 0.4883,
-    "game_id": 2024020014
+    "date": "2023-01-20",
+    "team": "VAN",
+    "q": 0.4495,
+    "game_id": 2022020731
    }
   ]
  },
  {
-  "coach": "Rick Tocchet",
-  "instances": 44,
+  "coach": "Peter DeBoer",
+  "instances": 45,
   "pulls": 5,
-  "ev_clear": 4,
-  "ev_taken": 3,
-  "clean_rate_5v5": 0.75,
-  "naive_rate": 0.114,
+  "ev_clear": 6,
+  "ev_taken": 5,
+  "clean_rate_5v5": 0.833,
+  "naive_rate": 0.111,
   "clear_chances": 7,
   "clear_taken": 5,
   "clean_rate": 0.714,
@@ -423,20 +796,170 @@
    0.385,
    0.99
   ],
-  "ruined_windows": 36,
-  "league_expected_pulls_in_nopull": 1.67,
+  "ruined_windows": 35,
+  "league_expected_pulls_in_nopull": 3.18,
   "declines": [
    {
-    "date": "2025-01-31",
-    "team": "VAN",
-    "q": 0.4276,
-    "game_id": 2024020823
+    "date": "2022-10-29",
+    "team": "DAL",
+    "q": 0.5294,
+    "game_id": 2022020127
    },
    {
-    "date": "2026-01-17",
-    "team": "PHI",
+    "date": "2025-01-18",
+    "team": "DAL",
+    "q": 0.4779,
+    "game_id": 2024020724
+   }
+  ]
+ },
+ {
+  "coach": "Bruce Cassidy",
+  "instances": 67,
+  "pulls": 12,
+  "ev_clear": 10,
+  "ev_taken": 8,
+  "clean_rate_5v5": 0.8,
+  "naive_rate": 0.179,
+  "clear_chances": 17,
+  "clear_taken": 12,
+  "clean_rate": 0.706,
+  "ci": [
+   0.487,
+   0.902
+  ],
+  "ruined_windows": 49,
+  "league_expected_pulls_in_nopull": 4.54,
+  "declines": [
+   {
+    "date": "2024-01-04",
+    "team": "VGK",
+    "q": 0.6515,
+    "game_id": 2023020599
+   },
+   {
+    "date": "2025-03-16",
+    "team": "VGK",
+    "q": 0.4962,
+    "game_id": 2024021066
+   },
+   {
+    "date": "2025-10-25",
+    "team": "VGK",
+    "q": 0.814,
+    "game_id": 2025020130
+   },
+   {
+    "date": "2025-12-20",
+    "team": "VGK",
+    "q": 0.4181,
+    "game_id": 2025020559
+   },
+   {
+    "date": "2025-12-29",
+    "team": "VGK",
+    "q": 0.5027,
+    "game_id": 2025020614
+   }
+  ]
+ },
+ {
+  "coach": "Lane Lambert",
+  "instances": 58,
+  "pulls": 7,
+  "ev_clear": 6,
+  "ev_taken": 5,
+  "clean_rate_5v5": 0.833,
+  "naive_rate": 0.121,
+  "clear_chances": 10,
+  "clear_taken": 7,
+  "clean_rate": 0.7,
+  "ci": [
+   0.418,
+   0.945
+  ],
+  "ruined_windows": 42,
+  "league_expected_pulls_in_nopull": 5.41,
+  "declines": [
+   {
+    "date": "2024-01-15",
+    "team": "NYI",
+    "q": 0.4474,
+    "game_id": 2023020676
+   },
+   {
+    "date": "2025-10-20",
+    "team": "SEA",
+    "q": 0.8294,
+    "game_id": 2025020094
+   },
+   {
+    "date": "2026-02-25",
+    "team": "SEA",
+    "q": 0.5102,
+    "game_id": 2025020913
+   }
+  ]
+ },
+ {
+  "coach": "Martin St. Louis",
+  "instances": 106,
+  "pulls": 15,
+  "ev_clear": 16,
+  "ev_taken": 12,
+  "clean_rate_5v5": 0.75,
+  "naive_rate": 0.142,
+  "clear_chances": 22,
+  "clear_taken": 15,
+  "clean_rate": 0.682,
+  "ci": [
+   0.486,
+   0.861
+  ],
+  "ruined_windows": 75,
+  "league_expected_pulls_in_nopull": 7.98,
+  "declines": [
+   {
+    "date": "2023-04-01",
+    "team": "MTL",
+    "q": 0.6712,
+    "game_id": 2022021207
+   },
+   {
+    "date": "2024-02-15",
+    "team": "MTL",
+    "q": 0.5399,
+    "game_id": 2023020840
+   },
+   {
+    "date": "2024-10-22",
+    "team": "MTL",
+    "q": 0.6617,
+    "game_id": 2024020096
+   },
+   {
+    "date": "2024-11-09",
+    "team": "MTL",
+    "q": 0.4845,
+    "game_id": 2024020227
+   },
+   {
+    "date": "2024-11-23",
+    "team": "MTL",
+    "q": 0.469,
+    "game_id": 2024020322
+   },
+   {
+    "date": "2025-12-02",
+    "team": "MTL",
+    "q": 0.4837,
+    "game_id": 2025020411
+   },
+   {
+    "date": "2026-04-11",
+    "team": "MTL",
     "q": 0.4989,
-    "game_id": 2025020755
+    "game_id": 2025021271
    }
   ]
  },
@@ -485,477 +1008,67 @@
   ]
  },
  {
-  "coach": "Rod Brind'Amour",
-  "instances": 33,
-  "pulls": 4,
-  "ev_clear": 4,
-  "ev_taken": 2,
-  "clean_rate_5v5": 0.5,
-  "naive_rate": 0.121,
-  "clear_chances": 6,
-  "clear_taken": 4,
-  "clean_rate": 0.667,
-  "ci": [
-   0.311,
-   0.975
-  ],
-  "ruined_windows": 24,
-  "league_expected_pulls_in_nopull": 2.42,
-  "declines": [
-   {
-    "date": "2025-04-08",
-    "team": "CAR",
-    "q": 0.5007,
-    "game_id": 2024021235
-   },
-   {
-    "date": "2026-04-05",
-    "team": "CAR",
-    "q": 0.4717,
-    "game_id": 2025021225
-   }
-  ]
- },
- {
-  "coach": "Lane Lambert",
-  "instances": 28,
-  "pulls": 4,
+  "coach": "Rick Tocchet",
+  "instances": 69,
+  "pulls": 5,
   "ev_clear": 4,
   "ev_taken": 3,
   "clean_rate_5v5": 0.75,
-  "naive_rate": 0.143,
-  "clear_chances": 6,
-  "clear_taken": 4,
-  "clean_rate": 0.667,
+  "naive_rate": 0.072,
+  "clear_chances": 8,
+  "clear_taken": 5,
+  "clean_rate": 0.625,
   "ci": [
-   0.311,
-   0.975
+   0.309,
+   0.913
   ],
-  "ruined_windows": 21,
-  "league_expected_pulls_in_nopull": 2.42,
+  "ruined_windows": 57,
+  "league_expected_pulls_in_nopull": 3.84,
   "declines": [
    {
-    "date": "2025-10-20",
-    "team": "SEA",
-    "q": 0.8294,
-    "game_id": 2025020094
+    "date": "2023-02-11",
+    "team": "VAN",
+    "q": 0.4465,
+    "game_id": 2022020832
    },
    {
-    "date": "2026-02-25",
-    "team": "SEA",
-    "q": 0.5102,
-    "game_id": 2025020913
-   }
-  ]
- },
- {
-  "coach": "Bruce Cassidy",
-  "instances": 31,
-  "pulls": 7,
-  "ev_clear": 7,
-  "ev_taken": 5,
-  "clean_rate_5v5": 0.714,
-  "naive_rate": 0.226,
-  "clear_chances": 11,
-  "clear_taken": 7,
-  "clean_rate": 0.636,
-  "ci": [
-   0.362,
-   0.888
-  ],
-  "ruined_windows": 19,
-  "league_expected_pulls_in_nopull": 3.01,
-  "declines": [
-   {
-    "date": "2025-03-16",
-    "team": "VGK",
-    "q": 0.4962,
-    "game_id": 2024021066
+    "date": "2025-01-31",
+    "team": "VAN",
+    "q": 0.4276,
+    "game_id": 2024020823
    },
    {
-    "date": "2025-10-25",
-    "team": "VGK",
-    "q": 0.814,
-    "game_id": 2025020130
-   },
-   {
-    "date": "2025-12-20",
-    "team": "VGK",
-    "q": 0.4181,
-    "game_id": 2025020559
-   },
-   {
-    "date": "2025-12-29",
-    "team": "VGK",
-    "q": 0.5027,
-    "game_id": 2025020614
-   }
-  ]
- },
- {
-  "coach": "John Hynes",
-  "instances": 47,
-  "pulls": 7,
-  "ev_clear": 8,
-  "ev_taken": 5,
-  "clean_rate_5v5": 0.625,
-  "naive_rate": 0.149,
-  "clear_chances": 11,
-  "clear_taken": 7,
-  "clean_rate": 0.636,
-  "ci": [
-   0.362,
-   0.888
-  ],
-  "ruined_windows": 35,
-  "league_expected_pulls_in_nopull": 2.9,
-  "declines": [
-   {
-    "date": "2025-01-25",
-    "team": "MIN",
-    "q": 0.4209,
-    "game_id": 2024020784
-   },
-   {
-    "date": "2025-10-11",
-    "team": "MIN",
-    "q": 0.6947,
-    "game_id": 2025020033
-   },
-   {
-    "date": "2025-10-17",
-    "team": "MIN",
-    "q": 0.4724,
-    "game_id": 2025020073
-   },
-   {
-    "date": "2026-02-27",
-    "team": "MIN",
-    "q": 0.4568,
-    "game_id": 2025020932
-   }
-  ]
- },
- {
-  "coach": "Mike Sullivan",
-  "instances": 40,
-  "pulls": 6,
-  "ev_clear": 8,
-  "ev_taken": 5,
-  "clean_rate_5v5": 0.625,
-  "naive_rate": 0.15,
-  "clear_chances": 10,
-  "clear_taken": 6,
-  "clean_rate": 0.6,
-  "ci": [
-   0.313,
-   0.869
-  ],
-  "ruined_windows": 29,
-  "league_expected_pulls_in_nopull": 3.45,
-  "declines": [
-   {
-    "date": "2024-10-18",
-    "team": "PIT",
-    "q": 0.7748,
-    "game_id": 2024020072
-   },
-   {
-    "date": "2025-01-25",
-    "team": "PIT",
-    "q": 0.468,
-    "game_id": 2024020778
-   },
-   {
-    "date": "2025-12-10",
-    "team": "NYR",
-    "q": 0.6113,
-    "game_id": 2025020476
-   },
-   {
-    "date": "2026-01-28",
-    "team": "NYR",
-    "q": 0.513,
-    "game_id": 2025020842
-   }
-  ]
- },
- {
-  "coach": "Jeff Blashill",
-  "instances": 19,
-  "pulls": 3,
-  "ev_clear": 5,
-  "ev_taken": 3,
-  "clean_rate_5v5": 0.6,
-  "naive_rate": 0.158,
-  "clear_chances": 5,
-  "clear_taken": 3,
-  "clean_rate": 0.6,
-  "ci": [
-   0.218,
-   0.949
-  ],
-  "ruined_windows": 14,
-  "league_expected_pulls_in_nopull": 1.51,
-  "declines": [
-   {
-    "date": "2026-03-20",
-    "team": "CHI",
-    "q": 0.449,
-    "game_id": 2025021096
-   },
-   {
-    "date": "2026-04-13",
-    "team": "CHI",
-    "q": 0.4899,
-    "game_id": 2025021288
-   }
-  ]
- },
- {
-  "coach": "Paul Maurice",
-  "instances": 46,
-  "pulls": 7,
-  "ev_clear": 9,
-  "ev_taken": 4,
-  "clean_rate_5v5": 0.444,
-  "naive_rate": 0.152,
-  "clear_chances": 12,
-  "clear_taken": 7,
-  "clean_rate": 0.583,
-  "ci": [
-   0.318,
-   0.836
-  ],
-  "ruined_windows": 33,
-  "league_expected_pulls_in_nopull": 3.46,
-  "declines": [
-   {
-    "date": "2024-12-14",
-    "team": "FLA",
-    "q": 0.5027,
-    "game_id": 2024020485
-   },
-   {
-    "date": "2025-03-22",
-    "team": "FLA",
-    "q": 0.5061,
-    "game_id": 2024021110
-   },
-   {
-    "date": "2025-10-18",
-    "team": "FLA",
-    "q": 0.513,
-    "game_id": 2025020076
-   },
-   {
-    "date": "2026-03-17",
-    "team": "FLA",
-    "q": 0.4309,
-    "game_id": 2025021074
-   },
-   {
-    "date": "2026-04-05",
-    "team": "FLA",
-    "q": 0.4736,
-    "game_id": 2025021223
-   }
-  ]
- },
- {
-  "coach": "Jim Montgomery",
-  "instances": 31,
-  "pulls": 4,
-  "ev_clear": 6,
-  "ev_taken": 4,
-  "clean_rate_5v5": 0.667,
-  "naive_rate": 0.129,
-  "clear_chances": 7,
-  "clear_taken": 4,
-  "clean_rate": 0.571,
-  "ci": [
-   0.238,
-   0.887
-  ],
-  "ruined_windows": 21,
-  "league_expected_pulls_in_nopull": 2.87,
-  "declines": [
-   {
-    "date": "2025-12-04",
-    "team": "STL",
-    "q": 0.506,
-    "game_id": 2025020426
-   },
-   {
-    "date": "2025-12-15",
-    "team": "STL",
-    "q": 0.3955,
-    "game_id": 2025020517
-   },
-   {
-    "date": "2025-12-22",
-    "team": "STL",
-    "q": 0.513,
-    "game_id": 2025020571
-   }
-  ]
- },
- {
-  "coach": "Jim Hiller",
-  "instances": 22,
-  "pulls": 4,
-  "ev_clear": 4,
-  "ev_taken": 1,
-  "clean_rate_5v5": 0.25,
-  "naive_rate": 0.182,
-  "clear_chances": 7,
-  "clear_taken": 4,
-  "clean_rate": 0.571,
-  "ci": [
-   0.238,
-   0.887
-  ],
-  "ruined_windows": 15,
-  "league_expected_pulls_in_nopull": 1.45,
-  "declines": [
-   {
-    "date": "2024-10-16",
-    "team": "LAK",
-    "q": 0.4249,
-    "game_id": 2024020058
-   },
-   {
-    "date": "2025-11-06",
-    "team": "LAK",
-    "q": 0.4856,
-    "game_id": 2025020226
-   },
-   {
-    "date": "2026-02-05",
-    "team": "LAK",
-    "q": 0.4598,
-    "game_id": 2025020909
-   }
-  ]
- },
- {
-  "coach": "Martin St. Louis",
-  "instances": 36,
-  "pulls": 6,
-  "ev_clear": 10,
-  "ev_taken": 6,
-  "clean_rate_5v5": 0.6,
-  "naive_rate": 0.167,
-  "clear_chances": 11,
-  "clear_taken": 6,
-  "clean_rate": 0.545,
-  "ci": [
-   0.271,
-   0.813
-  ],
-  "ruined_windows": 24,
-  "league_expected_pulls_in_nopull": 3.19,
-  "declines": [
-   {
-    "date": "2024-10-22",
-    "team": "MTL",
-    "q": 0.6617,
-    "game_id": 2024020096
-   },
-   {
-    "date": "2024-11-09",
-    "team": "MTL",
-    "q": 0.4845,
-    "game_id": 2024020227
-   },
-   {
-    "date": "2024-11-23",
-    "team": "MTL",
-    "q": 0.469,
-    "game_id": 2024020322
-   },
-   {
-    "date": "2025-12-02",
-    "team": "MTL",
-    "q": 0.4837,
-    "game_id": 2025020411
-   },
-   {
-    "date": "2026-04-11",
-    "team": "MTL",
+    "date": "2026-01-17",
+    "team": "PHI",
     "q": 0.4989,
-    "game_id": 2025021271
-   }
-  ]
- },
- {
-  "coach": "Dean Evason",
-  "instances": 36,
-  "pulls": 6,
-  "ev_clear": 7,
-  "ev_taken": 3,
-  "clean_rate_5v5": 0.429,
-  "naive_rate": 0.167,
-  "clear_chances": 11,
-  "clear_taken": 6,
-  "clean_rate": 0.545,
-  "ci": [
-   0.271,
-   0.813
-  ],
-  "ruined_windows": 25,
-  "league_expected_pulls_in_nopull": 3.2,
-  "declines": [
-   {
-    "date": "2024-10-19",
-    "team": "CBJ",
-    "q": 0.4927,
-    "game_id": 2024020083
-   },
-   {
-    "date": "2024-12-05",
-    "team": "CBJ",
-    "q": 0.4738,
-    "game_id": 2024020418
-   },
-   {
-    "date": "2024-12-10",
-    "team": "CBJ",
-    "q": 0.4933,
-    "game_id": 2024020449
-   },
-   {
-    "date": "2024-12-15",
-    "team": "CBJ",
-    "q": 0.8006,
-    "game_id": 2024020491
-   },
-   {
-    "date": "2025-11-18",
-    "team": "CBJ",
-    "q": 0.513,
-    "game_id": 2025020311
+    "game_id": 2025020755
    }
   ]
  },
  {
   "coach": "Sheldon Keefe",
-  "instances": 47,
-  "pulls": 8,
-  "ev_clear": 13,
-  "ev_taken": 5,
-  "clean_rate_5v5": 0.385,
-  "naive_rate": 0.17,
-  "clear_chances": 15,
-  "clear_taken": 8,
-  "clean_rate": 0.533,
+  "instances": 74,
+  "pulls": 13,
+  "ev_clear": 17,
+  "ev_taken": 9,
+  "clean_rate_5v5": 0.529,
+  "naive_rate": 0.176,
+  "clear_chances": 21,
+  "clear_taken": 13,
+  "clean_rate": 0.619,
   "ci": [
-   0.294,
-   0.768
+   0.415,
+   0.813
   ],
-  "ruined_windows": 26,
-  "league_expected_pulls_in_nopull": 5.97,
+  "ruined_windows": 41,
+  "league_expected_pulls_in_nopull": 8.66,
   "declines": [
+   {
+    "date": "2022-12-17",
+    "team": "TOR",
+    "q": 0.4098,
+    "game_id": 2022020491
+   },
    {
     "date": "2024-10-22",
     "team": "NJD",
@@ -1001,28 +1114,290 @@
   ]
  },
  {
-  "coach": "Peter DeBoer",
-  "instances": 17,
-  "pulls": 1,
-  "ev_clear": 2,
-  "ev_taken": 1,
+  "coach": "Dean Evason",
+  "instances": 62,
+  "pulls": 8,
+  "ev_clear": 8,
+  "ev_taken": 4,
   "clean_rate_5v5": 0.5,
-  "naive_rate": 0.059,
-  "clear_chances": 2,
-  "clear_taken": 1,
-  "clean_rate": 0.5,
+  "naive_rate": 0.129,
+  "clear_chances": 13,
+  "clear_taken": 8,
+  "clean_rate": 0.615,
   "ci": [
-   0.01,
-   0.99
+   0.36,
+   0.854
   ],
-  "ruined_windows": 14,
-  "league_expected_pulls_in_nopull": 1.25,
+  "ruined_windows": 49,
+  "league_expected_pulls_in_nopull": 3.89,
   "declines": [
    {
-    "date": "2025-01-18",
-    "team": "DAL",
-    "q": 0.4779,
-    "game_id": 2024020724
+    "date": "2024-10-19",
+    "team": "CBJ",
+    "q": 0.4927,
+    "game_id": 2024020083
+   },
+   {
+    "date": "2024-12-05",
+    "team": "CBJ",
+    "q": 0.4738,
+    "game_id": 2024020418
+   },
+   {
+    "date": "2024-12-10",
+    "team": "CBJ",
+    "q": 0.4933,
+    "game_id": 2024020449
+   },
+   {
+    "date": "2024-12-15",
+    "team": "CBJ",
+    "q": 0.8006,
+    "game_id": 2024020491
+   },
+   {
+    "date": "2025-11-18",
+    "team": "CBJ",
+    "q": 0.513,
+    "game_id": 2025020311
+   }
+  ]
+ },
+ {
+  "coach": "Jeff Blashill",
+  "instances": 19,
+  "pulls": 3,
+  "ev_clear": 5,
+  "ev_taken": 3,
+  "clean_rate_5v5": 0.6,
+  "naive_rate": 0.158,
+  "clear_chances": 5,
+  "clear_taken": 3,
+  "clean_rate": 0.6,
+  "ci": [
+   0.218,
+   0.949
+  ],
+  "ruined_windows": 14,
+  "league_expected_pulls_in_nopull": 1.51,
+  "declines": [
+   {
+    "date": "2026-03-20",
+    "team": "CHI",
+    "q": 0.449,
+    "game_id": 2025021096
+   },
+   {
+    "date": "2026-04-13",
+    "team": "CHI",
+    "q": 0.4899,
+    "game_id": 2025021288
+   }
+  ]
+ },
+ {
+  "coach": "Jim Hiller",
+  "instances": 29,
+  "pulls": 4,
+  "ev_clear": 4,
+  "ev_taken": 1,
+  "clean_rate_5v5": 0.25,
+  "naive_rate": 0.138,
+  "clear_chances": 7,
+  "clear_taken": 4,
+  "clean_rate": 0.571,
+  "ci": [
+   0.238,
+   0.887
+  ],
+  "ruined_windows": 21,
+  "league_expected_pulls_in_nopull": 2.14,
+  "declines": [
+   {
+    "date": "2024-10-16",
+    "team": "LAK",
+    "q": 0.4249,
+    "game_id": 2024020058
+   },
+   {
+    "date": "2025-11-06",
+    "team": "LAK",
+    "q": 0.4856,
+    "game_id": 2025020226
+   },
+   {
+    "date": "2026-02-05",
+    "team": "LAK",
+    "q": 0.4598,
+    "game_id": 2025020909
+   }
+  ]
+ },
+ {
+  "coach": "Andrew Brunette",
+  "instances": 79,
+  "pulls": 10,
+  "ev_clear": 15,
+  "ev_taken": 7,
+  "clean_rate_5v5": 0.467,
+  "naive_rate": 0.127,
+  "clear_chances": 18,
+  "clear_taken": 10,
+  "clean_rate": 0.556,
+  "ci": [
+   0.335,
+   0.771
+  ],
+  "ruined_windows": 57,
+  "league_expected_pulls_in_nopull": 6.96,
+  "declines": [
+   {
+    "date": "2024-12-30",
+    "team": "NSH",
+    "q": 0.4022,
+    "game_id": 2024020587
+   },
+   {
+    "date": "2025-03-01",
+    "team": "NSH",
+    "q": 0.6402,
+    "game_id": 2024020949
+   },
+   {
+    "date": "2025-03-02",
+    "team": "NSH",
+    "q": 0.4411,
+    "game_id": 2024020965
+   },
+   {
+    "date": "2025-03-18",
+    "team": "NSH",
+    "q": 0.4698,
+    "game_id": 2024021082
+   },
+   {
+    "date": "2025-10-21",
+    "team": "NSH",
+    "q": 0.484,
+    "game_id": 2025020105
+   },
+   {
+    "date": "2025-12-06",
+    "team": "NSH",
+    "q": 0.4944,
+    "game_id": 2025020447
+   },
+   {
+    "date": "2026-01-06",
+    "team": "NSH",
+    "q": 0.4681,
+    "game_id": 2025020674
+   },
+   {
+    "date": "2026-04-09",
+    "team": "NSH",
+    "q": 0.4726,
+    "game_id": 2025021257
+   }
+  ]
+ },
+ {
+  "coach": "Jim Montgomery",
+  "instances": 52,
+  "pulls": 6,
+  "ev_clear": 8,
+  "ev_taken": 6,
+  "clean_rate_5v5": 0.75,
+  "naive_rate": 0.115,
+  "clear_chances": 11,
+  "clear_taken": 6,
+  "clean_rate": 0.545,
+  "ci": [
+   0.271,
+   0.813
+  ],
+  "ruined_windows": 35,
+  "league_expected_pulls_in_nopull": 5.23,
+  "declines": [
+   {
+    "date": "2023-01-29",
+    "team": "BOS",
+    "q": 0.566,
+    "game_id": 2022020799
+   },
+   {
+    "date": "2024-04-09",
+    "team": "BOS",
+    "q": 0.7165,
+    "game_id": 2023021239
+   },
+   {
+    "date": "2025-12-04",
+    "team": "STL",
+    "q": 0.506,
+    "game_id": 2025020426
+   },
+   {
+    "date": "2025-12-15",
+    "team": "STL",
+    "q": 0.3955,
+    "game_id": 2025020517
+   },
+   {
+    "date": "2025-12-22",
+    "team": "STL",
+    "q": 0.513,
+    "game_id": 2025020571
+   }
+  ]
+ },
+ {
+  "coach": "Spencer Carbery",
+  "instances": 59,
+  "pulls": 6,
+  "ev_clear": 8,
+  "ev_taken": 5,
+  "clean_rate_5v5": 0.625,
+  "naive_rate": 0.102,
+  "clear_chances": 11,
+  "clear_taken": 6,
+  "clean_rate": 0.545,
+  "ci": [
+   0.271,
+   0.813
+  ],
+  "ruined_windows": 42,
+  "league_expected_pulls_in_nopull": 5.78,
+  "declines": [
+   {
+    "date": "2024-10-26",
+    "team": "WSH",
+    "q": 0.4924,
+    "game_id": 2024020127
+   },
+   {
+    "date": "2025-03-13",
+    "team": "WSH",
+    "q": 0.6778,
+    "game_id": 2024021047
+   },
+   {
+    "date": "2025-04-06",
+    "team": "WSH",
+    "q": 0.5027,
+    "game_id": 2024021222
+   },
+   {
+    "date": "2025-04-17",
+    "team": "WSH",
+    "q": 0.4989,
+    "game_id": 2024021311
+   },
+   {
+    "date": "2026-01-27",
+    "team": "WSH",
+    "q": 0.6811,
+    "game_id": 2025020839
    }
   ]
  },
@@ -1049,6 +1424,80 @@
     "team": "BOS",
     "q": 0.4026,
     "game_id": 2025020676
+   }
+  ]
+ },
+ {
+  "coach": "Mike Sullivan",
+  "instances": 78,
+  "pulls": 8,
+  "ev_clear": 9,
+  "ev_taken": 6,
+  "clean_rate_5v5": 0.667,
+  "naive_rate": 0.103,
+  "clear_chances": 17,
+  "clear_taken": 8,
+  "clean_rate": 0.471,
+  "ci": [
+   0.248,
+   0.697
+  ],
+  "ruined_windows": 55,
+  "league_expected_pulls_in_nopull": 8.83,
+  "declines": [
+   {
+    "date": "2022-10-25",
+    "team": "PIT",
+    "q": 0.6643,
+    "game_id": 2022020104
+   },
+   {
+    "date": "2023-01-13",
+    "team": "PIT",
+    "q": 0.5243,
+    "game_id": 2022020674
+   },
+   {
+    "date": "2023-03-04",
+    "team": "PIT",
+    "q": 0.3872,
+    "game_id": 2022020992
+   },
+   {
+    "date": "2023-11-16",
+    "team": "PIT",
+    "q": 0.6721,
+    "game_id": 2023020245
+   },
+   {
+    "date": "2023-12-06",
+    "team": "PIT",
+    "q": 0.7363,
+    "game_id": 2023020389
+   },
+   {
+    "date": "2024-10-18",
+    "team": "PIT",
+    "q": 0.7748,
+    "game_id": 2024020072
+   },
+   {
+    "date": "2025-01-25",
+    "team": "PIT",
+    "q": 0.468,
+    "game_id": 2024020778
+   },
+   {
+    "date": "2025-12-10",
+    "team": "NYR",
+    "q": 0.6113,
+    "game_id": 2025020476
+   },
+   {
+    "date": "2026-01-28",
+    "team": "NYR",
+    "q": 0.513,
+    "game_id": 2025020842
    }
   ]
  },
@@ -1109,120 +1558,126 @@
   ]
  },
  {
-  "coach": "Spencer Carbery",
-  "instances": 30,
-  "pulls": 3,
-  "ev_clear": 5,
-  "ev_taken": 2,
-  "clean_rate_5v5": 0.4,
-  "naive_rate": 0.1,
-  "clear_chances": 8,
-  "clear_taken": 3,
-  "clean_rate": 0.375,
+  "coach": "Greg Cronin",
+  "instances": 51,
+  "pulls": 4,
+  "ev_clear": 4,
+  "ev_taken": 1,
+  "clean_rate_5v5": 0.25,
+  "naive_rate": 0.078,
+  "clear_chances": 9,
+  "clear_taken": 4,
+  "clean_rate": 0.444,
   "ci": [
-   0.087,
-   0.691
+   0.156,
+   0.744
   ],
-  "ruined_windows": 21,
-  "league_expected_pulls_in_nopull": 3.65,
+  "ruined_windows": 37,
+  "league_expected_pulls_in_nopull": 4.6,
   "declines": [
    {
-    "date": "2024-10-26",
-    "team": "WSH",
-    "q": 0.4924,
-    "game_id": 2024020127
+    "date": "2024-01-11",
+    "team": "ANA",
+    "q": 0.4333,
+    "game_id": 2023020639
    },
    {
-    "date": "2025-03-13",
-    "team": "WSH",
-    "q": 0.6778,
-    "game_id": 2024021047
+    "date": "2024-10-27",
+    "team": "ANA",
+    "q": 0.8394,
+    "game_id": 2024020137
    },
    {
-    "date": "2025-04-06",
-    "team": "WSH",
+    "date": "2025-01-14",
+    "team": "ANA",
+    "q": 0.513,
+    "game_id": 2024020697
+   },
+   {
+    "date": "2025-01-21",
+    "team": "ANA",
     "q": 0.5027,
-    "game_id": 2024021222
+    "game_id": 2024020756
    },
    {
-    "date": "2025-04-17",
-    "team": "WSH",
-    "q": 0.4989,
-    "game_id": 2024021311
-   },
-   {
-    "date": "2026-01-27",
-    "team": "WSH",
-    "q": 0.6811,
-    "game_id": 2025020839
+    "date": "2025-04-03",
+    "team": "ANA",
+    "q": 0.5027,
+    "game_id": 2024021203
    }
   ]
  },
  {
-  "coach": "Andrew Brunette",
-  "instances": 60,
-  "pulls": 4,
-  "ev_clear": 11,
-  "ev_taken": 3,
-  "clean_rate_5v5": 0.273,
-  "naive_rate": 0.067,
-  "clear_chances": 12,
-  "clear_taken": 4,
-  "clean_rate": 0.333,
+  "coach": "John Tortorella",
+  "instances": 83,
+  "pulls": 5,
+  "ev_clear": 6,
+  "ev_taken": 0,
+  "clean_rate_5v5": 0.0,
+  "naive_rate": 0.06,
+  "clear_chances": 14,
+  "clear_taken": 5,
+  "clean_rate": 0.357,
   "ci": [
-   0.097,
-   0.595
+   0.131,
+   0.603
   ],
-  "ruined_windows": 44,
-  "league_expected_pulls_in_nopull": 6.34,
+  "ruined_windows": 60,
+  "league_expected_pulls_in_nopull": 9.91,
   "declines": [
    {
-    "date": "2024-12-30",
-    "team": "NSH",
-    "q": 0.4022,
-    "game_id": 2024020587
+    "date": "2022-12-01",
+    "team": "PHI",
+    "q": 0.5978,
+    "game_id": 2022020367
    },
    {
-    "date": "2025-03-01",
-    "team": "NSH",
-    "q": 0.6402,
-    "game_id": 2024020949
+    "date": "2023-04-08",
+    "team": "PHI",
+    "q": 0.6692,
+    "game_id": 2022021268
    },
    {
-    "date": "2025-03-02",
-    "team": "NSH",
-    "q": 0.4411,
-    "game_id": 2024020965
+    "date": "2023-10-14",
+    "team": "PHI",
+    "q": 0.6757,
+    "game_id": 2023020019
    },
    {
-    "date": "2025-03-18",
-    "team": "NSH",
-    "q": 0.4698,
-    "game_id": 2024021082
+    "date": "2024-10-19",
+    "team": "PHI",
+    "q": 0.5027,
+    "game_id": 2024020082
    },
    {
-    "date": "2025-10-21",
-    "team": "NSH",
-    "q": 0.484,
-    "game_id": 2025020105
+    "date": "2024-10-22",
+    "team": "PHI",
+    "q": 0.4543,
+    "game_id": 2024020092
    },
    {
-    "date": "2025-12-06",
-    "team": "NSH",
-    "q": 0.4944,
-    "game_id": 2025020447
+    "date": "2024-10-27",
+    "team": "PHI",
+    "q": 0.4838,
+    "game_id": 2024020138
    },
    {
-    "date": "2026-01-06",
-    "team": "NSH",
-    "q": 0.4681,
-    "game_id": 2025020674
+    "date": "2024-11-20",
+    "team": "PHI",
+    "q": 0.5027,
+    "game_id": 2024020302
    },
    {
-    "date": "2026-04-09",
-    "team": "NSH",
-    "q": 0.4726,
-    "game_id": 2025021257
+    "date": "2025-01-30",
+    "team": "PHI",
+    "q": 0.6529,
+    "game_id": 2024020816
+   },
+   {
+    "date": "2025-03-23",
+    "team": "PHI",
+    "q": 0.5111,
+    "game_id": 2024021118
    }
   ]
  },
@@ -1271,123 +1726,61 @@
   ]
  },
  {
-  "coach": "Greg Cronin",
-  "instances": 25,
-  "pulls": 2,
-  "ev_clear": 3,
+  "coach": "Pascal Vincent",
+  "instances": 27,
+  "pulls": 1,
+  "ev_clear": 0,
   "ev_taken": 0,
-  "clean_rate_5v5": 0.0,
-  "naive_rate": 0.08,
-  "clear_chances": 6,
-  "clear_taken": 2,
+  "clean_rate_5v5": null,
+  "naive_rate": 0.037,
+  "clear_chances": 3,
+  "clear_taken": 1,
   "clean_rate": 0.333,
   "ci": [
-   0.025,
-   0.689
+   0,
+   0.799
   ],
-  "ruined_windows": 17,
-  "league_expected_pulls_in_nopull": 3.07,
+  "ruined_windows": 20,
+  "league_expected_pulls_in_nopull": 3.1,
   "declines": [
    {
-    "date": "2024-10-27",
-    "team": "ANA",
-    "q": 0.8394,
-    "game_id": 2024020137
+    "date": "2024-03-26",
+    "team": "CBJ",
+    "q": 0.4051,
+    "game_id": 2023021145
    },
    {
-    "date": "2025-01-14",
-    "team": "ANA",
-    "q": 0.513,
-    "game_id": 2024020697
-   },
-   {
-    "date": "2025-01-21",
-    "team": "ANA",
-    "q": 0.5027,
-    "game_id": 2024020756
-   },
-   {
-    "date": "2025-04-03",
-    "team": "ANA",
-    "q": 0.5027,
-    "game_id": 2024021203
-   }
-  ]
- },
- {
-  "coach": "John Tortorella",
-  "instances": 27,
-  "pulls": 2,
-  "ev_clear": 6,
-  "ev_taken": 0,
-  "clean_rate_5v5": 0.0,
-  "naive_rate": 0.074,
-  "clear_chances": 8,
-  "clear_taken": 2,
-  "clean_rate": 0.25,
-  "ci": [
-   0.0,
-   0.555
-  ],
-  "ruined_windows": 18,
-  "league_expected_pulls_in_nopull": 4.25,
-  "declines": [
-   {
-    "date": "2024-10-19",
-    "team": "PHI",
-    "q": 0.5027,
-    "game_id": 2024020082
-   },
-   {
-    "date": "2024-10-22",
-    "team": "PHI",
-    "q": 0.4543,
-    "game_id": 2024020092
-   },
-   {
-    "date": "2024-10-27",
-    "team": "PHI",
-    "q": 0.4838,
-    "game_id": 2024020138
-   },
-   {
-    "date": "2024-11-20",
-    "team": "PHI",
-    "q": 0.5027,
-    "game_id": 2024020302
-   },
-   {
-    "date": "2025-01-30",
-    "team": "PHI",
-    "q": 0.6529,
-    "game_id": 2024020816
-   },
-   {
-    "date": "2025-03-23",
-    "team": "PHI",
-    "q": 0.5111,
-    "game_id": 2024021118
+    "date": "2024-04-13",
+    "team": "CBJ",
+    "q": 0.4808,
+    "game_id": 2023021278
    }
   ]
  },
  {
   "coach": "Todd McLellan",
-  "instances": 36,
-  "pulls": 2,
+  "instances": 58,
+  "pulls": 3,
   "ev_clear": 6,
   "ev_taken": 0,
   "clean_rate_5v5": 0.0,
-  "naive_rate": 0.056,
-  "clear_chances": 8,
-  "clear_taken": 2,
-  "clean_rate": 0.25,
+  "naive_rate": 0.052,
+  "clear_chances": 10,
+  "clear_taken": 3,
+  "clean_rate": 0.3,
   "ci": [
-   0.0,
-   0.555
+   0.055,
+   0.582
   ],
-  "ruined_windows": 26,
-  "league_expected_pulls_in_nopull": 4.59,
+  "ruined_windows": 42,
+  "league_expected_pulls_in_nopull": 6.75,
   "declines": [
+   {
+    "date": "2023-02-26",
+    "team": "LAK",
+    "q": 0.4338,
+    "game_id": 2022020950
+   },
    {
     "date": "2024-12-27",
     "team": "DET",
@@ -1427,22 +1820,60 @@
   ]
  },
  {
-  "coach": "Ryan Huska",
-  "instances": 41,
+  "coach": "Andr\u00e9 Tourigny",
+  "instances": 55,
   "pulls": 1,
-  "ev_clear": 8,
-  "ev_taken": 0,
-  "clean_rate_5v5": 0.0,
-  "naive_rate": 0.024,
-  "clear_chances": 10,
+  "ev_clear": 1,
+  "ev_taken": 1,
+  "clean_rate_5v5": 1.0,
+  "naive_rate": 0.018,
+  "clear_chances": 4,
   "clear_taken": 1,
-  "clean_rate": 0.1,
+  "clean_rate": 0.25,
   "ci": [
    0,
-   0.331
+   0.667
   ],
-  "ruined_windows": 29,
-  "league_expected_pulls_in_nopull": 5.78,
+  "ruined_windows": 45,
+  "league_expected_pulls_in_nopull": 4.91,
+  "declines": [
+   {
+    "date": "2023-02-26",
+    "team": "ARI",
+    "q": 0.5088,
+    "game_id": 2022020952
+   },
+   {
+    "date": "2023-04-10",
+    "team": "ARI",
+    "q": 0.6166,
+    "game_id": 2022021283
+   },
+   {
+    "date": "2024-03-20",
+    "team": "ARI",
+    "q": 0.4531,
+    "game_id": 2023021096
+   }
+  ]
+ },
+ {
+  "coach": "Ryan Huska",
+  "instances": 64,
+  "pulls": 2,
+  "ev_clear": 9,
+  "ev_taken": 1,
+  "clean_rate_5v5": 0.111,
+  "naive_rate": 0.031,
+  "clear_chances": 11,
+  "clear_taken": 2,
+  "clean_rate": 0.182,
+  "ci": [
+   0,
+   0.429
+  ],
+  "ruined_windows": 48,
+  "league_expected_pulls_in_nopull": 7.41,
   "declines": [
    {
     "date": "2024-12-08",
@@ -1501,6 +1932,112 @@
   ]
  },
  {
+  "coach": "Dallas Eakins",
+  "instances": 38,
+  "pulls": 1,
+  "ev_clear": 1,
+  "ev_taken": 1,
+  "clean_rate_5v5": 1.0,
+  "naive_rate": 0.026,
+  "clear_chances": 6,
+  "clear_taken": 1,
+  "clean_rate": 0.167,
+  "ci": [
+   0,
+   0.499
+  ],
+  "ruined_windows": 28,
+  "league_expected_pulls_in_nopull": 5.06,
+  "declines": [
+   {
+    "date": "2022-12-12",
+    "team": "ANA",
+    "q": 0.4398,
+    "game_id": 2022020451
+   },
+   {
+    "date": "2022-12-20",
+    "team": "ANA",
+    "q": 0.6263,
+    "game_id": 2022020516
+   },
+   {
+    "date": "2023-01-17",
+    "team": "ANA",
+    "q": 0.5656,
+    "game_id": 2022020705
+   },
+   {
+    "date": "2023-03-07",
+    "team": "ANA",
+    "q": 0.5553,
+    "game_id": 2022021021
+   },
+   {
+    "date": "2023-03-25",
+    "team": "ANA",
+    "q": 0.4915,
+    "game_id": 2022021164
+   }
+  ]
+ },
+ {
+  "coach": "Luke Richardson",
+  "instances": 76,
+  "pulls": 0,
+  "ev_clear": 0,
+  "ev_taken": 0,
+  "clean_rate_5v5": null,
+  "naive_rate": 0.0,
+  "clear_chances": 6,
+  "clear_taken": 0,
+  "clean_rate": 0.0,
+  "ci": [
+   0,
+   0.25
+  ],
+  "ruined_windows": 60,
+  "league_expected_pulls_in_nopull": 8.42,
+  "declines": [
+   {
+    "date": "2022-11-16",
+    "team": "CHI",
+    "q": 0.5888,
+    "game_id": 2022020258
+   },
+   {
+    "date": "2023-11-26",
+    "team": "CHI",
+    "q": 0.6535,
+    "game_id": 2023020317
+   },
+   {
+    "date": "2023-12-12",
+    "team": "CHI",
+    "q": 0.4143,
+    "game_id": 2023020437
+   },
+   {
+    "date": "2024-01-18",
+    "team": "CHI",
+    "q": 0.5014,
+    "game_id": 2023020691
+   },
+   {
+    "date": "2024-03-09",
+    "team": "CHI",
+    "q": 0.6775,
+    "game_id": 2023021017
+   },
+   {
+    "date": "2024-10-22",
+    "team": "CHI",
+    "q": 0.7716,
+    "game_id": 2024020100
+   }
+  ]
+ },
+ {
   "coach": "Anders Sorensen",
   "instances": 23,
   "pulls": 0,
@@ -1545,8 +2082,46 @@
   ]
  },
  {
-  "coach": "Luke Richardson",
-  "instances": 8,
+  "coach": "Jay Woodcroft",
+  "instances": 21,
+  "pulls": 0,
+  "ev_clear": 0,
+  "ev_taken": 0,
+  "clean_rate_5v5": null,
+  "naive_rate": 0.0,
+  "clear_chances": 3,
+  "clear_taken": 0,
+  "clean_rate": 0.0,
+  "ci": [
+   0,
+   0.415
+  ],
+  "ruined_windows": 14,
+  "league_expected_pulls_in_nopull": 3.53,
+  "declines": [
+   {
+    "date": "2022-11-21",
+    "team": "EDM",
+    "q": 0.5613,
+    "game_id": 2022020293
+   },
+   {
+    "date": "2022-11-23",
+    "team": "EDM",
+    "q": 0.6751,
+    "game_id": 2022020310
+   },
+   {
+    "date": "2023-10-26",
+    "team": "EDM",
+    "q": 0.5013,
+    "game_id": 2023020110
+   }
+  ]
+ },
+ {
+  "coach": "Dave Hakstol",
+  "instances": 39,
   "pulls": 0,
   "ev_clear": 0,
   "ev_taken": 0,
@@ -1559,14 +2134,14 @@
    0,
    0.74
   ],
-  "ruined_windows": 7,
-  "league_expected_pulls_in_nopull": 0.84,
+  "ruined_windows": 31,
+  "league_expected_pulls_in_nopull": 4.11,
   "declines": [
    {
-    "date": "2024-10-22",
-    "team": "CHI",
-    "q": 0.7716,
-    "game_id": 2024020100
+    "date": "2023-10-21",
+    "team": "SEA",
+    "q": 0.417,
+    "game_id": 2023020078
    }
   ]
  },
@@ -1595,37 +2170,5 @@
     "game_id": 2024021295
    }
   ]
- },
- {
-  "coach": "Drew Bannister",
-  "instances": 6,
-  "pulls": 0,
-  "ev_clear": 0,
-  "ev_taken": 0,
-  "clean_rate_5v5": null,
-  "naive_rate": 0.0,
-  "clear_chances": 0,
-  "clear_taken": 0,
-  "clean_rate": null,
-  "ci": null,
-  "ruined_windows": 6,
-  "league_expected_pulls_in_nopull": 0.2,
-  "declines": []
- },
- {
-  "coach": "Rick Bowness",
-  "instances": 4,
-  "pulls": 0,
-  "ev_clear": 0,
-  "ev_taken": 0,
-  "clean_rate_5v5": null,
-  "naive_rate": 0.0,
-  "clear_chances": 0,
-  "clear_taken": 0,
-  "clean_rate": null,
-  "ci": null,
-  "ruined_windows": 4,
-  "league_expected_pulls_in_nopull": 0.14,
-  "declines": []
  }
 ]
