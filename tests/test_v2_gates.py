@@ -81,6 +81,22 @@ def test_backtest_calibration_thresholds():
             assert bad <= 2, f"{pk}: reliability {10-bad}/10"
 
 
+def test_pulled_total2_bounded_and_withdrawn():
+    """Pulled-state multi-goal corner: model overshoots (0.253 vs 0.142, n=127).
+    Convergence attempt 2026-07-25 FAILED after eliminating 3 hypotheses
+    (stint-age rates, late gap-4 rates, re-arm productivity — all check out;
+    dead-time mechanism added, small effect). Residual unexplained.
+    GATE: overshoot must not GROW, and the market stays WITHDRAWN from the
+    bet card until a future block converges this (4-season data doubles n).
+    """
+    rows = json.load(open(DER / "backtest_rows.json"))
+    pu = [r for r in rows if r["pulled"]]
+    mp = sum(r["p_total2"] for r in pu) / len(pu)
+    ay = sum(r["y_total2"] for r in pu) / len(pu)
+    assert mp - ay <= 0.115, f"pulled-total2 overshoot grew: {mp-ay:+.3f}"
+    assert (ROOT / "docs" / "WITHDRAWN_MARKETS.md").exists()
+
+
 def test_eihl_ground_truth():
     from hockeycore.leagues.eihl import parse_game, extract_instances
     gt = json.load(open(ROOT / "tests" / "ground_truth_eihl.json"))

@@ -27,6 +27,10 @@ try:
     _LAG = round(json.load(open(DER / "evidence_lag.json"))["evidence_lag_half_2425"])
 except Exception:
     _LAG = 9  # evidence-lag midpoint correction: true pull precedes first evidence
+try:
+    _DEAD = round(json.load(open(DER / "deadtime_fit.json"))["dead_to_play_med"])
+except Exception:
+    _DEAD = 18  # post-goal reset: median clock secs to first real play event
 
 GAPKEY = {2: "2", 3: "3", 4: "4"}
 
@@ -73,6 +77,7 @@ def price(R0, pulled0=False, strength0="EV", m_coach=1.0, gap0=3,
     sval = {"EV": 0, "T_PP": 1, "T_PK": -1}[strength0]
     strength = np.full(n, sval, dtype=np.int8)
     s_clock = np.full(n, strength_secs if sval else 0, dtype=np.int32)
+    dead = np.zeros(n, dtype=np.int32)     # post-goal reset: no pulls, no goals
 
     for u in range(R0, 0, -1):
         gb = np.clip(margin, 2, 4)                     # gap bucket (margin 1 -> gap-2 proxy, documented)
@@ -85,6 +90,7 @@ def price(R0, pulled0=False, strength0="EV", m_coach=1.0, gap0=3,
         h_eff = hz * np.where(strength == 1, mpp, 1.0) * m_coach
         # re-pull dynamics: once committed, return to empty net is ~10x faster (fitted 24-25)
         h_eff = np.where(ever_pulled & (margin <= 3), np.maximum(h_eff, _REPULL), h_eff)
+        h_eff = np.where(dead > 0, 0.0, h_eff)
         r1 = rng.random(n)
         pulled = pulled | (can_pull & (r1 < h_eff))
         ever_pulled = ever_pulled | pulled
@@ -106,13 +112,16 @@ def price(R0, pulled0=False, strength0="EV", m_coach=1.0, gap0=3,
         if low.any():
             lam_f[low] = RATES[(2, "EV_full", "for")]; lam_a[low] = RATES[(2, "EV_full", "against")]
             pulled = pulled & ~low
-        # --- goals
+        # --- goals (suppressed during post-goal reset)
+        lam_f = np.where(dead > 0, 0.0, lam_f)
+        lam_a = np.where(dead > 0, 0.0, lam_a)
         r3 = rng.random(n); r4 = rng.random(n)
         gf = r3 < lam_f
         ga = (~gf) & (r4 < lam_a)                      # at most one goal per second
         trail_goals += gf; lead_goals += ga
         margin = margin - gf.astype(np.int32) + ga.astype(np.int32)
         scored = gf | ga
+        dead = np.where(scored, _DEAD, np.maximum(dead - 1, 0))
         pulled = pulled & ~scored
         strength = np.where(scored, 0, strength)       # goals end penalties (simplification)
         # strength clock

@@ -1,0 +1,7 @@
+dead-time backtest (1442 obs):
+  p_total1: Brier 0.1932 (D +0.0000) OK
+  p_total2: Brier 0.2002 (D +0.0006) OK
+  p_lead1: Brier 0.2241 (D +0.0011) OK
+  p_marg4: Brier 0.2263 (D -0.0001) OK
+PULLED-SEGMENT total>=2: model 0.257 vs actual 0.142 (2SE=0.062) STILL OFF
+GATE: FAIL
