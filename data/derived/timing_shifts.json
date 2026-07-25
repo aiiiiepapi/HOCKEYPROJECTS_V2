@@ -1,0 +1,133 @@
+{
+ "attenuation": 0.375,
+ "league_mean_R": 265.5990783410138,
+ "production": {
+  "Jared Bednar": {
+   "n": 9,
+   "raw": -45,
+   "shift": -17
+  },
+  "Travis Green": {
+   "n": 11,
+   "raw": 5,
+   "shift": 2
+  },
+  "Lindy Ruff": {
+   "n": 11,
+   "raw": -37,
+   "shift": -14
+  },
+  "Jon Cooper": {
+   "n": 9,
+   "raw": -29,
+   "shift": -11
+  },
+  "Craig Berube": {
+   "n": 15,
+   "raw": -8,
+   "shift": -3
+  },
+  "Sheldon Keefe": {
+   "n": 8,
+   "raw": 20,
+   "shift": 8
+  },
+  "Patrick Roy": {
+   "n": 12,
+   "raw": 179,
+   "shift": 67
+  },
+  "Adam Foote": {
+   "n": 8,
+   "raw": -10,
+   "shift": -4
+  },
+  "Dan Muse": {
+   "n": 8,
+   "raw": 65,
+   "shift": 24
+  }
+ },
+ "backtest_2425": {
+  "Jared Bednar": {
+   "n": 6,
+   "raw": -43,
+   "shift": -16
+  },
+  "Travis Green": {
+   "n": 6,
+   "raw": -15,
+   "shift": -6
+  },
+  "Lindy Ruff": {
+   "n": 9,
+   "raw": -63,
+   "shift": -24
+  },
+  "Ryan Warsofsky": {
+   "n": 4,
+   "raw": 132,
+   "shift": 49
+  },
+  "Kris Knoblauch": {
+   "n": 4,
+   "raw": -60,
+   "shift": -23
+  },
+  "Jon Cooper": {
+   "n": 4,
+   "raw": -63,
+   "shift": -24
+  },
+  "Jim Montgomery": {
+   "n": 4,
+   "raw": 127,
+   "shift": 48
+  },
+  "Craig Berube": {
+   "n": 5,
+   "raw": -5,
+   "shift": -2
+  },
+  "Scott Arniel": {
+   "n": 4,
+   "raw": 77,
+   "shift": 29
+  },
+  "Dan Bylsma": {
+   "n": 7,
+   "raw": -14,
+   "shift": -5
+  },
+  "John Hynes": {
+   "n": 4,
+   "raw": -63,
+   "shift": -24
+  },
+  "Bruce Cassidy": {
+   "n": 4,
+   "raw": 22,
+   "shift": 8
+  },
+  "Dean Evason": {
+   "n": 5,
+   "raw": -5,
+   "shift": -2
+  },
+  "Sheldon Keefe": {
+   "n": 4,
+   "raw": -21,
+   "shift": -8
+  },
+  "Patrick Roy": {
+   "n": 5,
+   "raw": 181,
+   "shift": 68
+  },
+  "Joe Sacco": {
+   "n": 5,
+   "raw": -21,
+   "shift": -8
+  }
+ }
+}

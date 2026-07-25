@@ -33,12 +33,13 @@ MP._ret = re_ev / ps
 print(f"pricer rewired to 24-25 fits (return hazard {MP._ret:.5f})")
 
 coach_m = json.load(open(DER / "coach_m_2425.json"))
+_ts = json.load(open(DER / "timing_shifts.json"))["backtest_2425"]
 
 _cache = {}
-def cached_price(R, pulled, strength, m):
-    key = (R, pulled, strength, round(m, 2))
+def cached_price(R, pulled, strength, m, shift=0):
+    key = (R, pulled, strength, round(m, 2), shift)
     if key not in _cache:
-        _cache[key] = MP.price(R, pulled0=pulled, strength0=strength, m_coach=m, n=20000, seed=13)
+        _cache[key] = MP.price(R, pulled0=pulled, strength0=strength, m_coach=m, n=20000, seed=13, coach_shift=shift)
     return _cache[key]
 
 def outcomes_from_raw(gid, t_cp, leader_is_home, entry, p3goals):
@@ -80,7 +81,9 @@ def main():
             if pulled: strength = "EV"  # pulled cells priced at EN of current diff; keep EV entry
             cm = coach_m.get(inst["trailing_coach"], {"m": 1.0})
             new_coach = inst["trailing_coach"] not in coach_m
-            p = cached_price(R, pulled, strength, cm["m"])
+            sh = _ts.get(inst["trailing_coach"], {"shift": 0})
+            sh = sh["shift"] if isinstance(sh, dict) else sh
+            p = cached_price(R, pulled, strength, cm["m"], sh)
             pb = cached_price(R, pulled, strength, 1.0)  # coach-blind pseudo-market
             out = outcomes_from_raw(gid, t_cp, not trail_home, g["p3_entry"], p3goals)
             rows.append({

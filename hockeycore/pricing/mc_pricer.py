@@ -58,7 +58,7 @@ RATES = {(g, s, d): _rate(g, s, d) for g in (2, 3, 4) for s in STATES for d in (
 
 
 def price(R0, pulled0=False, strength0="EV", m_coach=1.0, gap0=3,
-          n=40000, seed=7, strength_secs=60):
+          n=40000, seed=7, strength_secs=60, coach_shift=0):
     rng = np.random.default_rng(seed)
     lead_goals = np.zeros(n, dtype=np.int32)
     trail_goals = np.zeros(n, dtype=np.int32)
@@ -74,7 +74,8 @@ def price(R0, pulled0=False, strength0="EV", m_coach=1.0, gap0=3,
         gb = np.clip(margin, 2, 4)                     # gap bucket (margin 1 -> gap-2 proxy, documented)
         # --- pull / return decisions (margins 1..4 pull; PK can't pull)
         can_pull = (~pulled) & (margin >= 1) & (strength >= 0)
-        hz = np.where(gb == 2, _HAZ[2][u - 1], np.where(gb == 3, _HAZ[3][u - 1], _HAZ[4][u - 1]))
+        u3 = min(max(u - 1 - coach_shift, 0), 1199)  # coach timing shift applies to the 3-gap decision only
+        hz = np.where(gb == 2, _HAZ[2][u - 1], np.where(gb == 3, _HAZ[3][u3], _HAZ[4][u - 1]))
         mpp = np.where(gb == 2, _MPP[2], np.where(gb == 3, _MPP[3], _MPP[4]))
         h_eff = hz * np.where(strength == 1, mpp, 1.0) * m_coach
         # re-pull dynamics: once committed, return to empty net is ~10x faster (fitted 24-25)
@@ -126,7 +127,7 @@ def price(R0, pulled0=False, strength0="EV", m_coach=1.0, gap0=3,
     return out
 
 
-def p_next_goal_recursion(R0, m_coach=1.0, gap0=3):
+def p_next_goal_recursion(R0, m_coach=1.0, gap0=3, coach_shift=0):
     """Exact P(≥1 goal) before horn from not-pulled EV state — first-goal only,
     so gap is constant until absorption; cross-check for the MC."""
     lam_full = RATES[(gap0, "EV_full", "for")] + RATES[(gap0, "EV_full", "against")]
@@ -136,7 +137,7 @@ def p_next_goal_recursion(R0, m_coach=1.0, gap0=3):
     Vp = np.zeros(R0 + 1); Vf = np.zeros(R0 + 1); Vc = np.zeros(R0 + 1)
     Vp[0] = Vf[0] = Vc[0] = 1.0
     for u in range(1, R0 + 1):
-        q = _HAZ[gap0][u - 1] * m_coach
+        q = _HAZ[gap0][min(max(u - 1 - coach_shift, 0), 1199)] * m_coach
         qc = max(q, _REPULL)
         Vp[u] = a_en * (_ret * Vc[u - 1] + (1 - _ret) * Vp[u - 1])
         Vc[u] = a_full * ((1 - qc) * Vc[u - 1] + qc * Vp[u - 1])
