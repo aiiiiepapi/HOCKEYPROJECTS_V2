@@ -10,7 +10,7 @@ def test_ground_truth_13_of_13():
     from hockeycore.gap.extract import load_pbp, extract_instances
     gt = json.load(open(ROOT / "tests" / "ground_truth_nhl.json"))["games"]
     for gid, gtg in gt.items():
-        _, insts = extract_instances(load_pbp(ROOT / f"data/raw/nhl/v1_reference/{gid}_pbp.json"), 3)
+        _, insts = extract_instances(load_pbp(ROOT / f"tests/reference_raw/nhl/{gid}_pbp.json"), 3)
         assert len(insts) == len(gtg["instances"]), gid
         for e, a in zip(gtg["instances"], insts):
             assert (e["opened_secs"], e["closed_secs"], e["pulled"]) == \
@@ -116,7 +116,7 @@ def test_eihl_ground_truth():
     gt = json.load(open(ROOT / "tests" / "ground_truth_eihl.json"))
     files = gt["_meta"]["games_files"]
     for gid, gg in gt["games"].items():
-        insts = extract_instances(parse_game(ROOT / f"data/raw/eihl/game_{gid}_{files[gid]}.html"), 3)
+        insts = extract_instances(parse_game(ROOT / f"tests/reference_raw/eihl/game_{gid}_{files[gid]}.html"), 3)
         assert len(insts) == len(gg["instances"]), gid
         for e, a in zip(gg["instances"], insts):
             assert (e["opened_secs"], e["closed_secs"], e["pulled"]) == \
@@ -130,7 +130,7 @@ def test_liiga_ground_truth():
     from hockeycore.leagues.liiga import parse_game, extract_instances
     gt = json.load(open(ROOT / "tests" / "ground_truth_liiga.json"))
     for num, gg in gt["games"].items():
-        insts = extract_instances(parse_game(ROOT / f"data/raw/liiga/game_2026_{num}.json"), 3)
+        insts = extract_instances(parse_game(ROOT / f"tests/reference_raw/liiga/game_2026_{num}.json"), 3)
         assert len(insts) == len(gg["instances"]), num
         for e, a in zip(gg["instances"], insts):
             assert (e["opened_secs"], e["closed_secs"], e["pulled"]) == \

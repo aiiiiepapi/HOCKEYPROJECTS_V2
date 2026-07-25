@@ -1,0 +1,391 @@
+{
+  "game": {
+    "id": 4,
+    "season": 2026,
+    "start": "2025-09-09T15:30:00Z",
+    "end": "2025-09-09T17:45:14Z",
+    "homeTeam": {
+      "teamId": "495643563:k\u00e4rp\u00e4t",
+      "teamPlaceholder": null,
+      "teamName": "K\u00e4rp\u00e4t",
+      "goals": 0,
+      "timeOut": null,
+      "goalEvents": [],
+      "penaltyEvents": [
+        {
+          "playerId": 60903437,
+          "suffererPlayerId": 60903437,
+          "eventId": 53,
+          "logTime": "2025-09-09T15:36:43Z",
+          "gameTime": 403,
+          "period": 1,
+          "penaltyBegintime": 403,
+          "penaltyEndtime": 523,
+          "penaltyFaultName": "Kiinnipit\u00e4minen",
+          "penaltyFaultType": "KII",
+          "penaltyInfo": "",
+          "penaltyMinutes": 2
+        },
+        {
+          "playerId": 28262723,
+          "suffererPlayerId": 28262723,
+          "eventId": 320,
+          "logTime": "2025-09-09T16:11:49Z",
+          "gameTime": 2509,
+          "period": 3,
+          "penaltyBegintime": 2509,
+          "penaltyEndtime": 2560,
+          "penaltyFaultName": "Huitominen",
+          "penaltyFaultType": "HUI",
+          "penaltyInfo": "",
+          "penaltyMinutes": 2
+        }
+      ],
+      "goalKeeperEvents": [
+        {
+          "playerId": 60660609,
+          "beginTime": 3424,
+          "emptyNet": 1,
+          "endTime": 3510,
+          "eventId": 433,
+          "logTime": "2025-09-09T16:27:04Z",
+          "gameTime": 3424,
+          "period": 3
+        },
+        {
+          "playerId": 60660609,
+          "beginTime": 3510,
+          "emptyNet": 0,
+          "endTime": 3600,
+          "eventId": 445,
+          "logTime": "2025-09-09T16:28:30Z",
+          "gameTime": 3510,
+          "period": 3
+        }
+      ],
+      "goalKeeperChanges": [],
+      "powerplayInstances": 3,
+      "powerplayGoals": 0,
+      "shortHandedInstances": 2,
+      "shortHandedGoals": 0,
+      "expectedGoals": 3.84,
+      "ranking": null,
+      "gameStartDateTime": "2025-09-09T18:30:00+03:00",
+      "logos": {
+        "darkBg": "https://cdn.builder.io/api/v1/image/assets%2Ff11503eeae084753968caac3899a5d78%2F57b5b1a6c04f43368910ee73822513d8",
+        "lightBg": "https://cdn.builder.io/api/v1/image/assets%2Ff11503eeae084753968caac3899a5d78%2F57b5b1a6c04f43368910ee73822513d8",
+        "darkBgOriginal": null,
+        "lightBgOriginal": null
+      }
+    },
+    "awayTeam": {
+      "teamId": "626537494:sport",
+      "teamPlaceholder": null,
+      "teamName": "Sport",
+      "goals": 3,
+      "timeOut": null,
+      "goalEvents": [
+        {
+          "scorerPlayerId": 60744050,
+          "scorerPlayer": {
+            "playerId": 60744050,
+            "firstName": "KALLE",
+            "lastName": "MIKETINAC"
+          },
+          "logTime": "2025-09-09T17:50:34Z",
+          "winningGoal": true,
+          "gameTime": 1497,
+          "period": 2,
+          "eventId": 188,
+          "goalTypes": [],
+          "assistantPlayerIds": [
+            60454974,
+            22891255
+          ],
+          "assistantPlayers": [
+            {
+              "playerId": 60454974,
+              "firstName": "SEBASTIAN",
+              "lastName": "ST\u00c5LBERG"
+            },
+            {
+              "playerId": 22891255,
+              "firstName": "SAMULI",
+              "lastName": "PIIPPONEN"
+            }
+          ],
+          "plusPlayerIds": "17 28 52 72 80",
+          "minusPlayerIds": "9 19 27 38 55",
+          "homeTeamScore": 0,
+          "awayTeamScore": 1,
+          "assistsSoFarInSeason": {
+            "22891255": 1,
+            "60454974": 1
+          },
+          "goalsSoFarInSeason": 1,
+          "videoClipUrl": "https://mtvvideoverkosto.fi/embed?id=rZdHLesgCJa9",
+          "videoThumbnailUrl": "https://dw5d1g79b28a4.cloudfront.net/img/liiga-rZdHLesgCJa9.jpeg"
+        },
+        {
+          "scorerPlayerId": 60744050,
+          "scorerPlayer": {
+            "playerId": 60744050,
+            "firstName": "KALLE",
+            "lastName": "MIKETINAC"
+          },
+          "logTime": "2025-09-09T17:18:42Z",
+          "winningGoal": false,
+          "gameTime": 2560,
+          "period": 3,
+          "eventId": 329,
+          "goalTypes": [
+            "YV"
+          ],
+          "assistantPlayerIds": [
+            60454974,
+            31896306
+          ],
+          "assistantPlayers": [
+            {
+              "playerId": 60454974,
+              "firstName": "SEBASTIAN",
+              "lastName": "ST\u00c5LBERG"
+            },
+            {
+              "playerId": 31896306,
+              "firstName": "VILJAMI",
+              "lastName": "NIEMINEN"
+            }
+          ],
+          "plusPlayerIds": null,
+          "minusPlayerIds": null,
+          "homeTeamScore": 0,
+          "awayTeamScore": 2,
+          "assistsSoFarInSeason": {
+            "31896306": 1,
+            "60454974": 2
+          },
+          "goalsSoFarInSeason": 2,
+          "videoClipUrl": "https://mtvvideoverkosto.fi/embed?id=GQUVMDAz8pK1",
+          "videoThumbnailUrl": "https://dw5d1g79b28a4.cloudfront.net/img/liiga-GQUVMDAz8pK1.jpeg"
+        },
+        {
+          "scorerPlayerId": 40038518,
+          "scorerPlayer": {
+            "playerId": 40038518,
+            "firstName": "OSKARI",
+            "lastName": "HULT"
+          },
+          "logTime": "2025-09-09T17:43:06Z",
+          "winningGoal": false,
+          "gameTime": 3510,
+          "period": 3,
+          "eventId": 444,
+          "goalTypes": [
+            "TM"
+          ],
+          "assistantPlayerIds": [
+            28948856,
+            60454974
+          ],
+          "assistantPlayers": [
+            {
+              "playerId": 28948856,
+              "firstName": "ANTON",
+              "lastName": "STR\u00c5KA"
+            },
+            {
+              "playerId": 60454974,
+              "firstName": "SEBASTIAN",
+              "lastName": "ST\u00c5LBERG"
+            }
+          ],
+          "plusPlayerIds": "12 16 17 22 52",
+          "minusPlayerIds": "11 26 27 65 73 93",
+          "homeTeamScore": 0,
+          "awayTeamScore": 3,
+          "assistsSoFarInSeason": {
+            "28948856": 1,
+            "60454974": 3
+          },
+          "goalsSoFarInSeason": 1,
+          "videoClipUrl": "https://mtvvideoverkosto.fi/embed?id=QheZdmCrXvxS",
+          "videoThumbnailUrl": "https://dw5d1g79b28a4.cloudfront.net/img/liiga-QheZdmCrXvxS.jpeg"
+        }
+      ],
+      "penaltyEvents": [
+        {
+          "playerId": 60954938,
+          "suffererPlayerId": 60954938,
+          "eventId": 207,
+          "logTime": "2025-09-09T15:57:27Z",
+          "gameTime": 1647,
+          "period": 2,
+          "penaltyBegintime": 1647,
+          "penaltyEndtime": 1767,
+          "penaltyFaultName": "Koukkaaminen",
+          "penaltyFaultType": "KOU",
+          "penaltyInfo": "",
+          "penaltyMinutes": 2
+        },
+        {
+          "playerId": 60662386,
+          "suffererPlayerId": 60662386,
+          "eventId": 274,
+          "logTime": "2025-09-09T16:06:21Z",
+          "gameTime": 2181,
+          "period": 2,
+          "penaltyBegintime": 2181,
+          "penaltyEndtime": 2301,
+          "penaltyFaultName": "Kiinnipit\u00e4minen",
+          "penaltyFaultType": "KII",
+          "penaltyInfo": "",
+          "penaltyMinutes": 2
+        },
+        {
+          "playerId": 33585107,
+          "suffererPlayerId": 33585107,
+          "eventId": 357,
+          "logTime": "2025-09-09T16:16:30Z",
+          "gameTime": 2790,
+          "period": 3,
+          "penaltyBegintime": 2790,
+          "penaltyEndtime": 2910,
+          "penaltyFaultName": "Koukkaaminen",
+          "penaltyFaultType": "KOU",
+          "penaltyInfo": "",
+          "penaltyMinutes": 2
+        }
+      ],
+      "goalKeeperEvents": [],
+      "goalKeeperChanges": [],
+      "powerplayInstances": 2,
+      "powerplayGoals": 1,
+      "shortHandedInstances": 3,
+      "shortHandedGoals": 0,
+      "expectedGoals": 2.32,
+      "ranking": null,
+      "gameStartDateTime": "2025-09-09T18:30:00+03:00",
+      "logos": {
+        "darkBg": "https://cdn.builder.io/api/v1/image/assets%2Ff11503eeae084753968caac3899a5d78%2F77efd6df129843699ae9a4c2e94efcb2",
+        "lightBg": "https://cdn.builder.io/api/v1/image/assets%2Ff11503eeae084753968caac3899a5d78%2F77efd6df129843699ae9a4c2e94efcb2",
+        "darkBgOriginal": null,
+        "lightBgOriginal": null
+      }
+    },
+    "winningShotCompetitionEvents": [],
+    "periods": [
+      {
+        "index": 1,
+        "homeTeamGoals": 0,
+        "awayTeamGoals": 0,
+        "category": "NORMAL",
+        "startTime": 0,
+        "endTime": 1200
+      },
+      {
+        "index": 2,
+        "homeTeamGoals": 0,
+        "awayTeamGoals": 1,
+        "category": "NORMAL",
+        "startTime": 1200,
+        "endTime": 2400
+      },
+      {
+        "index": 3,
+        "homeTeamGoals": 0,
+        "awayTeamGoals": 2,
+        "category": "NORMAL",
+        "startTime": 2400,
+        "endTime": 3600
+      },
+      {
+        "index": 4,
+        "homeTeamGoals": 0,
+        "awayTeamGoals": 0,
+        "category": "OVERTIME",
+        "startTime": 3600,
+        "endTime": 3900
+      },
+      {
+        "index": 5,
+        "homeTeamGoals": 0,
+        "awayTeamGoals": 0,
+        "category": "WINNING_SHOT_COMPETITION",
+        "startTime": 3900,
+        "endTime": 3900
+      }
+    ],
+    "finishedType": "ENDED_DURING_REGULAR_GAME_TIME",
+    "started": true,
+    "ended": true,
+    "gameTime": 3600,
+    "spectators": 4389,
+    "buyTicketsUrl": "https://www.ticketmaster.fi/artist/karpat-lippuja/96763",
+    "iceRink": {
+      "id": 131,
+      "name": "Oulun j\u00e4\u00e4halli",
+      "latitude": 65.0084,
+      "longitude": 25.494,
+      "streetAddress": "Teuvo Pakkalankatu 11",
+      "zip": "90100",
+      "city": "OULU"
+    },
+    "currentPeriod": 3,
+    "referees": [
+      {
+        "firstName": "JUSSI",
+        "jersey": 37,
+        "lastName": "THOMANN",
+        "officialID": 25500831,
+        "roleAbbrv": "LT",
+        "roleName": "Linjatuomari",
+        "secondaryID": 0,
+        "tagA": null,
+        "tagB": null,
+        "pictureUrl": "https://liiga-backend-prod.s3.eu-north-1.amazonaws.com/2026/referee/25500831.png"
+      },
+      {
+        "firstName": "SANTERI",
+        "jersey": 50,
+        "lastName": "PUHAKKA",
+        "officialID": 30821877,
+        "roleAbbrv": "LT",
+        "roleName": "Linjatuomari",
+        "secondaryID": 0,
+        "tagA": null,
+        "tagB": null,
+        "pictureUrl": "https://liiga-backend-prod.s3.eu-north-1.amazonaws.com/2026/referee/30821877.png"
+      },
+      {
+        "firstName": "ALEKSI",
+        "jersey": 25,
+        "lastName": "RANTALA",
+        "officialID": 25144336,
+        "roleAbbrv": "PT",
+        "roleName": "P\u00e4\u00e4tuomari",
+        "secondaryID": 0,
+        "tagA": null,
+        "tagB": null,
+        "pictureUrl": null
+      },
+      {
+        "firstName": "JOONAS",
+        "jersey": 8,
+        "lastName": "KOVA",
+        "officialID": 31630290,
+        "roleAbbrv": "PT",
+        "roleName": "P\u00e4\u00e4tuomari",
+        "secondaryID": 0,
+        "tagA": null,
+        "tagB": null,
+        "pictureUrl": "https://liiga-backend-prod.s3.eu-north-1.amazonaws.com/2026/referee/31630290.png"
+      }
+    ],
+    "cacheUpdateDate": "2026-04-07T02:23:38.853840039Z",
+    "provider": "stats-7cc4db8796-x4q2w",
+    "stale": false,
+    "serie": "RUNKOSARJA",
+    "gameWeek": 1
+  }
+}
