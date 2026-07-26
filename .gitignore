@@ -1,5 +1,7 @@
 data/raw/
-data/derived/instances_gap*.json
+data/derived/instances_gap2.json
+data/derived/instances_gap4.json
+data/derived/instances_gap1_lite.json
 data/derived/scan_results.json
 data/derived/coach_exposure*.json
 __pycache__/
