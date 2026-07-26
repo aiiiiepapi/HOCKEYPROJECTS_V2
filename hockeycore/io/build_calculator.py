@@ -202,7 +202,8 @@ for label, col, orow in mmk:
     putm(f"E{orow}", f'=IF(D{orow}<=0,"n/a",IF((1+$D$6-D{orow})/D{orow}>=1,'
                      f'"+"&TEXT(ROUND((1+$D$6-D{orow})/D{orow}*100,0),"0"),'
                      f'"-"&TEXT(ROUND(100/((1+$D$6-D{orow})/D{orow}),0),"0")))', BOLD)
-putm("A18", "Notes: timing snapped to nearest grid step (max 30s, ~1pt effect). 100%% pullers: use 0.99.", ARIAL)
+putm("A18", "Notes: timing snapped to nearest grid step (max 30s, ~1pt effect). 100% pullers: use 0.99.", ARIAL)
+putm("A20", "Timing input: observed averages are opportunity-noise — if your read is from <10 pulls, enter something between his avg and 4:19.", ARIAL)
 putm("A19", "5v5 only — PP/pulled states not bettable (Seb rulings).", ARIAL)
 
 # ---------- COACHES ----------

@@ -292,6 +292,11 @@ def main():
         "Pull % caveat: 9/9 does NOT mean a guaranteed 100%% — small samples, read the Range column (9/9 -> can't rule out ~82%).",
         "Colors: green = likely, red = unlikely. Blue rows = trailing team on power play. Orange rows = net already empty.",
         "NO-GO for real money (Seb ruling). Leader market = Overs only. Provenance: MC grid n=30k seed 7, blind-validated 25-26.",
+        "",
+        "TIMING IS SOFT INFO: pulls happen at opportunities (offensive-zone faceoff, puck control), so an observed avg like 7:30",
+        "off 9 pulls is NOT his true intent time. Team pricing shrinks each coach's timing ~40% toward league (4-season persistence 0.608)",
+        "plus a small-sample discount. And a proven puller who is past his usual time with the net still in is still COMING —",
+        "he likely just hasn't had the opportunity moment. Downgrade gradually, not instantly (the model conditions for this softly).",
         "Rebuild (cheap session): python3 hockeycore/io/build_lines_table.py  (needs data/derived/coach_profiles.json)",
     ]
     for i, t in enumerate(notes, 1):

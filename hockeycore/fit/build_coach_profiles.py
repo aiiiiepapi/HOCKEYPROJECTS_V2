@@ -89,7 +89,15 @@ def main():
         ppl = p.get("pulls_pp", 0)
         if ppl and not p.get("pp_only"):
             flags.append(f"+{ppl} PP pulls (excluded above)")
+        # production timing shift: attenuate (4-season persistence 0.608) and
+        # shrink by pull count — raw medians are opportunity-gated noise (Seb 2026-07-26)
+        n_ev = len(rs)
+        if med is not None and n_ev >= 3:
+            shift_prod = round(0.608 * (med - 259) * (n_ev / (n_ev + 4)))
+        else:
+            shift_prod = 0
         profiles.append({
+            "shift_prod": max(-60, min(180, shift_prod)),
             "team": team, "coach": coach, "last_seen": date,
             "clear_chances": n, "clear_taken": k,
             "clean_rate": (round(k / n, 3) if n else None), "ci": jeffreys(k, n),
