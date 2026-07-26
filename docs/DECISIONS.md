@@ -53,3 +53,10 @@ NOTE: new coach layer is PROVISIONAL until blind re-validation (next block).
     visible as context; EARLY-puller flag + stand-down rule replaces the curve
     shift; MANUAL tab keeps the timing knob; Gen-3 threshold+opportunity model
     is the sanctioned way to bring timing back.
+15. **lead1 hunt #3 CLOSED (2026-07-26, triggered by Seb's Bednar-at-6:00
+    challenge)**: root causes = missing in-sim penalty generation (17% of
+    leader goals are PPGs) + flat goal rates (desperation acceleration) +
+    backtest running raw-EB coach multipliers. All fixed; bias +5..7 -> +2.4.
+    NEW: -3.5 now ~4pts OPTIMISTIC -> CAUTION on card (double edge or skip)
+    until coach-conditional hazards. ROI at 10%-EV lines (blind, clustered):
+    leaderTT +22.8% [+9.0,+37.9], total +11.0% [+0.6,+21.8], -3.5 +4.1% [n.s.].
