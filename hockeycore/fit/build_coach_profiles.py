@@ -34,6 +34,19 @@ def main():
             pull_Rs.setdefault(i["trailing_coach"], []).append(
                 1200 - i["pull_segments"][0]["empty_from"])
 
+    prior = json.load(open(DER / "pull_prior.json"))
+    A, B = prior["prior_a"], prior["prior_b"]
+    HL = 10.0  # recency half-life, in chances (Seb ruling 2026-07-26: recent form matters)
+
+    # chance-level sequences per coach (5v5 ledger events, date order)
+    cw = json.load(open(DER / "clean_window_instances.json"))
+    seq = {}
+    for r in sorted(cw, key=lambda x: x["date"]):
+        took = r["pulled"] and r["pull_type"] == "ev"
+        declined = (not took) and r["frac_ev"] >= 0.7
+        if took or declined:
+            seq.setdefault(r["coach"], []).append((r["date"], 1 if took else 0))
+
     def jeffreys(k, n):
         if not n:
             return None
@@ -45,6 +58,21 @@ def main():
     profiles = []
     for coach, c in clean.items():
         n, k = c["ev_clear"], c["ev_taken"]          # 5v5-ONLY: the bettable number
+        events = seq.get(coach, [])
+        # recency-decayed counts (newest chance has weight 1)
+        kw = nw = 0.0
+        N = len(events)
+        for age, (_, took) in enumerate(reversed(events)):
+            w = 0.5 ** (age / HL)
+            kw += w * took; nw += w
+        post = (kw + A) / (nw + A + B)
+        # posterior 95% band at effective sample size
+        import math as _m
+        a2, b2 = kw + A, nw - kw + B
+        mu2 = a2 / (a2 + b2)
+        sd2 = _m.sqrt(a2 * b2 / ((a2 + b2) ** 2 * (a2 + b2 + 1)))
+        band = [max(0, round(mu2 - 1.96 * sd2, 3)), min(1, round(mu2 + 1.96 * sd2, 3))]
+        last3 = "".join("P" if t else "n" for _, t in events[-3:]) or "-"
         date, team = latest.get(coach, ("", "?"))
         rs = sorted(pull_Rs.get(coach, []))
         med = rs[len(rs) // 2] if rs else None
@@ -65,6 +93,7 @@ def main():
             "team": team, "coach": coach, "last_seen": date,
             "clear_chances": n, "clear_taken": k,
             "clean_rate": (round(k / n, 3) if n else None), "ci": jeffreys(k, n),
+            "expected_pull_pct": round(post, 3), "band": band, "last3": last3,
             "overall_rate": c["clean_rate"],
             "median_pull_R": med, "n_pulls": len(rs),
             "m_prod": prod.get(coach, {}).get("m_prod", 1.0),

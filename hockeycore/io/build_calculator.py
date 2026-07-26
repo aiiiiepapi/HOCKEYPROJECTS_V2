@@ -24,6 +24,7 @@ BLUE = Font(name="Arial", color="0000FF")
 RED = Font(name="Arial", color="FF0000", bold=True)
 
 grid = json.load(open(DER / "pricing_grid_dense.json"))
+manual = json.load(open(DER / "pricing_grid_manual.json"))
 coaches = json.load(open(DER / "coach_table_production.json"))
 chances = json.load(open(DER / "coach_chances.json"))
 _lt = json.load(open(DER / "low_tail_coaches.json")) if (DER / "low_tail_coaches.json").exists() else []
@@ -140,6 +141,69 @@ for label, col, orow in markets:
 put("A19", "Warnings:")
 put("D19", '=IF(AND(D4="pulled",D9>420),"EXTRAPOLATED — no real pulls this early","ok")', RED)
 
+
+# ---------- MANUAL_PRICES (hidden data) ----------
+ws = wb.create_sheet("MANUAL_PRICES")
+mh = ["key", "R", "pullpct", "shift", "P_total_ge1", "P_leader_ge1", "P_margin_ge4"]
+for j, h in enumerate(mh, 1):
+    ws.cell(row=1, column=j, value=h).font = BOLD
+r = 2
+for row in sorted(manual, key=lambda x: (-x["R"], x["pullpct"], x["shift"])):
+    key = f'{row["R"]}|{row["pullpct"]:.3f}|{row["shift"]}'
+    for j, v in enumerate([key, row["R"], row["pullpct"], row["shift"],
+                           row["P_total_ge1"], row["P_leader_ge1"], row["P_margin_ge4"]], 1):
+        ws.cell(row=r, column=j, value=v).font = ARIAL
+    r += 1
+ws.sheet_state = "hidden"
+
+# ---------- MANUAL (Seb's override inputs) ----------
+ws = wb.create_sheet("MANUAL")
+ws.column_dimensions["A"].width = 60
+for c in "BCDEF":
+    ws.column_dimensions[c].width = 13
+
+def putm(cell, val, font=ARIAL, fill=None, fmt=None):
+    c = ws[cell]; c.value = val; c.font = font
+    if fill: c.fill = fill
+    if fmt: c.number_format = fmt
+
+putm("A1", "MANUAL COACH OVERRIDE — your own pull read, priced by the model", BOLD)
+putm("A3", "Time remaining (any mm:ss from 3:00 to 15:00)"); putm("D3", "6:00", BLUE, YELLOW)
+putm("A4", "YOUR expected pull % on this real chance (0.10-0.99)"); putm("D4", 0.695, BLUE, YELLOW, "0%")
+putm("A5", "His typical pull time left (league = 4:19)"); putm("D5", "4:19", BLUE, YELLOW)
+putm("A6", "Edge required"); putm("D6", 0.10, BLUE, YELLOW, "0%")
+putm("A8", "R / shift secs (snapped to grid):")
+putm("D8", '=MAX(180,MIN(900,VALUE(LEFT(D3,FIND(":",D3)-1))*60+VALUE(MID(D3,FIND(":",D3)+1,2))))')
+putm("E8", '=MAX(-60,MIN(180,VALUE(LEFT(D5,FIND(":",D5)-1))*60+VALUE(MID(D5,FIND(":",D5)+1,2))-259))')
+putm("F8", '=INDEX({-60;0;60;120;180},MATCH(MIN(ABS({-60;0;60;120;180}-E8)),ABS({-60;0;60;120;180}-E8),0))')
+putm("A9", "R lo/hi/w:")
+putm("D9", '=MIN(880,FLOOR(D8,20))'); putm("E9", '=D9+20'); putm("F9", '=MAX(0,MIN(1,(D8-D9)/20))')
+putm("A10", "pull%% lo/hi/w:")
+PG = "{0.1;0.3;0.5;0.695;0.85;0.95;0.99}"
+putm("D10", f'=MAX(0.1,INDEX({PG},MATCH(MIN(MAX(D4,0.1),0.99),{PG},1)))')
+putm("E10", f'=MIN(0.99,INDEX({PG},MIN(MATCH(D10,{PG},0)+1,7)))')
+putm("F10", '=IF(E10=D10,0,MAX(0,MIN(1,(MIN(MAX(D4,0.1),0.99)-D10)/(E10-D10))))')
+putm("A11", "corner keys:")
+putm("B11", '=D9&"|"&TEXT(D10,"0.000")&"|"&F8')
+putm("C11", '=D9&"|"&TEXT(E10,"0.000")&"|"&F8')
+putm("D11", '=E9&"|"&TEXT(D10,"0.000")&"|"&F8')
+putm("E11", '=E9&"|"&TEXT(E10,"0.000")&"|"&F8')
+putm("A13", "MARKET", BOLD); putm("D13", "PROBABILITY", BOLD); putm("E13", "LINE for +edge EV", BOLD)
+mmk = [("Game total OVER (any more goal)", "E", 14),
+       ("Leader TT OVER (Overs only; model ~5pts low)", "F", 15),
+       ("Leader -3.5 (wins by 4+)", "G", 16)]
+for label, col, orow in mmk:
+    hrow = orow + 7
+    putm(f"A{hrow}", label.split(" (")[0])
+    for cc, keyc in (("B","$B$11"),("C","$C$11"),("D","$D$11"),("E","$E$11")):
+        putm(f"{cc}{hrow}", f'=INDEX(MANUAL_PRICES!{col}:{col},MATCH({keyc},MANUAL_PRICES!A:A,0))', fmt="0.0000")
+    putm(f"A{orow}", label)
+    putm(f"D{orow}", f'=(1-$F$9)*((1-$F$10)*B{hrow}+$F$10*C{hrow})+$F$9*((1-$F$10)*D{hrow}+$F$10*E{hrow})', fmt="0.0%")
+    putm(f"E{orow}", f'=IF(D{orow}<=0,"n/a",IF((1+$D$6-D{orow})/D{orow}>=1,'
+                     f'"+"&TEXT(ROUND((1+$D$6-D{orow})/D{orow}*100,0),"0"),'
+                     f'"-"&TEXT(ROUND(100/((1+$D$6-D{orow})/D{orow}),0),"0")))', BOLD)
+putm("A18", "Notes: timing snapped to nearest grid step (max 30s, ~1pt effect). 100%% pullers: use 0.99.", ARIAL)
+putm("A19", "5v5 only — PP/pulled states not bettable (Seb rulings).", ARIAL)
 
 # ---------- COACHES ----------
 ws = wb.create_sheet("COACHES")

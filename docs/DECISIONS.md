@@ -35,3 +35,15 @@
 - Bet products: leader TT over, game total over, leader -3.5. OT4V3 and
   NEXTGOALPROP parked. Prices from 15:00 down to 3:00, never below 3:00.
 - Recent-season overweighting: tested and rejected on evidence (Seb accepted).
+
+## 2026-07-26
+9. **Aggressiveness estimator rebuilt**: "3/3 is not league average." Beta
+   prior fitted on league coach spread (a=2.46, b=1.67) + recency decay
+   (half-life 10 chances) on each coach's own 5v5 chance sequence. 3/3 -> 76%.
+10. **Recency ruled in** at coach level (last-3 form shown in guide).
+11. **Pulled-state rows removed** from lines doc (no lines offered anyway).
+12. **Manual override tab**: Seb inputs his own pull % + typical pull time;
+    priced through a dedicated MC grid (pull% x timing-shift x time), 5v5 only.
+13. **Team/coach-first navigation**: TEAM LINES tab prices every team at its
+    own coach's expected % + timing; filter by name.
+NOTE: new coach layer is PROVISIONAL until blind re-validation (next block).
