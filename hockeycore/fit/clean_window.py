@@ -44,7 +44,10 @@ def _load_H(path):
 
 H, M_PP = _load_H(DER / "fits.json")            # new-era hazard (24-26)
 H_OLD, M_PP_OLD = _load_H(DER / "fits_old2.json")  # old-era hazard (22-24)
-H_FULL = sum(H)  # total zone hazard mass; frac = Hsum/H_FULL in [0,1]
+H_FULL_NEW = sum(H)
+H_FULL_OLD = sum(H_OLD)   # BUG FIX 2026-07-26: frac must use the SAME era's
+# total mass — old windows scored vs new-era mass could never reach 'clear'
+# (capped ~0.68), silently deleting old-era declines from every ledger.
 
 
 def analyze():
@@ -57,6 +60,7 @@ def analyze():
             frames[gid] = per_second_frame(load_pbp(LAKE / season / f"{gid}_pbp.json"))
         g, sits, dpw = frames[gid]
         Hx, Mx = (H_OLD, M_PP_OLD) if season in OLD else (H, M_PP)
+        HFx = H_FULL_OLD if season in OLD else H_FULL_NEW
         trail_home = inst["trailing"] == g["home"]
         o, c = inst["opened_secs"], inst["closed_secs"]
         first_pull = inst["pull_segments"][0]["empty_from"] if inst["pull_segments"] else None
@@ -90,8 +94,8 @@ def analyze():
                 else:
                     blocked["other"] += 1
         q = 1 - math.exp(-Hsum)
-        frac = Hsum / H_FULL
-        frac_ev = Hsum_ev / H_FULL
+        frac = Hsum / HFx
+        frac_ev = Hsum_ev / HFx
         pull_type = (inst["pull_classification"] and
                      ("pp" if inst["pull_classification"] == "pp_pull" else "ev")) if pulled else None
 

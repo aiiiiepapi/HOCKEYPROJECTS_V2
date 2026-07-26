@@ -31,26 +31,25 @@
   "team": "ANA",
   "coach": "Greg Cronin",
   "last_seen": "2025-04-10",
-  "clear_chances": 4,
+  "clear_chances": 7,
   "clear_taken": 1,
-  "clean_rate": 0.25,
+  "clean_rate": 0.143,
   "ci": [
    0,
-   0.667
+   0.443
   ],
-  "expected_pull_pct": 0.422,
+  "expected_pull_pct": 0.331,
   "band": [
-   0.095,
-   0.75
+   0.051,
+   0.611
   ],
   "last3": "nnn",
-  "overall_rate": 0.444,
+  "overall_rate": 0.364,
   "median_pull_R": 120,
   "n_pulls": 1,
   "m_prod": 0.862,
   "pp_share": 0.75,
   "flags": [
-   "small sample (4 chances)",
    "+3 PP pulls (excluded above)"
   ]
  },
@@ -59,54 +58,50 @@
   "team": "ANA",
   "coach": "Dallas Eakins",
   "last_seen": "2023-03-30",
-  "clear_chances": 1,
+  "clear_chances": 5,
   "clear_taken": 1,
-  "clean_rate": 1.0,
+  "clean_rate": 0.2,
   "ci": [
-   0.26,
-   1
+   0,
+   0.571
   ],
-  "expected_pull_pct": 0.674,
+  "expected_pull_pct": 0.385,
   "band": [
-   0.303,
-   1
+   0.075,
+   0.694
   ],
-  "last3": "P",
-  "overall_rate": 0.167,
+  "last3": "nnn",
+  "overall_rate": 0.125,
   "median_pull_R": 993,
   "n_pulls": 1,
   "m_prod": 1.0,
   "pp_share": 0.0,
-  "flags": [
-   "small sample (1 chances)"
-  ]
+  "flags": []
  },
  {
   "shift_prod": 0,
   "team": "ARI",
   "coach": "Andr\u00e9 Tourigny",
   "last_seen": "2024-04-17",
-  "clear_chances": 1,
+  "clear_chances": 6,
   "clear_taken": 1,
-  "clean_rate": 1.0,
+  "clean_rate": 0.167,
   "ci": [
-   0.26,
-   1
+   0,
+   0.499
   ],
-  "expected_pull_pct": 0.674,
+  "expected_pull_pct": 0.344,
   "band": [
-   0.303,
-   1
+   0.052,
+   0.635
   ],
-  "last3": "P",
-  "overall_rate": 0.25,
+  "last3": "nnn",
+  "overall_rate": 0.143,
   "median_pull_R": 241,
   "n_pulls": 1,
   "m_prod": 1.0,
   "pp_share": 0.0,
-  "flags": [
-   "small sample (1 chances)"
-  ]
+  "flags": []
  },
  {
   "shift_prod": 0,
@@ -167,26 +162,25 @@
   "team": "BUF",
   "coach": "Don Granato",
   "last_seen": "2024-04-11",
-  "clear_chances": 11,
+  "clear_chances": 12,
   "clear_taken": 11,
-  "clean_rate": 1.0,
+  "clean_rate": 0.917,
   "ci": [
-   0.85,
+   0.717,
    1
   ],
-  "expected_pull_pct": 0.862,
+  "expected_pull_pct": 0.798,
   "band": [
-   0.675,
+   0.584,
    1
   ],
-  "last3": "PPP",
-  "overall_rate": 1.0,
+  "last3": "nPP",
+  "overall_rate": 0.933,
   "median_pull_R": 195,
   "n_pulls": 11,
   "m_prod": 1.0,
   "pp_share": 0.21,
   "flags": [
-   "pulls EVERY clean 5v5 chance so far",
    "+3 PP pulls (excluded above)"
   ]
  },
@@ -195,20 +189,20 @@
   "team": "BUF",
   "coach": "Lindy Ruff",
   "last_seen": "2026-04-13",
-  "clear_chances": 12,
+  "clear_chances": 15,
   "clear_taken": 10,
-  "clean_rate": 0.833,
+  "clean_rate": 0.667,
   "ci": [
-   0.601,
-   1
+   0.43,
+   0.882
   ],
-  "expected_pull_pct": 0.713,
+  "expected_pull_pct": 0.646,
   "band": [
-   0.472,
-   0.954
+   0.402,
+   0.889
   ],
   "last3": "Pnn",
-  "overall_rate": 0.882,
+  "overall_rate": 0.75,
   "median_pull_R": 270,
   "n_pulls": 10,
   "m_prod": 1.118,
@@ -222,82 +216,26 @@
   "team": "CAR",
   "coach": "Rod Brind'Amour",
   "last_seen": "2026-04-11",
-  "clear_chances": 8,
+  "clear_chances": 11,
   "clear_taken": 6,
-  "clean_rate": 0.75,
+  "clean_rate": 0.545,
   "ci": [
-   0.445,
-   1
+   0.271,
+   0.813
   ],
-  "expected_pull_pct": 0.662,
+  "expected_pull_pct": 0.553,
   "band": [
-   0.389,
-   0.936
+   0.284,
+   0.822
   ],
   "last3": "nPn",
-  "overall_rate": 0.786,
+  "overall_rate": 0.733,
   "median_pull_R": 303,
   "n_pulls": 6,
   "m_prod": 0.901,
   "pp_share": 0.45,
   "flags": [
    "+5 PP pulls (excluded above)"
-  ]
- },
- {
-  "shift_prod": 0,
-  "team": "CBJ",
-  "coach": "Rick Bowness",
-  "last_seen": "2026-04-11",
-  "clear_chances": 4,
-  "clear_taken": 4,
-  "clean_rate": 1.0,
-  "ci": [
-   0.66,
-   1
-  ],
-  "expected_pull_pct": 0.784,
-  "band": [
-   0.512,
-   1
-  ],
-  "last3": "PPP",
-  "overall_rate": 0.833,
-  "median_pull_R": 253,
-  "n_pulls": 4,
-  "m_prod": 0.973,
-  "pp_share": 0.2,
-  "flags": [
-   "small sample (4 chances)",
-   "+1 PP pulls (excluded above)"
-  ]
- },
- {
-  "shift_prod": 0,
-  "team": "CBJ",
-  "coach": "Brad Larsen",
-  "last_seen": "2023-04-14",
-  "clear_chances": 4,
-  "clear_taken": 4,
-  "clean_rate": 1.0,
-  "ci": [
-   0.66,
-   1
-  ],
-  "expected_pull_pct": 0.784,
-  "band": [
-   0.512,
-   1
-  ],
-  "last3": "PPP",
-  "overall_rate": 0.75,
-  "median_pull_R": 266,
-  "n_pulls": 4,
-  "m_prod": 1.0,
-  "pp_share": 0.33,
-  "flags": [
-   "small sample (4 chances)",
-   "+2 PP pulls (excluded above)"
   ]
  },
  {
@@ -330,25 +268,82 @@
  {
   "shift_prod": 0,
   "team": "CBJ",
+  "coach": "Brad Larsen",
+  "last_seen": "2023-04-14",
+  "clear_chances": 10,
+  "clear_taken": 4,
+  "clean_rate": 0.4,
+  "ci": [
+   0.131,
+   0.687
+  ],
+  "expected_pull_pct": 0.48,
+  "band": [
+   0.204,
+   0.756
+  ],
+  "last3": "nPn",
+  "overall_rate": 0.5,
+  "median_pull_R": 266,
+  "n_pulls": 4,
+  "m_prod": 1.0,
+  "pp_share": 0.33,
+  "flags": [
+   "+2 PP pulls (excluded above)"
+  ]
+ },
+ {
+  "shift_prod": 0,
+  "team": "CBJ",
+  "coach": "Rick Bowness",
+  "last_seen": "2026-04-11",
+  "clear_chances": 8,
+  "clear_taken": 4,
+  "clean_rate": 0.5,
+  "ci": [
+   0.19,
+   0.81
+  ],
+  "expected_pull_pct": 0.522,
+  "band": [
+   0.233,
+   0.811
+  ],
+  "last3": "nPn",
+  "overall_rate": 0.5,
+  "median_pull_R": 253,
+  "n_pulls": 4,
+  "m_prod": 0.973,
+  "pp_share": 0.2,
+  "flags": [
+   "+1 PP pulls (excluded above)"
+  ]
+ },
+ {
+  "shift_prod": 0,
+  "team": "CBJ",
   "coach": "Pascal Vincent",
   "last_seen": "2024-04-16",
-  "clear_chances": 0,
+  "clear_chances": 3,
   "clear_taken": 0,
-  "clean_rate": null,
-  "ci": null,
-  "expected_pull_pct": 0.595,
-  "band": [
-   0.17,
-   1
+  "clean_rate": 0.0,
+  "ci": [
+   0,
+   0.415
   ],
-  "last3": "-",
-  "overall_rate": 0.333,
+  "expected_pull_pct": 0.354,
+  "band": [
+   0.022,
+   0.687
+  ],
+  "last3": "nnn",
+  "overall_rate": 0.2,
   "median_pull_R": null,
   "n_pulls": 0,
   "m_prod": 1.0,
   "pp_share": 1.0,
   "flags": [
-   "small sample (0 chances)",
+   "small sample (3 chances)",
    "+1 PP pulls (excluded above)"
   ]
  },
@@ -357,23 +352,26 @@
   "team": "CGY",
   "coach": "Darryl Sutter",
   "last_seen": "2023-03-21",
-  "clear_chances": 0,
+  "clear_chances": 3,
   "clear_taken": 0,
-  "clean_rate": null,
-  "ci": null,
-  "expected_pull_pct": 0.595,
-  "band": [
-   0.17,
-   1
+  "clean_rate": 0.0,
+  "ci": [
+   0,
+   0.415
   ],
-  "last3": "-",
-  "overall_rate": 1.0,
+  "expected_pull_pct": 0.354,
+  "band": [
+   0.022,
+   0.687
+  ],
+  "last3": "nnn",
+  "overall_rate": 0.25,
   "median_pull_R": null,
   "n_pulls": 0,
   "m_prod": 1.0,
   "pp_share": 1.0,
   "flags": [
-   "small sample (0 chances)",
+   "small sample (3 chances)",
    "+1 PP pulls (excluded above)"
   ]
  },
@@ -382,20 +380,20 @@
   "team": "CGY",
   "coach": "Ryan Huska",
   "last_seen": "2026-04-12",
-  "clear_chances": 9,
+  "clear_chances": 11,
   "clear_taken": 1,
-  "clean_rate": 0.111,
+  "clean_rate": 0.091,
   "ci": [
    0,
-   0.361
+   0.305
   ],
-  "expected_pull_pct": 0.274,
+  "expected_pull_pct": 0.251,
   "band": [
-   0.022,
-   0.526
+   0.016,
+   0.485
   ],
   "last3": "nnn",
-  "overall_rate": 0.182,
+  "overall_rate": 0.154,
   "median_pull_R": 117,
   "n_pulls": 1,
   "m_prod": 0.748,
@@ -435,24 +433,25 @@
   "team": "CHI",
   "coach": "Luke Richardson",
   "last_seen": "2024-12-02",
-  "clear_chances": 0,
+  "clear_chances": 11,
   "clear_taken": 0,
-  "clean_rate": null,
-  "ci": null,
-  "expected_pull_pct": 0.595,
-  "band": [
-   0.17,
-   1
+  "clean_rate": 0.0,
+  "ci": [
+   0,
+   0.15
   ],
-  "last3": "-",
+  "expected_pull_pct": 0.203,
+  "band": [
+   0,
+   0.421
+  ],
+  "last3": "nnn",
   "overall_rate": 0.0,
   "median_pull_R": null,
   "n_pulls": 0,
   "m_prod": 0.862,
   "pp_share": null,
-  "flags": [
-   "small sample (0 chances)"
-  ]
+  "flags": []
  },
  {
   "shift_prod": 0,
@@ -486,26 +485,25 @@
   "team": "COL",
   "coach": "Jared Bednar",
   "last_seen": "2026-04-01",
-  "clear_chances": 11,
+  "clear_chances": 13,
   "clear_taken": 11,
-  "clean_rate": 1.0,
+  "clean_rate": 0.846,
   "ci": [
-   0.85,
+   0.628,
    1
   ],
-  "expected_pull_pct": 0.862,
+  "expected_pull_pct": 0.794,
   "band": [
-   0.675,
+   0.582,
    1
   ],
   "last3": "PPP",
-  "overall_rate": 1.0,
+  "overall_rate": 0.882,
   "median_pull_R": 229,
   "n_pulls": 11,
   "m_prod": 1.847,
   "pp_share": 0.27,
   "flags": [
-   "pulls EVERY clean 5v5 chance so far",
    "+4 PP pulls (excluded above)"
   ]
  },
@@ -542,20 +540,20 @@
   "team": "DET",
   "coach": "Derek Lalonde",
   "last_seen": "2024-12-23",
-  "clear_chances": 7,
+  "clear_chances": 8,
   "clear_taken": 6,
-  "clean_rate": 0.857,
+  "clean_rate": 0.75,
   "ci": [
-   0.557,
+   0.445,
    1
   ],
-  "expected_pull_pct": 0.748,
+  "expected_pull_pct": 0.691,
   "band": [
-   0.491,
-   1
+   0.424,
+   0.958
   ],
   "last3": "PPP",
-  "overall_rate": 0.8,
+  "overall_rate": 0.727,
   "median_pull_R": 250,
   "n_pulls": 6,
   "m_prod": 1.049,
@@ -569,20 +567,20 @@
   "team": "DET",
   "coach": "Todd McLellan",
   "last_seen": "2026-04-09",
-  "clear_chances": 6,
+  "clear_chances": 10,
   "clear_taken": 0,
   "clean_rate": 0.0,
   "ci": [
    0,
-   0.25
+   0.163
   ],
-  "expected_pull_pct": 0.267,
+  "expected_pull_pct": 0.212,
   "band": [
    0,
-   0.538
+   0.438
   ],
   "last3": "nnn",
-  "overall_rate": 0.3,
+  "overall_rate": 0.231,
   "median_pull_R": null,
   "n_pulls": 0,
   "m_prod": 0.823,
@@ -623,23 +621,26 @@
   "team": "EDM",
   "coach": "Jay Woodcroft",
   "last_seen": "2023-11-11",
-  "clear_chances": 0,
+  "clear_chances": 4,
   "clear_taken": 0,
-  "clean_rate": null,
-  "ci": null,
-  "expected_pull_pct": 0.595,
-  "band": [
-   0.17,
-   1
+  "clean_rate": 0.0,
+  "ci": [
+   0,
+   0.34
   ],
-  "last3": "-",
+  "expected_pull_pct": 0.317,
+  "band": [
+   0.009,
+   0.626
+  ],
+  "last3": "nnn",
   "overall_rate": 0.0,
   "median_pull_R": null,
   "n_pulls": 0,
   "m_prod": 1.0,
   "pp_share": null,
   "flags": [
-   "small sample (0 chances)"
+   "small sample (4 chances)"
   ]
  },
  {
@@ -647,20 +648,20 @@
   "team": "FLA",
   "coach": "Paul Maurice",
   "last_seen": "2026-04-11",
-  "clear_chances": 18,
+  "clear_chances": 19,
   "clear_taken": 13,
-  "clean_rate": 0.722,
+  "clean_rate": 0.684,
   "ci": [
-   0.512,
-   0.909
+   0.475,
+   0.875
   ],
-  "expected_pull_pct": 0.626,
+  "expected_pull_pct": 0.598,
   "band": [
-   0.387,
-   0.865
+   0.358,
+   0.838
   ],
   "last3": "nPn",
-  "overall_rate": 0.76,
+  "overall_rate": 0.731,
   "median_pull_R": 289,
   "n_pulls": 13,
   "m_prod": 1.028,
@@ -674,53 +675,50 @@
   "team": "LAK",
   "coach": "D.J. Smith",
   "last_seen": "2026-04-13",
-  "clear_chances": 7,
+  "clear_chances": 12,
   "clear_taken": 7,
-  "clean_rate": 1.0,
+  "clean_rate": 0.583,
   "ci": [
-   0.779,
-   1
+   0.318,
+   0.836
   ],
-  "expected_pull_pct": 0.831,
+  "expected_pull_pct": 0.549,
   "band": [
-   0.608,
-   1
+   0.285,
+   0.814
   ],
-  "last3": "PPP",
-  "overall_rate": 0.875,
+  "last3": "nnP",
+  "overall_rate": 0.538,
   "median_pull_R": 251,
   "n_pulls": 7,
   "m_prod": 1.147,
   "pp_share": 0.0,
-  "flags": [
-   "pulls EVERY clean 5v5 chance so far"
-  ]
+  "flags": []
  },
  {
   "shift_prod": 0,
   "team": "LAK",
   "coach": "Jim Hiller",
   "last_seen": "2026-02-05",
-  "clear_chances": 4,
+  "clear_chances": 5,
   "clear_taken": 1,
-  "clean_rate": 0.25,
+  "clean_rate": 0.2,
   "ci": [
    0,
-   0.667
+   0.571
   ],
-  "expected_pull_pct": 0.43,
+  "expected_pull_pct": 0.391,
   "band": [
-   0.102,
-   0.758
+   0.081,
+   0.702
   ],
   "last3": "Pnn",
-  "overall_rate": 0.571,
+  "overall_rate": 0.5,
   "median_pull_R": 182,
   "n_pulls": 1,
   "m_prod": 0.952,
   "pp_share": 0.75,
   "flags": [
-   "small sample (4 chances)",
    "+3 PP pulls (excluded above)"
   ]
  },
@@ -729,20 +727,20 @@
   "team": "MIN",
   "coach": "John Hynes",
   "last_seen": "2026-04-13",
-  "clear_chances": 13,
+  "clear_chances": 17,
   "clear_taken": 10,
-  "clean_rate": 0.769,
+  "clean_rate": 0.588,
   "ci": [
-   0.531,
-   0.969
+   0.362,
+   0.805
   ],
-  "expected_pull_pct": 0.673,
+  "expected_pull_pct": 0.581,
   "band": [
-   0.427,
-   0.919
+   0.335,
+   0.827
   ],
   "last3": "nPn",
-  "overall_rate": 0.762,
+  "overall_rate": 0.696,
   "median_pull_R": 199,
   "n_pulls": 10,
   "m_prod": 1.061,
@@ -756,20 +754,20 @@
   "team": "MTL",
   "coach": "Martin St. Louis",
   "last_seen": "2026-04-12",
-  "clear_chances": 16,
+  "clear_chances": 23,
   "clear_taken": 12,
-  "clean_rate": 0.75,
+  "clean_rate": 0.522,
   "ci": [
-   0.531,
-   0.939
+   0.325,
+   0.717
   ],
-  "expected_pull_pct": 0.675,
+  "expected_pull_pct": 0.555,
   "band": [
-   0.439,
-   0.911
+   0.319,
+   0.791
   ],
   "last3": "PPn",
-  "overall_rate": 0.682,
+  "overall_rate": 0.517,
   "median_pull_R": 255,
   "n_pulls": 12,
   "m_prod": 1.027,
@@ -783,20 +781,20 @@
   "team": "NJD",
   "coach": "Sheldon Keefe",
   "last_seen": "2026-04-09",
-  "clear_chances": 17,
+  "clear_chances": 23,
   "clear_taken": 9,
-  "clean_rate": 0.529,
+  "clean_rate": 0.391,
   "ci": [
-   0.303,
-   0.752
+   0.204,
+   0.588
   ],
-  "expected_pull_pct": 0.522,
+  "expected_pull_pct": 0.461,
   "band": [
-   0.273,
-   0.771
+   0.224,
+   0.698
   ],
   "last3": "nnP",
-  "overall_rate": 0.619,
+  "overall_rate": 0.5,
   "median_pull_R": 365,
   "n_pulls": 9,
   "m_prod": 0.918,
@@ -838,20 +836,20 @@
   "team": "NYI",
   "coach": "Patrick Roy",
   "last_seen": "2026-04-03",
-  "clear_chances": 15,
+  "clear_chances": 16,
   "clear_taken": 13,
-  "clean_rate": 0.867,
+  "clean_rate": 0.812,
   "ci": [
-   0.671,
-   1
+   0.607,
+   0.981
   ],
-  "expected_pull_pct": 0.793,
+  "expected_pull_pct": 0.771,
   "band": [
-   0.586,
-   0.999
+   0.559,
+   0.983
   ],
   "last3": "PPP",
-  "overall_rate": 0.895,
+  "overall_rate": 0.85,
   "median_pull_R": 432,
   "n_pulls": 13,
   "m_prod": 1.39,
@@ -866,20 +864,20 @@
   "team": "NYI",
   "coach": "Peter DeBoer",
   "last_seen": "2026-04-12",
-  "clear_chances": 6,
+  "clear_chances": 8,
   "clear_taken": 5,
-  "clean_rate": 0.833,
+  "clean_rate": 0.625,
   "ci": [
-   0.501,
-   1
+   0.309,
+   0.913
   ],
-  "expected_pull_pct": 0.71,
+  "expected_pull_pct": 0.595,
   "band": [
-   0.432,
-   0.988
+   0.311,
+   0.879
   ],
-  "last3": "PPn",
-  "overall_rate": 0.714,
+  "last3": "nPn",
+  "overall_rate": 0.556,
   "median_pull_R": 330,
   "n_pulls": 5,
   "m_prod": 0.941,
@@ -891,26 +889,25 @@
   "team": "NYR",
   "coach": "Peter Laviolette",
   "last_seen": "2025-04-17",
-  "clear_chances": 10,
+  "clear_chances": 14,
   "clear_taken": 10,
-  "clean_rate": 1.0,
+  "clean_rate": 0.714,
   "ci": [
-   0.837,
-   1
+   0.475,
+   0.925
   ],
-  "expected_pull_pct": 0.856,
+  "expected_pull_pct": 0.705,
   "band": [
-   0.662,
-   1
+   0.469,
+   0.94
   ],
   "last3": "PPP",
-  "overall_rate": 1.0,
+  "overall_rate": 0.789,
   "median_pull_R": 220,
   "n_pulls": 10,
   "m_prod": 1.271,
   "pp_share": 0.33,
   "flags": [
-   "pulls EVERY clean 5v5 chance so far",
    "+5 PP pulls (excluded above)"
   ]
  },
@@ -929,7 +926,7 @@
    1
   ],
   "last3": "-",
-  "overall_rate": 1.0,
+  "overall_rate": 0.667,
   "median_pull_R": null,
   "n_pulls": 0,
   "m_prod": 1.0,
@@ -944,20 +941,20 @@
   "team": "NYR",
   "coach": "Mike Sullivan",
   "last_seen": "2026-04-15",
-  "clear_chances": 9,
+  "clear_chances": 14,
   "clear_taken": 6,
-  "clean_rate": 0.667,
+  "clean_rate": 0.429,
   "ci": [
-   0.368,
-   0.932
+   0.191,
+   0.676
   ],
-  "expected_pull_pct": 0.621,
+  "expected_pull_pct": 0.512,
   "band": [
-   0.347,
-   0.895
+   0.254,
+   0.771
   ],
   "last3": "PPn",
-  "overall_rate": 0.471,
+  "overall_rate": 0.364,
   "median_pull_R": 305,
   "n_pulls": 6,
   "m_prod": 0.997,
@@ -969,49 +966,22 @@
  {
   "shift_prod": 0,
   "team": "OTT",
-  "coach": "Jacques Martin",
-  "last_seen": "2024-04-15",
-  "clear_chances": 2,
-  "clear_taken": 2,
-  "clean_rate": 1.0,
-  "ci": [
-   0.468,
-   1
-  ],
-  "expected_pull_pct": 0.724,
-  "band": [
-   0.395,
-   1
-  ],
-  "last3": "PP",
-  "overall_rate": 1.0,
-  "median_pull_R": 279,
-  "n_pulls": 2,
-  "m_prod": 1.0,
-  "pp_share": 0.0,
-  "flags": [
-   "small sample (2 chances)"
-  ]
- },
- {
-  "shift_prod": 0,
-  "team": "OTT",
   "coach": "Travis Green",
   "last_seen": "2026-04-11",
-  "clear_chances": 8,
+  "clear_chances": 10,
   "clear_taken": 5,
-  "clean_rate": 0.625,
+  "clean_rate": 0.5,
   "ci": [
-   0.309,
-   0.913
+   0.217,
+   0.783
   ],
-  "expected_pull_pct": 0.622,
+  "expected_pull_pct": 0.563,
   "band": [
-   0.342,
-   0.903
+   0.289,
+   0.837
   ],
   "last3": "nPP",
-  "overall_rate": 0.846,
+  "overall_rate": 0.733,
   "median_pull_R": 294,
   "n_pulls": 5,
   "m_prod": 1.154,
@@ -1022,29 +992,53 @@
  },
  {
   "shift_prod": 0,
+  "team": "OTT",
+  "coach": "Jacques Martin",
+  "last_seen": "2024-04-15",
+  "clear_chances": 6,
+  "clear_taken": 2,
+  "clean_rate": 0.333,
+  "ci": [
+   0.025,
+   0.689
+  ],
+  "expected_pull_pct": 0.437,
+  "band": [
+   0.133,
+   0.742
+  ],
+  "last3": "nnn",
+  "overall_rate": 0.333,
+  "median_pull_R": 279,
+  "n_pulls": 2,
+  "m_prod": 1.0,
+  "pp_share": 0.0,
+  "flags": []
+ },
+ {
+  "shift_prod": 0,
   "team": "PHI",
   "coach": "Rick Tocchet",
   "last_seen": "2026-04-09",
-  "clear_chances": 4,
+  "clear_chances": 8,
   "clear_taken": 3,
-  "clean_rate": 0.75,
+  "clean_rate": 0.375,
   "ci": [
-   0.333,
-   1
+   0.087,
+   0.691
   ],
-  "expected_pull_pct": 0.664,
+  "expected_pull_pct": 0.49,
   "band": [
-   0.351,
-   0.977
+   0.201,
+   0.779
   ],
   "last3": "PnP",
-  "overall_rate": 0.625,
+  "overall_rate": 0.455,
   "median_pull_R": 223,
   "n_pulls": 3,
   "m_prod": 0.976,
   "pp_share": 0.4,
   "flags": [
-   "small sample (4 chances)",
    "+2 PP pulls (excluded above)"
   ]
  },
@@ -1136,20 +1130,20 @@
   "team": "SEA",
   "coach": "Lane Lambert",
   "last_seen": "2026-04-15",
-  "clear_chances": 6,
+  "clear_chances": 11,
   "clear_taken": 5,
-  "clean_rate": 0.833,
+  "clean_rate": 0.455,
   "ci": [
-   0.501,
-   1
+   0.187,
+   0.729
   ],
-  "expected_pull_pct": 0.724,
+  "expected_pull_pct": 0.526,
   "band": [
-   0.45,
-   0.998
+   0.256,
+   0.797
   ],
   "last3": "nPP",
-  "overall_rate": 0.7,
+  "overall_rate": 0.467,
   "median_pull_R": 214,
   "n_pulls": 5,
   "m_prod": 0.901,
@@ -1163,52 +1157,25 @@
   "team": "SEA",
   "coach": "Dave Hakstol",
   "last_seen": "2024-04-14",
-  "clear_chances": 0,
+  "clear_chances": 7,
   "clear_taken": 0,
-  "clean_rate": null,
-  "ci": null,
-  "expected_pull_pct": 0.595,
-  "band": [
-   0.17,
-   1
+  "clean_rate": 0.0,
+  "ci": [
+   0,
+   0.221
   ],
-  "last3": "-",
+  "expected_pull_pct": 0.249,
+  "band": [
+   0,
+   0.506
+  ],
+  "last3": "nnn",
   "overall_rate": 0.0,
   "median_pull_R": null,
   "n_pulls": 0,
   "m_prod": 1.0,
   "pp_share": null,
-  "flags": [
-   "small sample (0 chances)"
-  ]
- },
- {
-  "shift_prod": 0,
-  "team": "SJS",
-  "coach": "David Quinn",
-  "last_seen": "2024-04-13",
-  "clear_chances": 2,
-  "clear_taken": 2,
-  "clean_rate": 1.0,
-  "ci": [
-   0.468,
-   1
-  ],
-  "expected_pull_pct": 0.724,
-  "band": [
-   0.395,
-   1
-  ],
-  "last3": "PP",
-  "overall_rate": 1.0,
-  "median_pull_R": 308,
-  "n_pulls": 2,
-  "m_prod": 1.0,
-  "pp_share": 0.5,
-  "flags": [
-   "small sample (2 chances)",
-   "+2 PP pulls (excluded above)"
-  ]
+  "flags": []
  },
  {
   "shift_prod": 0,
@@ -1233,6 +1200,33 @@
   "n_pulls": 3,
   "m_prod": 0.889,
   "pp_share": 0.4,
+  "flags": [
+   "+2 PP pulls (excluded above)"
+  ]
+ },
+ {
+  "shift_prod": 0,
+  "team": "SJS",
+  "coach": "David Quinn",
+  "last_seen": "2024-04-13",
+  "clear_chances": 9,
+  "clear_taken": 2,
+  "clean_rate": 0.222,
+  "ci": [
+   0,
+   0.506
+  ],
+  "expected_pull_pct": 0.374,
+  "band": [
+   0.101,
+   0.648
+  ],
+  "last3": "Pnn",
+  "overall_rate": 0.364,
+  "median_pull_R": 308,
+  "n_pulls": 2,
+  "m_prod": 1.0,
+  "pp_share": 0.5,
   "flags": [
    "+2 PP pulls (excluded above)"
   ]
@@ -1269,20 +1263,20 @@
   "team": "STL",
   "coach": "Jim Montgomery",
   "last_seen": "2026-04-13",
-  "clear_chances": 8,
+  "clear_chances": 11,
   "clear_taken": 6,
-  "clean_rate": 0.75,
+  "clean_rate": 0.545,
   "ci": [
-   0.445,
-   1
+   0.271,
+   0.813
   ],
-  "expected_pull_pct": 0.656,
+  "expected_pull_pct": 0.562,
   "band": [
-   0.382,
-   0.931
+   0.294,
+   0.831
   ],
   "last3": "Pnn",
-  "overall_rate": 0.545,
+  "overall_rate": 0.429,
   "median_pull_R": 440,
   "n_pulls": 6,
   "m_prod": 0.906,
@@ -1296,26 +1290,25 @@
   "team": "TBL",
   "coach": "Jon Cooper",
   "last_seen": "2026-04-15",
-  "clear_chances": 16,
+  "clear_chances": 17,
   "clear_taken": 16,
-  "clean_rate": 1.0,
+  "clean_rate": 0.941,
   "ci": [
-   0.893,
+   0.792,
    1
   ],
-  "expected_pull_pct": 0.882,
+  "expected_pull_pct": 0.854,
   "band": [
-   0.719,
+   0.679,
    1
   ],
   "last3": "PPP",
-  "overall_rate": 0.917,
+  "overall_rate": 0.846,
   "median_pull_R": 325,
   "n_pulls": 16,
   "m_prod": 1.106,
   "pp_share": 0.27,
   "flags": [
-   "pulls EVERY clean 5v5 chance so far",
    "+6 PP pulls (excluded above)"
   ]
  },
@@ -1324,20 +1317,20 @@
   "team": "TOR",
   "coach": "Craig Berube",
   "last_seen": "2026-04-11",
-  "clear_chances": 24,
+  "clear_chances": 28,
   "clear_taken": 20,
-  "clean_rate": 0.833,
+  "clean_rate": 0.714,
   "ci": [
-   0.672,
-   0.968
-  ],
-  "expected_pull_pct": 0.749,
-  "band": [
    0.544,
-   0.954
+   0.87
+  ],
+  "expected_pull_pct": 0.708,
+  "band": [
+   0.498,
+   0.919
   ],
   "last3": "nPP",
-  "overall_rate": 0.786,
+  "overall_rate": 0.71,
   "median_pull_R": 259,
   "n_pulls": 20,
   "m_prod": 1.277,
@@ -1376,34 +1369,6 @@
  {
   "shift_prod": 0,
   "team": "VAN",
-  "coach": "Bruce Boudreau",
-  "last_seen": "2023-01-20",
-  "clear_chances": 1,
-  "clear_taken": 1,
-  "clean_rate": 1.0,
-  "ci": [
-   0.26,
-   1
-  ],
-  "expected_pull_pct": 0.674,
-  "band": [
-   0.303,
-   1
-  ],
-  "last3": "P",
-  "overall_rate": 0.75,
-  "median_pull_R": 411,
-  "n_pulls": 1,
-  "m_prod": 1.0,
-  "pp_share": 0.67,
-  "flags": [
-   "small sample (1 chances)",
-   "+2 PP pulls (excluded above)"
-  ]
- },
- {
-  "shift_prod": 0,
-  "team": "VAN",
   "coach": "Adam Foote",
   "last_seen": "2026-04-09",
   "clear_chances": 12,
@@ -1425,6 +1390,33 @@
   "m_prod": 1.015,
   "pp_share": 0.0,
   "flags": []
+ },
+ {
+  "shift_prod": 0,
+  "team": "VAN",
+  "coach": "Bruce Boudreau",
+  "last_seen": "2023-01-20",
+  "clear_chances": 5,
+  "clear_taken": 1,
+  "clean_rate": 0.2,
+  "ci": [
+   0,
+   0.571
+  ],
+  "expected_pull_pct": 0.385,
+  "band": [
+   0.075,
+   0.694
+  ],
+  "last3": "nnn",
+  "overall_rate": 0.429,
+  "median_pull_R": 411,
+  "n_pulls": 1,
+  "m_prod": 1.0,
+  "pp_share": 0.67,
+  "flags": [
+   "+2 PP pulls (excluded above)"
+  ]
  },
  {
   "shift_prod": 0,
@@ -1458,20 +1450,20 @@
   "team": "VGK",
   "coach": "John Tortorella",
   "last_seen": "2026-04-15",
-  "clear_chances": 6,
+  "clear_chances": 11,
   "clear_taken": 0,
   "clean_rate": 0.0,
   "ci": [
    0,
-   0.25
+   0.15
   ],
-  "expected_pull_pct": 0.267,
+  "expected_pull_pct": 0.203,
   "band": [
    0,
-   0.538
+   0.421
   ],
   "last3": "nnn",
-  "overall_rate": 0.357,
+  "overall_rate": 0.25,
   "median_pull_R": null,
   "n_pulls": 0,
   "m_prod": 0.811,
@@ -1510,20 +1502,20 @@
   "team": "WSH",
   "coach": "Spencer Carbery",
   "last_seen": "2026-04-12",
-  "clear_chances": 8,
+  "clear_chances": 12,
   "clear_taken": 5,
-  "clean_rate": 0.625,
+  "clean_rate": 0.417,
   "ci": [
-   0.309,
-   0.913
+   0.164,
+   0.682
   ],
-  "expected_pull_pct": 0.608,
+  "expected_pull_pct": 0.494,
   "band": [
-   0.325,
-   0.89
+   0.228,
+   0.76
   ],
   "last3": "nPP",
-  "overall_rate": 0.545,
+  "overall_rate": 0.4,
   "median_pull_R": 208,
   "n_pulls": 5,
   "m_prod": 0.871,

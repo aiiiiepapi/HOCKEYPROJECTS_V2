@@ -156,3 +156,8 @@ def test_clean_window_consistency():
         assert t["clear_taken"] == t["pulls"]  # every pull is a taken chance
         if t["clean_rate"] is not None:
             assert 0 <= t["clean_rate"] <= 1
+    # era-denominator regression guard (2026-07-26 bug): a full window in the
+    # OLD era must be able to score as a clear chance
+    old_fracs = [r["frac_ev"] for r in rows
+                 if r["season"] in ("20222023", "20232024") and not r["pulled"]]
+    assert max(old_fracs) >= 0.9, "old-era frac capped — era-mismatched denominator is back"
