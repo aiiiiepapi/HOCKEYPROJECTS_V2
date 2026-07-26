@@ -272,6 +272,67 @@ def main():
     for col, w in zip("ABCDEFGHI", (9, 11, 7, 24, 13, 8, 13, 24, 34)):
         npl.column_dimensions[col].width = w
 
+    # ---------- PULL LOG (every pull, classified) ----------
+    igap = json.load(open(DER / "instances_gap3.json"))
+    igap_by_key = {(r["game_id"], r["n"]): r for r in igap}
+    plog = wb.create_sheet("PULL LOG")
+    plog.sheet_view.showGridLines = False
+    plog["A1"] = ("EVERY PULL INSTANCE — outcome and context. "
+                  "Empty-net goals by trailing team are successes; by leading team are failures. "
+                  "Filter any column.")
+    plog["A1"].font = Font(name="Arial", bold=True, size=11)
+    plog.merge_cells("A1:I1")
+    phdr = ["Season", "Date", "Team", "Coach", "Gap-3 from", "Pulled at", "Type", "Re-pulls", "What happened"]
+    for j, h in enumerate(phdr, 1):
+        c = plog.cell(row=2, column=j, value=h); c.font = HDR_FONT; c.fill = HDR_FILL
+        c.alignment = Alignment(horizontal="center", wrap_text=True)
+    OUTCOME_FILL = {
+        "scored 6v5!": PatternFill("solid", fgColor="63BE7B"),
+        "ENG against": PatternFill("solid", fgColor="FCE4D6"),
+    }
+    pr = 3
+    for r in sorted(cwr, key=lambda x: x["date"]):
+        if not r["pulled"]:
+            continue
+        gap_data = igap_by_key.get((r["game_id"], r["n"]))
+        if not gap_data:
+            continue
+
+        # Determine what happened
+        pull_end_reason = gap_data.get("pull_end", {}).get("reason")
+        if pull_end_reason == "en_goal_against":
+            outcome = "ENG against"
+        elif pull_end_reason == "scored_during_pull":
+            outcome = "scored 6v5!"
+        elif pull_end_reason == "goalie_returned":
+            outcome = "no goal to horn"
+        else:  # gap_end or other
+            outcome = "window closed"
+
+        # Calculate re-pulls
+        repulls = len(gap_data.get("pull_segments", [])) - 1
+
+        # Format times
+        o = r["opened_R"]
+        p = r["pull_R"]
+
+        vals = [r["season"][:4] + "-" + r["season"][6:], r["date"], r["team"], r["coach"],
+                ("period start (carry-in)" if o >= 1200 else f"{o//60}:{o%60:02d}"),
+                f"{p//60}:{p%60:02d}",
+                ("5v5 pull" if r["pull_type"] == "ev" else "PP pull"),
+                repulls,
+                outcome]
+        for j, v in enumerate(vals, 1):
+            c = plog.cell(row=pr, column=j, value=v)
+            c.font = ARIAL; c.border = THIN
+            if j == 9 and outcome in OUTCOME_FILL: c.fill = OUTCOME_FILL[outcome]
+        pr += 1
+    lastp = pr - 1
+    plog.auto_filter.ref = f"A2:I{lastp}"
+    plog.freeze_panes = "A3"
+    for col, w in zip("ABCDEFGHI", (9, 11, 7, 24, 13, 10, 10, 9, 18)):
+        plog.column_dimensions[col].width = w
+
     # legend sheet
     lg = wb.create_sheet("HOW TO USE")
     notes = [
@@ -306,7 +367,7 @@ def main():
     lg.column_dimensions["A"].width = 130
 
     wb.save(OUT)
-    print("saved", OUT, f"({last-2} data rows)")
+    print("saved", OUT, f"(LINES: {last-2} data rows, NO-PULL LOG: {lastn-2}, PULL LOG: {lastp-2})")
 
 
 if __name__ == "__main__":
