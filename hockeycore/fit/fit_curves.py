@@ -71,10 +71,29 @@ def main(seasons=("20222023","20232024","20242025","20252026"), suffix="",
     coach_rows = defaultdict(lambda: {"O": 0, "exp_secs": []})
     for gap in (2, 3, 4):
         insts = [i for i in json.load(open(DER / f"instances_gap{gap}.json")) if i["season"] in seasons]
+        PENC = defaultdict(int)
         haz_exp = defaultdict(float)   # (strength, bin) -> secs
         haz_pull = defaultdict(int)
         T = defaultdict(float)         # (season, state) -> secs
         G = defaultdict(int)           # (season, state, dir) -> goals
+        RB_ALL = [(0,60),(60,90),(90,120),(120,180),(180,270),(270,300),(300,360),(360,480),(480,600),(600,900),(900,1200)]
+        def _rb(R, RB):
+            for lo, hi in RB:
+                if lo <= R < hi: return (lo, hi)
+            return RB[-1]
+        TR2 = {}   # (state, bucket) -> [secs, {dir: goals}] — coarse buckets merged later
+        def _tr2_add_T(st, R, secs=1):
+            for RB in ([(0,90),(90,180),(180,270),(270,360),(360,480),(480,600),(600,900),(900,1200)],
+                       [(0,60),(60,120),(120,180),(180,300),(300,1200)]):
+                b = _rb(R, RB)
+                key = (st, b)
+                TR2.setdefault(key, [0, {}])[0] += secs
+        def _tr2_add_G(st, R, d):
+            for RB in ([(0,90),(90,180),(180,270),(270,360),(360,480),(480,600),(600,900),(900,1200)],
+                       [(0,60),(60,120),(120,180),(180,300),(300,1200)]):
+                key = (st, _rb(R, RB))
+                bucket = TR2.setdefault(key, [0, {}])
+                bucket[1][d] = bucket[1].get(d, 0) + 1
         for inst in insts:
             gid, season = inst["game_id"], inst["season"]
             if gid not in frames:
@@ -92,12 +111,24 @@ def main(seasons=("20222023","20232024","20242025","20252026"), suffix="",
                 st, tsk, lsk = state_of(sits[u], trail_home, dp_active)
                 if st != "DP_off":
                     T[(season, st)] += 1
+                    if st in ("EV_full", "EN_ev"):
+                        _tr2_add_T(st, 1200 - u)
                 # hazard exposure: pre-pull, full net, not PK, not DP (hazard era only)
                 if in_hz and (first_pull is None or u < first_pull) and st in ("EV_full", "TPP_full"):
                     b = (1200 - u) // BIN_W
                     haz_exp[(st, b)] += 1
                     if gap == 3:
                         coach_rows[inst["trailing_coach"]]["exp_secs"].append((st, 1200 - u))
+            # ---- penalty transitions out of EV (for in-sim penalty generation)
+            prev_st = None
+            for u in range(o, min(c, 1200)):
+                dp_a = any(s <= u < e for s, e in dpw)
+                st2, _, _ = state_of(sits[u], trail_home, dp_a)
+                if prev_st == "EV_full" and st2 in ("TPK_full", "TPP_full"):
+                    PENC[st2] += 1
+                if st2 == "EV_full":
+                    PENC["exp"] += 1
+                prev_st = st2
             # ---- pull event (hazard era only)
             if not in_hz:
                 first_pull = None
@@ -121,6 +152,21 @@ def main(seasons=("20222023","20232024","20242025","20252026"), suffix="",
                 st, _, _ = state_of(sit, trail_home, dp_active)
                 direction = "for" if x["team_id"] == trail_id else "against"
                 G[(season, st, direction)] += 1
+                if st in ("EV_full", "EN_ev"):
+                    _tr2_add_G(st, 1200 - x["secs"], direction)
+        # ---- R-bucketed rates (EV_full / EN_ev; lead1-bias fix 2026-07-26)
+        RB_EV = [(0,90),(90,180),(180,270),(270,360),(360,480),(480,600),(600,900),(900,1200)]
+        RB_EN = [(0,60),(60,120),(120,180),(180,300),(300,1200)]
+        fits.setdefault("rates_R", {})[gap] = {}
+        for st, RB in (("EV_full", RB_EV), ("EN_ev", RB_EN)):
+            for d in ("for", "against"):
+                rows_rb = []
+                for lo, hi in RB:
+                    t = TR2.get((st, (lo, hi)), [0, {}])[0]
+                    gg = TR2.get((st, (lo, hi)), [0, {}])[1].get(d, 0)
+                    rows_rb.append({"R_lo": lo, "R_hi": hi, "T": t, "G": gg,
+                                    "rate_per_60min": (gg/t*3600) if t > 900 else None})
+                fits["rates_R"][gap][f"{st}:{d}"] = rows_rb
         # ---- assemble hazard bins
         hz = {}
         for st in ("EV_full", "TPP_full"):
@@ -134,6 +180,10 @@ def main(seasons=("20222023","20232024","20242025","20252026"), suffix="",
                              "h": (p / e) if e > 0 else None, "ci": [lo, hi]})
             hz[st] = rows
         fits["hazard"][gap] = hz
+        fits.setdefault("pen", {})[gap] = {
+            "h_pk": PENC["TPK_full"] / PENC["exp"] if PENC["exp"] else 0.0,
+            "h_pp": PENC["TPP_full"] / PENC["exp"] if PENC["exp"] else 0.0,
+            "n_pk": PENC["TPK_full"], "n_pp": PENC["TPP_full"], "exp_secs": PENC["exp"]}
         # one-step m_PP: ratio of overall per-exposure pull rates (band-weighted)
         eEV = sum(haz_exp.get(("EV_full", b), 0) for b in range(30))
         pEV = sum(haz_pull.get(("EV_full", b), 0) for b in range(30))

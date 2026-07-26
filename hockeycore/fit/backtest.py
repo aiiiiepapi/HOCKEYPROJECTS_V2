@@ -16,10 +16,7 @@ CHECKPOINTS = [900, 780, 660, 600, 480, 360, 300, 240, 180]
 
 # ---- rewire pricer to 24-25 fits
 _f = json.load(open(DER / "fits_2425.json"))
-MP._f = _f
-MP._HAZ = {g: MP._haz_array(g) for g in (2, 3, 4)}
-MP._MPP = {g: (_f["m_PP"].get(str(g), {}) or {}).get("m", 1.0) for g in (2, 3, 4)}
-MP.RATES = {(g, s, d): MP._rate(g, s, d) for g in (2, 3, 4) for s in MP.STATES for d in ("for", "against")}
+MP.rebuild(_f)
 # 24-25 return hazard
 insts_2425 = [i for i in json.load(open(DER / "instances_gap3.json")) if i["season"] == "20242025"]
 re_ev = 0; ps = 0
@@ -79,10 +76,12 @@ def main():
             tsk = int(sit[2] if trail_home else sit[1]); lsk = int(sit[1] if trail_home else sit[2])
             strength = "T_PP" if tsk > lsk and not pulled else ("T_PK" if tsk < lsk else "EV")
             if pulled: strength = "EV"  # pulled cells priced at EN of current diff; keep EV entry
-            cm = coach_m.get(inst["trailing_coach"], {"m": 1.0})
+            cm_raw = coach_m.get(inst["trailing_coach"], {"m": 1.0})
+            # PRODUCTION LAW: attenuate (persistence 0.355; leak-free re-check
+            # 0.379 on 22-24 pairs) — the raw-EB backtest was the decile-9 bug
+            cm = {"m": 1 + 0.355 * (cm_raw["m"] - 1)}
             new_coach = inst["trailing_coach"] not in coach_m
-            sh = _ts.get(inst["trailing_coach"], {"shift": 0})
-            sh = sh["shift"] if isinstance(sh, dict) else sh
+            sh = 0   # production ruling 2026-07-26: timing OFF
             p = cached_price(R, pulled, strength, cm["m"], sh)
             pb = cached_price(R, pulled, strength, 1.0)  # coach-blind pseudo-market
             out = outcomes_from_raw(gid, t_cp, not trail_home, g["p3_entry"], p3goals)

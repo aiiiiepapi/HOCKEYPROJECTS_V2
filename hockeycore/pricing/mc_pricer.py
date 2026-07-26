@@ -65,8 +65,61 @@ STATES = ["EV_full", "TPP_full", "TPK_full", "EN_ev", "EN_pp", "EN_pk"]
 RATES = {(g, s, d): _rate(g, s, d) for g in (2, 3, 4) for s in STATES for d in ("for", "against")}
 
 
+def _rate_arrays():
+    """Per-second rates over R. Flat (pooled) everywhere, overwritten with
+    R-bucketed fits for EV_full/EN_ev where exposure supports them
+    (lead1-bias fix 2026-07-26: desperation acceleration is real)."""
+    arrs = {}
+    rr = _f.get("rates_R", {})
+    for (g, s, d), flat in RATES.items():
+        a = np.full(1200, flat)
+        buckets = (rr.get(str(g)) or rr.get(g) or {}).get(f"{s}:{d}")
+        if buckets:
+            for b in buckets:
+                if b["rate_per_60min"] is not None:
+                    a[b["R_lo"]:min(b["R_hi"], 1200)] = b["rate_per_60min"] / 3600.0
+        arrs[(g, s, d)] = a
+    return arrs
+
+RATES_ARR = _rate_arrays()
+
+
+def _pen_tab():
+    pen = _f.get("pen", {})
+    out = {}
+    for g in (2, 3, 4):
+        e = pen.get(str(g)) or pen.get(g) or {"h_pk": 0.0, "h_pp": 0.0}
+        out[g] = (e["h_pk"], e["h_pp"])
+    return out
+
+PEN = _pen_tab()
+
+
+def rebuild(f_new):
+    """Re-point the pricer at a different fits dict (backtest rewiring)."""
+    global _f, _HAZ, _MPP, RATES, RATES_ARR
+    _f = f_new
+    _HAZ = {g: _haz_array(g) for g in (2, 3, 4)}
+    _MPP = {g: (_f["m_PP"].get(GAPKEY[g], {}) or {}).get("m", 1.0) for g in (2, 3, 4)}
+    RATES = {(g, s, d): _rate(g, s, d) for g in (2, 3, 4) for s in STATES for d in ("for", "against")}
+    RATES_ARR = _rate_arrays()
+    global PEN
+    PEN = _pen_tab()
+
+
+def _pen_tab():
+    pen = _f.get("pen", {})
+    out = {}
+    for g in (2, 3, 4):
+        e = pen.get(str(g)) or pen.get(g) or {"h_pk": 0.0, "h_pp": 0.0}
+        out[g] = (e["h_pk"], e["h_pp"])
+    return out
+
+PEN = _pen_tab()
+
+
 def price(R0, pulled0=False, strength0="EV", m_coach=1.0, gap0=3,
-          n=40000, seed=7, strength_secs=60, coach_shift=0):
+          n=40000, seed=7, strength_secs=60, coach_shift=0, penalties=True):
     rng = np.random.default_rng(seed)
     lead_goals = np.zeros(n, dtype=np.int32)
     trail_goals = np.zeros(n, dtype=np.int32)
@@ -97,6 +150,18 @@ def price(R0, pulled0=False, strength0="EV", m_coach=1.0, gap0=3,
         # voluntary return
         r2 = rng.random(n)
         pulled = pulled & ~(r2 < _ret)
+        # --- in-sim penalty generation (lead1-bias fix 2026-07-26: 17% of
+        # leader goals come on the PP; the sim must create penalties, not just
+        # inherit them). Only from full-net EV, one at a time, 120s minors.
+        if penalties:
+            ev_open = (~pulled) & (strength == 0) & (dead == 0)
+            hpk = np.where(gb == 2, PEN[2][0], np.where(gb == 3, PEN[3][0], PEN[4][0]))
+            hpp = np.where(gb == 2, PEN[2][1], np.where(gb == 3, PEN[3][1], PEN[4][1]))
+            r5 = rng.random(n)
+            new_pk = ev_open & (r5 < hpk)
+            new_pp = ev_open & ~new_pk & (r5 < hpk + hpp)
+            strength = np.where(new_pk, -1, np.where(new_pp, 1, strength))
+            s_clock = np.where(new_pk | new_pp, 120, s_clock)
         # --- state → rates
         lam_f = np.empty(n); lam_a = np.empty(n)
         for g in (2, 3, 4):
@@ -105,12 +170,14 @@ def price(R0, pulled0=False, strength0="EV", m_coach=1.0, gap0=3,
                 if not m.any():
                     continue
                 mp = m & pulled; mf = m & ~pulled
-                lam_f[mp] = RATES[(g, en_s, "for")];   lam_a[mp] = RATES[(g, en_s, "against")]
-                lam_f[mf] = RATES[(g, full_s, "for")]; lam_a[mf] = RATES[(g, full_s, "against")]
+                ui = min(u - 1, 1199)
+                lam_f[mp] = RATES_ARR[(g, en_s, "for")][ui];   lam_a[mp] = RATES_ARR[(g, en_s, "against")][ui]
+                lam_f[mf] = RATES_ARR[(g, full_s, "for")][ui]; lam_a[mf] = RATES_ARR[(g, full_s, "against")][ui]
         # margins <1 (tied or flipped): EV full-net rates, no pull
         low = margin < 1
         if low.any():
-            lam_f[low] = RATES[(2, "EV_full", "for")]; lam_a[low] = RATES[(2, "EV_full", "against")]
+            ui = min(u - 1, 1199)
+            lam_f[low] = RATES_ARR[(2, "EV_full", "for")][ui]; lam_a[low] = RATES_ARR[(2, "EV_full", "against")][ui]
             pulled = pulled & ~low
         # --- goals (suppressed during post-goal reset)
         lam_f = np.where(dead > 0, 0.0, lam_f)
@@ -144,13 +211,14 @@ def price(R0, pulled0=False, strength0="EV", m_coach=1.0, gap0=3,
 def p_next_goal_recursion(R0, m_coach=1.0, gap0=3, coach_shift=0):
     """Exact P(≥1 goal) before horn from not-pulled EV state — first-goal only,
     so gap is constant until absorption; cross-check for the MC."""
-    lam_full = RATES[(gap0, "EV_full", "for")] + RATES[(gap0, "EV_full", "against")]
-    lam_en = RATES[(gap0, "EN_ev", "for")] + RATES[(gap0, "EN_ev", "against")]
-    a_full, a_en = np.exp(-lam_full), np.exp(-lam_en)
+    lam_full_arr = RATES_ARR[(gap0, "EV_full", "for")] + RATES_ARR[(gap0, "EV_full", "against")]
+    lam_en_arr = RATES_ARR[(gap0, "EN_ev", "for")] + RATES_ARR[(gap0, "EN_ev", "against")]
     # 3 states: full-never-pulled, full-committed (re-pull hazard), pulled
     Vp = np.zeros(R0 + 1); Vf = np.zeros(R0 + 1); Vc = np.zeros(R0 + 1)
     Vp[0] = Vf[0] = Vc[0] = 1.0
     for u in range(1, R0 + 1):
+        ui = min(u - 1, 1199)
+        a_full = np.exp(-lam_full_arr[ui]); a_en = np.exp(-lam_en_arr[ui])
         q = _HAZ[gap0][min(max(u - 1 - coach_shift - _LAG, 0), 1199)] * m_coach
         qc = max(q, _REPULL)
         Vp[u] = a_en * (_ret * Vc[u - 1] + (1 - _ret) * Vp[u - 1])
