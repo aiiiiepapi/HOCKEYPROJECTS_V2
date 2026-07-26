@@ -77,6 +77,8 @@ def main():
         rs = sorted(pull_Rs.get(coach, []))
         med = rs[len(rs) // 2] if rs else None
         p = pp.get(coach, {})
+        n_ev = len(rs)
+        early_flag = bool(med is not None and n_ev >= 5 and med - 259 > 90)
         flags = []
         if p.get("pp_only"):
             flags.append("pulls ONLY on PP (0% at 5v5 = the bettable number)")
@@ -99,7 +101,6 @@ def main():
         # Raw median stays displayed as context; MANUAL tab keeps the knob;
         # Gen-3 threshold+opportunity model is the principled reintroduction.
         shift_prod = 0
-        early_flag = bool(med is not None and n_ev >= 5 and med - 259 > 90)
         profiles.append({
             "shift_prod": max(-60, min(180, shift_prod)),
             "team": team, "coach": coach, "last_seen": date,

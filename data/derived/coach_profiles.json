@@ -1,6 +1,6 @@
 [
  {
-  "shift_prod": -7,
+  "shift_prod": 0,
   "team": "ANA",
   "coach": "Joel Quenneville",
   "last_seen": "2026-04-09",
@@ -109,7 +109,7 @@
   ]
  },
  {
-  "shift_prod": -5,
+  "shift_prod": 0,
   "team": "BOS",
   "coach": "Joe Sacco",
   "last_seen": "2025-04-13",
@@ -163,7 +163,7 @@
   ]
  },
  {
-  "shift_prod": -29,
+  "shift_prod": 0,
   "team": "BUF",
   "coach": "Don Granato",
   "last_seen": "2024-04-11",
@@ -191,7 +191,7 @@
   ]
  },
  {
-  "shift_prod": 5,
+  "shift_prod": 0,
   "team": "BUF",
   "coach": "Lindy Ruff",
   "last_seen": "2026-04-13",
@@ -218,7 +218,7 @@
   ]
  },
  {
-  "shift_prod": 16,
+  "shift_prod": 0,
   "team": "CAR",
   "coach": "Rod Brind'Amour",
   "last_seen": "2026-04-11",
@@ -245,7 +245,7 @@
   ]
  },
  {
-  "shift_prod": -2,
+  "shift_prod": 0,
   "team": "CBJ",
   "coach": "Rick Bowness",
   "last_seen": "2026-04-11",
@@ -273,7 +273,7 @@
   ]
  },
  {
-  "shift_prod": 2,
+  "shift_prod": 0,
   "team": "CBJ",
   "coach": "Brad Larsen",
   "last_seen": "2023-04-14",
@@ -301,7 +301,7 @@
   ]
  },
  {
-  "shift_prod": 9,
+  "shift_prod": 0,
   "team": "CBJ",
   "coach": "Dean Evason",
   "last_seen": "2026-01-10",
@@ -406,7 +406,7 @@
   ]
  },
  {
-  "shift_prod": 16,
+  "shift_prod": 0,
   "team": "CHI",
   "coach": "Jeff Blashill",
   "last_seen": "2026-04-15",
@@ -482,7 +482,7 @@
   ]
  },
  {
-  "shift_prod": -13,
+  "shift_prod": 0,
   "team": "COL",
   "coach": "Jared Bednar",
   "last_seen": "2026-04-01",
@@ -510,7 +510,7 @@
   ]
  },
  {
-  "shift_prod": 2,
+  "shift_prod": 0,
   "team": "DAL",
   "coach": "Glen Gulutzan",
   "last_seen": "2026-04-02",
@@ -538,7 +538,7 @@
   ]
  },
  {
-  "shift_prod": -3,
+  "shift_prod": 0,
   "team": "DET",
   "coach": "Derek Lalonde",
   "last_seen": "2024-12-23",
@@ -592,7 +592,7 @@
   ]
  },
  {
-  "shift_prod": -1,
+  "shift_prod": 0,
   "team": "EDM",
   "coach": "Kris Knoblauch",
   "last_seen": "2026-04-08",
@@ -643,7 +643,7 @@
   ]
  },
  {
-  "shift_prod": 14,
+  "shift_prod": 0,
   "team": "FLA",
   "coach": "Paul Maurice",
   "last_seen": "2026-04-11",
@@ -670,7 +670,7 @@
   ]
  },
  {
-  "shift_prod": -3,
+  "shift_prod": 0,
   "team": "LAK",
   "coach": "D.J. Smith",
   "last_seen": "2026-04-13",
@@ -725,7 +725,7 @@
   ]
  },
  {
-  "shift_prod": -26,
+  "shift_prod": 0,
   "team": "MIN",
   "coach": "John Hynes",
   "last_seen": "2026-04-13",
@@ -752,7 +752,7 @@
   ]
  },
  {
-  "shift_prod": -2,
+  "shift_prod": 0,
   "team": "MTL",
   "coach": "Martin St. Louis",
   "last_seen": "2026-04-12",
@@ -779,7 +779,7 @@
   ]
  },
  {
-  "shift_prod": 45,
+  "shift_prod": 0,
   "team": "NJD",
   "coach": "Sheldon Keefe",
   "last_seen": "2026-04-09",
@@ -802,11 +802,12 @@
   "m_prod": 0.918,
   "pp_share": 0.31,
   "flags": [
-   "+4 PP pulls (excluded above)"
+   "+4 PP pulls (excluded above)",
+   "EARLY puller \u2014 if past his usual time w/ chances passed, stand down / cut % in MANUAL"
   ]
  },
  {
-  "shift_prod": 7,
+  "shift_prod": 0,
   "team": "NSH",
   "coach": "Andrew Brunette",
   "last_seen": "2026-04-09",
@@ -833,7 +834,7 @@
   ]
  },
  {
-  "shift_prod": 80,
+  "shift_prod": 0,
   "team": "NYI",
   "coach": "Patrick Roy",
   "last_seen": "2026-04-03",
@@ -856,11 +857,12 @@
   "m_prod": 1.39,
   "pp_share": 0.24,
   "flags": [
-   "+4 PP pulls (excluded above)"
+   "+4 PP pulls (excluded above)",
+   "EARLY puller \u2014 if past his usual time w/ chances passed, stand down / cut % in MANUAL"
   ]
  },
  {
-  "shift_prod": 24,
+  "shift_prod": 0,
   "team": "NYI",
   "coach": "Peter DeBoer",
   "last_seen": "2026-04-12",
@@ -885,7 +887,7 @@
   "flags": []
  },
  {
-  "shift_prod": -17,
+  "shift_prod": 0,
   "team": "NYR",
   "coach": "Peter Laviolette",
   "last_seen": "2025-04-17",
@@ -938,7 +940,7 @@
   ]
  },
  {
-  "shift_prod": 17,
+  "shift_prod": 0,
   "team": "NYR",
   "coach": "Mike Sullivan",
   "last_seen": "2026-04-15",
@@ -992,7 +994,7 @@
   ]
  },
  {
-  "shift_prod": 12,
+  "shift_prod": 0,
   "team": "OTT",
   "coach": "Travis Green",
   "last_seen": "2026-04-11",
@@ -1019,7 +1021,7 @@
   ]
  },
  {
-  "shift_prod": -9,
+  "shift_prod": 0,
   "team": "PHI",
   "coach": "Rick Tocchet",
   "last_seen": "2026-04-09",
@@ -1074,7 +1076,7 @@
   ]
  },
  {
-  "shift_prod": -3,
+  "shift_prod": 0,
   "team": "PIT",
   "coach": "Dan Muse",
   "last_seen": "2026-04-12",
@@ -1102,7 +1104,7 @@
   ]
  },
  {
-  "shift_prod": -8,
+  "shift_prod": 0,
   "team": "SEA",
   "coach": "Dan Bylsma",
   "last_seen": "2025-04-15",
@@ -1130,7 +1132,7 @@
   ]
  },
  {
-  "shift_prod": -15,
+  "shift_prod": 0,
   "team": "SEA",
   "coach": "Lane Lambert",
   "last_seen": "2026-04-15",
@@ -1209,7 +1211,7 @@
   ]
  },
  {
-  "shift_prod": 5,
+  "shift_prod": 0,
   "team": "SJS",
   "coach": "Ryan Warsofsky",
   "last_seen": "2026-04-15",
@@ -1263,7 +1265,7 @@
   ]
  },
  {
-  "shift_prod": 66,
+  "shift_prod": 0,
   "team": "STL",
   "coach": "Jim Montgomery",
   "last_seen": "2026-04-13",
@@ -1285,10 +1287,12 @@
   "n_pulls": 6,
   "m_prod": 0.906,
   "pp_share": 0.0,
-  "flags": []
+  "flags": [
+   "EARLY puller \u2014 if past his usual time w/ chances passed, stand down / cut % in MANUAL"
+  ]
  },
  {
-  "shift_prod": 32,
+  "shift_prod": 0,
   "team": "TBL",
   "coach": "Jon Cooper",
   "last_seen": "2026-04-15",
@@ -1398,7 +1402,7 @@
   ]
  },
  {
-  "shift_prod": 16,
+  "shift_prod": 0,
   "team": "VAN",
   "coach": "Adam Foote",
   "last_seen": "2026-04-09",
@@ -1423,7 +1427,7 @@
   "flags": []
  },
  {
-  "shift_prod": 12,
+  "shift_prod": 0,
   "team": "VGK",
   "coach": "Bruce Cassidy",
   "last_seen": "2026-03-24",
@@ -1477,7 +1481,7 @@
   ]
  },
  {
-  "shift_prod": 15,
+  "shift_prod": 0,
   "team": "WPG",
   "coach": "Scott Arniel",
   "last_seen": "2026-04-14",
@@ -1502,7 +1506,7 @@
   "flags": []
  },
  {
-  "shift_prod": -17,
+  "shift_prod": 0,
   "team": "WSH",
   "coach": "Spencer Carbery",
   "last_seen": "2026-04-12",
