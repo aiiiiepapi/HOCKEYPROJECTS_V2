@@ -232,6 +232,46 @@ def main():
                            mid_type="percentile", mid_value=50, mid_color="FFEB84",
                            end_type="max", end_color="63BE7B"))
 
+
+    # ---------- NO-PULL LOG (every non-pull, classified) ----------
+    cwr = json.load(open(DER / "clean_window_instances.json"))
+    npl = wb.create_sheet("NO-PULL LOG")
+    npl.sheet_view.showGridLines = False
+    npl["A1"] = ("EVERY NO-PULL INSTANCE, CLASSIFIED — why it did not count against the coach (or did). "
+                 "'CLEAR DECLINE' = real 5v5 chance, chose not to. Chance quality = share of the pull zone "
+                 "he had cleanly available at 5v5 (>=70% = clear chance). Filter any column.")
+    npl["A1"].font = Font(name="Arial", bold=True, size=11)
+    npl.merge_cells("A1:I1")
+    nhdr = ["Season", "Date", "Team", "Coach", "Gap-3 from", "Until", "Chance quality (5v5)", "Reason", "Blocked by"]
+    for j, h in enumerate(nhdr, 1):
+        c = npl.cell(row=2, column=j, value=h); c.font = HDR_FONT; c.fill = HDR_FILL
+        c.alignment = Alignment(horizontal="center", wrap_text=True)
+    REASON_FILL = {
+        "CLEAR DECLINE": PatternFill("solid", fgColor="F8696B"),
+        "partial chance": PatternFill("solid", fgColor="FFEB84"),
+    }
+    nr = 3
+    for r in sorted(cwr, key=lambda x: (x["date"], x["coach"])):
+        if r["pulled"]:
+            continue
+        blk = ", ".join(f"{k} {v}s" for k, v in r["blocked"].items()) or ""
+        o = r["opened_R"]; c_ = r["closed_R"]
+        vals = [r["season"][:4] + "-" + r["season"][6:], r["date"], r["team"], r["coach"],
+                ("period start (carry-in)" if o >= 1200 else f"{o//60}:{o%60:02d}"),
+                ("horn" if c_ == 0 else f"{c_//60}:{c_%60:02d}"),
+                r["frac_ev"], r["reason"], blk]
+        for j, v in enumerate(vals, 1):
+            c = npl.cell(row=nr, column=j, value=v)
+            c.font = ARIAL; c.border = THIN
+            if j == 7: c.number_format = "0%"
+            if j == 8 and r["reason"] in REASON_FILL: c.fill = REASON_FILL[r["reason"]]
+        nr += 1
+    lastn = nr - 1
+    npl.auto_filter.ref = f"A2:I{lastn}"
+    npl.freeze_panes = "A3"
+    for col, w in zip("ABCDEFGHI", (9, 11, 7, 24, 13, 8, 13, 24, 34)):
+        npl.column_dimensions[col].width = w
+
     # legend sheet
     lg = wb.create_sheet("HOW TO USE")
     notes = [
