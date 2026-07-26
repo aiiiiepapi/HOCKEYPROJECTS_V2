@@ -140,7 +140,10 @@ def price(R0, pulled0=False, strength0="EV", m_coach=1.0, gap0=3,
         uL = min(max(u - 1 - _LAG, 0), 1199)
         hz = np.where(gb == 2, _HAZ[2][uL], np.where(gb == 3, _HAZ[3][u3], _HAZ[4][uL]))
         mpp = np.where(gb == 2, _MPP[2], np.where(gb == 3, _MPP[3], _MPP[4]))
-        h_eff = hz * np.where(strength == 1, mpp, 1.0) * m_coach
+        # coach effect is 3-gap-specific: cross-gap transfer measured weak
+        # (r~0.25; gap-2 late is ~97% league-wide regardless of coach).
+        m_x = np.where(gb == 3, m_coach, 1.0 + 0.25 * (m_coach - 1.0))
+        h_eff = hz * np.where(strength == 1, mpp, 1.0) * m_x
         # re-pull dynamics: once committed, return to empty net is ~10x faster (fitted 24-25)
         h_eff = np.where(ever_pulled & (margin <= 3), np.maximum(h_eff, _REPULL), h_eff)
         h_eff = np.where(dead > 0, 0.0, h_eff)
