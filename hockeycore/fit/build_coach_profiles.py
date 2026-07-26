@@ -89,13 +89,17 @@ def main():
         ppl = p.get("pulls_pp", 0)
         if ppl and not p.get("pp_only"):
             flags.append(f"+{ppl} PP pulls (excluded above)")
+        if early_flag:
+            flags.append("EARLY puller — if past his usual time w/ chances passed, stand down / cut % in MANUAL")
         # production timing shift: attenuate (4-season persistence 0.608) and
         # shrink by pull count — raw medians are opportunity-gated noise (Seb 2026-07-26)
         n_ev = len(rs)
-        if med is not None and n_ev >= 3:
-            shift_prod = round(0.608 * (med - 259) * (n_ev / (n_ev + 4)))
-        else:
-            shift_prod = 0
+        # PRODUCTION: timing OFF (Seb ruling 2026-07-26 — averages are
+        # opportunity-gated noise; in-window conditioning overreads silence).
+        # Raw median stays displayed as context; MANUAL tab keeps the knob;
+        # Gen-3 threshold+opportunity model is the principled reintroduction.
+        shift_prod = 0
+        early_flag = bool(med is not None and n_ev >= 5 and med - 259 > 90)
         profiles.append({
             "shift_prod": max(-60, min(180, shift_prod)),
             "team": team, "coach": coach, "last_seen": date,

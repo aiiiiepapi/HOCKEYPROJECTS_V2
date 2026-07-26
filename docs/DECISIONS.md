@@ -47,3 +47,9 @@
 13. **Team/coach-first navigation**: TEAM LINES tab prices every team at its
     own coach's expected % + timing; filter by name.
 NOTE: new coach layer is PROVISIONAL until blind re-validation (next block).
+14. **Average pull timing REMOVED from production pricing** (2026-07-26):
+    observed averages are opportunity-gated noise; the in-window conditioning
+    channel (20-26pt swings at 5:00-6:00) overreads silence. Raw timing stays
+    visible as context; EARLY-puller flag + stand-down rule replaces the curve
+    shift; MANUAL tab keeps the timing knob; Gen-3 threshold+opportunity model
+    is the sanctioned way to bring timing back.
