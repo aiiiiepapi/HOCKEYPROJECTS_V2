@@ -30,3 +30,16 @@ candidate: O/E test w/ CI, direction pre-registered, walk-forward before adoptio
 - Days-rest differential; post-trade-deadline seller status
 - Coach recently burned (EN-against on pull in last N games) — gun-shy autocorrelation
 - Heavy-tailed coach prior (t-dist random effects) — revisit at 3+ seasons of data
+
+## TESTED 2026-07-26 — pull-memory covariates: BOTH NULL (drop from backlog)
+Q (Seb): does a successful previous pull (cut the gap 6v5) raise the next
+3-gap pull rate? And does eating an ENG suppress it?
+Method: 2,082 pull events (gap 2+3) classified scored/ENG-punished/neutral,
+joined to each coach's next clean 3-gap 5v5 chance; raw + within-coach
+(precision-weighted) to kill the aggressive-coach confound.
+- after SCORED 6v5:   53% (44/83)   | within-coach vs failure: -3.0pts
+- after ENG-punished: 52% (143/274) | within-coach vs neutral: -3.6pts
+- after neutral:      57% (86/152)
+Verdict: no momentum, no meaningful deflation. Coach identity dominates;
+last-pull outcome adds nothing bettable. Memoryless coach hazard VALIDATED.
+(Side stat: 52% of all pulls end ENG-punished, 18% succeed, 30% neutral.)
