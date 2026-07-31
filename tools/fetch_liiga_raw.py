@@ -27,7 +27,7 @@ from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
-BASE = "https://liiga.fi/api/v1/games"
+BASE = "https://liiga.fi/api/v2/games"  # v1 retired ~mid-2026; v2 found in the site bundle 2026-08-01
 HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
            "Accept": "application/json"}
 THROTTLE = 0.4
