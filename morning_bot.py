@@ -20,9 +20,23 @@ Displayed but NOT weighted (untested or measured null):
 Requires the repo's derived files to be fresh (RUNBOOK: extraction ->
 clean_window -> profiles). Writes morning_cards.md.
 """
-import json, math, argparse, sys
+import json, math, argparse, sys, datetime
 from pathlib import Path
 from collections import defaultdict
+
+TEAM_ABBR = {
+ "Anaheim Ducks":"ANA","Boston Bruins":"BOS","Buffalo Sabres":"BUF","Calgary Flames":"CGY",
+ "Carolina Hurricanes":"CAR","Chicago Blackhawks":"CHI","Colorado Avalanche":"COL",
+ "Columbus Blue Jackets":"CBJ","Dallas Stars":"DAL","Detroit Red Wings":"DET",
+ "Edmonton Oilers":"EDM","Florida Panthers":"FLA","Los Angeles Kings":"LAK",
+ "Minnesota Wild":"MIN","Montreal Canadiens":"MTL","Montréal Canadiens":"MTL",
+ "Nashville Predators":"NSH","New Jersey Devils":"NJD","New York Islanders":"NYI",
+ "New York Rangers":"NYR","Ottawa Senators":"OTT","Philadelphia Flyers":"PHI",
+ "Pittsburgh Penguins":"PIT","San Jose Sharks":"SJS","Seattle Kraken":"SEA",
+ "St Louis Blues":"STL","St. Louis Blues":"STL","Tampa Bay Lightning":"TBL",
+ "Toronto Maple Leafs":"TOR","Utah Hockey Club":"UTA","Utah Mammoth":"UTA",
+ "Vancouver Canucks":"VAN","Vegas Golden Knights":"VGK","Washington Capitals":"WSH",
+ "Winnipeg Jets":"WPG"}
 
 ROOT = Path(__file__).resolve().parent
 DER = ROOT / "data" / "derived"
@@ -50,6 +64,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--slate", default="", help="comma list AWY@HOM")
     ap.add_argument("--ml", action="append", default=[], help="TEAM:americanline")
+    ap.add_argument("--odds-json", default="", help="Odds API snapshot (auto slate + lines)")
+    ap.add_argument("--hours", type=int, default=30, help="games starting within N hours")
     args = ap.parse_args()
 
     profiles = json.load(open(DER / "coach_profiles.json"))
@@ -83,12 +99,40 @@ def main():
         stories[r["coach"]].append(s)
 
     slate_teams, opps, venue = {}, {}, {}
+    auto_ml = {}
+    if args.odds_json:
+        now = datetime.datetime.now(datetime.timezone.utc)
+        for ev in json.load(open(args.odds_json)):
+            try:
+                ct = datetime.datetime.fromisoformat(ev["commence_time"].replace("Z", "+00:00"))
+            except Exception:
+                continue
+            if not (0 <= (ct - now).total_seconds() <= args.hours * 3600):
+                continue
+            h, a = TEAM_ABBR.get(ev["home_team"]), TEAM_ABBR.get(ev["away_team"])
+            if not h or not a:
+                continue
+            slate_teams[h] = slate_teams[a] = True
+            opps[h], opps[a] = a, h
+            venue[h], venue[a] = "home", "away"
+            prices = defaultdict(list)
+            for bk in ev.get("bookmakers", []):
+                for mk in bk.get("markets", []):
+                    if mk.get("key") != "h2h":
+                        continue
+                    for o in mk.get("outcomes", []):
+                        t = TEAM_ABBR.get(o.get("name"))
+                        if t:
+                            prices[t].append(int(o["price"]))
+            for t, ps in prices.items():
+                ps.sort()
+                auto_ml[t] = implied(ps[len(ps) // 2])   # median book
     for m in [x for x in args.slate.split(",") if x]:
         a, h = m.strip().upper().split("@")
         slate_teams[a] = True; slate_teams[h] = True
         opps[a], opps[h] = h, a
         venue[a], venue[h] = "away", "home"
-    mls = {}
+    mls = dict(auto_ml)
     for m in args.ml:
         t, v = m.split(":")
         mls[t.strip().upper()] = implied(v)
