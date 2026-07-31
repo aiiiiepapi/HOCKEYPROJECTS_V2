@@ -1,0 +1,77 @@
+LIIGA HEAD COACH MAP: 2022-23 through 2025-26 SEASONS
+======================================================
+
+SOURCES:
+- Primary: Wikipedia season articles (2022–23, 2023–24, 2024–25, 2025–26 Liiga season)
+- Secondary: Grokipedia (2022-23 season data)
+- Tertiary: EliteProspects individual coach pages and Pallomeri.net
+
+VERIFIED MID-SEASON HEAD COACH CHANGES:
+========================================
+
+2022-23 Season:
+  1. ILVES: Jouko Myrrä → Antti Pennanen (October 5, 2022)
+  2. SAIPA: Pekka Virta → Ville Hämäläinen (October 14, 2022)
+
+2023-24 Season:
+  1. JYP: Jukka Rautakorpi → Mikko Heiskanen (December 20, 2023)
+  2. KÄRPÄT: Lauri Marjamäki → Ville Mäntymaa (December 18, 2023)
+  3. HPK: Maso Lehtonen → Mikko Manner (specific date uncertain, noted as Dec 20, 2023 in one source)
+
+2024-25 Season:
+  1. HPK: Matias Lehtonen → Mikko Manner (September 23, 2024)
+  2. JUKURIT: Marko Tuomainen → Jonne Virtanen (January 14, 2025)
+  3. PELICANS: Juhamatti Yli-Junnila → Sami Kapanen (January 20, 2025)
+  4. KÄRPÄT: Ville Mäntymaa → Petri Matikainen (March 3, 2025)
+
+2025-26 Season:
+  1. HIFK: Ville Peltonen → Olli Jokinen (April 25, 2025) [Date is uncertain - this is mid-season]
+  2. SPORT: [Coach name blank] → Jussi Tapio (December 10, 2025) [Likely in-season, but data unclear]
+
+DATA UNCERTAINTIES & DISCREPANCIES:
+===================================
+
+CRITICAL NOTES:
+1. HPK 2023-24 coaching change date: Wikipedia states mid-season change from Maso Lehtonen to Mikko Manner,
+   but the exact date is not explicitly stated. Assumed Dec 20, 2023 based on context, but this needs verification.
+
+2. HIFK 2025-26 coaching change: Wikipedia indicates Olli Jokinen took over on April 25, 2025. This is suspicious
+   because April 25, 2025 is during the season (Liiga typically ends in May). This may indicate a mid-playoffs
+   change or the date may be incorrect. Needs verification against official team sources.
+
+3. Sport 2025-26: Wikipedia shows incomplete data - no initial coach name, then Jussi Tapio appears on Dec 10, 2025.
+   The source data appears corrupted or incomplete. Initial coach name is MISSING.
+
+4. 2025-26 overall: Several team coach entries appear incomplete in Wikipedia. The following entries should be
+   verified against official team websites or EliteProspects when more recent data becomes available:
+   - Ässät: confirmed as Jarno Pikkarainen (via Pallomeri.net, most recent source)
+   - TPS: confirmed as Toni Söderholm (via Wikipedia, cross-checked)
+   - Tappara: confirmed as Rikard Grönborg (via Pallomeri.net, official team source)
+
+5. 2024-25 Kiekko-Espoo: This team appears in Wikipedia for 2024-25 but not in other seasons' data.
+   This may indicate a relocation, name change, or new team entry. Unclear if this is consistent across seasons.
+
+SOURCE CONFLICTS:
+None identified between Wikipedia and EliteProspects for coaches where both sources had data.
+Grokipedia and Wikipedia aligned on 2022-23 season data.
+
+TEAMS COVERED BY SEASON:
+2022-23: 15 teams (Ässät, HIFK, HPK, Ilves, Jukurit, JYP, KalPa, Kärpät, KooKoo, Lukko, Pelicans, SaiPa, Sport, Tappara, TPS)
+2023-24: 15 teams (same as 2022-23)
+2024-25: 16 teams (added Kiekko-Espoo)
+2025-26: 15 teams (Kiekko-Espoo not listed in 2025-26 Wikipedia data, but likely still active)
+
+NOTES ON DATA QUALITY:
+- Exact dates for mid-season changes are not always provided in sources. Where specific dates are given, they are from
+  Wikipedia season articles or official team announcements.
+- Interim coach designations: Not explicitly tracked in sources. Some may be interim but listed as permanent pending
+  contract finalization.
+- Start/end dates: Assumed September 1 start and May 31 end for each season based on typical Liiga schedule.
+  Actual season dates may vary slightly by year.
+
+RECOMMENDATIONS FOR FURTHER VERIFICATION:
+1. Cross-check 2025-26 data with official Liiga.fi website and individual team websites
+2. Verify HPK 2023-24 coaching change date specifically (Wikipedia unclear)
+3. Confirm HIFK April 25, 2025 coaching change (appears to be mid-season)
+4. Clarify Sport 2025-26 initial coach name
+5. Track Kiekko-Espoo status across seasons (appears and disappears)
