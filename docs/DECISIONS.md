@@ -60,3 +60,9 @@ NOTE: new coach layer is PROVISIONAL until blind re-validation (next block).
     NEW: -3.5 now ~4pts OPTIMISTIC -> CAUTION on card (double edge or skip)
     until coach-conditional hazards. ROI at 10%-EV lines (blind, clustered):
     leaderTT +22.8% [+9.0,+37.9], total +11.0% [+0.6,+21.8], -3.5 +4.1% [n.s.].
+16. **Morning bot v1 shipped (2026-07-31)**: real moneylines ruled in for
+    DAILY inference (partial reversal of odds:c — historical odds still
+    skipped; effect fitted on results-based strength, ML maps to same scale).
+    Mining results: strength effect one-sided (favs 66%, heavy dogs 39%,
+    slight fav == heavy fav); venue NULL at chance level (+1.6pts) -> display
+    only. Card = expected % + why + last-3 chances with outcomes.

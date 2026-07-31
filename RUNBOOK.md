@@ -43,3 +43,10 @@ Push every commit to GitHub (`git push v2origin master` or `origin`).
 - Anything where a wrong number silently reaches the bet card
 If a gate goes red or data looks weird: STOP, report, wait for a Fable block.
 Standing rules 0 and 0b (CLAUDE.md) apply to every session, every model.
+
+## Morning bot (data-mining phase)
+`python3 morning_bot.py --slate "AWY@HOM,..." --ml TEAM:-285 ...` after the
+standard refresh chain (extraction -> clean_window -> pp -> profiles).
+Weighted: coach + strength regime (fav/mid/heavy-dog, one-sided grading,
+measured). Displayed only: venue (measured noise), B2B/lineups (no data yet).
+Writes morning_cards.md. Cheap-session friendly.
