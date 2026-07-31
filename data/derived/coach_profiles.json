@@ -648,17 +648,17 @@
   "team": "FLA",
   "coach": "Paul Maurice",
   "last_seen": "2026-04-11",
-  "clear_chances": 19,
+  "clear_chances": 20,
   "clear_taken": 13,
-  "clean_rate": 0.684,
+  "clean_rate": 0.65,
   "ci": [
-   0.475,
-   0.875
+   0.443,
+   0.843
   ],
-  "expected_pull_pct": 0.598,
+  "expected_pull_pct": 0.566,
   "band": [
-   0.358,
-   0.838
+   0.326,
+   0.807
   ],
   "last3": "nPn",
   "overall_rate": 0.731,
@@ -1021,21 +1021,21 @@
   "coach": "Rick Tocchet",
   "last_seen": "2026-04-09",
   "clear_chances": 8,
-  "clear_taken": 3,
-  "clean_rate": 0.375,
+  "clear_taken": 2,
+  "clean_rate": 0.25,
   "ci": [
-   0.087,
-   0.691
+   0,
+   0.555
   ],
-  "expected_pull_pct": 0.49,
+  "expected_pull_pct": 0.413,
   "band": [
-   0.201,
-   0.779
+   0.128,
+   0.698
   ],
   "last3": "PnP",
-  "overall_rate": 0.455,
-  "median_pull_R": 223,
-  "n_pulls": 3,
+  "overall_rate": 0.364,
+  "median_pull_R": 284,
+  "n_pulls": 2,
   "m_prod": 0.976,
   "pp_share": 0.4,
   "flags": [
@@ -1182,22 +1182,22 @@
   "team": "SJS",
   "coach": "Ryan Warsofsky",
   "last_seen": "2026-04-15",
-  "clear_chances": 10,
-  "clear_taken": 3,
-  "clean_rate": 0.3,
+  "clear_chances": 9,
+  "clear_taken": 2,
+  "clean_rate": 0.222,
   "ci": [
-   0.055,
-   0.582
+   0,
+   0.506
   ],
-  "expected_pull_pct": 0.377,
+  "expected_pull_pct": 0.346,
   "band": [
-   0.109,
-   0.644
+   0.078,
+   0.615
   ],
   "last3": "nnn",
-  "overall_rate": 0.455,
+  "overall_rate": 0.4,
   "median_pull_R": 279,
-  "n_pulls": 3,
+  "n_pulls": 2,
   "m_prod": 0.889,
   "pp_share": 0.4,
   "flags": [
@@ -1477,22 +1477,22 @@
   "team": "WPG",
   "coach": "Scott Arniel",
   "last_seen": "2026-04-14",
-  "clear_chances": 8,
-  "clear_taken": 6,
-  "clean_rate": 0.75,
+  "clear_chances": 7,
+  "clear_taken": 5,
+  "clean_rate": 0.714,
   "ci": [
-   0.445,
-   1
+   0.385,
+   0.99
   ],
-  "expected_pull_pct": 0.68,
+  "expected_pull_pct": 0.66,
   "band": [
-   0.41,
-   0.95
+   0.379,
+   0.942
   ],
   "last3": "nPP",
-  "overall_rate": 0.75,
-  "median_pull_R": 301,
-  "n_pulls": 6,
+  "overall_rate": 0.714,
+  "median_pull_R": 213,
+  "n_pulls": 5,
   "m_prod": 1.099,
   "pp_share": 0.0,
   "flags": []

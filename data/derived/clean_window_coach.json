@@ -15,7 +15,7 @@
    1
   ],
   "ruined_windows": 12,
-  "league_expected_pulls_in_nopull": 0.39,
+  "league_expected_pulls_in_nopull": 0.38,
   "declines": []
  },
  {
@@ -34,7 +34,7 @@
    1
   ],
   "ruined_windows": 14,
-  "league_expected_pulls_in_nopull": 1.59,
+  "league_expected_pulls_in_nopull": 1.57,
   "declines": []
  },
  {
@@ -53,7 +53,7 @@
    1
   ],
   "ruined_windows": 15,
-  "league_expected_pulls_in_nopull": 0.19,
+  "league_expected_pulls_in_nopull": 0.17,
   "declines": []
  },
  {
@@ -72,7 +72,7 @@
    1
   ],
   "ruined_windows": 16,
-  "league_expected_pulls_in_nopull": 1.17,
+  "league_expected_pulls_in_nopull": 1.14,
   "declines": []
  },
  {
@@ -91,7 +91,7 @@
    1
   ],
   "ruined_windows": 17,
-  "league_expected_pulls_in_nopull": 0.24,
+  "league_expected_pulls_in_nopull": 0.23,
   "declines": []
  },
  {
@@ -136,12 +136,12 @@
    1
   ],
   "ruined_windows": 34,
-  "league_expected_pulls_in_nopull": 2.23,
+  "league_expected_pulls_in_nopull": 2.19,
   "declines": [
    {
     "date": "2025-02-25",
     "team": "EDM",
-    "q": 0.493,
+    "q": 0.4891,
     "game_id": 2024020921
    }
   ]
@@ -162,7 +162,7 @@
    1
   ],
   "ruined_windows": 44,
-  "league_expected_pulls_in_nopull": 0.86,
+  "league_expected_pulls_in_nopull": 0.85,
   "declines": [
    {
     "date": "2022-12-05",
@@ -194,7 +194,7 @@
    0.989
   ],
   "ruined_windows": 31,
-  "league_expected_pulls_in_nopull": 3.36,
+  "league_expected_pulls_in_nopull": 3.3,
   "declines": [
    {
     "date": "2024-03-17",
@@ -205,13 +205,13 @@
    {
     "date": "2025-10-30",
     "team": "NYI",
-    "q": 0.497,
+    "q": 0.4951,
     "game_id": 2025020171
    },
    {
     "date": "2025-11-07",
     "team": "NYI",
-    "q": 0.4989,
+    "q": 0.497,
     "game_id": 2025020228
    }
   ]
@@ -232,7 +232,7 @@
    0.971
   ],
   "ruined_windows": 33,
-  "league_expected_pulls_in_nopull": 4.0,
+  "league_expected_pulls_in_nopull": 3.99,
   "declines": [
    {
     "date": "2023-04-05",
@@ -255,7 +255,7 @@
    {
     "date": "2025-12-15",
     "team": "TBL",
-    "q": 0.8439,
+    "q": 0.8458,
     "game_id": 2025020514
    }
   ]
@@ -281,7 +281,7 @@
    {
     "date": "2025-12-31",
     "team": "DAL",
-    "q": 0.4945,
+    "q": 0.4926,
     "game_id": 2025020628
    }
   ]
@@ -302,7 +302,7 @@
    0.954
   ],
   "ruined_windows": 48,
-  "league_expected_pulls_in_nopull": 3.18,
+  "league_expected_pulls_in_nopull": 3.15,
   "declines": [
    {
     "date": "2023-01-29",
@@ -346,7 +346,7 @@
    0.922
   ],
   "ruined_windows": 58,
-  "league_expected_pulls_in_nopull": 4.31,
+  "league_expected_pulls_in_nopull": 4.25,
   "declines": [
    {
     "date": "2022-10-15",
@@ -369,46 +369,14 @@
    {
     "date": "2025-11-19",
     "team": "BUF",
-    "q": 0.4806,
+    "q": 0.4794,
     "game_id": 2025020316
    },
    {
     "date": "2025-12-03",
     "team": "BUF",
-    "q": 0.513,
+    "q": 0.5042,
     "game_id": 2025020423
-   }
-  ]
- },
- {
-  "coach": "Scott Arniel",
-  "instances": 39,
-  "pulls": 6,
-  "ev_clear": 8,
-  "ev_taken": 6,
-  "clean_rate_5v5": 0.75,
-  "naive_rate": 0.154,
-  "clear_chances": 8,
-  "clear_taken": 6,
-  "clean_rate": 0.75,
-  "ci": [
-   0.445,
-   1.0
-  ],
-  "ruined_windows": 30,
-  "league_expected_pulls_in_nopull": 1.97,
-  "declines": [
-   {
-    "date": "2025-11-09",
-    "team": "WPG",
-    "q": 0.5645,
-    "game_id": 2025020251
-   },
-   {
-    "date": "2025-11-23",
-    "team": "WPG",
-    "q": 0.5124,
-    "game_id": 2025020348
    }
   ]
  },
@@ -428,7 +396,7 @@
    0.932
   ],
   "ruined_windows": 41,
-  "league_expected_pulls_in_nopull": 3.81,
+  "league_expected_pulls_in_nopull": 3.77,
   "declines": [
    {
     "date": "2023-03-12",
@@ -445,13 +413,13 @@
    {
     "date": "2025-04-08",
     "team": "CAR",
-    "q": 0.5007,
+    "q": 0.4979,
     "game_id": 2024021235
    },
    {
     "date": "2026-04-05",
     "team": "CAR",
-    "q": 0.4717,
+    "q": 0.4697,
     "game_id": 2025021225
    }
   ]
@@ -472,7 +440,7 @@
    0.932
   ],
   "ruined_windows": 24,
-  "league_expected_pulls_in_nopull": 2.55,
+  "league_expected_pulls_in_nopull": 2.5,
   "declines": [
    {
     "date": "2024-03-23",
@@ -489,13 +457,13 @@
    {
     "date": "2025-01-03",
     "team": "OTT",
-    "q": 0.493,
+    "q": 0.4891,
     "game_id": 2024020617
    },
    {
     "date": "2025-02-22",
     "team": "OTT",
-    "q": 0.5058,
+    "q": 0.5021,
     "game_id": 2024020901
    }
   ]
@@ -504,9 +472,9 @@
   "coach": "Paul Maurice",
   "instances": 82,
   "pulls": 19,
-  "ev_clear": 19,
+  "ev_clear": 20,
   "ev_taken": 13,
-  "clean_rate_5v5": 0.684,
+  "clean_rate_5v5": 0.65,
   "naive_rate": 0.232,
   "clear_chances": 26,
   "clear_taken": 19,
@@ -516,7 +484,7 @@
    0.888
   ],
   "ruined_windows": 55,
-  "league_expected_pulls_in_nopull": 4.83,
+  "league_expected_pulls_in_nopull": 4.76,
   "declines": [
    {
     "date": "2023-11-24",
@@ -533,31 +501,31 @@
    {
     "date": "2024-12-14",
     "team": "FLA",
-    "q": 0.5027,
+    "q": 0.4989,
     "game_id": 2024020485
    },
    {
     "date": "2025-03-22",
     "team": "FLA",
-    "q": 0.5061,
+    "q": 0.5024,
     "game_id": 2024021110
    },
    {
     "date": "2025-10-18",
     "team": "FLA",
-    "q": 0.513,
+    "q": 0.5042,
     "game_id": 2025020076
    },
    {
     "date": "2026-03-17",
     "team": "FLA",
-    "q": 0.4309,
+    "q": 0.4288,
     "game_id": 2025021074
    },
    {
     "date": "2026-04-05",
     "team": "FLA",
-    "q": 0.4736,
+    "q": 0.4717,
     "game_id": 2025021223
    }
   ]
@@ -578,7 +546,7 @@
    0.955
   ],
   "ruined_windows": 44,
-  "league_expected_pulls_in_nopull": 2.99,
+  "league_expected_pulls_in_nopull": 2.97,
   "declines": [
    {
     "date": "2022-12-17",
@@ -595,8 +563,40 @@
    {
     "date": "2024-10-10",
     "team": "DET",
-    "q": 0.4883,
+    "q": 0.4864,
     "game_id": 2024020014
+   }
+  ]
+ },
+ {
+  "coach": "Scott Arniel",
+  "instances": 39,
+  "pulls": 5,
+  "ev_clear": 7,
+  "ev_taken": 5,
+  "clean_rate_5v5": 0.714,
+  "naive_rate": 0.128,
+  "clear_chances": 7,
+  "clear_taken": 5,
+  "clean_rate": 0.714,
+  "ci": [
+   0.385,
+   0.99
+  ],
+  "ruined_windows": 31,
+  "league_expected_pulls_in_nopull": 1.94,
+  "declines": [
+   {
+    "date": "2025-11-09",
+    "team": "WPG",
+    "q": 0.5622,
+    "game_id": 2025020251
+   },
+   {
+    "date": "2025-11-23",
+    "team": "WPG",
+    "q": 0.5089,
+    "game_id": 2025020348
    }
   ]
  },
@@ -616,7 +616,7 @@
    0.859
   ],
   "ruined_windows": 56,
-  "league_expected_pulls_in_nopull": 6.14,
+  "league_expected_pulls_in_nopull": 6.1,
   "declines": [
    {
     "date": "2022-11-08",
@@ -651,19 +651,19 @@
    {
     "date": "2025-01-11",
     "team": "TOR",
-    "q": 0.5027,
+    "q": 0.4989,
     "game_id": 2024020672
    },
    {
     "date": "2025-03-05",
     "team": "TOR",
-    "q": 0.477,
+    "q": 0.475,
     "game_id": 2024020985
    },
    {
     "date": "2026-02-28",
     "team": "TOR",
-    "q": 0.4701,
+    "q": 0.4689,
     "game_id": 2025020939
    },
    {
@@ -690,36 +690,36 @@
    0.902
   ],
   "ruined_windows": 46,
-  "league_expected_pulls_in_nopull": 4.54,
+  "league_expected_pulls_in_nopull": 4.52,
   "declines": [
    {
     "date": "2024-01-04",
     "team": "VGK",
-    "q": 0.6515,
+    "q": 0.6497,
     "game_id": 2023020599
    },
    {
     "date": "2025-03-16",
     "team": "VGK",
-    "q": 0.4962,
+    "q": 0.4942,
     "game_id": 2024021066
    },
    {
     "date": "2025-10-25",
     "team": "VGK",
-    "q": 0.814,
+    "q": 0.8159,
     "game_id": 2025020130
    },
    {
     "date": "2025-12-20",
     "team": "VGK",
-    "q": 0.4181,
+    "q": 0.4171,
     "game_id": 2025020559
    },
    {
     "date": "2025-12-29",
     "team": "VGK",
-    "q": 0.5027,
+    "q": 0.4989,
     "game_id": 2025020614
    }
   ]
@@ -740,7 +740,7 @@
    0.869
   ],
   "ruined_windows": 57,
-  "league_expected_pulls_in_nopull": 4.42,
+  "league_expected_pulls_in_nopull": 4.36,
   "declines": [
    {
     "date": "2024-01-10",
@@ -751,7 +751,7 @@
    {
     "date": "2024-01-18",
     "team": "MIN",
-    "q": 0.4827,
+    "q": 0.4822,
     "game_id": 2023020695
    },
    {
@@ -763,25 +763,25 @@
    {
     "date": "2025-01-25",
     "team": "MIN",
-    "q": 0.4209,
+    "q": 0.4187,
     "game_id": 2024020784
    },
    {
     "date": "2025-10-11",
     "team": "MIN",
-    "q": 0.6947,
+    "q": 0.699,
     "game_id": 2025020033
    },
    {
     "date": "2025-10-17",
     "team": "MIN",
-    "q": 0.4724,
+    "q": 0.4716,
     "game_id": 2025020073
    },
    {
     "date": "2026-02-27",
     "team": "MIN",
-    "q": 0.4568,
+    "q": 0.4547,
     "game_id": 2025020932
    }
   ]
@@ -802,30 +802,30 @@
    0.903
   ],
   "ruined_windows": 26,
-  "league_expected_pulls_in_nopull": 3.3,
+  "league_expected_pulls_in_nopull": 3.24,
   "declines": [
    {
     "date": "2026-01-12",
     "team": "VAN",
-    "q": 0.5732,
+    "q": 0.5671,
     "game_id": 2025020720
    },
    {
     "date": "2026-01-15",
     "team": "VAN",
-    "q": 0.4982,
+    "q": 0.4962,
     "game_id": 2025020743
    },
    {
     "date": "2026-01-27",
     "team": "VAN",
-    "q": 0.4989,
+    "q": 0.497,
     "game_id": 2025020838
    },
    {
     "date": "2026-02-04",
     "team": "VAN",
-    "q": 0.5027,
+    "q": 0.4989,
     "game_id": 2025020901
    }
   ]
@@ -872,36 +872,36 @@
    0.854
   ],
   "ruined_windows": 47,
-  "league_expected_pulls_in_nopull": 3.89,
+  "league_expected_pulls_in_nopull": 3.84,
   "declines": [
    {
     "date": "2024-10-19",
     "team": "CBJ",
-    "q": 0.4927,
+    "q": 0.4907,
     "game_id": 2024020083
    },
    {
     "date": "2024-12-05",
     "team": "CBJ",
-    "q": 0.4738,
+    "q": 0.4718,
     "game_id": 2024020418
    },
    {
     "date": "2024-12-10",
     "team": "CBJ",
-    "q": 0.4933,
+    "q": 0.4913,
     "game_id": 2024020449
    },
    {
     "date": "2024-12-15",
     "team": "CBJ",
-    "q": 0.8006,
+    "q": 0.8015,
     "game_id": 2024020491
    },
    {
     "date": "2025-11-18",
     "team": "CBJ",
-    "q": 0.513,
+    "q": 0.5042,
     "game_id": 2025020311
    }
   ]
@@ -922,18 +922,18 @@
    0.949
   ],
   "ruined_windows": 14,
-  "league_expected_pulls_in_nopull": 1.51,
+  "league_expected_pulls_in_nopull": 1.48,
   "declines": [
    {
     "date": "2026-03-20",
     "team": "CHI",
-    "q": 0.449,
+    "q": 0.4469,
     "game_id": 2025021096
    },
    {
     "date": "2026-04-13",
     "team": "CHI",
-    "q": 0.4899,
+    "q": 0.4879,
     "game_id": 2025021288
    }
   ]
@@ -954,54 +954,54 @@
    0.771
   ],
   "ruined_windows": 56,
-  "league_expected_pulls_in_nopull": 6.96,
+  "league_expected_pulls_in_nopull": 6.88,
   "declines": [
    {
     "date": "2024-12-30",
     "team": "NSH",
-    "q": 0.4022,
+    "q": 0.3999,
     "game_id": 2024020587
    },
    {
     "date": "2025-03-01",
     "team": "NSH",
-    "q": 0.6402,
+    "q": 0.6319,
     "game_id": 2024020949
    },
    {
     "date": "2025-03-02",
     "team": "NSH",
-    "q": 0.4411,
+    "q": 0.439,
     "game_id": 2024020965
    },
    {
     "date": "2025-03-18",
     "team": "NSH",
-    "q": 0.4698,
+    "q": 0.4678,
     "game_id": 2024021082
    },
    {
     "date": "2025-10-21",
     "team": "NSH",
-    "q": 0.484,
+    "q": 0.482,
     "game_id": 2025020105
    },
    {
     "date": "2025-12-06",
     "team": "NSH",
-    "q": 0.4944,
+    "q": 0.4924,
     "game_id": 2025020447
    },
    {
     "date": "2026-01-06",
     "team": "NSH",
-    "q": 0.4681,
+    "q": 0.466,
     "game_id": 2025020674
    },
    {
     "date": "2026-04-09",
     "team": "NSH",
-    "q": 0.4726,
+    "q": 0.4706,
     "game_id": 2025021257
    }
   ]
@@ -1022,7 +1022,7 @@
    0.844
   ],
   "ruined_windows": 34,
-  "league_expected_pulls_in_nopull": 3.18,
+  "league_expected_pulls_in_nopull": 3.14,
   "declines": [
    {
     "date": "2022-10-29",
@@ -1045,7 +1045,7 @@
    {
     "date": "2025-01-18",
     "team": "DAL",
-    "q": 0.4779,
+    "q": 0.4759,
     "game_id": 2024020724
    }
   ]
@@ -1122,7 +1122,7 @@
    0.693
   ],
   "ruined_windows": 75,
-  "league_expected_pulls_in_nopull": 7.98,
+  "league_expected_pulls_in_nopull": 7.94,
   "declines": [
    {
     "date": "2022-10-22",
@@ -1151,7 +1151,7 @@
    {
     "date": "2023-04-01",
     "team": "MTL",
-    "q": 0.6712,
+    "q": 0.6687,
     "game_id": 2022021207
    },
    {
@@ -1181,31 +1181,31 @@
    {
     "date": "2024-10-22",
     "team": "MTL",
-    "q": 0.6617,
+    "q": 0.6658,
     "game_id": 2024020096
    },
    {
     "date": "2024-11-09",
     "team": "MTL",
-    "q": 0.4845,
+    "q": 0.4806,
     "game_id": 2024020227
    },
    {
     "date": "2024-11-23",
     "team": "MTL",
-    "q": 0.469,
+    "q": 0.467,
     "game_id": 2024020322
    },
    {
     "date": "2025-12-02",
     "team": "MTL",
-    "q": 0.4837,
+    "q": 0.4814,
     "game_id": 2025020411
    },
    {
     "date": "2026-04-11",
     "team": "MTL",
-    "q": 0.4989,
+    "q": 0.497,
     "game_id": 2025021271
    }
   ]
@@ -1226,7 +1226,7 @@
    0.685
   ],
   "ruined_windows": 40,
-  "league_expected_pulls_in_nopull": 8.66,
+  "league_expected_pulls_in_nopull": 8.58,
   "declines": [
    {
     "date": "2022-12-17",
@@ -1243,7 +1243,7 @@
    {
     "date": "2023-03-01",
     "team": "TOR",
-    "q": 0.3302,
+    "q": 0.3291,
     "game_id": 2022020969
    },
    {
@@ -1267,43 +1267,43 @@
    {
     "date": "2024-10-22",
     "team": "NJD",
-    "q": 0.4831,
+    "q": 0.4812,
     "game_id": 2024020094
    },
    {
     "date": "2024-11-27",
     "team": "NJD",
-    "q": 0.4807,
+    "q": 0.4788,
     "game_id": 2024020348
    },
    {
     "date": "2025-10-28",
     "team": "NJD",
-    "q": 0.4772,
+    "q": 0.4748,
     "game_id": 2025020161
    },
    {
     "date": "2025-10-30",
     "team": "NJD",
-    "q": 0.5027,
+    "q": 0.4989,
     "game_id": 2025020176
    },
    {
     "date": "2025-12-03",
     "team": "NJD",
-    "q": 0.5027,
+    "q": 0.4989,
     "game_id": 2025020421
    },
    {
     "date": "2026-01-08",
     "team": "NJD",
-    "q": 0.4771,
+    "q": 0.475,
     "game_id": 2025020687
    },
    {
     "date": "2026-03-31",
     "team": "NJD",
-    "q": 0.5105,
+    "q": 0.5017,
     "game_id": 2025021182
    }
   ]
@@ -1430,7 +1430,7 @@
    0.81
   ],
   "ruined_windows": 20,
-  "league_expected_pulls_in_nopull": 2.14,
+  "league_expected_pulls_in_nopull": 2.12,
   "declines": [
    {
     "date": "2024-03-16",
@@ -1441,19 +1441,19 @@
    {
     "date": "2024-10-16",
     "team": "LAK",
-    "q": 0.4249,
+    "q": 0.4263,
     "game_id": 2024020058
    },
    {
     "date": "2025-11-06",
     "team": "LAK",
-    "q": 0.4856,
+    "q": 0.4836,
     "game_id": 2025020226
    },
    {
     "date": "2026-02-05",
     "team": "LAK",
-    "q": 0.4598,
+    "q": 0.4522,
     "game_id": 2025020909
    }
   ]
@@ -1474,12 +1474,12 @@
    0.99
   ],
   "ruined_windows": 15,
-  "league_expected_pulls_in_nopull": 1.23,
+  "league_expected_pulls_in_nopull": 1.21,
   "declines": [
    {
     "date": "2026-01-06",
     "team": "BOS",
-    "q": 0.4026,
+    "q": 0.4012,
     "game_id": 2025020676
    }
   ]
@@ -1500,7 +1500,7 @@
    0.706
   ],
   "ruined_windows": 40,
-  "league_expected_pulls_in_nopull": 5.41,
+  "league_expected_pulls_in_nopull": 5.37,
   "declines": [
    {
     "date": "2022-12-10",
@@ -1535,132 +1535,20 @@
    {
     "date": "2024-01-15",
     "team": "NYI",
-    "q": 0.4474,
+    "q": 0.4466,
     "game_id": 2023020676
    },
    {
     "date": "2025-10-20",
     "team": "SEA",
-    "q": 0.8294,
+    "q": 0.8298,
     "game_id": 2025020094
    },
    {
     "date": "2026-02-25",
     "team": "SEA",
-    "q": 0.5102,
+    "q": 0.5047,
     "game_id": 2025020913
-   }
-  ]
- },
- {
-  "coach": "Rick Tocchet",
-  "instances": 69,
-  "pulls": 5,
-  "ev_clear": 8,
-  "ev_taken": 3,
-  "clean_rate_5v5": 0.375,
-  "naive_rate": 0.072,
-  "clear_chances": 11,
-  "clear_taken": 5,
-  "clean_rate": 0.455,
-  "ci": [
-   0.187,
-   0.729
-  ],
-  "ruined_windows": 54,
-  "league_expected_pulls_in_nopull": 3.84,
-  "declines": [
-   {
-    "date": "2023-02-11",
-    "team": "VAN",
-    "q": 0.4465,
-    "game_id": 2022020832
-   },
-   {
-    "date": "2023-11-11",
-    "team": "VAN",
-    "q": 0.3474,
-    "game_id": 2023020215
-   },
-   {
-    "date": "2023-12-28",
-    "team": "VAN",
-    "q": 0.3221,
-    "game_id": 2023020543
-   },
-   {
-    "date": "2024-04-02",
-    "team": "VAN",
-    "q": 0.3474,
-    "game_id": 2023021196
-   },
-   {
-    "date": "2025-01-31",
-    "team": "VAN",
-    "q": 0.4276,
-    "game_id": 2024020823
-   },
-   {
-    "date": "2026-01-17",
-    "team": "PHI",
-    "q": 0.4989,
-    "game_id": 2025020755
-   }
-  ]
- },
- {
-  "coach": "Ryan Warsofsky",
-  "instances": 52,
-  "pulls": 5,
-  "ev_clear": 10,
-  "ev_taken": 3,
-  "clean_rate_5v5": 0.3,
-  "naive_rate": 0.096,
-  "clear_chances": 11,
-  "clear_taken": 5,
-  "clean_rate": 0.455,
-  "ci": [
-   0.187,
-   0.729
-  ],
-  "ruined_windows": 39,
-  "league_expected_pulls_in_nopull": 4.36,
-  "declines": [
-   {
-    "date": "2024-10-26",
-    "team": "SJS",
-    "q": 0.4238,
-    "game_id": 2024020134
-   },
-   {
-    "date": "2025-01-18",
-    "team": "SJS",
-    "q": 0.5027,
-    "game_id": 2024020731
-   },
-   {
-    "date": "2026-02-02",
-    "team": "SJS",
-    "q": 0.4092,
-    "game_id": 2025020881
-   },
-   {
-    "date": "2026-03-24",
-    "team": "SJS",
-    "q": 0.5771,
-    "game_id": 2025021129
-   },
-   {
-    "date": "2026-04-08",
-    "team": "SJS",
-    "q": 0.5027,
-    "game_id": 2025021246
-   },
-   {
-    "date": "2026-04-15",
-    "team": "SJS",
-    "q": 0.405,
-    "game_id": 2025021305
    }
   ]
  },
@@ -1680,7 +1568,7 @@
    0.676
   ],
   "ruined_windows": 35,
-  "league_expected_pulls_in_nopull": 5.23,
+  "league_expected_pulls_in_nopull": 5.16,
   "declines": [
    {
     "date": "2023-01-29",
@@ -1715,19 +1603,19 @@
    {
     "date": "2025-12-04",
     "team": "STL",
-    "q": 0.506,
+    "q": 0.5041,
     "game_id": 2025020426
    },
    {
     "date": "2025-12-15",
     "team": "STL",
-    "q": 0.3955,
+    "q": 0.3892,
     "game_id": 2025020517
    },
    {
     "date": "2025-12-22",
     "team": "STL",
-    "q": 0.513,
+    "q": 0.5042,
     "game_id": 2025020571
    }
   ]
@@ -1792,7 +1680,7 @@
    0.64
   ],
   "ruined_windows": 40,
-  "league_expected_pulls_in_nopull": 5.78,
+  "league_expected_pulls_in_nopull": 5.73,
   "declines": [
    {
     "date": "2023-10-13",
@@ -1821,32 +1709,88 @@
    {
     "date": "2024-10-26",
     "team": "WSH",
-    "q": 0.4924,
+    "q": 0.4885,
     "game_id": 2024020127
    },
    {
     "date": "2025-03-13",
     "team": "WSH",
-    "q": 0.6778,
+    "q": 0.6809,
     "game_id": 2024021047
    },
    {
     "date": "2025-04-06",
     "team": "WSH",
-    "q": 0.5027,
+    "q": 0.4989,
     "game_id": 2024021222
    },
    {
     "date": "2025-04-17",
     "team": "WSH",
-    "q": 0.4989,
+    "q": 0.497,
     "game_id": 2024021311
    },
    {
     "date": "2026-01-27",
     "team": "WSH",
-    "q": 0.6811,
+    "q": 0.685,
     "game_id": 2025020839
+   }
+  ]
+ },
+ {
+  "coach": "Ryan Warsofsky",
+  "instances": 52,
+  "pulls": 4,
+  "ev_clear": 9,
+  "ev_taken": 2,
+  "clean_rate_5v5": 0.222,
+  "naive_rate": 0.077,
+  "clear_chances": 10,
+  "clear_taken": 4,
+  "clean_rate": 0.4,
+  "ci": [
+   0.131,
+   0.687
+  ],
+  "ruined_windows": 40,
+  "league_expected_pulls_in_nopull": 4.28,
+  "declines": [
+   {
+    "date": "2024-10-26",
+    "team": "SJS",
+    "q": 0.4238,
+    "game_id": 2024020134
+   },
+   {
+    "date": "2025-01-18",
+    "team": "SJS",
+    "q": 0.4989,
+    "game_id": 2024020731
+   },
+   {
+    "date": "2026-02-02",
+    "team": "SJS",
+    "q": 0.4069,
+    "game_id": 2025020881
+   },
+   {
+    "date": "2026-03-24",
+    "team": "SJS",
+    "q": 0.5749,
+    "game_id": 2025021129
+   },
+   {
+    "date": "2026-04-08",
+    "team": "SJS",
+    "q": 0.4989,
+    "game_id": 2025021246
+   },
+   {
+    "date": "2026-04-15",
+    "team": "SJS",
+    "q": 0.4027,
+    "game_id": 2025021305
    }
   ]
  },
@@ -1866,7 +1810,7 @@
    0.563
   ],
   "ruined_windows": 54,
-  "league_expected_pulls_in_nopull": 8.83,
+  "league_expected_pulls_in_nopull": 8.78,
   "declines": [
    {
     "date": "2022-10-25",
@@ -1889,7 +1833,7 @@
    {
     "date": "2023-03-04",
     "team": "PIT",
-    "q": 0.3872,
+    "q": 0.386,
     "game_id": 2022020992
    },
    {
@@ -1901,13 +1845,13 @@
    {
     "date": "2023-11-16",
     "team": "PIT",
-    "q": 0.6721,
+    "q": 0.6704,
     "game_id": 2023020245
    },
    {
     "date": "2023-12-06",
     "team": "PIT",
-    "q": 0.7363,
+    "q": 0.734,
     "game_id": 2023020389
    },
    {
@@ -1925,31 +1869,31 @@
    {
     "date": "2024-03-19",
     "team": "PIT",
-    "q": 0.3696,
+    "q": 0.369,
     "game_id": 2023021084
    },
    {
     "date": "2024-10-18",
     "team": "PIT",
-    "q": 0.7748,
+    "q": 0.7768,
     "game_id": 2024020072
    },
    {
     "date": "2025-01-25",
     "team": "PIT",
-    "q": 0.468,
+    "q": 0.466,
     "game_id": 2024020778
    },
    {
     "date": "2025-12-10",
     "team": "NYR",
-    "q": 0.6113,
+    "q": 0.6058,
     "game_id": 2025020476
    },
    {
     "date": "2026-01-28",
     "team": "NYR",
-    "q": 0.513,
+    "q": 0.5042,
     "game_id": 2025020842
    }
   ]
@@ -2017,6 +1961,68 @@
   ]
  },
  {
+  "coach": "Rick Tocchet",
+  "instances": 69,
+  "pulls": 4,
+  "ev_clear": 8,
+  "ev_taken": 2,
+  "clean_rate_5v5": 0.25,
+  "naive_rate": 0.058,
+  "clear_chances": 11,
+  "clear_taken": 4,
+  "clean_rate": 0.364,
+  "ci": [
+   0.112,
+   0.638
+  ],
+  "ruined_windows": 54,
+  "league_expected_pulls_in_nopull": 4.3,
+  "declines": [
+   {
+    "date": "2023-02-11",
+    "team": "VAN",
+    "q": 0.4465,
+    "game_id": 2022020832
+   },
+   {
+    "date": "2023-11-11",
+    "team": "VAN",
+    "q": 0.3474,
+    "game_id": 2023020215
+   },
+   {
+    "date": "2023-12-28",
+    "team": "VAN",
+    "q": 0.3221,
+    "game_id": 2023020543
+   },
+   {
+    "date": "2024-04-02",
+    "team": "VAN",
+    "q": 0.3474,
+    "game_id": 2023021196
+   },
+   {
+    "date": "2025-01-31",
+    "team": "VAN",
+    "q": 0.4261,
+    "game_id": 2024020823
+   },
+   {
+    "date": "2025-10-16",
+    "team": "PHI",
+    "q": 0.507,
+    "game_id": 2025020066
+   },
+   {
+    "date": "2026-01-17",
+    "team": "PHI",
+    "q": 0.497,
+    "game_id": 2025020755
+   }
+  ]
+ },
+ {
   "coach": "Greg Cronin",
   "instances": 51,
   "pulls": 4,
@@ -2032,7 +2038,7 @@
    0.638
   ],
   "ruined_windows": 37,
-  "league_expected_pulls_in_nopull": 4.6,
+  "league_expected_pulls_in_nopull": 4.57,
   "declines": [
    {
     "date": "2023-11-24",
@@ -2055,25 +2061,25 @@
    {
     "date": "2024-10-27",
     "team": "ANA",
-    "q": 0.8394,
+    "q": 0.8421,
     "game_id": 2024020137
    },
    {
     "date": "2025-01-14",
     "team": "ANA",
-    "q": 0.513,
+    "q": 0.5042,
     "game_id": 2024020697
    },
    {
     "date": "2025-01-21",
     "team": "ANA",
-    "q": 0.5027,
+    "q": 0.4989,
     "game_id": 2024020756
    },
    {
     "date": "2025-04-03",
     "team": "ANA",
-    "q": 0.5027,
+    "q": 0.4989,
     "game_id": 2024021203
    }
   ]
@@ -2138,30 +2144,30 @@
    0.689
   ],
   "ruined_windows": 23,
-  "league_expected_pulls_in_nopull": 3.69,
+  "league_expected_pulls_in_nopull": 3.65,
   "declines": [
    {
     "date": "2025-02-08",
     "team": "UTA",
-    "q": 0.7397,
+    "q": 0.7371,
     "game_id": 2024020878
    },
    {
     "date": "2025-11-20",
     "team": "UTA",
-    "q": 0.4919,
+    "q": 0.4839,
     "game_id": 2025020327
    },
    {
     "date": "2025-12-01",
     "team": "UTA",
-    "q": 0.7556,
+    "q": 0.7576,
     "game_id": 2025020410
    },
    {
     "date": "2026-01-03",
     "team": "UTA",
-    "q": 0.4859,
+    "q": 0.4839,
     "game_id": 2025020645
    }
   ]
@@ -2182,7 +2188,7 @@
    0.446
   ],
   "ruined_windows": 55,
-  "league_expected_pulls_in_nopull": 9.91,
+  "league_expected_pulls_in_nopull": 9.85,
   "declines": [
    {
     "date": "2022-11-25",
@@ -2217,7 +2223,7 @@
    {
     "date": "2023-10-14",
     "team": "PHI",
-    "q": 0.6757,
+    "q": 0.6755,
     "game_id": 2023020019
    },
    {
@@ -2241,37 +2247,37 @@
    {
     "date": "2024-10-19",
     "team": "PHI",
-    "q": 0.5027,
+    "q": 0.4989,
     "game_id": 2024020082
    },
    {
     "date": "2024-10-22",
     "team": "PHI",
-    "q": 0.4543,
+    "q": 0.4522,
     "game_id": 2024020092
    },
    {
     "date": "2024-10-27",
     "team": "PHI",
-    "q": 0.4838,
+    "q": 0.4808,
     "game_id": 2024020138
    },
    {
     "date": "2024-11-20",
     "team": "PHI",
-    "q": 0.5027,
+    "q": 0.4989,
     "game_id": 2024020302
    },
    {
     "date": "2025-01-30",
     "team": "PHI",
-    "q": 0.6529,
+    "q": 0.6538,
     "game_id": 2024020816
    },
    {
     "date": "2025-03-23",
     "team": "PHI",
-    "q": 0.5111,
+    "q": 0.503,
     "game_id": 2024021118
    }
   ]
@@ -2330,7 +2336,7 @@
    0.469
   ],
   "ruined_windows": 40,
-  "league_expected_pulls_in_nopull": 6.75,
+  "league_expected_pulls_in_nopull": 6.7,
   "declines": [
    {
     "date": "2022-11-01",
@@ -2353,25 +2359,25 @@
    {
     "date": "2023-02-26",
     "team": "LAK",
-    "q": 0.4338,
+    "q": 0.433,
     "game_id": 2022020950
    },
    {
     "date": "2024-12-27",
     "team": "DET",
-    "q": 0.4901,
+    "q": 0.4882,
     "game_id": 2024020559
    },
    {
     "date": "2025-01-19",
     "team": "DET",
-    "q": 0.4525,
+    "q": 0.4503,
     "game_id": 2024020739
    },
    {
     "date": "2025-03-07",
     "team": "DET",
-    "q": 0.464,
+    "q": 0.4619,
     "game_id": 2024020998
    },
    {
@@ -2383,13 +2389,13 @@
    {
     "date": "2025-04-10",
     "team": "DET",
-    "q": 0.4593,
+    "q": 0.4572,
     "game_id": 2024021251
    },
    {
     "date": "2025-11-07",
     "team": "DET",
-    "q": 0.5044,
+    "q": 0.5025,
     "game_id": 2025020227
    }
   ]
@@ -2454,7 +2460,7 @@
    0.372
   ],
   "ruined_windows": 46,
-  "league_expected_pulls_in_nopull": 7.41,
+  "league_expected_pulls_in_nopull": 7.36,
   "declines": [
    {
     "date": "2023-11-11",
@@ -2477,19 +2483,19 @@
    {
     "date": "2025-01-16",
     "team": "CGY",
-    "q": 0.4806,
+    "q": 0.4794,
     "game_id": 2024020713
    },
    {
     "date": "2025-01-26",
     "team": "CGY",
-    "q": 0.8067,
+    "q": 0.8068,
     "game_id": 2024020791
    },
    {
     "date": "2025-02-06",
     "team": "CGY",
-    "q": 0.4716,
+    "q": 0.4696,
     "game_id": 2024020868
    },
    {
@@ -2501,25 +2507,25 @@
    {
     "date": "2026-01-07",
     "team": "CGY",
-    "q": 0.4736,
+    "q": 0.4694,
     "game_id": 2025020678
    },
    {
     "date": "2026-01-08",
     "team": "CGY",
-    "q": 0.466,
+    "q": 0.4569,
     "game_id": 2025020682
    },
    {
     "date": "2026-01-21",
     "team": "CGY",
-    "q": 0.4989,
+    "q": 0.497,
     "game_id": 2025020791
    },
    {
     "date": "2026-03-10",
     "team": "CGY",
-    "q": 0.4799,
+    "q": 0.4772,
     "game_id": 2025021017
    }
   ]
@@ -2540,7 +2546,7 @@
    0.443
   ],
   "ruined_windows": 43,
-  "league_expected_pulls_in_nopull": 4.91,
+  "league_expected_pulls_in_nopull": 4.9,
   "declines": [
    {
     "date": "2022-11-13",
@@ -2551,7 +2557,7 @@
    {
     "date": "2023-02-26",
     "team": "ARI",
-    "q": 0.5088,
+    "q": 0.5046,
     "game_id": 2022020952
    },
    {
@@ -2613,7 +2619,7 @@
    {
     "date": "2022-12-20",
     "team": "ANA",
-    "q": 0.6263,
+    "q": 0.6244,
     "game_id": 2022020516
    },
    {
@@ -2741,13 +2747,13 @@
    {
     "date": "2024-03-09",
     "team": "CHI",
-    "q": 0.6775,
+    "q": 0.675,
     "game_id": 2023021017
    },
    {
     "date": "2024-10-22",
     "team": "CHI",
-    "q": 0.7716,
+    "q": 0.7741,
     "game_id": 2024020100
    }
   ]
@@ -2836,12 +2842,12 @@
    0.221
   ],
   "ruined_windows": 14,
-  "league_expected_pulls_in_nopull": 3.53,
+  "league_expected_pulls_in_nopull": 3.52,
   "declines": [
    {
     "date": "2022-11-21",
     "team": "EDM",
-    "q": 0.5613,
+    "q": 0.5586,
     "game_id": 2022020293
    },
    {
@@ -2865,7 +2871,7 @@
    {
     "date": "2023-10-26",
     "team": "EDM",
-    "q": 0.5013,
+    "q": 0.4984,
     "game_id": 2023020110
    },
    {
@@ -2898,30 +2904,30 @@
    0.34
   ],
   "ruined_windows": 18,
-  "league_expected_pulls_in_nopull": 3.18,
+  "league_expected_pulls_in_nopull": 3.15,
   "declines": [
    {
     "date": "2024-12-14",
     "team": "CHI",
-    "q": 0.4861,
+    "q": 0.4842,
     "game_id": 2024020474
    },
    {
     "date": "2025-01-13",
     "team": "CHI",
-    "q": 0.4989,
+    "q": 0.497,
     "game_id": 2024020690
    },
    {
     "date": "2025-03-22",
     "team": "CHI",
-    "q": 0.5012,
+    "q": 0.4981,
     "game_id": 2024021107
    },
    {
     "date": "2025-03-30",
     "team": "CHI",
-    "q": 0.7514,
+    "q": 0.7509,
     "game_id": 2024021173
    }
   ]
@@ -2942,12 +2948,12 @@
    0.74
   ],
   "ruined_windows": 0,
-  "league_expected_pulls_in_nopull": 0.48,
+  "league_expected_pulls_in_nopull": 0.47,
   "declines": [
    {
     "date": "2025-04-15",
     "team": "PHI",
-    "q": 0.4771,
+    "q": 0.475,
     "game_id": 2024021295
    }
   ]

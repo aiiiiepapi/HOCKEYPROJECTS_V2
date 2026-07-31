@@ -56,17 +56,24 @@ def game_frame(pbp):
 
 
 def delayed_penalty_windows(events):
-    """[(start_t, end_t)] from each delayed-penalty event to next stopping event."""
+    """[(start_t, end_t)] from each delayed-penalty event to the next FACEOFF.
+    (2026-07-31 fix, credit fresh-eyes audit: play can only resume at a
+    faceoff; whistles/goals inside the window still carry auto-6v5 codes.
+    end_t is exclusive-of-faceoff: the faceoff itself is decision-relevant.
+    Old next-stopping-event rule let delayed-penalty goals seconds after the
+    call register as pull evidence — 3 confirmed phantoms in 4 seasons.)"""
     wins = []
     for k, e in enumerate(events):
         if e["type"] != "delayed-penalty":
             continue
         end = 1200
         for e2 in events[k + 1:]:
-            if e2["type"] in STOPPING:
+            if e2["type"] == "faceoff":
                 end = e2["t"]
                 break
-        wins.append((e["t"], end))
+        # +1: the resumption faceoff shares the clock second with any goal that
+        # ended the delayed penalty (stop clock) — the window must cover it.
+        wins.append((e["t"], end + 1))
     return wins
 
 
@@ -172,7 +179,11 @@ def extract_instances(pbp, target_gap=3):
         if inst["closing_event"] is not None:
             cg = next((x for x in ev if x["eventId"] == inst["closing_event"]), None)
             if cg and len(cg["sit"]) == 4 and cg["sit"][gidx] == "0":
-                if not any(s["empty_until"] >= c for s in segs):
+                # 2026-07-31 (fresh-eyes audit): a closing goal scored during a
+                # delayed-penalty window shows the net auto-empty — that is the
+                # automatic extra attacker, not a pull. 3 confirmed phantoms.
+                in_dp = any(s <= c < e2 for s, e2 in dp_wins)
+                if not in_dp and not any(s["empty_until"] >= c for s in segs):
                     segs.append({"empty_from": c, "empty_until": c,
                                  "evidence_is_closing_goal": True})
         inst["dp_off_secs"] = len(dp_secs)
