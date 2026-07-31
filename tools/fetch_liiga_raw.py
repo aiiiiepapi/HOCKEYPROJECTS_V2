@@ -35,17 +35,23 @@ MAX_GID = 620
 STOP_AFTER = 25
 
 
-def api_get(url, retries=3, delay=1.5):
+def api_get(url, retries=3, delay=1.5, verbose=False):
     for attempt in range(retries):
         try:
-            with urlopen(Request(url, headers=HEADERS), timeout=30) as resp:
+            with urlopen(Request(url, headers=HEADERS), timeout=20) as resp:
+                if verbose:
+                    print(f"  OK {url}", flush=True)
                 return json.loads(resp.read().decode("utf-8", "replace"))
         except HTTPError as e:
             if e.code in (404, 400):
+                if verbose:
+                    print(f"  {e.code} (no such game) {url}", flush=True)
                 return "MISS"
+            print(f"  HTTP {e.code} on {url} (attempt {attempt+1})", flush=True)
             if attempt < retries - 1:
                 time.sleep(delay * (attempt + 1))
-        except (URLError, TimeoutError, ValueError):
+        except (URLError, TimeoutError, ValueError) as e:
+            print(f"  {type(e).__name__}: {e} on {url} (attempt {attempt+1})", flush=True)
             if attempt < retries - 1:
                 time.sleep(delay * (attempt + 1))
     return None
@@ -62,14 +68,25 @@ def main():
     for year in args.seasons:
         out_dir = Path(args.out) / str(year)
         out_dir.mkdir(parents=True, exist_ok=True)
-        misses, saved, checked = 0, 0, 0
+        print(f"[{year}] starting walk (game 1..{MAX_GID}) -> {out_dir}", flush=True)
+        misses, saved, checked, errors = 0, 0, 0, 0
         for gid in range(1, MAX_GID + 1):
             path = out_dir / f"game_{year}_{gid}.json"
             checked += 1
+            if checked % 20 == 0:
+                print(f"[{year}] progress: {checked} checked, {saved} saved, "
+                      f"{errors} errors", flush=True)
             if path.exists() and path.stat().st_size > 500:
                 misses = 0
                 continue
-            data = api_get(f"{BASE}/{year}/{gid}")
+            data = api_get(f"{BASE}/{year}/{gid}", verbose=(checked <= 3))
+            if data is None:
+                errors += 1
+                if errors >= 10 and saved == 0:
+                    print(f"[{year}] ABORT: first {errors} requests all failed — "
+                          f"the API is refusing this client (bot protection?). "
+                          f"Paste this output to the manager.", flush=True)
+                    break
             time.sleep(THROTTLE)
             if data == "MISS" or data is None:
                 misses += 1
