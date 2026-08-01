@@ -128,3 +128,24 @@ NOTE: new coach layer is PROVISIONAL until blind re-validation (next block).
     sure"; Liiga -3.5 is conservative unlike NHL's (their EN dynamics
     differ — rarely pulled nets make marg4 rare and the model under-calls
     it). Calibration gate added with provisional documented bounds.
+
+26. **AHL fix attempts, round 2 (2026-08-01) — oracle viable, anchors refuted.**
+    (a) ORACLE test: refit levels on 90-H2 itself (perfect level knowledge,
+    coach layer leak-free) -> calibration recovers to NHL-like (lead1 -2.9,
+    total1 -2.8, 1/10 bad; marg4 -5.3 with ~0 skill -> AHL -3.5 = no-bet
+    under ANY fix, same as NHL CAUTION). Levels ARE the failure.
+    (b) BUT the level that moved is 6v5-SPECIFIC: 90-H2 EN-against fell
+    22.1 -> 15.6 /60 while EN-for rose 5.9 -> 7.5; full-game scoring was
+    normal (leak-free team-environment anchor: scales ~1.00, biases
+    unchanged -8.0/-6.6/-15.6 -> REFUTED). Pre-game market totals carry the
+    same kind of information -> market-total anchoring REFUTED as the fix.
+    (c) CAVEAT (15b): the H1/H2 decomposition is post-hoc; the primary
+    pre-registered result remains "AHL 25-26 failed blind." The H2 6v5
+    shift may itself be selection-inflated noise.
+    Fix path that survives: (1) auto re-litigation as 26-27 accrues
+    (existing gate); (2) paper-trade harness from opening night logging
+    model prices vs REAL lines vs outcomes — the only data that can
+    validate a market-relative product; (3) coach-delta product design
+    (price only the coach-knowledge delta vs the book's implied baseline)
+    once paper data exists. rate_scale stays in the pricer (harmless,
+    market-anchor-ready if paper data later justifies it).

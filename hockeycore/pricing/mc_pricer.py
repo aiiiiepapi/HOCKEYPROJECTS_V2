@@ -147,7 +147,11 @@ def coach_hazard_array(pi_target, R_star=900):
 
 def price(R0, pulled0=False, strength0="EV", m_coach=1.0, gap0=3,
           n=40000, seed=7, strength_secs=60, coach_shift=0, penalties=True,
-          haz3_override=None):
+          haz3_override=None, rate_scale=1.0):
+    """rate_scale: market/level anchor (AHL fix, 2026-08-01) — multiplies every
+    goal intensity, both directions. Level comes from outside (market total or
+    as-of-date team scoring environments); direction mix + pull dynamics stay
+    from the league fits. 1.0 = fits' own level."""
     rng = np.random.default_rng(seed)
     lead_goals = np.zeros(n, dtype=np.int32)
     trail_goals = np.zeros(n, dtype=np.int32)
@@ -212,6 +216,9 @@ def price(R0, pulled0=False, strength0="EV", m_coach=1.0, gap0=3,
             lam_f[low] = RATES_ARR[(2, "EV_full", "for")][ui]; lam_a[low] = RATES_ARR[(2, "EV_full", "against")][ui]
             pulled = pulled & ~low
         # --- goals (suppressed during post-goal reset)
+        if rate_scale != 1.0:
+            lam_f = lam_f * rate_scale
+            lam_a = lam_a * rate_scale
         lam_f = np.where(dead > 0, 0.0, lam_f)
         lam_a = np.where(dead > 0, 0.0, lam_a)
         r3 = rng.random(n); r4 = rng.random(n)
