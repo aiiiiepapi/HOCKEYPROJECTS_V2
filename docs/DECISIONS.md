@@ -149,3 +149,7 @@ NOTE: new coach layer is PROVISIONAL until blind re-validation (next block).
     (price only the coach-knowledge delta vs the book's implied baseline)
     once paper data exists. rate_scale stays in the pricer (harmless,
     market-anchor-ready if paper data later justifies it).
+    (d) NHL-rates splice (Seb's question, tested 2026-08-01): NHL goal
+    rates + AHL pull structure on 90-H2 -> WORSE everywhere (lead1
+    -10.3, total1 -8.9, marg4 -17.8). Foreign level + equally static.
+    NHL contributes SHAPES to other leagues, never LEVELS.
