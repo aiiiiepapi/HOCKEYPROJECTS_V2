@@ -106,6 +106,40 @@ def main():
             misses = 0
             if saved % 50 == 0:
                 print(f"[{year}] {saved} new games saved (at game {gid})")
+        # --- catch rescheduled games living at NON-sequential ids -----------
+        # (2022-23 Tappara-Lukko, postponed 2022-11-24 -> played 2023-02-06,
+        # is absent from ids 1..450; the API parks such games in other id
+        # blocks, e.g. CHL=46xxx, playoffs=55xxx. The v2 games-list endpoint
+        # works — the "unreliable" note in the header was a v1-era finding.)
+        lst = api_get(f"https://liiga.fi/api/v2/games?tournament=runkosarja"
+                      f"&season={year}", verbose=True)
+        entries = []
+        if isinstance(lst, dict):
+            entries = lst.get("games") or []
+        elif isinstance(lst, list):
+            entries = lst
+        have = {int(p.stem.split("_")[2]) for p in out_dir.glob("game_*.json")}
+        extra = [g for g in entries
+                 if g.get("ended") and g.get("id") and int(g["id"]) not in have]
+        if not entries:
+            print(f"[{year}] WARNING: games-list endpoint returned nothing — "
+                  f"cannot check for rescheduled games at odd ids")
+        for g in extra:
+            gid = int(g["id"])
+            print(f"[{year}] RECOVERING rescheduled/odd-id game {gid}", flush=True)
+            data = api_get(f"{BASE}/{year}/{gid}", verbose=True)
+            time.sleep(THROTTLE)
+            if data is None or data == "MISS":
+                print(f"[{year}] WARN: could not fetch listed game {gid}")
+                continue
+            if not (data.get("game") or {}).get("ended"):
+                continue
+            path = out_dir / f"game_{year}_{gid}.json"
+            tmp = path.with_suffix(".tmp")
+            with open(tmp, "w", encoding="utf-8") as f:
+                json.dump(data, f, indent=1)
+            tmp.replace(path)
+            saved += 1
         total = len(list(out_dir.glob("game_*.json")))
         print(f"[{year}] DONE: {total} games in lake ({saved} new this run)")
         if total < 400:
