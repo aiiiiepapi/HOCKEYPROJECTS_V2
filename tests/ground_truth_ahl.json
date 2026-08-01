@@ -1,0 +1,38 @@
+{
+  "_meta": {
+    "derived": "2026-08-01, hand-traced from raw pxpverbose event lists BEFORE the adapter ran (rule 2). Times are seconds into P3 (elapsed, count-up clock). Traces in docs/ground_truth_traces/ahl_batch1.md.",
+    "season": "90"
+  },
+  "games": {
+    "1027795": {
+      "note": "BEL @ BRI, final 2-6. Gap 3 created by ENG at 1045; BEL re-pull 1056 after eating it; second ENG widens at 1161. First empty segment (1029-1045) predates the window -> carryover, not a pull.",
+      "instances": [
+        {"n": 1, "opened_secs": 1045, "closed_secs": 1161, "closed_reason": "widened",
+         "trailing_name": "BEL", "pulled": true, "pull_evidence_secs": 1056,
+         "pull_classification": "pull", "carryover_empty_at_open": true}
+      ]
+    },
+    "1027799": {
+      "note": "LAV @ MB, final 5-2 LAV. Enters P3 0-3 (instance from 0). MB pull at 886 is 6-on-4 (LAV hooking minor active) -> pp_pull; MB PP goal at 917 narrows. ENG at 1164 reopens gap 3 with MB net already empty (goalie back at the goal) -> carryover, no pull.",
+      "instances": [
+        {"n": 1, "opened_secs": 0, "closed_secs": 450, "closed_reason": "widened",
+         "trailing_name": "MB", "pulled": false, "pull_evidence_secs": null,
+         "pull_classification": null},
+        {"n": 2, "opened_secs": 540, "closed_secs": 917, "closed_reason": "narrowed",
+         "trailing_name": "MB", "pulled": true, "pull_evidence_secs": 886,
+         "pull_classification": "pp_pull"},
+        {"n": 3, "opened_secs": 1164, "closed_secs": 1200, "closed_reason": "end_of_game",
+         "trailing_name": "MB", "pulled": false, "pull_evidence_secs": null,
+         "pull_classification": null, "carryover_empty_at_open": true}
+      ]
+    },
+    "1027819": {
+      "note": "SPR @ HER, final 1-5. Gap 3 created by ENG at 1108 (SPR net empty at that second -> carryover). SPR re-pull at 1120 at the same second HER takes a high-sticking minor -> 6-on-4 -> pp_pull; ENSH goal widens at 1199.",
+      "instances": [
+        {"n": 1, "opened_secs": 1108, "closed_secs": 1199, "closed_reason": "widened",
+         "trailing_name": "SPR", "pulled": true, "pull_evidence_secs": 1120,
+         "pull_classification": "pp_pull", "carryover_empty_at_open": true}
+      ]
+    }
+  }
+}

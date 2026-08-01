@@ -5,6 +5,8 @@ below. Setup once per session, in the workspace:
 
     git clone --branch master https://<TOKEN>@github.com/aiiiiepapi/HOCKEYPROJECTS_V2.git
     git clone --depth 1 --branch nhl-data-lake https://<TOKEN>@github.com/aiiiiepapi/HOCKEYPROJECTS.git nhl_lake
+    git clone --depth 1 --branch ahl-data-lake https://<TOKEN>@github.com/aiiiiepapi/HOCKEYPROJECTS.git ahl_lake
+    git clone --depth 1 --branch liiga-data-lake https://<TOKEN>@github.com/aiiiiepapi/HOCKEYPROJECTS.git liiga_lake
     pip install pytest numpy openpyxl --break-system-packages
     # hockeycore expects the lake at /home/claude/work/nhl_lake
 
@@ -16,6 +18,8 @@ green or the output does not ship. A pre-commit hook enforces this on commit.
 | What | Command | When |
 |---|---|---|
 | Extract instances from lake | `python3 hockeycore/gap/run_lake.py` | new lake data |
+| Extract AHL instances (needs ahl_lake clone) | `python3 hockeycore/gap/run_ahl_lake.py` | new AHL lake data |
+| Extract Liiga instances (needs liiga_lake clone) | `python3 hockeycore/gap/run_liiga_lake.py` | new Liiga lake data |
 | Refit hazards/rates/coaches | `python3 hockeycore/fit/fit_curves.py` | after extraction |
 | Walk-forward backtest | `python3 hockeycore/fit/backtest.py` | after refit |
 | ROI at 10%-EV lines | `python3 hockeycore/fit/roi_at_threshold.py` | after backtest |

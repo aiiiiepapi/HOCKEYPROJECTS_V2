@@ -193,3 +193,60 @@ def test_liiga_v2_api_equivalence():
         key = lambda p: (p["t"], p["side"], p["begin"], p["end"])
         assert sorted(map(key, v1["penalties"])) == sorted(map(key, v2["penalties"])), n
         assert extract_instances(v1, 3) == extract_instances(v2, 3), n
+
+
+def test_ahl_ground_truth():
+    """AHL batch 1: 3 games / 5 instances hand-traced from raw pxpverbose
+    BEFORE the adapter existed (2026-08-01). Covers: carryover-at-open (x3),
+    pp_pull via leader minor (x2, incl. same-second penalty), entering-P3 gap,
+    ENG widen/narrow closes, no-pull instances."""
+    from hockeycore.leagues.ahl import parse_game
+    from hockeycore.gap.segments import extract_instances
+    gt = json.load(open(ROOT / "tests" / "ground_truth_ahl.json"))
+    for gid, gg in gt["games"].items():
+        g = parse_game(ROOT / f"tests/reference_raw/ahl/{gid}_pxp.json")
+        insts = extract_instances(g, 3)
+        assert len(insts) == len(gg["instances"]), (gid, len(insts))
+        for e, a in zip(gg["instances"], insts):
+            assert (e["opened_secs"], e["closed_secs"], e["closed_reason"]) == \
+                   (a["opened_secs"], a["closed_secs"], a["closed_reason"]), (gid, e["n"])
+            assert e["trailing_name"] == a["trailing_name"], (gid, e["n"])
+            assert e["pulled"] == a["pulled"], (gid, e["n"])
+            assert e["pull_evidence_secs"] == a["pull_evidence_secs"], (gid, e["n"])
+            assert e["pull_classification"] == a["pull_classification"], (gid, e["n"])
+            assert e.get("carryover_empty_at_open", False) == \
+                   a.get("carryover_empty_at_open", False), (gid, e["n"])
+
+
+def test_ahl_liiga_derived_instances():
+    """Structural gates (rule 14: per-season bounds, never absolute totals)
+    over the AHL + Liiga derived instance files."""
+    for fname, per_season, seasons in (
+            ("ahl_instances_gap3.json", (400, 800), ["77", "81", "86", "90"]),
+            ("liiga_instances_gap3.json", (120, 330), ["2023", "2024", "2025", "2026"])):
+        rows = json.load(open(DER / fname))
+        assert all(r["coach"] for r in rows), fname
+        for s in seasons:
+            srows = [r for r in rows if r["season"] == s]
+            n = len(srows)
+            assert per_season[0] <= n <= per_season[1], (fname, s, n)
+            if s == "2023":
+                # Liiga 2022-23: API has no goalie-event channel -> pull truth
+                # unknowable; every instance must be explicitly marked so.
+                assert all(r["pulled"] is None and r.get("no_goalie_channel")
+                           for r in srows), (fname, s)
+                continue
+            pulled = sum(1 for r in srows if r["pulled"])
+            assert 0.04 <= pulled / n <= 0.40, (fname, s, pulled / n)
+        for r in rows:
+            assert 0 <= r["opened_secs"] <= r["closed_secs"] <= 1200, (fname, r["game_id"])
+            if r.get("no_goalie_channel"):
+                continue
+            if r["pulled"]:
+                assert r["opened_secs"] <= r["pull_evidence_secs"] < r["closed_secs"], \
+                    (fname, r["game_id"], r["n"])
+                assert r["pull_classification"] in ("pull", "pp_pull")
+            else:
+                assert r["pull_classification"] is None
+        pp = sum(1 for r in rows if r["pull_classification"] == "pp_pull")
+        assert pp < sum(1 for r in rows if r["pulled"]), fname
