@@ -118,8 +118,36 @@ def _pen_tab():
 PEN = _pen_tab()
 
 
+def coach_hazard_array(pi_target, R_star=900):
+    """Density-preserving coach hazard (2026-08-01): scales the league pull
+    DENSITY so total pull probability over the canonical R*=900 window hits
+    pi_target while the timing shape is preserved exactly (survival-k scaling
+    shifts pulls earlier — refuted: aggressive pullers differ in WHETHER, not
+    WHEN; timing ruling 14). Returns a 1200 array indexed like _HAZ[3]
+    (i.e., at the u-1-_LAG read position). Coherence: league pi_bar over the
+    canonical window = 0.505 vs ledger clean take-rate 0.504."""
+    h = _HAZ[3]
+    S = 1.0
+    f = np.zeros(1200)
+    for u in range(R_star, 0, -1):
+        idx = min(max(u - 1 - _LAG, 0), 1199)
+        f[u - 1] = S * h[idx]
+        S *= 1 - h[idx]
+    pi_bar = f.sum()
+    scale = pi_target / max(pi_bar, 1e-9)
+    hc = np.zeros(1200)
+    Sc = 1.0
+    for u in range(R_star, 0, -1):
+        fc = f[u - 1] * scale
+        hc_u = min(fc / Sc, 0.5) if Sc > 1e-9 else 0.5
+        hc[min(max(u - 1 - _LAG, 0), 1199)] = hc_u
+        Sc *= 1 - hc_u
+    return hc
+
+
 def price(R0, pulled0=False, strength0="EV", m_coach=1.0, gap0=3,
-          n=40000, seed=7, strength_secs=60, coach_shift=0, penalties=True):
+          n=40000, seed=7, strength_secs=60, coach_shift=0, penalties=True,
+          haz3_override=None):
     rng = np.random.default_rng(seed)
     lead_goals = np.zeros(n, dtype=np.int32)
     trail_goals = np.zeros(n, dtype=np.int32)
@@ -138,7 +166,8 @@ def price(R0, pulled0=False, strength0="EV", m_coach=1.0, gap0=3,
         can_pull = (~pulled) & (margin >= 1) & (strength >= 0)
         u3 = min(max(u - 1 - coach_shift - _LAG, 0), 1199)  # coach shift + evidence-lag correction (3-gap)
         uL = min(max(u - 1 - _LAG, 0), 1199)
-        hz = np.where(gb == 2, _HAZ[2][uL], np.where(gb == 3, _HAZ[3][u3], _HAZ[4][uL]))
+        h3 = haz3_override[u3] if haz3_override is not None else _HAZ[3][u3]
+        hz = np.where(gb == 2, _HAZ[2][uL], np.where(gb == 3, h3, _HAZ[4][uL]))
         mpp = np.where(gb == 2, _MPP[2], np.where(gb == 3, _MPP[3], _MPP[4]))
         # coach effect is 3-gap-specific: cross-gap transfer measured weak
         # (r~0.25; gap-2 late is ~97% league-wide regardless of coach).
