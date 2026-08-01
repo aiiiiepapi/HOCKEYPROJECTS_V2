@@ -24,6 +24,7 @@ green or the output does not ship. A pre-commit hook enforces this on commit.
 | Walk-forward backtest | `python3 hockeycore/fit/backtest.py` | after refit |
 | ROI at 10%-EV lines | `python3 hockeycore/fit/roi_at_threshold.py` | after backtest |
 | Clean-window coach ledger | `python3 hockeycore/fit/clean_window.py` | after extraction |
+| AHL+Liiga ledgers & coach profiles | `python3 hockeycore/fit/clean_window_interval.py` | after AHL/Liiga extraction |
 | PP-pull coach split | `python3 hockeycore/fit/pp_pull_analysis.py` | after extraction |
 | Dense pricing grid (~13 min) | `python3 hockeycore/fit/make_dense_grid.py` | after refit |
 | Per-second lines CSV | `python3 hockeycore/fit/build_persecond_lines.py` | after grid |

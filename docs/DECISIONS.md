@@ -66,3 +66,23 @@ NOTE: new coach layer is PROVISIONAL until blind re-validation (next block).
     Mining results: strength effect one-sided (favs 66%, heavy dogs 39%,
     slight fav == heavy fav); venue NULL at chance level (+1.6pts) -> display
     only. Card = expected % + why + last-3 chances with outcomes.
+
+## 2026-08-01 (AHL/Liiga expansion block)
+17. **Delayed-penalty artifact rule (interval leagues)**: gap-3 empty-net
+    segments ending at a whistled penalty ON THE LEADER with duration <=25s
+    are dp extra-attacker moments (AHL: median 10s, 85/98 <=25s), NOT pull
+    decisions. Excluded from pull evidence in the shared engine. AHL pulls
+    461 -> 404. Liiga channel barely logs these (n=2) — rule applied
+    symmetrically anyway.
+18. **Liiga 2022-23 pull truth = UNKNOWABLE** (API has no goalie-event
+    channel that season, both fields empty league-wide). Instances marked
+    pulled=None + no_goalie_channel; season still feeds rate fits.
+19. **18s post-goal dead time transfers** to AHL and Liiga (re-measured per
+    league, ~1.0%% obs vs ~2.8%% uniform at 18s — same shape as NHL, applied
+    per league from its own measurement, not assumed).
+20. **AHL hazard pooling**: all 4 seasons (comparable-window rates 26-35%%,
+    no era trend — unlike NHL's 1.48x drift).
+21. **League ledgers are self-contained**: prior, hazards, dead time fitted
+    per league from its own data; NHL contributes shapes only.
+    Composition-controlled clear-chance take rates: NHL 54.5%%, AHL 50.9%%,
+    Liiga 41.5%%.

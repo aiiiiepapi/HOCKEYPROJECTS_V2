@@ -93,13 +93,45 @@ def extract_instances(g, target_gap=3):
                 segs.append(seg)
             elif bp < o and ep >= o:
                 inst["carryover_empty_at_open"] = True  # noted, not a pull
+        # ---- segment end context + delayed-penalty artifact rule ----------
+        # Measured 2026-08-01 (AHL 4 seasons): segments ending at a whistled
+        # penalty ON THE LEADER with duration <=25s are delayed-penalty
+        # extra-attacker moments (median 10s; 85/98 <=25s), not pull
+        # decisions. They are net-empty time but NOT pull evidence. Long
+        # penalty_on_leader segments (>25s) = real pulls that drew a call.
+        opp_side = "home" if tn == "away" else "away"
+        for seg in segs:
+            e_t = seg["empty_until"] + P3_START
+            ctx = "returned_no_event"
+            for gl in g["goals"]:
+                if abs(gl["t"] - e_t) <= 1:
+                    ctx = ("scored_6v5" if gl["side"] == tn
+                           else ("ate_ENG" if gl["en"] else "goal_against"))
+                    break
+            else:
+                if seg["empty_until"] >= 1199:
+                    ctx = "horn"
+                else:
+                    for pnl in g["penalties"]:
+                        if abs(pnl["t"] - e_t) <= 2:
+                            ctx = ("penalty_on_leader" if pnl["side"] == opp_side
+                                   else "penalty_on_trailer")
+                            break
+            seg["end_context"] = ctx
+            if (ctx == "penalty_on_leader"
+                    and seg["empty_until"] - seg["empty_from"] <= 25
+                    and not seg.get("synthetic")):
+                seg["dp_artifact"] = True
+        ev_segs = [x for x in segs if not x.get("dp_artifact")]
         inst["pull_segments"] = segs
-        inst["pulled"] = bool(segs)
-        inst["pull_evidence_secs"] = segs[0]["empty_from"] if segs else None
-        if segs and all(x.get("synthetic") for x in segs):
+        inst["pulled"] = bool(ev_segs)
+        inst["pull_evidence_secs"] = ev_segs[0]["empty_from"] if ev_segs else None
+        if ev_segs and all(x.get("synthetic") for x in ev_segs):
             inst["synthetic_pull_evidence"] = True      # timing not usable
-        if segs:
-            t0 = segs[0]["empty_from"] + P3_START
+        if segs and not ev_segs:
+            inst["dp_only_empty"] = True                # net was empty, but only via dp
+        if ev_segs:
+            t0 = ev_segs[0]["empty_from"] + P3_START
             leader = "home" if tn == "away" else "away"
             lead_box = sum(1 for p in g["penalties"] if p["side"] == leader and p["begin"] <= t0 < p["end"])
             trail_box = sum(1 for p in g["penalties"] if p["side"] == tn and p["begin"] <= t0 < p["end"])

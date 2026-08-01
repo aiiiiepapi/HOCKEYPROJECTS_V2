@@ -250,3 +250,28 @@ def test_ahl_liiga_derived_instances():
                 assert r["pull_classification"] is None
         pp = sum(1 for r in rows if r["pull_classification"] == "pp_pull")
         assert pp < sum(1 for r in rows if r["pulled"]), fname
+
+
+def test_ahl_liiga_clean_window():
+    """Structural gates over the interval-league ledgers + profiles (rule 14)."""
+    for lg in ("ahl", "liiga"):
+        cw = json.load(open(DER / f"{lg}_clean_window.json"))
+        prof = json.load(open(DER / f"{lg}_coach_profiles.json"))
+        rows, meta = cw["rows"], cw["meta"]
+        naive = sum(r["taken"] for r in rows) / len(rows)
+        clear = [r for r in rows if r["clear"]]
+        assert sum(r["taken"] for r in clear) / len(clear) > naive * 2, lg  # dilution real
+        assert all(r["taken"] <= r["clear"] for r in rows), lg              # taken => clear
+        assert all(0 <= r["frac_ev"] <= 1.001 for r in rows), lg
+        assert 1.0 <= meta["prior_strength"] <= 40.0, lg
+        assert 0.30 <= meta["prior_mu"] <= 0.70, lg
+        for p in prof["profiles"]:
+            assert 0.02 <= p["expected_pull_pct"] <= 0.98, (lg, p["coach"])
+            assert p["clear_taken"] <= p["clear_chances"] <= p["instances"], (lg, p["coach"])
+            assert p["band"][0] <= p["expected_pull_pct"] <= p["band"][1], (lg, p["coach"])
+            if p["clear_chances"] < 5:
+                assert any("RISKY" in f for f in p["flags"]), (lg, p["coach"])
+        # posterior sanity: a perfect recent record must clear the prior mean
+        best = max(prof["profiles"], key=lambda p: p["expected_pull_pct"])
+        if best["clear_chances"] >= 5 and best["clear_taken"] == best["clear_chances"]:
+            assert best["expected_pull_pct"] > meta["prior_mu"] + 0.10, lg

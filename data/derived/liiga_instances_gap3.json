@@ -4782,7 +4782,8 @@
 "pull_segments": [
 {
 "empty_from": 1011,
-"empty_until": 1102
+"empty_until": 1102,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -4815,7 +4816,8 @@
 "pull_segments": [
 {
 "empty_from": 994,
-"empty_until": 1162
+"empty_until": 1162,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -4925,7 +4927,8 @@
 "pull_segments": [
 {
 "empty_from": 1079,
-"empty_until": 1098
+"empty_until": 1098,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -5427,7 +5430,8 @@
 "pull_segments": [
 {
 "empty_from": 1067,
-"empty_until": 1115
+"empty_until": 1115,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -5503,7 +5507,8 @@
 "pull_segments": [
 {
 "empty_from": 866,
-"empty_until": 931
+"empty_until": 931,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -5663,7 +5668,8 @@
 "pull_segments": [
 {
 "empty_from": 958,
-"empty_until": 1045
+"empty_until": 1045,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -5745,7 +5751,8 @@
 "pull_segments": [
 {
 "empty_from": 868,
-"empty_until": 952
+"empty_until": 952,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -5899,7 +5906,8 @@
 "pull_segments": [
 {
 "empty_from": 1062,
-"empty_until": 1083
+"empty_until": 1083,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -6025,11 +6033,13 @@
 "pull_segments": [
 {
 "empty_from": 815,
-"empty_until": 927
+"empty_until": 927,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 1091,
-"empty_until": 1196
+"empty_until": 1196,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -6254,7 +6264,8 @@
 "pull_segments": [
 {
 "empty_from": 1080,
-"empty_until": 1153
+"empty_until": 1153,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -6534,7 +6545,8 @@
 "pull_segments": [
 {
 "empty_from": 998,
-"empty_until": 1061
+"empty_until": 1061,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -6610,7 +6622,8 @@
 "pull_segments": [
 {
 "empty_from": 1039,
-"empty_until": 1156
+"empty_until": 1156,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -6687,7 +6700,8 @@
 "pull_segments": [
 {
 "empty_from": 1051,
-"empty_until": 1158
+"empty_until": 1158,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -6820,7 +6834,8 @@
 "pull_segments": [
 {
 "empty_from": 865,
-"empty_until": 1053
+"empty_until": 1053,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -7181,7 +7196,8 @@
 "pull_segments": [
 {
 "empty_from": 1011,
-"empty_until": 1056
+"empty_until": 1056,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -7270,11 +7286,13 @@
 "pull_segments": [
 {
 "empty_from": 1024,
-"empty_until": 1065
+"empty_until": 1065,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 1075,
-"empty_until": 1151
+"empty_until": 1151,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -7300,11 +7318,13 @@
 "pull_segments": [
 {
 "empty_from": 792,
-"empty_until": 961
+"empty_until": 961,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 995,
-"empty_until": 1089
+"empty_until": 1089,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -7436,7 +7456,8 @@
 "pull_segments": [
 {
 "empty_from": 865,
-"empty_until": 946
+"empty_until": 946,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -7864,7 +7885,8 @@
 "pull_segments": [
 {
 "empty_from": 962,
-"empty_until": 1176
+"empty_until": 1176,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -7940,7 +7962,8 @@
 "pull_segments": [
 {
 "empty_from": 877,
-"empty_until": 969
+"empty_until": 969,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -8016,11 +8039,13 @@
 "pull_segments": [
 {
 "empty_from": 810,
-"empty_until": 840
+"empty_until": 840,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 845,
-"empty_until": 917
+"empty_until": 917,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -8510,7 +8535,8 @@
 "pull_segments": [
 {
 "empty_from": 1038,
-"empty_until": 1108
+"empty_until": 1108,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -8537,7 +8563,8 @@
 "pull_segments": [
 {
 "empty_from": 1084,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -8733,11 +8760,13 @@
 "pull_segments": [
 {
 "empty_from": 838,
-"empty_until": 902
+"empty_until": 902,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 995,
-"empty_until": 1102
+"empty_until": 1102,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -9288,7 +9317,8 @@
 "pull_segments": [
 {
 "empty_from": 1010,
-"empty_until": 1123
+"empty_until": 1123,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -9590,7 +9620,8 @@
 "pull_segments": [
 {
 "empty_from": 815,
-"empty_until": 962
+"empty_until": 962,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -9992,7 +10023,8 @@
 "pull_segments": [
 {
 "empty_from": 1129,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -10075,7 +10107,8 @@
 "pull_segments": [
 {
 "empty_from": 776,
-"empty_until": 794
+"empty_until": 794,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -10158,7 +10191,8 @@
 "pull_segments": [
 {
 "empty_from": 1003,
-"empty_until": 1097
+"empty_until": 1097,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -10291,7 +10325,8 @@
 "pull_segments": [
 {
 "empty_from": 786,
-"empty_until": 920
+"empty_until": 920,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -10566,7 +10601,8 @@
 "pull_segments": [
 {
 "empty_from": 908,
-"empty_until": 947
+"empty_until": 947,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -10807,7 +10843,8 @@
 "pull_segments": [
 {
 "empty_from": 679,
-"empty_until": 761
+"empty_until": 761,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -10941,11 +10978,13 @@
 "pull_segments": [
 {
 "empty_from": 988,
-"empty_until": 1077
+"empty_until": 1077,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 1092,
-"empty_until": 1119
+"empty_until": 1119,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -10971,7 +11010,8 @@
 "pull_segments": [
 {
 "empty_from": 980,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -11060,7 +11100,8 @@
 "pull_segments": [
 {
 "empty_from": 1021,
-"empty_until": 1054
+"empty_until": 1054,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -11263,7 +11304,8 @@
 "pull_segments": [
 {
 "empty_from": 832,
-"empty_until": 1006
+"empty_until": 1006,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -11404,7 +11446,8 @@
 "pull_segments": [
 {
 "empty_from": 1073,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -11481,7 +11524,8 @@
 "pull_segments": [
 {
 "empty_from": 1069,
-"empty_until": 1125
+"empty_until": 1125,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -12489,7 +12533,8 @@
 "pull_segments": [
 {
 "empty_from": 919,
-"empty_until": 1111
+"empty_until": 1111,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -12594,7 +12639,8 @@
 "pull_segments": [
 {
 "empty_from": 600,
-"empty_until": 604
+"empty_until": 604,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -12692,7 +12738,8 @@
 "pull_segments": [
 {
 "empty_from": 1077,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -12824,7 +12871,8 @@
 "pull_segments": [
 {
 "empty_from": 1088,
-"empty_until": 1130
+"empty_until": 1130,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -13035,7 +13083,8 @@
 "pull_segments": [
 {
 "empty_from": 987,
-"empty_until": 1052
+"empty_until": 1052,
+"end_context": "penalty_on_trailer"
 }
 ],
 "pulled": true,
@@ -13090,7 +13139,8 @@
 "pull_segments": [
 {
 "empty_from": 1129,
-"empty_until": 1143
+"empty_until": 1143,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -13371,7 +13421,8 @@
 "pull_segments": [
 {
 "empty_from": 1074,
-"empty_until": 1134
+"empty_until": 1134,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -13815,11 +13866,13 @@
 "pull_segments": [
 {
 "empty_from": 948,
-"empty_until": 1067
+"empty_until": 1067,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 1082,
-"empty_until": 1110
+"empty_until": 1110,
+"end_context": "penalty_on_trailer"
 }
 ],
 "pulled": true,
@@ -14135,7 +14188,8 @@
 "pull_segments": [
 {
 "empty_from": 983,
-"empty_until": 1060
+"empty_until": 1060,
+"end_context": "penalty_on_trailer"
 }
 ],
 "pulled": true,
@@ -14211,7 +14265,8 @@
 "pull_segments": [
 {
 "empty_from": 750,
-"empty_until": 878
+"empty_until": 878,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -14338,11 +14393,13 @@
 "pull_segments": [
 {
 "empty_from": 1050,
-"empty_until": 1099
+"empty_until": 1099,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 1107,
-"empty_until": 1175
+"empty_until": 1175,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -14630,7 +14687,8 @@
 "pull_segments": [
 {
 "empty_from": 1061,
-"empty_until": 1082
+"empty_until": 1082,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -14685,7 +14743,8 @@
 "pull_segments": [
 {
 "empty_from": 994,
-"empty_until": 1093
+"empty_until": 1093,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -14817,7 +14876,8 @@
 "pull_segments": [
 {
 "empty_from": 967,
-"empty_until": 980
+"empty_until": 980,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -15149,7 +15209,8 @@
 "pull_segments": [
 {
 "empty_from": 955,
-"empty_until": 1043
+"empty_until": 1043,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -15204,7 +15265,8 @@
 "pull_segments": [
 {
 "empty_from": 1116,
-"empty_until": 1197
+"empty_until": 1197,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -15260,7 +15322,8 @@
 "pull_segments": [
 {
 "empty_from": 1149,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -15371,7 +15434,8 @@
 "pull_segments": [
 {
 "empty_from": 971,
-"empty_until": 1051
+"empty_until": 1051,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -15476,7 +15540,8 @@
 "pull_segments": [
 {
 "empty_from": 1083,
-"empty_until": 1170
+"empty_until": 1170,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -15537,7 +15602,8 @@
 "pull_segments": [
 {
 "empty_from": 888,
-"empty_until": 897
+"empty_until": 897,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -15714,7 +15780,8 @@
 "pull_segments": [
 {
 "empty_from": 1100,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -15776,7 +15843,8 @@
 "pull_segments": [
 {
 "empty_from": 1002,
-"empty_until": 1009
+"empty_until": 1009,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -15809,7 +15877,8 @@
 "pull_segments": [
 {
 "empty_from": 1091,
-"empty_until": 1146
+"empty_until": 1146,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -15942,7 +16011,8 @@
 "pull_segments": [
 {
 "empty_from": 913,
-"empty_until": 948
+"empty_until": 948,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -16019,7 +16089,8 @@
 "pull_segments": [
 {
 "empty_from": 996,
-"empty_until": 1145
+"empty_until": 1145,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -16075,7 +16146,8 @@
 "pull_segments": [
 {
 "empty_from": 1087,
-"empty_until": 1194
+"empty_until": 1194,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -16158,7 +16230,8 @@
 "pull_segments": [
 {
 "empty_from": 889,
-"empty_until": 917
+"empty_until": 917,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -16291,7 +16364,8 @@
 "pull_segments": [
 {
 "empty_from": 1011,
-"empty_until": 1056
+"empty_until": 1056,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -16401,7 +16475,8 @@
 "pull_segments": [
 {
 "empty_from": 1037,
-"empty_until": 1043
+"empty_until": 1043,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -16788,7 +16863,8 @@
 "pull_segments": [
 {
 "empty_from": 1033,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -16842,7 +16918,8 @@
 "pull_segments": [
 {
 "empty_from": 1117,
-"empty_until": 1130
+"empty_until": 1130,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -17101,7 +17178,8 @@
 "pull_segments": [
 {
 "empty_from": 1045,
-"empty_until": 1071
+"empty_until": 1071,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -17383,7 +17461,8 @@
 "pull_segments": [
 {
 "empty_from": 920,
-"empty_until": 927
+"empty_until": 927,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -17444,7 +17523,8 @@
 "pull_segments": [
 {
 "empty_from": 864,
-"empty_until": 869
+"empty_until": 869,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -17549,7 +17629,8 @@
 "pull_segments": [
 {
 "empty_from": 754,
-"empty_until": 870
+"empty_until": 870,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -17610,7 +17691,8 @@
 "pull_segments": [
 {
 "empty_from": 1046,
-"empty_until": 1056
+"empty_until": 1056,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -17720,7 +17802,8 @@
 "pull_segments": [
 {
 "empty_from": 1065,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -17753,7 +17836,8 @@
 "pull_segments": [
 {
 "empty_from": 986,
-"empty_until": 994
+"empty_until": 994,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -18057,7 +18141,8 @@
 "pull_segments": [
 {
 "empty_from": 982,
-"empty_until": 1112
+"empty_until": 1112,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -18212,7 +18297,8 @@
 "pull_segments": [
 {
 "empty_from": 1022,
-"empty_until": 1074
+"empty_until": 1074,
+"end_context": "penalty_on_trailer"
 }
 ],
 "pulled": true,
@@ -18479,15 +18565,18 @@
 "pull_segments": [
 {
 "empty_from": 1046,
-"empty_until": 1075
+"empty_until": 1075,
+"end_context": "penalty_on_leader"
 },
 {
 "empty_from": 1084,
-"empty_until": 1160
+"empty_until": 1160,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 1180,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -18753,7 +18842,8 @@
 "pull_segments": [
 {
 "empty_from": 1010,
-"empty_until": 1145
+"empty_until": 1145,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -18829,11 +18919,13 @@
 "pull_segments": [
 {
 "empty_from": 992,
-"empty_until": 1006
+"empty_until": 1006,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 1017,
-"empty_until": 1081
+"empty_until": 1081,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -18971,7 +19063,8 @@
 "pull_segments": [
 {
 "empty_from": 1008,
-"empty_until": 1014
+"empty_until": 1014,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -19095,7 +19188,8 @@
 "pull_segments": [
 {
 "empty_from": 1082,
-"empty_until": 1155
+"empty_until": 1155,
+"end_context": "penalty_on_leader"
 }
 ],
 "pulled": true,
@@ -19312,7 +19406,8 @@
 "pull_segments": [
 {
 "empty_from": 961,
-"empty_until": 977
+"empty_until": 977,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -19374,7 +19469,8 @@
 "pull_segments": [
 {
 "empty_from": 1044,
-"empty_until": 1139
+"empty_until": 1139,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -19752,7 +19848,8 @@
 "pull_segments": [
 {
 "empty_from": 942,
-"empty_until": 992
+"empty_until": 992,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -19898,7 +19995,8 @@
 "pull_segments": [
 {
 "empty_from": 1121,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -19932,7 +20030,8 @@
 "pull_segments": [
 {
 "empty_from": 946,
-"empty_until": 1022
+"empty_until": 1022,
+"end_context": "penalty_on_trailer"
 }
 ],
 "pulled": true,
@@ -20015,7 +20114,8 @@
 "pull_segments": [
 {
 "empty_from": 931,
-"empty_until": 988
+"empty_until": 988,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -20048,7 +20148,8 @@
 "pull_segments": [
 {
 "empty_from": 793,
-"empty_until": 817
+"empty_until": 817,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -20081,7 +20182,8 @@
 "pull_segments": [
 {
 "empty_from": 1026,
-"empty_until": 1044
+"empty_until": 1044,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -20499,7 +20601,8 @@
 "pull_segments": [
 {
 "empty_from": 462,
-"empty_until": 508
+"empty_until": 508,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -20637,7 +20740,8 @@
 "pull_segments": [
 {
 "empty_from": 978,
-"empty_until": 990
+"empty_until": 990,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -20670,7 +20774,8 @@
 "pull_segments": [
 {
 "empty_from": 867,
-"empty_until": 925
+"empty_until": 925,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -20718,7 +20823,8 @@
 "pull_segments": [
 {
 "empty_from": 1054,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -21299,7 +21405,8 @@
 "pull_segments": [
 {
 "empty_from": 813,
-"empty_until": 1041
+"empty_until": 1041,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -21360,7 +21467,8 @@
 "pull_segments": [
 {
 "empty_from": 875,
-"empty_until": 893
+"empty_until": 893,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -21386,7 +21494,8 @@
 "pull_segments": [
 {
 "empty_from": 1135,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,

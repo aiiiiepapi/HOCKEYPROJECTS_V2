@@ -47,16 +47,19 @@
 "pull_segments": [
 {
 "empty_from": 974,
-"empty_until": 998
+"empty_until": 998,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 },
 {
 "empty_from": 1001,
-"empty_until": 1046
+"empty_until": 1046,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
-"pull_evidence_secs": 974,
-"pull_classification": "pull",
+"pull_evidence_secs": 1001,
+"pull_classification": "pp_pull",
 "season": "77",
 "game_id": "1023887",
 "date": "2022-10-14",
@@ -342,7 +345,8 @@
 "pull_segments": [
 {
 "empty_from": 1040,
-"empty_until": 1051
+"empty_until": 1051,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -454,7 +458,8 @@
 "pull_segments": [
 {
 "empty_from": 1060,
-"empty_until": 1100
+"empty_until": 1100,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -552,7 +557,8 @@
 "pull_segments": [
 {
 "empty_from": 1141,
-"empty_until": 1175
+"empty_until": 1175,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -585,7 +591,8 @@
 "pull_segments": [
 {
 "empty_from": 774,
-"empty_until": 820
+"empty_until": 820,
+"end_context": "penalty_on_trailer"
 }
 ],
 "pulled": true,
@@ -696,7 +703,8 @@
 "pull_segments": [
 {
 "empty_from": 1074,
-"empty_until": 1133
+"empty_until": 1133,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -751,7 +759,8 @@
 "pull_segments": [
 {
 "empty_from": 846,
-"empty_until": 887
+"empty_until": 887,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -1124,7 +1133,8 @@
 "pull_segments": [
 {
 "empty_from": 961,
-"empty_until": 983
+"empty_until": 983,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -1157,7 +1167,8 @@
 "pull_segments": [
 {
 "empty_from": 847,
-"empty_until": 898
+"empty_until": 898,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -1190,7 +1201,8 @@
 "pull_segments": [
 {
 "empty_from": 924,
-"empty_until": 984
+"empty_until": 984,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -1223,7 +1235,8 @@
 "pull_segments": [
 {
 "empty_from": 901,
-"empty_until": 931
+"empty_until": 931,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -1439,11 +1452,13 @@
 "pull_segments": [
 {
 "empty_from": 770,
-"empty_until": 874
+"empty_until": 874,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 882,
-"empty_until": 981
+"empty_until": 981,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -1511,16 +1526,19 @@
 "pull_segments": [
 {
 "empty_from": 915,
-"empty_until": 919
+"empty_until": 919,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 },
 {
 "empty_from": 930,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
-"pull_evidence_secs": 915,
-"pull_classification": "pull",
+"pull_evidence_secs": 930,
+"pull_classification": "pp_pull",
 "season": "77",
 "game_id": "1023986",
 "date": "2022-10-30",
@@ -1753,12 +1771,15 @@
 "pull_segments": [
 {
 "empty_from": 210,
-"empty_until": 225
+"empty_until": 225,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 210,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "77",
 "game_id": "1024000",
 "date": "2022-11-04",
@@ -1857,7 +1878,8 @@
 "pull_segments": [
 {
 "empty_from": 1059,
-"empty_until": 1079
+"empty_until": 1079,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -2040,12 +2062,15 @@
 "pull_segments": [
 {
 "empty_from": 458,
-"empty_until": 462
+"empty_until": 462,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 458,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "77",
 "game_id": "1024018",
 "date": "2022-11-05",
@@ -2230,7 +2255,8 @@
 "pull_segments": [
 {
 "empty_from": 969,
-"empty_until": 1048
+"empty_until": 1048,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -2677,11 +2703,13 @@
 "pull_segments": [
 {
 "empty_from": 514,
-"empty_until": 581
+"empty_until": 581,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 687,
-"empty_until": 700
+"empty_until": 700,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -2848,7 +2876,8 @@
 "pull_segments": [
 {
 "empty_from": 1028,
-"empty_until": 1132
+"empty_until": 1132,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -2903,7 +2932,8 @@
 "pull_segments": [
 {
 "empty_from": 730,
-"empty_until": 756
+"empty_until": 756,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -3008,7 +3038,8 @@
 "pull_segments": [
 {
 "empty_from": 852,
-"empty_until": 1092
+"empty_until": 1092,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -3247,15 +3278,18 @@
 "pull_segments": [
 {
 "empty_from": 571,
-"empty_until": 582
+"empty_until": 582,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 },
 {
 "empty_from": 970,
-"empty_until": 1161
+"empty_until": 1161,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
-"pull_evidence_secs": 571,
+"pull_evidence_secs": 970,
 "pull_classification": "pull",
 "season": "77",
 "game_id": "1024134",
@@ -3450,7 +3484,8 @@
 "pull_segments": [
 {
 "empty_from": 850,
-"empty_until": 957
+"empty_until": 957,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -3533,7 +3568,8 @@
 "pull_segments": [
 {
 "empty_from": 1036,
-"empty_until": 1045
+"empty_until": 1045,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -3722,11 +3758,13 @@
 "pull_segments": [
 {
 "empty_from": 879,
-"empty_until": 970
+"empty_until": 970,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 983,
-"empty_until": 1095
+"empty_until": 1095,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -3836,7 +3874,8 @@
 "pull_segments": [
 {
 "empty_from": 1077,
-"empty_until": 1109
+"empty_until": 1109,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -4026,11 +4065,13 @@
 "pull_segments": [
 {
 "empty_from": 928,
-"empty_until": 940
+"empty_until": 940,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 950,
-"empty_until": 1027
+"empty_until": 1027,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -4175,7 +4216,8 @@
 "pull_segments": [
 {
 "empty_from": 879,
-"empty_until": 1023
+"empty_until": 1023,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -4236,7 +4278,8 @@
 "pull_segments": [
 {
 "empty_from": 860,
-"empty_until": 1168
+"empty_until": 1168,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -4341,7 +4384,8 @@
 "pull_segments": [
 {
 "empty_from": 971,
-"empty_until": 1024
+"empty_until": 1024,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -4496,7 +4540,8 @@
 "pull_segments": [
 {
 "empty_from": 853,
-"empty_until": 988
+"empty_until": 988,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -4643,7 +4688,8 @@
 "pull_segments": [
 {
 "empty_from": 1010,
-"empty_until": 1186
+"empty_until": 1186,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -4861,7 +4907,8 @@
 "pull_segments": [
 {
 "empty_from": 854,
-"empty_until": 1141
+"empty_until": 1141,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -4944,7 +4991,8 @@
 "pull_segments": [
 {
 "empty_from": 987,
-"empty_until": 1007
+"empty_until": 1007,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -5070,7 +5118,8 @@
 "pull_segments": [
 {
 "empty_from": 1129,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -5131,11 +5180,13 @@
 "pull_segments": [
 {
 "empty_from": 857,
-"empty_until": 874
+"empty_until": 874,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 903,
-"empty_until": 941
+"empty_until": 941,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -5324,7 +5375,8 @@
 "pull_segments": [
 {
 "empty_from": 981,
-"empty_until": 1090
+"empty_until": 1090,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -5379,7 +5431,8 @@
 "pull_segments": [
 {
 "empty_from": 1009,
-"empty_until": 1137
+"empty_until": 1137,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -5484,7 +5537,8 @@
 "pull_segments": [
 {
 "empty_from": 1003,
-"empty_until": 1025
+"empty_until": 1025,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -5595,7 +5649,8 @@
 "pull_segments": [
 {
 "empty_from": 922,
-"empty_until": 987
+"empty_until": 987,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -5705,7 +5760,8 @@
 "pull_segments": [
 {
 "empty_from": 1088,
-"empty_until": 1106
+"empty_until": 1106,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -5738,11 +5794,13 @@
 "pull_segments": [
 {
 "empty_from": 785,
-"empty_until": 1136
+"empty_until": 1136,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 1162,
-"empty_until": 1176
+"empty_until": 1176,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -5831,7 +5889,8 @@
 "pull_segments": [
 {
 "empty_from": 1055,
-"empty_until": 1185
+"empty_until": 1185,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -5857,7 +5916,8 @@
 "pull_segments": [
 {
 "empty_from": 1019,
-"empty_until": 1107
+"empty_until": 1107,
+"end_context": "penalty_on_trailer"
 }
 ],
 "pulled": true,
@@ -6038,7 +6098,8 @@
 "pull_segments": [
 {
 "empty_from": 895,
-"empty_until": 1158
+"empty_until": 1158,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -6093,7 +6154,8 @@
 "pull_segments": [
 {
 "empty_from": 1070,
-"empty_until": 1113
+"empty_until": 1113,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -6384,7 +6446,8 @@
 "pull_segments": [
 {
 "empty_from": 1078,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -6481,12 +6544,15 @@
 "pull_segments": [
 {
 "empty_from": 1135,
-"empty_until": 1142
+"empty_until": 1142,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 1135,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "77",
 "game_id": "1024369",
 "date": "2023-01-04",
@@ -6514,7 +6580,8 @@
 "pull_segments": [
 {
 "empty_from": 886,
-"empty_until": 953
+"empty_until": 953,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -6541,7 +6608,8 @@
 "pull_segments": [
 {
 "empty_from": 1105,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -6602,7 +6670,8 @@
 "pull_segments": [
 {
 "empty_from": 1096,
-"empty_until": 1120
+"empty_until": 1120,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -6663,7 +6732,8 @@
 "pull_segments": [
 {
 "empty_from": 857,
-"empty_until": 868
+"empty_until": 868,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -6724,11 +6794,13 @@
 "pull_segments": [
 {
 "empty_from": 871,
-"empty_until": 878
+"empty_until": 878,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 883,
-"empty_until": 923
+"empty_until": 923,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -6811,7 +6883,8 @@
 "pull_segments": [
 {
 "empty_from": 845,
-"empty_until": 888
+"empty_until": 888,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -6894,12 +6967,15 @@
 "pull_segments": [
 {
 "empty_from": 587,
-"empty_until": 600
+"empty_until": 600,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 587,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "77",
 "game_id": "1024397",
 "date": "2023-01-07",
@@ -6955,12 +7031,15 @@
 "pull_segments": [
 {
 "empty_from": 147,
-"empty_until": 151
+"empty_until": 151,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 147,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "77",
 "game_id": "1024401",
 "date": "2023-01-08",
@@ -7010,12 +7089,15 @@
 "pull_segments": [
 {
 "empty_from": 52,
-"empty_until": 55
+"empty_until": 55,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 52,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "77",
 "game_id": "1024406",
 "date": "2023-01-10",
@@ -7383,11 +7465,13 @@
 "pull_segments": [
 {
 "empty_from": 1041,
-"empty_until": 1062
+"empty_until": 1062,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 1068,
-"empty_until": 1193
+"empty_until": 1193,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -7420,7 +7504,8 @@
 "pull_segments": [
 {
 "empty_from": 1012,
-"empty_until": 1046
+"empty_until": 1046,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -7496,20 +7581,25 @@
 "pull_segments": [
 {
 "empty_from": 341,
-"empty_until": 343
+"empty_until": 343,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 },
 {
 "empty_from": 993,
-"empty_until": 1001
+"empty_until": 1001,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 },
 {
 "empty_from": 1030,
-"empty_until": 1135
+"empty_until": 1135,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
-"pull_evidence_secs": 341,
-"pull_classification": "pull",
+"pull_evidence_secs": 1030,
+"pull_classification": "pp_pull",
 "season": "77",
 "game_id": "1024443",
 "date": "2023-01-14",
@@ -7565,12 +7655,15 @@
 "pull_segments": [
 {
 "empty_from": 561,
-"empty_until": 568
+"empty_until": 568,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 561,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "77",
 "game_id": "1024449",
 "date": "2023-01-16",
@@ -7705,7 +7798,8 @@
 "pull_segments": [
 {
 "empty_from": 864,
-"empty_until": 933
+"empty_until": 933,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -7780,7 +7874,8 @@
 "pull_segments": [
 {
 "empty_from": 1009,
-"empty_until": 1172
+"empty_until": 1172,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -7869,7 +7964,8 @@
 "pull_segments": [
 {
 "empty_from": 963,
-"empty_until": 983
+"empty_until": 983,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -8079,7 +8175,8 @@
 "pull_segments": [
 {
 "empty_from": 1108,
-"empty_until": 1180
+"empty_until": 1180,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -8112,7 +8209,8 @@
 "pull_segments": [
 {
 "empty_from": 987,
-"empty_until": 1132
+"empty_until": 1132,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -8245,7 +8343,8 @@
 "pull_segments": [
 {
 "empty_from": 1010,
-"empty_until": 1053
+"empty_until": 1053,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -8334,7 +8433,8 @@
 "pull_segments": [
 {
 "empty_from": 825,
-"empty_until": 940
+"empty_until": 940,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -8410,7 +8510,8 @@
 "pull_segments": [
 {
 "empty_from": 1084,
-"empty_until": 1143
+"empty_until": 1143,
+"end_context": "penalty_on_trailer"
 }
 ],
 "pulled": true,
@@ -8768,7 +8869,8 @@
 "pull_segments": [
 {
 "empty_from": 768,
-"empty_until": 909
+"empty_until": 909,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -8851,7 +8953,8 @@
 "pull_segments": [
 {
 "empty_from": 921,
-"empty_until": 1121
+"empty_until": 1121,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -8877,7 +8980,8 @@
 "pull_segments": [
 {
 "empty_from": 1047,
-"empty_until": 1182
+"empty_until": 1182,
+"end_context": "penalty_on_trailer"
 }
 ],
 "pulled": true,
@@ -8938,12 +9042,15 @@
 "pull_segments": [
 {
 "empty_from": 280,
-"empty_until": 287
+"empty_until": 287,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 280,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "77",
 "game_id": "1024529",
 "date": "2023-01-28",
@@ -9447,7 +9554,8 @@
 "pull_segments": [
 {
 "empty_from": 1079,
-"empty_until": 1099
+"empty_until": 1099,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -9480,7 +9588,8 @@
 "pull_segments": [
 {
 "empty_from": 1010,
-"empty_until": 1061
+"empty_until": 1061,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -9535,7 +9644,8 @@
 "pull_segments": [
 {
 "empty_from": 1015,
-"empty_until": 1027
+"empty_until": 1027,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -9619,11 +9729,13 @@
 "pull_segments": [
 {
 "empty_from": 1094,
-"empty_until": 1126
+"empty_until": 1126,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 1146,
-"empty_until": 1184
+"empty_until": 1184,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -9707,7 +9819,8 @@
 "pull_segments": [
 {
 "empty_from": 922,
-"empty_until": 1035
+"empty_until": 1035,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -9741,7 +9854,8 @@
 "pull_segments": [
 {
 "empty_from": 1054,
-"empty_until": 1182
+"empty_until": 1182,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -9768,7 +9882,8 @@
 "pull_segments": [
 {
 "empty_from": 1006,
-"empty_until": 1123
+"empty_until": 1123,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -9801,7 +9916,8 @@
 "pull_segments": [
 {
 "empty_from": 926,
-"empty_until": 956
+"empty_until": 956,
+"end_context": "penalty_on_trailer"
 }
 ],
 "pulled": true,
@@ -9907,7 +10023,8 @@
 "pull_segments": [
 {
 "empty_from": 1107,
-"empty_until": 1136
+"empty_until": 1136,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -9961,7 +10078,8 @@
 "pull_segments": [
 {
 "empty_from": 1093,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -10142,7 +10260,8 @@
 "pull_segments": [
 {
 "empty_from": 1005,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -10240,7 +10359,8 @@
 "pull_segments": [
 {
 "empty_from": 1050,
-"empty_until": 1057
+"empty_until": 1057,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -10351,7 +10471,8 @@
 "pull_segments": [
 {
 "empty_from": 1090,
-"empty_until": 1133
+"empty_until": 1133,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -10540,7 +10661,8 @@
 "pull_segments": [
 {
 "empty_from": 953,
-"empty_until": 989
+"empty_until": 989,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -10867,7 +10989,8 @@
 "pull_segments": [
 {
 "empty_from": 960,
-"empty_until": 1032
+"empty_until": 1032,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -10900,7 +11023,8 @@
 "pull_segments": [
 {
 "empty_from": 54,
-"empty_until": 80
+"empty_until": 80,
+"end_context": "penalty_on_leader"
 }
 ],
 "pulled": true,
@@ -10955,7 +11079,8 @@
 "pull_segments": [
 {
 "empty_from": 782,
-"empty_until": 789
+"empty_until": 789,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -10988,11 +11113,13 @@
 "pull_segments": [
 {
 "empty_from": 697,
-"empty_until": 745
+"empty_until": 745,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 997,
-"empty_until": 1031
+"empty_until": 1031,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -11046,7 +11173,8 @@
 "pull_segments": [
 {
 "empty_from": 1145,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -11129,11 +11257,13 @@
 "pull_segments": [
 {
 "empty_from": 844,
-"empty_until": 894
+"empty_until": 894,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 908,
-"empty_until": 1025
+"empty_until": 1025,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -11202,7 +11332,8 @@
 "pull_segments": [
 {
 "empty_from": 1015,
-"empty_until": 1078
+"empty_until": 1078,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -11469,7 +11600,8 @@
 "pull_segments": [
 {
 "empty_from": 1012,
-"empty_until": 1056
+"empty_until": 1056,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -11495,7 +11627,8 @@
 "pull_segments": [
 {
 "empty_from": 1079,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -11577,11 +11710,13 @@
 "pull_segments": [
 {
 "empty_from": 1001,
-"empty_until": 1129
+"empty_until": 1129,
+"end_context": "penalty_on_trailer"
 },
 {
 "empty_from": 1137,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -11856,12 +11991,15 @@
 "pull_segments": [
 {
 "empty_from": 121,
-"empty_until": 128
+"empty_until": 128,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 121,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "77",
 "game_id": "1024768",
 "date": "2023-03-07",
@@ -12067,15 +12205,18 @@
 "pull_segments": [
 {
 "empty_from": 508,
-"empty_until": 625
+"empty_until": 625,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 675,
-"empty_until": 765
+"empty_until": 765,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 799,
-"empty_until": 954
+"empty_until": 954,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -12130,7 +12271,8 @@
 "pull_segments": [
 {
 "empty_from": 1006,
-"empty_until": 1122
+"empty_until": 1122,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -12279,7 +12421,8 @@
 "pull_segments": [
 {
 "empty_from": 896,
-"empty_until": 909
+"empty_until": 909,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -12385,7 +12528,8 @@
 "pull_segments": [
 {
 "empty_from": 830,
-"empty_until": 901
+"empty_until": 901,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -12418,7 +12562,8 @@
 "pull_segments": [
 {
 "empty_from": 1017,
-"empty_until": 1021
+"empty_until": 1021,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -12529,7 +12674,8 @@
 "pull_segments": [
 {
 "empty_from": 936,
-"empty_until": 1020
+"empty_until": 1020,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -12709,7 +12855,8 @@
 "pull_segments": [
 {
 "empty_from": 1102,
-"empty_until": 1166
+"empty_until": 1166,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -12742,11 +12889,13 @@
 "pull_segments": [
 {
 "empty_from": 886,
-"empty_until": 980
+"empty_until": 980,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 998,
-"empty_until": 1032
+"empty_until": 1032,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -12851,11 +13000,13 @@
 "pull_segments": [
 {
 "empty_from": 702,
-"empty_until": 794
+"empty_until": 794,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 1046,
-"empty_until": 1098
+"empty_until": 1098,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -13088,12 +13239,15 @@
 "pull_segments": [
 {
 "empty_from": 248,
-"empty_until": 260
+"empty_until": 260,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 248,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "77",
 "game_id": "1024865",
 "date": "2023-03-24",
@@ -13305,7 +13459,8 @@
 "pull_segments": [
 {
 "empty_from": 1023,
-"empty_until": 1092
+"empty_until": 1092,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -13338,12 +13493,15 @@
 "pull_segments": [
 {
 "empty_from": 195,
-"empty_until": 218
+"empty_until": 218,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 195,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "77",
 "game_id": "1024877",
 "date": "2023-03-25",
@@ -13443,15 +13601,18 @@
 "pull_segments": [
 {
 "empty_from": 317,
-"empty_until": 323
+"empty_until": 323,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 },
 {
 "empty_from": 520,
-"empty_until": 968
+"empty_until": 968,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
-"pull_evidence_secs": 317,
+"pull_evidence_secs": 520,
 "pull_classification": "pull",
 "season": "77",
 "game_id": "1024882",
@@ -13595,11 +13756,13 @@
 "pull_segments": [
 {
 "empty_from": 980,
-"empty_until": 1107
+"empty_until": 1107,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 1123,
-"empty_until": 1164
+"empty_until": 1164,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -13754,7 +13917,8 @@
 "pull_segments": [
 {
 "empty_from": 1128,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -13815,15 +13979,18 @@
 "pull_segments": [
 {
 "empty_from": 948,
-"empty_until": 1081
+"empty_until": 1081,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 1095,
-"empty_until": 1104
+"empty_until": 1104,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 1117,
-"empty_until": 1139
+"empty_until": 1139,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -13878,12 +14045,15 @@
 "pull_segments": [
 {
 "empty_from": 1115,
-"empty_until": 1118
+"empty_until": 1118,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 1115,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "77",
 "game_id": "1024912",
 "date": "2023-03-31",
@@ -14017,7 +14187,8 @@
 "pull_segments": [
 {
 "empty_from": 938,
-"empty_until": 983
+"empty_until": 983,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -14043,16 +14214,21 @@
 "pull_segments": [
 {
 "empty_from": 272,
-"empty_until": 291
+"empty_until": 291,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 },
 {
 "empty_from": 1040,
-"empty_until": 1045
+"empty_until": 1045,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 272,
-"pull_classification": "pp_pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "77",
 "game_id": "1024923",
 "date": "2023-04-01",
@@ -14206,11 +14382,13 @@
 "pull_segments": [
 {
 "empty_from": 872,
-"empty_until": 900
+"empty_until": 900,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 965,
-"empty_until": 1024
+"empty_until": 1024,
+"end_context": "penalty_on_trailer"
 }
 ],
 "pulled": true,
@@ -14258,12 +14436,15 @@
 "pull_segments": [
 {
 "empty_from": 273,
-"empty_until": 278
+"empty_until": 278,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 273,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "77",
 "game_id": "1024936",
 "date": "2023-04-02",
@@ -14320,7 +14501,8 @@
 "pull_segments": [
 {
 "empty_from": 1014,
-"empty_until": 1053
+"empty_until": 1053,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -14346,7 +14528,8 @@
 "pull_segments": [
 {
 "empty_from": 996,
-"empty_until": 1023
+"empty_until": 1023,
+"end_context": "penalty_on_trailer"
 }
 ],
 "pulled": true,
@@ -14584,7 +14767,8 @@
 "pull_segments": [
 {
 "empty_from": 1058,
-"empty_until": 1172
+"empty_until": 1172,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -14667,7 +14851,8 @@
 "pull_segments": [
 {
 "empty_from": 993,
-"empty_until": 1181
+"empty_until": 1181,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -14722,7 +14907,8 @@
 "pull_segments": [
 {
 "empty_from": 1009,
-"empty_until": 1076
+"empty_until": 1076,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -14756,7 +14942,8 @@
 "pull_segments": [
 {
 "empty_from": 1114,
-"empty_until": 1152
+"empty_until": 1152,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -14818,7 +15005,8 @@
 "pull_segments": [
 {
 "empty_from": 1122,
-"empty_until": 1176
+"empty_until": 1176,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -15023,7 +15211,8 @@
 "pull_segments": [
 {
 "empty_from": 980,
-"empty_until": 1115
+"empty_until": 1115,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -15248,12 +15437,15 @@
 "pull_segments": [
 {
 "empty_from": 89,
-"empty_until": 91
+"empty_until": 91,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 89,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "77",
 "game_id": "1025013",
 "date": "2023-04-15",
@@ -15536,7 +15728,8 @@
 "pull_segments": [
 {
 "empty_from": 751,
-"empty_until": 812
+"empty_until": 812,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -15669,7 +15862,8 @@
 "pull_segments": [
 {
 "empty_from": 888,
-"empty_until": 968
+"empty_until": 968,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -15752,7 +15946,8 @@
 "pull_segments": [
 {
 "empty_from": 911,
-"empty_until": 918
+"empty_until": 918,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -15828,11 +16023,13 @@
 "pull_segments": [
 {
 "empty_from": 782,
-"empty_until": 908
+"empty_until": 908,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 949,
-"empty_until": 1030
+"empty_until": 1030,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -16006,20 +16203,24 @@
 "pull_segments": [
 {
 "empty_from": 612,
-"empty_until": 622
+"empty_until": 622,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 },
 {
 "empty_from": 626,
-"empty_until": 655
+"empty_until": 655,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 659,
-"empty_until": 668
+"empty_until": 668,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
-"pull_evidence_secs": 612,
-"pull_classification": "pull",
+"pull_evidence_secs": 626,
+"pull_classification": "pp_pull",
 "season": "81",
 "game_id": "1025210",
 "date": "2023-10-18",
@@ -16048,7 +16249,8 @@
 "pull_segments": [
 {
 "empty_from": 1028,
-"empty_until": 1112
+"empty_until": 1112,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -16103,11 +16305,13 @@
 "pull_segments": [
 {
 "empty_from": 963,
-"empty_until": 969
+"empty_until": 969,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 979,
-"empty_until": 1009
+"empty_until": 1009,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -16168,7 +16372,8 @@
 "pull_segments": [
 {
 "empty_from": 967,
-"empty_until": 980
+"empty_until": 980,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -16194,19 +16399,23 @@
 "pull_segments": [
 {
 "empty_from": 598,
-"empty_until": 727
+"empty_until": 727,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 837,
-"empty_until": 840
+"empty_until": 840,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 863,
-"empty_until": 1036
+"empty_until": 1036,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 1105,
-"empty_until": 1176
+"empty_until": 1176,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -16239,11 +16448,13 @@
 "pull_segments": [
 {
 "empty_from": 835,
-"empty_until": 864
+"empty_until": 864,
+"end_context": "penalty_on_leader"
 },
 {
 "empty_from": 879,
-"empty_until": 961
+"empty_until": 961,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -16326,7 +16537,8 @@
 "pull_segments": [
 {
 "empty_from": 950,
-"empty_until": 1058
+"empty_until": 1058,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -16608,7 +16820,8 @@
 "pull_segments": [
 {
 "empty_from": 742,
-"empty_until": 831
+"empty_until": 831,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -16763,7 +16976,8 @@
 "pull_segments": [
 {
 "empty_from": 911,
-"empty_until": 946
+"empty_until": 946,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -17130,16 +17344,21 @@
 "pull_segments": [
 {
 "empty_from": 394,
-"empty_until": 398
+"empty_until": 398,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 },
 {
 "empty_from": 612,
-"empty_until": 624
+"empty_until": 624,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 394,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "81",
 "game_id": "1025294",
 "date": "2023-11-03",
@@ -17245,7 +17464,8 @@
 "pull_segments": [
 {
 "empty_from": 834,
-"empty_until": 875
+"empty_until": 875,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -17278,7 +17498,8 @@
 "pull_segments": [
 {
 "empty_from": 777,
-"empty_until": 898
+"empty_until": 898,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -17339,11 +17560,13 @@
 "pull_segments": [
 {
 "empty_from": 852,
-"empty_until": 956
+"empty_until": 956,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 962,
-"empty_until": 1084
+"empty_until": 1084,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -17391,7 +17614,8 @@
 "pull_segments": [
 {
 "empty_from": 870,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -17566,7 +17790,8 @@
 "pull_segments": [
 {
 "empty_from": 1038,
-"empty_until": 1071
+"empty_until": 1071,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -17669,7 +17894,8 @@
 "pull_segments": [
 {
 "empty_from": 1026,
-"empty_until": 1165
+"empty_until": 1165,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -17871,12 +18097,15 @@
 "pull_segments": [
 {
 "empty_from": 765,
-"empty_until": 772
+"empty_until": 772,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 765,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "81",
 "game_id": "1025341",
 "date": "2023-11-11",
@@ -18032,7 +18261,8 @@
 "pull_segments": [
 {
 "empty_from": 840,
-"empty_until": 858
+"empty_until": 858,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -18221,7 +18451,8 @@
 "pull_segments": [
 {
 "empty_from": 1140,
-"empty_until": 1147
+"empty_until": 1147,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -18508,7 +18739,8 @@
 "pull_segments": [
 {
 "empty_from": 1008,
-"empty_until": 1044
+"empty_until": 1044,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -18598,7 +18830,8 @@
 "pull_segments": [
 {
 "empty_from": 982,
-"empty_until": 1048
+"empty_until": 1048,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -18631,7 +18864,8 @@
 "pull_segments": [
 {
 "empty_from": 1015,
-"empty_until": 1035
+"empty_until": 1035,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -18686,12 +18920,15 @@
 "pull_segments": [
 {
 "empty_from": 655,
-"empty_until": 661
+"empty_until": 661,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 655,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "81",
 "game_id": "1025382",
 "date": "2023-11-17",
@@ -18747,11 +18984,13 @@
 "pull_segments": [
 {
 "empty_from": 712,
-"empty_until": 760
+"empty_until": 760,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 947,
-"empty_until": 971
+"empty_until": 971,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -18932,7 +19171,8 @@
 "pull_segments": [
 {
 "empty_from": 965,
-"empty_until": 1008
+"empty_until": 1008,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -19064,7 +19304,8 @@
 "pull_segments": [
 {
 "empty_from": 918,
-"empty_until": 976
+"empty_until": 976,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -19146,7 +19387,8 @@
 "pull_segments": [
 {
 "empty_from": 1168,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -19244,7 +19486,8 @@
 "pull_segments": [
 {
 "empty_from": 929,
-"empty_until": 1122
+"empty_until": 1122,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -19376,7 +19619,8 @@
 "pull_segments": [
 {
 "empty_from": 808,
-"empty_until": 812
+"empty_until": 812,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -19514,7 +19758,8 @@
 "pull_segments": [
 {
 "empty_from": 867,
-"empty_until": 879
+"empty_until": 879,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -19766,7 +20011,8 @@
 "pull_segments": [
 {
 "empty_from": 1055,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -19848,7 +20094,8 @@
 "pull_segments": [
 {
 "empty_from": 1047,
-"empty_until": 1167
+"empty_until": 1167,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -19981,7 +20228,8 @@
 "pull_segments": [
 {
 "empty_from": 894,
-"empty_until": 915
+"empty_until": 915,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -20064,7 +20312,8 @@
 "pull_segments": [
 {
 "empty_from": 789,
-"empty_until": 805
+"empty_until": 805,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -20220,16 +20469,21 @@
 "pull_segments": [
 {
 "empty_from": 321,
-"empty_until": 335
+"empty_until": 335,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 },
 {
 "empty_from": 746,
-"empty_until": 767
+"empty_until": 767,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 321,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "81",
 "game_id": "1025515",
 "date": "2023-12-09",
@@ -20335,7 +20589,8 @@
 "pull_segments": [
 {
 "empty_from": 995,
-"empty_until": 998
+"empty_until": 998,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -20368,7 +20623,8 @@
 "pull_segments": [
 {
 "empty_from": 956,
-"empty_until": 1002
+"empty_until": 1002,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -20507,7 +20763,8 @@
 "pull_segments": [
 {
 "empty_from": 910,
-"empty_until": 973
+"empty_until": 973,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -20731,7 +20988,8 @@
 "pull_segments": [
 {
 "empty_from": 833,
-"empty_until": 920
+"empty_until": 920,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -20844,7 +21102,8 @@
 "pull_segments": [
 {
 "empty_from": 1079,
-"empty_until": 1188
+"empty_until": 1188,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -20899,7 +21158,8 @@
 "pull_segments": [
 {
 "empty_from": 970,
-"empty_until": 1015
+"empty_until": 1015,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -21344,7 +21604,8 @@
 "pull_segments": [
 {
 "empty_from": 953,
-"empty_until": 964
+"empty_until": 964,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -21576,11 +21837,13 @@
 "pull_segments": [
 {
 "empty_from": 469,
-"empty_until": 512
+"empty_until": 512,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 517,
-"empty_until": 531
+"empty_until": 531,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -22144,15 +22407,18 @@
 "pull_segments": [
 {
 "empty_from": 981,
-"empty_until": 1006
+"empty_until": 1006,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 1051,
-"empty_until": 1085
+"empty_until": 1085,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 1110,
-"empty_until": 1194
+"empty_until": 1194,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -22376,7 +22642,8 @@
 "pull_segments": [
 {
 "empty_from": 1107,
-"empty_until": 1180
+"empty_until": 1180,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -22459,7 +22726,8 @@
 "pull_segments": [
 {
 "empty_from": 1020,
-"empty_until": 1158
+"empty_until": 1158,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -22513,7 +22781,8 @@
 "pull_segments": [
 {
 "empty_from": 1164,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -22667,12 +22936,15 @@
 "pull_segments": [
 {
 "empty_from": 200,
-"empty_until": 204
+"empty_until": 204,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 200,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "81",
 "game_id": "1025718",
 "date": "2024-01-13",
@@ -23381,7 +23653,8 @@
 "pull_segments": [
 {
 "empty_from": 824,
-"empty_until": 955
+"empty_until": 955,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -23742,7 +24015,8 @@
 "pull_segments": [
 {
 "empty_from": 1025,
-"empty_until": 1050
+"empty_until": 1050,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -23768,7 +24042,8 @@
 "pull_segments": [
 {
 "empty_from": 829,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -24068,7 +24343,8 @@
 "pull_segments": [
 {
 "empty_from": 950,
-"empty_until": 1028
+"empty_until": 1028,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -24221,7 +24497,8 @@
 "pull_segments": [
 {
 "empty_from": 1026,
-"empty_until": 1101
+"empty_until": 1101,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -24332,15 +24609,18 @@
 "pull_segments": [
 {
 "empty_from": 726,
-"empty_until": 736
+"empty_until": 736,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 },
 {
 "empty_from": 999,
-"empty_until": 1039
+"empty_until": 1039,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
-"pull_evidence_secs": 726,
+"pull_evidence_secs": 999,
 "pull_classification": "pull",
 "season": "81",
 "game_id": "1025838",
@@ -24596,7 +24876,8 @@
 "pull_segments": [
 {
 "empty_from": 187,
-"empty_until": 206
+"empty_until": 206,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -24651,7 +24932,8 @@
 "pull_segments": [
 {
 "empty_from": 780,
-"empty_until": 912
+"empty_until": 912,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -24712,7 +24994,8 @@
 "pull_segments": [
 {
 "empty_from": 831,
-"empty_until": 870
+"empty_until": 870,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -24831,12 +25114,15 @@
 "pull_segments": [
 {
 "empty_from": 745,
-"empty_until": 749
+"empty_until": 749,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 745,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "81",
 "game_id": "1025890",
 "date": "2024-02-10",
@@ -24942,7 +25228,8 @@
 "pull_segments": [
 {
 "empty_from": 864,
-"empty_until": 1035
+"empty_until": 1035,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -24975,7 +25262,8 @@
 "pull_segments": [
 {
 "empty_from": 1013,
-"empty_until": 1029
+"empty_until": 1029,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -25009,7 +25297,8 @@
 "pull_segments": [
 {
 "empty_from": 1054,
-"empty_until": 1057
+"empty_until": 1057,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -25042,7 +25331,8 @@
 "pull_segments": [
 {
 "empty_from": 846,
-"empty_until": 929
+"empty_until": 929,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -25097,7 +25387,8 @@
 "pull_segments": [
 {
 "empty_from": 1046,
-"empty_until": 1140
+"empty_until": 1140,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -25207,7 +25498,8 @@
 "pull_segments": [
 {
 "empty_from": 857,
-"empty_until": 870
+"empty_until": 870,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -26275,11 +26567,13 @@
 "pull_segments": [
 {
 "empty_from": 948,
-"empty_until": 959
+"empty_until": 959,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 1005,
-"empty_until": 1062
+"empty_until": 1062,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -26378,7 +26672,8 @@
 "pull_segments": [
 {
 "empty_from": 988,
-"empty_until": 998
+"empty_until": 998,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -26404,7 +26699,8 @@
 "pull_segments": [
 {
 "empty_from": 1073,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -26486,11 +26782,13 @@
 "pull_segments": [
 {
 "empty_from": 780,
-"empty_until": 835
+"empty_until": 835,
+"end_context": "penalty_on_trailer"
 },
 {
 "empty_from": 938,
-"empty_until": 1033
+"empty_until": 1033,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -26516,12 +26814,15 @@
 "pull_segments": [
 {
 "empty_from": 220,
-"empty_until": 240
+"empty_until": 240,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 220,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "81",
 "game_id": "1026052",
 "date": "2024-03-09",
@@ -26621,11 +26922,13 @@
 "pull_segments": [
 {
 "empty_from": 675,
-"empty_until": 710
+"empty_until": 710,
+"end_context": "penalty_on_trailer"
 },
 {
 "empty_from": 902,
-"empty_until": 1081
+"empty_until": 1081,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -26686,7 +26989,8 @@
 "pull_segments": [
 {
 "empty_from": 927,
-"empty_until": 1171
+"empty_until": 1171,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -26769,7 +27073,8 @@
 "pull_segments": [
 {
 "empty_from": 982,
-"empty_until": 1124
+"empty_until": 1124,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -26966,7 +27271,8 @@
 "pull_segments": [
 {
 "empty_from": 973,
-"empty_until": 1079
+"empty_until": 1079,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -27027,7 +27333,8 @@
 "pull_segments": [
 {
 "empty_from": 1034,
-"empty_until": 1052
+"empty_until": 1052,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -27082,7 +27389,8 @@
 "pull_segments": [
 {
 "empty_from": 1084,
-"empty_until": 1193
+"empty_until": 1193,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -27143,7 +27451,8 @@
 "pull_segments": [
 {
 "empty_from": 1025,
-"empty_until": 1079
+"empty_until": 1079,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -27177,7 +27486,8 @@
 "pull_segments": [
 {
 "empty_from": 831,
-"empty_until": 975
+"empty_until": 975,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -27327,7 +27637,8 @@
 "pull_segments": [
 {
 "empty_from": 1122,
-"empty_until": 1159
+"empty_until": 1159,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -27403,7 +27714,8 @@
 "pull_segments": [
 {
 "empty_from": 979,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -27464,7 +27776,8 @@
 "pull_segments": [
 {
 "empty_from": 790,
-"empty_until": 836
+"empty_until": 836,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -27534,11 +27847,13 @@
 "pull_segments": [
 {
 "empty_from": 1046,
-"empty_until": 1057
+"empty_until": 1057,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 1073,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -27792,15 +28107,18 @@
 "pull_segments": [
 {
 "empty_from": 299,
-"empty_until": 314
+"empty_until": 314,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 },
 {
 "empty_from": 935,
-"empty_until": 1183
+"empty_until": 1183,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
-"pull_evidence_secs": 299,
+"pull_evidence_secs": 935,
 "pull_classification": "pull",
 "season": "81",
 "game_id": "1026151",
@@ -27950,7 +28268,8 @@
 "pull_segments": [
 {
 "empty_from": 1061,
-"empty_until": 1067
+"empty_until": 1067,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -28232,7 +28551,8 @@
 "pull_segments": [
 {
 "empty_from": 1017,
-"empty_until": 1128
+"empty_until": 1128,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -28321,7 +28641,8 @@
 "pull_segments": [
 {
 "empty_from": 791,
-"empty_until": 856
+"empty_until": 856,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -28376,7 +28697,8 @@
 "pull_segments": [
 {
 "empty_from": 1148,
-"empty_until": 1198
+"empty_until": 1198,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -28431,7 +28753,8 @@
 "pull_segments": [
 {
 "empty_from": 834,
-"empty_until": 1153
+"empty_until": 1153,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -28621,11 +28944,13 @@
 "pull_segments": [
 {
 "empty_from": 833,
-"empty_until": 866
+"empty_until": 866,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 930,
-"empty_until": 1074
+"empty_until": 1074,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -28793,7 +29118,8 @@
 "pull_segments": [
 {
 "empty_from": 1069,
-"empty_until": 1179
+"empty_until": 1179,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -29018,12 +29344,15 @@
 "pull_segments": [
 {
 "empty_from": 383,
-"empty_until": 394
+"empty_until": 394,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 383,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "81",
 "game_id": "1026241",
 "date": "2024-04-07",
@@ -29072,16 +29401,19 @@
 "pull_segments": [
 {
 "empty_from": 716,
-"empty_until": 729
+"empty_until": 729,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 },
 {
 "empty_from": 782,
-"empty_until": 1005
+"empty_until": 1005,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
-"pull_evidence_secs": 716,
-"pull_classification": "pull",
+"pull_evidence_secs": 782,
+"pull_classification": "pp_pull",
 "season": "81",
 "game_id": "1026246",
 "date": "2024-04-07",
@@ -29109,7 +29441,8 @@
 "pull_segments": [
 {
 "empty_from": 870,
-"empty_until": 897
+"empty_until": 897,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -29143,7 +29476,8 @@
 "pull_segments": [
 {
 "empty_from": 965,
-"empty_until": 990
+"empty_until": 990,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -29332,7 +29666,8 @@
 "pull_segments": [
 {
 "empty_from": 969,
-"empty_until": 1106
+"empty_until": 1106,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -29415,7 +29750,8 @@
 "pull_segments": [
 {
 "empty_from": 823,
-"empty_until": 946
+"empty_until": 946,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -29498,7 +29834,8 @@
 "pull_segments": [
 {
 "empty_from": 832,
-"empty_until": 929
+"empty_until": 929,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -29772,11 +30109,13 @@
 "pull_segments": [
 {
 "empty_from": 1012,
-"empty_until": 1062
+"empty_until": 1062,
+"end_context": "penalty_on_trailer"
 },
 {
 "empty_from": 1088,
-"empty_until": 1122
+"empty_until": 1122,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -30102,11 +30441,13 @@
 "pull_segments": [
 {
 "empty_from": 882,
-"empty_until": 1029
+"empty_until": 1029,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 1051,
-"empty_until": 1095
+"empty_until": 1095,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -30197,7 +30538,8 @@
 "pull_segments": [
 {
 "empty_from": 1075,
-"empty_until": 1150
+"empty_until": 1150,
+"end_context": "penalty_on_trailer"
 }
 ],
 "pulled": true,
@@ -30514,7 +30856,8 @@
 "pull_segments": [
 {
 "empty_from": 1055,
-"empty_until": 1115
+"empty_until": 1115,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -30590,7 +30933,8 @@
 "pull_segments": [
 {
 "empty_from": 974,
-"empty_until": 1089
+"empty_until": 1089,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -30679,7 +31023,8 @@
 "pull_segments": [
 {
 "empty_from": 1123,
-"empty_until": 1130
+"empty_until": 1130,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -31011,12 +31356,15 @@
 "pull_segments": [
 {
 "empty_from": 1019,
-"empty_until": 1021
+"empty_until": 1021,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 1019,
-"pull_classification": "pp_pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "86",
 "game_id": "1026548",
 "date": "2024-10-25",
@@ -31150,11 +31498,13 @@
 "pull_segments": [
 {
 "empty_from": 921,
-"empty_until": 945
+"empty_until": 945,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 1028,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -31411,7 +31761,8 @@
 "pull_segments": [
 {
 "empty_from": 1105,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -31437,19 +31788,23 @@
 "pull_segments": [
 {
 "empty_from": 583,
-"empty_until": 605
+"empty_until": 605,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 },
 {
 "empty_from": 948,
-"empty_until": 1079
+"empty_until": 1079,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 1094,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
-"pull_evidence_secs": 583,
+"pull_evidence_secs": 948,
 "pull_classification": "pp_pull",
 "season": "86",
 "game_id": "1026578",
@@ -31478,7 +31833,8 @@
 "pull_segments": [
 {
 "empty_from": 936,
-"empty_until": 1010
+"empty_until": 1010,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -31767,15 +32123,18 @@
 "pull_segments": [
 {
 "empty_from": 734,
-"empty_until": 737
+"empty_until": 737,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 },
 {
 "empty_from": 900,
-"empty_until": 908
+"empty_until": 908,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
-"pull_evidence_secs": 734,
+"pull_evidence_secs": 900,
 "pull_classification": "pull",
 "season": "86",
 "game_id": "1026597",
@@ -31870,7 +32229,8 @@
 "pull_segments": [
 {
 "empty_from": 1163,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -32086,7 +32446,8 @@
 "pull_segments": [
 {
 "empty_from": 990,
-"empty_until": 1127
+"empty_until": 1127,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -32119,11 +32480,13 @@
 "pull_segments": [
 {
 "empty_from": 876,
-"empty_until": 946
+"empty_until": 946,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 962,
-"empty_until": 1012
+"empty_until": 1012,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -32184,7 +32547,8 @@
 "pull_segments": [
 {
 "empty_from": 985,
-"empty_until": 1070
+"empty_until": 1070,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -32515,7 +32879,8 @@
 "pull_segments": [
 {
 "empty_from": 944,
-"empty_until": 982
+"empty_until": 982,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -32598,7 +32963,8 @@
 "pull_segments": [
 {
 "empty_from": 1065,
-"empty_until": 1072
+"empty_until": 1072,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -32775,7 +33141,8 @@
 "pull_segments": [
 {
 "empty_from": 1082,
-"empty_until": 1107
+"empty_until": 1107,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -32936,15 +33303,18 @@
 "pull_segments": [
 {
 "empty_from": 651,
-"empty_until": 660
+"empty_until": 660,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 },
 {
 "empty_from": 966,
-"empty_until": 1059
+"empty_until": 1059,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
-"pull_evidence_secs": 651,
+"pull_evidence_secs": 966,
 "pull_classification": "pull",
 "season": "86",
 "game_id": "1026685",
@@ -32974,7 +33344,8 @@
 "pull_segments": [
 {
 "empty_from": 1125,
-"empty_until": 1150
+"empty_until": 1150,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -33136,7 +33507,8 @@
 "pull_segments": [
 {
 "empty_from": 1145,
-"empty_until": 1147
+"empty_until": 1147,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -33369,7 +33741,8 @@
 "pull_segments": [
 {
 "empty_from": 1134,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -33424,7 +33797,8 @@
 "pull_segments": [
 {
 "empty_from": 978,
-"empty_until": 1094
+"empty_until": 1094,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -33683,12 +34057,15 @@
 "pull_segments": [
 {
 "empty_from": 200,
-"empty_until": 211
+"empty_until": 211,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 200,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "86",
 "game_id": "1026748",
 "date": "2024-11-29",
@@ -33831,7 +34208,8 @@
 "pull_segments": [
 {
 "empty_from": 1043,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -33958,7 +34336,8 @@
 "pull_segments": [
 {
 "empty_from": 878,
-"empty_until": 1004
+"empty_until": 1004,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -34125,7 +34504,8 @@
 "pull_segments": [
 {
 "empty_from": 953,
-"empty_until": 1012
+"empty_until": 1012,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -34252,7 +34632,8 @@
 "pull_segments": [
 {
 "empty_from": 1002,
-"empty_until": 1113
+"empty_until": 1113,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -34285,12 +34666,15 @@
 "pull_segments": [
 {
 "empty_from": 18,
-"empty_until": 36
+"empty_until": 36,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 18,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "86",
 "game_id": "1026798",
 "date": "2024-12-07",
@@ -34319,7 +34703,8 @@
 "pull_segments": [
 {
 "empty_from": 918,
-"empty_until": 926
+"empty_until": 926,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -34543,12 +34928,15 @@
 "pull_segments": [
 {
 "empty_from": 502,
-"empty_until": 519
+"empty_until": 519,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 502,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "86",
 "game_id": "1026818",
 "date": "2024-12-11",
@@ -34591,7 +34979,8 @@
 "pull_segments": [
 {
 "empty_from": 971,
-"empty_until": 1181
+"empty_until": 1181,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -34836,7 +35225,8 @@
 "pull_segments": [
 {
 "empty_from": 890,
-"empty_until": 913
+"empty_until": 913,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -34912,7 +35302,8 @@
 "pull_segments": [
 {
 "empty_from": 1031,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -35107,11 +35498,13 @@
 "pull_segments": [
 {
 "empty_from": 859,
-"empty_until": 890
+"empty_until": 890,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 904,
-"empty_until": 1063
+"empty_until": 1063,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -35144,15 +35537,18 @@
 "pull_segments": [
 {
 "empty_from": 700,
-"empty_until": 707
+"empty_until": 707,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 },
 {
 "empty_from": 988,
-"empty_until": 1009
+"empty_until": 1009,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
-"pull_evidence_secs": 700,
+"pull_evidence_secs": 988,
 "pull_classification": "pull",
 "season": "86",
 "game_id": "1026860",
@@ -35275,15 +35671,18 @@
 "pull_segments": [
 {
 "empty_from": 794,
-"empty_until": 798
+"empty_until": 798,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 },
 {
 "empty_from": 966,
-"empty_until": 992
+"empty_until": 992,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
-"pull_evidence_secs": 794,
+"pull_evidence_secs": 966,
 "pull_classification": "pull",
 "season": "86",
 "game_id": "1026869",
@@ -35305,7 +35704,8 @@
 "pull_segments": [
 {
 "empty_from": 1022,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -35388,11 +35788,13 @@
 "pull_segments": [
 {
 "empty_from": 960,
-"empty_until": 982
+"empty_until": 982,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 1015,
-"empty_until": 1086
+"empty_until": 1086,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -35453,7 +35855,8 @@
 "pull_segments": [
 {
 "empty_from": 1023,
-"empty_until": 1063
+"empty_until": 1063,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -35501,12 +35904,15 @@
 "pull_segments": [
 {
 "empty_from": 1087,
-"empty_until": 1104
+"empty_until": 1104,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 1087,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "86",
 "game_id": "1026887",
 "date": "2024-12-21",
@@ -35619,16 +36025,19 @@
 "pull_segments": [
 {
 "empty_from": 833,
-"empty_until": 835
+"empty_until": 835,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 },
 {
 "empty_from": 843,
-"empty_until": 964
+"empty_until": 964,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
-"pull_evidence_secs": 833,
-"pull_classification": "pull",
+"pull_evidence_secs": 843,
+"pull_classification": "pp_pull",
 "season": "86",
 "game_id": "1026893",
 "date": "2024-12-21",
@@ -35820,12 +36229,15 @@
 "pull_segments": [
 {
 "empty_from": 1077,
-"empty_until": 1078
+"empty_until": 1078,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 1077,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "86",
 "game_id": "1026905",
 "date": "2024-12-27",
@@ -35975,7 +36387,8 @@
 "pull_segments": [
 {
 "empty_from": 966,
-"empty_until": 989
+"empty_until": 989,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -36008,7 +36421,8 @@
 "pull_segments": [
 {
 "empty_from": 769,
-"empty_until": 792
+"empty_until": 792,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -36155,7 +36569,8 @@
 "pull_segments": [
 {
 "empty_from": 985,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -36237,12 +36652,15 @@
 "pull_segments": [
 {
 "empty_from": 609,
-"empty_until": 625
+"empty_until": 625,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 609,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "86",
 "game_id": "1026931",
 "date": "2024-12-30",
@@ -36263,7 +36681,8 @@
 "pull_segments": [
 {
 "empty_from": 1048,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -36366,11 +36785,13 @@
 "pull_segments": [
 {
 "empty_from": 892,
-"empty_until": 1049
+"empty_until": 1049,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 1067,
-"empty_until": 1131
+"empty_until": 1131,
+"end_context": "penalty_on_trailer"
 }
 ],
 "pulled": true,
@@ -36497,7 +36918,8 @@
 "pull_segments": [
 {
 "empty_from": 1081,
-"empty_until": 1168
+"empty_until": 1168,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -36558,7 +36980,8 @@
 "pull_segments": [
 {
 "empty_from": 1076,
-"empty_until": 1193
+"empty_until": 1193,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -36712,7 +37135,8 @@
 "pull_segments": [
 {
 "empty_from": 869,
-"empty_until": 1124
+"empty_until": 1124,
+"end_context": "penalty_on_trailer"
 }
 ],
 "pulled": true,
@@ -36745,7 +37169,8 @@
 "pull_segments": [
 {
 "empty_from": 33,
-"empty_until": 67
+"empty_until": 67,
+"end_context": "penalty_on_leader"
 }
 ],
 "pulled": true,
@@ -36827,7 +37252,8 @@
 "pull_segments": [
 {
 "empty_from": 968,
-"empty_until": 1015
+"empty_until": 1015,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -36959,7 +37385,8 @@
 "pull_segments": [
 {
 "empty_from": 977,
-"empty_until": 1010
+"empty_until": 1010,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -37084,7 +37511,8 @@
 "pull_segments": [
 {
 "empty_from": 1018,
-"empty_until": 1071
+"empty_until": 1071,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -37138,7 +37566,8 @@
 "pull_segments": [
 {
 "empty_from": 978,
-"empty_until": 1137
+"empty_until": 1137,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -37271,16 +37700,19 @@
 "pull_segments": [
 {
 "empty_from": 847,
-"empty_until": 864
+"empty_until": 864,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 },
 {
 "empty_from": 920,
-"empty_until": 986
+"empty_until": 986,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
-"pull_evidence_secs": 847,
-"pull_classification": "pull",
+"pull_evidence_secs": 920,
+"pull_classification": "pp_pull",
 "season": "86",
 "game_id": "1027011",
 "date": "2025-01-12",
@@ -37502,7 +37934,8 @@
 "pull_segments": [
 {
 "empty_from": 1004,
-"empty_until": 1043
+"empty_until": 1043,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -37557,7 +37990,8 @@
 "pull_segments": [
 {
 "empty_from": 955,
-"empty_until": 1007
+"empty_until": 1007,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -37669,11 +38103,13 @@
 "pull_segments": [
 {
 "empty_from": 782,
-"empty_until": 795
+"empty_until": 795,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 915,
-"empty_until": 1180
+"empty_until": 1180,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -37898,7 +38334,8 @@
 "pull_segments": [
 {
 "empty_from": 831,
-"empty_until": 1033
+"empty_until": 1033,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -37959,7 +38396,8 @@
 "pull_segments": [
 {
 "empty_from": 1059,
-"empty_until": 1185
+"empty_until": 1185,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -38141,11 +38579,13 @@
 "pull_segments": [
 {
 "empty_from": 975,
-"empty_until": 1007
+"empty_until": 1007,
+"end_context": "penalty_on_leader"
 },
 {
 "empty_from": 1015,
-"empty_until": 1073
+"empty_until": 1073,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -38263,7 +38703,8 @@
 "pull_segments": [
 {
 "empty_from": 964,
-"empty_until": 1053
+"empty_until": 1053,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -38467,12 +38908,15 @@
 "pull_segments": [
 {
 "empty_from": 460,
-"empty_until": 462
+"empty_until": 462,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 460,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "86",
 "game_id": "1027088",
 "date": "2025-01-25",
@@ -38720,11 +39164,13 @@
 "pull_segments": [
 {
 "empty_from": 1007,
-"empty_until": 1049
+"empty_until": 1049,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 1057,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -38757,7 +39203,8 @@
 "pull_segments": [
 {
 "empty_from": 1051,
-"empty_until": 1107
+"empty_until": 1107,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -38790,12 +39237,15 @@
 "pull_segments": [
 {
 "empty_from": 220,
-"empty_until": 224
+"empty_until": 224,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 220,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "86",
 "game_id": "1027125",
 "date": "2025-01-31",
@@ -38896,7 +39346,8 @@
 "pull_segments": [
 {
 "empty_from": 881,
-"empty_until": 965
+"empty_until": 965,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -38992,7 +39443,8 @@
 "pull_segments": [
 {
 "empty_from": 1071,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -39026,7 +39478,8 @@
 "pull_segments": [
 {
 "empty_from": 1117,
-"empty_until": 1183
+"empty_until": 1183,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -39125,7 +39578,8 @@
 "pull_segments": [
 {
 "empty_from": 920,
-"empty_until": 980
+"empty_until": 980,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -39215,7 +39669,8 @@
 "pull_segments": [
 {
 "empty_from": 1097,
-"empty_until": 1143
+"empty_until": 1143,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -39299,7 +39754,8 @@
 "pull_segments": [
 {
 "empty_from": 954,
-"empty_until": 973
+"empty_until": 973,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -39369,7 +39825,8 @@
 "pull_segments": [
 {
 "empty_from": 1102,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -39417,11 +39874,13 @@
 "pull_segments": [
 {
 "empty_from": 902,
-"empty_until": 975
+"empty_until": 975,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 988,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -39538,7 +39997,8 @@
 "pull_segments": [
 {
 "empty_from": 972,
-"empty_until": 1130
+"empty_until": 1130,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -39571,7 +40031,8 @@
 "pull_segments": [
 {
 "empty_from": 985,
-"empty_until": 1076
+"empty_until": 1076,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -39604,12 +40065,15 @@
 "pull_segments": [
 {
 "empty_from": 51,
-"empty_until": 62
+"empty_until": 62,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 51,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "86",
 "game_id": "1027201",
 "date": "2025-02-14",
@@ -39687,7 +40151,8 @@
 "pull_segments": [
 {
 "empty_from": 1050,
-"empty_until": 1148
+"empty_until": 1148,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -39770,7 +40235,8 @@
 "pull_segments": [
 {
 "empty_from": 939,
-"empty_until": 1016
+"empty_until": 1016,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -40003,7 +40469,8 @@
 "pull_segments": [
 {
 "empty_from": 1007,
-"empty_until": 1023
+"empty_until": 1023,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -40164,7 +40631,8 @@
 "pull_segments": [
 {
 "empty_from": 861,
-"empty_until": 954
+"empty_until": 954,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -40197,12 +40665,15 @@
 "pull_segments": [
 {
 "empty_from": 710,
-"empty_until": 725
+"empty_until": 725,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 710,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "86",
 "game_id": "1027238",
 "date": "2025-02-19",
@@ -40296,7 +40767,8 @@
 "pull_segments": [
 {
 "empty_from": 1036,
-"empty_until": 1077
+"empty_until": 1077,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -40667,7 +41139,8 @@
 "pull_segments": [
 {
 "empty_from": 866,
-"empty_until": 871
+"empty_until": 871,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -40750,7 +41223,8 @@
 "pull_segments": [
 {
 "empty_from": 940,
-"empty_until": 950
+"empty_until": 950,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -40860,7 +41334,8 @@
 "pull_segments": [
 {
 "empty_from": 951,
-"empty_until": 964
+"empty_until": 964,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -40914,15 +41389,18 @@
 "pull_segments": [
 {
 "empty_from": 791,
-"empty_until": 795
+"empty_until": 795,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 },
 {
 "empty_from": 948,
-"empty_until": 964
+"empty_until": 964,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
-"pull_evidence_secs": 791,
+"pull_evidence_secs": 948,
 "pull_classification": "pull",
 "season": "86",
 "game_id": "1027301",
@@ -40972,7 +41450,8 @@
 "pull_segments": [
 {
 "empty_from": 1012,
-"empty_until": 1047
+"empty_until": 1047,
+"end_context": "penalty_on_leader"
 }
 ],
 "pulled": true,
@@ -41309,7 +41788,8 @@
 "pull_segments": [
 {
 "empty_from": 857,
-"empty_until": 885
+"empty_until": 885,
+"end_context": "penalty_on_leader"
 }
 ],
 "pulled": true,
@@ -41392,11 +41872,13 @@
 "pull_segments": [
 {
 "empty_from": 1050,
-"empty_until": 1067
+"empty_until": 1067,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 1094,
-"empty_until": 1113
+"empty_until": 1113,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -41429,7 +41911,8 @@
 "pull_segments": [
 {
 "empty_from": 808,
-"empty_until": 972
+"empty_until": 972,
+"end_context": "penalty_on_trailer"
 }
 ],
 "pulled": true,
@@ -41477,7 +41960,8 @@
 "pull_segments": [
 {
 "empty_from": 927,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -41753,11 +42237,13 @@
 "pull_segments": [
 {
 "empty_from": 952,
-"empty_until": 995
+"empty_until": 995,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 1002,
-"empty_until": 1119
+"empty_until": 1119,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -41996,7 +42482,8 @@
 "pull_segments": [
 {
 "empty_from": 1024,
-"empty_until": 1179
+"empty_until": 1179,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -42050,7 +42537,8 @@
 "pull_segments": [
 {
 "empty_from": 789,
-"empty_until": 1169
+"empty_until": 1169,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -42105,7 +42593,8 @@
 "pull_segments": [
 {
 "empty_from": 1040,
-"empty_until": 1056
+"empty_until": 1056,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -42431,7 +42920,8 @@
 "pull_segments": [
 {
 "empty_from": 1124,
-"empty_until": 1144
+"empty_until": 1144,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -42479,7 +42969,8 @@
 "pull_segments": [
 {
 "empty_from": 1109,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -42533,7 +43024,8 @@
 "pull_segments": [
 {
 "empty_from": 990,
-"empty_until": 1031
+"empty_until": 1031,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -42559,15 +43051,18 @@
 "pull_segments": [
 {
 "empty_from": 929,
-"empty_until": 955
+"empty_until": 955,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 957,
-"empty_until": 1037
+"empty_until": 1037,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 1108,
-"empty_until": 1193
+"empty_until": 1193,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -42644,7 +43139,8 @@
 "pull_segments": [
 {
 "empty_from": 1020,
-"empty_until": 1098
+"empty_until": 1098,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -42747,7 +43243,8 @@
 "pull_segments": [
 {
 "empty_from": 1068,
-"empty_until": 1165
+"empty_until": 1165,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -42773,12 +43270,15 @@
 "pull_segments": [
 {
 "empty_from": 415,
-"empty_until": 434
+"empty_until": 434,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 415,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "86",
 "game_id": "1027448",
 "date": "2025-03-23",
@@ -43098,7 +43598,8 @@
 "pull_segments": [
 {
 "empty_from": 862,
-"empty_until": 1005
+"empty_until": 1005,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -43131,12 +43632,15 @@
 "pull_segments": [
 {
 "empty_from": 365,
-"empty_until": 370
+"empty_until": 370,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 365,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "86",
 "game_id": "1027469",
 "date": "2025-03-28",
@@ -43214,7 +43718,8 @@
 "pull_segments": [
 {
 "empty_from": 954,
-"empty_until": 958
+"empty_until": 958,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -43462,7 +43967,8 @@
 "pull_segments": [
 {
 "empty_from": 1073,
-"empty_until": 1107
+"empty_until": 1107,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -43708,11 +44214,13 @@
 "pull_segments": [
 {
 "empty_from": 806,
-"empty_until": 835
+"empty_until": 835,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 919,
-"empty_until": 983
+"empty_until": 983,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -43796,7 +44304,8 @@
 "pull_segments": [
 {
 "empty_from": 76,
-"empty_until": 111
+"empty_until": 111,
+"end_context": "penalty_on_leader"
 }
 ],
 "pulled": true,
@@ -43872,11 +44381,13 @@
 "pull_segments": [
 {
 "empty_from": 1037,
-"empty_until": 1069
+"empty_until": 1069,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 1074,
-"empty_until": 1175
+"empty_until": 1175,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -44000,7 +44511,8 @@
 "pull_segments": [
 {
 "empty_from": 842,
-"empty_until": 849
+"empty_until": 849,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -44146,7 +44658,8 @@
 "pull_segments": [
 {
 "empty_from": 893,
-"empty_until": 934
+"empty_until": 934,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -44179,7 +44692,8 @@
 "pull_segments": [
 {
 "empty_from": 961,
-"empty_until": 999
+"empty_until": 999,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -44367,7 +44881,8 @@
 "pull_segments": [
 {
 "empty_from": 1050,
-"empty_until": 1149
+"empty_until": 1149,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -44400,12 +44915,15 @@
 "pull_segments": [
 {
 "empty_from": 123,
-"empty_until": 128
+"empty_until": 128,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 123,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "86",
 "game_id": "1027558",
 "date": "2025-04-11",
@@ -44858,7 +45376,8 @@
 "pull_segments": [
 {
 "empty_from": 73,
-"empty_until": 106
+"empty_until": 106,
+"end_context": "penalty_on_leader"
 }
 ],
 "pulled": true,
@@ -44990,11 +45509,13 @@
 "pull_segments": [
 {
 "empty_from": 720,
-"empty_until": 785
+"empty_until": 785,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 790,
-"empty_until": 812
+"empty_until": 812,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -45027,7 +45548,8 @@
 "pull_segments": [
 {
 "empty_from": 821,
-"empty_until": 1178
+"empty_until": 1178,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -45231,7 +45753,8 @@
 "pull_segments": [
 {
 "empty_from": 950,
-"empty_until": 1048
+"empty_until": 1048,
+"end_context": "penalty_on_trailer"
 }
 ],
 "pulled": true,
@@ -45536,7 +46059,8 @@
 "pull_segments": [
 {
 "empty_from": 1056,
-"empty_until": 1161
+"empty_until": 1161,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -45647,7 +46171,8 @@
 "pull_segments": [
 {
 "empty_from": 886,
-"empty_until": 917
+"empty_until": 917,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -45752,7 +46277,8 @@
 "pull_segments": [
 {
 "empty_from": 1060,
-"empty_until": 1154
+"empty_until": 1154,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -45806,7 +46332,8 @@
 "pull_segments": [
 {
 "empty_from": 885,
-"empty_until": 1180
+"empty_until": 1180,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -46053,7 +46580,8 @@
 "pull_segments": [
 {
 "empty_from": 1120,
-"empty_until": 1199
+"empty_until": 1199,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -46299,7 +46827,8 @@
 "pull_segments": [
 {
 "empty_from": 459,
-"empty_until": 854
+"empty_until": 854,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -46410,12 +46939,15 @@
 "pull_segments": [
 {
 "empty_from": 775,
-"empty_until": 782
+"empty_until": 782,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 775,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "90",
 "game_id": "1027843",
 "date": "2025-10-24",
@@ -46436,7 +46968,8 @@
 "pull_segments": [
 {
 "empty_from": 349,
-"empty_until": 400
+"empty_until": 400,
+"end_context": "penalty_on_leader"
 }
 ],
 "pulled": true,
@@ -46497,7 +47030,8 @@
 "pull_segments": [
 {
 "empty_from": 878,
-"empty_until": 1064
+"empty_until": 1064,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -46552,12 +47086,15 @@
 "pull_segments": [
 {
 "empty_from": 495,
-"empty_until": 520
+"empty_until": 520,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 495,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "90",
 "game_id": "1027852",
 "date": "2025-10-24",
@@ -46585,7 +47122,8 @@
 "pull_segments": [
 {
 "empty_from": 871,
-"empty_until": 963
+"empty_until": 963,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -46639,7 +47177,8 @@
 "pull_segments": [
 {
 "empty_from": 1085,
-"empty_until": 1160
+"empty_until": 1160,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -46749,7 +47288,8 @@
 "pull_segments": [
 {
 "empty_from": 983,
-"empty_until": 1126
+"empty_until": 1126,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -46890,12 +47430,15 @@
 "pull_segments": [
 {
 "empty_from": 607,
-"empty_until": 608
+"empty_until": 608,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 607,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "90",
 "game_id": "1027878",
 "date": "2025-10-29",
@@ -47015,7 +47558,8 @@
 "pull_segments": [
 {
 "empty_from": 1058,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -47119,12 +47663,15 @@
 "pull_segments": [
 {
 "empty_from": 767,
-"empty_until": 769
+"empty_until": 769,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 767,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "90",
 "game_id": "1027900",
 "date": "2025-11-01",
@@ -47252,7 +47799,8 @@
 "pull_segments": [
 {
 "empty_from": 877,
-"empty_until": 1047
+"empty_until": 1047,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -47357,7 +47905,8 @@
 "pull_segments": [
 {
 "empty_from": 882,
-"empty_until": 973
+"empty_until": 973,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -47390,7 +47939,8 @@
 "pull_segments": [
 {
 "empty_from": 940,
-"empty_until": 982
+"empty_until": 982,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -47798,7 +48348,8 @@
 "pull_segments": [
 {
 "empty_from": 963,
-"empty_until": 1100
+"empty_until": 1100,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -47831,7 +48382,8 @@
 "pull_segments": [
 {
 "empty_from": 1001,
-"empty_until": 1043
+"empty_until": 1043,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -47969,7 +48521,8 @@
 "pull_segments": [
 {
 "empty_from": 1010,
-"empty_until": 1053
+"empty_until": 1053,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -48222,12 +48775,15 @@
 "pull_segments": [
 {
 "empty_from": 177,
-"empty_until": 179
+"empty_until": 179,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 177,
-"pull_classification": "pp_pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "90",
 "game_id": "1027993",
 "date": "2025-11-15",
@@ -48277,7 +48833,8 @@
 "pull_segments": [
 {
 "empty_from": 1091,
-"empty_until": 1168
+"empty_until": 1168,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -48404,7 +48961,8 @@
 "pull_segments": [
 {
 "empty_from": 1029,
-"empty_until": 1112
+"empty_until": 1112,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -48437,12 +48995,15 @@
 "pull_segments": [
 {
 "empty_from": 59,
-"empty_until": 62
+"empty_until": 62,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 59,
-"pull_classification": "pp_pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "90",
 "game_id": "1028007",
 "date": "2025-11-19",
@@ -48569,7 +49130,8 @@
 "pull_segments": [
 {
 "empty_from": 872,
-"empty_until": 994
+"empty_until": 994,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -48880,7 +49442,8 @@
 "pull_segments": [
 {
 "empty_from": 146,
-"empty_until": 175
+"empty_until": 175,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -48934,12 +49497,15 @@
 "pull_segments": [
 {
 "empty_from": 347,
-"empty_until": 371
+"empty_until": 371,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 347,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "90",
 "game_id": "1028048",
 "date": "2025-11-26",
@@ -49244,12 +49810,15 @@
 "pull_segments": [
 {
 "empty_from": 249,
-"empty_until": 274
+"empty_until": 274,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 249,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "90",
 "game_id": "1028065",
 "date": "2025-11-29",
@@ -49328,7 +49897,8 @@
 "pull_segments": [
 {
 "empty_from": 804,
-"empty_until": 850
+"empty_until": 850,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -49853,12 +50423,15 @@
 "pull_segments": [
 {
 "empty_from": 360,
-"empty_until": 368
+"empty_until": 368,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 360,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "90",
 "game_id": "1028102",
 "date": "2025-12-05",
@@ -49886,7 +50459,8 @@
 "pull_segments": [
 {
 "empty_from": 977,
-"empty_until": 997
+"empty_until": 997,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -49962,12 +50536,15 @@
 "pull_segments": [
 {
 "empty_from": 1102,
-"empty_until": 1119
+"empty_until": 1119,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 1102,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "90",
 "game_id": "1028110",
 "date": "2025-12-06",
@@ -50017,7 +50594,8 @@
 "pull_segments": [
 {
 "empty_from": 837,
-"empty_until": 991
+"empty_until": 991,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -50050,7 +50628,8 @@
 "pull_segments": [
 {
 "empty_from": 849,
-"empty_until": 932
+"empty_until": 932,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -50083,7 +50662,8 @@
 "pull_segments": [
 {
 "empty_from": 981,
-"empty_until": 1100
+"empty_until": 1100,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -50144,7 +50724,8 @@
 "pull_segments": [
 {
 "empty_from": 1118,
-"empty_until": 1170
+"empty_until": 1170,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -50242,11 +50823,13 @@
 "pull_segments": [
 {
 "empty_from": 730,
-"empty_until": 966
+"empty_until": 966,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 995,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -50330,7 +50913,8 @@
 "pull_segments": [
 {
 "empty_from": 955,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -50456,12 +51040,15 @@
 "pull_segments": [
 {
 "empty_from": 550,
-"empty_until": 558
+"empty_until": 558,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 550,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "90",
 "game_id": "1028143",
 "date": "2025-12-12",
@@ -50617,7 +51204,8 @@
 "pull_segments": [
 {
 "empty_from": 732,
-"empty_until": 866
+"empty_until": 866,
+"end_context": "penalty_on_trailer"
 }
 ],
 "pulled": true,
@@ -51056,7 +51644,8 @@
 "pull_segments": [
 {
 "empty_from": 1041,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -51133,7 +51722,8 @@
 "pull_segments": [
 {
 "empty_from": 960,
-"empty_until": 969
+"empty_until": 969,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -51232,12 +51822,15 @@
 "pull_segments": [
 {
 "empty_from": 684,
-"empty_until": 698
+"empty_until": 698,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 684,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "90",
 "game_id": "1028224",
 "date": "2025-12-27",
@@ -51287,7 +51880,8 @@
 "pull_segments": [
 {
 "empty_from": 945,
-"empty_until": 963
+"empty_until": 963,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -51442,7 +52036,8 @@
 "pull_segments": [
 {
 "empty_from": 1076,
-"empty_until": 1185
+"empty_until": 1185,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -51475,7 +52070,8 @@
 "pull_segments": [
 {
 "empty_from": 875,
-"empty_until": 928
+"empty_until": 928,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -51524,7 +52120,8 @@
 "pull_segments": [
 {
 "empty_from": 1120,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -51836,11 +52433,13 @@
 "pull_segments": [
 {
 "empty_from": 949,
-"empty_until": 973
+"empty_until": 973,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 985,
-"empty_until": 1040
+"empty_until": 1040,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -51888,7 +52487,8 @@
 "pull_segments": [
 {
 "empty_from": 983,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -52389,11 +52989,13 @@
 "pull_segments": [
 {
 "empty_from": 705,
-"empty_until": 742
+"empty_until": 742,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 791,
-"empty_until": 831
+"empty_until": 831,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -52533,12 +53135,15 @@
 "pull_segments": [
 {
 "empty_from": 434,
-"empty_until": 452
+"empty_until": 452,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 434,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "90",
 "game_id": "1028319",
 "date": "2026-01-11",
@@ -52722,7 +53327,8 @@
 "pull_segments": [
 {
 "empty_from": 957,
-"empty_until": 979
+"empty_until": 979,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -52848,7 +53454,8 @@
 "pull_segments": [
 {
 "empty_from": 887,
-"empty_until": 1057
+"empty_until": 1057,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -52925,7 +53532,8 @@
 "pull_segments": [
 {
 "empty_from": 788,
-"empty_until": 918
+"empty_until": 918,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -52995,7 +53603,8 @@
 "pull_segments": [
 {
 "empty_from": 1127,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -53241,7 +53850,8 @@
 "pull_segments": [
 {
 "empty_from": 985,
-"empty_until": 1150
+"empty_until": 1150,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -53296,15 +53906,18 @@
 "pull_segments": [
 {
 "empty_from": 755,
-"empty_until": 756
+"empty_until": 756,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 },
 {
 "empty_from": 924,
-"empty_until": 926
+"empty_until": 926,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
-"pull_evidence_secs": 755,
+"pull_evidence_secs": 924,
 "pull_classification": "pull",
 "season": "90",
 "game_id": "1028380",
@@ -53398,7 +54011,8 @@
 "pull_segments": [
 {
 "empty_from": 1048,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -53474,7 +54088,8 @@
 "pull_segments": [
 {
 "empty_from": 998,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -54038,11 +54653,13 @@
 "pull_segments": [
 {
 "empty_from": 946,
-"empty_until": 1043
+"empty_until": 1043,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 1055,
-"empty_until": 1185
+"empty_until": 1185,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
@@ -54257,7 +54874,8 @@
 "pull_segments": [
 {
 "empty_from": 992,
-"empty_until": 1051
+"empty_until": 1051,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -54383,12 +55001,15 @@
 "pull_segments": [
 {
 "empty_from": 550,
-"empty_until": 562
+"empty_until": 562,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 550,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "90",
 "game_id": "1028470",
 "date": "2026-02-06",
@@ -54488,16 +55109,19 @@
 "pull_segments": [
 {
 "empty_from": 949,
-"empty_until": 951
+"empty_until": 951,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 },
 {
 "empty_from": 972,
-"empty_until": 1195
+"empty_until": 1195,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
-"pull_evidence_secs": 949,
-"pull_classification": "pull",
+"pull_evidence_secs": 972,
+"pull_classification": "pp_pull",
 "season": "90",
 "game_id": "1028483",
 "date": "2026-02-07",
@@ -54595,7 +55219,8 @@
 "pull_segments": [
 {
 "empty_from": 899,
-"empty_until": 941
+"empty_until": 941,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -54656,7 +55281,8 @@
 "pull_segments": [
 {
 "empty_from": 948,
-"empty_until": 1002
+"empty_until": 1002,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -54717,20 +55343,24 @@
 "pull_segments": [
 {
 "empty_from": 857,
-"empty_until": 875
+"empty_until": 875,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 },
 {
 "empty_from": 931,
-"empty_until": 972
+"empty_until": 972,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 985,
-"empty_until": 1023
+"empty_until": 1023,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
-"pull_evidence_secs": 857,
-"pull_classification": "pull",
+"pull_evidence_secs": 931,
+"pull_classification": "pp_pull",
 "season": "90",
 "game_id": "1028497",
 "date": "2026-02-13",
@@ -55047,16 +55677,19 @@
 "pull_segments": [
 {
 "empty_from": 1054,
-"empty_until": 1058
+"empty_until": 1058,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 },
 {
 "empty_from": 1062,
-"empty_until": 1183
+"empty_until": 1183,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
-"pull_evidence_secs": 1054,
-"pull_classification": "pull",
+"pull_evidence_secs": 1062,
+"pull_classification": "pp_pull",
 "season": "90",
 "game_id": "1028512",
 "date": "2026-02-14",
@@ -55084,7 +55717,8 @@
 "pull_segments": [
 {
 "empty_from": 803,
-"empty_until": 914
+"empty_until": 914,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -55237,11 +55871,13 @@
 "pull_segments": [
 {
 "empty_from": 1024,
-"empty_until": 1165
+"empty_until": 1165,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 1174,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -55372,12 +56008,15 @@
 "pull_segments": [
 {
 "empty_from": 1190,
-"empty_until": 1194
+"empty_until": 1194,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 1190,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "90",
 "game_id": "1028546",
 "date": "2026-02-20",
@@ -55420,7 +56059,8 @@
 "pull_segments": [
 {
 "empty_from": 1101,
-"empty_until": 1127
+"empty_until": 1127,
+"end_context": "penalty_on_leader"
 }
 ],
 "pulled": true,
@@ -55580,7 +56220,8 @@
 "pull_segments": [
 {
 "empty_from": 989,
-"empty_until": 1064
+"empty_until": 1064,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -55614,7 +56255,8 @@
 "pull_segments": [
 {
 "empty_from": 876,
-"empty_until": 1090
+"empty_until": 1090,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -56068,7 +56710,8 @@
 "pull_segments": [
 {
 "empty_from": 1008,
-"empty_until": 1017
+"empty_until": 1017,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -56202,7 +56845,8 @@
 "pull_segments": [
 {
 "empty_from": 1097,
-"empty_until": 1110
+"empty_until": 1110,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -56278,7 +56922,8 @@
 "pull_segments": [
 {
 "empty_from": 1130,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -56389,7 +57034,8 @@
 "pull_segments": [
 {
 "empty_from": 1044,
-"empty_until": 1161
+"empty_until": 1161,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -56727,7 +57373,8 @@
 "pull_segments": [
 {
 "empty_from": 943,
-"empty_until": 975
+"empty_until": 975,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -56953,7 +57600,8 @@
 "pull_segments": [
 {
 "empty_from": 866,
-"empty_until": 1044
+"empty_until": 1044,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -57029,7 +57677,8 @@
 "pull_segments": [
 {
 "empty_from": 931,
-"empty_until": 948
+"empty_until": 948,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -57413,11 +58062,13 @@
 "pull_segments": [
 {
 "empty_from": 846,
-"empty_until": 890
+"empty_until": 890,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 985,
-"empty_until": 1009
+"empty_until": 1009,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -57471,7 +58122,8 @@
 "pull_segments": [
 {
 "empty_from": 979,
-"empty_until": 1035
+"empty_until": 1035,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -57532,7 +58184,8 @@
 "pull_segments": [
 {
 "empty_from": 946,
-"empty_until": 967
+"empty_until": 967,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -57855,7 +58508,8 @@
 "pull_segments": [
 {
 "empty_from": 943,
-"empty_until": 1022
+"empty_until": 1022,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -57911,16 +58565,21 @@
 "pull_segments": [
 {
 "empty_from": 150,
-"empty_until": 162
+"empty_until": 162,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 },
 {
 "empty_from": 1002,
-"empty_until": 1005
+"empty_until": 1005,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 150,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "90",
 "game_id": "1028731",
 "date": "2026-03-21",
@@ -57976,7 +58635,8 @@
 "pull_segments": [
 {
 "empty_from": 1082,
-"empty_until": 1124
+"empty_until": 1124,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -58685,7 +59345,8 @@
 "pull_segments": [
 {
 "empty_from": 480,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -58838,11 +59499,13 @@
 "pull_segments": [
 {
 "empty_from": 663,
-"empty_until": 706
+"empty_until": 706,
+"end_context": "penalty_on_leader"
 },
 {
 "empty_from": 945,
-"empty_until": 977
+"empty_until": 977,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -58968,12 +59631,15 @@
 "pull_segments": [
 {
 "empty_from": 294,
-"empty_until": 308
+"empty_until": 308,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 294,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "90",
 "game_id": "1028782",
 "date": "2026-03-28",
@@ -59001,12 +59667,15 @@
 "pull_segments": [
 {
 "empty_from": 694,
-"empty_until": 707
+"empty_until": 707,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 694,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "90",
 "game_id": "1028783",
 "date": "2026-03-28",
@@ -59134,12 +59803,15 @@
 "pull_segments": [
 {
 "empty_from": 348,
-"empty_until": 357
+"empty_until": 357,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 348,
-"pull_classification": "pp_pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "90",
 "game_id": "1028795",
 "date": "2026-03-29",
@@ -59195,16 +59867,19 @@
 "pull_segments": [
 {
 "empty_from": 755,
-"empty_until": 760
+"empty_until": 760,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 },
 {
 "empty_from": 1016,
-"empty_until": 1079
+"empty_until": 1079,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
-"pull_evidence_secs": 755,
-"pull_classification": "pp_pull",
+"pull_evidence_secs": 1016,
+"pull_classification": "pull",
 "season": "90",
 "game_id": "1028799",
 "date": "2026-03-31",
@@ -59232,7 +59907,8 @@
 "pull_segments": [
 {
 "empty_from": 399,
-"empty_until": 409
+"empty_until": 409,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -59478,7 +60154,8 @@
 "pull_segments": [
 {
 "empty_from": 951,
-"empty_until": 1152
+"empty_until": 1152,
+"end_context": "penalty_on_trailer"
 }
 ],
 "pulled": true,
@@ -59596,7 +60273,8 @@
 "pull_segments": [
 {
 "empty_from": 995,
-"empty_until": 1189
+"empty_until": 1189,
+"end_context": "penalty_on_leader"
 }
 ],
 "pulled": true,
@@ -59680,7 +60358,8 @@
 "pull_segments": [
 {
 "empty_from": 1071,
-"empty_until": 1100
+"empty_until": 1100,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -59714,7 +60393,8 @@
 "pull_segments": [
 {
 "empty_from": 1086,
-"empty_until": 1138
+"empty_until": 1138,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -59841,7 +60521,8 @@
 "pull_segments": [
 {
 "empty_from": 803,
-"empty_until": 1040
+"empty_until": 1040,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -59902,11 +60583,13 @@
 "pull_segments": [
 {
 "empty_from": 917,
-"empty_until": 998
+"empty_until": 998,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 1088,
-"empty_until": 1123
+"empty_until": 1123,
+"end_context": "scored_6v5"
 }
 ],
 "pulled": true,
@@ -60033,12 +60716,15 @@
 "pull_segments": [
 {
 "empty_from": 292,
-"empty_until": 293
+"empty_until": 293,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 292,
-"pull_classification": "pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "90",
 "game_id": "1028855",
 "date": "2026-04-10",
@@ -60189,7 +60875,8 @@
 "pull_segments": [
 {
 "empty_from": 1120,
-"empty_until": 1194
+"empty_until": 1194,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -60222,11 +60909,13 @@
 "pull_segments": [
 {
 "empty_from": 969,
-"empty_until": 1109
+"empty_until": 1109,
+"end_context": "returned_no_event"
 },
 {
 "empty_from": 1114,
-"empty_until": 1183
+"empty_until": 1183,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -60354,7 +61043,8 @@
 "pull_segments": [
 {
 "empty_from": 1076,
-"empty_until": 1097
+"empty_until": 1097,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -60415,7 +61105,8 @@
 "pull_segments": [
 {
 "empty_from": 961,
-"empty_until": 1058
+"empty_until": 1058,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -60583,7 +61274,8 @@
 "pull_segments": [
 {
 "empty_from": 920,
-"empty_until": 1200
+"empty_until": 1200,
+"end_context": "horn"
 }
 ],
 "pulled": true,
@@ -60794,7 +61486,8 @@
 "pull_segments": [
 {
 "empty_from": 1011,
-"empty_until": 1142
+"empty_until": 1142,
+"end_context": "ate_ENG"
 }
 ],
 "pulled": true,
@@ -60926,7 +61619,8 @@
 "pull_segments": [
 {
 "empty_from": 966,
-"empty_until": 1184
+"empty_until": 1184,
+"end_context": "penalty_on_leader"
 }
 ],
 "pulled": true,
@@ -60980,16 +61674,19 @@
 "pull_segments": [
 {
 "empty_from": 1013,
-"empty_until": 1035
+"empty_until": 1035,
+"end_context": "penalty_on_leader",
+"dp_artifact": true
 },
 {
 "empty_from": 1045,
-"empty_until": 1136
+"empty_until": 1136,
+"end_context": "returned_no_event"
 }
 ],
 "pulled": true,
-"pull_evidence_secs": 1013,
-"pull_classification": "pull",
+"pull_evidence_secs": 1045,
+"pull_classification": "pp_pull",
 "season": "90",
 "game_id": "1028899",
 "date": "2026-04-17",
