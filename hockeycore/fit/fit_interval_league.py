@@ -173,6 +173,30 @@ def main(league, train=False, seasons_override=None):
                     if 2400 + o <= p["begin"] < 2400 + c:
                         pen_events[gap][0 if p["side"] == tn else 1] += 1
 
+    # ---- EN-rate shrinkage toward the cross-gap pool (2026-08-01) ----------
+    # Rare-event rates from thin gap cells are noise (Liiga gap-3 'for' = 6
+    # events -> 3.9/60 vs pooled truth ~7). NHL (large T) shows 6v5-for is
+    # flat across gaps and 'against' differs mildly, so shrink each gap cell
+    # toward the pooled(2-4) rate with pseudo-exposure TAU: big cells keep
+    # their own number, thin cells inherit the pool.
+    TAU = 20000.0
+    for st in ("EN_ev", "EN_pp", "EN_pk"):
+        for d in ("for", "against"):
+            Tp = sum(exp[(g, st)] for g in (2, 3, 4))
+            Gp = sum(goals[(g, st, d)] for g in (2, 3, 4))
+            if Tp <= 0:
+                continue
+            r_pool = Gp / Tp
+            for g in (2, 3, 4):
+                T = exp[(g, st)]
+                goals[(g, st, d)] = goals[(g, st, d)] + r_pool * TAU
+                # exposure inflated symmetrically at build below via _shrunkT
+            _ = r_pool
+    _shrunkT = {}
+    for st in ("EN_ev", "EN_pp", "EN_pk"):
+        for g in (2, 3, 4):
+            _shrunkT[(g, st)] = exp[(g, st)] + TAU
+
     GK = {2: "2", 3: "3", 4: "4"}
     fits = {"hazard": {}, "m_PP": {}, "rates": {}, "rates_R": {}, "pen": {}}
     for gap in (2, 3, 4):
@@ -189,7 +213,7 @@ def main(league, train=False, seasons_override=None):
         fits["rates"][GK[gap]] = {}
         for st in ("EV_full", "TPP_full", "TPK_full", "EN_ev", "EN_pp", "EN_pk"):
             for d in ("for", "against"):
-                T = exp[(gap, st)]
+                T = _shrunkT.get((gap, st), exp[(gap, st)])
                 fits["rates"][GK[gap]][f"{st}:{d}"] = {
                     "T": T, "rate_per_60min":
                         (goals[(gap, st, d)] / T * 3600) if T > 0 else None}

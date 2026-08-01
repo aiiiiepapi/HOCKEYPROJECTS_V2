@@ -153,3 +153,15 @@ NOTE: new coach layer is PROVISIONAL until blind re-validation (next block).
     rates + AHL pull structure on 90-H2 -> WORSE everywhere (lead1
     -10.3, total1 -8.9, marg4 -17.8). Foreign level + equally static.
     NHL contributes SHAPES to other leagues, never LEVELS.
+
+27. **EN-rate shrinkage + Liiga league-table retraction (2026-08-01, Seb's
+    challenge "our Finland numbers are wrong").** Verification: Liiga EN
+    measurement is CORRECT (TM-flag agreement 79/79, 90/90, 95/95; rates
+    stable across 3 seasons). But the quoted league table used the gap-3-only
+    cell (SIX 6v5-for events -> "3.9/60, half of AHL") — RETRACTED (15b).
+    Well-sampled truth: Liiga 6v5-for 5.9-8.8/60 ~= AHL/NHL ~8; against
+    22-25.5 ~= NHL 22.4. Finland's EN behavior is normal; only pull
+    FREQUENCY differs. Fix shipped: interval-league fitter shrinks each
+    gap's EN rates toward the cross-gap pool (TAU=20000s pseudo-exposure;
+    NHL large-T shows 6v5-for flat across gaps). Liiga blind re-run:
+    calibration unchanged-to-hair-better, all gates green.

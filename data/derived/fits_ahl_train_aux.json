@@ -1,11 +1,12 @@
 {
- "return_hazard_per_sec": 0.003158623718392649,
- "h_repull": 0.026672496720594664,
+ "return_hazard_per_sec": 0.0030868495567005524,
+ "h_repull": 0.02030376957582435,
  "evidence_lag": 0,
  "dead": 18,
  "seasons": [
-  "86",
-  "90"
+  "77",
+  "81",
+  "86"
  ],
  "league": "ahl"
 }
