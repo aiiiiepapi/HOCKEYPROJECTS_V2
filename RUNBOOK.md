@@ -32,6 +32,12 @@ green or the output does not ship. A pre-commit hook enforces this on commit.
 | Coach profiles | `python3 hockeycore/fit/build_coach_profiles.py` | after clean_window + pp analyses |
 | 30s friendly lines table (needs profiles) | `python3 hockeycore/io/build_lines_table.py` | after grid |
 
+LAW CHANGE 2026-08-01 (ruling 23): pricing grids are keyed on COACH PULL %
+(0.25..0.85), not multipliers. After pulling this change: rerun
+make_dense_grid -> build_persecond_lines -> build_calculator ->
+build_lines_table, and make_manual_grid (both grids ~15-45 min each), then
+deliver the rebuilt xlsx files per the Delivery section.
+
 Formatting/cosmetic changes: edit the two build_* scripts (labels, colors,
 intervals are all near the top), rerun, done. No modeling knowledge needed.
 

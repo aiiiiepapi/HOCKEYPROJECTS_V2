@@ -1,4 +1,15 @@
-# -3.5 (marg4) root cause — nailed 2026-08-01
+# -3.5 (marg4) investigation — CORRECTED 2026-08-01 (same day)
+
+RETRACTION: the "coach-tier-dependent EN conversion" claim below was WRONG —
+training-season data (22-25) shows conversion FLAT across P_c buckets
+(38.8/27.0/35.3, slope ~0). The 25-26 tier gradient was small-n noise; the
+original note even carried the rule-15b caveat and still over-claimed. The
+measured truth: 25-26 tail coaches regressed ~2sigma against their estimates
+(season wobble, pooled persistence 0.99 [0.42..1.50]) — no structural defect
+found beyond that. marg4's -4to-5pt optimism REMAINS OPEN; it is not the
+coach layer. Next candidate when data grows: direction-mix dynamics after
+widening (reality shows more two-way traffic than the sim).
+
 
 ## What was tested and refuted
 1. Survival-mapped coach law k = ln(1-P_c)/ln(1-P̄) (window-independent,

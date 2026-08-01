@@ -95,3 +95,16 @@ NOTE: new coach layer is PROVISIONAL until blind re-validation (next block).
     sim pools it. Root cause of -3.5 CAUTION identified; fix = coach-
     conditional conversion + survival hazard, next Fable block
     (docs/marg4_root_cause.md). Production stays on 0.355 law meanwhile.
+
+23. **DENSITY-PRESERVING COACH LAW ADOPTED (2026-08-01, Seb ratified).**
+    Production prices every coach via coach_hazard_array(P_c): pull
+    probability = the clean-window Beta+recency posterior, league timing
+    shape preserved exactly. Raw-EB multipliers + 0.355 attenuation RETIRED.
+    Evidence: pooled cross-season persistence of P_c = 0.99 [0.42..1.50];
+    survival-k scaling shifts pulls ~26s early (rejected); EN-conversion-by-
+    tier hypothesis RETRACTED (training data flat — the 25-26 gradient was
+    small-n noise, a rule-15b violation caught next block). Blind 25-26:
+    all calibration gates pass, lead1 bias +2.4 -> +1.5pts; leaderTT ROI
+    +21.3% (P(>edge) 0.973 -> 0.946; gate moved 0.95 -> 0.94 with Seb's
+    ratification). -3.5 stays CAUTION (bias -4.9pts, season-wobble limited).
+    Grids/tables re-keyed to pull-%% tiers (25/40/55/70/85).

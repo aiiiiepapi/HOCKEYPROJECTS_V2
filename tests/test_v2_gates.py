@@ -121,7 +121,11 @@ def test_roi_at_threshold_lines():
     for k in ("leaderTT_over", "leader_-3.5", "gametotal_over"):
         assert m[k]["roi"] > 0, f"{k}: negative realized ROI at 10%-EV line"
     assert m["leaderTT_over"]["ci95_game_cluster"][0] > 0
-    assert m["leaderTT_over"]["p_roi_gt_edge"] > 0.95
+    # 0.95 -> 0.94 (Seb ratified 2026-08-01, ruling 23): the density coach
+    # law prices tail coaches at their true P_c; 25-26's tail regression
+    # (~2sigma season wobble) costs ~1.5 ROI pts on this one season, moving
+    # the bootstrap statistic 0.973 -> 0.946. Point ROI +21.3%, CI floor +7.3%.
+    assert m["leaderTT_over"]["p_roi_gt_edge"] > 0.94
 
 
 def test_eihl_ground_truth():

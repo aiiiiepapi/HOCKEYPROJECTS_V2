@@ -27,8 +27,8 @@ STATE_FILL = {
     "not_pulled_PP": PatternFill("solid", fgColor="DCE9F7"),
     "pulled": PatternFill("solid", fgColor="FCE4D6"),
 }
-TIER_LABEL = {0.55: "0.55 very passive", 0.80: "0.80 passive", 1.00: "1.00 league avg",
-              1.30: "1.30 aggressive", 1.85: "1.85 very aggressive", 2.40: "2.40 extreme"}
+TIER_LABEL = {0.25: "25% rarely pulls", 0.40: "40% passive", 0.55: "55% league avg",
+              0.70: "70% aggressive", 0.85: "85% near-automatic"}
 MARKETS = [("P_total_ge1", "Game total OVER"), ("P_leader_ge1", "Leader TT OVER"),
            ("P_margin_ge4", "Leader -3.5")]
 
@@ -128,8 +128,9 @@ def main():
         c.font = HDR_FONT; c.fill = HDR_FILL
         c.alignment = Alignment(horizontal="center", wrap_text=True)
 
-    def tier_of(m):
-        best = min(TIER_LABEL, key=lambda t: abs(t - m))
+    def tier_of(pp):
+        # density law (ruling 23): tiers are expected pull %, matched directly
+        best = min(TIER_LABEL, key=lambda t: abs(t - pp))
         return TIER_LABEL[best]
 
     # current coach = latest last_seen per team

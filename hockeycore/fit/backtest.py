@@ -1,6 +1,14 @@
 """
 Walk-forward backtest: fit 2024-25 → price 2025-26 blind.
 Outcomes recomputed from RAW pbp goal events (rule 0), full chain to horn.
+
+COACH LAW (production, adopted 2026-08-01, ruling 23, Seb ratified): DENSITY-
+PRESERVING — price with mc_pricer.coach_hazard_array(P_c), P_c = clean-window
+Beta+recency posterior computed LEAK-FREE from chances before 2025-09-01.
+Pull probability hits the coach's number, league timing shape preserved
+(timing ruling 14). Replaces raw-EB multipliers + 0.355 attenuation: pooled
+cross-season persistence of P_c is 0.99 [0.42..1.50] -> no extra blend; the
+attenuation was a patch for the retired raw-EB estimator (persistence 0.36).
 """
 import json, sys, random
 from pathlib import Path
@@ -29,14 +37,43 @@ for i in insts_2425:
 MP._ret = re_ev / ps
 print(f"pricer rewired to 24-25 fits (return hazard {MP._ret:.5f})")
 
-coach_m = json.load(open(DER / "coach_m_2425.json"))
-_ts = json.load(open(DER / "timing_shifts.json"))["backtest_2425"]
+# ---- leak-free coach P_c (Beta+recency, chances < cutoff only) --------------
+from collections import defaultdict
+CUTOFF = "2025-09-01"
+HL = 10.0
+_cw = [r for r in json.load(open(DER / "clean_window_instances.json")) if r["date"] < CUTOFF]
+_seqs = defaultdict(list)
+for _r in sorted(_cw, key=lambda x: x["date"]):
+    _took = _r["pulled"] and _r["pull_type"] == "ev"
+    if _took or ((not _took) and _r["frac_ev"] >= 0.7):
+        _seqs[_r["coach"]].append(1 if _took else 0)
+_rates = [(sum(s) / len(s), len(s)) for s in _seqs.values() if len(s) >= 8]
+_w = sum(n for _, n in _rates)
+_mu = sum(r * n for r, n in _rates) / _w
+_var = sum(n * (r - _mu) ** 2 for r, n in _rates) / _w
+_var = max(_var - _mu * (1 - _mu) / (_w / len(_rates)), 1e-4)
+_st = max(min(_mu * (1 - _mu) / _var - 1, 40.0), 1.0)
+_A, _B = _mu * _st, (1 - _mu) * _st
+
+def p_coach(name):
+    s = _seqs.get(name, [])
+    kw = sum(x * 0.5 ** ((len(s) - 1 - i) / HL) for i, x in enumerate(s))
+    nw = sum(0.5 ** ((len(s) - 1 - i) / HL) for i in range(len(s)))
+    return (kw + _A) / (nw + _A + _B)
+
+_haz_cache = {}
+def _haz_for(pi):
+    key = round(min(max(pi, 0.05), 0.95), 2)
+    if key not in _haz_cache:
+        _haz_cache[key] = MP.coach_hazard_array(key)
+    return _haz_cache[key]
 
 _cache = {}
-def cached_price(R, pulled, strength, m, shift=0):
-    key = (R, pulled, strength, round(m, 2), shift)
+def cached_price(R, pulled, strength, pi):
+    key = (R, pulled, strength, round(min(max(pi, 0.05), 0.95), 2))
     if key not in _cache:
-        _cache[key] = MP.price(R, pulled0=pulled, strength0=strength, m_coach=m, n=20000, seed=13, coach_shift=shift)
+        _cache[key] = MP.price(R, pulled0=pulled, strength0=strength, m_coach=1.0,
+                               n=20000, seed=13, haz3_override=_haz_for(pi))
     return _cache[key]
 
 def outcomes_from_raw(gid, t_cp, leader_is_home, entry, p3goals):
@@ -76,18 +113,14 @@ def main():
             tsk = int(sit[2] if trail_home else sit[1]); lsk = int(sit[1] if trail_home else sit[2])
             strength = "T_PP" if tsk > lsk and not pulled else ("T_PK" if tsk < lsk else "EV")
             if pulled: strength = "EV"  # pulled cells priced at EN of current diff; keep EV entry
-            cm_raw = coach_m.get(inst["trailing_coach"], {"m": 1.0})
-            # PRODUCTION LAW: attenuate (persistence 0.355; leak-free re-check
-            # 0.379 on 22-24 pairs) — the raw-EB backtest was the decile-9 bug
-            cm = {"m": 1 + 0.355 * (cm_raw["m"] - 1)}
-            new_coach = inst["trailing_coach"] not in coach_m
-            sh = 0   # production ruling 2026-07-26: timing OFF
-            p = cached_price(R, pulled, strength, cm["m"], sh)
-            pb = cached_price(R, pulled, strength, 1.0)  # coach-blind pseudo-market
+            pi = p_coach(inst["trailing_coach"])
+            new_coach = inst["trailing_coach"] not in _seqs
+            p = cached_price(R, pulled, strength, pi)
+            pb = cached_price(R, pulled, strength, _mu)  # coach-blind pseudo-market
             out = outcomes_from_raw(gid, t_cp, not trail_home, g["p3_entry"], p3goals)
             rows.append({
                 "game_id": gid, "inst": inst["n"], "R": R, "pulled": pulled,
-                "strength": strength, "coach": inst["trailing_coach"], "m": cm["m"],
+                "strength": strength, "coach": inst["trailing_coach"], "m": round(pi, 3),
                 "new_coach": new_coach,
                 "p_total1": p["P_total_ge1"], "p_total2": p["P_total_ge2"],
                 "p_lead1": p["P_leader_ge1"], "p_marg4": p["P_margin_ge4"],

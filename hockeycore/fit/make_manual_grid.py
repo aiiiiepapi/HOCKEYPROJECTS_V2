@@ -21,19 +21,21 @@ SHIFTS = [-60, 0, 60, 120, 180]
 RS = list(range(180, 901, 20))
 
 
-def m_of(p):
-    return math.log(1 - p) / math.log(1 - P_LEAGUE)
+def haz_of(p):
+    # density-preserving law (ruling 23): pull % hits p with league timing
+    from hockeycore.pricing.mc_pricer import coach_hazard_array
+    return coach_hazard_array(min(max(p, 0.05), 0.99))
 
 
 rows = []
 t0 = time.time()
 for i, R in enumerate(RS):
     for p in P_GRID:
-        m = m_of(p)
+        hz = haz_of(p)
         for sh in SHIFTS:
-            pr = price(R, pulled0=False, strength0="EV", m_coach=m,
-                       n=30000, seed=7, coach_shift=sh)
-            rows.append({"R": R, "pullpct": p, "shift": sh, "m": round(m, 4),
+            pr = price(R, pulled0=False, strength0="EV", m_coach=1.0,
+                       n=30000, seed=7, coach_shift=sh, haz3_override=hz)
+            rows.append({"R": R, "pullpct": p, "shift": sh,
                          **{k: round(pr[k], 4) for k in
                             ("P_leader_ge1", "P_total_ge1", "P_margin_ge4")}})
     print(f"{i+1}/{len(RS)} R={R} ({time.time()-t0:.0f}s)", flush=True)
