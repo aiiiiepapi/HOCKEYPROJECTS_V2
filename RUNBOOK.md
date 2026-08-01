@@ -61,3 +61,17 @@ standard refresh chain (extraction -> clean_window -> pp -> profiles).
 Weighted: coach + strength regime (fav/mid/heavy-dog, one-sided grading,
 measured). Displayed only: venue (measured noise), B2B/lineups (no data yet).
 Writes morning_cards.md. Cheap-session friendly.
+
+## Paper-trade harness (October — runs on Seb's PC)
+`python tools\paper_harness.py` from a repo clone, started when games begin.
+Logs every money moment (P3, gap 3, 15:00-3:00) with model thresholds,
+rule-28/hot-form status, and raw live odds snapshots (credit-capped).
+Output: paper_log/paper_YYYY-MM-DD.jsonl (+ odds/*.json).
+SETTLEMENT (cheap session, after nightly lake fetch): join outcomes onto the
+log by game id — never edit the log, append a settled_*.jsonl next to it.
+SHAKEDOWN: run --once during September Liiga games to verify live clock
+parsing for AHL (GameStatus/GameClock fields) and Liiga (clock field TBD);
+fix parsers from the cached raw_*.json payloads. AHL 26-27 season id (94?)
+must be confirmed and set in LEAGUES["ahl"] before October.
+Needs: lines_10ev_{ahl,liiga}.csv + coach profiles present in the clone
+(tracked in repo) and config/odds_api_key.txt.
