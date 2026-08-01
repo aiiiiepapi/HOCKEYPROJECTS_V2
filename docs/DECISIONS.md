@@ -165,3 +165,16 @@ NOTE: new coach layer is PROVISIONAL until blind re-validation (next block).
     gap's EN rates toward the cross-gap pool (TAU=20000s pseudo-exposure;
     NHL large-T shows 6v5-for flat across gaps). Liiga blind re-run:
     calibration unchanged-to-hair-better, all gates green.
+
+28. **50%% floor (Seb, 2026-08-01): NEVER bet when expected pull %% < 50.**
+    Recorded as BETTING POLICY (cards marked NO-BET below 50%%). Evidence
+    note (0b, on record): blind backtests AT MODEL LINES show sub-50 spots
+    did not lose (NHL leaderTT +35.7%%, Liiga positive) — but at REAL market
+    lines sub-50 Overs rarely clear the +10%% threshold anyway (our number
+    sits below the market's), so the rule mostly formalizes the natural
+    mechanism and concentrates risk where the coach edge is positive-side.
+    Paper harness still LOGS sub-50 spots for real-line evidence.
+28b. **Hot-form override (Seb, same ruling): any coach who PULLED HIS LAST
+    clean chance, or pulled 2 of his last 3, appears on the morning report
+    regardless of expected %%, flagged HOT FORM for manual review. Flag does
+    not by itself authorize a bet below the 50%% floor.**

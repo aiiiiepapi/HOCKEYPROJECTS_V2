@@ -157,12 +157,21 @@ def main():
             why_adj = {"fav": f"favorite tonight ({pw:.0%} implied) -> pulled UP",
                        "mid": f"near even ({pw:.0%} implied) -> ~unchanged",
                        "heavy_dog": f"heavy underdog ({pw:.0%} implied) -> pulled DOWN hard"}[reg]
+        # --- Seb rules 28/28b (2026-08-01) ---------------------------------
+        last3 = p.get("last3", "") or ""
+        hot = bool(last3) and (last3[-1] == "P" or last3.count("P") >= 2)
+        no_bet = adj < 0.50
         vloc = venue.get(team)
         med = p["median_pull_R"]
         timing = f"{fmt_t(med)}" if med and p["n_pulls"] >= 3 else "~4:19 (league)"
         flags = "; ".join(p["flags"]) or "none"
         opp = f" vs {opps[team]}" if team in opps else ""
-        out.append(f"## {team}{opp} — {p['coach']}")
+        badge = ""
+        if no_bet:
+            badge += "  [NO-BET: <50% (rule 28)]"
+        if hot:
+            badge += "  [HOT FORM: " + ("pulled last chance" if last3[-1] == "P" else "2 of last 3") + " — on report per rule 28b, review manually]"
+        out.append(f"## {team}{opp} — {p['coach']}{badge}")
         out.append(f"**Expected pull tonight: {adj:.0%}**  (base {base:.0%}, band "
                    f"{p['band'][0]:.0%}-{p['band'][1]:.0%}; {why_adj})")
         out.append(f"- Record on clean 5v5 chances: {p['clear_taken']}/{p['clear_chances']}"
