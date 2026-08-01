@@ -174,3 +174,22 @@ def test_clean_window_consistency():
     old_fracs = [r["frac_ev"] for r in rows
                  if r["season"] in ("20222023", "20232024") and not r["pulled"]]
     assert max(old_fracs) >= 0.9, "old-era frac capped — era-mismatched denominator is back"
+
+
+def test_liiga_v2_api_equivalence():
+    """api/v2 swapped penaltyEvents nesting between home and away (verified
+    2026-08-01: exact array swap on identical games + 1603-vs-16 PP-goal
+    cross-check over 1858 games). parse_game must auto-detect the version
+    (root-level homeTeamPlayers marker) and yield IDENTICAL adapter output
+    for the same game fetched from either API version."""
+    from hockeycore.leagues.liiga import parse_game, extract_instances
+    for n in (3, 4, 9, 13):
+        v1 = parse_game(ROOT / f"tests/reference_raw/liiga/game_2026_{n}.json")
+        v2 = parse_game(ROOT / f"tests/reference_raw/liiga_v2/game_2026_{n}.json")
+        for k in ("home", "away", "empty"):
+            assert v1[k] == v2[k], (n, k)
+        assert [(g["t"], g["side"], g["en"]) for g in v1["goals"]] == \
+               [(g["t"], g["side"], g["en"]) for g in v2["goals"]], n
+        key = lambda p: (p["t"], p["side"], p["begin"], p["end"])
+        assert sorted(map(key, v1["penalties"])) == sorted(map(key, v2["penalties"])), n
+        assert extract_instances(v1, 3) == extract_instances(v2, 3), n

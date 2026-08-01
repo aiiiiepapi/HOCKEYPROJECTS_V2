@@ -8,6 +8,16 @@ Verified conventions (raw data, 2026-07-25):
 - goalKeeperEvents per team: intervals with emptyNet 1/0, beginTime/endTime —
   exact segment-level pull truth (best of the three leagues).
 - penaltyEvents: penaltyBegintime/penaltyEndtime explicit.
+
+API VERSION QUIRK (verified 2026-08-01, shadow-check v1 vs v2 on identical
+games): /api/v2 responses nest penaltyEvents under the OPPOSITE team relative
+to /api/v1 — v1 lists a penalty under the penalized team, v2 under the team it
+benefits. Proven two ways: exact array swap on 4 v1/v2 pairs of the same game,
+and 1603-vs-16 across all 1858 lake games on "which side's list holds the
+minor that a YV (PP) goal terminates at the same second". Goal and goalkeeper
+events are NOT swapped. Detection: v2 payloads carry root-level
+homeTeamPlayers/awayTeamPlayers; v1 payloads do not. NOTE the field
+goalKeeperChanges exists in BOTH versions — it is not a version marker.
 """
 import json
 from pathlib import Path
@@ -16,7 +26,9 @@ P3_START, P3_END = 2400, 3600
 
 
 def parse_game(path):
-    g = json.load(open(path))["game"]
+    raw = json.load(open(path))
+    g = raw["game"]
+    v2_api = "homeTeamPlayers" in raw or "awayTeamPlayers" in raw
     out = {"id": g["id"], "home": g["homeTeam"]["teamName"] or g["homeTeam"]["teamPlaceholder"],
            "away": g["awayTeam"]["teamName"] or g["awayTeam"]["teamPlaceholder"],
            "goals": [], "empty": {"home": [], "away": []}, "penalties": []}
@@ -32,8 +44,9 @@ def parse_game(path):
         for e in t.get("goalKeeperEvents") or []:
             if e.get("emptyNet") == 1:
                 out["empty"][side].append((e["beginTime"], e["endTime"]))
+        pen_side = side if not v2_api else ("away" if side == "home" else "home")
         for e in t.get("penaltyEvents") or []:
-            out["penalties"].append({"side": side, "t": e["gameTime"],
+            out["penalties"].append({"side": pen_side, "t": e["gameTime"],
                                      "begin": e.get("penaltyBegintime", e["gameTime"]),
                                      "end": e.get("penaltyEndtime", e["gameTime"] + 120)})
     out["goals"].sort(key=lambda e: e["t"])
