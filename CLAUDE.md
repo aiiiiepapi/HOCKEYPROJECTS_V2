@@ -58,6 +58,13 @@ by itself evidence of correctness.
 14. Sanity bounds in tests must be structural (per-season, per-game), never
     absolute totals — absolute bounds silently go stale as data grows
     (v1 lesson: the 802-instances false alarm).
+15b. **No uncontrolled interpretation.** Any comparative or behavioral
+    claim reported to Seb (league vs league, coach vs coach, era vs era) must
+    be composition-controlled (like-for-like windows / clean-window
+    conditioning) or explicitly labeled raw-and-not-comparable. Verbal
+    conclusions get the same gate discipline as model outputs — the recorded
+    failures were all prose attached to correct data (lead1 story, Bednar
+    mechanism, dead-time story, Liiga 11.7% dilution artifact, 2026-08-01).
 15. One implementation per concept. Gap detection, odds math, Poisson pricing
     exist ONCE in hockeycore. A league is an adapter, not a reimplementation
     (v1 lesson: EIHL/Liiga rewrote gap logic; the EV+10% sign bug came from a
