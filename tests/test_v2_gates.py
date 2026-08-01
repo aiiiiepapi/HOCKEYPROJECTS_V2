@@ -279,3 +279,40 @@ def test_ahl_liiga_clean_window():
         best = max(prof["profiles"], key=lambda p: p["expected_pull_pct"])
         if best["clear_chances"] >= 5 and best["clear_taken"] == best["clear_chances"]:
             assert best["expected_pull_pct"] > meta["prior_mu"] + 0.10, lg
+
+
+def test_liiga_blind_calibration():
+    """Liiga walk-forward (fit 2023-2025, price 2026 blind, density coach law).
+    Provisional bounds documented from the first blind run 2026-08-01
+    (n=553 checkpoints, ONE season — bounds deliberately loose, conservative-
+    only where the NHL character repeats): every market must keep Brier skill
+    and stay Overs-safe or near-flat; reliability bad<=3."""
+    rows = json.load(open(DER / "backtest_rows_liiga.json"))
+    n = len(rows)
+    bounds = {"p_lead1": (-0.01, 0.08), "p_total1": (-0.03, 0.06),
+              "p_total2": (-0.05, 0.05), "p_marg4": (-0.02, 0.12)}
+    for pk, yk in [("p_lead1", "y_lead1"), ("p_total1", "y_total1"),
+                   ("p_total2", "y_total2"), ("p_marg4", "y_marg4")]:
+        rs = sorted(rows, key=lambda r: r[pk])
+        base = sum(r[yk] for r in rs) / n
+        brier = sum((r[pk] - r[yk]) ** 2 for r in rs) / n
+        assert brier < base * (1 - base), f"liiga {pk}: no skill"
+        bias = sum(r[yk] - r[pk] for r in rs) / n
+        lo, hi = bounds[pk]
+        assert lo - 1e-9 <= bias <= hi + 1e-9, f"liiga {pk} bias {bias:+.3f}"
+        bad = 0
+        for b in range(10):
+            ch = rs[b * n // 10:(b + 1) * n // 10]
+            mp = sum(r[pk] for r in ch) / len(ch)
+            ay = sum(r[yk] for r in ch) / len(ch)
+            se = math.sqrt(max(mp * (1 - mp), 1e-9) / len(ch))
+            bad += abs(mp - ay) >= 2 * se
+        assert bad <= 3, f"liiga {pk}: {bad}/10 bad deciles"
+
+
+def test_ahl_not_bettable_flagged():
+    """AHL blind FAILED every configuration tested (rulings 24): the no-bet
+    status must stay visibly flagged until a fitting protocol passes blind.
+    This gate exists so no session quietly prices AHL without re-litigating."""
+    s = open(ROOT / "docs" / "DECISIONS.md").read()
+    assert "AHL: NO-GO for pricing" in s

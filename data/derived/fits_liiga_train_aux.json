@@ -1,0 +1,12 @@
+{
+ "return_hazard_per_sec": 0.002533753212437109,
+ "h_repull": 0.029253731343283584,
+ "evidence_lag": 0,
+ "dead": 18,
+ "seasons": [
+  "2023",
+  "2024",
+  "2025"
+ ],
+ "league": "liiga"
+}

@@ -108,3 +108,23 @@ NOTE: new coach layer is PROVISIONAL until blind re-validation (next block).
     +21.3% (P(>edge) 0.973 -> 0.946; gate moved 0.95 -> 0.94 with Seb's
     ratification). -3.5 stays CAUTION (bias -4.9pts, season-wobble limited).
     Grids/tables re-keyed to pull-%% tiers (25/40/55/70/85).
+
+24. **AHL: NO-GO for pricing (2026-08-01).** Blind walk-forward failed every
+    fitting protocol: 4-season pool (marg4 -11.1pts, ROI -21%% at -3.5),
+    recent-2-seasons, in-season rolling (fit 86+90H1 -> price 90H2), and
+    season-local (fit 90H1 only). Model-free confirmation at matched
+    checkpoints: 90-H2 outcomes collapsed vs 86 AND 90-H1 (marg4@R600
+    0.40/0.40/0.23, ~3sigma) — levels unstable at every tested timescale
+    (development-league roster churn; the 26-Feb Olympic window is an
+    unproven suspect). AHL stays: coach profiles + morning-bot intel
+    (outcome-based, valid) — NO priced markets until a future season
+    passes blind. Gate test_ahl_not_bettable_flagged pins this.
+25. **Liiga: blind PASS, provisional (2026-08-01).** Fit 2023-2025, price
+    2026 blind, density coach law: all markets conservative-side (lead1
+    +2.8, total1 +1.2, marg4 +6.5pts — Overs-safe), 0/10 bad deciles
+    everywhere, ROI@10%%EV leaderTT +19.1%% / total +14.3%% / -3.5 +30.2%%
+    (P(>0) 0.95/0.93/0.96 — ONE thin season, n=553, CIs wide). Status:
+    paper-trade alongside NHL when the season starts (Sept); NOT "99%%
+    sure"; Liiga -3.5 is conservative unlike NHL's (their EN dynamics
+    differ — rarely pulled nets make marg4 rare and the model under-calls
+    it). Calibration gate added with provisional documented bounds.
