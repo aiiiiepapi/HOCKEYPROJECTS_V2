@@ -86,3 +86,12 @@ NOTE: new coach layer is PROVISIONAL until blind re-validation (next block).
     per league from its own data; NHL contributes shapes only.
     Composition-controlled clear-chance take rates: NHL 54.5%%, AHL 50.9%%,
     Liiga 41.5%%.
+
+22. **Survival-mapped coach law: estimator vindicated, pricing adoption
+    DEFERRED (2026-08-01).** Beta+recency P_c is fully persistent
+    cross-season (beta=1.13 vs 0.36 for raw-EB). But pricing with true k
+    worsens marg4/total1 because EN-against conversion is coach-tier
+    dependent (35-65/60 reluctant, 23 average, 7-17 aggressive) while the
+    sim pools it. Root cause of -3.5 CAUTION identified; fix = coach-
+    conditional conversion + survival hazard, next Fable block
+    (docs/marg4_root_cause.md). Production stays on 0.355 law meanwhile.
