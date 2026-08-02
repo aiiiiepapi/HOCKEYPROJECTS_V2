@@ -310,3 +310,20 @@ NOTE: new coach layer is PROVISIONAL until blind re-validation (next block).
     book's implied baseline. Paper harness logs the needed data from
     opening night. NO-GO on self-priced AHL markets STANDS (ruling 24);
     the coach-delta path is the sanctioned route to AHL money.
+
+39b. **Seb correction ACCEPTED (2026-08-02): "teams pull more aggressively in
+    H2" is TRUE.** Clean-chance take rates (composition-controlled) H1 vs H2:
+    77: 60.0->63.3, 81: 49.0->43.0, 86: 43.3->54.2, 90: 40.0->46.7 (pooled
+    47.9% -> 51.7%). Ruling 39's "pulls-after-600 32->26%" was a crude
+    composition-confounded slice — retracted as a pull-aggressiveness claim.
+    This SHARPENS the 90-H2 anomaly instead of resolving it: leader-stretch
+    (widened-to-4 after R600) by half: 77 .385->.515 UP, 81 .446->.365 down,
+    86 .377->.462 UP, 90 .439->.279 (lowest of all 8 halves; 77-H2 is the
+    highest). No repeating H2 pattern -> a stage covariate cannot model it
+    (consistent with ruling 30's calendar-stage NULL). The 90-H2 signature:
+    trailing teams pulled MORE, ate HALF the ENGs (0.16->0.09/inst), scored
+    more at EV (0.30->0.41/inst), leaders scored less — desperation that
+    WORKED, concentrated in one half-season. Reinforces the race-covariate
+    (standings-aware, team-level) as the only candidate that could capture
+    WHICH trailing teams push; blanket H2 adjustments would damage 77/86.
+    NO-GO unchanged; re-litigation path unchanged.
