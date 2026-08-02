@@ -37,7 +37,7 @@ def main():
 
     prior = json.load(open(DER / "pull_prior.json"))
     A, B = prior["prior_a"], prior["prior_b"]
-    HL = 10.0  # recency half-life, in chances (Seb ruling 2026-07-26: recent form matters)
+    from hockeycore.fit.prior_fit import HL  # ruling 31: fitted (6)
 
     # chance-level sequences per coach (5v5 ledger events, date order)
     cw = json.load(open(DER / "clean_window_instances.json"))

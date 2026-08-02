@@ -206,3 +206,10 @@ NOTE: new coach layer is PROVISIONAL until blind re-validation (next block).
     pullers (+11pts z=2.6, diluted-sample — clean-chance confirmation
     queued); playoff-race proper test needs standings-as-of-date (next
     block, elevated by Seb's doctrine).
+
+31. **Recency half-life FITTED = 6 chances; fade start = 6 (2026-08-02).**
+    Recency HL was 10 by ruling, never fitted; predictive test prefers 6 in
+    ALL THREE leagues independently -> adopted. Fade start: data mildly
+    prefers 8 (NHL/AHL monotone), Seb ruled <8; complying at 6 costs
+    ~0.0004 nats (noise) — recorded as Seb's call over a weak data
+    preference, revisit if 26-27 sharpens the gradient.

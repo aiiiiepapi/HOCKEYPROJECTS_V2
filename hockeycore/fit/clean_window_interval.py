@@ -40,7 +40,7 @@ DER = ROOT / "data" / "derived"
 DEAD = 18
 CLEAR = 0.7
 BUCKET = 60
-HALF_LIFE = 10.0
+from hockeycore.fit.prior_fit import HL as HALF_LIFE  # ruling 31
 
 
 def build(league, rows_file, skip_seasons=()):

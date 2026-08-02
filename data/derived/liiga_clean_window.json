@@ -27,7 +27,7 @@
 "18": 0.001468,
 "19": 0.000101
 },
-"half_life_chances": 10.0,
+"half_life_chances": 6.0,
 "clear_threshold": 0.7,
 "dead_time_s": 18
 },

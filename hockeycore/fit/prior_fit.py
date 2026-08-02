@@ -11,9 +11,9 @@ clean-chance take rate. Small-n records are UNCHANGED by design: perfect
 """
 import math
 
-HL = 10.0
+HL = 6.0    # ruling 31: recency half-life FITTED predictively (was 10 by ruling)
 GRID = (2, 3, 4, 5, 6, 7, 9, 12)
-FADE_START, FADE_HL = 8, 8.0   # ruling 30: anchor fades with career evidence
+FADE_START, FADE_HL = 6, 8.0   # rulings 30+31: fade from 6 (Seb constraint <8; data mildly preferred 8, cost ~0.0004 — on record)
 
 
 def posterior(seq, A, B):
@@ -21,7 +21,7 @@ def posterior(seq, A, B):
     (ruling 30, Seb 2026-08-02: 'league standards bring little to no value'
     once a coach has a real record — confirmed predictively: established-
     coach forecasts are flat-to-better with the anchor faded; small-n
-    shrinkage unchanged). S_eff = S * 0.5^(max(career_n - 8, 0)/8)."""
+    shrinkage unchanged). S_eff = S * 0.5^(max(career_n - 6, 0)/8)."""
     n = len(seq)
     kw = sum(x * 0.5 ** ((n - 1 - i) / HL) for i, x in enumerate(seq))
     nw = sum(0.5 ** ((n - 1 - i) / HL) for i in range(n))
