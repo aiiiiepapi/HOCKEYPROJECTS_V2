@@ -7,3 +7,4 @@ data/derived/coach_exposure*.json
 __pycache__/
 .pytest_cache/
 *.pyc
+hockeycore.egg-info/
