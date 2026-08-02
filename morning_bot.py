@@ -70,33 +70,29 @@ def main():
 
     profiles = json.load(open(DER / "coach_profiles.json"))
     cw = json.load(open(DER / "clean_window_instances.json"))
-    insts = {(i["game_id"], i["n"]): i for i in json.load(open(DER / "instances_gap3.json"))}
 
     cur = {}
     for p in profiles:
+        if p["last_seen"] < "2025-06-01":     # ghost teams/coaches (ARI)
+            continue
         if p["team"] not in cur or p["last_seen"] > cur[p["team"]]["last_seen"]:
             cur[p["team"]] = p
 
-    # last-3 chance stories per coach
-    stories = defaultdict(list)
+    # per-coach classified chances: (date, took, pull_R)
+    chances = defaultdict(list)
     for r in sorted(cw, key=lambda x: x["date"]):
         took = r["pulled"] and r["pull_type"] == "ev"
         dec = (not r["pulled"]) and r["frac_ev"] >= 0.7
-        if not (took or dec):
-            continue
-        inst = insts.get((r["game_id"], r["n"]), {})
-        opp = (inst.get("away") if r["team"] == inst.get("home") else inst.get("home")) or "?"
-        ha = "vs" if r["team"] == inst.get("home") else "@"
-        if took:
-            reason = (inst.get("pull_end") or {}).get("reason", "")
-            what = {"en_goal_against": "ate ENG", "scored_during_pull": "SCORED 6v5",
-                    "goalie_returned": "goalie returned", "gap_end": "to the horn"}.get(reason, reason or "")
-            s = f"{r['date']} {ha} {opp} — PULLED {fmt_t(r['pull_R'])} left, {what}"
-        else:
-            end = "horn" if r["closed_R"] == 0 else f"{fmt_t(r['closed_R'])} left"
-            s = (f"{r['date']} {ha} {opp} — NO PULL (clean window "
-                 f"{fmt_t(min(r['opened_R'],900))}->{end}, quality {r['frac_ev']:.0%})")
-        stories[r["coach"]].append(s)
+        if took or dec:
+            chances[r["coach"]].append((r["date"], took, r.get("pull_R")))
+
+    # manual team-study notes (optional file: team,note)
+    notes = {}
+    nf = ROOT / "data" / "coach_maps" / "special_notes.csv"
+    if nf.exists():
+        import csv as _csv
+        for row in _csv.DictReader(open(nf, encoding="utf-8")):
+            notes[row["team"].strip()] = row["note"].strip()
 
     slate_teams, opps, venue = {}, {}, {}
     auto_ml = {}
@@ -137,52 +133,68 @@ def main():
         t, v = m.split(":")
         mls[t.strip().upper()] = implied(v)
 
+    SEASON_CUT = "2025-07-01"      # "last year" = 2025-26
+    TWOSEA_CUT = "2024-07-01"      # pull-time window = last two seasons
+    today = datetime.date.today().isoformat()
+
     teams = sorted(slate_teams) if slate_teams else sorted(cur)
     out = ["# MORNING PULL CARDS — trailing by 3, 3rd period\n",
-           f"League baseline on a clean 5v5 chance: {POOLED:.0%}. "
-           "Strength regime is the only situational factor weighted into the % "
-           "(favorite +, heavy dog −−; venue/B2B/lineups shown as context only — "
-           "measured noise or no data). P>0.75 reads as '0.75+' (known hot zone).\n"]
+           "Card spec (Seb 2026-08-02): expected %, last-year record, last 5 "
+           "clean chances, recency-weighted avg pull time (2 seasons), special "
+           "notes. Fav/dog effect lives in the notes, NOT in the headline %.\n"]
     for team in teams:
         p = cur.get(team)
         if not p:
             out.append(f"## {team} — no coach data\n"); continue
+        seq = chances.get(p["coach"], [])
         base = p["expected_pull_pct"]
+        # --- Seb rules 28/28b (2026-08-01); no-bet on the headline (base) % ----
+        last5 = seq[-5:]
+        l5 = " ".join("P" if t else "NP" for _, t, _ in last5) or "-"
+        hot = bool(seq) and (seq[-1][1] or sum(t for _, t, _ in seq[-3:]) >= 2)
+        no_bet = base < 0.50
+        # last-year classified record
+        yr = [(d, t) for d, t, _ in seq if d >= SEASON_CUT]
+        yp = sum(t for _, t in yr)
+        # avg pull time, last two seasons, slight recency weight (12mo half-life)
+        pt_w = pt_s = 0.0
+        npt = 0
+        for d, t, pr in seq:
+            if t and pr is not None and d >= TWOSEA_CUT:
+                w = 0.5 ** ((datetime.date.fromisoformat(today)
+                             - datetime.date.fromisoformat(d)).days / 365.0)
+                pt_w += w; pt_s += w * pr; npt += 1
+        timing = f"{fmt_t(pt_s / pt_w)} left ({npt} pulls)" if npt >= 3 else \
+                 f"~4:19 (league — only {npt} pull(s) last 2 seasons)"
+        # --- special notes ----------------------------------------------------
+        sp = []
         pw = mls.get(team)
         reg = regime(pw)
-        adj = base
-        why_adj = "no line given — base number"
         if reg:
             adj = expit(logit(max(min(base, 0.97), 0.03)) + SHIFT[reg])
-            why_adj = {"fav": f"favorite tonight ({pw:.0%} implied) -> pulled UP",
-                       "mid": f"near even ({pw:.0%} implied) -> ~unchanged",
-                       "heavy_dog": f"heavy underdog ({pw:.0%} implied) -> pulled DOWN hard"}[reg]
-        # --- Seb rules 28/28b (2026-08-01) ---------------------------------
-        last3 = p.get("last3", "") or ""
-        hot = bool(last3) and (last3[-1] == "P" or last3.count("P") >= 2)
-        no_bet = adj < 0.50
+            sp.append({"fav": f"FAVORITE tonight ({pw:.0%} implied) — plays like {adj:.0%}",
+                       "mid": f"near-even line ({pw:.0%} implied) — no shift",
+                       "heavy_dog": f"HEAVY DOG tonight ({pw:.0%} implied) — plays like {adj:.0%}"}[reg])
+        sp.extend(p["flags"])
+        if team in notes:
+            sp.append(notes[team])
         vloc = venue.get(team)
-        med = p["median_pull_R"]
-        timing = f"{fmt_t(med)}" if med and p["n_pulls"] >= 3 else "~4:19 (league)"
-        flags = "; ".join(p["flags"]) or "none"
         opp = f" vs {opps[team]}" if team in opps else ""
         badge = ""
         if no_bet:
             badge += "  [NO-BET: <50% (rule 28)]"
         if hot:
-            badge += "  [HOT FORM: " + ("pulled last chance" if last3[-1] == "P" else "2 of last 3") + " — on report per rule 28b, review manually]"
+            badge += "  [HOT FORM: " + ("pulled last chance" if seq[-1][1] else "2 of last 3") + " (rule 28b)]"
         out.append(f"## {team}{opp} — {p['coach']}{badge}")
-        out.append(f"**Expected pull tonight: {adj:.0%}**  (base {base:.0%}, band "
-                   f"{p['band'][0]:.0%}-{p['band'][1]:.0%}; {why_adj})")
-        out.append(f"- Record on clean 5v5 chances: {p['clear_taken']}/{p['clear_chances']}"
-                   f" | last 3: {p.get('last3','-')} | typical pull time: {timing}")
-        out.append(f"- Flags: {flags}")
+        out.append(f"**Expected pull: {base:.0%}**  (band {p['band'][0]:.0%}-{p['band'][1]:.0%}, "
+                   f"career {p['clear_taken']}/{p['clear_chances']})")
+        out.append(f"- 2025-26 classified: {yp} pull / {len(yr) - yp} no-pull")
+        out.append(f"- Last 5 clean chances: {l5}"
+                   + (f"  (oldest {last5[0][0]})" if last5 else ""))
+        out.append(f"- Avg pull time (2 seasons, recency-weighted): {timing}")
+        out.append(f"- Special notes: {'; '.join(sp) if sp else 'none'}")
         if vloc:
-            out.append(f"- Context (NOT in the number): playing {vloc} (venue = measured noise); "
-                       "lineup/goalie/B2B unknown — adjust in MANUAL if you know something")
-        out.append("- Last 3 real chances:")
-        for s in stories.get(p["coach"], [])[-3:][::-1]:
-            out.append(f"    - {s}")
+            out.append(f"- Context (not in number): playing {vloc}; lineup/goalie/B2B unknown")
         out.append("")
     Path("morning_cards.md").write_text("\n".join(out))
     print("\n".join(out[:40]))
