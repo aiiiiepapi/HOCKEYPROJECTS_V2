@@ -59,12 +59,11 @@ EXPLICITLY (better than AHL's begin+minutes approximation). Misconducts
 (10/20 min) excluded from strength per the fix we just shipped league-wide.
 pp_pull classification therefore transfers at FULL precision.
 
-### 4. Coach identity is not on the sheet
-The entire bettable product is coach pull %. 12 teams/season -> hand-curated
-data/coach_maps/magnus_coaches.csv (season, team, start_date, end_date,
-coach), built from public sources and CROSS-CHECKED per AHL map discipline
-(join rule: map is authority; any mid-season change gets a dated row).
-~36-48 rows for 4 seasons. One-time cost, zero precision loss.
+### 4. Coach identity — RESOLVED BETTER THAN EXPECTED (2026-08-02)
+The sheets DO carry coaches ("Entraîneur principal : ..."), per team per
+game — the v1 docs missed this. Game-level attribution equal to NHL/AHL.
+Verified on samples across 2021-2025 (LHENRY/AHO/VAS/PAREDES...). A
+hand-curated map is demoted to a CROSS-CHECK artifact, not a source.
 
 ### 5. Volume: ~264 games/season
 Projection from v1's season: ~110 gap-3 instances -> ~35-55 in-window
@@ -83,6 +82,25 @@ Window detection (interval dict -> segments.py), ruling 17b's dp philosophy
 estimator, clean-window ledger machinery, random-audit harness (audit target:
 re-verify TOI arithmetic + Joueurs lists per sampled instance), morning-sheet
 builder (already league-parameterized), 21-gate discipline.
+
+## Parser findings from the scan samples (2026-08-02, 8 sheets, 5 seasons)
+- Format STABLE 2021->2025: one parser covers the whole lake.
+- Tables are spatial columns, not sequential text. Coordinate windows work
+  for roster/goals/penalties; the shared Gardien-en-jeu table assigns team
+  by the goalie number's x-column (G.A vs G.B) — deterministic, replaces
+  v1's alternating-order heuristic (their 25% collision pain).
+- J+/J- have NO spatial boundary (lists typeset as one flow — the v1 "J+
+  fragmentation" root cause). Split is SEMANTIC: prefix must be scoring-team
+  roster numbers, suffix opponent's; on-ice-count constraints break ties;
+  unresolvable rows flag to the manual lane. Handled a live cross-team
+  jersey collision (#11 both rosters) on the first sample.
+- Scheduled goalie changes appear as multiple stints summing to game
+  duration (verified 41851, 68851). OT games show TOI > 3600 (11101:
+  3796s) -> game duration must come from the sheet, never assumed 3600.
+- Empty sheets exist (1051, cancelled COVID-era game): sheet_empty class,
+  skipped with reason, kept in the lake verbatim.
+- Live pull visible in sample 16351: Grenoble TOI 57:54 (126s off) with
+  Rouen EG+CV at 56:15 — the TOI-anchor arithmetic checks out end-to-end.
 
 ## What we will NOT be able to do (stated now, so nobody discovers it later)
 - Live in-game pricing from a Magnus feed (no live event source identified;
