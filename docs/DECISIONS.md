@@ -277,3 +277,36 @@ NOTE: new coach layer is PROVISIONAL until blind re-validation (next block).
 38. **Liiga random audit shipped at AHL parity** (seed 20260802, 30+30 vs
     raw goalKeeperEvents): 0/60. Both leagues' audits are now a standing
     gate (tools/audit_interval_random.py). Gate count 17 -> 21.
+
+39. **AHL failure mechanism RE-ATTRIBUTED on corrected data (2026-08-02,
+    triggered by Seb's challenge "we've bet AHL for years — find the issue").**
+    Re-ran the full H1/H2 forensics on the post-ruling-34 extraction:
+    (a) DATA IS CLEAN: instance audit 0/60 vs raw; feed stable by month
+    (goalie rows 5.3-5.9/gm, penalties ~10/gm, EN-flag share ~0.08-0.10,
+    no January discontinuity). The blind failure is NOT a data defect.
+    (b) Ruling 26(b)'s "the moving level is 6v5-SPECIFIC" does NOT replicate
+    on corrected data (15b correction — it was drawn pre-fix): gap-3-window
+    EN rates moved only modestly (ENG-against 18.9->16.6/60, n=20/25,
+    within Poisson noise). The outcome collapse at matched checkpoints is
+    REAL (marg4@R600 0.404 H1 -> 0.233 H2) but decomposes as a BROAD
+    competitive shift inside gap-3 games after the checkpoint: leader EV
+    goals/inst 0.28->0.19 (-33%), trailer EV goals/inst 0.21->0.34 (+62%),
+    pulls-after-600 32%->26%. H2 blowout games got more competitive across
+    all channels — leaders eased / trailers pushed — not a 6v5 physics change.
+    This also EXPLAINS ruling 26(b)'s anchor refutation: the leak-free
+    anchor used full-game scoring, which was normal (H2 goals/gm ~6.2-7.2,
+    unchanged) — the shift lives in leader/trailer dynamics within trailing
+    games, invisible to a full-game anchor.
+    (c) Candidate mechanisms for the 26-27 re-litigation (post-hoc, 15b —
+    flagged, untested): playoff-race desperation of trailing teams (matches
+    Seb's queue-2 doctrine — the race covariate is the missing-variable
+    candidate), trade-deadline/callup churn, Olympic window (Feb 2026 is an
+    outlier month: 7.20 goals/gm, EN share 0.052).
+    (d) Reconciliation with Seb's live AHL betting: what fails blind is
+    absolute-level self-pricing across half-seasons. Betting at MARKET
+    lines with coach knowledge is not exposed to that instability — the
+    book re-prices levels continuously. This is exactly the coach-delta
+    product (ruling 26c): price only the coach-knowledge delta vs the
+    book's implied baseline. Paper harness logs the needed data from
+    opening night. NO-GO on self-priced AHL markets STANDS (ruling 24);
+    the coach-delta path is the sanctioned route to AHL money.
