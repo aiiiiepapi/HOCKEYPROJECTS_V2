@@ -24,6 +24,21 @@ FADE_START, FADE_HL = 3, 3.0
 GRID = (2, 3, 4, 5, 6, 7, 9, 12)
 HL = 6.0   # legacy per-chance constant; retained only for old references
 
+# Ruling 33 (Seb 2026-08-02): a coach whose raw record is 75%+ pulls with at
+# least 2 chances gets the league anchor capped at ONE chance-equivalent.
+# ("weight on a 3/5 but not a 3/4; weight on a 1/1 but not on 2/2")
+# Pull-side only as ruled; low-side coaches keep the normal fade.
+HOT_RATE, HOT_MIN_N, HOT_CAP = 0.75, 2, 1.0
+
+
+def _anchor_strength(seq, S):
+    """effective league pseudo-chances for this coach's raw record."""
+    n = len(seq)
+    s_eff = S * _fade(n)
+    if n >= HOT_MIN_N and sum(t for _, t in seq) / n >= HOT_RATE:
+        s_eff = min(s_eff, HOT_CAP)
+    return s_eff
+
 
 def _days(d1, d0):
     y1, m1, dd1 = map(int, d1[:10].split("-"))
@@ -50,19 +65,21 @@ def _fade(n):
 
 def posterior(seq, A, B, asof=None):
     kw, nw = _weights(seq, asof)
-    f = _fade(len(seq))
-    a_e, b_e = A * f, B * f
+    mu, S = A / (A + B), A + B
+    s_eff = _anchor_strength(seq, S)
+    a_e, b_e = mu * s_eff, (1 - mu) * s_eff
     tot = nw + a_e + b_e
-    return (kw + a_e) / tot if tot > 0 else A / (A + B)
+    return (kw + a_e) / tot if tot > 0 else mu
 
 
 def posterior_detail(seq, A, B, asof=None):
     """(mean, kw, nw, a_eff, b_eff) — for uncertainty bands."""
     kw, nw = _weights(seq, asof)
-    f = _fade(len(seq))
-    a_e, b_e = A * f, B * f
+    mu, S = A / (A + B), A + B
+    s_eff = _anchor_strength(seq, S)
+    a_e, b_e = mu * s_eff, (1 - mu) * s_eff
     tot = nw + a_e + b_e
-    m = (kw + a_e) / tot if tot > 0 else A / (A + B)
+    m = (kw + a_e) / tot if tot > 0 else mu
     return m, kw, nw, a_e, b_e
 
 
@@ -78,8 +95,8 @@ def fit_prior(seqs):
         for s in seqs:
             for i in range(1, len(s)):
                 kw, nw = _weights(s[:i], asof=s[i][0])
-                f = _fade(i)
-                p = min(max((kw + mu * S * f) / (nw + S * f), 0.01), 0.99)
+                s_eff = _anchor_strength(s[:i], S)
+                p = min(max((kw + mu * s_eff) / (nw + s_eff), 0.01), 0.99)
                 ll += math.log(p if s[i][1] else 1 - p)
                 n += 1
         if best is None or ll / n > best[1]:

@@ -4,7 +4,7 @@ Last 5 + pull time = last 2 seasons only. Fav/dog lives in Notes, not in the %. 
 
 ```
 ANA — Joel Quenneville
-  Pull %      75%   (3/3 career)
+  Pull %      87%   (3/3 career)
   2025-26     3 P / 0 NP
   Last 5      P P P
   Pull time   3:36 left  (3 pulls)
@@ -76,7 +76,7 @@ COL — Jared Bednar
 
 ```
 DAL — Glen Gulutzan
-  Pull %      66%   (3/4 career)
+  Pull %      70%   (3/4 career)
   2025-26     3 P / 1 NP
   Last 5      P NP P P
   Pull time   3:14 left  (3 pulls)
@@ -193,7 +193,7 @@ PHI — Rick Tocchet
 
 ```
 PIT — Dan Muse
-  Pull %      86%   (5/5 career)
+  Pull %      92%   (5/5 career)
   2025-26     5 P / 0 NP
   Last 5      P P P P P
   Pull time   4:45 left  (5 pulls)

@@ -224,3 +224,16 @@ NOTE: new coach layer is PROVISIONAL until blind re-validation (next block).
     (0.0076/0.0064/0.0019 per league vs start-6: rule 0b satisfied).
     Estimator API: sequences are (date, took) tuples, one implementation
     (prior_fit) for profiles + both backtests.
+
+33. **HOT-RECORD ANCHOR CAP (Seb, 2026-08-02).** A coach whose RAW career
+    record is 75%+ pulls on >= 2 chances gets the league anchor capped at
+    ONE chance-equivalent (S_eff = min(S*fade, 1)). Seb's examples, now
+    exact code behavior: weight league on 3/5 (60%) but not 3/4 (75%);
+    weight on 1/1 (n too small) but not 2/2. Pull-side only as ruled —
+    low-side coaches keep the normal whisper-past-3 fade (they're NO-BET
+    territory anyway under rule 28). Effect: identical records now score
+    nearly identically across leagues (3/3 recent: NHL 87-88%, Liiga
+    84-85%). League S refit predictively under the new rule: NHL 3->3,
+    AHL 5->9, Liiga 5->4 (the fit re-spends anchor weight on the non-hot
+    majority once hot coaches are released). ONE implementation:
+    prior_fit._anchor_strength backs profiles, cards, and all backtests.

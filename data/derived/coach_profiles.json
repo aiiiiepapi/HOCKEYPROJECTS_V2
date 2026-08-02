@@ -11,9 +11,9 @@
    0.585,
    1
   ],
-  "expected_pull_pct": 0.75,
+  "expected_pull_pct": 0.872,
   "band": [
-   0.423,
+   0.571,
    1
   ],
   "last3": "PPP",
@@ -115,9 +115,9 @@
    0.712,
    1
   ],
-  "expected_pull_pct": 0.86,
+  "expected_pull_pct": 0.914,
   "band": [
-   0.611,
+   0.699,
    1
   ],
   "last3": "PPP",
@@ -519,9 +519,9 @@
    0.333,
    1
   ],
-  "expected_pull_pct": 0.659,
+  "expected_pull_pct": 0.701,
   "band": [
-   0.304,
+   0.318,
    1
   ],
   "last3": "nPP",
@@ -1081,9 +1081,9 @@
    0.712,
    1
   ],
-  "expected_pull_pct": 0.861,
+  "expected_pull_pct": 0.915,
   "band": [
-   0.613,
+   0.702,
    1
   ],
   "last3": "PPP",
@@ -1109,9 +1109,9 @@
    0.75,
    1
   ],
-  "expected_pull_pct": 0.894,
+  "expected_pull_pct": 0.924,
   "band": [
-   0.677,
+   0.73,
    1
   ],
   "last3": "PPP",
@@ -1243,9 +1243,9 @@
    0.468,
    1
   ],
-  "expected_pull_pct": 0.705,
+  "expected_pull_pct": 0.833,
   "band": [
-   0.336,
+   0.46,
    1
   ],
   "last3": "PP",

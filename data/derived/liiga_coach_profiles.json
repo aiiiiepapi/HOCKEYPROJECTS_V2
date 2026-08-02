@@ -1,10 +1,10 @@
 {
 "meta": {
 "league": "liiga",
-"prior_a": 2.491,
-"prior_b": 3.509,
+"prior_a": 1.661,
+"prior_b": 2.339,
 "prior_mu": 0.4152,
-"prior_strength": 6,
+"prior_strength": 4,
 "hazard_bucketed": {
 "0": 0.0,
 "1": 0.0,
@@ -33,70 +33,6 @@
 },
 "profiles": [
 {
-"coach": "Tommi Niemel\u00e4",
-"team": "Ilves",
-"last_seen": "2026-03-14",
-"clear_chances": 13,
-"clear_taken": 10,
-"pp_pulls": 0,
-"instances": 29,
-"expected_pull_pct": 0.7147,
-"band": [
-0.524,
-0.905
-],
-"last3": "PP-",
-"flags": []
-},
-{
-"coach": "Petri Karjalainen",
-"team": "K\u00e4rp\u00e4t",
-"last_seen": "2026-03-07",
-"clear_chances": 11,
-"clear_taken": 8,
-"pp_pulls": 1,
-"instances": 34,
-"expected_pull_pct": 0.6672,
-"band": [
-0.463,
-0.871
-],
-"last3": "P-P",
-"flags": []
-},
-{
-"coach": "Marko Tuomainen",
-"team": "Jukurit",
-"last_seen": "2025-01-10",
-"clear_chances": 5,
-"clear_taken": 4,
-"pp_pulls": 3,
-"instances": 17,
-"expected_pull_pct": 0.6128,
-"band": [
-0.408,
-0.818
-],
-"last3": "P-P",
-"flags": []
-},
-{
-"coach": "Petri Matikainen",
-"team": "JYP",
-"last_seen": "2026-03-14",
-"clear_chances": 5,
-"clear_taken": 4,
-"pp_pulls": 1,
-"instances": 19,
-"expected_pull_pct": 0.6064,
-"band": [
-0.4,
-0.813
-],
-"last3": "PP-",
-"flags": []
-},
-{
 "coach": "Toni S\u00f6derholm",
 "team": "TPS",
 "last_seen": "2026-03-14",
@@ -104,10 +40,10 @@
 "clear_taken": 3,
 "pp_pulls": 2,
 "instances": 17,
-"expected_pull_pct": 0.5941,
+"expected_pull_pct": 0.8395,
 "band": [
-0.392,
-0.796
+0.621,
+1.0
 ],
 "last3": "PPP",
 "flags": [
@@ -122,15 +58,79 @@
 "clear_taken": 2,
 "pp_pulls": 0,
 "instances": 7,
-"expected_pull_pct": 0.5556,
+"expected_pull_pct": 0.7981,
 "band": [
-0.342,
-0.769
+0.538,
+1.0
 ],
 "last3": "PP",
 "flags": [
 "RISKY: <5 clean chances"
 ]
+},
+{
+"coach": "Tommi Niemel\u00e4",
+"team": "Ilves",
+"last_seen": "2026-03-14",
+"clear_chances": 13,
+"clear_taken": 10,
+"pp_pulls": 0,
+"instances": 29,
+"expected_pull_pct": 0.7221,
+"band": [
+0.531,
+0.913
+],
+"last3": "PP-",
+"flags": []
+},
+{
+"coach": "Marko Tuomainen",
+"team": "Jukurit",
+"last_seen": "2025-01-10",
+"clear_chances": 5,
+"clear_taken": 4,
+"pp_pulls": 3,
+"instances": 17,
+"expected_pull_pct": 0.7129,
+"band": [
+0.485,
+0.94
+],
+"last3": "P-P",
+"flags": []
+},
+{
+"coach": "Petri Matikainen",
+"team": "JYP",
+"last_seen": "2026-03-14",
+"clear_chances": 5,
+"clear_taken": 4,
+"pp_pulls": 1,
+"instances": 19,
+"expected_pull_pct": 0.7052,
+"band": [
+0.474,
+0.936
+],
+"last3": "PP-",
+"flags": []
+},
+{
+"coach": "Petri Karjalainen",
+"team": "K\u00e4rp\u00e4t",
+"last_seen": "2026-03-07",
+"clear_chances": 11,
+"clear_taken": 8,
+"pp_pulls": 1,
+"instances": 34,
+"expected_pull_pct": 0.6779,
+"band": [
+0.472,
+0.884
+],
+"last3": "P-P",
+"flags": []
 },
 {
 "coach": "Mikko Manner",
@@ -140,10 +140,10 @@
 "clear_taken": 5,
 "pp_pulls": 4,
 "instances": 28,
-"expected_pull_pct": 0.5397,
+"expected_pull_pct": 0.5502,
 "band": [
-0.328,
-0.751
+0.331,
+0.769
 ],
 "last3": "PP-",
 "flags": []
@@ -156,10 +156,10 @@
 "clear_taken": 1,
 "pp_pulls": 0,
 "instances": 14,
-"expected_pull_pct": 0.4987,
+"expected_pull_pct": 0.5322,
 "band": [
-0.272,
-0.725
+0.271,
+0.793
 ],
 "last3": "P",
 "flags": [
@@ -174,10 +174,10 @@
 "clear_taken": 2,
 "pp_pulls": 0,
 "instances": 14,
-"expected_pull_pct": 0.4866,
+"expected_pull_pct": 0.5078,
 "band": [
-0.282,
-0.691
+0.278,
+0.738
 ],
 "last3": "P-P",
 "flags": [
@@ -192,10 +192,10 @@
 "clear_taken": 2,
 "pp_pulls": 0,
 "instances": 21,
-"expected_pull_pct": 0.4854,
+"expected_pull_pct": 0.5062,
 "band": [
-0.281,
-0.69
+0.276,
+0.736
 ],
 "last3": "PP-",
 "flags": [
@@ -210,10 +210,10 @@
 "clear_taken": 3,
 "pp_pulls": 7,
 "instances": 37,
-"expected_pull_pct": 0.4682,
+"expected_pull_pct": 0.4786,
 "band": [
-0.251,
-0.685
+0.244,
+0.713
 ],
 "last3": "P--",
 "flags": []
@@ -226,10 +226,10 @@
 "clear_taken": 4,
 "pp_pulls": 0,
 "instances": 20,
-"expected_pull_pct": 0.4647,
+"expected_pull_pct": 0.4697,
 "band": [
-0.238,
-0.692
+0.233,
+0.707
 ],
 "last3": "--P",
 "flags": []
@@ -244,8 +244,8 @@
 "instances": 7,
 "expected_pull_pct": 0.4152,
 "band": [
-0.177,
-0.654
+0.133,
+0.697
 ],
 "last3": "",
 "flags": [
@@ -262,8 +262,8 @@
 "instances": 9,
 "expected_pull_pct": 0.4152,
 "band": [
-0.177,
-0.654
+0.133,
+0.697
 ],
 "last3": "",
 "flags": [
@@ -278,10 +278,10 @@
 "clear_taken": 2,
 "pp_pulls": 3,
 "instances": 32,
-"expected_pull_pct": 0.4079,
+"expected_pull_pct": 0.4066,
 "band": [
-0.186,
-0.63
+0.169,
+0.644
 ],
 "last3": "--P",
 "flags": []
@@ -294,10 +294,10 @@
 "clear_taken": 3,
 "pp_pulls": 0,
 "instances": 21,
-"expected_pull_pct": 0.4026,
+"expected_pull_pct": 0.4007,
 "band": [
-0.192,
-0.614
+0.177,
+0.625
 ],
 "last3": "---",
 "flags": []
@@ -310,10 +310,10 @@
 "clear_taken": 3,
 "pp_pulls": 2,
 "instances": 30,
-"expected_pull_pct": 0.4002,
+"expected_pull_pct": 0.3985,
 "band": [
-0.166,
-0.634
+0.154,
+0.643
 ],
 "last3": "-P-",
 "flags": []
@@ -326,10 +326,10 @@
 "clear_taken": 2,
 "pp_pulls": 0,
 "instances": 28,
-"expected_pull_pct": 0.3995,
+"expected_pull_pct": 0.3965,
 "band": [
-0.165,
-0.634
+0.144,
+0.648
 ],
 "last3": "--P",
 "flags": []
@@ -342,10 +342,10 @@
 "clear_taken": 1,
 "pp_pulls": 0,
 "instances": 15,
-"expected_pull_pct": 0.3923,
+"expected_pull_pct": 0.3856,
 "band": [
-0.194,
-0.591
+0.164,
+0.607
 ],
 "last3": "--P",
 "flags": [
@@ -360,10 +360,10 @@
 "clear_taken": 1,
 "pp_pulls": 1,
 "instances": 12,
-"expected_pull_pct": 0.3779,
+"expected_pull_pct": 0.3685,
 "band": [
-0.17,
-0.586
+0.14,
+0.597
 ],
 "last3": "--P",
 "flags": [
@@ -378,10 +378,10 @@
 "clear_taken": 2,
 "pp_pulls": 0,
 "instances": 30,
-"expected_pull_pct": 0.3686,
+"expected_pull_pct": 0.3591,
 "band": [
-0.156,
-0.581
+0.13,
+0.588
 ],
 "last3": "-P-",
 "flags": []
@@ -394,10 +394,10 @@
 "clear_taken": 0,
 "pp_pulls": 0,
 "instances": 7,
-"expected_pull_pct": 0.3559,
+"expected_pull_pct": 0.3322,
 "band": [
-0.139,
-0.573
+0.086,
+0.578
 ],
 "last3": "-",
 "flags": [
@@ -412,10 +412,26 @@
 "clear_taken": 2,
 "pp_pulls": 1,
 "instances": 21,
-"expected_pull_pct": 0.3249,
+"expected_pull_pct": 0.315,
 "band": [
-0.125,
-0.525
+0.107,
+0.522
+],
+"last3": "P--",
+"flags": []
+},
+{
+"coach": "Jere H\u00e4rk\u00e4l\u00e4",
+"team": "\u00c4ss\u00e4t",
+"last_seen": "2024-03-06",
+"clear_chances": 5,
+"clear_taken": 1,
+"pp_pulls": 0,
+"instances": 16,
+"expected_pull_pct": 0.2799,
+"band": [
+0.076,
+0.484
 ],
 "last3": "P--",
 "flags": []
@@ -428,31 +444,15 @@
 "clear_taken": 0,
 "pp_pulls": 0,
 "instances": 5,
-"expected_pull_pct": 0.3126,
+"expected_pull_pct": 0.2782,
 "band": [
-0.114,
-0.511
+0.061,
+0.495
 ],
 "last3": "--",
 "flags": [
 "RISKY: <5 clean chances"
 ]
-},
-{
-"coach": "Jere H\u00e4rk\u00e4l\u00e4",
-"team": "\u00c4ss\u00e4t",
-"last_seen": "2024-03-06",
-"clear_chances": 5,
-"clear_taken": 1,
-"pp_pulls": 0,
-"instances": 16,
-"expected_pull_pct": 0.3008,
-"band": [
-0.107,
-0.495
-],
-"last3": "P--",
-"flags": []
 },
 {
 "coach": "Johan Pennerborn",
@@ -462,10 +462,10 @@
 "clear_taken": 1,
 "pp_pulls": 0,
 "instances": 17,
-"expected_pull_pct": 0.2855,
+"expected_pull_pct": 0.262,
 "band": [
-0.095,
-0.476
+0.063,
+0.461
 ],
 "last3": "---",
 "flags": []
@@ -478,10 +478,10 @@
 "clear_taken": 1,
 "pp_pulls": 0,
 "instances": 20,
-"expected_pull_pct": 0.2651,
+"expected_pull_pct": 0.2363,
 "band": [
-0.075,
-0.455
+0.039,
+0.434
 ],
 "last3": "---",
 "flags": []
@@ -494,10 +494,10 @@
 "clear_taken": 2,
 "pp_pulls": 1,
 "instances": 18,
-"expected_pull_pct": 0.2402,
+"expected_pull_pct": 0.2309,
 "band": [
-0.075,
-0.406
+0.064,
+0.398
 ],
 "last3": "---",
 "flags": []
@@ -510,10 +510,10 @@
 "clear_taken": 0,
 "pp_pulls": 1,
 "instances": 17,
-"expected_pull_pct": 0.236,
+"expected_pull_pct": 0.1942,
 "band": [
-0.059,
-0.414
+0.013,
+0.376
 ],
 "last3": "---",
 "flags": [
@@ -528,10 +528,10 @@
 "clear_taken": 1,
 "pp_pulls": 0,
 "instances": 21,
-"expected_pull_pct": 0.2061,
+"expected_pull_pct": 0.1843,
 "band": [
-0.037,
-0.375
+0.015,
+0.354
 ],
 "last3": "---",
 "flags": []
@@ -544,10 +544,10 @@
 "clear_taken": 1,
 "pp_pulls": 0,
 "instances": 31,
-"expected_pull_pct": 0.1896,
+"expected_pull_pct": 0.1736,
 "band": [
-0.018,
-0.361
+0.003,
+0.344
 ],
 "last3": "---",
 "flags": []
@@ -560,10 +560,10 @@
 "clear_taken": 0,
 "pp_pulls": 0,
 "instances": 16,
-"expected_pull_pct": 0.1848,
+"expected_pull_pct": 0.1446,
 "band": [
-0.024,
-0.346
+0.0,
+0.302
 ],
 "last3": "---",
 "flags": []
@@ -576,10 +576,10 @@
 "clear_taken": 0,
 "pp_pulls": 0,
 "instances": 23,
-"expected_pull_pct": 0.1605,
+"expected_pull_pct": 0.1228,
 "band": [
 0.0,
-0.336
+0.289
 ],
 "last3": "---",
 "flags": []

@@ -1,10 +1,10 @@
 {
 "meta": {
 "league": "ahl",
-"prior_a": 3.562,
-"prior_b": 3.438,
+"prior_a": 4.58,
+"prior_b": 4.42,
 "prior_mu": 0.5089,
-"prior_strength": 7,
+"prior_strength": 9,
 "hazard_bucketed": {
 "0": 9.6e-05,
 "1": 9.2e-05,
