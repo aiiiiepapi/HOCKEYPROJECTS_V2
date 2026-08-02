@@ -406,3 +406,20 @@ def test_nhl_blip_rule_and_order_independence():
     if lake_game.exists():
         _, insts = extract_instances(load_pbp(lake_game), 3)
         assert insts[0]["pull_evidence_secs"] == 930
+
+
+def test_random_audit_vs_raw_lakes():
+    """Seeded random audits (30 pulls + 30 no-pulls per league) re-verified
+    directly against the raw lake goalie channels, bypassing the adapter
+    state machine. Runs only when the lakes are mounted (RUNBOOK clones);
+    0 disagreements is the standing bar (AHL 2026-08-01, Liiga 2026-08-02)."""
+    lakes = Path("/home/claude/work")
+    if not (lakes / "ahl_lake").exists() or not (lakes / "liiga_lake").exists():
+        import pytest
+        pytest.skip("lakes not mounted")
+    sys.path.insert(0, str(ROOT / "tools"))
+    from audit_interval_random import audit
+    for lg in ("ahl", "liiga"):
+        sample, bad = audit(lg)
+        assert len(sample) == 60, lg
+        assert not bad, (lg, bad)
