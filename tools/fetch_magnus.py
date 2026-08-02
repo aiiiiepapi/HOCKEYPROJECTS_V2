@@ -10,7 +10,9 @@ keeps every PDF fetched; Magnus filtering happens offline in v2 from the
 Championnat header (fetch-only rule: this script classifies NOTHING).
 
 Modes:
-  python fetch_magnus.py --range 68800 69800      # season sweep (25-26 range)
+  python fetch_magnus.py --scan 1 70000 150       # coarse scan: every 150th id
+                                                  # (maps season bands offline)
+  python fetch_magnus.py --range 68800 69800      # full sweep of a band
   python fetch_magnus.py --ids ids.txt            # one id per line
   python fetch_magnus.py --probe-new              # nightly: extend past the
                                                   # highest id in the manifest
@@ -96,11 +98,14 @@ def run(ids):
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
+    ap.add_argument("--scan", nargs=3, type=int, metavar=("LO", "HI", "STEP"))
     ap.add_argument("--range", nargs=2, type=int)
     ap.add_argument("--ids")
     ap.add_argument("--probe-new", action="store_true")
     args = ap.parse_args()
-    if args.range:
+    if args.scan:
+        run(range(args.scan[0], args.scan[1] + 1, args.scan[2]))
+    elif args.range:
         run(range(args.range[0], args.range[1] + 1))
     elif args.ids:
         run([int(x) for x in open(args.ids) if x.strip()])
