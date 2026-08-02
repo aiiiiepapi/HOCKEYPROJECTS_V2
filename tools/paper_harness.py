@@ -217,7 +217,7 @@ def main():
                        "R": g["R"], "trailing": trailing,
                        "coach": (prof or {}).get("coach"),
                        "expected_pull_pct": pct,
-                       "rule28_no_bet": (pct is not None and pct < 0.50),
+                       "rule28_no_bet": (pct is not None and pct < 0.40),
                        "hot_form": hot}
                 tab = tables.get(lg)
                 if tab and pct is not None:

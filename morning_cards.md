@@ -23,21 +23,21 @@ Card spec (Seb 2026-08-02): expected %, last-year record, last 5 clean chances, 
 - Avg pull time (2 seasons, recency-weighted): 3:32 left (8 pulls)
 - Special notes: +5 PP pulls (excluded above)
 
-## CAR — Rod Brind'Amour  [NO-BET: <50% (rule 28)]
+## CAR — Rod Brind'Amour
 **Expected pull: 48%**  (band 4%-92%, career 6/11)
 - 2025-26 classified: 1 pull / 1 no-pull
 - Last 5 clean chances: P P NP P NP  (oldest 2023-03-28)
 - Avg pull time (2 seasons, recency-weighted): ~4:19 (league — only 2 pull(s) last 2 seasons)
 - Special notes: +5 PP pulls (excluded above)
 
-## CBJ — Rick Bowness  [NO-BET: <50% (rule 28)]
+## CBJ — Rick Bowness
 **Expected pull: 43%**  (band 8%-79%, career 4/8)
 - 2025-26 classified: 0 pull / 0 no-pull
 - Last 5 clean chances: P NP NP P NP  (oldest 2023-03-19)
 - Avg pull time (2 seasons, recency-weighted): ~4:19 (league — only 0 pull(s) last 2 seasons)
 - Special notes: +1 PP pulls (excluded above)
 
-## CGY — Ryan Huska  [NO-BET: <50% (rule 28)]
+## CGY — Ryan Huska  [NO-BET: <40% (rule 28, amended 2026-08-02)]
 **Expected pull: 7%**  (band 0%-25%, career 1/11)
 - 2025-26 classified: 0 pull / 5 no-pull
 - Last 5 clean chances: NP NP NP NP NP  (oldest 2025-10-09)
@@ -65,7 +65,7 @@ Card spec (Seb 2026-08-02): expected %, last-year record, last 5 clean chances, 
 - Avg pull time (2 seasons, recency-weighted): 3:14 left (3 pulls)
 - Special notes: small sample (4 chances); +2 PP pulls (excluded above)
 
-## DET — Todd McLellan  [NO-BET: <50% (rule 28)]
+## DET — Todd McLellan  [NO-BET: <40% (rule 28, amended 2026-08-02)]
 **Expected pull: 6%**  (band 0%-25%, career 0/10)
 - 2025-26 classified: 0 pull / 1 no-pull
 - Last 5 clean chances: NP NP NP NP NP  (oldest 2025-01-19)
@@ -79,7 +79,7 @@ Card spec (Seb 2026-08-02): expected %, last-year record, last 5 clean chances, 
 - Avg pull time (2 seasons, recency-weighted): 3:57 left (7 pulls)
 - Special notes: +1 PP pulls (excluded above)
 
-## FLA — Paul Maurice  [NO-BET: <50% (rule 28)]
+## FLA — Paul Maurice
 **Expected pull: 48%**  (band 18%-79%, career 13/20)
 - 2025-26 classified: 3 pull / 3 no-pull
 - Last 5 clean chances: P P NP P NP  (oldest 2025-12-20)
@@ -107,14 +107,14 @@ Card spec (Seb 2026-08-02): expected %, last-year record, last 5 clean chances, 
 - Avg pull time (2 seasons, recency-weighted): 4:08 left (6 pulls)
 - Special notes: +3 PP pulls (excluded above)
 
-## NJD — Sheldon Keefe  [NO-BET: <50% (rule 28)]  [HOT FORM: pulled last chance (rule 28b)]
+## NJD — Sheldon Keefe  [NO-BET: <40% (rule 28, amended 2026-08-02)]  [HOT FORM: pulled last chance (rule 28b)]
 **Expected pull: 40%**  (band 11%-68%, career 9/23)
 - 2025-26 classified: 3 pull / 5 no-pull
 - Last 5 clean chances: NP P NP NP P  (oldest 2025-12-03)
 - Avg pull time (2 seasons, recency-weighted): 5:53 left (5 pulls)
 - Special notes: +4 PP pulls (excluded above); EARLY puller — if past his usual time w/ chances passed, stand down / cut % in MANUAL
 
-## NSH — Andrew Brunette  [NO-BET: <50% (rule 28)]
+## NSH — Andrew Brunette  [NO-BET: <40% (rule 28, amended 2026-08-02)]
 **Expected pull: 33%**  (band 2%-64%, career 7/15)
 - 2025-26 classified: 1 pull / 4 no-pull
 - Last 5 clean chances: NP P NP NP NP  (oldest 2025-10-21)
@@ -142,7 +142,7 @@ Card spec (Seb 2026-08-02): expected %, last-year record, last 5 clean chances, 
 - Avg pull time (2 seasons, recency-weighted): 4:46 left (5 pulls)
 - Special notes: +6 PP pulls (excluded above)
 
-## PHI — Rick Tocchet  [NO-BET: <50% (rule 28)]  [HOT FORM: pulled last chance (rule 28b)]
+## PHI — Rick Tocchet  [HOT FORM: pulled last chance (rule 28b)]
 **Expected pull: 44%**  (band 6%-82%, career 2/8)
 - 2025-26 classified: 2 pull / 2 no-pull
 - Last 5 clean chances: NP NP P NP P  (oldest 2024-04-02)
@@ -163,14 +163,14 @@ Card spec (Seb 2026-08-02): expected %, last-year record, last 5 clean chances, 
 - Avg pull time (2 seasons, recency-weighted): 3:00 left (3 pulls)
 - Special notes: +2 PP pulls (excluded above)
 
-## SJS — Ryan Warsofsky  [NO-BET: <50% (rule 28)]
+## SJS — Ryan Warsofsky  [NO-BET: <40% (rule 28, amended 2026-08-02)]
 **Expected pull: 23%**  (band 0%-52%, career 2/9)
 - 2025-26 classified: 1 pull / 4 no-pull
 - Last 5 clean chances: P NP NP NP NP  (oldest 2026-01-11)
 - Avg pull time (2 seasons, recency-weighted): ~4:19 (league — only 2 pull(s) last 2 seasons)
 - Special notes: +2 PP pulls (excluded above)
 
-## STL — Jim Montgomery  [NO-BET: <50% (rule 28)]
+## STL — Jim Montgomery
 **Expected pull: 48%**  (band 10%-86%, career 6/11)
 - 2025-26 classified: 0 pull / 2 no-pull
 - Last 5 clean chances: P P P NP NP  (oldest 2024-11-05)
@@ -191,7 +191,7 @@ Card spec (Seb 2026-08-02): expected %, last-year record, last 5 clean chances, 
 - Avg pull time (2 seasons, recency-weighted): 4:02 left (13 pulls)
 - Special notes: +2 PP pulls (excluded above)
 
-## UTA — AndrÃ© Tourigny  [NO-BET: <50% (rule 28)]
+## UTA — AndrÃ© Tourigny
 **Expected pull: 41%**  (band 2%-80%, career 2/4)
 - 2025-26 classified: 0 pull / 2 no-pull
 - Last 5 clean chances: P P NP NP  (oldest 2024-10-14)
@@ -205,7 +205,7 @@ Card spec (Seb 2026-08-02): expected %, last-year record, last 5 clean chances, 
 - Avg pull time (2 seasons, recency-weighted): 4:18 left (8 pulls)
 - Special notes: none
 
-## VGK — John Tortorella  [NO-BET: <50% (rule 28)]
+## VGK — John Tortorella  [NO-BET: <40% (rule 28, amended 2026-08-02)]
 **Expected pull: 3%**  (band 0%-16%, career 0/11)
 - 2025-26 classified: 0 pull / 0 no-pull
 - Last 5 clean chances: NP NP NP NP NP  (oldest 2024-10-22)

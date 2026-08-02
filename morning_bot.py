@@ -152,7 +152,7 @@ def main():
         last5 = seq[-5:]
         l5 = " ".join("P" if t else "NP" for _, t, _ in last5) or "-"
         hot = bool(seq) and (seq[-1][1] or sum(t for _, t, _ in seq[-3:]) >= 2)
-        no_bet = base < 0.50
+        no_bet = base < 0.40
         # last-year classified record
         yr = [(d, t) for d, t, _ in seq if d >= SEASON_CUT]
         yp = sum(t for _, t in yr)
@@ -182,7 +182,7 @@ def main():
         opp = f" vs {opps[team]}" if team in opps else ""
         badge = ""
         if no_bet:
-            badge += "  [NO-BET: <50% (rule 28)]"
+            badge += "  [NO-BET: <40% (rule 28, amended 2026-08-02)]"
         if hot:
             badge += "  [HOT FORM: " + ("pulled last chance" if seq[-1][1] else "2 of last 3") + " (rule 28b)]"
         out.append(f"## {team}{opp} — {p['coach']}{badge}")

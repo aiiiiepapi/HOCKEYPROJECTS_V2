@@ -166,8 +166,10 @@ NOTE: new coach layer is PROVISIONAL until blind re-validation (next block).
     NHL large-T shows 6v5-for flat across gaps). Liiga blind re-run:
     calibration unchanged-to-hair-better, all gates green.
 
-28. **50%% floor (Seb, 2026-08-01): NEVER bet when expected pull %% < 50.**
-    Recorded as BETTING POLICY (cards marked NO-BET below 50%%). Evidence
+28. **Betting floor (Seb, 2026-08-01; AMENDED 2026-08-02: 50%% -> 40%%):
+    NEVER bet when expected pull %% < 40.** Floor applies to the BASE coach %%
+    (fav/dog effect lives in special notes since the 2026-08-02 card spec,
+    so a sub-40 coach stays NO-BET even as a big favorite). Evidence
     note (0b, on record): blind backtests AT MODEL LINES show sub-50 spots
     did not lose (NHL leaderTT +35.7%%, Liiga positive) — but at REAL market
     lines sub-50 Overs rarely clear the +10%% threshold anyway (our number
