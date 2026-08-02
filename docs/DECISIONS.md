@@ -327,3 +327,11 @@ NOTE: new coach layer is PROVISIONAL until blind re-validation (next block).
     (standings-aware, team-level) as the only candidate that could capture
     WHICH trailing teams push; blanket H2 adjustments would damage 77/86.
     NO-GO unchanged; re-litigation path unchanged.
+
+39c. **Seb's stability claim CONFIRMED for totals, refined for direction
+    (2026-08-02):** league-wide P3 goals/min stable every month (0.12-0.13,
+    Nov-Apr); gap-3 window totals stable across halves (0.100 vs 0.108/min).
+    The 90-H2 shift is DIRECTIONAL only: leader 0.055->0.055/min flat,
+    trailer 0.045->0.053 (+18%), leader goal share 55%->51%, ENG/inst
+    halved. Directional products (leaderTT, -3.5, marg4) price the split,
+    not the total — which is why total-anchored fixes all tested null.
