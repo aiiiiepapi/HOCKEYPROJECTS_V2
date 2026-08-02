@@ -121,7 +121,13 @@ def parse_game(pxp_path, summary_path=None, season=None):
             continue
         per_side[side(e)].append((pid, _cum(e), i, e))
     for sd, rows in per_side.items():
-        rows.sort(key=lambda r: (r[1], r[2]))
+        # OUT rows sort before IN rows within a second (2026-08-02 fix): a
+        # substitution can be logged IN-then-OUT in feed order, which used to
+        # leak past the zero-length-substitution rule below and open a phantom
+        # empty-net interval to the period horn (90/1028763: Milic->DiVincentiis
+        # swap at P3 8:00 became a 720s "pull"). OUT-first normalization makes
+        # every same-second in+out pair a zero-length interval, dropped below.
+        rows.sort(key=lambda r: (r[1], bool(r[3].get("goalie_in_id")), r[2]))
         open_at = None
         open_pid = None
         for pid, t, _i, e in rows:
@@ -187,7 +193,11 @@ def parse_game(pxp_path, summary_path=None, season=None):
             continue
         pens.append({"side": side(e), "t": _cum(e),
                      "begin": _cum(e), "end": _cum(e) + int(mins * 60),
-                     "minor": mins == 2.0})
+                     "minor": mins == 2.0,
+                     # 10-min misconducts don't change on-ice strength; row is
+                     # kept as a whistle marker for end-context detection but
+                     # excluded from box classification (segments.py).
+                     "misconduct": mins >= 10.0})
     # minors end early on the first goal by a non-penalized side in-window
     for p in pens:
         if not p["minor"]:
@@ -196,7 +206,7 @@ def parse_game(pxp_path, summary_path=None, season=None):
             if p["begin"] < gl["t"] < p["end"] and gl["side"] != p["side"]:
                 p["end"] = gl["t"]
                 break
-    out["penalties"] = [{k: p[k] for k in ("side", "t", "begin", "end")} for p in pens]
+    out["penalties"] = [{k: p[k] for k in ("side", "t", "begin", "end", "misconduct")} for p in pens]
 
     # ---- head coaches: game listing first, verified map as fallback ---------
     coaches = {}

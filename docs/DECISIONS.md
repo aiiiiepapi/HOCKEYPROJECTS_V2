@@ -237,3 +237,36 @@ NOTE: new coach layer is PROVISIONAL until blind re-validation (next block).
     AHL 5->9, Liiga 5->4 (the fit re-spends anchor weight on the non-hot
     majority once hot coaches are released). ONE implementation:
     prior_fit._anchor_strength backs profiles, cards, and all backtests.
+
+## 2026-08-02 (league finalization block — Manager session)
+
+34. **Ruling 17b — dp artifact rule COMPLETED (2026-08-02; session-adjudicated
+    under Seb's "finalize the 3 leagues" directive; PENDING Seb ratification
+    of the card deltas).** Ruling 17's ">25s at a leader whistle = real pull"
+    convention was tested against NHL dp ground truth (6,594 explicit dp
+    possessions: 8.7% exceed 25s) and hand-verified case by case — three new
+    artifact clauses in the shared engine (segments.py):
+    (i) leader-whistle enders starting before P3 12:00 with dur<=60s;
+    (ii) early dp GOALS (trailing 6v5 goal, <=25s, no penalty event — the
+    goal wipes the minor); (iii) whistle-lag (leader penalty assessed inside
+    the segment's first 10s, <=25s, early). 7 AHL + 1 Liiga phantom pulls
+    removed, incl. 2 phantom successes. Late/middle-band long enders keep
+    ruling 17. Full trace: docs/ground_truth_traces/interval_dp_audit_2026-08-02.md.
+35. **Misconduct fix (bug, no ruling needed):** 10-min misconducts never
+    shorthand a team; excluded from box-strength classification in both
+    interval adapters (kept as whistle markers). 8 AHL + 1 Liiga
+    classification flips, both directions (2 hidden EV pulls RECOVERED as
+    bettable: 77/1024678, 90/1028615; plus liiga 2026/466).
+36. **Same-second swap fix (bug):** IN-then-OUT feed order at one second is
+    a goalie substitution, not a pull; OUT-first normalization (534/534
+    same-second pairs in the lake have the net full — loss-free). Removed
+    two 6-12-minute phantom "pulls" (90/1028763, 90/1027839) and fixed one
+    evidence time (77/1024882: 520->957).
+37. **NHL blip rule + order-independence (closes the logged v2 edge):**
+    faceoff codes are authoritative within a second; <=2s empty runs at a
+    penalty with no dp window are blip artifacts. 3 corrections, all
+    2022-23 (outside the training window); production numbers unchanged.
+    D.J. Smith ledger row corrected (7/12 -> 6/11).
+38. **Liiga random audit shipped at AHL parity** (seed 20260802, 30+30 vs
+    raw goalKeeperEvents): 0/60. Both leagues' audits are now a standing
+    gate (tools/audit_interval_random.py). Gate count 17 -> 21.

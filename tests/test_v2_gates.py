@@ -316,3 +316,93 @@ def test_ahl_not_bettable_flagged():
     This gate exists so no session quietly prices AHL without re-litigating."""
     s = open(ROOT / "docs" / "DECISIONS.md").read()
     assert "AHL: NO-GO for pricing" in s
+
+
+def test_dp_artifact_rule_17b_pins():
+    """Ruling 17b (2026-08-02): dp phantom-pull classes, every case
+    hand-verified against the raw feed this session. Exact-value pins on the
+    derived instance files — these games must stay exactly as adjudicated."""
+    rows = {(r["season"], str(r["game_id"]), r["n"]): r
+            for r in json.load(open(DER / "ahl_instances_gap3.json"))}
+    # 17b-i: short early leader-whistle enders = dp (26-51s, P3 0:33-11:03)
+    for k in [("77", "1024680", 1), ("86", "1026980", 1), ("86", "1027518", 1),
+              ("86", "1027594", 1), ("90", "1027844", 1)]:
+        assert rows[k]["pulled"] is False, k
+    # 17b-ii: dp GOAL (wiped minor, no penalty event) is not pull evidence
+    assert rows[("81", "1025867", 1)]["pulled"] is False
+    # 17b-iii: whistle-lag (leader penalty assessed inside the segment)
+    assert rows[("90", "1028800", 1)]["pulled"] is False
+    # evidence moves to the real (late) segment when one exists
+    assert rows[("90", "1028774", 1)]["pulled"] is True
+    assert rows[("90", "1028774", 1)]["pull_evidence_secs"] == 945
+    # late-game long leader-whistle enders remain real pulls (ruling 17)
+    for k, ev in [(("90", "1028817", 1), 995), (("90", "1028895", 2), 966),
+                  (("90", "1028548", 1), 1101)]:
+        assert rows[k]["pulled"] is True and rows[k]["pull_evidence_secs"] == ev, k
+    # verified real early pulls (long/corroborated) must NEVER be flagged
+    for k, ev in [(("81", "1025222", 1), 598), (("90", "1028306", 1), 705)]:
+        assert rows[k]["pulled"] is True and rows[k]["pull_evidence_secs"] == ev, k
+    # same-second goalie SWAPS (IN-row-then-OUT-row feed order) are not pulls
+    # (2026-08-02 adapter fix; each hand-verified against named goalie rows):
+    assert rows[("90", "1028763", 2)]["pulled"] is False      # Milic->DiVincentiis
+    assert rows[("90", "1027839", 1)]["pulled"] is False      # Tolopilo->Patera; real pull at 1000 is outside the closed window
+    assert rows[("77", "1024882", 1)]["pull_evidence_secs"] == 957  # swap at 520 was phantom; real pull 957
+    lrows = {(r["season"], str(r["game_id"]), r["n"]): r
+             for r in json.load(open(DER / "liiga_instances_gap3.json"))}
+    assert lrows[("2025", "246", 1)]["pulled"] is False        # dp goal (17b-ii)
+    assert lrows[("2026", "247", 1)]["pulled"] is True         # real late pull
+
+
+def test_misconduct_windows_never_shorthand():
+    """2026-08-02 fix: 10-min misconducts don't change on-ice strength.
+    Pins the 9 classification flips (both directions) + adapter flagging."""
+    rows = {(r["season"], str(r["game_id"]), r["n"]): r
+            for r in json.load(open(DER / "ahl_instances_gap3.json"))}
+    for k, cls in [(("81", "1026058", 1), "pp_pull"),   # trailing misconduct masked leader minor
+                   (("77", "1024340", 1), "pp_pull"), (("81", "1025506", 1), "pp_pull"),
+                   (("81", "1025878", 2), "pp_pull"), (("86", "1027415", 1), "pp_pull"),
+                   (("86", "1027426", 1), "pp_pull"),
+                   (("77", "1024678", 1), "pull"),      # leader misconduct faked a PP
+                   (("90", "1028615", 1), "pull")]:
+        assert rows[k]["pull_classification"] == cls, (k, rows[k]["pull_classification"])
+    lrows = {(r["season"], str(r["game_id"]), r["n"]): r
+             for r in json.load(open(DER / "liiga_instances_gap3.json"))}
+    assert lrows[("2026", "466", 1)]["pull_classification"] == "pull"
+    # adapters must flag misconduct rows (kept as whistle markers)
+    from hockeycore.leagues.ahl import parse_game
+    lake = Path("/home/claude/work/ahl_lake")
+    if lake.exists():
+        g = parse_game(str(lake / "81" / "1026058_pxp.json"),
+                       str(lake / "81" / "1026058_summary.json"))
+        assert any(p.get("misconduct") for p in g["penalties"])
+        assert all((p["end"] - p["begin"]) < 600 or p["misconduct"]
+                   for p in g["penalties"])
+
+
+def test_nhl_blip_rule_and_order_independence():
+    """2026-08-02: single-second net-empty blips at a whistle are flagged
+    explicitly (blip_artifact) and extraction is invariant to same-second
+    feed ordering (was previously only accidental, shadow_diff_gap3.md)."""
+    import copy
+    from itertools import groupby
+    from hockeycore.gap.extract import load_pbp, extract_instances
+    gt = json.load(open(ROOT / "tests" / "ground_truth_nhl.json"))["games"]
+    for gid in gt:
+        pbp = load_pbp(ROOT / f"tests/reference_raw/nhl/{gid}_pbp.json")
+        _, base = extract_instances(pbp, 3)
+        pert = copy.deepcopy(pbp)
+        out = []
+        for _, grp in groupby(pert["plays"],
+                              key=lambda p: (p.get("periodDescriptor", {}).get("number"),
+                                             p.get("timeInPeriod"))):
+            out.extend(reversed(list(grp)))
+        pert["plays"] = out
+        _, flip = extract_instances(pert, 3)
+        for b, f in zip(base, flip):
+            assert (b["pulled"], b["pull_evidence_secs"], b["pull_classification"]) == \
+                   (f["pulled"], f["pull_evidence_secs"], f["pull_classification"]), gid
+    # the logged blip game itself, if the lake is mounted (regression anchor)
+    lake_game = Path("/home/claude/work/nhl_lake/20242025/2024020670_pbp.json")
+    if lake_game.exists():
+        _, insts = extract_instances(load_pbp(lake_game), 3)
+        assert insts[0]["pull_evidence_secs"] == 930

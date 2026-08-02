@@ -12640,12 +12640,14 @@
 {
 "empty_from": 600,
 "empty_until": 604,
-"end_context": "scored_6v5"
+"end_context": "scored_6v5",
+"dp_artifact": true
 }
 ],
-"pulled": true,
-"pull_evidence_secs": 600,
-"pull_classification": "pp_pull",
+"pulled": false,
+"pull_evidence_secs": null,
+"dp_only_empty": true,
+"pull_classification": null,
 "season": "2025",
 "game_id": 246,
 "date": "2024-12-14",
@@ -21500,7 +21502,7 @@
 ],
 "pulled": true,
 "pull_evidence_secs": 1135,
-"pull_classification": "pp_pull",
+"pull_classification": "pull",
 "season": "2026",
 "game_id": 466,
 "date": "2026-03-14",

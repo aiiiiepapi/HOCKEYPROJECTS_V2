@@ -46,9 +46,14 @@ def parse_game(path):
                 out["empty"][side].append((e["beginTime"], e["endTime"]))
         pen_side = side if not v2_api else ("away" if side == "home" else "home")
         for e in t.get("penaltyEvents") or []:
+            beg = e.get("penaltyBegintime", e["gameTime"])
+            end = e.get("penaltyEndtime", e["gameTime"] + 120)
             out["penalties"].append({"side": pen_side, "t": e["gameTime"],
-                                     "begin": e.get("penaltyBegintime", e["gameTime"]),
-                                     "end": e.get("penaltyEndtime", e["gameTime"] + 120)})
+                                     "begin": beg, "end": end,
+                                     # >=10-min box time = misconduct class; no
+                                     # strength effect (2026-08-02 fix, see
+                                     # segments.py). Row kept as whistle marker.
+                                     "misconduct": (end - beg) >= 600})
     out["goals"].sort(key=lambda e: e["t"])
     return out
 

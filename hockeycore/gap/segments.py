@@ -118,10 +118,44 @@ def extract_instances(g, target_gap=3):
                                    else "penalty_on_trailer")
                             break
             seg["end_context"] = ctx
-            if (ctx == "penalty_on_leader"
-                    and seg["empty_until"] - seg["empty_from"] <= 25
-                    and not seg.get("synthetic")):
+            dur = seg["empty_until"] - seg["empty_from"]
+            if seg.get("synthetic"):
+                pass
+            elif ctx == "penalty_on_leader" and dur <= 25:
+                # ruling 17: measured dp extra-attacker moments (median 10s)
                 seg["dp_artifact"] = True
+            elif ctx == "penalty_on_leader" and seg["empty_from"] < 720 and dur <= 60:
+                # ruling 17b-i (2026-08-02): NHL dp truth (n=6,594 possessions)
+                # shows 8.7% exceed 25s — duration alone cannot separate dp
+                # from pulls. But real down-3 pulls before P3 12:00 are ~0
+                # short ones (all 5 verified early pulls are 120s+ continuous;
+                # 285-pull audit). Short early leader-whistle enders are dp.
+                # Hand-verified: 1024680, 1026980, 1027518, 1027594, 1027844,
+                # 1028774 (all 26-51s, P3 0:33-11:03, same-goalie return at
+                # the whistle to the second).
+                seg["dp_artifact"] = True
+            elif (ctx == "scored_6v5" and seg["empty_from"] < 720 and dur <= 25
+                  and not any(abs(pnl["t"] - (seg["empty_until"] + P3_START)) <= 2
+                              for pnl in g["penalties"])):
+                # ruling 17b-ii: dp GOAL — non-offending (trailing) team scores
+                # during the delayed call, the minor is WIPED, so no penalty
+                # event exists. Not a pull decision; goal stays on the
+                # scoreboard/gap logic. Hand-verified: 1025867 (P3 3:07,
+                # 19s, scored, no penalty assessed).
+                seg["dp_artifact"] = True
+            elif seg["empty_from"] < 720 and dur <= 25:
+                # ruling 17b-iii: whistle-lag — the leader's penalty is
+                # assessed INSIDE the segment near its start (feed lag between
+                # assessment row and the goalie-return row). Hand-verified:
+                # 1028800 (seg 399-409, leader penalty at 403, SH-ENG during
+                # the dp counted as "ate ENG").
+                for pnl in g["penalties"]:
+                    tp3 = pnl["t"] - P3_START
+                    if (pnl["side"] == opp_side
+                            and seg["empty_from"] <= tp3 <= seg["empty_from"] + 10
+                            and tp3 < seg["empty_until"]):
+                        seg["dp_artifact"] = True
+                        break
         ev_segs = [x for x in segs if not x.get("dp_artifact")]
         inst["pull_segments"] = segs
         inst["pulled"] = bool(ev_segs)
@@ -133,8 +167,14 @@ def extract_instances(g, target_gap=3):
         if ev_segs:
             t0 = ev_segs[0]["empty_from"] + P3_START
             leader = "home" if tn == "away" else "away"
-            lead_box = sum(1 for p in g["penalties"] if p["side"] == leader and p["begin"] <= t0 < p["end"])
-            trail_box = sum(1 for p in g["penalties"] if p["side"] == tn and p["begin"] <= t0 < p["end"])
+            # Misconducts (adapter-flagged) never make a team shorthanded —
+            # excluding them from strength accounting (2026-08-02 fix: 8 AHL
+            # + 1 Liiga classifications flipped on phantom 10-min windows,
+            # e.g. 1026058: trailing misconduct masked a leader minor -> a
+            # 6v4 pp_pull was counted as an EV pull).
+            strength = [p for p in g["penalties"] if not p.get("misconduct")]
+            lead_box = sum(1 for p in strength if p["side"] == leader and p["begin"] <= t0 < p["end"])
+            trail_box = sum(1 for p in strength if p["side"] == tn and p["begin"] <= t0 < p["end"])
             inst["pull_classification"] = "pp_pull" if lead_box > trail_box else "pull"
         else:
             inst["pull_classification"] = None

@@ -72,7 +72,7 @@
   ],
   "last3": "nnn",
   "overall_rate": 0.125,
-  "median_pull_R": 993,
+  "median_pull_R": 318,
   "n_pulls": 1,
   "m_prod": 1.0,
   "pp_share": 0.0,
@@ -675,25 +675,27 @@
   "team": "LAK",
   "coach": "D.J. Smith",
   "last_seen": "2026-04-13",
-  "clear_chances": 12,
-  "clear_taken": 7,
-  "clean_rate": 0.583,
+  "clear_chances": 11,
+  "clear_taken": 6,
+  "clean_rate": 0.545,
   "ci": [
-   0.318,
-   0.836
+   0.271,
+   0.813
   ],
-  "expected_pull_pct": 0.632,
+  "expected_pull_pct": 0.615,
   "band": [
-   0.154,
+   0.133,
    1
   ],
   "last3": "nnP",
   "overall_rate": 0.538,
-  "median_pull_R": 251,
-  "n_pulls": 7,
+  "median_pull_R": 269,
+  "n_pulls": 6,
   "m_prod": 1.147,
-  "pp_share": 0.0,
-  "flags": []
+  "pp_share": 0.14,
+  "flags": [
+   "+1 PP pulls (excluded above)"
+  ]
  },
  {
   "shift_prod": 0,
@@ -1037,7 +1039,7 @@
   "median_pull_R": 284,
   "n_pulls": 2,
   "m_prod": 0.976,
-  "pp_share": 0.4,
+  "pp_share": 0.5,
   "flags": [
    "+2 PP pulls (excluded above)"
   ]
@@ -1199,7 +1201,7 @@
   "median_pull_R": 279,
   "n_pulls": 2,
   "m_prod": 0.889,
-  "pp_share": 0.4,
+  "pp_share": 0.5,
   "flags": [
    "+2 PP pulls (excluded above)"
   ]

@@ -46,7 +46,14 @@ def game_frame(pbp):
                 "sit": str(p.get("situationCode", "") or ""),
                 "details": p.get("details", {}) or {},
             })
-    p3.sort(key=lambda e: (e["t"], e["i"]))  # stable: sequence resolves ties
+    # Same-second normalization (2026-08-02, closes the logged v2 edge from
+    # shadow_diff_gap3.md): the clock is STOPPED between a whistle and the
+    # resumption faceoff, so both share one game-second and the faceoff's
+    # situation code is the authoritative on-ice strength (a penalty row can
+    # carry a transient net-empty code, e.g. 2024020670 @724: penalty sit
+    # 1560, faceoff sit 1451). Faceoffs sort LAST within their second so
+    # sit_at() no longer depends on feed array order.
+    p3.sort(key=lambda e: (e["t"], e["type"] == "faceoff", e["i"]))
     return {
         "game_id": pbp.get("id"),
         "away": pbp["awayTeam"]["abbrev"], "home": pbp["homeTeam"]["abbrev"],
@@ -172,6 +179,22 @@ def extract_instances(pbp, target_gap=3):
                 run = None
         if run is not None:
             segs.append({"empty_from": run[0], "empty_until": c})
+        # Officiating-blip rule (2026-08-02, closes the logged v2 edge from
+        # shadow_diff_gap3.md): a <=2s net-empty run with a penalty event
+        # within +/-2s and no delayed-penalty window is situation-code noise
+        # at the whistle (e.g. 2024020670 @724: penalty row carries sit 1560,
+        # same-second faceoff restores 1451 — correctness previously depended
+        # on same-second event ORDER). Flagged and excluded from evidence,
+        # order-independently.
+        pen_ts = [e["t"] for e in ev if e["type"] == "penalty"]
+        for seg in segs:
+            if (seg["empty_until"] - seg["empty_from"] <= 2
+                    and not seg.get("evidence_is_closing_goal")
+                    and any(abs(pt - seg["empty_from"]) <= 2 for pt in pen_ts)
+                    and not any(s <= seg["empty_from"] < e2 for s, e2 in dp_wins)):
+                seg["blip_artifact"] = True
+        blip_segs = [s for s in segs if s.get("blip_artifact")]
+        segs = [s for s in segs if not s.get("blip_artifact")]
         # Closing-goal own-code rule (CALCULATIONS §4 / Bug-A lesson): the
         # closing goal's OWN situation code is authoritative for second c.
         # If it shows the trailing net empty and no segment reaches c, the
@@ -189,6 +212,8 @@ def extract_instances(pbp, target_gap=3):
         inst["dp_off_secs"] = len(dp_secs)
         inst["dp_off_range"] = (dp_secs[0], dp_secs[-1] + 1) if dp_secs else None
         inst["pull_segments"] = segs
+        if blip_segs:
+            inst["blip_segments"] = blip_segs   # audit trail, never evidence
         inst["pulled"] = bool(segs)
 
         if segs:
