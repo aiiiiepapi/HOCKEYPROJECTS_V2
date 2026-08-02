@@ -41,11 +41,9 @@ def load_estimator(league):
     from hockeycore.fit.prior_fit import fit_prior
     A, B, mu, st = fit_prior(list(seqs.values()))
 
+    from hockeycore.fit.prior_fit import posterior
     def p_c(name):
-        s = seqs.get(name, [])
-        kw = sum(x * 0.5 ** ((len(s) - 1 - i) / HL) for i, x in enumerate(s))
-        nw = sum(0.5 ** ((len(s) - 1 - i) / HL) for i in range(len(s)))
-        return (kw + A) / (nw + A + B)
+        return posterior(seqs.get(name, []), A, B)
     return p_c, mu, seqs
 
 

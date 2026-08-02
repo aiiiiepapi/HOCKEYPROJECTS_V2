@@ -50,11 +50,9 @@ for _r in sorted(_cw, key=lambda x: x["date"]):
 from hockeycore.fit.prior_fit import fit_prior as _fit_prior
 _A, _B, _mu, _st = _fit_prior(list(_seqs.values()))
 
+from hockeycore.fit.prior_fit import posterior as _posterior
 def p_coach(name):
-    s = _seqs.get(name, [])
-    kw = sum(x * 0.5 ** ((len(s) - 1 - i) / HL) for i, x in enumerate(s))
-    nw = sum(0.5 ** ((len(s) - 1 - i) / HL) for i in range(len(s)))
-    return (kw + _A) / (nw + _A + _B)
+    return _posterior(_seqs.get(name, []), _A, _B)
 
 _haz_cache = {}
 def _haz_for(pi):

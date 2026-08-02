@@ -190,3 +190,19 @@ NOTE: new coach layer is PROVISIONAL until blind re-validation (next block).
     +21.3%% -> +24.0%%, P(>edge) 0.946 -> 0.973 (clears even the pre-ruling-23
     0.95 bar); total-over CI floor now positive; Liiga all gates green,
     biases smaller. 17 gates green.
+
+30. **CAREER-FADED LEAGUE ANCHOR (Seb, 2026-08-02: 'league standards bring
+    little to no value as a whole').** The anchor's pseudo-count now fades
+    with career evidence: S_eff = S * 0.5^(max(career_n-8,0)/8), one shared
+    implementation (prior_fit.posterior) in profiles + both backtests.
+    Evidence: established-coach (>=10 chances) predictions are FLAT in NHL
+    with or without the anchor and BETTER faded in AHL; small-n shrinkage
+    unchanged (perfect 3-streaks continue at 67%, n=79). Also fixes the
+    recency-decay artifact where veterans kept a permanent 12-26%% league
+    weight. Blind re-validation: NHL leaderTT +23.9%% P(>edge)=0.973,
+    Liiga all green (biases +2.2/+0.3/-0.9/+6.1), 17 gates green.
+    Related measurements same night: calendar stage-of-season NULL in all
+    3 leagues (within-coach); fav/dog swing concentrates in sub-50%%
+    pullers (+11pts z=2.6, diluted-sample — clean-chance confirmation
+    queued); playoff-race proper test needs standings-as-of-date (next
+    block, elevated by Seb's doctrine).

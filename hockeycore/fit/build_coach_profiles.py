@@ -6,10 +6,11 @@ Merges: clean_window_coach.json (pull % on real chances), pp_pull_coach.json
 Output: data/derived/coach_profiles.json
 Run:    python3 hockeycore/fit/build_coach_profiles.py
 """
-import json, math
+import json, math, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT))
 DER = ROOT / "data" / "derived"
 
 
@@ -60,15 +61,18 @@ def main():
         n, k = c["ev_clear"], c["ev_taken"]          # 5v5-ONLY: the bettable number
         events = seq.get(coach, [])
         # recency-decayed counts (newest chance has weight 1)
+        from hockeycore.fit.prior_fit import posterior, FADE_START, FADE_HL
+        seq01 = [t for _, t in events]
+        post = posterior(seq01, A, B)
         kw = nw = 0.0
-        N = len(events)
         for age, (_, took) in enumerate(reversed(events)):
             w = 0.5 ** (age / HL)
             kw += w * took; nw += w
-        post = (kw + A) / (nw + A + B)
+        _fade = 0.5 ** (max(len(seq01) - FADE_START, 0) / FADE_HL)
+        A2, B2 = A * _fade, B * _fade
         # posterior 95% band at effective sample size
         import math as _m
-        a2, b2 = kw + A, nw - kw + B
+        a2, b2 = kw + A2, nw - kw + B2
         mu2 = a2 / (a2 + b2)
         sd2 = _m.sqrt(a2 * b2 / ((a2 + b2) ** 2 * (a2 + b2 + 1)))
         band = [max(0, round(mu2 - 1.96 * sd2, 3)), min(1, round(mu2 + 1.96 * sd2, 3))]

@@ -33,6 +33,22 @@
 },
 "profiles": [
 {
+"coach": "Tommi Niemel\u00e4",
+"team": "Ilves",
+"last_seen": "2026-03-14",
+"clear_chances": 13,
+"clear_taken": 10,
+"pp_pulls": 0,
+"instances": 29,
+"expected_pull_pct": 0.6553,
+"band": [
+0.487,
+0.823
+],
+"last3": "PP-",
+"flags": []
+},
+{
 "coach": "Toni S\u00f6derholm",
 "team": "TPS",
 "last_seen": "2026-03-14",
@@ -51,22 +67,6 @@
 ]
 },
 {
-"coach": "Tommi Niemel\u00e4",
-"team": "Ilves",
-"last_seen": "2026-03-14",
-"clear_chances": 13,
-"clear_taken": 10,
-"pp_pulls": 0,
-"instances": 29,
-"expected_pull_pct": 0.6248,
-"band": [
-0.464,
-0.786
-],
-"last3": "PP-",
-"flags": []
-},
-{
 "coach": "Petri Karjalainen",
 "team": "K\u00e4rp\u00e4t",
 "last_seen": "2026-03-07",
@@ -74,10 +74,10 @@
 "clear_taken": 8,
 "pp_pulls": 1,
 "instances": 34,
-"expected_pull_pct": 0.5966,
+"expected_pull_pct": 0.6142,
 "band": [
-0.429,
-0.765
+0.44,
+0.788
 ],
 "last3": "P-P",
 "flags": []
@@ -494,10 +494,10 @@
 "clear_taken": 2,
 "pp_pulls": 1,
 "instances": 18,
-"expected_pull_pct": 0.2737,
+"expected_pull_pct": 0.2687,
 "band": [
-0.115,
-0.432
+0.108,
+0.429
 ],
 "last3": "---",
 "flags": []
@@ -519,22 +519,6 @@
 "flags": []
 },
 {
-"coach": "Jyrki Aho",
-"team": "K-Espoo",
-"last_seen": "2026-01-24",
-"clear_chances": 9,
-"clear_taken": 1,
-"pp_pulls": 0,
-"instances": 31,
-"expected_pull_pct": 0.2421,
-"band": [
-0.09,
-0.395
-],
-"last3": "---",
-"flags": []
-},
-{
 "coach": "Risto Dufva",
 "team": "Sport",
 "last_seen": "2024-03-09",
@@ -551,6 +535,22 @@
 "flags": [
 "RISKY: <5 clean chances"
 ]
+},
+{
+"coach": "Jyrki Aho",
+"team": "K-Espoo",
+"last_seen": "2026-01-24",
+"clear_chances": 9,
+"clear_taken": 1,
+"pp_pulls": 0,
+"instances": 31,
+"expected_pull_pct": 0.2359,
+"band": [
+0.082,
+0.389
+],
+"last3": "---",
+"flags": []
 },
 {
 "coach": "Mikko Heiskanen",

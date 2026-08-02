@@ -13,6 +13,21 @@ import math
 
 HL = 10.0
 GRID = (2, 3, 4, 5, 6, 7, 9, 12)
+FADE_START, FADE_HL = 8, 8.0   # ruling 30: anchor fades with career evidence
+
+
+def posterior(seq, A, B):
+    """Recency-weighted Beta posterior with CAREER-FADED league anchor
+    (ruling 30, Seb 2026-08-02: 'league standards bring little to no value'
+    once a coach has a real record — confirmed predictively: established-
+    coach forecasts are flat-to-better with the anchor faded; small-n
+    shrinkage unchanged). S_eff = S * 0.5^(max(career_n - 8, 0)/8)."""
+    n = len(seq)
+    kw = sum(x * 0.5 ** ((n - 1 - i) / HL) for i, x in enumerate(seq))
+    nw = sum(0.5 ** ((n - 1 - i) / HL) for i in range(n))
+    fade = 0.5 ** (max(n - FADE_START, 0) / FADE_HL)
+    a_e, b_e = A * fade, B * fade
+    return (kw + a_e) / (nw + a_e + b_e)
 
 
 def fit_prior(seqs):

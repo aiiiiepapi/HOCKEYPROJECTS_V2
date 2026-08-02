@@ -156,10 +156,12 @@ def build(league, rows_file, skip_seasons=()):
     profiles = []
     for name, t in coach.items():
         seq = t["seq"]
+        from hockeycore.fit.prior_fit import posterior, FADE_START, FADE_HL
+        m = posterior(seq, a, b)
         kw = sum(x * 0.5 ** ((len(seq) - 1 - i) / HALF_LIFE) for i, x in enumerate(seq))
         nw = sum(0.5 ** ((len(seq) - 1 - i) / HALF_LIFE) for i in range(len(seq)))
-        post_a, post_b = kw + a, (nw - kw) + b   # failures = nw - kw
-        m = post_a / (post_a + post_b)           # == (kw+a)/(nw+a+b)
+        _f = 0.5 ** (max(len(seq) - FADE_START, 0) / FADE_HL)
+        post_a, post_b = kw + a * _f, (nw - kw) + b * _f
         sd = (m * (1 - m) / (post_a + post_b + 1)) ** 0.5
         flags = []
         if t["chances"] < 5:
