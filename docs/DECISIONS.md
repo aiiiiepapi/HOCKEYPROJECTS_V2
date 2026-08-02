@@ -364,3 +364,14 @@ NOTE: new coach layer is PROVISIONAL until blind re-validation (next block).
     lines exist BY ORDER, not by passed validation. December re-litigation
     + paper harness (which logs model-vs-real-line-vs-outcome and will
     settle this empirically) continue unchanged.
+
+41b. **SEB OVERRIDE EXTENDED (2026-08-02): -3.5 runs on NHL numbers too.**
+    Seb overrode his own ruling 26a ("AHL -3.5 permanently no-bet under ANY
+    fix") after re-hearing the oracle record (perfect-level refit still ~0
+    skill on marg4) and the splice blind (-22.3% ROI, P(>0)=0.00). Manager
+    recommendation against staking -3.5 stands on the record. Production
+    config now: AHL coach pull % (ruling-33 estimator) + AHL pull structure
+    (hazards, dead time, return/repull) + NHL scoring rates (rates, rates_R,
+    m_PP, pen via splice.py) — all three markets on lines_10ev_ahl.csv.
+    Direction sanity checks pass (rule 9). UNVALIDATED banner updated.
+    Paper harness + December re-litigation remain the empirical arbiters.

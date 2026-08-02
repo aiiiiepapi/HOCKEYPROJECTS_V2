@@ -85,27 +85,23 @@ def main(league, nhl_rates=False):
                         row += [round(pv, 4), round(line, 3) if line else ""]
                     w.writerow(row)
     if nhl_rates and league == "ahl":
-        # ruling 26a: AHL -3.5 permanently no-bet — blank its threshold lines
-        import io
-        fp = DER / f"lines_10ev_{league}.csv"
-        with open(fp, newline="") as f:
-            rd = list(csv.DictReader(f)); flds = rd and list(rd[0].keys())
-        for row in rd:
-            row["P_margin_ge4_line10"] = ""
-        with open(fp, "w", newline="") as f:
-            w = csv.DictWriter(f, fieldnames=flds); w.writeheader(); w.writerows(rd)
+        # Ruling 41b (Seb, 2026-08-02): -3.5 INCLUDED on NHL numbers too —
+        # Seb overrode his own ruling 26a after re-hearing the oracle/blind
+        # record. Full config: AHL coach pull %% + AHL pull structure + NHL
+        # scoring rates, all three markets live on the sheet.
         (DER / "AHL_LINES_UNVALIDATED.md").write_text(
-            "# AHL lines: UNVALIDATED (ruling 41)\n\n"
-            "lines_10ev_ahl.csv is priced on NHL goal/min levels spliced onto\n"
-            "AHL pull structure BY SEB'S ORDER (2026-08-02), with the failed\n"
-            "blind record heard first (rulings 26d + 40: marg4 -12.1pts 9/10\n"
-            "bad deciles, -3.5 ROI -22.3%, leaderTT -3.4% at model lines).\n"
-            "These numbers did NOT pass verification protocol step 6.\n"
-            "Leader -3.5 thresholds are BLANKED (ruling 26a: permanent no-bet).\n"
-            "Rule 28 floor (base coach % < 40 = NO-BET) applies unchanged.\n"
-            "Supersedes nothing: ruling 24's no-go record stands as history;\n"
-            "re-litigation gate + paper harness continue.\n")
-        print(f"[{league}] ruling-41: margin_ge4 lines blanked; UNVALIDATED banner written")
+            "# AHL lines: UNVALIDATED (rulings 41 + 41b)\n\n"
+            "lines_10ev_ahl.csv = AHL coach pull %% + AHL pull structure +\n"
+            "NHL goal/min scoring rates, BY SEB'S ORDER (2026-08-02), with\n"
+            "the failed-blind record heard first (rulings 26d + 40: marg4\n"
+            "-12.1pts 9/10 bad deciles, -3.5 ROI -22.3%% P(>0)=0.00,\n"
+            "leaderTT -3.4%% at model lines). -3.5 is INCLUDED by ruling 41b\n"
+            "(Seb override of ruling 26a's permanent no-bet, oracle record\n"
+            "re-heard). These numbers did NOT pass verification protocol\n"
+            "step 6. Rule 28 floor (base coach %% < 40 = NO-BET) unchanged.\n"
+            "Paper harness logs model-vs-real-line-vs-outcome to settle\n"
+            "this empirically; December re-litigation unchanged.\n")
+        print(f"[{league}] ruling-41b: all three markets live; UNVALIDATED banner written")
     print(f"[{league}] wrote lines_10ev_{league}.csv")
 
 
