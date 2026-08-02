@@ -47,9 +47,19 @@ def load_estimator(league):
     return p_c, mu, seqs
 
 
-def main(league):
+def main(league, nhl_rates=False):
     fits = json.load(open(DER / f"fits_{league}_train.json"))
     aux = json.load(open(DER / f"fits_{league}_train_aux.json"))
+    if nhl_rates:
+        # Ruling 40 (Seb, 2026-08-02): splice test — NHL goal/min LEVELS with
+        # the league's own pull structure (hazard + aux stay league-fitted).
+        # First tested 2026-08-01 (ruling 26d, pre-fix data); re-run per rule 0
+        # on the corrected extraction. Goal levels = rates, rates_R, m_PP, pen.
+        nhl = json.load(open(DER / "fits.json"))
+        for k in ("rates", "rates_R", "m_PP", "pen"):
+            if k in nhl:
+                fits[k] = nhl[k]
+        print(f"[{league}] SPLICE: NHL goal/min levels + {league} pull structure")
     MP.rebuild(fits)
     MP._ret = aux["return_hazard_per_sec"]
     MP._REPULL = aux["h_repull"]
@@ -127,7 +137,8 @@ def main(league):
                 "p_lead1": p["P_leader_ge1"], "p_marg4": p["P_margin_ge4"],
                 "y_total1": int(lead + trail >= 1), "y_total2": int(lead + trail >= 2),
                 "y_lead1": int(lead >= 1), "y_marg4": int(margin >= 4)})
-    json.dump(rows, open(DER / f"backtest_rows_{league}.json", "w"))
+    suffix = "_nhlrates" if nhl_rates else ""
+    json.dump(rows, open(DER / f"backtest_rows_{league}{suffix}.json", "w"))
     n = len(rows)
     print(f"[{league}] priced {n} blind checkpoints ({holdout}); cells={len(cache)}")
 
@@ -173,4 +184,4 @@ def main(league):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    main(sys.argv[1], nhl_rates="--nhl-rates" in sys.argv[2:])

@@ -335,3 +335,17 @@ NOTE: new coach layer is PROVISIONAL until blind re-validation (next block).
     trailer 0.045->0.053 (+18%), leader goal share 55%->51%, ENG/inst
     halved. Directional products (leaderTT, -3.5, marg4) price the split,
     not the total — which is why total-anchored fixes all tested null.
+
+40. **Seb ordered the NHL-rates splice deployed for AHL (2026-08-02, "use
+    NHL goal/min numbers for AHL as of now"); built and re-run blind on the
+    corrected extraction per rule 0 (26d was pre-fix). RESULT: FAIL —
+    marg4 -12.1pts / 9-of-10 bad deciles (worse than AHL's own fits -10.9),
+    leader -3.5 ROI -22.3% P(>0)=0.00 (worse than -20.5% own), leaderTT
+    -3.4% P(>0)=0.32, lead1 bias -6.1. Total-over +3.8% P(>0)=0.74 (noise).
+    Mechanism: NHL levels are equally static (90-H2 directional shift bites
+    identically) and foreign (NHL EN-against ~22/60 vs AHL ~18 makes marg4
+    MORE optimistic). Per verification protocol step 6 + ruling 1 + ruling
+    24's lifting condition, the config cannot reach a bet card. The splice
+    is permanently reproducible: backtest_interval.py {league} --nhl-rates
+    (rows in backtest_rows_ahl_nhlrates.json). Ruling 26d's verdict stands
+    on corrected data: NHL contributes SHAPES, never LEVELS.**
