@@ -139,19 +139,17 @@ def main():
 
     teams = sorted(slate_teams) if slate_teams else sorted(cur)
     out = ["# MORNING PULL CARDS — trailing by 3, 3rd period\n",
-           "Card spec (Seb 2026-08-02): expected %, last-year record, last 5 "
-           "clean chances, recency-weighted avg pull time (2 seasons), special "
-           "notes. Fav/dog effect lives in the notes, NOT in the headline %.\n"]
+           "Last 5 + pull time = last 2 seasons only. Fav/dog lives in Notes, "
+           "not in the %. NO-BET below 40% (rule 28).\n"]
     for team in teams:
         p = cur.get(team)
         if not p:
             out.append(f"## {team} — no coach data\n"); continue
         seq = chances.get(p["coach"], [])
         base = p["expected_pull_pct"]
-        # --- Seb rules 28/28b (2026-08-01); no-bet on the headline (base) % ----
-        last5 = seq[-5:]
-        l5 = " ".join("P" if t else "NP" for _, t, _ in last5) or "-"
-        hot = bool(seq) and (seq[-1][1] or sum(t for _, t, _ in seq[-3:]) >= 2)
+        # --- Seb rule 28 (amended 2026-08-02): no-bet on the base % -----------
+        last5 = [x for x in seq if x[0] >= TWOSEA_CUT][-5:]   # 2-season window
+        l5 = " ".join("P" if t else "NP" for _, t, _ in last5) or "none"
         no_bet = base < 0.40
         # last-year classified record
         yr = [(d, t) for d, t, _ in seq if d >= SEASON_CUT]
@@ -164,8 +162,8 @@ def main():
                 w = 0.5 ** ((datetime.date.fromisoformat(today)
                              - datetime.date.fromisoformat(d)).days / 365.0)
                 pt_w += w; pt_s += w * pr; npt += 1
-        timing = f"{fmt_t(pt_s / pt_w)} left ({npt} pulls)" if npt >= 3 else \
-                 f"~4:19 (league — only {npt} pull(s) last 2 seasons)"
+        timing = f"{fmt_t(pt_s / pt_w)} left  ({npt} pulls)" if npt >= 3 else \
+                 "4:19 left  (league avg — too few pulls)"
         # --- special notes ----------------------------------------------------
         sp = []
         pw = mls.get(team)
@@ -178,23 +176,16 @@ def main():
         sp.extend(p["flags"])
         if team in notes:
             sp.append(notes[team])
-        vloc = venue.get(team)
         opp = f" vs {opps[team]}" if team in opps else ""
-        badge = ""
-        if no_bet:
-            badge += "  [NO-BET: <40% (rule 28, amended 2026-08-02)]"
-        if hot:
-            badge += "  [HOT FORM: " + ("pulled last chance" if seq[-1][1] else "2 of last 3") + " (rule 28b)]"
-        out.append(f"## {team}{opp} — {p['coach']}{badge}")
-        out.append(f"**Expected pull: {base:.0%}**  (band {p['band'][0]:.0%}-{p['band'][1]:.0%}, "
-                   f"career {p['clear_taken']}/{p['clear_chances']})")
-        out.append(f"- 2025-26 classified: {yp} pull / {len(yr) - yp} no-pull")
-        out.append(f"- Last 5 clean chances: {l5}"
-                   + (f"  (oldest {last5[0][0]})" if last5 else ""))
-        out.append(f"- Avg pull time (2 seasons, recency-weighted): {timing}")
-        out.append(f"- Special notes: {'; '.join(sp) if sp else 'none'}")
-        if vloc:
-            out.append(f"- Context (not in number): playing {vloc}; lineup/goalie/B2B unknown")
+        badge = "   *** NO-BET (<40%) ***" if no_bet else ""
+        out.append("```")
+        out.append(f"{team}{opp} — {p['coach']}{badge}")
+        out.append(f"  Pull %      {base:.0%}   ({p['clear_taken']}/{p['clear_chances']} career)")
+        out.append(f"  2025-26     {yp} P / {len(yr) - yp} NP")
+        out.append(f"  Last 5      {l5}")
+        out.append(f"  Pull time   {timing}")
+        out.append(f"  Notes       {'; '.join(sp) if sp else '—'}")
+        out.append("```")
         out.append("")
     Path("morning_cards.md").write_text("\n".join(out))
     print("\n".join(out[:40]))
