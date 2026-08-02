@@ -240,9 +240,9 @@ NOTE: new coach layer is PROVISIONAL until blind re-validation (next block).
 
 ## 2026-08-02 (league finalization block — Manager session)
 
-34. **Ruling 17b — dp artifact rule COMPLETED (2026-08-02; session-adjudicated
-    under Seb's "finalize the 3 leagues" directive; PENDING Seb ratification
-    of the card deltas).** Ruling 17's ">25s at a leader whistle = real pull"
+34. **Ruling 17b — dp artifact rule COMPLETED (2026-08-02; Seb RATIFIED
+    same day, conditional on dp-certainty — condition closed by the
+    stays-in behavioral check below).** Ruling 17's ">25s at a leader whistle = real pull"
     convention was tested against NHL dp ground truth (6,594 explicit dp
     possessions: 8.7% exceed 25s) and hand-verified case by case — three new
     artifact clauses in the shared engine (segments.py):
@@ -251,7 +251,14 @@ NOTE: new coach layer is PROVISIONAL until blind re-validation (next block).
     goal wipes the minor); (iii) whistle-lag (leader penalty assessed inside
     the segment's first 10s, <=25s, early). 7 AHL + 1 Liiga phantom pulls
     removed, incl. 2 phantom successes. Late/middle-band long enders keep
-    ruling 17. Full trace: docs/ground_truth_traces/interval_dp_audit_2026-08-02.md.
+    ruling 17 (conservative: no removals where genuine doubt exists).
+    RATIFICATION CHECK (behavioral): in all 8 removed cases the goalie
+    returned at the whistle and STAYED IN through the team's own ensuing
+    power play (or re-pulled only at normal late-game pull times — 15:45,
+    16:50 — which is the evidence that was kept); the 2 kept contrast cases
+    re-pulled 8s/15s after the whistle. A deliberate puller does not hand
+    back the net upon GAINING a 6-on-4. All 8 pinned by exact-value gates.
+    Full trace: docs/ground_truth_traces/interval_dp_audit_2026-08-02.md.
 35. **Misconduct fix (bug, no ruling needed):** 10-min misconducts never
     shorthand a team; excluded from box-strength classification in both
     interval adapters (kept as whistle markers). 8 AHL + 1 Liiga

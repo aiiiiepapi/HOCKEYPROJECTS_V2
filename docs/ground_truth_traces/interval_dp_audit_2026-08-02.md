@@ -112,3 +112,18 @@ re-verified directly against raw goalKeeperEvents, bypassing the adapter:
   25%->13% (2 phantoms), Toby Petersen 68%->86%, Trent Cull 73%->68%,
   Groulx 72%->66%, McIlvane 84%->81% (3 of Seb's challenged reference
   points moved slightly — see profiles).
+
+## 8. Ratification check (Seb, 2026-08-02): stays-in behavior
+
+Seb ratified ruling 34 conditional on dp-certainty. Closing check: a real
+puller who sees the leader penalized just gained a 6-on-4 and re-pulls
+immediately; a dp artifact returns the goalie at the whistle and he stays in.
+
+Removed-as-dp (next goalie-out after the return):
+1024680 NEVER | 1025867 NEVER | 1026980 NEVER | 1027594 NEVER | 1027844 NEVER
+1027518 at 1010 (P3 16:50 — normal pull time, 899s later)
+1028774 at 945 (P3 15:45 — the real segment kept as its evidence)
+1028800 at 420 (pp_pull during the actual PP, outside the gap-3 window;
+  bettable record identical under either reading — consequence-bounded)
+
+Kept-as-real contrast: 1025223 re-pull 15s after the whistle; 1027061 8s.
