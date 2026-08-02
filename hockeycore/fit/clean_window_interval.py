@@ -150,14 +150,8 @@ def build(league, rows_file, skip_seasons=()):
             t["taken"] += int(cr["taken"])
             t["seq"].append(int(cr["taken"]))
 
-    rates = [(t["taken"] / t["chances"], t["chances"])
-             for t in coach.values() if t["chances"] >= 8]
-    wsum = sum(w for _, w in rates)
-    mu = sum(rw * w for rw, w in rates) / wsum
-    var = sum(w * (rw - mu) ** 2 for rw, w in rates) / wsum
-    var = max(var - mu * (1 - mu) / (wsum / len(rates)), 1e-4)  # subtract sampling noise
-    strength = max(min(mu * (1 - mu) / var - 1, 40.0), 1.0)
-    a, b = mu * strength, (1 - mu) * strength
+    from hockeycore.fit.prior_fit import fit_prior
+    a, b, mu, strength = fit_prior([t["seq"] for t in coach.values()])
 
     profiles = []
     for name, t in coach.items():

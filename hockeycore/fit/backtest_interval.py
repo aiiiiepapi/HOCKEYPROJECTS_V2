@@ -38,13 +38,8 @@ def load_estimator(league):
     for r in sorted(pre, key=lambda x: x["date"]):
         if r["clear"]:
             seqs[r["coach"]].append(1 if r["taken"] else 0)
-    rates = [(sum(s) / len(s), len(s)) for s in seqs.values() if len(s) >= 6]
-    w = sum(n for _, n in rates)
-    mu = sum(rw * n for rw, n in rates) / w
-    var = sum(n * (rw - mu) ** 2 for rw, n in rates) / w
-    var = max(var - mu * (1 - mu) / (w / len(rates)), 1e-4)
-    st = max(min(mu * (1 - mu) / var - 1, 40.0), 1.0)
-    A, B = mu * st, (1 - mu) * st
+    from hockeycore.fit.prior_fit import fit_prior
+    A, B, mu, st = fit_prior(list(seqs.values()))
 
     def p_c(name):
         s = seqs.get(name, [])

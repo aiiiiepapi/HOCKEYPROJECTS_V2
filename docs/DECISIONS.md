@@ -178,3 +178,15 @@ NOTE: new coach layer is PROVISIONAL until blind re-validation (next block).
     clean chance, or pulled 2 of his last 3, appears on the morning report
     regardless of expected %%, flagged HOT FORM for manual review. Flag does
     not by itself authorize a bet below the 50%% floor.**
+
+29. **PREDICTIVE PRIOR ADOPTED (2026-08-02, Seb's UTC challenge).** Coach-
+    prior strength now fitted by out-of-sample next-chance log-likelihood
+    (hockeycore/fit/prior_fit.py, rule 15 — one implementation for profiles
+    and both backtests), prior mean = league clean take rate. NHL strength
+    4.1->2, AHL 6.9->5, Liiga 7.0->5. Evidence: hot-established coaches
+    (>=80%% over >=5) continued at 75%% observed vs ~65%% modeled (Seb right);
+    perfect 3-streaks continued at 67%% (n=79) so small-n shrinkage stands
+    (TPS ~63%% unchanged). Blind re-validation IMPROVED: NHL leaderTT ROI
+    +21.3%% -> +24.0%%, P(>edge) 0.946 -> 0.973 (clears even the pre-ruling-23
+    0.95 bar); total-over CI floor now positive; Liiga all gates green,
+    biases smaller. 17 gates green.

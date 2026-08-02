@@ -4,34 +4,34 @@
  "n_games": 315,
  "markets": {
   "leaderTT_over": {
-   "roi": 0.2132,
+   "roi": 0.2403,
    "n": 1442,
    "ci95_game_cluster": [
-    0.073,
-    0.3592
+    0.0964,
+    0.3901
    ],
-   "p_roi_gt_0": 0.9985,
-   "p_roi_gt_edge": 0.946
+   "p_roi_gt_0": 1.0,
+   "p_roi_gt_edge": 0.973
   },
   "leader_-3.5": {
-   "roi": 0.0248,
+   "roi": 0.048,
    "n": 1442,
    "ci95_game_cluster": [
-    -0.1375,
-    0.1932
+    -0.1181,
+    0.2258
    ],
-   "p_roi_gt_0": 0.594,
-   "p_roi_gt_edge": 0.1825
+   "p_roi_gt_0": 0.6905,
+   "p_roi_gt_edge": 0.2685
   },
   "gametotal_over": {
-   "roi": 0.0926,
+   "roi": 0.1124,
    "n": 1439,
    "ci95_game_cluster": [
-    -0.0092,
-    0.2007
+    0.0081,
+    0.2262
    ],
-   "p_roi_gt_0": 0.965,
-   "p_roi_gt_edge": 0.467
+   "p_roi_gt_0": 0.981,
+   "p_roi_gt_edge": 0.602
   }
  }
 }

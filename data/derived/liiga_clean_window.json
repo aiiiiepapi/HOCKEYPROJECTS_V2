@@ -1,10 +1,10 @@
 {
 "meta": {
 "league": "liiga",
-"prior_a": 3.493,
-"prior_b": 3.493,
-"prior_mu": 0.5,
-"prior_strength": 6.99,
+"prior_a": 2.076,
+"prior_b": 2.924,
+"prior_mu": 0.4152,
+"prior_strength": 5,
 "hazard_bucketed": {
 "0": 0.0,
 "1": 0.0,

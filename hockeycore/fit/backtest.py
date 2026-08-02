@@ -47,13 +47,8 @@ for _r in sorted(_cw, key=lambda x: x["date"]):
     _took = _r["pulled"] and _r["pull_type"] == "ev"
     if _took or ((not _took) and _r["frac_ev"] >= 0.7):
         _seqs[_r["coach"]].append(1 if _took else 0)
-_rates = [(sum(s) / len(s), len(s)) for s in _seqs.values() if len(s) >= 8]
-_w = sum(n for _, n in _rates)
-_mu = sum(r * n for r, n in _rates) / _w
-_var = sum(n * (r - _mu) ** 2 for r, n in _rates) / _w
-_var = max(_var - _mu * (1 - _mu) / (_w / len(_rates)), 1e-4)
-_st = max(min(_mu * (1 - _mu) / _var - 1, 40.0), 1.0)
-_A, _B = _mu * _st, (1 - _mu) * _st
+from hockeycore.fit.prior_fit import fit_prior as _fit_prior
+_A, _B, _mu, _st = _fit_prior(list(_seqs.values()))
 
 def p_coach(name):
     s = _seqs.get(name, [])
