@@ -30,9 +30,17 @@ MARKETS = ["P_leader_ge1", "P_total_ge1", "P_margin_ge4"]
 EDGE = 0.10
 
 
-def main(league):
+def main(league, nhl_rates=False):
     fits = json.load(open(DER / f"fits_{league}.json"))
     aux = json.load(open(DER / f"fits_{league}_aux.json"))
+    if nhl_rates:
+        # Ruling 41 (Seb, 2026-08-02): AHL production runs on NHL goal/min
+        # levels "for now" — ordered with the failed-blind record heard
+        # (rulings 26d + 40). Output files carry the UNVALIDATED banner and
+        # leader -3.5 is EXCLUDED (ruling 26a: permanent no-bet).
+        from hockeycore.fit.splice import apply_nhl_levels
+        fits = apply_nhl_levels(fits)
+        print(f"[{league}] RULING-41 SPLICE ACTIVE: NHL goal/min levels")
     MP.rebuild(fits)
     MP._ret = aux["return_hazard_per_sec"]
     MP._REPULL = aux["h_repull"]
@@ -76,8 +84,30 @@ def main(league):
                         line = (1 + EDGE) / pv if pv > 0.02 else None
                         row += [round(pv, 4), round(line, 3) if line else ""]
                     w.writerow(row)
+    if nhl_rates and league == "ahl":
+        # ruling 26a: AHL -3.5 permanently no-bet — blank its threshold lines
+        import io
+        fp = DER / f"lines_10ev_{league}.csv"
+        with open(fp, newline="") as f:
+            rd = list(csv.DictReader(f)); flds = rd and list(rd[0].keys())
+        for row in rd:
+            row["P_margin_ge4_line10"] = ""
+        with open(fp, "w", newline="") as f:
+            w = csv.DictWriter(f, fieldnames=flds); w.writeheader(); w.writerows(rd)
+        (DER / "AHL_LINES_UNVALIDATED.md").write_text(
+            "# AHL lines: UNVALIDATED (ruling 41)\n\n"
+            "lines_10ev_ahl.csv is priced on NHL goal/min levels spliced onto\n"
+            "AHL pull structure BY SEB'S ORDER (2026-08-02), with the failed\n"
+            "blind record heard first (rulings 26d + 40: marg4 -12.1pts 9/10\n"
+            "bad deciles, -3.5 ROI -22.3%, leaderTT -3.4% at model lines).\n"
+            "These numbers did NOT pass verification protocol step 6.\n"
+            "Leader -3.5 thresholds are BLANKED (ruling 26a: permanent no-bet).\n"
+            "Rule 28 floor (base coach % < 40 = NO-BET) applies unchanged.\n"
+            "Supersedes nothing: ruling 24's no-go record stands as history;\n"
+            "re-litigation gate + paper harness continue.\n")
+        print(f"[{league}] ruling-41: margin_ge4 lines blanked; UNVALIDATED banner written")
     print(f"[{league}] wrote lines_10ev_{league}.csv")
 
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    main(sys.argv[1], nhl_rates="--nhl-rates" in sys.argv[2:])

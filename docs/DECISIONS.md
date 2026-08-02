@@ -349,3 +349,18 @@ NOTE: new coach layer is PROVISIONAL until blind re-validation (next block).
     is permanently reproducible: backtest_interval.py {league} --nhl-rates
     (rows in backtest_rows_ahl_nhlrates.json). Ruling 26d's verdict stands
     on corrected data: NHL contributes SHAPES, never LEVELS.**
+
+41. **SEB OVERRIDE (2026-08-02): AHL production runs on NHL goal/min levels
+    "for now."** Ordered after hearing the full failed-blind record three
+    times (rulings 26d + 40 — marg4 -12.1pts / 9-of-10 bad deciles, -3.5
+    ROI -22.3%, leaderTT -3.4% at model lines on corrected data). Manager
+    recommendation AGAINST staking these prices stands on the record (0b
+    satisfied both ways: disagreement heard, principal ruled). Implemented:
+    lines_10ev_ahl.csv priced via splice.py (ONE implementation, rule 15)
+    on full AHL fits + NHL levels; leader -3.5 thresholds BLANKED (ruling
+    26a is permanent and survives this override); UNVALIDATED banner at
+    data/derived/AHL_LINES_UNVALIDATED.md; rule 28 floor unchanged.
+    Ruling 24's no-go remains as the verification-status record: these
+    lines exist BY ORDER, not by passed validation. December re-litigation
+    + paper harness (which logs model-vs-real-line-vs-outcome and will
+    settle this empirically) continue unchanged.

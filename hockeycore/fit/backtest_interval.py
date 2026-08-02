@@ -51,14 +51,9 @@ def main(league, nhl_rates=False):
     fits = json.load(open(DER / f"fits_{league}_train.json"))
     aux = json.load(open(DER / f"fits_{league}_train_aux.json"))
     if nhl_rates:
-        # Ruling 40 (Seb, 2026-08-02): splice test — NHL goal/min LEVELS with
-        # the league's own pull structure (hazard + aux stay league-fitted).
-        # First tested 2026-08-01 (ruling 26d, pre-fix data); re-run per rule 0
-        # on the corrected extraction. Goal levels = rates, rates_R, m_PP, pen.
-        nhl = json.load(open(DER / "fits.json"))
-        for k in ("rates", "rates_R", "m_PP", "pen"):
-            if k in nhl:
-                fits[k] = nhl[k]
+        # Rulings 26d/40/41 — one implementation (rule 15): see splice.py.
+        from hockeycore.fit.splice import apply_nhl_levels
+        fits = apply_nhl_levels(fits)
         print(f"[{league}] SPLICE: NHL goal/min levels + {league} pull structure")
     MP.rebuild(fits)
     MP._ret = aux["return_hazard_per_sec"]
