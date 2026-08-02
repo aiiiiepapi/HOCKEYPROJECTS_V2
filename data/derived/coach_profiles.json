@@ -11,9 +11,9 @@
    0.585,
    1
   ],
-  "expected_pull_pct": 0.796,
+  "expected_pull_pct": 0.75,
   "band": [
-   0.465,
+   0.423,
    1
   ],
   "last3": "PPP",
@@ -38,10 +38,10 @@
    0,
    0.443
   ],
-  "expected_pull_pct": 0.241,
+  "expected_pull_pct": 0.196,
   "band": [
    0,
-   0.539
+   0.497
   ],
   "last3": "nnn",
   "overall_rate": 0.364,
@@ -65,10 +65,10 @@
    0,
    0.571
   ],
-  "expected_pull_pct": 0.291,
+  "expected_pull_pct": 0.288,
   "band": [
    0,
-   0.627
+   0.615
   ],
   "last3": "nnn",
   "overall_rate": 0.125,
@@ -90,10 +90,10 @@
    0,
    0.499
   ],
-  "expected_pull_pct": 0.244,
+  "expected_pull_pct": 0.21,
   "band": [
    0,
-   0.55
+   0.523
   ],
   "last3": "nnn",
   "overall_rate": 0.143,
@@ -115,9 +115,9 @@
    0.712,
    1
   ],
-  "expected_pull_pct": 0.841,
+  "expected_pull_pct": 0.86,
   "band": [
-   0.571,
+   0.611,
    1
   ],
   "last3": "PPP",
@@ -142,9 +142,9 @@
    0.26,
    1
   ],
-  "expected_pull_pct": 0.682,
+  "expected_pull_pct": 0.642,
   "band": [
-   0.225,
+   0.221,
    1
   ],
   "last3": "P",
@@ -169,9 +169,9 @@
    0.717,
    1
   ],
-  "expected_pull_pct": 0.831,
+  "expected_pull_pct": 0.885,
   "band": [
-   0.587,
+   0.688,
    1
   ],
   "last3": "nPP",
@@ -196,10 +196,10 @@
    0.43,
    0.882
   ],
-  "expected_pull_pct": 0.639,
+  "expected_pull_pct": 0.667,
   "band": [
-   0.333,
-   0.945
+   0.355,
+   0.979
   ],
   "last3": "Pnn",
   "overall_rate": 0.75,
@@ -223,10 +223,10 @@
    0.271,
    0.813
   ],
-  "expected_pull_pct": 0.52,
+  "expected_pull_pct": 0.479,
   "band": [
-   0.191,
-   0.848
+   0.04,
+   0.919
   ],
   "last3": "nPn",
   "overall_rate": 0.733,
@@ -250,10 +250,10 @@
    0.19,
    0.81
   ],
-  "expected_pull_pct": 0.515,
+  "expected_pull_pct": 0.493,
   "band": [
-   0.174,
-   0.857
+   0.119,
+   0.868
   ],
   "last3": "PPn",
   "overall_rate": 0.615,
@@ -277,10 +277,10 @@
    0.131,
    0.687
   ],
-  "expected_pull_pct": 0.442,
+  "expected_pull_pct": 0.414,
   "band": [
-   0.112,
-   0.772
+   0.111,
+   0.718
   ],
   "last3": "nPn",
   "overall_rate": 0.5,
@@ -304,10 +304,10 @@
    0.19,
    0.81
   ],
-  "expected_pull_pct": 0.472,
+  "expected_pull_pct": 0.433,
   "band": [
-   0.131,
-   0.814
+   0.08,
+   0.786
   ],
   "last3": "nPn",
   "overall_rate": 0.5,
@@ -331,10 +331,10 @@
    0,
    0.415
   ],
-  "expected_pull_pct": 0.223,
+  "expected_pull_pct": 0.268,
   "band": [
    0,
-   0.565
+   0.6
   ],
   "last3": "nnn",
   "overall_rate": 0.2,
@@ -359,10 +359,10 @@
    0,
    0.415
   ],
-  "expected_pull_pct": 0.223,
+  "expected_pull_pct": 0.269,
   "band": [
    0,
-   0.565
+   0.602
   ],
   "last3": "nnn",
   "overall_rate": 0.25,
@@ -387,10 +387,10 @@
    0,
    0.305
   ],
-  "expected_pull_pct": 0.136,
+  "expected_pull_pct": 0.072,
   "band": [
    0,
-   0.362
+   0.253
   ],
   "last3": "nnn",
   "overall_rate": 0.154,
@@ -415,10 +415,10 @@
    0.218,
    0.949
   ],
-  "expected_pull_pct": 0.527,
+  "expected_pull_pct": 0.551,
   "band": [
-   0.158,
-   0.897
+   0.192,
+   0.91
   ],
   "last3": "Pnn",
   "overall_rate": 0.6,
@@ -440,10 +440,10 @@
    0,
    0.15
   ],
-  "expected_pull_pct": 0.086,
+  "expected_pull_pct": 0.031,
   "band": [
    0,
-   0.27
+   0.142
   ],
   "last3": "nnn",
   "overall_rate": 0.0,
@@ -465,10 +465,10 @@
    0,
    0.415
   ],
-  "expected_pull_pct": 0.223,
+  "expected_pull_pct": 0.274,
   "band": [
    0,
-   0.565
+   0.612
   ],
   "last3": "nnn",
   "overall_rate": 0.0,
@@ -492,9 +492,9 @@
    0.628,
    1
   ],
-  "expected_pull_pct": 0.858,
+  "expected_pull_pct": 0.9,
   "band": [
-   0.632,
+   0.655,
    1
   ],
   "last3": "PPP",
@@ -519,9 +519,9 @@
    0.333,
    1
   ],
-  "expected_pull_pct": 0.676,
+  "expected_pull_pct": 0.659,
   "band": [
-   0.313,
+   0.304,
    1
   ],
   "last3": "nPP",
@@ -547,9 +547,9 @@
    0.445,
    1
   ],
-  "expected_pull_pct": 0.703,
+  "expected_pull_pct": 0.708,
   "band": [
-   0.391,
+   0.377,
    1
   ],
   "last3": "PPP",
@@ -574,10 +574,10 @@
    0,
    0.163
   ],
-  "expected_pull_pct": 0.096,
+  "expected_pull_pct": 0.06,
   "band": [
    0,
-   0.292
+   0.246
   ],
   "last3": "nnn",
   "overall_rate": 0.231,
@@ -601,9 +601,9 @@
    0.669,
    1
   ],
-  "expected_pull_pct": 0.82,
+  "expected_pull_pct": 0.869,
   "band": [
-   0.565,
+   0.629,
    1
   ],
   "last3": "PPP",
@@ -628,10 +628,10 @@
    0,
    0.34
   ],
-  "expected_pull_pct": 0.194,
+  "expected_pull_pct": 0.212,
   "band": [
    0,
-   0.5
+   0.518
   ],
   "last3": "nnn",
   "overall_rate": 0.0,
@@ -655,10 +655,10 @@
    0.443,
    0.843
   ],
-  "expected_pull_pct": 0.507,
+  "expected_pull_pct": 0.485,
   "band": [
-   0.195,
-   0.819
+   0.177,
+   0.793
   ],
   "last3": "nPn",
   "overall_rate": 0.731,
@@ -682,10 +682,10 @@
    0.318,
    0.836
   ],
-  "expected_pull_pct": 0.5,
+  "expected_pull_pct": 0.632,
   "band": [
-   0.174,
-   0.825
+   0.154,
+   1
   ],
   "last3": "nnP",
   "overall_rate": 0.538,
@@ -707,10 +707,10 @@
    0,
    0.571
   ],
-  "expected_pull_pct": 0.305,
+  "expected_pull_pct": 0.3,
   "band": [
    0,
-   0.646
+   0.665
   ],
   "last3": "Pnn",
   "overall_rate": 0.5,
@@ -734,10 +734,10 @@
    0.362,
    0.805
   ],
-  "expected_pull_pct": 0.557,
+  "expected_pull_pct": 0.532,
   "band": [
-   0.244,
-   0.871
+   0.173,
+   0.891
   ],
   "last3": "nPn",
   "overall_rate": 0.696,
@@ -761,10 +761,10 @@
    0.325,
    0.717
   ],
-  "expected_pull_pct": 0.552,
+  "expected_pull_pct": 0.565,
   "band": [
-   0.244,
-   0.861
+   0.248,
+   0.882
   ],
   "last3": "PPn",
   "overall_rate": 0.517,
@@ -788,10 +788,10 @@
    0.204,
    0.588
   ],
-  "expected_pull_pct": 0.433,
+  "expected_pull_pct": 0.396,
   "band": [
-   0.126,
-   0.741
+   0.114,
+   0.678
   ],
   "last3": "nnP",
   "overall_rate": 0.5,
@@ -816,10 +816,10 @@
    0.232,
    0.706
   ],
-  "expected_pull_pct": 0.337,
+  "expected_pull_pct": 0.327,
   "band": [
-   0.036,
-   0.638
+   0.017,
+   0.636
   ],
   "last3": "nnn",
   "overall_rate": 0.556,
@@ -845,7 +845,7 @@
   ],
   "expected_pull_pct": 0.832,
   "band": [
-   0.594,
+   0.618,
    1
   ],
   "last3": "PPP",
@@ -871,10 +871,10 @@
    0.309,
    0.913
   ],
-  "expected_pull_pct": 0.562,
+  "expected_pull_pct": 0.529,
   "band": [
-   0.223,
-   0.901
+   0.119,
+   0.939
   ],
   "last3": "nPn",
   "overall_rate": 0.556,
@@ -896,9 +896,9 @@
    0.475,
    0.925
   ],
-  "expected_pull_pct": 0.747,
+  "expected_pull_pct": 0.796,
   "band": [
-   0.468,
+   0.516,
    1
   ],
   "last3": "PPP",
@@ -922,7 +922,7 @@
   "ci": null,
   "expected_pull_pct": 0.522,
   "band": [
-   0,
+   0.033,
    1
   ],
   "last3": "-",
@@ -948,10 +948,10 @@
    0.191,
    0.676
   ],
-  "expected_pull_pct": 0.501,
+  "expected_pull_pct": 0.542,
   "band": [
-   0.18,
-   0.821
+   0.208,
+   0.876
   ],
   "last3": "PPn",
   "overall_rate": 0.364,
@@ -975,10 +975,10 @@
    0.217,
    0.783
   ],
-  "expected_pull_pct": 0.565,
+  "expected_pull_pct": 0.603,
   "band": [
-   0.235,
-   0.894
+   0.24,
+   0.965
   ],
   "last3": "nPP",
   "overall_rate": 0.733,
@@ -1004,8 +1004,8 @@
   ],
   "expected_pull_pct": 0.362,
   "band": [
-   0.02,
-   0.704
+   0.03,
+   0.694
   ],
   "last3": "nnn",
   "overall_rate": 0.333,
@@ -1027,10 +1027,10 @@
    0,
    0.555
   ],
-  "expected_pull_pct": 0.371,
+  "expected_pull_pct": 0.442,
   "band": [
-   0.04,
-   0.701
+   0.062,
+   0.822
   ],
   "last3": "PnP",
   "overall_rate": 0.364,
@@ -1054,10 +1054,10 @@
    0,
    0.74
   ],
-  "expected_pull_pct": 0.348,
+  "expected_pull_pct": 0.392,
   "band": [
    0,
-   0.815
+   0.82
   ],
   "last3": "n",
   "overall_rate": 0.0,
@@ -1081,9 +1081,9 @@
    0.712,
    1
   ],
-  "expected_pull_pct": 0.841,
+  "expected_pull_pct": 0.861,
   "band": [
-   0.571,
+   0.613,
    1
   ],
   "last3": "PPP",
@@ -1109,9 +1109,9 @@
    0.75,
    1
   ],
-  "expected_pull_pct": 0.855,
+  "expected_pull_pct": 0.894,
   "band": [
-   0.604,
+   0.677,
    1
   ],
   "last3": "PPP",
@@ -1137,10 +1137,10 @@
    0.187,
    0.729
   ],
-  "expected_pull_pct": 0.518,
+  "expected_pull_pct": 0.641,
   "band": [
-   0.19,
-   0.847
+   0.263,
+   1
   ],
   "last3": "nPP",
   "overall_rate": 0.467,
@@ -1164,10 +1164,10 @@
    0,
    0.221
   ],
-  "expected_pull_pct": 0.139,
+  "expected_pull_pct": 0.11,
   "band": [
    0,
-   0.379
+   0.347
   ],
   "last3": "nnn",
   "overall_rate": 0.0,
@@ -1189,10 +1189,10 @@
    0,
    0.506
   ],
-  "expected_pull_pct": 0.252,
+  "expected_pull_pct": 0.229,
   "band": [
    0,
-   0.544
+   0.521
   ],
   "last3": "nnn",
   "overall_rate": 0.4,
@@ -1216,10 +1216,10 @@
    0,
    0.506
   ],
-  "expected_pull_pct": 0.309,
+  "expected_pull_pct": 0.285,
   "band": [
    0,
-   0.62
+   0.585
   ],
   "last3": "Pnn",
   "overall_rate": 0.364,
@@ -1243,9 +1243,9 @@
    0.468,
    1
   ],
-  "expected_pull_pct": 0.755,
+  "expected_pull_pct": 0.705,
   "band": [
-   0.373,
+   0.336,
    1
   ],
   "last3": "PP",
@@ -1270,10 +1270,10 @@
    0.271,
    0.813
   ],
-  "expected_pull_pct": 0.535,
+  "expected_pull_pct": 0.482,
   "band": [
-   0.207,
-   0.863
+   0.103,
+   0.86
   ],
   "last3": "Pnn",
   "overall_rate": 0.429,
@@ -1297,9 +1297,9 @@
    0.792,
    1
   ],
-  "expected_pull_pct": 0.929,
+  "expected_pull_pct": 0.966,
   "band": [
-   0.766,
+   0.829,
    1
   ],
   "last3": "PPP",
@@ -1324,10 +1324,10 @@
    0.544,
    0.87
   ],
-  "expected_pull_pct": 0.753,
+  "expected_pull_pct": 0.772,
   "band": [
-   0.486,
-   1
+   0.561,
+   0.983
   ],
   "last3": "nPP",
   "overall_rate": 0.71,
@@ -1351,10 +1351,10 @@
    0.1,
    0.9
   ],
-  "expected_pull_pct": 0.472,
+  "expected_pull_pct": 0.41,
   "band": [
-   0.085,
-   0.859
+   0.022,
+   0.798
   ],
   "last3": "Pnn",
   "overall_rate": 0.333,
@@ -1378,10 +1378,10 @@
    0.405,
    0.903
   ],
-  "expected_pull_pct": 0.665,
+  "expected_pull_pct": 0.664,
   "band": [
-   0.357,
-   0.972
+   0.395,
+   0.933
   ],
   "last3": "PPP",
   "overall_rate": 0.667,
@@ -1403,10 +1403,10 @@
    0,
    0.571
   ],
-  "expected_pull_pct": 0.291,
+  "expected_pull_pct": 0.288,
   "band": [
    0,
-   0.627
+   0.611
   ],
   "last3": "nnn",
   "overall_rate": 0.429,
@@ -1430,9 +1430,9 @@
    0.536,
    1
   ],
-  "expected_pull_pct": 0.704,
+  "expected_pull_pct": 0.682,
   "band": [
-   0.401,
+   0.313,
    1
   ],
   "last3": "PnP",
@@ -1457,10 +1457,10 @@
    0,
    0.15
   ],
-  "expected_pull_pct": 0.086,
+  "expected_pull_pct": 0.034,
   "band": [
    0,
-   0.27
+   0.159
   ],
   "last3": "nnn",
   "overall_rate": 0.25,
@@ -1484,10 +1484,10 @@
    0.385,
    0.99
   ],
-  "expected_pull_pct": 0.656,
+  "expected_pull_pct": 0.648,
   "band": [
-   0.326,
-   0.987
+   0.294,
+   1
   ],
   "last3": "nPP",
   "overall_rate": 0.714,
@@ -1509,10 +1509,10 @@
    0.164,
    0.682
   ],
-  "expected_pull_pct": 0.474,
+  "expected_pull_pct": 0.528,
   "band": [
-   0.149,
-   0.799
+   0.132,
+   0.925
   ],
   "last3": "nPP",
   "overall_rate": 0.4,

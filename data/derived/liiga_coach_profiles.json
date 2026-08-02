@@ -1,10 +1,10 @@
 {
 "meta": {
 "league": "liiga",
-"prior_a": 2.076,
-"prior_b": 2.924,
+"prior_a": 2.491,
+"prior_b": 3.509,
 "prior_mu": 0.4152,
-"prior_strength": 5,
+"prior_strength": 6,
 "hazard_bucketed": {
 "0": 0.0,
 "1": 0.0,
@@ -27,7 +27,7 @@
 "18": 0.001468,
 "19": 0.000101
 },
-"half_life_chances": 6.0,
+"half_life_chances": null,
 "clear_threshold": 0.7,
 "dead_time_s": 18
 },
@@ -40,31 +40,13 @@
 "clear_taken": 10,
 "pp_pulls": 0,
 "instances": 29,
-"expected_pull_pct": 0.6364,
+"expected_pull_pct": 0.7147,
 "band": [
-0.449,
-0.823
+0.524,
+0.905
 ],
 "last3": "PP-",
 "flags": []
-},
-{
-"coach": "Toni S\u00f6derholm",
-"team": "TPS",
-"last_seen": "2026-03-14",
-"clear_chances": 3,
-"clear_taken": 3,
-"pp_pulls": 2,
-"instances": 17,
-"expected_pull_pct": 0.6195,
-"band": [
-0.409,
-0.83
-],
-"last3": "PPP",
-"flags": [
-"RISKY: <5 clean chances"
-]
 },
 {
 "coach": "Petri Karjalainen",
@@ -74,10 +56,10 @@
 "clear_taken": 8,
 "pp_pulls": 1,
 "instances": 34,
-"expected_pull_pct": 0.6073,
+"expected_pull_pct": 0.6672,
 "band": [
-0.417,
-0.797
+0.463,
+0.871
 ],
 "last3": "P-P",
 "flags": []
@@ -90,31 +72,13 @@
 "clear_taken": 4,
 "pp_pulls": 3,
 "instances": 17,
-"expected_pull_pct": 0.5771,
+"expected_pull_pct": 0.6128,
 "band": [
-0.377,
-0.777
+0.408,
+0.818
 ],
 "last3": "P-P",
 "flags": []
-},
-{
-"coach": "Antti Pennanen",
-"team": "Ilves",
-"last_seen": "2024-02-14",
-"clear_chances": 2,
-"clear_taken": 2,
-"pp_pulls": 0,
-"instances": 7,
-"expected_pull_pct": 0.5757,
-"band": [
-0.35,
-0.801
-],
-"last3": "PP",
-"flags": [
-"RISKY: <5 clean chances"
-]
 },
 {
 "coach": "Petri Matikainen",
@@ -124,13 +88,49 @@
 "clear_taken": 4,
 "pp_pulls": 1,
 "instances": 19,
-"expected_pull_pct": 0.565,
+"expected_pull_pct": 0.6064,
 "band": [
-0.365,
-0.765
+0.4,
+0.813
 ],
 "last3": "PP-",
 "flags": []
+},
+{
+"coach": "Toni S\u00f6derholm",
+"team": "TPS",
+"last_seen": "2026-03-14",
+"clear_chances": 3,
+"clear_taken": 3,
+"pp_pulls": 2,
+"instances": 17,
+"expected_pull_pct": 0.5941,
+"band": [
+0.392,
+0.796
+],
+"last3": "PPP",
+"flags": [
+"RISKY: <5 clean chances"
+]
+},
+{
+"coach": "Antti Pennanen",
+"team": "Ilves",
+"last_seen": "2024-02-14",
+"clear_chances": 2,
+"clear_taken": 2,
+"pp_pulls": 0,
+"instances": 7,
+"expected_pull_pct": 0.5556,
+"band": [
+0.342,
+0.769
+],
+"last3": "PP",
+"flags": [
+"RISKY: <5 clean chances"
+]
 },
 {
 "coach": "Mikko Manner",
@@ -140,10 +140,10 @@
 "clear_taken": 5,
 "pp_pulls": 4,
 "instances": 28,
-"expected_pull_pct": 0.5143,
+"expected_pull_pct": 0.5397,
 "band": [
-0.319,
-0.71
+0.328,
+0.751
 ],
 "last3": "PP-",
 "flags": []
@@ -156,10 +156,10 @@
 "clear_taken": 1,
 "pp_pulls": 0,
 "instances": 14,
-"expected_pull_pct": 0.5127,
+"expected_pull_pct": 0.4987,
 "band": [
-0.271,
-0.754
+0.272,
+0.725
 ],
 "last3": "P",
 "flags": [
@@ -174,10 +174,10 @@
 "clear_taken": 2,
 "pp_pulls": 0,
 "instances": 14,
-"expected_pull_pct": 0.5036,
+"expected_pull_pct": 0.4866,
 "band": [
-0.286,
-0.721
+0.282,
+0.691
 ],
 "last3": "P-P",
 "flags": [
@@ -192,10 +192,10 @@
 "clear_taken": 2,
 "pp_pulls": 0,
 "instances": 21,
-"expected_pull_pct": 0.4894,
+"expected_pull_pct": 0.4854,
 "band": [
-0.272,
-0.706
+0.281,
+0.69
 ],
 "last3": "PP-",
 "flags": [
@@ -210,10 +210,10 @@
 "clear_taken": 3,
 "pp_pulls": 7,
 "instances": 37,
-"expected_pull_pct": 0.4663,
+"expected_pull_pct": 0.4682,
 "band": [
-0.265,
-0.668
+0.251,
+0.685
 ],
 "last3": "P--",
 "flags": []
@@ -226,10 +226,10 @@
 "clear_taken": 4,
 "pp_pulls": 0,
 "instances": 20,
-"expected_pull_pct": 0.4582,
+"expected_pull_pct": 0.4647,
 "band": [
-0.264,
-0.653
+0.238,
+0.692
 ],
 "last3": "--P",
 "flags": []
@@ -244,8 +244,8 @@
 "instances": 7,
 "expected_pull_pct": 0.4152,
 "band": [
-0.158,
-0.673
+0.177,
+0.654
 ],
 "last3": "",
 "flags": [
@@ -262,13 +262,29 @@
 "instances": 9,
 "expected_pull_pct": 0.4152,
 "band": [
-0.158,
-0.673
+0.177,
+0.654
 ],
 "last3": "",
 "flags": [
 "RISKY: <5 clean chances"
 ]
+},
+{
+"coach": "Matias Lehtonen",
+"team": "HPK",
+"last_seen": "2024-09-20",
+"clear_chances": 6,
+"clear_taken": 2,
+"pp_pulls": 3,
+"instances": 32,
+"expected_pull_pct": 0.4079,
+"band": [
+0.186,
+0.63
+],
+"last3": "--P",
+"flags": []
 },
 {
 "coach": "Jonne Virtanen",
@@ -278,10 +294,10 @@
 "clear_taken": 3,
 "pp_pulls": 0,
 "instances": 21,
-"expected_pull_pct": 0.4147,
+"expected_pull_pct": 0.4026,
 "band": [
-0.221,
-0.609
+0.192,
+0.614
 ],
 "last3": "---",
 "flags": []
@@ -294,12 +310,28 @@
 "clear_taken": 3,
 "pp_pulls": 2,
 "instances": 30,
-"expected_pull_pct": 0.4012,
+"expected_pull_pct": 0.4002,
 "band": [
-0.21,
-0.593
+0.166,
+0.634
 ],
 "last3": "-P-",
+"flags": []
+},
+{
+"coach": "Rikard Gr\u00f6nborg",
+"team": "Tappara",
+"last_seen": "2026-02-20",
+"clear_chances": 6,
+"clear_taken": 2,
+"pp_pulls": 0,
+"instances": 28,
+"expected_pull_pct": 0.3995,
+"band": [
+0.165,
+0.634
+],
+"last3": "--P",
 "flags": []
 },
 {
@@ -310,10 +342,28 @@
 "clear_taken": 1,
 "pp_pulls": 0,
 "instances": 15,
-"expected_pull_pct": 0.4003,
+"expected_pull_pct": 0.3923,
 "band": [
-0.187,
-0.613
+0.194,
+0.591
+],
+"last3": "--P",
+"flags": [
+"RISKY: <5 clean chances"
+]
+},
+{
+"coach": "Ville Peltonen",
+"team": "HIFK",
+"last_seen": "2025-03-01",
+"clear_chances": 4,
+"clear_taken": 1,
+"pp_pulls": 1,
+"instances": 12,
+"expected_pull_pct": 0.3779,
+"band": [
+0.17,
+0.586
 ],
 "last3": "--P",
 "flags": [
@@ -328,63 +378,13 @@
 "clear_taken": 2,
 "pp_pulls": 0,
 "instances": 30,
-"expected_pull_pct": 0.3987,
+"expected_pull_pct": 0.3686,
 "band": [
-0.201,
-0.597
+0.156,
+0.581
 ],
 "last3": "-P-",
 "flags": []
-},
-{
-"coach": "Matias Lehtonen",
-"team": "HPK",
-"last_seen": "2024-09-20",
-"clear_chances": 6,
-"clear_taken": 2,
-"pp_pulls": 3,
-"instances": 32,
-"expected_pull_pct": 0.3948,
-"band": [
-0.202,
-0.587
-],
-"last3": "--P",
-"flags": []
-},
-{
-"coach": "Rikard Gr\u00f6nborg",
-"team": "Tappara",
-"last_seen": "2026-02-20",
-"clear_chances": 6,
-"clear_taken": 2,
-"pp_pulls": 0,
-"instances": 28,
-"expected_pull_pct": 0.3796,
-"band": [
-0.189,
-0.57
-],
-"last3": "--P",
-"flags": []
-},
-{
-"coach": "Ville Peltonen",
-"team": "HIFK",
-"last_seen": "2025-03-01",
-"clear_chances": 4,
-"clear_taken": 1,
-"pp_pulls": 1,
-"instances": 12,
-"expected_pull_pct": 0.3666,
-"band": [
-0.165,
-0.568
-],
-"last3": "--P",
-"flags": [
-"RISKY: <5 clean chances"
-]
 },
 {
 "coach": "Lauri Marjam\u00e4ki",
@@ -394,10 +394,10 @@
 "clear_taken": 0,
 "pp_pulls": 0,
 "instances": 7,
-"expected_pull_pct": 0.346,
+"expected_pull_pct": 0.3559,
 "band": [
-0.116,
-0.576
+0.139,
+0.573
 ],
 "last3": "-",
 "flags": [
@@ -412,26 +412,10 @@
 "clear_taken": 2,
 "pp_pulls": 1,
 "instances": 21,
-"expected_pull_pct": 0.3371,
+"expected_pull_pct": 0.3249,
 "band": [
-0.152,
-0.522
-],
-"last3": "P--",
-"flags": []
-},
-{
-"coach": "Jere H\u00e4rk\u00e4l\u00e4",
-"team": "\u00c4ss\u00e4t",
-"last_seen": "2024-03-06",
-"clear_chances": 5,
-"clear_taken": 1,
-"pp_pulls": 0,
-"instances": 16,
-"expected_pull_pct": 0.3181,
-"band": [
-0.13,
-0.506
+0.125,
+0.525
 ],
 "last3": "P--",
 "flags": []
@@ -444,10 +428,10 @@
 "clear_taken": 0,
 "pp_pulls": 0,
 "instances": 5,
-"expected_pull_pct": 0.3013,
+"expected_pull_pct": 0.3126,
 "band": [
-0.092,
-0.51
+0.114,
+0.511
 ],
 "last3": "--",
 "flags": [
@@ -455,19 +439,19 @@
 ]
 },
 {
-"coach": "Ville M\u00e4ntymaa",
-"team": "K\u00e4rp\u00e4t",
-"last_seen": "2025-03-01",
+"coach": "Jere H\u00e4rk\u00e4l\u00e4",
+"team": "\u00c4ss\u00e4t",
+"last_seen": "2024-03-06",
 "clear_chances": 5,
 "clear_taken": 1,
 "pp_pulls": 0,
-"instances": 20,
-"expected_pull_pct": 0.2999,
+"instances": 16,
+"expected_pull_pct": 0.3008,
 "band": [
-0.115,
-0.485
+0.107,
+0.495
 ],
-"last3": "---",
+"last3": "P--",
 "flags": []
 },
 {
@@ -478,10 +462,26 @@
 "clear_taken": 1,
 "pp_pulls": 0,
 "instances": 17,
-"expected_pull_pct": 0.2999,
+"expected_pull_pct": 0.2855,
 "band": [
-0.115,
-0.485
+0.095,
+0.476
+],
+"last3": "---",
+"flags": []
+},
+{
+"coach": "Ville M\u00e4ntymaa",
+"team": "K\u00e4rp\u00e4t",
+"last_seen": "2025-03-01",
+"clear_chances": 5,
+"clear_taken": 1,
+"pp_pulls": 0,
+"instances": 20,
+"expected_pull_pct": 0.2651,
+"band": [
+0.075,
+0.455
 ],
 "last3": "---",
 "flags": []
@@ -494,26 +494,10 @@
 "clear_taken": 2,
 "pp_pulls": 1,
 "instances": 18,
-"expected_pull_pct": 0.2498,
+"expected_pull_pct": 0.2402,
 "band": [
-0.081,
-0.419
-],
-"last3": "---",
-"flags": []
-},
-{
-"coach": "Ville H\u00e4m\u00e4l\u00e4inen",
-"team": "SaiPa",
-"last_seen": "2024-03-12",
-"clear_chances": 7,
-"clear_taken": 1,
-"pp_pulls": 0,
-"instances": 21,
-"expected_pull_pct": 0.2486,
-"band": [
-0.079,
-0.418
+0.075,
+0.406
 ],
 "last3": "---",
 "flags": []
@@ -526,15 +510,31 @@
 "clear_taken": 0,
 "pp_pulls": 1,
 "instances": 17,
-"expected_pull_pct": 0.2474,
+"expected_pull_pct": 0.236,
 "band": [
-0.067,
-0.428
+0.059,
+0.414
 ],
 "last3": "---",
 "flags": [
 "RISKY: <5 clean chances"
 ]
+},
+{
+"coach": "Ville H\u00e4m\u00e4l\u00e4inen",
+"team": "SaiPa",
+"last_seen": "2024-03-12",
+"clear_chances": 7,
+"clear_taken": 1,
+"pp_pulls": 0,
+"instances": 21,
+"expected_pull_pct": 0.2061,
+"band": [
+0.037,
+0.375
+],
+"last3": "---",
+"flags": []
 },
 {
 "coach": "Jyrki Aho",
@@ -544,10 +544,10 @@
 "clear_taken": 1,
 "pp_pulls": 0,
 "instances": 31,
-"expected_pull_pct": 0.236,
+"expected_pull_pct": 0.1896,
 "band": [
-0.07,
-0.401
+0.018,
+0.361
 ],
 "last3": "---",
 "flags": []
@@ -560,10 +560,10 @@
 "clear_taken": 0,
 "pp_pulls": 0,
 "instances": 16,
-"expected_pull_pct": 0.2301,
+"expected_pull_pct": 0.1848,
 "band": [
-0.06,
-0.4
+0.024,
+0.346
 ],
 "last3": "---",
 "flags": []
@@ -576,10 +576,10 @@
 "clear_taken": 0,
 "pp_pulls": 0,
 "instances": 23,
-"expected_pull_pct": 0.1969,
+"expected_pull_pct": 0.1605,
 "band": [
-0.041,
-0.353
+0.0,
+0.336
 ],
 "last3": "---",
 "flags": []

@@ -37,7 +37,7 @@ def load_estimator(league):
     seqs = defaultdict(list)
     for r in sorted(pre, key=lambda x: x["date"]):
         if r["clear"]:
-            seqs[r["coach"]].append(1 if r["taken"] else 0)
+            seqs[r["coach"]].append((r["date"], 1 if r["taken"] else 0))
     from hockeycore.fit.prior_fit import fit_prior
     A, B, mu, st = fit_prior(list(seqs.values()))
 

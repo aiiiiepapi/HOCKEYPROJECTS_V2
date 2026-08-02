@@ -37,7 +37,7 @@ def main():
 
     prior = json.load(open(DER / "pull_prior.json"))
     A, B = prior["prior_a"], prior["prior_b"]
-    from hockeycore.fit.prior_fit import HL  # ruling 31: fitted (6)
+    # recency: calendar decay inside prior_fit (ruling 32)
 
     # chance-level sequences per coach (5v5 ledger events, date order)
     cw = json.load(open(DER / "clean_window_instances.json"))
@@ -61,15 +61,8 @@ def main():
         n, k = c["ev_clear"], c["ev_taken"]          # 5v5-ONLY: the bettable number
         events = seq.get(coach, [])
         # recency-decayed counts (newest chance has weight 1)
-        from hockeycore.fit.prior_fit import posterior, FADE_START, FADE_HL
-        seq01 = [t for _, t in events]
-        post = posterior(seq01, A, B)
-        kw = nw = 0.0
-        for age, (_, took) in enumerate(reversed(events)):
-            w = 0.5 ** (age / HL)
-            kw += w * took; nw += w
-        _fade = 0.5 ** (max(len(seq01) - FADE_START, 0) / FADE_HL)
-        A2, B2 = A * _fade, B * _fade
+        from hockeycore.fit.prior_fit import posterior_detail
+        post, kw, nw, A2, B2 = posterior_detail(events, A, B)
         # posterior 95% band at effective sample size
         import math as _m
         a2, b2 = kw + A2, nw - kw + B2

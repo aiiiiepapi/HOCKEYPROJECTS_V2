@@ -1,52 +1,86 @@
 """
-prior_fit.py — coach-prior strength fitted by PREDICTION, not spread-matching
-(rule 15: one implementation, used by profiles + backtests in every league).
+prior_fit.py — coach estimator core (rule 15: ONE implementation, used by
+profiles + both backtests in every league).
 
-Ruling 29 (Seb's UTC challenge, 2026-08-01): MoM strengths over-shrank
-established hot coaches (80%+ over 5+ chances continued at 75% observed vs
-~65% modeled). Strength is now chosen to maximize out-of-sample next-chance
-log-likelihood on the league's own chance sequences; prior mean = the league
-clean-chance take rate. Small-n records are UNCHANGED by design: perfect
-3-streaks continued at 67% (n=79) — the shrinkage there is correct.
+Sequences are chronological lists of (date_iso, took) tuples.
+
+RECENCY (ruling 32, FITTED 2026-08-02): CALENDAR decay — each chance's weight
+halves every 12 months of age. Beat per-chance decay in NHL+AHL, tied Liiga.
+"Last season ~half weight, two seasons ago ~quarter" regardless of how many
+chances came between.
+
+LEAGUE ANCHOR (rulings 30-32): prior strength fitted predictively per league
+(GRID), then FADED with career evidence: S_eff = S * 0.5^(max(n-3,0)/3) —
+"league average a whisper past 3 chances" (Seb ruling 2026-08-02, ON RECORD:
+predictive cost vs start-6/hl-8 = 0.0076 NHL / 0.0064 AHL / 0.0019 Liiga per
+prediction; Seb heard the numbers and ruled for the fast fade — rule 0b
+satisfied).
 """
 import math
+from datetime import date as _date
 
-HL = 6.0    # ruling 31: recency half-life FITTED predictively (was 10 by ruling)
+CAL_HL_MONTHS = 12.0
+FADE_START, FADE_HL = 3, 3.0
 GRID = (2, 3, 4, 5, 6, 7, 9, 12)
-FADE_START, FADE_HL = 6, 8.0   # rulings 30+31: fade from 6 (Seb constraint <8; data mildly preferred 8, cost ~0.0004 — on record)
+HL = 6.0   # legacy per-chance constant; retained only for old references
 
 
-def posterior(seq, A, B):
-    """Recency-weighted Beta posterior with CAREER-FADED league anchor
-    (ruling 30, Seb 2026-08-02: 'league standards bring little to no value'
-    once a coach has a real record — confirmed predictively: established-
-    coach forecasts are flat-to-better with the anchor faded; small-n
-    shrinkage unchanged). S_eff = S * 0.5^(max(career_n - 6, 0)/8)."""
-    n = len(seq)
-    kw = sum(x * 0.5 ** ((n - 1 - i) / HL) for i, x in enumerate(seq))
-    nw = sum(0.5 ** ((n - 1 - i) / HL) for i in range(n))
-    fade = 0.5 ** (max(n - FADE_START, 0) / FADE_HL)
-    a_e, b_e = A * fade, B * fade
-    return (kw + a_e) / (nw + a_e + b_e)
+def _days(d1, d0):
+    y1, m1, dd1 = map(int, d1[:10].split("-"))
+    y0, m0, dd0 = map(int, d0[:10].split("-"))
+    return (_date(y1, m1, dd1) - _date(y0, m0, dd0)).days
+
+
+def _weights(seq, asof=None):
+    """calendar-decay weights for a (date, took) sequence."""
+    if not seq:
+        return 0.0, 0.0
+    asof = asof or seq[-1][0]
+    kw = nw = 0.0
+    for d, took in seq:
+        w = 0.5 ** (max(_days(asof, d), 0) / (CAL_HL_MONTHS * 30.44))
+        kw += w * took
+        nw += w
+    return kw, nw
+
+
+def _fade(n):
+    return 0.5 ** (max(n - FADE_START, 0) / FADE_HL)
+
+
+def posterior(seq, A, B, asof=None):
+    kw, nw = _weights(seq, asof)
+    f = _fade(len(seq))
+    a_e, b_e = A * f, B * f
+    tot = nw + a_e + b_e
+    return (kw + a_e) / tot if tot > 0 else A / (A + B)
+
+
+def posterior_detail(seq, A, B, asof=None):
+    """(mean, kw, nw, a_eff, b_eff) — for uncertainty bands."""
+    kw, nw = _weights(seq, asof)
+    f = _fade(len(seq))
+    a_e, b_e = A * f, B * f
+    tot = nw + a_e + b_e
+    m = (kw + a_e) / tot if tot > 0 else A / (A + B)
+    return m, kw, nw, a_e, b_e
 
 
 def fit_prior(seqs):
-    """seqs: iterable of chronological 0/1 chance lists (one per coach).
-    Returns (a, b, mu, strength)."""
+    """seqs: iterable of chronological (date, took) lists.
+    Returns (a, b, mu, strength) — strength by out-of-sample prediction."""
     seqs = [s for s in seqs if s]
-    allc = [x for s in seqs for x in s]
+    allc = [t for s in seqs for _, t in s]
     mu = sum(allc) / len(allc)
     best = None
     for S in GRID:
         ll = n = 0
         for s in seqs:
-            kw = nw = 0.0
             for i in range(1, len(s)):
-                # incremental recency-weighted counts of s[:i]
-                kw = kw * 0.5 ** (1 / HL) + s[i - 1]
-                nw = nw * 0.5 ** (1 / HL) + 1
-                p = min(max((kw + mu * S) / (nw + S), 0.01), 0.99)
-                ll += math.log(p if s[i] else 1 - p)
+                kw, nw = _weights(s[:i], asof=s[i][0])
+                f = _fade(i)
+                p = min(max((kw + mu * S * f) / (nw + S * f), 0.01), 0.99)
+                ll += math.log(p if s[i][1] else 1 - p)
                 n += 1
         if best is None or ll / n > best[1]:
             best = (S, ll / n)

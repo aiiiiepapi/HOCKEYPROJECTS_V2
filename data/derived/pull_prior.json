@@ -1,12 +1,7 @@
 {
- "prior_a": 1.045,
- "prior_b": 0.955,
+ "prior_a": 1.567,
+ "prior_b": 1.433,
  "mu": 0.5225,
- "strength": 2,
- "method": "predictive log-lik (ruling 29)",
- "prev": {
-  "a": 2.46,
-  "b": 1.67,
-  "method": "MoM"
- }
+ "strength": 3,
+ "method": "predictive, calendar recency + fade3/3 (rulings 29-32)"
 }

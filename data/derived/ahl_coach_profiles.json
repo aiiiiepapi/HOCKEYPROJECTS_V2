@@ -1,10 +1,10 @@
 {
 "meta": {
 "league": "ahl",
-"prior_a": 2.036,
-"prior_b": 1.964,
+"prior_a": 3.562,
+"prior_b": 3.438,
 "prior_mu": 0.5089,
-"prior_strength": 4,
+"prior_strength": 7,
 "hazard_bucketed": {
 "0": 9.6e-05,
 "1": 9.2e-05,
@@ -27,27 +27,11 @@
 "18": 0.001269,
 "19": 6.5e-05
 },
-"half_life_chances": 6.0,
+"half_life_chances": null,
 "clear_threshold": 0.7,
 "dead_time_s": 18
 },
 "profiles": [
-{
-"coach": "Matt McIlvane",
-"team": "SD",
-"last_seen": "2026-04-17",
-"clear_chances": 25,
-"clear_taken": 19,
-"pp_pulls": 2,
-"instances": 57,
-"expected_pull_pct": 0.857,
-"band": [
-0.718,
-0.996
-],
-"last3": "PPP",
-"flags": []
-},
 {
 "coach": "Neil Graham",
 "team": "TEX",
@@ -56,10 +40,10 @@
 "clear_taken": 11,
 "pp_pulls": 0,
 "instances": 43,
-"expected_pull_pct": 0.8309,
+"expected_pull_pct": 0.8924,
 "band": [
-0.681,
-0.981
+0.76,
+1.0
 ],
 "last3": "PPP",
 "flags": []
@@ -72,10 +56,26 @@
 "clear_taken": 14,
 "pp_pulls": 3,
 "instances": 73,
-"expected_pull_pct": 0.803,
+"expected_pull_pct": 0.8506,
 "band": [
-0.645,
-0.961
+0.683,
+1.0
+],
+"last3": "PPP",
+"flags": []
+},
+{
+"coach": "Matt McIlvane",
+"team": "SD",
+"last_seen": "2026-04-17",
+"clear_chances": 25,
+"clear_taken": 19,
+"pp_pulls": 2,
+"instances": 57,
+"expected_pull_pct": 0.8388,
+"band": [
+0.709,
+0.969
 ],
 "last3": "PPP",
 "flags": []
@@ -88,12 +88,44 @@
 "clear_taken": 6,
 "pp_pulls": 1,
 "instances": 17,
-"expected_pull_pct": 0.7711,
+"expected_pull_pct": 0.808,
 "band": [
-0.597,
-0.945
+0.648,
+0.968
 ],
 "last3": "PPP",
+"flags": []
+},
+{
+"coach": "Seth Appert",
+"team": "ROC",
+"last_seen": "2024-04-12",
+"clear_chances": 15,
+"clear_taken": 13,
+"pp_pulls": 1,
+"instances": 40,
+"expected_pull_pct": 0.7993,
+"band": [
+0.647,
+0.952
+],
+"last3": "P-P",
+"flags": []
+},
+{
+"coach": "Ryan Parent",
+"team": "UTC",
+"last_seen": "2026-04-11",
+"clear_chances": 10,
+"clear_taken": 8,
+"pp_pulls": 2,
+"instances": 36,
+"expected_pull_pct": 0.7724,
+"band": [
+0.607,
+0.938
+],
+"last3": "PP-",
 "flags": []
 },
 {
@@ -104,10 +136,10 @@
 "clear_taken": 5,
 "pp_pulls": 5,
 "instances": 23,
-"expected_pull_pct": 0.7551,
+"expected_pull_pct": 0.7486,
 "band": [
-0.572,
-0.938
+0.57,
+0.928
 ],
 "last3": "PPP",
 "flags": []
@@ -120,65 +152,13 @@
 "clear_taken": 15,
 "pp_pulls": 7,
 "instances": 77,
-"expected_pull_pct": 0.7514,
+"expected_pull_pct": 0.7484,
 "band": [
-0.58,
-0.923
+0.544,
+0.953
 ],
 "last3": "P-P",
 "flags": []
-},
-{
-"coach": "Seth Appert",
-"team": "ROC",
-"last_seen": "2024-04-12",
-"clear_chances": 15,
-"clear_taken": 13,
-"pp_pulls": 1,
-"instances": 40,
-"expected_pull_pct": 0.7418,
-"band": [
-0.568,
-0.916
-],
-"last3": "P-P",
-"flags": []
-},
-{
-"coach": "Drew Bannister",
-"team": "SPR",
-"last_seen": "2023-11-15",
-"clear_chances": 3,
-"clear_taken": 3,
-"pp_pulls": 1,
-"instances": 12,
-"expected_pull_pct": 0.7061,
-"band": [
-0.496,
-0.916
-],
-"last3": "PPP",
-"flags": [
-"RISKY: <5 clean chances"
-]
-},
-{
-"coach": "Joe Cirella",
-"team": "CGY",
-"last_seen": "2025-03-28",
-"clear_chances": 3,
-"clear_taken": 3,
-"pp_pulls": 1,
-"instances": 11,
-"expected_pull_pct": 0.7061,
-"band": [
-0.496,
-0.916
-],
-"last3": "PPP",
-"flags": [
-"RISKY: <5 clean chances"
-]
 },
 {
 "coach": "Kirk MacDonald",
@@ -188,26 +168,60 @@
 "clear_taken": 5,
 "pp_pulls": 1,
 "instances": 20,
-"expected_pull_pct": 0.6977,
+"expected_pull_pct": 0.6947,
 "band": [
-0.508,
+0.501,
 0.888
 ],
 "last3": "PPP",
 "flags": []
 },
 {
-"coach": "Ryan Parent",
-"team": "UTC",
-"last_seen": "2026-04-11",
+"coach": "Aaron Schneekloth",
+"team": "COL",
+"last_seen": "2025-04-19",
 "clear_chances": 10,
-"clear_taken": 8,
-"pp_pulls": 2,
-"instances": 36,
-"expected_pull_pct": 0.6941,
+"clear_taken": 7,
+"pp_pulls": 0,
+"instances": 25,
+"expected_pull_pct": 0.6804,
 "band": [
-0.509,
-0.88
+0.478,
+0.883
+],
+"last3": "P-P",
+"flags": []
+},
+{
+"coach": "Joe Cirella",
+"team": "CGY",
+"last_seen": "2025-03-28",
+"clear_chances": 3,
+"clear_taken": 3,
+"pp_pulls": 1,
+"instances": 11,
+"expected_pull_pct": 0.6532,
+"band": [
+0.469,
+0.838
+],
+"last3": "PPP",
+"flags": [
+"RISKY: <5 clean chances"
+]
+},
+{
+"coach": "Trent Cull",
+"team": "CGY",
+"last_seen": "2024-12-22",
+"clear_chances": 5,
+"clear_taken": 4,
+"pp_pulls": 3,
+"instances": 25,
+"expected_pull_pct": 0.6491,
+"band": [
+0.456,
+0.842
 ],
 "last3": "PP-",
 "flags": []
@@ -220,44 +234,10 @@
 "clear_taken": 5,
 "pp_pulls": 2,
 "instances": 41,
-"expected_pull_pct": 0.6673,
+"expected_pull_pct": 0.6411,
 "band": [
-0.473,
-0.862
-],
-"last3": "P-P",
-"flags": []
-},
-{
-"coach": "Manny Viveiros",
-"team": "HSK",
-"last_seen": "2023-03-31",
-"clear_chances": 2,
-"clear_taken": 2,
-"pp_pulls": 2,
-"instances": 20,
-"expected_pull_pct": 0.6666,
-"band": [
-0.437,
-0.896
-],
-"last3": "PP",
-"flags": [
-"RISKY: <5 clean chances"
-]
-},
-{
-"coach": "Aaron Schneekloth",
-"team": "COL",
-"last_seen": "2025-04-19",
-"clear_chances": 10,
-"clear_taken": 7,
-"pp_pulls": 0,
-"instances": 25,
-"expected_pull_pct": 0.6512,
-"band": [
-0.459,
-0.843
+0.427,
+0.855
 ],
 "last3": "P-P",
 "flags": []
@@ -270,29 +250,65 @@
 "clear_taken": 4,
 "pp_pulls": 2,
 "instances": 16,
-"expected_pull_pct": 0.6305,
+"expected_pull_pct": 0.6375,
 "band": [
-0.425,
-0.836
+0.44,
+0.835
 ],
 "last3": "PP-",
 "flags": []
 },
 {
-"coach": "Trent Cull",
-"team": "CGY",
-"last_seen": "2024-12-22",
-"clear_chances": 5,
-"clear_taken": 4,
-"pp_pulls": 3,
-"instances": 25,
-"expected_pull_pct": 0.6305,
+"coach": "Drew Bannister",
+"team": "SPR",
+"last_seen": "2023-11-15",
+"clear_chances": 3,
+"clear_taken": 3,
+"pp_pulls": 1,
+"instances": 12,
+"expected_pull_pct": 0.6242,
 "band": [
-0.425,
-0.836
+0.43,
+0.819
 ],
-"last3": "PP-",
+"last3": "PPP",
+"flags": [
+"RISKY: <5 clean chances"
+]
+},
+{
+"coach": "Mark Letestu",
+"team": "COL",
+"last_seen": "2026-04-17",
+"clear_chances": 6,
+"clear_taken": 4,
+"pp_pulls": 1,
+"instances": 14,
+"expected_pull_pct": 0.615,
+"band": [
+0.417,
+0.813
+],
+"last3": "-PP",
 "flags": []
+},
+{
+"coach": "Manny Viveiros",
+"team": "HSK",
+"last_seen": "2023-03-31",
+"clear_chances": 2,
+"clear_taken": 2,
+"pp_pulls": 2,
+"instances": 20,
+"expected_pull_pct": 0.6137,
+"band": [
+0.416,
+0.812
+],
+"last3": "PP",
+"flags": [
+"RISKY: <5 clean chances"
+]
 },
 {
 "coach": "Kris Knoblauch",
@@ -302,10 +318,10 @@
 "clear_taken": 3,
 "pp_pulls": 0,
 "instances": 20,
-"expected_pull_pct": 0.6137,
+"expected_pull_pct": 0.6032,
 "band": [
-0.399,
-0.829
+0.408,
+0.799
 ],
 "last3": "P-P",
 "flags": [
@@ -320,31 +336,15 @@
 "clear_taken": 3,
 "pp_pulls": 1,
 "instances": 17,
-"expected_pull_pct": 0.6137,
+"expected_pull_pct": 0.5937,
 "band": [
-0.399,
-0.829
+0.397,
+0.791
 ],
 "last3": "P-P",
 "flags": [
 "RISKY: <5 clean chances"
 ]
-},
-{
-"coach": "Mark Letestu",
-"team": "COL",
-"last_seen": "2026-04-17",
-"clear_chances": 6,
-"clear_taken": 4,
-"pp_pulls": 1,
-"instances": 14,
-"expected_pull_pct": 0.6133,
-"band": [
-0.412,
-0.815
-],
-"last3": "-PP",
-"flags": []
 },
 {
 "coach": "Mitch Love",
@@ -354,10 +354,10 @@
 "clear_taken": 1,
 "pp_pulls": 1,
 "instances": 9,
-"expected_pull_pct": 0.6071,
+"expected_pull_pct": 0.5703,
 "band": [
-0.352,
-0.862
+0.359,
+0.782
 ],
 "last3": "P",
 "flags": [
@@ -365,22 +365,68 @@
 ]
 },
 {
-"coach": "Brett Sutter",
-"team": "CGY",
+"coach": "Colin Chaulk",
+"team": "BAK",
 "last_seen": "2026-04-11",
-"clear_chances": 3,
-"clear_taken": 2,
-"pp_pulls": 1,
-"instances": 27,
-"expected_pull_pct": 0.5729,
+"clear_chances": 14,
+"clear_taken": 6,
+"pp_pulls": 3,
+"instances": 66,
+"expected_pull_pct": 0.5662,
 "band": [
-0.344,
-0.801
+0.36,
+0.772
 ],
-"last3": "P-P",
-"flags": [
-"RISKY: <5 clean chances"
-]
+"last3": "--P",
+"flags": []
+},
+{
+"coach": "J.D. Forrest",
+"team": "WBS",
+"last_seen": "2024-04-14",
+"clear_chances": 10,
+"clear_taken": 6,
+"pp_pulls": 3,
+"instances": 37,
+"expected_pull_pct": 0.5614,
+"band": [
+0.361,
+0.762
+],
+"last3": "--P",
+"flags": []
+},
+{
+"coach": "Marco Sturm",
+"team": "ONT",
+"last_seen": "2025-04-11",
+"clear_chances": 9,
+"clear_taken": 4,
+"pp_pulls": 3,
+"instances": 54,
+"expected_pull_pct": 0.5611,
+"band": [
+0.333,
+0.789
+],
+"last3": "-PP",
+"flags": []
+},
+{
+"coach": "Andrew Campbell",
+"team": "BEL",
+"last_seen": "2026-04-18",
+"clear_chances": 5,
+"clear_taken": 3,
+"pp_pulls": 0,
+"instances": 18,
+"expected_pull_pct": 0.5543,
+"band": [
+0.355,
+0.754
+],
+"last3": "PP-",
+"flags": []
 },
 {
 "coach": "Jared Nightingale",
@@ -390,10 +436,10 @@
 "clear_taken": 8,
 "pp_pulls": 2,
 "instances": 37,
-"expected_pull_pct": 0.5648,
+"expected_pull_pct": 0.553,
 "band": [
-0.367,
-0.762
+0.358,
+0.748
 ],
 "last3": "P-P",
 "flags": []
@@ -406,76 +452,12 @@
 "clear_taken": 3,
 "pp_pulls": 0,
 "instances": 22,
-"expected_pull_pct": 0.5559,
+"expected_pull_pct": 0.5522,
 "band": [
-0.344,
-0.768
+0.352,
+0.752
 ],
 "last3": "P-P",
-"flags": []
-},
-{
-"coach": "Ryan Craig",
-"team": "HSK",
-"last_seen": "2026-04-18",
-"clear_chances": 14,
-"clear_taken": 8,
-"pp_pulls": 2,
-"instances": 57,
-"expected_pull_pct": 0.5483,
-"band": [
-0.35,
-0.746
-],
-"last3": "PP-",
-"flags": []
-},
-{
-"coach": "Andrew Campbell",
-"team": "BEL",
-"last_seen": "2026-04-18",
-"clear_chances": 5,
-"clear_taken": 3,
-"pp_pulls": 0,
-"instances": 18,
-"expected_pull_pct": 0.5423,
-"band": [
-0.33,
-0.755
-],
-"last3": "PP-",
-"flags": []
-},
-{
-"coach": "John Gruden",
-"team": "TOR",
-"last_seen": "2026-04-10",
-"clear_chances": 12,
-"clear_taken": 6,
-"pp_pulls": 1,
-"instances": 46,
-"expected_pull_pct": 0.5361,
-"band": [
-0.337,
-0.735
-],
-"last3": "PPP",
-"flags": []
-},
-{
-"coach": "J.D. Forrest",
-"team": "WBS",
-"last_seen": "2024-04-14",
-"clear_chances": 10,
-"clear_taken": 6,
-"pp_pulls": 3,
-"instances": 37,
-"expected_pull_pct": 0.536,
-"band": [
-0.335,
-0.737
-],
-"last3": "--P",
 "flags": []
 },
 {
@@ -486,26 +468,92 @@
 "clear_taken": 13,
 "pp_pulls": 3,
 "instances": 76,
-"expected_pull_pct": 0.526,
+"expected_pull_pct": 0.5475,
 "band": [
-0.328,
-0.724
+0.342,
+0.753
 ],
 "last3": "-P-",
 "flags": []
 },
 {
-"coach": "Marco Sturm",
-"team": "ONT",
-"last_seen": "2025-04-11",
+"coach": "Brett Sutter",
+"team": "CGY",
+"last_seen": "2026-04-11",
+"clear_chances": 3,
+"clear_taken": 2,
+"pp_pulls": 1,
+"instances": 27,
+"expected_pull_pct": 0.5383,
+"band": [
+0.341,
+0.736
+],
+"last3": "P-P",
+"flags": [
+"RISKY: <5 clean chances"
+]
+},
+{
+"coach": "Ryan Craig",
+"team": "HSK",
+"last_seen": "2026-04-18",
+"clear_chances": 14,
+"clear_taken": 8,
+"pp_pulls": 2,
+"instances": 57,
+"expected_pull_pct": 0.5357,
+"band": [
+0.3,
+0.772
+],
+"last3": "PP-",
+"flags": []
+},
+{
+"coach": "Pascal Vincent",
+"team": "LAV",
+"last_seen": "2026-04-18",
+"clear_chances": 6,
+"clear_taken": 3,
+"pp_pulls": 2,
+"instances": 24,
+"expected_pull_pct": 0.5339,
+"band": [
+0.316,
+0.752
+],
+"last3": "PP-",
+"flags": []
+},
+{
+"coach": "Joel Bouchard",
+"team": "SYR",
+"last_seen": "2026-04-17",
+"clear_chances": 11,
+"clear_taken": 4,
+"pp_pulls": 5,
+"instances": 44,
+"expected_pull_pct": 0.5297,
+"band": [
+0.306,
+0.753
+],
+"last3": "-PP",
+"flags": []
+},
+{
+"coach": "Todd Nelson",
+"team": "HER",
+"last_seen": "2025-04-12",
 "clear_chances": 9,
 "clear_taken": 4,
-"pp_pulls": 3,
-"instances": 54,
-"expected_pull_pct": 0.5249,
+"pp_pulls": 2,
+"instances": 31,
+"expected_pull_pct": 0.5267,
 "band": [
-0.323,
-0.727
+0.287,
+0.766
 ],
 "last3": "-PP",
 "flags": []
@@ -518,10 +566,10 @@
 "clear_taken": 3,
 "pp_pulls": 2,
 "instances": 22,
-"expected_pull_pct": 0.5196,
+"expected_pull_pct": 0.5243,
 "band": [
-0.313,
-0.726
+0.306,
+0.742
 ],
 "last3": "P-P",
 "flags": []
@@ -534,44 +582,12 @@
 "clear_taken": 6,
 "pp_pulls": 1,
 "instances": 51,
-"expected_pull_pct": 0.5185,
+"expected_pull_pct": 0.515,
 "band": [
-0.319,
-0.718
+0.301,
+0.729
 ],
 "last3": "-PP",
-"flags": []
-},
-{
-"coach": "Pascal Vincent",
-"team": "LAV",
-"last_seen": "2026-04-18",
-"clear_chances": 6,
-"clear_taken": 3,
-"pp_pulls": 2,
-"instances": 24,
-"expected_pull_pct": 0.5158,
-"band": [
-0.309,
-0.722
-],
-"last3": "PP-",
-"flags": []
-},
-{
-"coach": "Colin Chaulk",
-"team": "BAK",
-"last_seen": "2026-04-11",
-"clear_chances": 14,
-"clear_taken": 6,
-"pp_pulls": 3,
-"instances": 66,
-"expected_pull_pct": 0.5149,
-"band": [
-0.316,
-0.714
-],
-"last3": "--P",
 "flags": []
 },
 {
@@ -584,13 +600,29 @@
 "instances": 9,
 "expected_pull_pct": 0.5089,
 "band": [
-0.223,
-0.795
+0.283,
+0.735
 ],
 "last3": "",
 "flags": [
 "RISKY: <5 clean chances"
 ]
+},
+{
+"coach": "John Gruden",
+"team": "TOR",
+"last_seen": "2026-04-10",
+"clear_chances": 12,
+"clear_taken": 6,
+"pp_pulls": 1,
+"instances": 46,
+"expected_pull_pct": 0.5075,
+"band": [
+0.286,
+0.729
+],
+"last3": "PPP",
+"flags": []
 },
 {
 "coach": "Brent Thompson",
@@ -600,10 +632,10 @@
 "clear_taken": 2,
 "pp_pulls": 0,
 "instances": 16,
-"expected_pull_pct": 0.5064,
+"expected_pull_pct": 0.5054,
 "band": [
-0.285,
-0.727
+0.307,
+0.704
 ],
 "last3": "--P",
 "flags": [
@@ -618,12 +650,30 @@
 "clear_taken": 2,
 "pp_pulls": 2,
 "instances": 16,
-"expected_pull_pct": 0.5064,
+"expected_pull_pct": 0.5034,
 "band": [
-0.285,
-0.727
+0.304,
+0.702
 ],
 "last3": "--P",
+"flags": [
+"RISKY: <5 clean chances"
+]
+},
+{
+"coach": "Steve Ott",
+"team": "SPR",
+"last_seen": "2026-03-20",
+"clear_chances": 2,
+"clear_taken": 1,
+"pp_pulls": 0,
+"instances": 4,
+"expected_pull_pct": 0.5028,
+"band": [
+0.3,
+0.706
+],
+"last3": "P-",
 "flags": [
 "RISKY: <5 clean chances"
 ]
@@ -636,94 +686,28 @@
 "clear_taken": 3,
 "pp_pulls": 1,
 "instances": 23,
-"expected_pull_pct": 0.4988,
+"expected_pull_pct": 0.498,
 "band": [
-0.292,
-0.706
+0.291,
+0.705
 ],
 "last3": "PP-",
 "flags": []
 },
 {
-"coach": "Steve Ott",
-"team": "SPR",
-"last_seen": "2026-03-20",
-"clear_chances": 2,
-"clear_taken": 1,
-"pp_pulls": 0,
-"instances": 4,
-"expected_pull_pct": 0.4968,
-"band": [
-0.253,
-0.741
-],
-"last3": "P-",
-"flags": [
-"RISKY: <5 clean chances"
-]
-},
-{
-"coach": "Joel Bouchard",
-"team": "SYR",
-"last_seen": "2026-04-17",
-"clear_chances": 11,
-"clear_taken": 4,
-"pp_pulls": 5,
-"instances": 44,
-"expected_pull_pct": 0.4875,
-"band": [
-0.287,
-0.688
-],
-"last3": "-PP",
-"flags": []
-},
-{
-"coach": "Todd Nelson",
-"team": "HER",
-"last_seen": "2025-04-12",
-"clear_chances": 9,
-"clear_taken": 4,
-"pp_pulls": 2,
-"instances": 31,
-"expected_pull_pct": 0.4836,
-"band": [
-0.281,
-0.686
-],
-"last3": "-PP",
-"flags": []
-},
-{
-"coach": "David Bell",
-"team": "BEL",
-"last_seen": "2025-12-13",
-"clear_chances": 12,
-"clear_taken": 7,
-"pp_pulls": 4,
-"instances": 58,
-"expected_pull_pct": 0.4814,
-"band": [
-0.282,
-0.681
-],
-"last3": "---",
-"flags": []
-},
-{
-"coach": "Troy Mann",
-"team": "BEL",
-"last_seen": "2023-01-28",
-"clear_chances": 5,
+"coach": "Greg Cronin",
+"team": "IA",
+"last_seen": "2026-04-18",
+"clear_chances": 7,
 "clear_taken": 2,
-"pp_pulls": 1,
-"instances": 13,
-"expected_pull_pct": 0.4638,
+"pp_pulls": 2,
+"instances": 32,
+"expected_pull_pct": 0.4894,
 "band": [
-0.251,
-0.676
+0.262,
+0.717
 ],
-"last3": "PP-",
+"last3": "-PP",
 "flags": []
 },
 {
@@ -734,10 +718,26 @@
 "clear_taken": 2,
 "pp_pulls": 1,
 "instances": 33,
-"expected_pull_pct": 0.4638,
+"expected_pull_pct": 0.4697,
 "band": [
-0.251,
-0.676
+0.265,
+0.674
+],
+"last3": "PP-",
+"flags": []
+},
+{
+"coach": "Mike Leone",
+"team": "ROC",
+"last_seen": "2026-04-11",
+"clear_chances": 8,
+"clear_taken": 3,
+"pp_pulls": 1,
+"instances": 32,
+"expected_pull_pct": 0.4617,
+"band": [
+0.244,
+0.679
 ],
 "last3": "PP-",
 "flags": []
@@ -750,10 +750,10 @@
 "clear_taken": 1,
 "pp_pulls": 3,
 "instances": 31,
-"expected_pull_pct": 0.4541,
+"expected_pull_pct": 0.4613,
 "band": [
-0.224,
-0.684
+0.268,
+0.655
 ],
 "last3": "--P",
 "flags": [
@@ -761,83 +761,19 @@
 ]
 },
 {
-"coach": "Mike Leone",
-"team": "ROC",
-"last_seen": "2026-04-11",
-"clear_chances": 8,
-"clear_taken": 3,
+"coach": "Troy Mann",
+"team": "BEL",
+"last_seen": "2023-01-28",
+"clear_chances": 5,
+"clear_taken": 2,
 "pp_pulls": 1,
-"instances": 32,
-"expected_pull_pct": 0.4451,
+"instances": 13,
+"expected_pull_pct": 0.4547,
 "band": [
-0.243,
-0.647
+0.255,
+0.654
 ],
 "last3": "PP-",
-"flags": []
-},
-{
-"coach": "Anders Sorensen",
-"team": "RFD",
-"last_seen": "2024-11-17",
-"clear_chances": 7,
-"clear_taken": 3,
-"pp_pulls": 1,
-"instances": 45,
-"expected_pull_pct": 0.442,
-"band": [
-0.238,
-0.646
-],
-"last3": "P--",
-"flags": []
-},
-{
-"coach": "Greg Cronin",
-"team": "IA",
-"last_seen": "2026-04-18",
-"clear_chances": 7,
-"clear_taken": 2,
-"pp_pulls": 2,
-"instances": 32,
-"expected_pull_pct": 0.4294,
-"band": [
-0.227,
-0.632
-],
-"last3": "-PP",
-"flags": []
-},
-{
-"coach": "Jean-Fran\u00e7ois Houle",
-"team": "LAV",
-"last_seen": "2024-03-30",
-"clear_chances": 8,
-"clear_taken": 3,
-"pp_pulls": 6,
-"instances": 45,
-"expected_pull_pct": 0.4285,
-"band": [
-0.227,
-0.63
-],
-"last3": "-P-",
-"flags": []
-},
-{
-"coach": "Dan Watson",
-"team": "GR",
-"last_seen": "2026-04-11",
-"clear_chances": 6,
-"clear_taken": 2,
-"pp_pulls": 0,
-"instances": 47,
-"expected_pull_pct": 0.4234,
-"band": [
-0.219,
-0.628
-],
-"last3": "-P-",
 "flags": []
 },
 {
@@ -848,12 +784,94 @@
 "clear_taken": 1,
 "pp_pulls": 1,
 "instances": 20,
-"expected_pull_pct": 0.4233,
+"expected_pull_pct": 0.4534,
 "band": [
-0.195,
+0.259,
+0.648
+],
+"last3": "P--",
+"flags": [
+"RISKY: <5 clean chances"
+]
+},
+{
+"coach": "David Bell",
+"team": "BEL",
+"last_seen": "2025-12-13",
+"clear_chances": 12,
+"clear_taken": 7,
+"pp_pulls": 4,
+"instances": 58,
+"expected_pull_pct": 0.4396,
+"band": [
+0.218,
+0.662
+],
+"last3": "---",
+"flags": []
+},
+{
+"coach": "Dan Watson",
+"team": "GR",
+"last_seen": "2026-04-11",
+"clear_chances": 6,
+"clear_taken": 2,
+"pp_pulls": 0,
+"instances": 47,
+"expected_pull_pct": 0.4297,
+"band": [
+0.213,
+0.647
+],
+"last3": "-P-",
+"flags": []
+},
+{
+"coach": "Jean-Fran\u00e7ois Houle",
+"team": "LAV",
+"last_seen": "2024-03-30",
+"clear_chances": 8,
+"clear_taken": 3,
+"pp_pulls": 6,
+"instances": 45,
+"expected_pull_pct": 0.4266,
+"band": [
+0.201,
+0.652
+],
+"last3": "-P-",
+"flags": []
+},
+{
+"coach": "Anders Sorensen",
+"team": "RFD",
+"last_seen": "2024-11-17",
+"clear_chances": 7,
+"clear_taken": 3,
+"pp_pulls": 1,
+"instances": 45,
+"expected_pull_pct": 0.4144,
+"band": [
+0.178,
 0.651
 ],
 "last3": "P--",
+"flags": []
+},
+{
+"coach": "Andrew Lord",
+"team": "ONT",
+"last_seen": "2026-03-20",
+"clear_chances": 2,
+"clear_taken": 0,
+"pp_pulls": 0,
+"instances": 12,
+"expected_pull_pct": 0.3992,
+"band": [
+0.2,
+0.598
+],
+"last3": "--",
 "flags": [
 "RISKY: <5 clean chances"
 ]
@@ -866,62 +884,12 @@
 "clear_taken": 5,
 "pp_pulls": 1,
 "instances": 65,
-"expected_pull_pct": 0.4052,
+"expected_pull_pct": 0.3483,
 "band": [
-0.208,
-0.602
+0.137,
+0.559
 ],
 "last3": "---",
-"flags": []
-},
-{
-"coach": "Andrew Lord",
-"team": "ONT",
-"last_seen": "2026-03-20",
-"clear_chances": 2,
-"clear_taken": 0,
-"pp_pulls": 0,
-"instances": 12,
-"expected_pull_pct": 0.3456,
-"band": [
-0.114,
-0.577
-],
-"last3": "--",
-"flags": [
-"RISKY: <5 clean chances"
-]
-},
-{
-"coach": "Ryan Mougenel",
-"team": "PRO",
-"last_seen": "2026-04-17",
-"clear_chances": 12,
-"clear_taken": 4,
-"pp_pulls": 0,
-"instances": 43,
-"expected_pull_pct": 0.3417,
-"band": [
-0.152,
-0.531
-],
-"last3": "P--",
-"flags": []
-},
-{
-"coach": "Rick Kowalsky",
-"team": "BRI",
-"last_seen": "2025-04-18",
-"clear_chances": 10,
-"clear_taken": 2,
-"pp_pulls": 2,
-"instances": 59,
-"expected_pull_pct": 0.3335,
-"band": [
-0.144,
-0.523
-],
-"last3": "-P-",
 "flags": []
 },
 {
@@ -932,10 +900,10 @@
 "clear_taken": 1,
 "pp_pulls": 1,
 "instances": 26,
-"expected_pull_pct": 0.3323,
+"expected_pull_pct": 0.3467,
 "band": [
-0.132,
-0.533
+0.138,
+0.555
 ],
 "last3": "---",
 "flags": []
@@ -948,12 +916,81 @@
 "clear_taken": 1,
 "pp_pulls": 2,
 "instances": 30,
-"expected_pull_pct": 0.3297,
+"expected_pull_pct": 0.3194,
 "band": [
-0.135,
+0.114,
 0.524
 ],
 "last3": "P--",
+"flags": []
+},
+{
+"coach": "Rocky Thompson",
+"team": "BRI",
+"last_seen": "2026-04-17",
+"clear_chances": 4,
+"clear_taken": 0,
+"pp_pulls": 3,
+"instances": 21,
+"expected_pull_pct": 0.3107,
+"band": [
+0.124,
+0.497
+],
+"last3": "---",
+"flags": [
+"RISKY: <5 clean chances",
+"PP-only puller"
+]
+},
+{
+"coach": "Ryan Mougenel",
+"team": "PRO",
+"last_seen": "2026-04-17",
+"clear_chances": 12,
+"clear_taken": 4,
+"pp_pulls": 0,
+"instances": 43,
+"expected_pull_pct": 0.2954,
+"band": [
+0.083,
+0.507
+],
+"last3": "P--",
+"flags": []
+},
+{
+"coach": "Steve Konowalchuk",
+"team": "SPR",
+"last_seen": "2026-01-17",
+"clear_chances": 5,
+"clear_taken": 0,
+"pp_pulls": 2,
+"instances": 30,
+"expected_pull_pct": 0.2933,
+"band": [
+0.095,
+0.491
+],
+"last3": "---",
+"flags": [
+"PP-only puller"
+]
+},
+{
+"coach": "Grant Potulny",
+"team": "HFD",
+"last_seen": "2026-04-17",
+"clear_chances": 19,
+"clear_taken": 5,
+"pp_pulls": 4,
+"instances": 58,
+"expected_pull_pct": 0.2855,
+"band": [
+0.129,
+0.442
+],
+"last3": "---",
 "flags": []
 },
 {
@@ -964,10 +1001,42 @@
 "clear_taken": 4,
 "pp_pulls": 3,
 "instances": 51,
-"expected_pull_pct": 0.2977,
+"expected_pull_pct": 0.2782,
 "band": [
-0.115,
-0.48
+0.107,
+0.45
+],
+"last3": "---",
+"flags": []
+},
+{
+"coach": "Rick Kowalsky",
+"team": "BRI",
+"last_seen": "2025-04-18",
+"clear_chances": 10,
+"clear_taken": 2,
+"pp_pulls": 2,
+"instances": 59,
+"expected_pull_pct": 0.2735,
+"band": [
+0.093,
+0.454
+],
+"last3": "-P-",
+"flags": []
+},
+{
+"coach": "Manny Malhotra",
+"team": "ABB",
+"last_seen": "2026-03-21",
+"clear_chances": 14,
+"clear_taken": 5,
+"pp_pulls": 3,
+"instances": 45,
+"expected_pull_pct": 0.2627,
+"band": [
+0.096,
+0.43
 ],
 "last3": "---",
 "flags": []
@@ -980,82 +1049,13 @@
 "clear_taken": 7,
 "pp_pulls": 8,
 "instances": 97,
-"expected_pull_pct": 0.2779,
+"expected_pull_pct": 0.2492,
 "band": [
-0.1,
-0.455
+0.078,
+0.42
 ],
 "last3": "--P",
 "flags": []
-},
-{
-"coach": "Rocky Thompson",
-"team": "BRI",
-"last_seen": "2026-04-17",
-"clear_chances": 4,
-"clear_taken": 0,
-"pp_pulls": 3,
-"instances": 21,
-"expected_pull_pct": 0.2754,
-"band": [
-0.078,
-0.473
-],
-"last3": "---",
-"flags": [
-"RISKY: <5 clean chances",
-"PP-only puller"
-]
-},
-{
-"coach": "Manny Malhotra",
-"team": "ABB",
-"last_seen": "2026-03-21",
-"clear_chances": 14,
-"clear_taken": 5,
-"pp_pulls": 3,
-"instances": 45,
-"expected_pull_pct": 0.2708,
-"band": [
-0.094,
-0.448
-],
-"last3": "---",
-"flags": []
-},
-{
-"coach": "Grant Potulny",
-"team": "HFD",
-"last_seen": "2026-04-17",
-"clear_chances": 19,
-"clear_taken": 5,
-"pp_pulls": 4,
-"instances": 58,
-"expected_pull_pct": 0.2705,
-"band": [
-0.095,
-0.446
-],
-"last3": "---",
-"flags": []
-},
-{
-"coach": "Steve Konowalchuk",
-"team": "SPR",
-"last_seen": "2026-01-17",
-"clear_chances": 5,
-"clear_taken": 0,
-"pp_pulls": 2,
-"instances": 30,
-"expected_pull_pct": 0.2538,
-"band": [
-0.068,
-0.439
-],
-"last3": "---",
-"flags": [
-"PP-only puller"
-]
 },
 {
 "coach": "Derek King",
@@ -1065,10 +1065,10 @@
 "clear_taken": 0,
 "pp_pulls": 0,
 "instances": 20,
-"expected_pull_pct": 0.2372,
+"expected_pull_pct": 0.1979,
 "band": [
-0.061,
-0.413
+0.037,
+0.359
 ],
 "last3": "---",
 "flags": []
@@ -1081,10 +1081,10 @@
 "clear_taken": 0,
 "pp_pulls": 1,
 "instances": 19,
-"expected_pull_pct": 0.2133,
+"expected_pull_pct": 0.1537,
 "band": [
-0.045,
-0.381
+0.009,
+0.298
 ],
 "last3": "---",
 "flags": []
@@ -1097,10 +1097,10 @@
 "clear_taken": 1,
 "pp_pulls": 0,
 "instances": 34,
-"expected_pull_pct": 0.213,
+"expected_pull_pct": 0.1513,
 "band": [
-0.048,
-0.378
+0.011,
+0.292
 ],
 "last3": "---",
 "flags": []
@@ -1113,10 +1113,10 @@
 "clear_taken": 2,
 "pp_pulls": 0,
 "instances": 71,
-"expected_pull_pct": 0.1682,
+"expected_pull_pct": 0.0839,
 "band": [
-0.02,
-0.317
+0.0,
+0.212
 ],
 "last3": "---",
 "flags": []

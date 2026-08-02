@@ -213,3 +213,12 @@ NOTE: new coach layer is PROVISIONAL until blind re-validation (next block).
     prefers 8 (NHL/AHL monotone), Seb ruled <8; complying at 6 costs
     ~0.0004 nats (noise) — recorded as Seb's call over a weak data
     preference, revisit if 26-27 sharpens the gradient.
+
+32. **CALENDAR RECENCY + WHISPER-PAST-3 FADE (Seb, 2026-08-02).**
+    (a) Recency re-based from per-chance to CALENDAR decay, half-life 12
+    months — FITTED: beats per-chance in NHL+AHL, ties Liiga. (b) League-
+    anchor fade start 6->3, half-life 8->3 ("league average a whisper past
+    3 chances") — Seb ruled WITH the predictive cost on the table
+    (0.0076/0.0064/0.0019 per league vs start-6: rule 0b satisfied).
+    Estimator API: sequences are (date, took) tuples, one implementation
+    (prior_fit) for profiles + both backtests.

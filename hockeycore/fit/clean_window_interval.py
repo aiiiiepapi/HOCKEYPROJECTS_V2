@@ -40,7 +40,7 @@ DER = ROOT / "data" / "derived"
 DEAD = 18
 CLEAR = 0.7
 BUCKET = 60
-from hockeycore.fit.prior_fit import HL as HALF_LIFE  # ruling 31
+HALF_LIFE = None  # recency is calendar-based in prior_fit (ruling 32)
 
 
 def build(league, rows_file, skip_seasons=()):
@@ -148,7 +148,7 @@ def build(league, rows_file, skip_seasons=()):
         if cr["clear"]:
             t["chances"] += 1
             t["taken"] += int(cr["taken"])
-            t["seq"].append(int(cr["taken"]))
+            t["seq"].append((cr["date"], int(cr["taken"])))
 
     from hockeycore.fit.prior_fit import fit_prior
     a, b, mu, strength = fit_prior([t["seq"] for t in coach.values()])
@@ -156,12 +156,9 @@ def build(league, rows_file, skip_seasons=()):
     profiles = []
     for name, t in coach.items():
         seq = t["seq"]
-        from hockeycore.fit.prior_fit import posterior, FADE_START, FADE_HL
-        m = posterior(seq, a, b)
-        kw = sum(x * 0.5 ** ((len(seq) - 1 - i) / HALF_LIFE) for i, x in enumerate(seq))
-        nw = sum(0.5 ** ((len(seq) - 1 - i) / HALF_LIFE) for i in range(len(seq)))
-        _f = 0.5 ** (max(len(seq) - FADE_START, 0) / FADE_HL)
-        post_a, post_b = kw + a * _f, (nw - kw) + b * _f
+        from hockeycore.fit.prior_fit import posterior_detail
+        m, kw, nw, a_e, b_e = posterior_detail(seq, a, b)
+        post_a, post_b = kw + a_e, (nw - kw) + b_e
         sd = (m * (1 - m) / (post_a + post_b + 1)) ** 0.5
         flags = []
         if t["chances"] < 5:
@@ -174,7 +171,7 @@ def build(league, rows_file, skip_seasons=()):
             "pp_pulls": t["pp_pulls"], "instances": t["instances"],
             "expected_pull_pct": round(m, 4),
             "band": [round(max(m - 1.28 * sd, 0.0), 3), round(min(m + 1.28 * sd, 1.0), 3)],
-            "last3": "".join("P" if x else "-" for x in seq[-3:]),
+            "last3": "".join("P" if x else "-" for _, x in seq[-3:]),
             "flags": flags})
     profiles.sort(key=lambda p: -p["expected_pull_pct"])
 

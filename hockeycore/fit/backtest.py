@@ -46,7 +46,7 @@ _seqs = defaultdict(list)
 for _r in sorted(_cw, key=lambda x: x["date"]):
     _took = _r["pulled"] and _r["pull_type"] == "ev"
     if _took or ((not _took) and _r["frac_ev"] >= 0.7):
-        _seqs[_r["coach"]].append(1 if _took else 0)
+        _seqs[_r["coach"]].append((_r["date"], 1 if _took else 0))
 from hockeycore.fit.prior_fit import fit_prior as _fit_prior
 _A, _B, _mu, _st = _fit_prior(list(_seqs.values()))
 
