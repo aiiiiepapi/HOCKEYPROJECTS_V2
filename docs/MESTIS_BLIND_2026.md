@@ -31,13 +31,15 @@ lines this evidence does not transfer.
 4. Model defect (in-sample miscalibration) — REFUTED: at matched
    alive-pre-pull checkpoints the sim matches TRAIN actuals (R=300:
    sim 0.39-0.43 vs train actual 0.377).
-5. **REAL 25-26 LATE-WINDOW DRIFT — the standing attribution.** Blind
-   actuals outran history at matched conditioning: lead1 at R=300
-   0.607 vs 0.377 train (R=480: 0.714 vs 0.595; R=600: 0.710 vs 0.650).
-   Coherent small shifts, all one direction: pull-later-from-R300 46%
-   vs 36% train, EN-for 8.2 vs 6.5/60, EN-against 23.2 vs 21.4/60,
-   return hazard 0.00278 vs 0.00318/s (longer spells). n=28-35 per
-   checkpoint (each ~2sigma; the cross-checkpoint pattern is coherent).
+5. ~~"REAL 25-26 LATE-WINDOW DRIFT"~~ — **CORRECTED same day by the
+   multi-fold backtest Seb ordered (docs/BACKTEST_FOLDS_2026-08-03.md,
+   15b):** the single 2026 fold couldn't distinguish "2026 drifted" from
+   "every Mestis season wobbles". Folds show the latter: forward biases
+   +7.5 / -6.6 / +11.5 across 2024/2025/2026 — BOTH directions, every
+   fold bigger than Liiga's pass margin, and the 2025 fold would have
+   LOST money at model lines. Season-level wobble is the standing
+   attribution; the 2026-specific late-window numbers above remain true
+   but are one draw from that wobble, not a regime change.
 
 ## How this differs from the AHL failure (rulings 24/39)
 
@@ -59,6 +61,6 @@ lines this evidence does not transfer.
   model-vs-real-line-vs-outcome from opening night; (2) re-litigate blind
   with 26-27 as it accrues (two blind seasons double the evidence);
   (3) coach-delta product path (ruling 26c) applies here as it does to AHL.
-- One thin blind season. This verdict is evidence-limited, not
-  physics-limited — recorded so re-litigation starts from the numbers,
-  not from scratch.
+- Superseded in method by docs/BACKTEST_FOLDS_2026-08-03.md (multi-fold):
+  verdict unchanged, attribution corrected to symmetric season-level
+  wobble (+/-7-12pts), "conservative-safe" framing retracted.

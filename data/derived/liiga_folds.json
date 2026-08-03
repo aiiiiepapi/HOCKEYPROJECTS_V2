@@ -1,0 +1,283 @@
+[
+ {
+  "league": "liiga",
+  "holdout": "2025",
+  "tag": "_fold2025",
+  "n_checkpoints": 417,
+  "flat_coach": false,
+  "markets": {
+   "p_lead1": {
+    "bias": 0.048,
+    "skill": 0.119,
+    "bad_deciles": 0,
+    "base": 0.602,
+    "roi": 0.198,
+    "roi_ci": [
+     -0.05,
+     0.436
+    ],
+    "p_gt0": 0.946
+   },
+   "p_total1": {
+    "bias": 0.0693,
+    "skill": 0.124,
+    "bad_deciles": 1,
+    "base": 0.719,
+    "roi": 0.23,
+    "roi_ci": [
+     0.035,
+     0.418
+    ],
+    "p_gt0": 0.993
+   },
+   "p_total2": {
+    "bias": 0.1024,
+    "skill": 0.106,
+    "bad_deciles": 2,
+    "base": 0.391
+   },
+   "p_marg4": {
+    "bias": -0.0479,
+    "skill": -0.001,
+    "bad_deciles": 1,
+    "base": 0.348,
+    "roi": -0.01,
+    "roi_ci": [
+     -0.321,
+     0.302
+    ],
+    "p_gt0": 0.446
+   }
+  },
+  "design": "forward",
+  "train": [
+   "2023",
+   "2024"
+  ]
+ },
+ {
+  "league": "liiga",
+  "holdout": "2026",
+  "tag": "_fold2026",
+  "n_checkpoints": 553,
+  "flat_coach": false,
+  "markets": {
+   "p_lead1": {
+    "bias": 0.02,
+    "skill": 0.053,
+    "bad_deciles": 0,
+    "base": 0.562,
+    "roi": 0.182,
+    "roi_ci": [
+     -0.048,
+     0.407
+    ],
+    "p_gt0": 0.942
+   },
+   "p_total1": {
+    "bias": 0.0005,
+    "skill": 0.063,
+    "bad_deciles": 0,
+    "base": 0.655,
+    "roi": 0.127,
+    "roi_ci": [
+     -0.053,
+     0.312
+    ],
+    "p_gt0": 0.903
+   },
+   "p_total2": {
+    "bias": -0.0095,
+    "skill": 0.061,
+    "bad_deciles": 0,
+    "base": 0.288
+   },
+   "p_marg4": {
+    "bias": 0.0587,
+    "skill": 0.008,
+    "bad_deciles": 2,
+    "base": 0.438,
+    "roi": 0.3,
+    "roi_ci": [
+     -0.024,
+     0.61
+    ],
+    "p_gt0": 0.964
+   }
+  },
+  "design": "forward",
+  "train": [
+   "2023",
+   "2024",
+   "2025"
+  ]
+ },
+ {
+  "league": "liiga",
+  "holdout": "2024",
+  "tag": "_loso2024",
+  "n_checkpoints": 482,
+  "flat_coach": true,
+  "markets": {
+   "p_lead1": {
+    "bias": -0.0795,
+    "skill": 0.095,
+    "bad_deciles": 1,
+    "base": 0.471,
+    "roi": -0.086,
+    "roi_ci": [
+     -0.298,
+     0.122
+    ],
+    "p_gt0": 0.211
+   },
+   "p_total1": {
+    "bias": -0.0822,
+    "skill": 0.132,
+    "bad_deciles": 2,
+    "base": 0.589,
+    "roi": -0.063,
+    "roi_ci": [
+     -0.242,
+     0.111
+    ],
+    "p_gt0": 0.234
+   },
+   "p_total2": {
+    "bias": -0.0395,
+    "skill": 0.132,
+    "bad_deciles": 0,
+    "base": 0.261
+   },
+   "p_marg4": {
+    "bias": -0.0882,
+    "skill": 0.012,
+    "bad_deciles": 0,
+    "base": 0.311,
+    "roi": -0.157,
+    "roi_ci": [
+     -0.434,
+     0.146
+    ],
+    "p_gt0": 0.15
+   }
+  },
+  "design": "loso_flat",
+  "train": [
+   "2025",
+   "2026"
+  ]
+ },
+ {
+  "league": "liiga",
+  "holdout": "2025",
+  "tag": "_loso2025",
+  "n_checkpoints": 417,
+  "flat_coach": true,
+  "markets": {
+   "p_lead1": {
+    "bias": 0.0392,
+    "skill": 0.12,
+    "bad_deciles": 0,
+    "base": 0.602,
+    "roi": 0.166,
+    "roi_ci": [
+     -0.068,
+     0.394
+    ],
+    "p_gt0": 0.923
+   },
+   "p_total1": {
+    "bias": 0.0487,
+    "skill": 0.135,
+    "bad_deciles": 0,
+    "base": 0.719,
+    "roi": 0.178,
+    "roi_ci": [
+     -0.002,
+     0.354
+    ],
+    "p_gt0": 0.973
+   },
+   "p_total2": {
+    "bias": 0.1114,
+    "skill": 0.094,
+    "bad_deciles": 3,
+    "base": 0.391
+   },
+   "p_marg4": {
+    "bias": -0.0728,
+    "skill": -0.011,
+    "bad_deciles": 0,
+    "base": 0.348,
+    "roi": -0.08,
+    "roi_ci": [
+     -0.369,
+     0.214
+    ],
+    "p_gt0": 0.273
+   }
+  },
+  "design": "loso_flat",
+  "train": [
+   "2024",
+   "2026"
+  ]
+ },
+ {
+  "league": "liiga",
+  "holdout": "2026",
+  "tag": "_loso2026",
+  "n_checkpoints": 553,
+  "flat_coach": true,
+  "markets": {
+   "p_lead1": {
+    "bias": 0.0602,
+    "skill": 0.065,
+    "bad_deciles": 0,
+    "base": 0.562,
+    "roi": 0.273,
+    "roi_ci": [
+     0.033,
+     0.515
+    ],
+    "p_gt0": 0.986
+   },
+   "p_total1": {
+    "bias": 0.0351,
+    "skill": 0.087,
+    "bad_deciles": 0,
+    "base": 0.655,
+    "roi": 0.187,
+    "roi_ci": [
+     0.001,
+     0.375
+    ],
+    "p_gt0": 0.975
+   },
+   "p_total2": {
+    "bias": -0.003,
+    "skill": 0.059,
+    "bad_deciles": 1,
+    "base": 0.288
+   },
+   "p_marg4": {
+    "bias": 0.093,
+    "skill": 0.008,
+    "bad_deciles": 2,
+    "base": 0.438,
+    "roi": 0.405,
+    "roi_ci": [
+     0.055,
+     0.736
+    ],
+    "p_gt0": 0.99
+   }
+  },
+  "design": "loso_flat",
+  "train": [
+   "2024",
+   "2025"
+  ]
+ }
+]

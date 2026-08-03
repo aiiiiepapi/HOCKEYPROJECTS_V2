@@ -32,9 +32,10 @@ LAKES = {"ahl": Path("/home/claude/work/ahl_lake"),
 HOLDOUT = {"ahl": "90", "liiga": "2026", "mestis": "2026"}
 
 
-def load_estimator(league):
+def load_estimator(league, cutoff=None):
+    cutoff = cutoff or CUTOFF
     cw = json.load(open(DER / f"{league}_clean_window.json"))["rows"]
-    pre = [r for r in cw if r["date"] < CUTOFF]
+    pre = [r for r in cw if r["date"] < cutoff]
     seqs = defaultdict(list)
     for r in sorted(pre, key=lambda x: x["date"]):
         if r["clear"]:
@@ -48,9 +49,14 @@ def load_estimator(league):
     return p_c, mu, seqs
 
 
-def main(league, nhl_rates=False):
-    fits = json.load(open(DER / f"fits_{league}_train.json"))
-    aux = json.load(open(DER / f"fits_{league}_train_aux.json"))
+def main(league, nhl_rates=False, holdout=None, cutoff=None, fits_sfx="_train",
+         flat_coach=False, tag=""):
+    """holdout/cutoff/fits_sfx parameterized 2026-08-03 (Seb: better backtest)
+    -> multi-fold driver tools/backtest_folds.py. flat_coach=True prices every
+    coach at the fold's league mu (pure LEVEL-stability check, no coach layer).
+    Returns the summary dict."""
+    fits = json.load(open(DER / f"fits_{league}{fits_sfx}.json"))
+    aux = json.load(open(DER / f"fits_{league}{fits_sfx}_aux.json"))
     if nhl_rates:
         # Rulings 26d/40/41 — one implementation (rule 15): see splice.py.
         from hockeycore.fit.splice import apply_nhl_levels
@@ -61,11 +67,13 @@ def main(league, nhl_rates=False):
     MP._REPULL = aux["h_repull"]
     MP._LAG = aux["evidence_lag"]
     MP._DEAD = aux["dead"]
-    p_c, mu, seqs = load_estimator(league)
-    print(f"[{league}] pricer on train fits; league mu={mu:.3f}; "
-          f"coaches with history: {len(seqs)}")
+    p_c, mu, seqs = load_estimator(league, cutoff)
+    if flat_coach:
+        p_c = lambda name: mu          # noqa: E731 — level check, no coach layer
+    print(f"[{league}{tag}] pricer on fits{fits_sfx}; league mu={mu:.3f}; "
+          f"coaches with history: {len(seqs)}; flat_coach={flat_coach}")
 
-    holdout = HOLDOUT[league]
+    holdout = holdout or HOLDOUT[league]
     insts = [r for r in json.load(open(DER / f"{league}_instances_gap3.json"))
              if r["season"] == holdout]
     hazc, cache = {}, {}
@@ -137,8 +145,11 @@ def main(league, nhl_rates=False):
                 "p_lead1": p["P_leader_ge1"], "p_marg4": p["P_margin_ge4"],
                 "y_total1": int(lead + trail >= 1), "y_total2": int(lead + trail >= 2),
                 "y_lead1": int(lead >= 1), "y_marg4": int(margin >= 4)})
-    suffix = "_nhlrates" if nhl_rates else ""
+    suffix = ("_nhlrates" if nhl_rates else "") + (tag or "")
     json.dump(rows, open(DER / f"backtest_rows_{league}{suffix}.json", "w"))
+    summary = {"league": league, "holdout": holdout, "tag": tag,
+               "n_checkpoints": len(rows), "flat_coach": flat_coach,
+               "markets": {}}
     n = len(rows)
     print(f"[{league}] priced {n} blind checkpoints ({holdout}); cells={len(cache)}")
 
@@ -157,6 +168,8 @@ def main(league, nhl_rates=False):
             se = math.sqrt(max(mp_ * (1 - mp_), 1e-9) / len(ch))
             bad += abs(ay - mp_) >= 2 * se
         print(f"  {pk:9} bias {bias:+.4f}  skill {skill:+.3f}  bad {bad}/10")
+        summary["markets"][pk] = {"bias": round(bias, 4), "skill": round(skill, 3),
+                                  "bad_deciles": bad, "base": round(base, 3)}
 
     games = defaultdict(list)
     for r in rows:
@@ -181,6 +194,10 @@ def main(league, nhl_rates=False):
         boots.sort()
         print(f"  ROI@10%EV {label:14} {pt:+.3f}  CI95 [{boots[50]:+.3f},{boots[1949]:+.3f}]  "
               f"P(>0)={sum(b > 0 for b in boots)/2000:.2f}")
+        summary["markets"].setdefault(pk, {})["roi"] = round(pt, 3)
+        summary["markets"][pk]["roi_ci"] = [round(boots[50], 3), round(boots[1949], 3)]
+        summary["markets"][pk]["p_gt0"] = round(sum(b > 0 for b in boots) / 2000, 3)
+    return summary
 
 
 if __name__ == "__main__":
