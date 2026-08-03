@@ -1,24 +1,18 @@
 """
-probe_tilastopalvelu.py — OPTIONAL probe v6 (runs on Seb's PC)
+probe_tilastopalvelu.py — OPTIONAL probe v7 (runs on Seb's PC)
 ==============================================================
-v5 learned: everything lives under /ih/ (the /game/ and /gamerosters/
-guesses at host root were 404s; /ih/gamerosters/index.php?season=2025&
-gameid=3016 returned a live SPA shell with the gameid embedded, loading
-js/gamerosters.js). leijonat.fi mirror is 403 to non-browser clients.
-
-v6 is adaptive, still about ONE question (Mestis game sheets + coaches):
-  1. Fetch /ih/gamerosters/js/gamerosters.js, extract its .php AJAX
-     endpoints, call each with {gameid:3016, season:2025} (POST, then
-     GET fallback) and save the responses.
-  2. Fetch the gamecentre shell at /ih/game/?season=2025&gameid=3016,
-     extract ITS js includes, fetch them, extract .php endpoints, call
-     the report-ish ones the same way.
-  3. /ih/serie/helpers/getStatGroups.php POST {season, levelid:65}.
-Everything saved verbatim to probe_out/, <=20 requests, 1s apart.
+Exact AJAX signatures now known from the apps' own JS (v6 captures):
+  gamecentre  : HelpersPath = MAINPATH + '/game/helpers/'
+                POST getgamereportdata.php {gameid, season}
+                POST getRosters.php        {gameid, season}
+  gamerosters : POST '/gamerosters//helper/game.php?game=N&season=Y'
+                POST '/gamerosters//helper/gamerosters.php?team=home...'
+                (params in the QUERY STRING, empty POST body)
+v7 calls exactly these for Mestis game 3016 / season 2025, under /ih/
+first then host-root. ~10 requests, saved verbatim to probe_out/.
 Usage:  python probe_tilastopalvelu.py
 """
 
-import re
 import ssl
 import time
 from pathlib import Path
@@ -27,9 +21,9 @@ from urllib.request import Request, build_opener, HTTPSHandler
 
 BASE = "https://tilastopalvelu.fi"
 HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-           "Referer": "https://tilastopalvelu.fi/ih/"}
-GAMEID, SEASON = 3016, 2025
-budget = 20
+           "Referer": "https://tilastopalvelu.fi/ih/game/",
+           "X-Requested-With": "XMLHttpRequest"}
+G, S = 3016, 2025
 
 
 def legacy_ctx():
@@ -48,81 +42,59 @@ out.mkdir(exist_ok=True)
 opener = build_opener(HTTPSHandler(context=legacy_ctx()))
 
 
-def get(path, post=None, tag=""):
-    global budget
-    if budget <= 0:
-        print("(request budget exhausted)")
-        return None
-    budget -= 1
+def call(path, body=None, empty_post=False, tag=""):
     url = BASE + path
-    data = urlencode(post).encode() if post else None
+    data = (urlencode(body).encode() if body
+            else (b"" if empty_post else None))
     try:
         got = opener.open(Request(url, data=data, headers=HEADERS),
                           timeout=30).read()
-        (out / f"v6_{tag}.txt").write_bytes(got)
+        (out / f"v7_{tag}.txt").write_bytes(got)
         low = got.lower()
-        print(f"OK  {len(got):>8} B  {'POST' if post else 'GET '} {path}")
+        print(f"OK  {len(got):>8} B  "
+              f"{'POST' if data is not None else 'GET '} {path}")
         print(f"    'valmentaja': {b'valmentaja' in low}  "
               f"'coach': {b'coach' in low}  "
               f"'toimihenkil': {b'toimihenkil' in low}  "
-              f"'keupa': {b'keupa' in low}")
+              f"'keupa': {b'keupa' in low}  "
+              f"'maalivahti': {b'maalivahti' in low}")
         return got
     except Exception as e:
-        print(f"FAIL {type(e).__name__}: {e}  {'POST' if post else 'GET'} {path}")
+        print(f"FAIL {type(e).__name__}: {e}  {path}")
         return None
     finally:
         time.sleep(1.0)
 
 
-def php_endpoints(js_text):
-    return sorted(set(re.findall(r"['\"]([^'\"]*\.php[^'\"]*)['\"]",
-                                 js_text)))
+# gamecentre helpers (POST with form body)
+for pre in ("/ih", ""):
+    r = call(f"{pre}/game/helpers/getgamereportdata.php",
+             body={"gameid": G, "season": S},
+             tag=f"report{pre.replace('/', '_')}")
+    if r and len(r) > 100:
+        break
+for pre in ("/ih", ""):
+    r = call(f"{pre}/game/helpers/getRosters.php",
+             body={"gameid": G, "season": S},
+             tag=f"rosters{pre.replace('/', '_')}")
+    if r and len(r) > 100:
+        break
 
+# gamerosters helpers (query-string params, empty POST body)
+for pre in ("/ih", ""):
+    r = call(f"{pre}/gamerosters//helper/game.php?game={G}&season={S}",
+             empty_post=True, tag=f"gr_game{pre.replace('/', '_')}")
+    if r and len(r) > 50:
+        call(f"{pre}/gamerosters//helper/gamerosters.php"
+             f"?team=home&game={G}&season={S}", empty_post=True,
+             tag=f"gr_home{pre.replace('/', '_')}")
+        call(f"{pre}/gamerosters//helper/referees.php?game={G}&season={S}",
+             empty_post=True, tag=f"gr_refs{pre.replace('/', '_')}")
+        break
 
-def call_endpoints(paths, prefix, tag_prefix):
-    for p in paths:
-        p = p.split("?")[0]
-        if not p.endswith(".php"):
-            continue
-        full = p if p.startswith("/") else prefix + p
-        tag = f"{tag_prefix}_{re.sub(r'[^A-Za-z0-9]+', '_', p)[-40:]}"
-        r = get(full, post={"gameid": GAMEID, "season": SEASON}, tag=tag)
-        if r is None or len(r) < 3:
-            get(f"{full}?gameid={GAMEID}&season={SEASON}", tag=tag + "_get")
-
-
-# 1) gamerosters JS -> endpoints
-js = get(f"/ih/gamerosters/js/gamerosters.js", tag="gamerosters_js")
-if js:
-    eps = php_endpoints(js.decode("utf-8", "replace"))
-    print("  gamerosters.js php refs:", eps)
-    call_endpoints(eps, "/ih/gamerosters/", "rosters")
-
-# 2) gamecentre shell under /ih/
-shell = get(f"/ih/game/?season={SEASON}&gameid={GAMEID}&lang=fi",
-            tag="gamecentre_shell")
-if shell:
-    stext = shell.decode("utf-8", "replace")
-    includes = sorted(set(re.findall(r'src="([^"]+\.js[^"]*)"', stext)))
-    print("  gamecentre js includes:", includes[:12])
-    for inc in includes:
-        if inc.startswith(("http", "/system", "/js/lang")):
-            continue
-        path = inc if inc.startswith("/") else "/ih/game/" + inc
-        j = get(path.split("?")[0], tag="gc_" +
-                re.sub(r"[^A-Za-z0-9]+", "_", path.split("?")[0])[-40:])
-        if j:
-            eps = [e for e in php_endpoints(j.decode("utf-8", "replace"))
-                   if re.search(r"report|roster|game|official|event",
-                                e, re.I)]
-            if eps:
-                print("    php refs:", eps)
-                call_endpoints(eps, "/ih/game/", "gc")
-
-# 3) statgroups via the serie app's own helpers dir
-get("/ih/serie/helpers/getStatGroups.php",
-    post={"season": SEASON, "levelid": 65, "districtid": 0},
-    tag="statgroups")
+# statgroups enumeration (didn't run in v6 — budget)
+call("/ih/serie/helpers/getStatGroups.php",
+     body={"season": S, "levelid": 65, "districtid": 0}, tag="statgroups")
 
 print("\nDone. Paste this output back to the Mestis session; the session "
-      "reads probe_out/v6_*.txt directly.")
+      "reads probe_out/v7_*.txt directly.")
