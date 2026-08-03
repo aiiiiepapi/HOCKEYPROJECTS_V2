@@ -69,3 +69,43 @@ data remains the arbiter; the wobble scale is why ruling 25 says
 Any future interval-league pricer verdict (incl. Magnus, and the AHL/
 Mestis re-litigations) runs tools/backtest_folds.py, not a single fold.
 Single-fold blind is retired as the deciding evidence.
+
+
+## Addendum same day — Seb's variance hypothesis TESTED and CONFIRMED
+
+Seb: "its probably a variance issue on a small sample." Measured
+(tools/fold_variance_test.py — game-clustered bootstrap SE per fold,
+joint chi-square, random-effects tau):
+
+- Mestis: every fold |z| < 2.0 (max: 2026 total1 z=+1.95); joint p-values
+  0.13-0.95 — the fold swings are NOT distinguishable from luck. tau
+  (true between-season level spread after removing sampling noise):
+  lead1 0.002, marg4 0.000 on LOSO — ~ZERO true season wobble. My
+  "season-level wobble is real" attribution from earlier today is hereby
+  RETRACTED as unproven (15b — second correction; the forward-fold tau
+  0.07-0.08 is inflated by thin-training estimation noise, and the
+  cleaner 3-season-trained LOSO shows none).
+- Liiga: same picture (taus 0-0.086, joint p mostly > 0.2).
+
+Consequence: the right scoring pools the folds (noise averages out).
+POOLED FORWARD results (968 checkpoints / 225 games — same evidence
+order as Liiga's ruling-25 basis):
+
+| market | pooled bias | bad deciles | ROI@10%EV | CI95 | P(>0) |
+|---|---|---|---|---|---|
+| leaderTT | +4.5pts | 3/10 | +22.3% | [+4.7,+38.8] | 0.996 |
+| total over | +0.7pts | 0/10 | +11.3% | [-2.0,+24.5] | 0.950 |
+| leader -3.5 | +0.8pts | 1/10 | +14.9% | [-6.7,+37.0] | 0.901 |
+
+Liiga pooled two-fold, same method: +3.2/+3.0/+1.3 biases, leaderTT
++18.9% [+2.2,+35.3], total +17.1% [+4.2,+30.3], -3.5 +16.7% [n.s.].
+
+**Manager recommendation (pending Seb): upgrade Mestis NO-GO ->
+Liiga-class PROVISIONAL** — paper-trade at model lines from September,
+rule-28 floor, with the recorded caveats: any single season can run
+6-10pts off pure luck at this sample size (the 2025 fold LOST 6% at
+model lines — variance you must be able to sit through), leaderTT tail
+deciles 3/10 (2026 tail), total-over CI floor slightly negative, and all
+of this is model-line evidence, not market-line evidence. Score: Seb's
+challenges overturned two Manager attributions today (single-fold
+"drift", multi-fold "wobble") — 39b pattern, recorded.
