@@ -55,14 +55,41 @@ internal id (UID) and the kokoonpanot/seuranta URLs carrying the MATCHNO
 (DESCRIPTION). Verified on 2024-25: first events match the season page 1:1
 (3161 IPK-Ketterä 2024-09-12, 3000 Hokki-Hermes, 3166 Ketterä-JoKP...).
 
-### 1.2 tilastopalvelu.fi (UNRESOLVED — cloud cannot reach it)
+### 1.2 tilastopalvelu.fi / Leijonat Tulospalvelu (SECONDARY — confirmed
+    to carry Mestis as JSON; game-sheet depth pending probe v5)
 
-Every cloud-side fetch attempt fails during TLS
-(`SSLV3_ALERT_HANDSHAKE_FAILURE` at the fetch proxy; reproducible, both
-with and without www). Whether it still hosts Mestis game sheets (and
-whether those carry coaches) is **an open question** — a PC-side probe
-script is included in the bootstrap bundle (`probe_tilastopalvelu.py`,
-optional run) to answer it from Seb's machine.
+Access quirks (all verified on Seb's PC, 2026-08-03):
+- `www.tilastopalvelu.fi` is dead to modern clients (TLS
+  `SSLV3_ALERT_HANDSHAKE_FAILURE`; plain HTTP → 403).
+- **Bare `tilastopalvelu.fi` works** over HTTPS with a permissive legacy
+  context (self-signed chain → cert verification off; read-only public
+  stats, acceptable). The cloud proxy cannot reach it at all.
+- The service is the Finnish federation's 'Leijonat - Tulospalvelu' SPA
+  (mirror/alias: `tulospalvelu.leijonat.fi`); static shell is stale
+  (Dec-2020 banner) but the app and data are current.
+
+Confirmed by fetched sample (probe v4, `getGames.php` POST
+`{season:2025, stgid:0, teamid:0, districtid:-1, gamedays:-1,
+dog:2025-01-11}` → 35,767 B JSON):
+- **Mestis is hosted**: `LevelName:"Mestis", LevelID:"65",
+  StatGroupID:"168"` (2024-25), 5 Mestis games on that date.
+- **`GameID` equals the mestis.fi match number** (3016 = KeuPa HT -
+  TUTO 4-5, 2025-01-11, attendance 331) — the two sources share an id
+  space, so cross-source reconciliation is a trivial join.
+- Rich per-game schedule fields: `GameEffTime` (3600), `Spectator`,
+  `FinishedType`, `PeriodSummary` per-period goals, rink + lat/long,
+  team association ids, `GameRules` vector, `DeniedStats/DeniedResults`.
+- Endpoint inventory extracted from the SPA JS (`/ih/helpers/` +
+  `MainHelpersPath`): getSeasons, getLevels, getStatGroups, getStatGroup,
+  getGames, getStandings, getTeams, getTeamStats, getTeamSerieRoster,
+  getPlayers, getGoalkeepers, getgamereportdata, getRinks, getBarometer,
+  gamerosters/index.php, plus dwl* CSV-download variants.
+- Caution: the SPA UI deliberately does NOT open its own gamecentre for
+  LevelID 65 (Mestis clicks route to mestis.fi; StatGroupID 5563
+  special-cases in the scoreboard). Whether game-level sheets
+  (rosters/officials/**coaches**) are served for Mestis game ids is
+  exactly what probe v5 tests (gamecentre page + getgamereportdata.php
+  + gamerosters for game 3016). RESULT: pending.
 
 ### 1.3 v1 Finland research (read 2026-08-03)
 
