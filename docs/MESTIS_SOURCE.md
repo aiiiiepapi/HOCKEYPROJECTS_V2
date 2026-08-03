@@ -1,7 +1,33 @@
 # Mestis — data source documentation (Scraping session, 2026-08-03)
 
-Status: DISCOVERY COMPLETE (all claims below verified against actually
-fetched samples, cited by game id). LAKE: pending PC-side fetch run.
+Status: LAKE COMPLETE & VERIFIED (same day). 1,166 games / 4 seasons,
+0 missing vs ICS schedule, 100% roster coverage w/ head coach, all
+sha256-manifested. Lake branch: **HOCKEYPROJECTS_V2 `mestis-data-lake`**
+— NOT the v1 HOCKEYPROJECTS repo: the V2 write token has NO access to
+that repo (403 even on read; "same token works" in the kickoff was
+wrong). Seb ruled "you do it" → pushed where the token works; Manager
+can move the branch if the v1-repo convention matters.
+
+Final per-season counts (fetched + reconciled 1:1 vs ICS):
+
+| Season | dir | Games | Teams | goalie-out ev. | pois-intervals | rosters (HC) |
+|---|---|---|---|---|---|---|
+| 2022-23 | 2023 | 364 | 14 | 303 | 226 | 364 (364) |
+| 2023-24 | 2024 | 312 | 13 | 242 | 186 | 312 (312) |
+| 2024-25 | 2025 | 245 | 10 | 185 | 155 | 245 (245) |
+| 2025-26 | 2026 | 245 | 10 | 205 | 179 | 245 (245) |
+
+(Team counts consistent with schedule sizes: 14x52/2, 13x48/2, 10x49/2.)
+
+Goal-flag vocabulary — decoded by the source itself (every seuranta page
+carries this legend; captured verbatim from fetched game 2026/3170):
+YV ylivoimamaali (PP goal), AV alivoimamaali (SH goal), VM voittomaali
+(game-winner), VT videotarkistus (video review), SR siirretty rangaistus
+(DELAYED-PENALTY goal — partial dp visibility), RL rangaistuslaukaus
+(penalty shot), TV tasavajaa, VL voittomaalikilpailu (shootout),
+TM tyhjä maali (empty-net goal), IM ilman maalivahtia (scored while own
+net empty). NOTE for parsers: because the legend is on every page, a
+plain grep for a flag always hits ≥1 — count flags from goal rows only.
 
 ## TL;DR
 
