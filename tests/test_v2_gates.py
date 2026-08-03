@@ -450,3 +450,81 @@ def test_magnus_ground_truth():
     r = parse_game(str(ROOT / "tests/reference_raw/magnus/16351.pdf"))
     assert r["empty"]["away"] == [(3249, 3375)]
     assert r["coach_home"] == "LHENRY Fabrice" and r["coach_away"] == "AHO Jyrki"
+
+
+def test_mestis_ground_truth():
+    """Mestis batch 1: 13 games / 13 instances hand-traced from raw seuranta
+    HTML BEFORE the adapter existed (2026-08-03, Manager session). Covers:
+    EV pull, pp_pull (leader minor at first evidence, 7441), classification
+    at FIRST evidence despite later leader minor (7327), no-pull,
+    carryover-at-open x4, widened/narrowed/end_of_game closes, mid-game +
+    P3 goalie swaps (vaihto: net never empty), multi-pull, pull-to-horn,
+    IM/TM/SR/RL/YV2 flags, real double minors, 5+20 major/misconduct pairs,
+    OT + shootout (VL rows excluded), penalty-shot fouls without minutes.
+    Trace: docs/ground_truth_traces/mestis_batch1_2026-08-03.md."""
+    from hockeycore.leagues.mestis import parse_game
+    from hockeycore.gap.segments import extract_instances
+    gt = json.load(open(ROOT / "tests" / "ground_truth_mestis.json"))
+    for gid, gg in gt["games"].items():
+        g = parse_game(ROOT / f"tests/reference_raw/mestis/game_{gid}_seuranta.html")
+        assert (g["home"], g["away"], g["date"]) == (gg["home"], gg["away"], gg["date"]), gid
+        for sd in ("home", "away"):
+            got = [(b, e) for b, e, *_ in g["empty"][sd]]
+            assert got == [tuple(x) for x in gg["empty"].get(sd, [])], (gid, sd, got)
+        insts = extract_instances(g, 3)
+        assert len(insts) == len(gg["instances"]), (gid, len(insts))
+        for e, a in zip(gg["instances"], insts):
+            assert (e["opened_secs"], e["closed_secs"], e["closed_reason"]) == \
+                   (a["opened_secs"], a["closed_secs"], a["closed_reason"]), (gid, e["n"])
+            assert e["trailing_name"] == a["trailing_name"], (gid, e["n"])
+            assert e["pulled"] == a["pulled"], (gid, e["n"])
+            assert e["pull_evidence_secs"] == a["pull_evidence_secs"], (gid, e["n"])
+            assert e["pull_classification"] == a["pull_classification"], (gid, e["n"])
+            assert e["carryover_empty_at_open"] == \
+                   a.get("carryover_empty_at_open", False), (gid, e["n"])
+    # IM (own-net-empty) goal must NOT read as an ENG (7458 58:04);
+    # TM,SR flags carried verbatim (7288 58:37)
+    g = parse_game(ROOT / "tests/reference_raw/mestis/game_2023_7458_seuranta.html")
+    im = [gl for gl in g["goals"] if gl["t"] == 3484][0]
+    assert im["en"] is False and "IM" in im["types"]
+    g = parse_game(ROOT / "tests/reference_raw/mestis/game_2023_7288_seuranta.html")
+    sr = [gl for gl in g["goals"] if gl["t"] == 3517][0]
+    assert sr["en"] is True and "SR" in sr["types"]
+
+
+def test_mestis_derived_instances():
+    """Structural gates (rule 14) over the Mestis derived instance file +
+    full coach attribution (game rosters + verified mestis_coaches.csv)."""
+    rows = json.load(open(DER / "mestis_instances_gap3.json"))
+    assert all(r["coach"] for r in rows)
+    for s in ("2023", "2024", "2025", "2026"):
+        srows = [r for r in rows if r["season"] == s]
+        n = len(srows)
+        assert 80 <= n <= 320, (s, n)
+        pulled = sum(1 for r in srows if r["pulled"])
+        assert 0.04 <= pulled / n <= 0.40, (s, pulled / n)
+    for r in rows:
+        assert 0 <= r["opened_secs"] <= r["closed_secs"] <= 1200, r["game_id"]
+        if r["pulled"]:
+            assert r["opened_secs"] <= r["pull_evidence_secs"] < r["closed_secs"], \
+                (r["game_id"], r["n"])
+            assert r["pull_classification"] in ("pull", "pp_pull")
+        else:
+            assert r["pull_classification"] is None
+    pp = sum(1 for r in rows if r["pull_classification"] == "pp_pull")
+    assert pp < sum(1 for r in rows if r["pulled"])
+
+
+def test_mestis_random_audit():
+    """Seeded random audit (30 pulls + 30 no-pulls, seed 20260803) against
+    the POIS stat-line channel — fully independent of the event rows the
+    adapter parses. 0 disagreements is the standing bar (2026-08-03)."""
+    lakes = Path("/home/claude/work")
+    if not (lakes / "mestis_lake").exists():
+        import pytest
+        pytest.skip("mestis lake not mounted")
+    sys.path.insert(0, str(ROOT / "tools"))
+    from audit_interval_random import audit
+    sample, bad = audit("mestis")
+    assert len(sample) == 60
+    assert not bad, bad

@@ -1,0 +1,128 @@
+{
+  "_meta": {
+    "derived": "2026-08-03 hand-traced from raw mestis.fi seuranta HTML (Manager session) BEFORE the adapter existed (rule 2). Times cumulative secs; P3 secs = t-2400. Trace notes: docs/ground_truth_traces/mestis_batch1_2026-08-03.md. 13 games / 13 instances. Coverage: EV pull, pp_pull, no-pull, carryover-at-open x4, widened/narrowed/end_of_game closes, mid-game + P3 goalie swaps (vaihto, never empty), multi-pull, pull-to-horn, IM/TM/SR/RL/YV2 flags, double minors, 5+20 major/misconduct pairs, OT+shootout (VL), penalty-shot foul rows without minutes.",
+    "empty_intervals_note": "empty = expected net-empty intervals (cumulative secs) for the side that had them; games without gap-3 instances still pin adapter-level extraction."
+  },
+  "games": {
+    "2025_3000": {
+      "home": "Hokki", "away": "Hermes", "date": "2024-09-13",
+      "empty": {"away": [[3438, 3573]], "home": []},
+      "swaps_ignored": 1,
+      "instances": [
+        {"n": 1, "opened_secs": 755, "closed_secs": 1173, "closed_reason": "widened",
+         "trailing_name": "Hermes", "pulled": true, "pull_evidence_secs": 1038,
+         "pull_classification": "pull", "carryover_empty_at_open": false}
+      ]
+    },
+    "2023_7458": {
+      "home": "Ketterä", "away": "K-Espoo", "date": "2022-09-22",
+      "empty": {"home": [[3479, 3484], [3512, 3596]], "away": []},
+      "im_goal_not_en": {"t": 3484, "side": "home"},
+      "instances": [
+        {"n": 1, "opened_secs": 0, "closed_secs": 225, "closed_reason": "narrowed",
+         "trailing_name": "Ketterä", "pulled": false, "pull_evidence_secs": null,
+         "pull_classification": null, "carryover_empty_at_open": false}
+      ]
+    },
+    "2024_4009": {
+      "home": "K-Espoo", "away": "TUTO Hockey", "date": "2023-09-23",
+      "empty": {"away": [[3447, 3600]], "home": []},
+      "instances": []
+    },
+    "2026_2965": {
+      "home": "Jokerit", "away": "IPK", "date": "2025-09-11",
+      "empty": {"away": [[3411, 3595]], "home": []},
+      "instances": [
+        {"n": 1, "opened_secs": 1195, "closed_secs": 1200, "closed_reason": "end_of_game",
+         "trailing_name": "IPK", "pulled": false, "pull_evidence_secs": null,
+         "pull_classification": null, "carryover_empty_at_open": true}
+      ]
+    },
+    "2023_7297": {
+      "home": "KeuPa HT", "away": "RoKi", "date": "2023-03-07",
+      "empty": {"away": [[3499, 3545], [3553, 3560]], "home": []},
+      "instances": [
+        {"n": 1, "opened_secs": 1160, "closed_secs": 1200, "closed_reason": "end_of_game",
+         "trailing_name": "RoKi", "pulled": false, "pull_evidence_secs": null,
+         "pull_classification": null, "carryover_empty_at_open": true}
+      ]
+    },
+    "2023_7288": {
+      "home": "TUTO Hockey", "away": "Ketterä", "date": "2023-02-02",
+      "empty": {"away": [[3512, 3517], [3545, 3597]], "home": []},
+      "sr_tm_goal": {"t": 3517, "side": "home", "types": ["TM", "SR"]},
+      "instances": [
+        {"n": 1, "opened_secs": 1197, "closed_secs": 1200, "closed_reason": "end_of_game",
+         "trailing_name": "Ketterä", "pulled": false, "pull_evidence_secs": null,
+         "pull_classification": null, "carryover_empty_at_open": true}
+      ]
+    },
+    "2023_7452": {
+      "home": "JoKP", "away": "IPK", "date": "2023-02-18",
+      "empty": {"away": [[3357, 3388], [3415, 3600]], "home": []},
+      "swaps_ignored": 2,
+      "instances": [
+        {"n": 1, "opened_secs": 0, "closed_secs": 68, "closed_reason": "widened",
+         "trailing_name": "IPK", "pulled": false, "pull_evidence_secs": null,
+         "pull_classification": null, "carryover_empty_at_open": false},
+        {"n": 2, "opened_secs": 698, "closed_secs": 1200, "closed_reason": "end_of_game",
+         "trailing_name": "IPK", "pulled": true, "pull_evidence_secs": 957,
+         "pull_classification": "pull", "carryover_empty_at_open": false}
+      ]
+    },
+    "2023_7276": {
+      "home": "KOOVEE", "away": "IPK", "date": "2023-03-15",
+      "empty": {"away": [], "home": []},
+      "instances": [
+        {"n": 1, "opened_secs": 0, "closed_secs": 879, "closed_reason": "widened",
+         "trailing_name": "KOOVEE", "pulled": false, "pull_evidence_secs": null,
+         "pull_classification": null, "carryover_empty_at_open": false}
+      ]
+    },
+    "2025_3161": {
+      "home": "IPK", "away": "Ketterä", "date": "2024-09-12",
+      "empty": {"away": [], "home": []},
+      "regulation_goals": 4,
+      "instances": []
+    },
+    "2025_2999": {
+      "home": "Hermes", "away": "RoKi", "date": "2024-09-14",
+      "empty": {"away": [[3408, 3529]], "home": []},
+      "instances": [
+        {"n": 1, "opened_secs": 0, "closed_secs": 589, "closed_reason": "narrowed",
+         "trailing_name": "RoKi", "pulled": false, "pull_evidence_secs": null,
+         "pull_classification": null, "carryover_empty_at_open": false},
+        {"n": 2, "opened_secs": 1129, "closed_secs": 1200, "closed_reason": "end_of_game",
+         "trailing_name": "RoKi", "pulled": false, "pull_evidence_secs": null,
+         "pull_classification": null, "carryover_empty_at_open": true}
+      ]
+    },
+    "2023_7327": {
+      "home": "KOOVEE", "away": "RoKi", "date": "2022-11-19",
+      "empty": {"home": [[3316, 3350], [3376, 3468]], "away": []},
+      "instances": [
+        {"n": 1, "opened_secs": 52, "closed_secs": 1068, "closed_reason": "widened",
+         "trailing_name": "KOOVEE", "pulled": true, "pull_evidence_secs": 916,
+         "pull_classification": "pull", "carryover_empty_at_open": false}
+      ]
+    },
+    "2023_7441": {
+      "home": "Peliitat", "away": "K-Vantaa", "date": "2022-10-14",
+      "empty": {"away": [[3432, 3486], [3507, 3600]], "home": []},
+      "instances": [
+        {"n": 1, "opened_secs": 0, "closed_secs": 698, "closed_reason": "narrowed",
+         "trailing_name": "K-Vantaa", "pulled": false, "pull_evidence_secs": null,
+         "pull_classification": null, "carryover_empty_at_open": false},
+        {"n": 2, "opened_secs": 821, "closed_secs": 1086, "closed_reason": "narrowed",
+         "trailing_name": "K-Vantaa", "pulled": true, "pull_evidence_secs": 1032,
+         "pull_classification": "pp_pull", "carryover_empty_at_open": false}
+      ]
+    },
+    "2026_3142": {
+      "home": "RoKi", "away": "KeuPa HT", "date": "2026-01-02",
+      "empty": {"home": [[3388, 3600]], "away": []},
+      "double_minor_rows": 4,
+      "instances": []
+    }
+  }
+}

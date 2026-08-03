@@ -18,12 +18,16 @@ ICS↔disk reconciliation 0 missing / 0 extra both directions (matchnos
 extracted from ICS DESCRIPTION URLs, independent of the manifests).
 Manifest coverage complete (no unmanifested files).
 
-## Content claims reproduced
+## Content claims reproduced — then CORRECTED same day (ticker discovery)
 
 - goalie-out games ("Maalivahti ulos" in seuranta): 303/242/185/205 —
-  matches handoff exactly.
-- pois-interval games: 226/186/155/179 — matches exactly.
-- rosters.json present: 1,166/1,166 — matches.
+  reproduced the handoff exactly, BUT both counts used page-wide greps.
+  **CORRECTION (2026-08-03, adapter session): every seuranta page embeds
+  a league-wide ticker of OTHER games' events (div.latest-event) — the
+  true counts, scoped to the game's own event table (home/time/away
+  cells), are 226/186/155/179, exactly the pois-interval game SETS.**
+- pois-interval games: 226/186/155/179 — correct as published.
+- rosters.json present: 1,166/1,166 — correct.
 - Spot checks (seed 20260803, 2/season): event channel and pois channel
   AGREE where both exist (e.g. 2023/7362 ulos 57:30 / sisään 59:28 ↔
   pois 57:30-59:28; 2023/7425 multi-pull windows line up).
@@ -44,20 +48,26 @@ Missing-HC games (season/matchno, side missing):
 - 2026: 2949 Home, 2970 Away, 2976 Home, 3002 Away, 3094 Away,
   3099 Home, 3124 Away, 3129 Home, 3144 Away, 3173 Home
 
-## Adapter-relevant findings (recorded now, handled at adapter build)
+## Adapter-relevant findings — REWRITTEN 2026-08-03 (15b: the original
+## three findings below were TICKER ARTIFACTS, retracted same day)
 
-1. **The two goalie channels are COMPLEMENTARY, not redundant-complete.**
-   Games with ulos events but no pois interval exist (e.g. 2025/2986,
-   2025/3175), and at least one game has a pois interval with no
-   matching ulos event at that time (2026/3142: ulos only at 47:01 —
-   likely a swap — but pois 56:28-60:00). The adapter must UNION the
-   channels, then classify (pull vs swap) per quirk 5.
-2. **Sisään-without-ulos games**: 29/26/21/16 per season — in-events
-   with no out-event in the same feed (swap semantics suspected).
-   Classification is adapter logic; counted here so the number is on
-   record before any extraction.
-3. Duplicate event rows exist (2023/7425 shows "Maalivahti ulos" twice
-   at 58:41 plus a stray 58:29 row) — adapter needs dedup.
+Original claims (all drawn with page-wide matching, all WRONG):
+"channels complementary" (2025/2986, 2025/3175, 2026/3142),
+"sisään-without-ulos 29/26/21/16", "duplicate event rows in 7425".
+
+Corrected findings (scoped to the game's own event table):
+
+1. **The two goalie channels are 100% REDUNDANT at game level**: scoped
+   ulos-game sets == pois-game sets exactly, all 4 seasons. 2025/2986 and
+   2025/3175 have NO real goalie events; 2026/3142's real event is ulos
+   56:28 matching pois 56:28-60:00 (the 47:01 hit was ticker text).
+   Redundancy makes the pois channel the independent audit channel
+   (tools/audit_interval_random.py mestis — 0/60, seed 20260803).
+2. **Sisään-without-ulos: 0 games in every season** once scoped.
+3. **Same-second penalty pairs are REAL double minors**, not feed dupes
+   (per-team penalty-minute summaries count them separately; 2026/3142).
+4. Substitutions are their own event text ("Maalivahdin vaihto: A ulos,
+   B sisään") — trivially separable from pulls ("Maalivahti ulos:").
 
 ## Verdict
 
