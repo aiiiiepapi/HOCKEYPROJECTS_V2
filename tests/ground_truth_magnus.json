@@ -1,0 +1,95 @@
+{
+ "_meta": {
+  "batch": 0,
+  "source": "scan samples, hand-traced 2026-08-02",
+  "note": "windows P3-relative; pull judgments from TOI arithmetic + Joueurs lists + penalty windows"
+ },
+ "games": {
+  "901": {
+   "instances": []
+  },
+  "1051": {
+   "sheet_empty": true,
+   "instances": []
+  },
+  "11101": {
+   "instances": [],
+   "ot_duration": 3796
+  },
+  "16351": {
+   "instances": [
+    {
+     "n": 1,
+     "opened_secs": 624,
+     "closed_secs": 757,
+     "closed_reason": "narrowed",
+     "trailing": "GRENOBLE",
+     "pulled": false
+    },
+    {
+     "n": 2,
+     "opened_secs": 975,
+     "closed_secs": 1200,
+     "closed_reason": "end_of_game",
+     "trailing": "GRENOBLE",
+     "pulled": false
+    }
+   ],
+   "adjacent_pull": {
+    "gap": 2,
+    "start_abs": 3249,
+    "end_abs": 3375,
+    "end_reason": "en_goal_against",
+    "case": "1",
+    "jminus_confirms_empty": true
+   }
+  },
+  "32701": {
+   "instances": [
+    {
+     "n": 1,
+     "opened_secs": 0,
+     "closed_secs": 1049,
+     "closed_reason": "widened",
+     "trailing": "GAP",
+     "pulled": false
+    }
+   ],
+   "type_field_error": {
+    "goal_abs": 3449,
+    "sheet_type": "SUP1",
+    "true_type": "INF1"
+   }
+  },
+  "41851": {
+   "instances": [
+    {
+     "n": 1,
+     "opened_secs": 1064,
+     "closed_secs": 1200,
+     "closed_reason": "end_of_game",
+     "trailing": "CERGY-PONTOISE",
+     "pulled": false
+    }
+   ]
+  },
+  "46501": {
+   "instances": []
+  },
+  "68851": {
+   "instances": []
+  },
+  "69001": {
+   "instances": [
+    {
+     "n": 1,
+     "opened_secs": 1019,
+     "closed_secs": 1200,
+     "closed_reason": "end_of_game",
+     "trailing": "AMIENS",
+     "pulled": false
+    }
+   ]
+  }
+ }
+}
