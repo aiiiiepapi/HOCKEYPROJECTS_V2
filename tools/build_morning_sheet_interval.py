@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-build_morning_sheet_interval.py {ahl|liiga} — standing coach-expectancy
+build_morning_sheet_interval.py {ahl|liiga|mestis} — standing coach-expectancy
 morning sheet (ruling-33 estimator) from {lg}_coach_profiles.json.
 Rule 13: scripted delivery artifact; output -> /home/claude/work/{lg}_morning_sheet.md
 Rule 28 floor (40%) marked; AHL carries the ruling-24 intel-only banner.
@@ -11,7 +11,7 @@ from collections import defaultdict
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 LG = sys.argv[1]
-RECENT = {"ahl": ("86", "90"), "liiga": ("2025", "2026")}[LG]
+RECENT = {"ahl": ("86", "90"), "liiga": ("2025", "2026"), "mestis": ("2025", "2026")}[LG]
 SEASON_START = "2025-09-01"
 prof = json.load(open(ROOT / f"data/derived/{LG}_coach_profiles.json"))
 inst = json.load(open(ROOT / f"data/derived/{LG}_instances_gap3.json"))
@@ -39,6 +39,9 @@ L = [f"# {LG.upper()} MORNING SHEET — coach pull expectancy (ruling-33 estimat
 if LG == "ahl":
     L.append("STATUS: AHL = COACH INTEL ONLY — no priced markets (ruling 24). "
              "Rule 28: base % < 40 = NO-BET regardless of situation.")
+elif LG == "mestis":
+    L.append("STATUS: Mestis = COACH INTEL ONLY — no pricer exists yet (no blind "
+             "validation; adapter+ledger gated 2026-08-03). Rule 28: base % < 40 = NO-BET.")
 else:
     L.append("STATUS: Liiga = paper-trade from September (ruling 25, provisional). "
              "Rule 28: base % < 40 = NO-BET.")

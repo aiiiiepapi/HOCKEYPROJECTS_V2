@@ -81,9 +81,10 @@ def build(league, rows_file, skip_seasons=()):
     # penalty windows when present (older exports may lack them -> re-extract).
     need_boxes = "penalties_p3" not in rows[0]
     if need_boxes:
-        from hockeycore.leagues import ahl as ahl_mod, liiga as liiga_mod
+        from hockeycore.leagues import ahl as ahl_mod, liiga as liiga_mod, mestis as mestis_mod
         lakes = {"ahl": Path("/home/claude/work/ahl_lake"),
-                 "liiga": Path("/home/claude/work/liiga_lake")}
+                 "liiga": Path("/home/claude/work/liiga_lake"),
+                 "mestis": Path("/home/claude/work/mestis_lake/mestis")}
         cache = {}
         for r in rows:
             key = (r["season"], r["game_id"])
@@ -92,6 +93,10 @@ def build(league, rows_file, skip_seasons=()):
                     g = ahl_mod.parse_game(
                         lakes["ahl"] / r["season"] / f"{r['game_id']}_pxp.json",
                         season=r["season"])
+                elif league == "mestis":
+                    g = mestis_mod.parse_game(
+                        lakes["mestis"] / r["season"] /
+                        f"game_{r['season']}_{r['game_id']}_seuranta.html")
                 else:
                     g = liiga_mod.parse_game(
                         lakes["liiga"] / r["season"] / f"game_{r['season']}_{r['game_id']}.json")
@@ -195,5 +200,12 @@ def build(league, rows_file, skip_seasons=()):
 
 
 if __name__ == "__main__":
-    build("ahl", "ahl_instances_gap3.json")
-    build("liiga", "liiga_instances_gap3.json", skip_seasons=("2023",))
+    import sys as _sys
+    which = _sys.argv[1] if len(_sys.argv) > 1 else "all"
+    if which in ("ahl", "all"):
+        build("ahl", "ahl_instances_gap3.json")
+    if which in ("liiga", "all"):
+        build("liiga", "liiga_instances_gap3.json", skip_seasons=("2023",))
+    if which in ("mestis", "all"):
+        # Mestis 2022-23 HAS the goalie channel (unlike Liiga) — all 4 seasons in
+        build("mestis", "mestis_instances_gap3.json")

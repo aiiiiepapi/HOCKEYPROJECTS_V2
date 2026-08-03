@@ -257,8 +257,9 @@ def test_ahl_liiga_derived_instances():
 
 
 def test_ahl_liiga_clean_window():
-    """Structural gates over the interval-league ledgers + profiles (rule 14)."""
-    for lg in ("ahl", "liiga"):
+    """Structural gates over the interval-league ledgers + profiles (rule 14).
+    Mestis added 2026-08-03, same bar."""
+    for lg in ("ahl", "liiga", "mestis"):
         cw = json.load(open(DER / f"{lg}_clean_window.json"))
         prof = json.load(open(DER / f"{lg}_coach_profiles.json"))
         rows, meta = cw["rows"], cw["meta"]
