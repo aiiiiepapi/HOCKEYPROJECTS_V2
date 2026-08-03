@@ -1,0 +1,3748 @@
+BEGIN:VCALENDAR
+DTSTART;VALUE=DATE:20230602
+SUMMARY:Ottelut 2023-09-21 - 2024-03-07
+BEGIN:VEVENT
+SUMMARY:K-Espoo - Jokerit
+DTSTART;VALUE=DATE-TIME:20230921T153000Z
+DTEND;VALUE=DATE-TIME:20230921T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93320@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4047/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4047/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20230922T153000Z
+DTEND;VALUE=DATE-TIME:20230922T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93325@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3903/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3903/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - JoKP
+DTSTART;VALUE=DATE-TIME:20230922T153000Z
+DTEND;VALUE=DATE-TIME:20230922T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93324@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3930/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3930/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - KOOVEE
+DTSTART;VALUE=DATE-TIME:20230922T153000Z
+DTEND;VALUE=DATE-TIME:20230922T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93322@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3829/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3829/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - FPS
+DTSTART;VALUE=DATE-TIME:20230922T153000Z
+DTEND;VALUE=DATE-TIME:20230922T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93321@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3886/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3886/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - RoKi
+DTSTART;VALUE=DATE-TIME:20230922T153000Z
+DTEND;VALUE=DATE-TIME:20230922T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93326@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3965/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3965/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - Hermes
+DTSTART;VALUE=DATE-TIME:20230922T153000Z
+DTEND;VALUE=DATE-TIME:20230922T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93323@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3967/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3967/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - FPS
+DTSTART;VALUE=DATE-TIME:20230923T140000Z
+DTEND;VALUE=DATE-TIME:20230923T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93330@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3862/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3862/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - Hokki
+DTSTART;VALUE=DATE-TIME:20230923T140000Z
+DTEND;VALUE=DATE-TIME:20230923T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93327@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4079/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4079/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Espoo - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20230923T140000Z
+DTEND;VALUE=DATE-TIME:20230923T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93329@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4009/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4009/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20230923T140000Z
+DTEND;VALUE=DATE-TIME:20230923T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93331@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4064/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4064/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - IPK
+DTSTART;VALUE=DATE-TIME:20230923T140000Z
+DTEND;VALUE=DATE-TIME:20230923T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93328@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3822/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3822/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - Hokki
+DTSTART;VALUE=DATE-TIME:20230926T153000Z
+DTEND;VALUE=DATE-TIME:20230926T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93332@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3875/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3875/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - Ketterä
+DTSTART;VALUE=DATE-TIME:20230926T153000Z
+DTEND;VALUE=DATE-TIME:20230926T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93335@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4092/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4092/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KOOVEE - JoKP
+DTSTART;VALUE=DATE-TIME:20230927T153000Z
+DTEND;VALUE=DATE-TIME:20230927T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93334@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3823/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3823/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:FPS - K-Espoo
+DTSTART;VALUE=DATE-TIME:20230927T153000Z
+DTEND;VALUE=DATE-TIME:20230927T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93333@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3856/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3856/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - RoKi
+DTSTART;VALUE=DATE-TIME:20230928T153000Z
+DTEND;VALUE=DATE-TIME:20230928T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93336@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3854/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3854/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - Hermes
+DTSTART;VALUE=DATE-TIME:20230929T153000Z
+DTEND;VALUE=DATE-TIME:20230929T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93341@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3882/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3882/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - KOOVEE
+DTSTART;VALUE=DATE-TIME:20230929T153000Z
+DTEND;VALUE=DATE-TIME:20230929T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93338@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3894/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3894/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - Jokerit
+DTSTART;VALUE=DATE-TIME:20230929T153000Z
+DTEND;VALUE=DATE-TIME:20230929T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93337@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4119/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4119/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - FPS
+DTSTART;VALUE=DATE-TIME:20230929T153000Z
+DTEND;VALUE=DATE-TIME:20230929T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93340@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3898/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3898/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Espoo - RoKi
+DTSTART;VALUE=DATE-TIME:20230929T153000Z
+DTEND;VALUE=DATE-TIME:20230929T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93339@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4082/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4082/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - KOOVEE
+DTSTART;VALUE=DATE-TIME:20230930T140000Z
+DTEND;VALUE=DATE-TIME:20230930T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93345@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4037/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4037/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - FPS
+DTSTART;VALUE=DATE-TIME:20230930T140000Z
+DTEND;VALUE=DATE-TIME:20230930T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93344@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3910/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3910/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - Hermes
+DTSTART;VALUE=DATE-TIME:20230930T140000Z
+DTEND;VALUE=DATE-TIME:20230930T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93343@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3895/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3895/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - Ketterä
+DTSTART;VALUE=DATE-TIME:20230930T140000Z
+DTEND;VALUE=DATE-TIME:20230930T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93342@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3876/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3876/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - RoKi
+DTSTART;VALUE=DATE-TIME:20230930T140000Z
+DTEND;VALUE=DATE-TIME:20230930T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93346@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3913/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3913/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20230930T140000Z
+DTEND;VALUE=DATE-TIME:20230930T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93347@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3847/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3847/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - Hokki
+DTSTART;VALUE=DATE-TIME:20231003T153000Z
+DTEND;VALUE=DATE-TIME:20231003T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93348@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3839/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3839/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KOOVEE - Hermes
+DTSTART;VALUE=DATE-TIME:20231004T153000Z
+DTEND;VALUE=DATE-TIME:20231004T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93349@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3933/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3933/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - KOOVEE
+DTSTART;VALUE=DATE-TIME:20231006T153000Z
+DTEND;VALUE=DATE-TIME:20231006T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93354@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4122/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4122/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - K-Espoo
+DTSTART;VALUE=DATE-TIME:20231006T153000Z
+DTEND;VALUE=DATE-TIME:20231006T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93355@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4097/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4097/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - JoKP
+DTSTART;VALUE=DATE-TIME:20231006T153000Z
+DTEND;VALUE=DATE-TIME:20231006T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93351@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3906/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3906/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20231006T153000Z
+DTEND;VALUE=DATE-TIME:20231006T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93352@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3925/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3925/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20231006T153000Z
+DTEND;VALUE=DATE-TIME:20231006T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93350@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3896/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3896/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - IPK
+DTSTART;VALUE=DATE-TIME:20231006T153000Z
+DTEND;VALUE=DATE-TIME:20231006T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93353@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3889/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3889/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:FPS - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20231007T140000Z
+DTEND;VALUE=DATE-TIME:20231007T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93356@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3940/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3940/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - K-Espoo
+DTSTART;VALUE=DATE-TIME:20231007T140000Z
+DTEND;VALUE=DATE-TIME:20231007T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93358@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3955/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3955/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20231007T140000Z
+DTEND;VALUE=DATE-TIME:20231007T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93357@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4098/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4098/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - JoKP
+DTSTART;VALUE=DATE-TIME:20231007T140000Z
+DTEND;VALUE=DATE-TIME:20231007T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93360@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3973/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3973/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - Jokerit
+DTSTART;VALUE=DATE-TIME:20231007T140000Z
+DTEND;VALUE=DATE-TIME:20231007T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93359@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3918/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3918/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Espoo - Ketterä
+DTSTART;VALUE=DATE-TIME:20231010T153000Z
+DTEND;VALUE=DATE-TIME:20231010T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93361@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4104/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4104/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - IPK
+DTSTART;VALUE=DATE-TIME:20231011T153000Z
+DTEND;VALUE=DATE-TIME:20231011T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93362@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3937/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3937/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KOOVEE - FPS
+DTSTART;VALUE=DATE-TIME:20231011T153000Z
+DTEND;VALUE=DATE-TIME:20231011T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93363@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3874/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3874/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - RoKi
+DTSTART;VALUE=DATE-TIME:20231012T153000Z
+DTEND;VALUE=DATE-TIME:20231012T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93364@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3939/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3939/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - Hokki
+DTSTART;VALUE=DATE-TIME:20231012T153000Z
+DTEND;VALUE=DATE-TIME:20231012T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93365@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3911/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3911/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - Jokerit
+DTSTART;VALUE=DATE-TIME:20231013T153000Z
+DTEND;VALUE=DATE-TIME:20231013T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93370@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3943/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3943/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KOOVEE - RoKi
+DTSTART;VALUE=DATE-TIME:20231013T153000Z
+DTEND;VALUE=DATE-TIME:20231013T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93369@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3867/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3867/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:FPS - Hermes
+DTSTART;VALUE=DATE-TIME:20231013T153000Z
+DTEND;VALUE=DATE-TIME:20231013T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93367@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3868/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3868/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - K-Espoo
+DTSTART;VALUE=DATE-TIME:20231013T153000Z
+DTEND;VALUE=DATE-TIME:20231013T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93366@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4065/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4065/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - JoKP
+DTSTART;VALUE=DATE-TIME:20231013T153000Z
+DTEND;VALUE=DATE-TIME:20231013T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93368@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3878/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3878/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - Jokerit
+DTSTART;VALUE=DATE-TIME:20231014T140000Z
+DTEND;VALUE=DATE-TIME:20231014T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93371@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4085/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4085/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - Ketterä
+DTSTART;VALUE=DATE-TIME:20231014T140000Z
+DTEND;VALUE=DATE-TIME:20231014T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93372@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4008/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4008/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:FPS - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20231014T140000Z
+DTEND;VALUE=DATE-TIME:20231014T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93373@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3964/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3964/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KOOVEE - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20231017T153000Z
+DTEND;VALUE=DATE-TIME:20231017T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93374@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3849/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3849/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - IPK
+DTSTART;VALUE=DATE-TIME:20231018T153000Z
+DTEND;VALUE=DATE-TIME:20231018T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93375@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3846/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3846/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Espoo - FPS
+DTSTART;VALUE=DATE-TIME:20231019T153000Z
+DTEND;VALUE=DATE-TIME:20231019T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93376@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3934/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3934/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - Hokki
+DTSTART;VALUE=DATE-TIME:20231020T153000Z
+DTEND;VALUE=DATE-TIME:20231020T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93379@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3947/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3947/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20231020T153000Z
+DTEND;VALUE=DATE-TIME:20231020T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93377@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4068/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4068/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - Jokerit
+DTSTART;VALUE=DATE-TIME:20231020T153000Z
+DTEND;VALUE=DATE-TIME:20231020T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93378@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3835/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3835/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - Ketterä
+DTSTART;VALUE=DATE-TIME:20231020T153000Z
+DTEND;VALUE=DATE-TIME:20231020T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93380@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3960/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3960/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20231021T140000Z
+DTEND;VALUE=DATE-TIME:20231021T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93384@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3827/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3827/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Espoo - Hokki
+DTSTART;VALUE=DATE-TIME:20231021T140000Z
+DTEND;VALUE=DATE-TIME:20231021T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93383@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3863/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3863/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - Jokerit
+DTSTART;VALUE=DATE-TIME:20231021T140000Z
+DTEND;VALUE=DATE-TIME:20231021T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93385@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3991/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3991/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:FPS - KOOVEE
+DTSTART;VALUE=DATE-TIME:20231021T140000Z
+DTEND;VALUE=DATE-TIME:20231021T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93381@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3952/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3952/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - Ketterä
+DTSTART;VALUE=DATE-TIME:20231021T140000Z
+DTEND;VALUE=DATE-TIME:20231021T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93382@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3864/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3864/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20231024T153000Z
+DTEND;VALUE=DATE-TIME:20231024T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93386@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3954/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3954/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Espoo - KOOVEE
+DTSTART;VALUE=DATE-TIME:20231025T153000Z
+DTEND;VALUE=DATE-TIME:20231025T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93388@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3842/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3842/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20231025T153000Z
+DTEND;VALUE=DATE-TIME:20231025T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93387@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4124/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4124/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - Hermes
+DTSTART;VALUE=DATE-TIME:20231026T153000Z
+DTEND;VALUE=DATE-TIME:20231026T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93389@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3953/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3953/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20231027T153000Z
+DTEND;VALUE=DATE-TIME:20231027T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93394@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3938/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3938/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - KOOVEE
+DTSTART;VALUE=DATE-TIME:20231027T153000Z
+DTEND;VALUE=DATE-TIME:20231027T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93393@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3945/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3945/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20231027T153000Z
+DTEND;VALUE=DATE-TIME:20231027T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93390@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3871/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3871/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:FPS - Ketterä
+DTSTART;VALUE=DATE-TIME:20231027T153000Z
+DTEND;VALUE=DATE-TIME:20231027T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93392@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3904/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3904/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - K-Espoo
+DTSTART;VALUE=DATE-TIME:20231027T153000Z
+DTEND;VALUE=DATE-TIME:20231027T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93391@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3993/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3993/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - KOOVEE
+DTSTART;VALUE=DATE-TIME:20231028T140000Z
+DTEND;VALUE=DATE-TIME:20231028T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93396@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3881/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3881/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - FPS
+DTSTART;VALUE=DATE-TIME:20231028T140000Z
+DTEND;VALUE=DATE-TIME:20231028T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93395@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3922/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3922/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - Ketterä
+DTSTART;VALUE=DATE-TIME:20231028T140000Z
+DTEND;VALUE=DATE-TIME:20231028T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93398@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3821/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3821/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - IPK
+DTSTART;VALUE=DATE-TIME:20231028T140000Z
+DTEND;VALUE=DATE-TIME:20231028T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93397@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4093/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4093/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - K-Espoo
+DTSTART;VALUE=DATE-TIME:20231028T140000Z
+DTEND;VALUE=DATE-TIME:20231028T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93399@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3897/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3897/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20231031T163000Z
+DTEND;VALUE=DATE-TIME:20231031T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93400@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3840/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3840/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - JoKP
+DTSTART;VALUE=DATE-TIME:20231031T163000Z
+DTEND;VALUE=DATE-TIME:20231031T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93401@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4015/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4015/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Espoo - Hermes
+DTSTART;VALUE=DATE-TIME:20231101T163000Z
+DTEND;VALUE=DATE-TIME:20231101T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93402@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3915/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3915/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - Hermes
+DTSTART;VALUE=DATE-TIME:20231102T163000Z
+DTEND;VALUE=DATE-TIME:20231102T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93403@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3999/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3999/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - RoKi
+DTSTART;VALUE=DATE-TIME:20231102T163000Z
+DTEND;VALUE=DATE-TIME:20231102T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93404@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4113/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4113/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - Hokki
+DTSTART;VALUE=DATE-TIME:20231103T163000Z
+DTEND;VALUE=DATE-TIME:20231103T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93406@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3935/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3935/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - K-Espoo
+DTSTART;VALUE=DATE-TIME:20231103T163000Z
+DTEND;VALUE=DATE-TIME:20231103T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93407@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4026/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4026/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - IPK
+DTSTART;VALUE=DATE-TIME:20231103T163000Z
+DTEND;VALUE=DATE-TIME:20231103T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93408@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3961/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3961/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KOOVEE - Jokerit
+DTSTART;VALUE=DATE-TIME:20231103T163000Z
+DTEND;VALUE=DATE-TIME:20231103T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93409@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4063/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4063/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:FPS - RoKi
+DTSTART;VALUE=DATE-TIME:20231103T163000Z
+DTEND;VALUE=DATE-TIME:20231103T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93405@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3880/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3880/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - Jokerit
+DTSTART;VALUE=DATE-TIME:20231104T163000Z
+DTEND;VALUE=DATE-TIME:20231104T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93410@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3824/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3824/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - IPK
+DTSTART;VALUE=DATE-TIME:20231104T150000Z
+DTEND;VALUE=DATE-TIME:20231104T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93411@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3905/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3905/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20231104T163000Z
+DTEND;VALUE=DATE-TIME:20231104T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93414@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4013/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4013/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KOOVEE - Ketterä
+DTSTART;VALUE=DATE-TIME:20231104T150000Z
+DTEND;VALUE=DATE-TIME:20231104T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93412@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4044/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4044/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - K-Espoo
+DTSTART;VALUE=DATE-TIME:20231104T150000Z
+DTEND;VALUE=DATE-TIME:20231104T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93413@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4040/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4040/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KOOVEE - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20231114T163000Z
+DTEND;VALUE=DATE-TIME:20231114T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93415@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3951/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3951/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:FPS - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20231115T163000Z
+DTEND;VALUE=DATE-TIME:20231115T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93417@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3928/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3928/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - IPK
+DTSTART;VALUE=DATE-TIME:20231115T163000Z
+DTEND;VALUE=DATE-TIME:20231115T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93416@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3978/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3978/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - JoKP
+DTSTART;VALUE=DATE-TIME:20231116T163000Z
+DTEND;VALUE=DATE-TIME:20231116T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93418@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4001/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4001/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20231117T163000Z
+DTEND;VALUE=DATE-TIME:20231117T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93420@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3981/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3981/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - K-Espoo
+DTSTART;VALUE=DATE-TIME:20231117T163000Z
+DTEND;VALUE=DATE-TIME:20231117T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93419@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4125/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4125/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - FPS
+DTSTART;VALUE=DATE-TIME:20231117T163000Z
+DTEND;VALUE=DATE-TIME:20231117T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93421@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3838/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3838/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - Hermes
+DTSTART;VALUE=DATE-TIME:20231117T163000Z
+DTEND;VALUE=DATE-TIME:20231117T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93422@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3944/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3944/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - FPS
+DTSTART;VALUE=DATE-TIME:20231118T150000Z
+DTEND;VALUE=DATE-TIME:20231118T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93426@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3826/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3826/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - Hokki
+DTSTART;VALUE=DATE-TIME:20231118T150000Z
+DTEND;VALUE=DATE-TIME:20231118T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93425@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4043/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4043/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - KOOVEE
+DTSTART;VALUE=DATE-TIME:20231118T150000Z
+DTEND;VALUE=DATE-TIME:20231118T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93424@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4050/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4050/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - Hermes
+DTSTART;VALUE=DATE-TIME:20231118T150000Z
+DTEND;VALUE=DATE-TIME:20231118T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93423@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3830/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3830/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - Hokki
+DTSTART;VALUE=DATE-TIME:20231121T163000Z
+DTEND;VALUE=DATE-TIME:20231121T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93427@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3923/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3923/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KOOVEE - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20231122T163000Z
+DTEND;VALUE=DATE-TIME:20231122T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93428@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3992/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3992/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20231122T163000Z
+DTEND;VALUE=DATE-TIME:20231122T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93429@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4055/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4055/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - JoKP
+DTSTART;VALUE=DATE-TIME:20231123T163000Z
+DTEND;VALUE=DATE-TIME:20231123T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93430@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4106/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4106/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - Ketterä
+DTSTART;VALUE=DATE-TIME:20231124T163000Z
+DTEND;VALUE=DATE-TIME:20231124T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93436@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3989/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3989/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - FPS
+DTSTART;VALUE=DATE-TIME:20231124T163000Z
+DTEND;VALUE=DATE-TIME:20231124T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93431@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3958/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3958/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20231124T163000Z
+DTEND;VALUE=DATE-TIME:20231124T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93434@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3883/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3883/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20231124T163000Z
+DTEND;VALUE=DATE-TIME:20231124T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93433@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4041/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4041/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - JoKP
+DTSTART;VALUE=DATE-TIME:20231124T163000Z
+DTEND;VALUE=DATE-TIME:20231124T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93435@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3990/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3990/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - KOOVEE
+DTSTART;VALUE=DATE-TIME:20231124T163000Z
+DTEND;VALUE=DATE-TIME:20231124T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93432@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3855/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3855/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - FPS
+DTSTART;VALUE=DATE-TIME:20231125T150000Z
+DTEND;VALUE=DATE-TIME:20231125T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93439@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4114/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4114/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20231125T150000Z
+DTEND;VALUE=DATE-TIME:20231125T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93437@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3869/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3869/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - K-Espoo
+DTSTART;VALUE=DATE-TIME:20231125T150000Z
+DTEND;VALUE=DATE-TIME:20231125T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93440@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4087/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4087/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - Hermes
+DTSTART;VALUE=DATE-TIME:20231125T150000Z
+DTEND;VALUE=DATE-TIME:20231125T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93438@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3986/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3986/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - Ketterä
+DTSTART;VALUE=DATE-TIME:20231125T150000Z
+DTEND;VALUE=DATE-TIME:20231125T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93441@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3924/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3924/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:FPS - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20231128T163000Z
+DTEND;VALUE=DATE-TIME:20231128T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93442@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4096/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4096/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - KOOVEE
+DTSTART;VALUE=DATE-TIME:20231129T163000Z
+DTEND;VALUE=DATE-TIME:20231129T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93443@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3927/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3927/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - RoKi
+DTSTART;VALUE=DATE-TIME:20231129T163000Z
+DTEND;VALUE=DATE-TIME:20231129T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93444@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3984/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3984/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KOOVEE - Hokki
+DTSTART;VALUE=DATE-TIME:20231130T163000Z
+DTEND;VALUE=DATE-TIME:20231130T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93445@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4115/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4115/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20231201T163000Z
+DTEND;VALUE=DATE-TIME:20231201T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93447@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3860/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3860/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20231201T163000Z
+DTEND;VALUE=DATE-TIME:20231201T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93451@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4112/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4112/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - RoKi
+DTSTART;VALUE=DATE-TIME:20231201T163000Z
+DTEND;VALUE=DATE-TIME:20231201T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93450@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3893/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3893/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - K-Espoo
+DTSTART;VALUE=DATE-TIME:20231201T163000Z
+DTEND;VALUE=DATE-TIME:20231201T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93449@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3837/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3837/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - Hokki
+DTSTART;VALUE=DATE-TIME:20231201T163000Z
+DTEND;VALUE=DATE-TIME:20231201T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93446@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4007/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4007/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:FPS - IPK
+DTSTART;VALUE=DATE-TIME:20231201T163000Z
+DTEND;VALUE=DATE-TIME:20231201T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93448@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3988/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3988/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - KOOVEE
+DTSTART;VALUE=DATE-TIME:20231202T140000Z
+DTEND;VALUE=DATE-TIME:20231202T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93454@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3873/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3873/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - K-Espoo
+DTSTART;VALUE=DATE-TIME:20231202T150000Z
+DTEND;VALUE=DATE-TIME:20231202T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93455@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4053/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4053/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - IPK
+DTSTART;VALUE=DATE-TIME:20231202T150000Z
+DTEND;VALUE=DATE-TIME:20231202T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93452@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4021/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4021/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - RoKi
+DTSTART;VALUE=DATE-TIME:20231202T150000Z
+DTEND;VALUE=DATE-TIME:20231202T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93453@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4049/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4049/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20231205T163000Z
+DTEND;VALUE=DATE-TIME:20231205T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93456@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4059/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4059/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KOOVEE - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20231207T163000Z
+DTEND;VALUE=DATE-TIME:20231207T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93457@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4005/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4005/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:FPS - JoKP
+DTSTART;VALUE=DATE-TIME:20231208T163000Z
+DTEND;VALUE=DATE-TIME:20231208T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93459@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3916/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3916/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Espoo - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20231208T163000Z
+DTEND;VALUE=DATE-TIME:20231208T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93458@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4131/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4131/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - Jokerit
+DTSTART;VALUE=DATE-TIME:20231208T163000Z
+DTEND;VALUE=DATE-TIME:20231208T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93460@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3858/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3858/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - Hermes
+DTSTART;VALUE=DATE-TIME:20231208T163000Z
+DTEND;VALUE=DATE-TIME:20231208T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93461@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4109/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4109/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20231208T163000Z
+DTEND;VALUE=DATE-TIME:20231208T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93462@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3879/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3879/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20231209T150000Z
+DTEND;VALUE=DATE-TIME:20231209T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93466@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4035/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4035/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - Ketterä
+DTSTART;VALUE=DATE-TIME:20231209T150000Z
+DTEND;VALUE=DATE-TIME:20231209T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93464@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4032/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4032/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KOOVEE - JoKP
+DTSTART;VALUE=DATE-TIME:20231209T150000Z
+DTEND;VALUE=DATE-TIME:20231209T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93467@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3979/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3979/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - Hermes
+DTSTART;VALUE=DATE-TIME:20231209T150000Z
+DTEND;VALUE=DATE-TIME:20231209T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93465@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4123/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4123/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - FPS
+DTSTART;VALUE=DATE-TIME:20231209T150000Z
+DTEND;VALUE=DATE-TIME:20231209T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93463@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3850/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3850/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Espoo - Ketterä
+DTSTART;VALUE=DATE-TIME:20231212T163000Z
+DTEND;VALUE=DATE-TIME:20231212T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93468@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3948/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3948/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20231213T163000Z
+DTEND;VALUE=DATE-TIME:20231213T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93469@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3956/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3956/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - KOOVEE
+DTSTART;VALUE=DATE-TIME:20231213T163000Z
+DTEND;VALUE=DATE-TIME:20231213T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93470@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3985/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3985/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - IPK
+DTSTART;VALUE=DATE-TIME:20231214T163000Z
+DTEND;VALUE=DATE-TIME:20231214T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93471@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4061/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4061/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - RoKi
+DTSTART;VALUE=DATE-TIME:20231214T163000Z
+DTEND;VALUE=DATE-TIME:20231214T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93472@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4069/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4069/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Espoo - RoKi
+DTSTART;VALUE=DATE-TIME:20231215T163000Z
+DTEND;VALUE=DATE-TIME:20231215T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93475@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3926/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3926/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - JoKP
+DTSTART;VALUE=DATE-TIME:20231215T163000Z
+DTEND;VALUE=DATE-TIME:20231215T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93476@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3890/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3890/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:FPS - Hokki
+DTSTART;VALUE=DATE-TIME:20231215T163000Z
+DTEND;VALUE=DATE-TIME:20231215T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93474@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3976/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3976/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KOOVEE - IPK
+DTSTART;VALUE=DATE-TIME:20231215T163000Z
+DTEND;VALUE=DATE-TIME:20231215T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93473@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3972/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3972/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - Ketterä
+DTSTART;VALUE=DATE-TIME:20231215T163000Z
+DTEND;VALUE=DATE-TIME:20231215T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93477@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4116/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4116/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - RoKi
+DTSTART;VALUE=DATE-TIME:20231216T150000Z
+DTEND;VALUE=DATE-TIME:20231216T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93481@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4010/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4010/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - Hokki
+DTSTART;VALUE=DATE-TIME:20231216T150000Z
+DTEND;VALUE=DATE-TIME:20231216T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93478@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4126/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4126/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:FPS - Jokerit
+DTSTART;VALUE=DATE-TIME:20231216T150000Z
+DTEND;VALUE=DATE-TIME:20231216T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93480@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3844/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3844/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - Ketterä
+DTSTART;VALUE=DATE-TIME:20231216T150000Z
+DTEND;VALUE=DATE-TIME:20231216T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93482@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4020/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4020/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Espoo - JoKP
+DTSTART;VALUE=DATE-TIME:20231216T150000Z
+DTEND;VALUE=DATE-TIME:20231216T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93479@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3962/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3962/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - Jokerit
+DTSTART;VALUE=DATE-TIME:20231219T163000Z
+DTEND;VALUE=DATE-TIME:20231219T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93483@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4130/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4130/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - K-Espoo
+DTSTART;VALUE=DATE-TIME:20231228T163000Z
+DTEND;VALUE=DATE-TIME:20231228T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93485@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3909/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3909/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:FPS - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20231228T163000Z
+DTEND;VALUE=DATE-TIME:20231228T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93484@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4120/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4120/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - Jokerit
+DTSTART;VALUE=DATE-TIME:20231229T163000Z
+DTEND;VALUE=DATE-TIME:20231229T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93489@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4074/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4074/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - IPK
+DTSTART;VALUE=DATE-TIME:20231229T163000Z
+DTEND;VALUE=DATE-TIME:20231229T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93486@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4073/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4073/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Espoo - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20231229T163000Z
+DTEND;VALUE=DATE-TIME:20231229T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93488@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3987/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3987/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KOOVEE - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20231229T163000Z
+DTEND;VALUE=DATE-TIME:20231229T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93491@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3836/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3836/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - RoKi
+DTSTART;VALUE=DATE-TIME:20231229T163000Z
+DTEND;VALUE=DATE-TIME:20231229T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93487@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4095/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4095/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - Ketterä
+DTSTART;VALUE=DATE-TIME:20231229T163000Z
+DTEND;VALUE=DATE-TIME:20231229T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93490@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3852/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3852/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - Hermes
+DTSTART;VALUE=DATE-TIME:20231230T150000Z
+DTEND;VALUE=DATE-TIME:20231230T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93493@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4017/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4017/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - Hokki
+DTSTART;VALUE=DATE-TIME:20231230T150000Z
+DTEND;VALUE=DATE-TIME:20231230T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93495@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3995/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3995/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - JoKP
+DTSTART;VALUE=DATE-TIME:20231230T150000Z
+DTEND;VALUE=DATE-TIME:20231230T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93496@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4086/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4086/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - FPS
+DTSTART;VALUE=DATE-TIME:20231230T150000Z
+DTEND;VALUE=DATE-TIME:20231230T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93492@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4078/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4078/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20240103T163000Z
+DTEND;VALUE=DATE-TIME:20240103T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93497@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4003/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4003/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - KOOVEE
+DTSTART;VALUE=DATE-TIME:20240104T163000Z
+DTEND;VALUE=DATE-TIME:20240104T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93494@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3914/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3914/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - IPK
+DTSTART;VALUE=DATE-TIME:20240104T163000Z
+DTEND;VALUE=DATE-TIME:20240104T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93498@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3865/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3865/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - Ketterä
+DTSTART;VALUE=DATE-TIME:20240105T163000Z
+DTEND;VALUE=DATE-TIME:20240105T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93500@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3971/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3971/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20240105T163000Z
+DTEND;VALUE=DATE-TIME:20240105T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93503@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3866/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3866/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - Hokki
+DTSTART;VALUE=DATE-TIME:20240105T163000Z
+DTEND;VALUE=DATE-TIME:20240105T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93501@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4103/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4103/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Espoo - IPK
+DTSTART;VALUE=DATE-TIME:20240105T163000Z
+DTEND;VALUE=DATE-TIME:20240105T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93502@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3877/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3877/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - KOOVEE
+DTSTART;VALUE=DATE-TIME:20240105T163000Z
+DTEND;VALUE=DATE-TIME:20240105T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93499@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4057/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4057/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - Ketterä
+DTSTART;VALUE=DATE-TIME:20240106T150000Z
+DTEND;VALUE=DATE-TIME:20240106T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93506@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4127/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4127/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - FPS
+DTSTART;VALUE=DATE-TIME:20240106T150000Z
+DTEND;VALUE=DATE-TIME:20240106T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93504@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3946/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3946/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - JoKP
+DTSTART;VALUE=DATE-TIME:20240106T150000Z
+DTEND;VALUE=DATE-TIME:20240106T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93507@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4034/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4034/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Espoo - Hokki
+DTSTART;VALUE=DATE-TIME:20240106T150000Z
+DTEND;VALUE=DATE-TIME:20240106T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93505@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4019/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4019/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - Hokki
+DTSTART;VALUE=DATE-TIME:20240109T163000Z
+DTEND;VALUE=DATE-TIME:20240109T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93508@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4091/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4091/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - Hermes
+DTSTART;VALUE=DATE-TIME:20240110T163000Z
+DTEND;VALUE=DATE-TIME:20240110T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93510@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4038/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4038/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Espoo - FPS
+DTSTART;VALUE=DATE-TIME:20240110T163000Z
+DTEND;VALUE=DATE-TIME:20240110T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93509@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4090/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4090/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - IPK
+DTSTART;VALUE=DATE-TIME:20240110T163000Z
+DTEND;VALUE=DATE-TIME:20240110T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93511@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3949/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3949/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - Hermes
+DTSTART;VALUE=DATE-TIME:20240111T163000Z
+DTEND;VALUE=DATE-TIME:20240111T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93512@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4051/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4051/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KOOVEE - K-Espoo
+DTSTART;VALUE=DATE-TIME:20240111T163000Z
+DTEND;VALUE=DATE-TIME:20240111T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93513@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4076/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4076/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20240112T163000Z
+DTEND;VALUE=DATE-TIME:20240112T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93517@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3919/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3919/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - Jokerit
+DTSTART;VALUE=DATE-TIME:20240112T163000Z
+DTEND;VALUE=DATE-TIME:20240112T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93515@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4099/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4099/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20240112T163000Z
+DTEND;VALUE=DATE-TIME:20240112T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93516@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4025/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4025/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - Ketterä
+DTSTART;VALUE=DATE-TIME:20240112T163000Z
+DTEND;VALUE=DATE-TIME:20240112T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93514@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3977/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3977/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Espoo - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20240113T150000Z
+DTEND;VALUE=DATE-TIME:20240113T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93520@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3853/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3853/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - RoKi
+DTSTART;VALUE=DATE-TIME:20240113T150000Z
+DTEND;VALUE=DATE-TIME:20240113T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93522@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4121/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4121/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - Jokerit
+DTSTART;VALUE=DATE-TIME:20240113T150000Z
+DTEND;VALUE=DATE-TIME:20240113T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93521@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3872/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3872/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:FPS - Ketterä
+DTSTART;VALUE=DATE-TIME:20240113T150000Z
+DTEND;VALUE=DATE-TIME:20240113T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93519@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4060/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4060/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20240113T150000Z
+DTEND;VALUE=DATE-TIME:20240113T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93518@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4077/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4077/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - Hermes
+DTSTART;VALUE=DATE-TIME:20240116T163000Z
+DTEND;VALUE=DATE-TIME:20240116T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93524@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4058/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4058/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - KOOVEE
+DTSTART;VALUE=DATE-TIME:20240116T163000Z
+DTEND;VALUE=DATE-TIME:20240116T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93523@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4029/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4029/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Espoo - Hermes
+DTSTART;VALUE=DATE-TIME:20240117T163000Z
+DTEND;VALUE=DATE-TIME:20240117T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93526@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4071/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4071/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - Hokki
+DTSTART;VALUE=DATE-TIME:20240117T163000Z
+DTEND;VALUE=DATE-TIME:20240117T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93525@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4067/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4067/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - RoKi
+DTSTART;VALUE=DATE-TIME:20240118T163000Z
+DTEND;VALUE=DATE-TIME:20240118T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93527@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4056/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4056/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - FPS
+DTSTART;VALUE=DATE-TIME:20240119T163000Z
+DTEND;VALUE=DATE-TIME:20240119T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93531@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4054/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4054/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20240119T163000Z
+DTEND;VALUE=DATE-TIME:20240119T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93532@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3825/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3825/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KOOVEE - RoKi
+DTSTART;VALUE=DATE-TIME:20240119T163000Z
+DTEND;VALUE=DATE-TIME:20240119T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93528@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4023/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4023/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - K-Espoo
+DTSTART;VALUE=DATE-TIME:20240119T163000Z
+DTEND;VALUE=DATE-TIME:20240119T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93530@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3870/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3870/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20240119T163000Z
+DTEND;VALUE=DATE-TIME:20240119T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93529@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4022/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4022/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - K-Espoo
+DTSTART;VALUE=DATE-TIME:20240120T150000Z
+DTEND;VALUE=DATE-TIME:20240120T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93536@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3884/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3884/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20240120T150000Z
+DTEND;VALUE=DATE-TIME:20240120T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93537@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4048/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4048/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - FPS
+DTSTART;VALUE=DATE-TIME:20240120T150000Z
+DTEND;VALUE=DATE-TIME:20240120T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93534@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4066/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4066/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - RoKi
+DTSTART;VALUE=DATE-TIME:20240120T150000Z
+DTEND;VALUE=DATE-TIME:20240120T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93535@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3997/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3997/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20240120T150000Z
+DTEND;VALUE=DATE-TIME:20240120T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93533@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4052/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4052/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - Hermes
+DTSTART;VALUE=DATE-TIME:20240123T163000Z
+DTEND;VALUE=DATE-TIME:20240123T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93538@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3861/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3861/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - FPS
+DTSTART;VALUE=DATE-TIME:20240124T163000Z
+DTEND;VALUE=DATE-TIME:20240124T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93539@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4042/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4042/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KOOVEE - Jokerit
+DTSTART;VALUE=DATE-TIME:20240124T163000Z
+DTEND;VALUE=DATE-TIME:20240124T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93540@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3907/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3907/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - IPK
+DTSTART;VALUE=DATE-TIME:20240125T163000Z
+DTEND;VALUE=DATE-TIME:20240125T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93541@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4117/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4117/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - KOOVEE
+DTSTART;VALUE=DATE-TIME:20240126T163000Z
+DTEND;VALUE=DATE-TIME:20240126T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93544@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4011/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4011/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:FPS - IPK
+DTSTART;VALUE=DATE-TIME:20240126T163000Z
+DTEND;VALUE=DATE-TIME:20240126T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93545@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3832/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3832/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20240126T163000Z
+DTEND;VALUE=DATE-TIME:20240126T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93546@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4075/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4075/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - Ketterä
+DTSTART;VALUE=DATE-TIME:20240126T163000Z
+DTEND;VALUE=DATE-TIME:20240126T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93543@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3936/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3936/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Espoo - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20240126T163000Z
+DTEND;VALUE=DATE-TIME:20240126T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93547@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3831/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3831/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20240126T163000Z
+DTEND;VALUE=DATE-TIME:20240126T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93542@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3892/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3892/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20240127T150000Z
+DTEND;VALUE=DATE-TIME:20240127T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93549@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3912/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3912/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Espoo - Jokerit
+DTSTART;VALUE=DATE-TIME:20240127T150000Z
+DTEND;VALUE=DATE-TIME:20240127T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93550@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3891/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3891/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20240127T150000Z
+DTEND;VALUE=DATE-TIME:20240127T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93551@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3857/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3857/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:FPS - Hermes
+DTSTART;VALUE=DATE-TIME:20240127T150000Z
+DTEND;VALUE=DATE-TIME:20240127T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93552@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4024/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4024/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - KOOVEE
+DTSTART;VALUE=DATE-TIME:20240127T150000Z
+DTEND;VALUE=DATE-TIME:20240127T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93548@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4101/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4101/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - KOOVEE
+DTSTART;VALUE=DATE-TIME:20240130T163000Z
+DTEND;VALUE=DATE-TIME:20240130T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93553@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4083/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4083/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:FPS - Jokerit
+DTSTART;VALUE=DATE-TIME:20240131T163000Z
+DTEND;VALUE=DATE-TIME:20240131T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065441Z
+UID:Mestis-Runkosarja-2023-game-93554@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4000/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4000/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KOOVEE - Hokki
+DTSTART;VALUE=DATE-TIME:20240201T163000Z
+DTEND;VALUE=DATE-TIME:20240201T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93556@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3959/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3959/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - IPK
+DTSTART;VALUE=DATE-TIME:20240201T163000Z
+DTEND;VALUE=DATE-TIME:20240201T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93555@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4002/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4002/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - Hermes
+DTSTART;VALUE=DATE-TIME:20240202T163000Z
+DTEND;VALUE=DATE-TIME:20240202T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93561@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3843/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3843/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - JoKP
+DTSTART;VALUE=DATE-TIME:20240202T163000Z
+DTEND;VALUE=DATE-TIME:20240202T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93560@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3834/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3834/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - Hokki
+DTSTART;VALUE=DATE-TIME:20240202T163000Z
+DTEND;VALUE=DATE-TIME:20240202T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93557@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3851/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3851/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - FPS
+DTSTART;VALUE=DATE-TIME:20240202T163000Z
+DTEND;VALUE=DATE-TIME:20240202T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93559@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4006/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4006/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - K-Espoo
+DTSTART;VALUE=DATE-TIME:20240202T163000Z
+DTEND;VALUE=DATE-TIME:20240202T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93558@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4004/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4004/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:FPS - JoKP
+DTSTART;VALUE=DATE-TIME:20240203T150000Z
+DTEND;VALUE=DATE-TIME:20240203T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93562@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4072/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4072/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20240203T150000Z
+DTEND;VALUE=DATE-TIME:20240203T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93563@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4027/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4027/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20240203T150000Z
+DTEND;VALUE=DATE-TIME:20240203T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93564@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4094/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4094/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - K-Espoo
+DTSTART;VALUE=DATE-TIME:20240203T150000Z
+DTEND;VALUE=DATE-TIME:20240203T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93566@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3848/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3848/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - Hermes
+DTSTART;VALUE=DATE-TIME:20240203T150000Z
+DTEND;VALUE=DATE-TIME:20240203T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93567@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3902/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3902/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - KOOVEE
+DTSTART;VALUE=DATE-TIME:20240203T150000Z
+DTEND;VALUE=DATE-TIME:20240203T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93565@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3966/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3966/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - Ketterä
+DTSTART;VALUE=DATE-TIME:20240206T163000Z
+DTEND;VALUE=DATE-TIME:20240206T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93568@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3833/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3833/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Espoo - KOOVEE
+DTSTART;VALUE=DATE-TIME:20240207T163000Z
+DTEND;VALUE=DATE-TIME:20240207T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93569@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3998/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3998/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - Ketterä
+DTSTART;VALUE=DATE-TIME:20240207T163000Z
+DTEND;VALUE=DATE-TIME:20240207T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93570@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4080/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4080/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - RoKi
+DTSTART;VALUE=DATE-TIME:20240208T163000Z
+DTEND;VALUE=DATE-TIME:20240208T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93571@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3841/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3841/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20240209T163000Z
+DTEND;VALUE=DATE-TIME:20240209T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93575@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3968/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3968/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - K-Espoo
+DTSTART;VALUE=DATE-TIME:20240209T163000Z
+DTEND;VALUE=DATE-TIME:20240209T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93572@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3941/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3941/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:FPS - RoKi
+DTSTART;VALUE=DATE-TIME:20240209T163000Z
+DTEND;VALUE=DATE-TIME:20240209T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93573@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4036/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4036/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - Jokerit
+DTSTART;VALUE=DATE-TIME:20240209T163000Z
+DTEND;VALUE=DATE-TIME:20240209T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93574@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3980/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3980/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KOOVEE - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20240209T163000Z
+DTEND;VALUE=DATE-TIME:20240209T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93576@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4107/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4107/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - Jokerit
+DTSTART;VALUE=DATE-TIME:20240210T150000Z
+DTEND;VALUE=DATE-TIME:20240210T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93581@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3929/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3929/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KOOVEE - FPS
+DTSTART;VALUE=DATE-TIME:20240210T150000Z
+DTEND;VALUE=DATE-TIME:20240210T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93580@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4030/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4030/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20240210T150000Z
+DTEND;VALUE=DATE-TIME:20240210T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93579@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4110/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4110/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - RoKi
+DTSTART;VALUE=DATE-TIME:20240210T150000Z
+DTEND;VALUE=DATE-TIME:20240210T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93578@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3957/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3957/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - K-Espoo
+DTSTART;VALUE=DATE-TIME:20240210T150000Z
+DTEND;VALUE=DATE-TIME:20240210T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93577@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4111/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4111/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - KOOVEE
+DTSTART;VALUE=DATE-TIME:20240213T163000Z
+DTEND;VALUE=DATE-TIME:20240213T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93582@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3901/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3901/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Espoo - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20240214T163000Z
+DTEND;VALUE=DATE-TIME:20240214T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93583@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3975/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3975/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - Hokki
+DTSTART;VALUE=DATE-TIME:20240215T163000Z
+DTEND;VALUE=DATE-TIME:20240215T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93584@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4031/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4031/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - Jokerit
+DTSTART;VALUE=DATE-TIME:20240216T163000Z
+DTEND;VALUE=DATE-TIME:20240216T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93585@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3963/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3963/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - FPS
+DTSTART;VALUE=DATE-TIME:20240216T163000Z
+DTEND;VALUE=DATE-TIME:20240216T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93587@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3982/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3982/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - JoKP
+DTSTART;VALUE=DATE-TIME:20240216T163000Z
+DTEND;VALUE=DATE-TIME:20240216T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93586@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3859/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3859/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KOOVEE - K-Espoo
+DTSTART;VALUE=DATE-TIME:20240216T163000Z
+DTEND;VALUE=DATE-TIME:20240216T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93588@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3920/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3920/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20240216T163000Z
+DTEND;VALUE=DATE-TIME:20240216T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93589@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3932/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3932/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20240217T150000Z
+DTEND;VALUE=DATE-TIME:20240217T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93594@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3908/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3908/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - FPS
+DTSTART;VALUE=DATE-TIME:20240217T150000Z
+DTEND;VALUE=DATE-TIME:20240217T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93590@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3994/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3994/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20240217T150000Z
+DTEND;VALUE=DATE-TIME:20240217T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93592@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4088/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4088/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20240217T150000Z
+DTEND;VALUE=DATE-TIME:20240217T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93593@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3996/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3996/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - IPK
+DTSTART;VALUE=DATE-TIME:20240217T150000Z
+DTEND;VALUE=DATE-TIME:20240217T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93591@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3917/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3917/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20240220T163000Z
+DTEND;VALUE=DATE-TIME:20240220T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93595@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4081/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4081/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - FPS
+DTSTART;VALUE=DATE-TIME:20240221T163000Z
+DTEND;VALUE=DATE-TIME:20240221T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93598@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4018/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4018/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20240221T163000Z
+DTEND;VALUE=DATE-TIME:20240221T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93596@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3983/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3983/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - Jokerit
+DTSTART;VALUE=DATE-TIME:20240221T163000Z
+DTEND;VALUE=DATE-TIME:20240221T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93597@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4028/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4028/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KOOVEE - Ketterä
+DTSTART;VALUE=DATE-TIME:20240222T163000Z
+DTEND;VALUE=DATE-TIME:20240222T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93599@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3888/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3888/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - JoKP
+DTSTART;VALUE=DATE-TIME:20240223T163000Z
+DTEND;VALUE=DATE-TIME:20240223T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93601@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4129/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4129/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20240223T163000Z
+DTEND;VALUE=DATE-TIME:20240223T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93600@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4039/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4039/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:FPS - Hokki
+DTSTART;VALUE=DATE-TIME:20240223T163000Z
+DTEND;VALUE=DATE-TIME:20240223T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93603@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3820/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3820/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - Jokerit
+DTSTART;VALUE=DATE-TIME:20240223T163000Z
+DTEND;VALUE=DATE-TIME:20240223T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93602@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4014/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4014/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - Hokki
+DTSTART;VALUE=DATE-TIME:20240224T150000Z
+DTEND;VALUE=DATE-TIME:20240224T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93607@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3970/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3970/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - IPK
+DTSTART;VALUE=DATE-TIME:20240224T150000Z
+DTEND;VALUE=DATE-TIME:20240224T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93605@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4105/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4105/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:FPS - KOOVEE
+DTSTART;VALUE=DATE-TIME:20240224T150000Z
+DTEND;VALUE=DATE-TIME:20240224T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93608@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4108/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4108/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - JoKP
+DTSTART;VALUE=DATE-TIME:20240224T150000Z
+DTEND;VALUE=DATE-TIME:20240224T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93604@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4062/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4062/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - K-Espoo
+DTSTART;VALUE=DATE-TIME:20240224T150000Z
+DTEND;VALUE=DATE-TIME:20240224T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93609@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3969/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3969/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20240224T150000Z
+DTEND;VALUE=DATE-TIME:20240224T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93606@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3921/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3921/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - K-Espoo
+DTSTART;VALUE=DATE-TIME:20240227T163000Z
+DTEND;VALUE=DATE-TIME:20240227T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93610@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3931/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3931/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Espoo - JoKP
+DTSTART;VALUE=DATE-TIME:20240228T163000Z
+DTEND;VALUE=DATE-TIME:20240228T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93611@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4118/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4118/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - JoKP
+DTSTART;VALUE=DATE-TIME:20240229T163000Z
+DTEND;VALUE=DATE-TIME:20240229T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93612@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4046/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4046/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - JoKP
+DTSTART;VALUE=DATE-TIME:20240301T163000Z
+DTEND;VALUE=DATE-TIME:20240301T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93616@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3950/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3950/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:FPS - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20240301T163000Z
+DTEND;VALUE=DATE-TIME:20240301T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93615@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4084/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4084/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KOOVEE - IPK
+DTSTART;VALUE=DATE-TIME:20240301T163000Z
+DTEND;VALUE=DATE-TIME:20240301T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93617@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4128/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4128/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - Hokki
+DTSTART;VALUE=DATE-TIME:20240301T163000Z
+DTEND;VALUE=DATE-TIME:20240301T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93613@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3887/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3887/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - Hermes
+DTSTART;VALUE=DATE-TIME:20240301T163000Z
+DTEND;VALUE=DATE-TIME:20240301T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93614@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4100/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4100/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - FPS
+DTSTART;VALUE=DATE-TIME:20240302T150000Z
+DTEND;VALUE=DATE-TIME:20240302T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93622@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4102/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4102/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - Jokerit
+DTSTART;VALUE=DATE-TIME:20240302T150000Z
+DTEND;VALUE=DATE-TIME:20240302T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93621@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3974/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3974/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Espoo - IPK
+DTSTART;VALUE=DATE-TIME:20240302T140000Z
+DTEND;VALUE=DATE-TIME:20240302T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93618@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4033/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4033/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - KOOVEE
+DTSTART;VALUE=DATE-TIME:20240302T150000Z
+DTEND;VALUE=DATE-TIME:20240302T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93620@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4070/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4070/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20240302T150000Z
+DTEND;VALUE=DATE-TIME:20240302T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93619@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3899/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3899/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - IPK
+DTSTART;VALUE=DATE-TIME:20240305T163000Z
+DTEND;VALUE=DATE-TIME:20240305T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93623@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4045/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4045/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - RoKi
+DTSTART;VALUE=DATE-TIME:20240306T163000Z
+DTEND;VALUE=DATE-TIME:20240306T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93625@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3828/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3828/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20240306T163000Z
+DTEND;VALUE=DATE-TIME:20240306T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93624@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3885/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3885/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - RoKi
+DTSTART;VALUE=DATE-TIME:20240307T163000Z
+DTEND;VALUE=DATE-TIME:20240307T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93629@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3900/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3900/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - JoKP
+DTSTART;VALUE=DATE-TIME:20240307T163000Z
+DTEND;VALUE=DATE-TIME:20240307T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93628@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3845/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3845/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KOOVEE - Hermes
+DTSTART;VALUE=DATE-TIME:20240307T163000Z
+DTEND;VALUE=DATE-TIME:20240307T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93630@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4089/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4089/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20240307T163000Z
+DTEND;VALUE=DATE-TIME:20240307T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93631@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4016/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4016/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:FPS - K-Espoo
+DTSTART;VALUE=DATE-TIME:20240307T163000Z
+DTEND;VALUE=DATE-TIME:20240307T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93627@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /4012/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/4012/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20240307T163000Z
+DTEND;VALUE=DATE-TIME:20240307T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T065442Z
+UID:Mestis-Runkosarja-2023-game-93626@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2023-2024/runkosarja
+ /3942/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2023-2024/run
+ kosarja/3942/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,6502 @@
+
+
+
+
+<!DOCTYPE html>
+<!--[if IE 6]><html id="ie6" lang="fi"><![endif]-->
+<!--[if IE 7]><html id="ie7" lang="fi"><![endif]-->
+<!--[if IE 8]><html id="ie8" lang="fi"><![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!--><html lang="fi"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="fb:app_id" content="732722133488972" />
+    <title>Otteluseuranta | JoKP - FPS 17.2.2024 | Mestis.fi</title>
+    
+      <meta property="og:url" content="https://mestis.fi/fi/ottelut/2023-2024/runkosarja/3994/seuranta/">
+      <meta property="og:type" content="website">
+      <meta property="og:title" content="Otteluseuranta | JoKP - FPS 17.2.2024 | Mestis.fi">
+      <meta property="og:description" content="Mestis.fi - Suomen viihdyttävintä lätkää">
+      <meta property="og:image" content="https://mestis.fi/static/liiga/common/img/mestis_badge_new.png">
+    
+    <link rel="icon" type="image/png" href="/static/favicon_mestis.v07581c48.png">
+    
+      <link href="https://fonts.googleapis.com/css?family=Exo:400,800,400italic,800italic" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="https://use.typekit.net/btm5kpr.css">
+      <link href="/static/ext/font-awesome-4.2.0/css/font-awesome.min.v0fb1bbca.css" rel="stylesheet">
+      <link href="/static/ext/flexslider-2.2.2/flexslider.v387114fe.css" rel="stylesheet">
+      <link href="/fi/background.css" rel="stylesheet">
+      <link href="/static/liiga/somewall/css/somewall.v1c09ef04.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+      <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+
+    
+  <link href="/static/liiga/site/css/page.v0c11ff50.css" rel="stylesheet">
+  <link href="/static/liiga/stats/css/game-base.v2be6fbcd.css" rel="stylesheet">
+
+  <link href="/static/liiga/stats/css/game-report.v163b66e1.css" rel="stylesheet">
+
+    
+
+    <script src="/static/ext/modernizr.js"></script>
+
+        
+        <!-- InMobi Choice. Consent Manager Tag v3.0 (for TCF 2.2) -->
+        <script type="text/javascript" async=true>
+        (function() {
+          var host = window.location.hostname;
+          var element = document.createElement('script');
+          var firstScript = document.getElementsByTagName('script')[0];
+          var url = 'https://cmp.inmobi.com'
+            .concat('/choice/', 'zHRH_j7NXRDvN', '/', host, '/choice.js?tag_version=V3');
+          var uspTries = 0;
+          var uspTriesLimit = 3;
+          element.async = true;
+          element.type = 'text/javascript';
+          element.src = url;
+
+          firstScript.parentNode.insertBefore(element, firstScript);
+
+          function makeStub() {
+            var TCF_LOCATOR_NAME = '__tcfapiLocator';
+            var queue = [];
+            var win = window;
+            var cmpFrame;
+
+            function addFrame() {
+              var doc = win.document;
+              var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+
+              if (!otherCMP) {
+                if (doc.body) {
+                  var iframe = doc.createElement('iframe');
+
+                  iframe.style.cssText = 'display:none';
+                  iframe.name = TCF_LOCATOR_NAME;
+                  doc.body.appendChild(iframe);
+                } else {
+                  setTimeout(addFrame, 5);
+                }
+              }
+              return !otherCMP;
+            }
+
+            function tcfAPIHandler() {
+              var gdprApplies;
+              var args = arguments;
+
+              if (!args.length) {
+                return queue;
+              } else if (args[0] === 'setGdprApplies') {
+                if (
+                  args.length > 3 &&
+                  args[2] === 2 &&
+                  typeof args[3] === 'boolean'
+                ) {
+                  gdprApplies = args[3];
+                  if (typeof args[2] === 'function') {
+                    args[2]('set', true);
+                  }
+                }
+              } else if (args[0] === 'ping') {
+                var retr = {
+                  gdprApplies: gdprApplies,
+                  cmpLoaded: false,
+                  cmpStatus: 'stub'
+                };
+
+                if (typeof args[2] === 'function') {
+                  args[2](retr);
+                }
+              } else {
+                if(args[0] === 'init' && typeof args[3] === 'object') {
+                  args[3] = Object.assign(args[3], { tag_version: 'V3' });
+                }
+                queue.push(args);
+              }
+            }
+
+            function postMessageEventHandler(event) {
+              var msgIsString = typeof event.data === 'string';
+              var json = {};
+
+              try {
+                if (msgIsString) {
+                  json = JSON.parse(event.data);
+                } else {
+                  json = event.data;
+                }
+              } catch (ignore) {}
+
+              var payload = json.__tcfapiCall;
+
+              if (payload) {
+                window.__tcfapi(
+                  payload.command,
+                  payload.version,
+                  function(retValue, success) {
+                    var returnMsg = {
+                      __tcfapiReturn: {
+                        returnValue: retValue,
+                        success: success,
+                        callId: payload.callId
+                      }
+                    };
+                    if (msgIsString) {
+                      returnMsg = JSON.stringify(returnMsg);
+                    }
+                    if (event && event.source && event.source.postMessage) {
+                      event.source.postMessage(returnMsg, '*');
+                    }
+                  },
+                  payload.parameter
+                );
+              }
+            }
+
+            while (win) {
+              try {
+                if (win.frames[TCF_LOCATOR_NAME]) {
+                  cmpFrame = win;
+                  break;
+                }
+              } catch (ignore) {}
+
+              if (win === window.top) {
+                break;
+              }
+              win = win.parent;
+            }
+            if (!cmpFrame) {
+              addFrame();
+              win.__tcfapi = tcfAPIHandler;
+              win.addEventListener('message', postMessageEventHandler, false);
+            }
+          };
+
+          makeStub();
+
+          var uspStubFunction = function() {
+            var arg = arguments;
+            if (typeof window.__uspapi !== uspStubFunction) {
+              setTimeout(function() {
+                if (typeof window.__uspapi !== 'undefined') {
+                  window.__uspapi.apply(window.__uspapi, arg);
+                }
+              }, 500);
+            }
+          };
+
+          var checkIfUspIsReady = function() {
+            uspTries++;
+            if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+              console.warn('USP is not accessible');
+            } else {
+              clearInterval(uspInterval);
+            }
+          };
+
+          if (typeof window.__uspapi === 'undefined') {
+            window.__uspapi = uspStubFunction;
+            var uspInterval = setInterval(checkIfUspIsReady, 6000);
+          }
+        })();
+        </script>
+        <!-- End InMobi Choice. Consent Manager Tag v3.0 (for TCF 2.2) -->
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src=https://www.googletagmanager.com/gtag/js?id=G-PBNR69Q1D0></script>
+    <script>window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
+    gtag('config', 'G-PBNR69Q1D0');</script>
+
+    
+    <script async='async' src='https://lwadm.com/lw/pbjs?pid=cff5efc9-c155-4cb1-bb92-0868e8a27d96'></script>
+    <script type='text/javascript'>
+      var lwhbim = lwhbim || {cmd:[]};
+    </script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '589177765323307');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=589177765323307&ev=PageView&noscript=1"/></noscript>
+    <!-- End Meta Pixel Code -->
+
+    
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="team-logos"><div id="team-logos" style="max-width: 1280px"><div>
+        <a href="https://www.kokkolanhermes.fi/" target="_blank"><img src="/static/liiga/common/img/team-logos/hermes.vc0382e5a.png"></a>
+      </div><div>
+        <a href="https://www.ipk.fi/" target="_blank"><img src="/static/liiga/common/img/team-logos/ipk.va9ad0be6.png"></a>
+      </div><div>
+        <a href="https://www.kettera.net/" target="_blank"><img src="/static/liiga/common/img/team-logos/kettera.v7d3a6faa.png"></a>
+      </div><div>
+        <a href="https://www.keupaht.fi/" target="_blank"><img src="/static/liiga/common/img/team-logos/keupa.vfa36865d.png"></a>
+      </div><div>
+        <a href="https://joensuunkiekkopojat.fi/" target="_blank"><img src="/static/liiga/common/img/team-logos/kiekko-pojat.v2e6af7bf.png"></a>
+      </div><div>
+        <a href="https://kiekko-vantaa.fi/" target="_blank"><img src="/static/liiga/common/img/team-logos/kiekko-vantaa.v3d7af107.png"></a>
+      </div><div>
+        <a href="https://pyryhockey.com/" target="_blank"><img src="/static/liiga/common/img/team-logos/pyry.v43fa5859.png"></a>
+      </div><div>
+        <a href="https://www.rokihockey.fi/" target="_blank"><img src="/static/liiga/common/img/team-logos/roki_new.v364bd5ec.png"></a>
+      </div><div>
+        <a href="https://www.tutohockey.fi/" target="_blank"><img src="/static/liiga/common/img/team-logos/tuto.v00912d18.png"></a>
+      </div></div>
+</div>
+      
+      <div id="mainmenu">
+        <div class="menubar">
+          
+  <button class="toggle-audio">
+    <i class="fa fa-bell" title="Äänet päällä"></i>
+    <i class="fa fa-bell-slash" title="Äänet pois päältä"></i>
+  </button>
+
+          
+          <div class="mobileLanguageSelect">
+            
+<span>
+  
+  
+    <a id="fimobile" href="/fi/" onClick="
+  document.cookie = 'django_language=fi;path=/;expires=false';
+">FI</a>
+  
+ | 
+  
+    <a id="enmobile" href="/en/" onClick="
+  document.cookie = 'django_language=en;path=/;expires=false';
+">EN</a>
+  
+  
+</span>
+<script type="text/javascript">
+  // Fetches the index of a cookie based on a name
+  function cookieIndex(cookie_name) {
+    var cookies = document.cookie.split(";")
+    var index = -1;
+
+    for(var i = 0; i<cookies.length; i++){
+      if(cookies[i].includes(cookie_name)){
+      index = i
+      }
+    }
+    return index;
+  }
+
+  function elementWithIdExists(idToSearch){
+    return !!document.getElementById(idToSearch);
+  }
+
+  var cookies=document.cookie.split(";")
+  // If no django_language cookie has been set, set it to default.
+  if(cookieIndex("django_language")==-1){
+    document.cookie = 'django_language=fi;path=/;expires=false';
+  }
+
+  var langselectmobile;
+  var langselectdesktop;
+
+  // Determine, if the desktop or mobile version of the site is in use.
+  // Based on that, fetch language buttons
+  if (cookies[cookieIndex("django_language")]) {
+    if(elementWithIdExists(cookies[cookieIndex("django_language")].split("=")[1].toString()+""+"mobile")){
+      var langselectmobile = document.getElementById(cookies[cookieIndex("django_language")].split("=")[1].toString()+""+"mobile")
+    }
+
+    if(elementWithIdExists(cookies[cookieIndex("django_language")].split("=")[1].toString()+""+"desktop")){
+      var langselectdesktop = document.getElementById(cookies[cookieIndex("django_language")].split("=")[1].toString()+""+"desktop")
+    }
+  }
+
+  // Bold and underline the active language
+  if(langselectdesktop != null){
+    langselectdesktop.style.textDecoration="underline";
+    langselectdesktop.style.fontWeight="bold";
+  }
+  if(langselectmobile != null){
+    langselectmobile.style.textDecoration="underline";
+    langselectmobile.style.fontWeight="bold";
+  }
+
+
+
+  // Update language selection buttons if language has been changed from the URL
+
+  window.onload = function (){
+    //Fetch current url and update cookie based on language code within it
+
+    var tmp = window.location.href
+    var location = tmp.split("/")
+    for(var l of location){
+      if(l == "en"){
+      document.cookie = 'django_language=en;path=/;expires=false';
+      }else if (l == "fi"){
+      document.cookie = 'django_language=fi;path=/;expires=false';
+      }
+    }
+
+    // Bold and underline language selection button based on active language
+    var cookies=document.cookie.split(";");
+    var currentLang = cookies[cookieIndex("django_language")].split("=")[1].toString();
+
+    if(currentLang == "fi"){
+      if(elementWithIdExists(currentLang+""+"mobile")){
+        var langselectmobilefi = document.getElementById(currentLang+"mobile")
+        var langselectmobileen = document.getElementById("en"+"mobile")
+
+        langselectmobilefi.style.textDecoration="underline";
+        langselectmobilefi.style.fontWeight="bold";
+        langselectmobileen.style.textDecoration="none";
+        langselectmobileen.style.fontWeight="normal";
+
+      }
+      if(elementWithIdExists(currentLang+""+"desktop")){
+        var langselectdesktopfi = document.getElementById(currentLang+"desktop")
+        var langselectdesktopen = document.getElementById("en"+"desktop")
+
+        langselectdesktopfi.style.textDecoration="underline";
+        langselectdesktopfi.style.fontWeight="bold";
+        langselectdesktopen.style.textDecoration="none";
+        langselectdesktopen.style.fontWeight="normal";
+
+      }
+    } else if(currentLang == "en") {
+     if(elementWithIdExists(currentLang+""+"mobile")){
+        var langselectmobileen = document.getElementById(currentLang+"mobile");
+        var langselectmobilefi = document.getElementById("fi"+"mobile");
+        langselectmobileen.style.textDecoration="underline";
+        langselectmobileen.style.fontWeight="bold";
+        langselectmobilefi.style.textDecoration="none";
+        langselectmobilefi.style.fontWeight="normal";
+      }
+      if(elementWithIdExists(currentLang+""+"desktop")){
+        var langselectdesktopen = document.getElementById(currentLang+"desktop");
+        var langselectdesktopfi = document.getElementById("fi"+"desktop");
+
+        langselectdesktopen.style.textDecoration="underline";
+        langselectdesktopen.style.fontWeight="bold";
+        langselectdesktopfi.style.textDecoration="none";
+        langselectdesktopfi.style.fontWeight="normal";
+
+      }
+    }
+  }
+</script>
+
+          </div>
+          <button class="toggle-menu"><i class="fa fa-bars"></i></button>
+        </div>
+
+        
+        <div class="logo ">
+          <a href="/fi/"><img src="/static/liiga/common/img/liiga_logo.v84079fa5.png"></a>
+        </div>
+        <ul class="menu menu-">
+          <li><a class="uutiset" href="/fi/uutiset/">Uutiset</a></li>
+          <li><a class="ottelut" href="/fi/ottelut/">Ottelut</a></li>
+          <li class="has-submenu"><p class="tilastot"><span>Tilastot<span class="menu-caret">&nbsp;<i class="fa fa-caret-right"></i></span></span></p>
+            <ul class="submenu">
+              <li><a href="/fi/tilastot/joukkueet/">Joukkuetilastot</a></li>
+              <li><a href="/fi/tilastot/pelaajat/">Pelaajatilastot</a></li>
+              
+              <li><a href="/fi/tilastot/tyokalut/">Sarjataulukkolaskuri</a></li>
+           </ul>
+          </li>
+          <li><a class="pelaajat" href="/fi/pelaajat/">Pelaajat</a></li>
+          <li class="has-submenu"><p class="joukkueet"><span>Joukkueet<span class="menu-caret">&nbsp;<i class="fa fa-caret-right"></i></span></span></p>
+
+            <ul class="submenu">
+              <li><a href="/fi/joukkueet/hermes/" >Hermes</a></li><li><a href="/fi/joukkueet/ipk/" >IPK</a></li><li><a href="/fi/joukkueet/kettera/" >Ketterä</a></li><li><a href="/fi/joukkueet/keupa-ht/" >KeuPa HT</a></li><li><a href="/fi/joukkueet/jokp/" >Kiekko-Pojat</a></li><li><a href="/fi/joukkueet/k-vantaa/" >Kiekko-Vantaa</a></li><li><a href="/fi/joukkueet/pyry/" >Pyry Hockey</a></li><li><a href="/fi/joukkueet/roki/" >RoKi</a></li><li><a href="/fi/joukkueet/tuto-hockey/" >TUTO Hockey</a></li>
+            </ul>
+          </li>
+          <li><a class="uutiset" target="_blank" href="/kumppanuus/">Kumppanuus</a></li>
+          <li><a class="uutiset" target="_blank" href="https://hengenpelastajaliiga.fi/">Hengenpelastajaliiga</a></li>
+          <li class="has-submenu"><p class="liiga"><span>Mestis<span class="menu-caret">&nbsp;<i class="fa fa-caret-right"></i></span></span></p>
+            <ul class="submenu">
+              
+              
+              
+                
+                
+                
+                  
+                    <li><a href="/fi/mestis/kokoonpanosaannot">Kokoonpanosäännöt</a></li>
+                      
+                  
+                
+                  
+                    <li><a href="/fi/mestis/kurinpitosaannot">Kurinpitosäännöt</a></li>
+                      
+                  
+                
+                  
+                    <li><a href="/fi/mestis/lisenssiehdot">Lisenssiehdot</a></li>
+                      
+                  
+                
+                  
+                    <li><a href="/fi/mestis/pelaamistapa">Pelaamistapa</a></li>
+                      
+                  
+                
+                  
+                    <li><a href="/fi/mestis/vapaakortit">Vapaakortit</a></li>
+                      
+                  
+                
+                  
+                    <li><a href="/fi/mestis/yhteystiedot">Yhteystiedot</a></li>
+                      
+                  
+                
+
+                
+                
+              
+            </ul>
+          </li>
+        </ul>
+        <div class="languageSelect">
+          
+<span>
+  
+  
+    <a id="fidesktop" href="/fi/" onClick="
+  document.cookie = 'django_language=fi;path=/;expires=false';
+">FI</a>
+  
+ | 
+  
+    <a id="endesktop" href="/en/" onClick="
+  document.cookie = 'django_language=en;path=/;expires=false';
+">EN</a>
+  
+  
+</span>
+<script type="text/javascript">
+  // Fetches the index of a cookie based on a name
+  function cookieIndex(cookie_name) {
+    var cookies = document.cookie.split(";")
+    var index = -1;
+
+    for(var i = 0; i<cookies.length; i++){
+      if(cookies[i].includes(cookie_name)){
+      index = i
+      }
+    }
+    return index;
+  }
+
+  function elementWithIdExists(idToSearch){
+    return !!document.getElementById(idToSearch);
+  }
+
+  var cookies=document.cookie.split(";")
+  // If no django_language cookie has been set, set it to default.
+  if(cookieIndex("django_language")==-1){
+    document.cookie = 'django_language=fi;path=/;expires=false';
+  }
+
+  var langselectmobile;
+  var langselectdesktop;
+
+  // Determine, if the desktop or mobile version of the site is in use.
+  // Based on that, fetch language buttons
+  if (cookies[cookieIndex("django_language")]) {
+    if(elementWithIdExists(cookies[cookieIndex("django_language")].split("=")[1].toString()+""+"mobile")){
+      var langselectmobile = document.getElementById(cookies[cookieIndex("django_language")].split("=")[1].toString()+""+"mobile")
+    }
+
+    if(elementWithIdExists(cookies[cookieIndex("django_language")].split("=")[1].toString()+""+"desktop")){
+      var langselectdesktop = document.getElementById(cookies[cookieIndex("django_language")].split("=")[1].toString()+""+"desktop")
+    }
+  }
+
+  // Bold and underline the active language
+  if(langselectdesktop != null){
+    langselectdesktop.style.textDecoration="underline";
+    langselectdesktop.style.fontWeight="bold";
+  }
+  if(langselectmobile != null){
+    langselectmobile.style.textDecoration="underline";
+    langselectmobile.style.fontWeight="bold";
+  }
+
+
+
+  // Update language selection buttons if language has been changed from the URL
+
+  window.onload = function (){
+    //Fetch current url and update cookie based on language code within it
+
+    var tmp = window.location.href
+    var location = tmp.split("/")
+    for(var l of location){
+      if(l == "en"){
+      document.cookie = 'django_language=en;path=/;expires=false';
+      }else if (l == "fi"){
+      document.cookie = 'django_language=fi;path=/;expires=false';
+      }
+    }
+
+    // Bold and underline language selection button based on active language
+    var cookies=document.cookie.split(";");
+    var currentLang = cookies[cookieIndex("django_language")].split("=")[1].toString();
+
+    if(currentLang == "fi"){
+      if(elementWithIdExists(currentLang+""+"mobile")){
+        var langselectmobilefi = document.getElementById(currentLang+"mobile")
+        var langselectmobileen = document.getElementById("en"+"mobile")
+
+        langselectmobilefi.style.textDecoration="underline";
+        langselectmobilefi.style.fontWeight="bold";
+        langselectmobileen.style.textDecoration="none";
+        langselectmobileen.style.fontWeight="normal";
+
+      }
+      if(elementWithIdExists(currentLang+""+"desktop")){
+        var langselectdesktopfi = document.getElementById(currentLang+"desktop")
+        var langselectdesktopen = document.getElementById("en"+"desktop")
+
+        langselectdesktopfi.style.textDecoration="underline";
+        langselectdesktopfi.style.fontWeight="bold";
+        langselectdesktopen.style.textDecoration="none";
+        langselectdesktopen.style.fontWeight="normal";
+
+      }
+    } else if(currentLang == "en") {
+     if(elementWithIdExists(currentLang+""+"mobile")){
+        var langselectmobileen = document.getElementById(currentLang+"mobile");
+        var langselectmobilefi = document.getElementById("fi"+"mobile");
+        langselectmobileen.style.textDecoration="underline";
+        langselectmobileen.style.fontWeight="bold";
+        langselectmobilefi.style.textDecoration="none";
+        langselectmobilefi.style.fontWeight="normal";
+      }
+      if(elementWithIdExists(currentLang+""+"desktop")){
+        var langselectdesktopen = document.getElementById(currentLang+"desktop");
+        var langselectdesktopfi = document.getElementById("fi"+"desktop");
+
+        langselectdesktopen.style.textDecoration="underline";
+        langselectdesktopen.style.fontWeight="bold";
+        langselectdesktopfi.style.textDecoration="none";
+        langselectdesktopfi.style.fontWeight="normal";
+
+      }
+    }
+  }
+</script>
+
+        </div>
+
+      </div>
+      
+  
+    
+  <div id="top-ad">
+    <div id='mestis_mestis-fi-top-hb'></div>
+    <div id='mestis_mestis-fi-mobile-top'></div>
+    <script>
+      var isMobile = (window.innerWidth ||
+      document.documentElement.clientWidth ||
+      document.body.clientWidth) < 1000;
+      lwhbim.cmd.push(function() {
+        lwhbim.loadAd({tagId: isMobile ? 'mestis_mestis-fi-mobile-top' : 'mestis_mestis-fi-top-hb'});
+      });
+    </script>
+  </div>
+
+  
+
+
+      
+  <div id="page">
+    
+    
+    
+    
+    
+    <div class="menu menu-count3">
+      
+      <a class="kokoonpanot " href="/fi/ottelut/2023-2024/runkosarja/3994/kokoonpanot/">Kokoonpanot</a>
+      <a class="seuranta active" href="/fi/ottelut/2023-2024/runkosarja/3994/seuranta/">Seuranta</a>
+      
+        <a class="tilastot " href="/fi/ottelut/2023-2024/runkosarja/3994/tilastot/">Tilastot</a>
+        
+        
+      
+      
+      <button class="toggle-audio">
+        <i class="fa fa-bell" style="font-weight: 900;"></i>
+        <i class="fa fa-bell-slash" style="font-weight: 900;"></i>
+      </button>
+    </div>
+    
+  <div class="content-wrapper">
+    <div class="stats-wrapper">
+      <div class="stats">
+        
+        
+
+
+
+
+
+<link href="/static/liiga/stats/css/lightbox.v8ce3cf40.css" rel="stylesheet">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="head started finished">
+    <div class="home" >
+      <div class="block-container">
+        
+  
+    
+      <img  src="/media/team-logos/kiekkopojat.png.200x200_q85.png">
+    
+  
+
+        
+          JoKP
+        
+      </div>
+    </div>
+    <div class="info">
+      <p class="score">
+        5
+        &ndash;
+        4
+      </p>
+      <p>(0-1, 3-2, 1-1, 1-0)</p>
+      <p class="status">63:22 - Päättynyt (JA)&nbsp;<i class="fa fa-caret-down" title="Näytä aika laskevasti"></i></p>
+      <p class="status-reverse">63:22 - Päättynyt (JA)&nbsp;<i class="fa fa-caret-up" title="Näytä aika nousevasti"></i></p>
+      <p>Yleisöä 150</p>
+      
+      
+    </div>
+    <div class="away">
+      <div class="block-container">
+        
+  
+    
+      <img  src="/media/team-logos/fps_new.png.200x200_q85.png">
+    
+  
+
+        
+          FPS
+        
+      </div>
+    </div>
+    
+  </div>
+
+
+
+  <div class="game-finished">
+  </div>
+
+
+
+
+<div id="shade"></div>
+<div class="table">
+  <table>
+    
+      
+      <tr class="period">
+        <td class="period" colspan="3">1. erä</td>
+      </tr>
+      
+        
+  
+  
+  <tr class="odd">
+  
+  <td class="home">
+    <span class="full">#19 </span><a href="/fi/pelaajat/30985519/isiguzo-patrick">Patrick Isiguzo</a> 2 min poikittainen maila
+  </td>
+
+
+
+  
+
+    <td class="time">
+    <i>00:54</i>
+    
+    
+
+
+    </td>
+    <td class="away"></td>
+
+
+  </tr>
+
+      
+        
+  
+  
+  <tr class="even">
+  
+  <td class="home"></td>
+    <td class="time">
+    <i>01:56</i>
+    
+    
+    
+    
+
+
+    </td>
+  
+  <td class="away">
+    <strong><span class="full">#41 </span><a href="/fi/pelaajat/33434096/palo-tomi">Tomi Palo</a>  (3) 0-1 YV</strong><br><span class="full">#91 </span><a href="/fi/pelaajat/30234082/virtanen-joonas">Joonas Virtanen</a> (4) , <span class="full">#30 </span><a href="/fi/pelaajat/30131813/makela-alex">Alex Mäkelä</a> (1) 
+  </td>
+
+
+
+  
+  </tr>
+
+      
+        
+  
+  
+  <tr class="odd">
+  
+  <td class="home"></td>
+    <td class="time">
+    <i>04:22</i>
+    
+    
+
+
+    </td>
+  
+  <td class="away">
+    <span class="full">#55 </span><a href="/fi/pelaajat/30968248/lahtinen-oskari">Oskari Lahtinen</a> 2 min korkea maila
+  </td>
+
+
+
+  
+  </tr>
+
+      
+        
+  
+  
+  <tr class="even">
+  
+  <td class="home"></td>
+    <td class="time">
+    <i>14:38</i>
+    
+    
+
+
+    </td>
+  
+  <td class="away">
+    <span class="full">#22 </span><a href="/fi/pelaajat/60766514/moreno-thomas">Thomas Moreno</a> 2 min kiinnipitäminen
+  </td>
+
+
+
+  
+  </tr>
+
+      
+    
+      
+      <tr class="period">
+        <td class="period" colspan="3">2. erä</td>
+      </tr>
+      
+        
+  
+  
+  <tr class="odd">
+  
+  <td class="home"></td>
+    <td class="time">
+    <i>23:12</i>
+    
+    
+
+
+    </td>
+  
+  <td class="away">
+    <span class="full">#55 </span><a href="/fi/pelaajat/30968248/lahtinen-oskari">Oskari Lahtinen</a> 2 min kiinnipitäminen
+  </td>
+
+
+
+  
+  </tr>
+
+      
+        
+  
+  
+  <tr class="even">
+  
+  <td class="home">
+    <strong><span class="full">#26 </span><a href="/fi/pelaajat/40015226/hattunen-miska">Miska Hattunen</a>  (10) 1-1 YV</strong><br><span class="full">#20 </span><a href="/fi/pelaajat/33464927/nieminen-kim">Kim Nieminen</a> (2) , <span class="full">#86 </span><a href="/fi/pelaajat/33388168/kombe-kristjan">Kristjan Kombe</a> (29) 
+  </td>
+
+
+
+  
+
+    <td class="time">
+    <i>23:25</i>
+    
+    
+    
+    
+
+
+    </td>
+    <td class="away"></td>
+
+
+  </tr>
+
+      
+        
+  
+  
+  <tr class="odd">
+  
+  <td class="home">
+    <span class="full">#63 </span><a href="/fi/pelaajat/60794462/dvorak-adam">Adam Dvorak</a> 2 min väkivaltaisuus
+  </td>
+
+
+
+  
+
+    <td class="time">
+    <i>23:25</i>
+    
+    
+
+
+    </td>
+    <td class="away"></td>
+
+
+  </tr>
+
+      
+        
+  
+  
+  <tr class="even">
+  
+  <td class="home"></td>
+    <td class="time">
+    <i>23:25</i>
+    
+    
+
+
+    </td>
+  
+  <td class="away">
+    <span class="full">#4 </span><a href="/fi/pelaajat/60823808/martin-bryce">Bryce Martin</a> 2 min väkivaltaisuus
+  </td>
+
+
+
+  
+  </tr>
+
+      
+        
+  
+  
+  <tr class="odd">
+  
+  <td class="home"></td>
+    <td class="time">
+    <i>26:16</i>
+    
+    
+
+
+    </td>
+  
+  <td class="away">
+    <span class="full">#4 </span><a href="/fi/pelaajat/60823808/martin-bryce">Bryce Martin</a> 2 min polvitaklaus
+  </td>
+
+
+
+  
+  </tr>
+
+      
+        
+  
+  
+  <tr class="even">
+  
+  <td class="home"></td>
+    <td class="time">
+    <i>26:16</i>
+    
+    
+
+
+    </td>
+  
+  <td class="away">
+    <span class="full">#4 </span><a href="/fi/pelaajat/60823808/martin-bryce">Bryce Martin</a> 10 min polvitaklaus - kã¤ytã¶srangaistus (<span class="full">#44 </span><a href="/fi/pelaajat/60826101/jeffers-jack">Jack Jeffers</a>)
+  </td>
+
+
+
+  
+  </tr>
+
+      
+        
+  
+  
+  <tr class="odd">
+  
+  <td class="home">
+    <strong><span class="full">#72 </span><a href="/fi/pelaajat/32742637/viitala-jasper">Jasper Viitala</a>  (6) 2-1 YV</strong><br><span class="full">#14 </span><a href="/fi/pelaajat/60763275/sedlacek-ivo">Ivo Sedlacek</a> (15) , <span class="full">#86 </span><a href="/fi/pelaajat/33388168/kombe-kristjan">Kristjan Kombe</a> (30) 
+  </td>
+
+
+
+  
+
+    <td class="time">
+    <i>27:46</i>
+    
+    
+    
+    
+
+
+    </td>
+    <td class="away"></td>
+
+
+  </tr>
+
+      
+        
+  
+  
+  <tr class="even">
+  
+  <td class="home"></td>
+    <td class="time">
+    <i>32:50</i>
+    
+    
+    
+    
+
+
+    </td>
+  
+  <td class="away">
+    <strong><span class="full">#19 </span><a href="/fi/pelaajat/33219651/fagerstrom-juuso">Juuso Fagerström</a>  (4) 2-2</strong><br><span class="full">#13 </span><a href="/fi/pelaajat/40054264/nurmi-konsta">Konsta Nurmi</a> (2) , <span class="full">#96 </span><a href="/fi/pelaajat/60823812/zahradnik-samuel">Samuel Zahradnik</a> (1) 
+  </td>
+
+
+
+  
+  </tr>
+
+      
+        
+  
+  
+  <tr class="odd">
+  
+  <td class="home">
+    <span class="full">#95 </span><a href="/fi/pelaajat/40125780/muhonen-niilopekka">Niilopekka Muhonen</a> 2 min kampitus
+  </td>
+
+
+
+  
+
+    <td class="time">
+    <i>33:07</i>
+    
+    
+
+
+    </td>
+    <td class="away"></td>
+
+
+  </tr>
+
+      
+        
+  
+  
+  <tr class="even">
+  
+  <td class="home"></td>
+    <td class="time">
+    <i>35:09</i>
+    
+    
+    
+    
+
+
+    </td>
+  
+  <td class="away">
+    <strong><span class="full">#12 </span><a href="/fi/pelaajat/31761541/ohtonen-jere">Jere Ohtonen</a>  (4) 2-3</strong><br><span class="full">#16 </span><a href="/fi/pelaajat/60814429/skoleski-devon">Devon Skoleski</a> (4) , <span class="full">#86 </span><a href="/fi/pelaajat/29990104/virtanen-samuli">Samuli Virtanen</a> (4) 
+  </td>
+
+
+
+  
+  </tr>
+
+      
+        
+  
+  
+  <tr class="odd">
+  
+  <td class="home">
+    <span class="full">#77 </span><a href="/fi/pelaajat/31556002/romakkaniemi-samu">Samu Romakkaniemi</a> 2 min pään tai niskan alueelle kohdistuva taklaus
+  </td>
+
+
+
+  
+
+    <td class="time">
+    <i>35:46</i>
+    
+    
+
+
+    </td>
+    <td class="away"></td>
+
+
+  </tr>
+
+      
+        
+  
+  
+  <tr class="even">
+  
+  <td class="home">
+    <span class="full">#77 </span><a href="/fi/pelaajat/31556002/romakkaniemi-samu">Samu Romakkaniemi</a> 10 min pään tai niskan alueelle kohdistuva taklaus - kã¤ytã¶srangaistus (<span class="full">#14 </span><a href="/fi/pelaajat/60763275/sedlacek-ivo">Ivo Sedlacek</a>)
+  </td>
+
+
+
+  
+
+    <td class="time">
+    <i>35:46</i>
+    
+    
+
+
+    </td>
+    <td class="away"></td>
+
+
+  </tr>
+
+      
+        
+  
+  
+  <tr class="odd">
+  
+  <td class="home">
+    <strong><span class="full">#19 </span><a href="/fi/pelaajat/30985519/isiguzo-patrick">Patrick Isiguzo</a>  (5) 3-3</strong><br><span class="full">#14 </span><a href="/fi/pelaajat/60763275/sedlacek-ivo">Ivo Sedlacek</a> (16) , <span class="full">#96 </span><a href="/fi/pelaajat/60778797/bohm-martin">Martin Böhm</a> (6) 
+  </td>
+
+
+
+  
+
+    <td class="time">
+    <i>39:00</i>
+    
+    
+    
+    
+
+
+    </td>
+    <td class="away"></td>
+
+
+  </tr>
+
+      
+    
+      
+      <tr class="period">
+        <td class="period" colspan="3">3. erä</td>
+      </tr>
+      
+        
+  
+  
+  <tr class="odd">
+  
+  <td class="home">
+    <strong><span class="full">#13 </span><a href="/fi/pelaajat/31568870/karuvaara-eppu">Eppu Karuvaara</a>  (8) 4-3</strong><br><span class="full">#19 </span><a href="/fi/pelaajat/30985519/isiguzo-patrick">Patrick Isiguzo</a> (12) , <span class="full">#17 </span><a href="/fi/pelaajat/31487430/kovaniemi-taneli">Taneli Kovaniemi</a> (5) 
+  </td>
+
+
+
+  
+
+    <td class="time">
+    <i>41:30</i>
+    
+    
+    
+    
+
+
+    </td>
+    <td class="away"></td>
+
+
+  </tr>
+
+      
+        
+  
+  
+  <tr class="even">
+  
+  <td class="home">
+    <span class="full">#74 </span><a href="/fi/pelaajat/31995760/loukasvuori-roope">Roope Loukasvuori</a> 2 min koukkaaminen
+  </td>
+
+
+
+  
+
+    <td class="time">
+    <i>44:49</i>
+    
+    
+
+
+    </td>
+    <td class="away"></td>
+
+
+  </tr>
+
+      
+        
+  
+  
+  <tr class="odd">
+  
+  <td class="home">
+    Joukkuerangaistus 2 min liian monta pelaajaa jäällä (<span class="full">#41 </span><a href="/fi/pelaajat/40152268/vaittinen-valtteri">Valtteri Vaittinen</a>)
+  </td>
+
+
+
+  
+
+    <td class="time">
+    <i>49:57</i>
+    
+    
+
+
+    </td>
+    <td class="away"></td>
+
+
+  </tr>
+
+      
+        
+  
+  
+  <tr class="even">
+  
+  <td class="home"></td>
+    <td class="time">
+    <i>53:59</i>
+    
+    
+
+
+    </td>
+  
+  <td class="away">
+    <span class="full">#4 </span><a href="/fi/pelaajat/60823808/martin-bryce">Bryce Martin</a> 2 min kiinnipitäminen
+  </td>
+
+
+
+  
+  </tr>
+
+      
+        
+  
+  
+  <tr class="odd">
+  
+  <td class="home">
+    <span class="full">#20 </span><a href="/fi/pelaajat/33464927/nieminen-kim">Kim Nieminen</a> 2 min estäminen
+  </td>
+
+
+
+  
+
+    <td class="time">
+    <i>56:22</i>
+    
+    
+
+
+    </td>
+    <td class="away"></td>
+
+
+  </tr>
+
+      
+        
+  
+  
+  <tr class="even">
+  
+  <td class="home"></td>
+    <td class="time">
+    <i>57:01</i>
+    
+    
+
+
+    </td>
+  
+  <td class="away">
+    FPS aikalisä
+  </td>
+
+
+
+  
+  </tr>
+
+      
+        
+  
+  
+  <tr class="odd">
+  
+  <td class="home"></td>
+    <td class="time">
+    <i>57:01</i>
+    
+    
+
+
+    </td>
+  
+  <td class="away">
+    Maalivahti ulos: <span class="full">#30 </span><a href="/fi/pelaajat/30131813/makela-alex">Alex Mäkelä</a>
+  </td>
+
+
+
+  
+  </tr>
+
+      
+        
+  
+  
+  <tr class="even">
+  
+  <td class="home">
+    <span class="full">#4 </span><a href="/fi/pelaajat/40046505/tapio-mikael">Mikael Tapio</a> 2 min korkea maila
+  </td>
+
+
+
+  
+
+    <td class="time">
+    <i>57:01</i>
+    
+    
+
+
+    </td>
+    <td class="away"></td>
+
+
+  </tr>
+
+      
+        
+  
+  
+  <tr class="odd">
+  
+  <td class="home"></td>
+    <td class="time">
+    <i>57:21</i>
+    
+    
+    
+    
+
+
+    </td>
+  
+  <td class="away">
+    <strong><span class="full">#19 </span><a href="/fi/pelaajat/33219651/fagerstrom-juuso">Juuso Fagerström</a>  (5) 4-4 YV2, IM</strong><br><span class="full">#4 </span><a href="/fi/pelaajat/60823808/martin-bryce">Bryce Martin</a> (2) , <span class="full">#44 </span><a href="/fi/pelaajat/60826101/jeffers-jack">Jack Jeffers</a> (3) 
+  </td>
+
+
+
+  
+  </tr>
+
+      
+        
+  
+  
+  <tr class="even">
+  
+  <td class="home"></td>
+    <td class="time">
+    <i>57:21</i>
+    
+    
+
+
+    </td>
+  
+  <td class="away">
+    Maalivahti sisään: <span class="full">#30 </span><a href="/fi/pelaajat/30131813/makela-alex">Alex Mäkelä</a>
+  </td>
+
+
+
+  
+  </tr>
+
+      
+        
+  
+  
+  <tr class="odd">
+  
+  <td class="home">
+    JoKP aikalisä
+  </td>
+
+
+
+  
+
+    <td class="time">
+    <i>59:05</i>
+    
+    
+
+
+    </td>
+    <td class="away"></td>
+
+
+  </tr>
+
+      
+        
+  
+  
+  <tr class="even">
+  
+  <td class="home"></td>
+    <td class="time">
+    <i>59:05</i>
+    
+    
+
+
+    </td>
+  
+  <td class="away">
+    Joukkuerangaistus 2 min liian monta pelaajaa jäällä (<span class="full">#33 </span><a href="/fi/pelaajat/31607883/pasonen-otto">Otto Pasonen</a>)
+  </td>
+
+
+
+  
+  </tr>
+
+      
+        
+  
+  
+  <tr class="odd">
+  
+  <td class="home">
+    <span class="full">#88 </span><a href="/fi/pelaajat/32269699/koivistoinen-osku">Osku Koivistoinen</a> 2 min koukkaaminen
+  </td>
+
+
+
+  
+
+    <td class="time">
+    <i>59:38</i>
+    
+    
+
+
+    </td>
+    <td class="away"></td>
+
+
+  </tr>
+
+      
+    
+      
+      <tr class="period">
+        <td class="period" colspan="3">Jatkoaika</td>
+      </tr>
+      
+        
+  
+  
+  <tr class="odd">
+  
+  <td class="home"></td>
+    <td class="time">
+    <i>61:44</i>
+    
+    
+
+
+    </td>
+  
+  <td class="away">
+    <span class="full">#44 </span><a href="/fi/pelaajat/60826101/jeffers-jack">Jack Jeffers</a> 2 min huitominen
+  </td>
+
+
+
+  
+  </tr>
+
+      
+        
+  
+  
+  <tr class="even">
+  
+  <td class="home">
+    <strong><span class="full">#14 </span><a href="/fi/pelaajat/60763275/sedlacek-ivo">Ivo Sedlacek</a>  (13) 5-4 YV, VM</strong><br><span class="full">#20 </span><a href="/fi/pelaajat/33464927/nieminen-kim">Kim Nieminen</a> (3) , <span class="full">#26 </span><a href="/fi/pelaajat/40015226/hattunen-miska">Miska Hattunen</a> (15) 
+  </td>
+
+
+
+  
+
+    <td class="time">
+    <i>63:22</i>
+    
+    
+    
+    
+
+
+    </td>
+    <td class="away"></td>
+
+
+  </tr>
+
+      
+    
+    
+    
+      <tr class="period">
+        <td class="period" colspan="3">Maalivahdit</td>
+      </tr>
+      
+        <tr class="odd">
+          <td class="home">
+            
+  #90
+  
+  <a href="/fi/pelaajat/40107430/vinni-eemil">Eemil Vinni</a>
+  5+9+3+0=17
+  
+
+          </td>
+          <td class="time">
+            
+              Torjunnat
+            
+          </td>
+          <td class="away">
+            
+  #30
+  
+  <a href="/fi/pelaajat/30131813/makela-alex">Alex Mäkelä</a>
+  13+11+15+4=43
+  
+    <br>(pois:
+      57:01-57:21)
+  
+
+          </td>
+        </tr>
+      
+      <tr class="period">
+
+        <td class="period" colspan="3">Pisteet</td>
+
+      </tr>
+      
+        <tr class="odd">
+          <td class="home">
+            
+              #14
+              
+  <a href="/fi/pelaajat/60763275/sedlacek-ivo">Ivo Sedlacek</a>
+              1+2=3
+            
+          </td>
+          <td class="time">
+            
+              Pisteet
+            
+          </td>
+          <td class="away">
+            
+              #19
+              
+  <a href="/fi/pelaajat/33219651/fagerstrom-juuso">Juuso Fagerström</a>
+              2+0=2
+            
+          </td>
+        </tr>
+      
+        <tr class="even">
+          <td class="home">
+            
+              #26
+              
+  <a href="/fi/pelaajat/40015226/hattunen-miska">Miska Hattunen</a>
+              1+1=2
+            
+          </td>
+          <td class="time">
+            
+          </td>
+          <td class="away">
+            
+              #12
+              
+  <a href="/fi/pelaajat/31761541/ohtonen-jere">Jere Ohtonen</a>
+              1+0=1
+            
+          </td>
+        </tr>
+      
+        <tr class="odd">
+          <td class="home">
+            
+              #19
+              
+  <a href="/fi/pelaajat/30985519/isiguzo-patrick">Patrick Isiguzo</a>
+              1+1=2
+            
+          </td>
+          <td class="time">
+            
+          </td>
+          <td class="away">
+            
+              #41
+              
+  <a href="/fi/pelaajat/33434096/palo-tomi">Tomi Palo</a>
+              1+0=1
+            
+          </td>
+        </tr>
+      
+        <tr class="even">
+          <td class="home">
+            
+              #86
+              
+  <a href="/fi/pelaajat/33388168/kombe-kristjan">Kristjan Kombe</a>
+              0+2=2
+            
+          </td>
+          <td class="time">
+            
+          </td>
+          <td class="away">
+            
+              #44
+              
+  <a href="/fi/pelaajat/60826101/jeffers-jack">Jack Jeffers</a>
+              0+1=1
+            
+          </td>
+        </tr>
+      
+        <tr class="odd">
+          <td class="home">
+            
+              #20
+              
+  <a href="/fi/pelaajat/33464927/nieminen-kim">Kim Nieminen</a>
+              0+2=2
+            
+          </td>
+          <td class="time">
+            
+          </td>
+          <td class="away">
+            
+              #4
+              
+  <a href="/fi/pelaajat/60823808/martin-bryce">Bryce Martin</a>
+              0+1=1
+            
+          </td>
+        </tr>
+      
+        <tr class="even">
+          <td class="home">
+            
+              #13
+              
+  <a href="/fi/pelaajat/31568870/karuvaara-eppu">Eppu Karuvaara</a>
+              1+0=1
+            
+          </td>
+          <td class="time">
+            
+          </td>
+          <td class="away">
+            
+              #30
+              
+  <a href="/fi/pelaajat/30131813/makela-alex">Alex Mäkelä</a>
+              0+1=1
+            
+          </td>
+        </tr>
+      
+        <tr class="odd">
+          <td class="home">
+            
+              #72
+              
+  <a href="/fi/pelaajat/32742637/viitala-jasper">Jasper Viitala</a>
+              1+0=1
+            
+          </td>
+          <td class="time">
+            
+          </td>
+          <td class="away">
+            
+              #13
+              
+  <a href="/fi/pelaajat/40054264/nurmi-konsta">Konsta Nurmi</a>
+              0+1=1
+            
+          </td>
+        </tr>
+      
+        <tr class="even">
+          <td class="home">
+            
+              #96
+              
+  <a href="/fi/pelaajat/60778797/bohm-martin">Martin Böhm</a>
+              0+1=1
+            
+          </td>
+          <td class="time">
+            
+          </td>
+          <td class="away">
+            
+              #16
+              
+  <a href="/fi/pelaajat/60814429/skoleski-devon">Devon Skoleski</a>
+              0+1=1
+            
+          </td>
+        </tr>
+      
+        <tr class="odd">
+          <td class="home">
+            
+              #17
+              
+  <a href="/fi/pelaajat/31487430/kovaniemi-taneli">Taneli Kovaniemi</a>
+              0+1=1
+            
+          </td>
+          <td class="time">
+            
+          </td>
+          <td class="away">
+            
+              #91
+              
+  <a href="/fi/pelaajat/30234082/virtanen-joonas">Joonas Virtanen</a>
+              0+1=1
+            
+          </td>
+        </tr>
+      
+        <tr class="even">
+          <td class="home">
+            
+          </td>
+          <td class="time">
+            
+          </td>
+          <td class="away">
+            
+              #86
+              
+  <a href="/fi/pelaajat/29990104/virtanen-samuli">Samuli Virtanen</a>
+              0+1=1
+            
+          </td>
+        </tr>
+      
+        <tr class="odd">
+          <td class="home">
+            
+          </td>
+          <td class="time">
+            
+          </td>
+          <td class="away">
+            
+              #96
+              
+  <a href="/fi/pelaajat/60823812/zahradnik-samuel">Samuel Zahradnik</a>
+              0+1=1
+            
+          </td>
+        </tr>
+      
+    
+    
+      <tr class="period">
+        <td class="period" colspan="3">Rangaistukset</td>
+      </tr>
+      <tr class="odd">
+        <td class="home">
+          
+            
+              9 x 2 min
+               + 
+            
+              1 x 10 min
+              
+            
+            = 28 min
+          
+        </td>
+        <td class="time"></td>
+        <td class="away">
+          
+            
+              8 x 2 min
+               + 
+            
+              1 x 10 min
+              
+            
+            = 26 min
+          
+        </td>
+      </tr>
+    
+    
+      <tr class="period">
+        <td class="period" colspan="3">Aloitusvoitot</td>
+      </tr>
+      <tr class="odd">
+        <td class="home">
+          
+            
+              12
+               + 
+            
+              16
+               + 
+            
+              18
+               + 
+            
+              3
+              
+            
+            = 49
+          
+        </td>
+        <td class="time"></td>
+        <td class="away">
+          
+            
+              8
+               + 
+            
+              13
+               + 
+            
+              10
+               + 
+            
+              2
+              
+            
+            = 33
+          
+        </td>
+      </tr>
+    
+    
+      <tr class="period">
+        <td class="period" colspan="3">Ylivoimapeli</td>
+      </tr>
+      <tr class="odd">
+        <td class="home">
+          3
+        </td>
+        <td class="time">Yv-maalit</td>
+        <td class="away">
+          2
+        </td>
+      </tr>
+      <tr class="even">
+        <td class="home">
+          7
+        </td>
+        <td class="time">Yv-kerrat</td>
+        <td class="away">
+          7
+        </td>
+      </tr>
+      <tr class="odd">
+        <td class="home">
+          42.9 %
+        </td>
+        <td class="time">Yv-prosentti</td>
+        <td class="away">
+          25.0 %
+        </td>
+      </tr>
+      <tr class="even">
+        <td class="home">
+          09:54
+        </td>
+        <td class="time">Yv-aika</td>
+        <td class="away">
+          12:14
+        </td>
+      </tr>
+    
+    
+    
+      <tr class="period">
+        <td class="period" colspan="3">Laukaisukartta</td>
+      </tr>
+      
+        
+          <tr class="shooting-stats odd">
+            <td class="home" data-period4="1" data-period3="1" data-period2="3">5</td>
+            <td class="time">Maali</td>
+            <td class="away" data-period3="1" data-period2="2" data-period1="1">4</td>
+          </tr>
+        
+          <tr class="shooting-stats even">
+            <td class="home" data-period4="4" data-period3="9" data-period2="5" data-period1="6">24</td>
+            <td class="time">Ohi</td>
+            <td class="away" data-period3="4" data-period2="5">9</td>
+          </tr>
+        
+          <tr class="shooting-stats odd">
+            <td class="home" data-period4="4" data-period3="15" data-period2="11" data-period1="13">43</td>
+            <td class="time">Torjuttu</td>
+            <td class="away" data-period2="9" data-period3="3" data-period1="5">17</td>
+          </tr>
+        
+          <tr class="shooting-stats even">
+            <td class="home" data-period3="2" data-period2="2" data-period1="5">9</td>
+            <td class="time">Blokattu</td>
+            <td class="away" data-period2="1" data-period3="2">3</td>
+          </tr>
+        
+          <tr class="shooting-stats odd">
+            <td class="home" data-period4="9" data-period3="27" data-period2="21" data-period1="24">81</td>
+            <td class="time">Yhteensä</td>
+            <td class="away" data-period3="10" data-period2="17" data-period1="6">33</td>
+          </tr>
+        
+      
+    
+  </table>
+</div>
+
+
+<div id="shooting-map">
+  <div class="inside">
+    
+  
+    
+      <img class="shooting-home" src="/media/team-logos/kiekkopojat.png.125x125_q85.png">
+    
+  
+
+    
+  
+    
+      <img class="shooting-away" src="/media/team-logos/fps_new.png.125x125_q85.png">
+    
+  
+
+    <div class="shooting-map-container">
+      
+  <img class="map-background" src="/static/liiga/common/img/jaakiekkokaukalo-1.0.3.v3d79d2f3.png">
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-4 event-goal player-60763275" data-tooltipid="324386" style="top: 51.69649805447471%; left: 85.23046875%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324386" style="bottom:48.30350194552529%; right:14.76953125%; " >
+      Laukoja: Ivo Sedlacek<br>
+      Joukkue: JoKP<br>
+      Aika: 63:22<br>
+      Maali
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-4 event-save player-33464927" data-tooltipid="324385" style="top: 66.09338521400778%; left: 83.5703125%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324385" style="bottom:33.90661478599222%; right:16.4296875%; " >
+      Laukoja: Kim Nieminen<br>
+      Joukkue: JoKP<br>
+      Aika: 63:19<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-4 event-miss player-60763275" data-tooltipid="324379" style="top: 32.43579766536965%; left: 74.68359375%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324379" style="top:36.43579766536965%; right:25.31640625%; " >
+      Laukoja: Ivo Sedlacek<br>
+      Joukkue: JoKP<br>
+      Aika: 61:52<br>
+      Laukaus ohi maalin
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-4 event-save player-60763275" data-tooltipid="324378" style="top: 46.83268482490272%; left: 85.62109375%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324378" style="top:50.83268482490272%; right:14.37890625%; " >
+      Laukoja: Ivo Sedlacek<br>
+      Joukkue: JoKP<br>
+      Aika: 61:43<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-3 event-miss player-40046505" data-tooltipid="324377" style="top: 79.51750972762646%; left: 64.72265625%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324377" style="bottom:20.48249027237354%; right:35.27734375%; " >
+      Laukoja: Mikael Tapio<br>
+      Joukkue: JoKP<br>
+      Aika: 59:33<br>
+      Laukaus ohi maalin
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-3 event-miss player-32742637" data-tooltipid="324376" style="top: 17.844357976653697%; left: 77.90625%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324376" style="top:21.844357976653697%; right:22.09375%; " >
+      Laukoja: Jasper Viitala<br>
+      Joukkue: JoKP<br>
+      Aika: 58:52<br>
+      Laukaus ohi maalin
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-3 event-save player-40015226" data-tooltipid="324374" style="top: 36.91050583657588%; left: 80.93359375%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324374" style="top:40.91050583657588%; right:19.06640625%; " >
+      Laukoja: Miska Hattunen<br>
+      Joukkue: JoKP<br>
+      Aika: 57:57<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-3 event-save player-40152268" data-tooltipid="324370" style="top: 48.19455252918288%; left: 69.99609375%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324370" style="bottom:51.80544747081712%; right:30.00390625%; " >
+      Laukoja: Valtteri Vaittinen<br>
+      Joukkue: JoKP<br>
+      Aika: 56:19<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-3 event-save player-60763275" data-tooltipid="324369" style="top: 25.042801556420233%; left: 75.46484375%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324369" style="top:29.042801556420233%; right:24.53515625%; " >
+      Laukoja: Ivo Sedlacek<br>
+      Joukkue: JoKP<br>
+      Aika: 55:58<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-3 event-save player-33464927" data-tooltipid="324368" style="top: 53.05836575875487%; left: 68.23828125%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324368" style="bottom:46.94163424124513%; right:31.76171875%; " >
+      Laukoja: Kim Nieminen<br>
+      Joukkue: JoKP<br>
+      Aika: 55:05<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-3 event-block player-33464927" data-tooltipid="324367" style="top: 70.95719844357976%; left: 74.1953125%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324367" style="bottom:29.042801556420244%; right:25.8046875%; " >
+      Laukoja: Kim Nieminen<br>
+      Joukkue: JoKP<br>
+      Aika: 54:12<br>
+      Kenttäpelaaja blokkasi
+      
+        (Samuli Virtanen)
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-3 event-save player-40046505" data-tooltipid="324366" style="top: 50.14007782101168%; left: 64.8203125%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324366" style="bottom:49.85992217898832%; right:35.1796875%; " >
+      Laukoja: Mikael Tapio<br>
+      Joukkue: JoKP<br>
+      Aika: 53:53<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-3 event-save player-40125780" data-tooltipid="324346" style="top: 67.8443579766537%; left: 64.91796875%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324346" style="bottom:32.1556420233463%; right:35.08203125%; " >
+      Laukoja: Niilopekka Muhonen<br>
+      Joukkue: JoKP<br>
+      Aika: 42:39<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-3 event-miss player-60778797" data-tooltipid="324345" style="top: 10.2568093385214%; left: 68.921875%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324345" style="top:14.2568093385214%; right:31.078125%; " >
+      Laukoja: Martin Böhm<br>
+      Joukkue: JoKP<br>
+      Aika: 41:56<br>
+      Laukaus ohi maalin
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-3 event-miss player-60763275" data-tooltipid="324344" style="top: 28.93385214007782%; left: 73.4140625%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324344" style="top:32.93385214007782%; right:26.5859375%; " >
+      Laukoja: Ivo Sedlacek<br>
+      Joukkue: JoKP<br>
+      Aika: 41:47<br>
+      Laukaus ohi maalin
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-3 event-goal player-31568870" data-tooltipid="324343" style="top: 48.38910505836576%; left: 88.16015625%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324343" style="bottom:51.61089494163424%; right:11.83984375%; " >
+      Laukoja: Eppu Karuvaara<br>
+      Joukkue: JoKP<br>
+      Aika: 41:30<br>
+      Maali
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-4 event-save player-40015226" data-tooltipid="324384" style="top: 58.11673151750973%; left: 89.91796875%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324384" style="bottom:41.88326848249027%; right:10.08203125%; " >
+      Laukoja: Miska Hattunen<br>
+      Joukkue: JoKP<br>
+      Aika: 63:07<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-4 event-miss player-33464927" data-tooltipid="324383" style="top: 24.653696498054476%; left: 73.0234375%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324383" style="top:28.653696498054476%; right:26.9765625%; " >
+      Laukoja: Kim Nieminen<br>
+      Joukkue: JoKP<br>
+      Aika: 62:51<br>
+      Laukaus ohi maalin
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-4 event-miss player-33464927" data-tooltipid="324382" style="top: 32.63035019455253%; left: 77.125%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324382" style="top:36.63035019455253%; right:22.875%; " >
+      Laukoja: Kim Nieminen<br>
+      Joukkue: JoKP<br>
+      Aika: 62:42<br>
+      Laukaus ohi maalin
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-4 event-miss player-33464927" data-tooltipid="324381" style="top: 23.291828793774318%; left: 85.42578125%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324381" style="top:27.291828793774318%; right:14.57421875%; " >
+      Laukoja: Kim Nieminen<br>
+      Joukkue: JoKP<br>
+      Aika: 62:31<br>
+      Laukaus ohi maalin
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-4 event-save player-33464927" data-tooltipid="324380" style="top: 18.622568093385212%; left: 80.25%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324380" style="top:22.622568093385212%; right:19.75%; " >
+      Laukoja: Kim Nieminen<br>
+      Joukkue: JoKP<br>
+      Aika: 62:08<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-3 event-save player-60763275" data-tooltipid="324342" style="top: 64.9260700389105%; left: 80.8359375%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324342" style="bottom:35.073929961089505%; right:19.1640625%; " >
+      Laukoja: Ivo Sedlacek<br>
+      Joukkue: JoKP<br>
+      Aika: 41:00<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-3 event-save player-60763275" data-tooltipid="324341" style="top: 22.124513618677042%; left: 64.4296875%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324341" style="top:26.124513618677042%; right:35.5703125%; " >
+      Laukoja: Ivo Sedlacek<br>
+      Joukkue: JoKP<br>
+      Aika: 40:56<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-2 event-goal player-30985519" data-tooltipid="324340" style="top: 57.53307392996109%; left: 90.30859375%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324340" style="bottom:42.46692607003891%; right:9.69140625%; " >
+      Laukoja: Patrick Isiguzo<br>
+      Joukkue: JoKP<br>
+      Aika: 39:00<br>
+      Maali
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-2 event-save player-30793549" data-tooltipid="324330" style="top: 19.20622568093385%; left: 68.921875%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324330" style="top:23.20622568093385%; right:31.078125%; " >
+      Laukoja: Niklas Grönlund<br>
+      Joukkue: JoKP<br>
+      Aika: 32:22<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-2 event-save player-32742637" data-tooltipid="324329" style="top: 68.8171206225681%; left: 80.15234375%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324329" style="bottom:31.182879377431902%; right:19.84765625%; " >
+      Laukoja: Jasper Viitala<br>
+      Joukkue: JoKP<br>
+      Aika: 31:31<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-3 event-miss player-60794462" data-tooltipid="324365" style="top: 57.143968871595334%; left: 87.671875%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324365" style="bottom:42.856031128404666%; right:12.328125%; " >
+      Laukoja: Adam Dvorak<br>
+      Joukkue: JoKP<br>
+      Aika: 53:49<br>
+      Laukaus ohi maalin
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-3 event-miss player-31487430" data-tooltipid="324359" style="top: 44.69260700389105%; left: 85.62109375%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324359" style="top:48.69260700389105%; right:14.37890625%; " >
+      Laukoja: Taneli Kovaniemi<br>
+      Joukkue: JoKP<br>
+      Aika: 49:47<br>
+      Laukaus ohi maalin
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-3 event-save player-33464927" data-tooltipid="324358" style="top: 29.1284046692607%; left: 77.61328125%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324358" style="top:33.1284046692607%; right:22.38671875%; " >
+      Laukoja: Kim Nieminen<br>
+      Joukkue: JoKP<br>
+      Aika: 48:53<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-3 event-miss player-40125780" data-tooltipid="324357" style="top: 44.10894941634241%; left: 63.453125%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324357" style="top:48.10894941634241%; right:36.546875%; " >
+      Laukoja: Niilopekka Muhonen<br>
+      Joukkue: JoKP<br>
+      Aika: 45:26<br>
+      Laukaus ohi maalin
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-3 event-miss player-31338628" data-tooltipid="324356" style="top: 15.509727626459142%; left: 68.7265625%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324356" style="top:19.509727626459142%; right:31.2734375%; " >
+      Laukoja: Severi Savijoki<br>
+      Joukkue: JoKP<br>
+      Aika: 45:23<br>
+      Laukaus ohi maalin
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-3 event-miss player-60778797" data-tooltipid="324352" style="top: 11.618677042801556%; left: 65.6015625%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324352" style="top:15.618677042801556%; right:34.3984375%; " >
+      Laukoja: Martin Böhm<br>
+      Joukkue: JoKP<br>
+      Aika: 44:00<br>
+      Laukaus ohi maalin
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-3 event-save player-40015226" data-tooltipid="324351" style="top: 44.49805447470817%; left: 88.16015625%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324351" style="top:48.49805447470817%; right:11.83984375%; " >
+      Laukoja: Miska Hattunen<br>
+      Joukkue: JoKP<br>
+      Aika: 43:52<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-3 event-save player-31338628" data-tooltipid="324349" style="top: 81.46303501945526%; left: 70.6796875%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324349" style="bottom:18.536964980544738%; right:29.3203125%; " >
+      Laukoja: Severi Savijoki<br>
+      Joukkue: JoKP<br>
+      Aika: 43:03<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-3 event-save player-32269699" data-tooltipid="324348" style="top: 66.09338521400778%; left: 83.9609375%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324348" style="bottom:33.90661478599222%; right:16.0390625%; " >
+      Laukoja: Osku Koivistoinen<br>
+      Joukkue: JoKP<br>
+      Aika: 42:59<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-3 event-save player-31995760" data-tooltipid="324347" style="top: 20.37354085603113%; left: 67.75%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324347" style="top:24.37354085603113%; right:32.25%; " >
+      Laukoja: Roope Loukasvuori<br>
+      Joukkue: JoKP<br>
+      Aika: 42:42<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-2 event-save player-60778797" data-tooltipid="324328" style="top: 45.85992217898833%; left: 74.390625%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324328" style="top:49.85992217898833%; right:25.609375%; " >
+      Laukoja: Martin Böhm<br>
+      Joukkue: JoKP<br>
+      Aika: 31:24<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-2 event-save player-40046505" data-tooltipid="324324" style="top: 90.99610894941634%; left: 65.40625%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324324" style="bottom:9.003891050583661%; right:34.59375%; " >
+      Laukoja: Mikael Tapio<br>
+      Joukkue: JoKP<br>
+      Aika: 29:56<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-2 event-block player-40046505" data-tooltipid="324323" style="top: 58.70038910505836%; left: 63.35546875%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324323" style="bottom:41.29961089494164%; right:36.64453125%; " >
+      Laukoja: Mikael Tapio<br>
+      Joukkue: JoKP<br>
+      Aika: 29:43<br>
+      Kenttäpelaaja blokkasi
+      
+        (Samuel Zahradnik)
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-2 event-block player-40046505" data-tooltipid="324322" style="top: 86.13229571984435%; left: 63.16015625%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324322" style="bottom:13.86770428015565%; right:36.83984375%; " >
+      Laukoja: Mikael Tapio<br>
+      Joukkue: JoKP<br>
+      Aika: 29:24<br>
+      Kenttäpelaaja blokkasi
+      
+        (Samuel Zahradnik)
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-3 event-save player-40125780" data-tooltipid="324364" style="top: 73.87548638132296%; left: 65.6015625%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324364" style="bottom:26.124513618677042%; right:34.3984375%; " >
+      Laukoja: Niilopekka Muhonen<br>
+      Joukkue: JoKP<br>
+      Aika: 53:49<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-3 event-save player-31568870" data-tooltipid="324363" style="top: 28.93385214007782%; left: 84.3515625%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324363" style="top:32.93385214007782%; right:15.6484375%; " >
+      Laukoja: Eppu Karuvaara<br>
+      Joukkue: JoKP<br>
+      Aika: 53:26<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-3 event-block player-31568870" data-tooltipid="324361" style="top: 72.31906614785993%; left: 80.34765625%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324361" style="bottom:27.680933852140072%; right:19.65234375%; " >
+      Laukoja: Eppu Karuvaara<br>
+      Joukkue: JoKP<br>
+      Aika: 52:01<br>
+      Kenttäpelaaja blokkasi
+      
+        (Bryce Martin)
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-2 event-miss player-31568870" data-tooltipid="324321" style="top: 64.34241245136187%; left: 74.390625%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324321" style="bottom:35.65758754863813%; right:25.609375%; " >
+      Laukoja: Eppu Karuvaara<br>
+      Joukkue: JoKP<br>
+      Aika: 28:07<br>
+      Laukaus ohi maalin
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-2 event-goal player-32742637" data-tooltipid="324320" style="top: 44.88715953307393%; left: 83.27734375%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324320" style="top:48.88715953307393%; right:16.72265625%; " >
+      Laukoja: Jasper Viitala<br>
+      Joukkue: JoKP<br>
+      Aika: 27:46<br>
+      Maali
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-2 event-miss player-31487430" data-tooltipid="324316" style="top: 34.18677042801556%; left: 73.609375%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324316" style="top:38.18677042801556%; right:26.390625%; " >
+      Laukoja: Taneli Kovaniemi<br>
+      Joukkue: JoKP<br>
+      Aika: 26:07<br>
+      Laukaus ohi maalin
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-2 event-save player-40015226" data-tooltipid="324314" style="top: 44.49805447470817%; left: 87.4765625%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324314" style="top:48.49805447470817%; right:12.5234375%; " >
+      Laukoja: Miska Hattunen<br>
+      Joukkue: JoKP<br>
+      Aika: 26:06<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-2 event-miss player-60763275" data-tooltipid="324313" style="top: 37.29961089494164%; left: 74.5859375%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324313" style="top:41.29961089494164%; right:25.4140625%; " >
+      Laukoja: Ivo Sedlacek<br>
+      Joukkue: JoKP<br>
+      Aika: 25:53<br>
+      Laukaus ohi maalin
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-2 event-miss player-40046505" data-tooltipid="324312" style="top: 83.60311284046692%; left: 68.3359375%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324312" style="bottom:16.39688715953308%; right:31.6640625%; " >
+      Laukoja: Mikael Tapio<br>
+      Joukkue: JoKP<br>
+      Aika: 25:47<br>
+      Laukaus ohi maalin
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-2 event-save player-40046505" data-tooltipid="324310" style="top: 75.431906614786%; left: 77.41796875%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324310" style="bottom:24.568093385214%; right:22.58203125%; " >
+      Laukoja: Mikael Tapio<br>
+      Joukkue: JoKP<br>
+      Aika: 25:37<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-2 event-goal player-40015226" data-tooltipid="324300" style="top: 47.416342412451364%; left: 88.6484375%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324300" style="top:51.416342412451364%; right:11.3515625%; " >
+      Laukoja: Miska Hattunen<br>
+      Joukkue: JoKP<br>
+      Aika: 23:25<br>
+      Maali
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-2 event-miss player-31487430" data-tooltipid="324297" style="top: 39.82879377431907%; left: 90.30859375%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324297" style="top:43.82879377431907%; right:9.69140625%; " >
+      Laukoja: Taneli Kovaniemi<br>
+      Joukkue: JoKP<br>
+      Aika: 21:38<br>
+      Laukaus ohi maalin
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-2 event-save player-31568870" data-tooltipid="324296" style="top: 43.719844357976655%; left: 76.734375%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324296" style="top:47.719844357976655%; right:23.265625%; " >
+      Laukoja: Eppu Karuvaara<br>
+      Joukkue: JoKP<br>
+      Aika: 21:33<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-2 event-save player-30793549" data-tooltipid="324294" style="top: 21.346303501945524%; left: 65.6015625%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324294" style="top:25.346303501945524%; right:34.3984375%; " >
+      Laukoja: Niklas Grönlund<br>
+      Joukkue: JoKP<br>
+      Aika: 20:39<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-2 event-save player-40046505" data-tooltipid="324291" style="top: 63.75875486381322%; left: 64.13671875%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324291" style="bottom:36.24124513618678%; right:35.86328125%; " >
+      Laukoja: Mikael Tapio<br>
+      Joukkue: JoKP<br>
+      Aika: 20:28<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-2 event-save player-40046505" data-tooltipid="324290" style="top: 75.82101167315176%; left: 63.55078125%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324290" style="bottom:24.17898832684824%; right:36.44921875%; " >
+      Laukoja: Mikael Tapio<br>
+      Joukkue: JoKP<br>
+      Aika: 20:21<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-2 event-save player-32269699" data-tooltipid="324289" style="top: 14.147859922178988%; left: 73.4140625%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324289" style="top:18.147859922178988%; right:26.5859375%; " >
+      Laukoja: Osku Koivistoinen<br>
+      Joukkue: JoKP<br>
+      Aika: 20:14<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-1 event-block player-31568870" data-tooltipid="324200" style="top: 16.482490272373543%; left: 66.28515625%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324200" style="top:20.482490272373543%; right:33.71484375%; " >
+      Laukoja: Eppu Karuvaara<br>
+      Joukkue: JoKP<br>
+      Aika: 18:01<br>
+      Kenttäpelaaja blokkasi
+      
+        (Jack Jeffers)
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-1 event-save player-30985519" data-tooltipid="324199" style="top: 43.91439688715953%; left: 89.13671875%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324199" style="top:47.91439688715953%; right:10.86328125%; " >
+      Laukoja: Patrick Isiguzo<br>
+      Joukkue: JoKP<br>
+      Aika: 17:53<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-1 event-save player-32742637" data-tooltipid="324193" style="top: 11.03501945525292%; left: 77.22265625%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324193" style="top:15.03501945525292%; right:22.77734375%; " >
+      Laukoja: Jasper Viitala<br>
+      Joukkue: JoKP<br>
+      Aika: 17:15<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-1 event-block player-33388168" data-tooltipid="324192" style="top: 52.280155642023345%; left: 65.015625%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324192" style="bottom:47.719844357976655%; right:34.984375%; " >
+      Laukoja: Kristjan Kombe<br>
+      Joukkue: JoKP<br>
+      Aika: 16:41<br>
+      Kenttäpelaaja blokkasi
+      
+        (Justus Ojala)
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-1 event-save player-31338628" data-tooltipid="324209" style="top: 33.40856031128405%; left: 84.9375%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324209" style="top:37.40856031128405%; right:15.0625%; " >
+      Laukoja: Severi Savijoki<br>
+      Joukkue: JoKP<br>
+      Aika: 19:05<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-1 event-block player-60763275" data-tooltipid="324176" style="top: 67.45525291828794%; left: 80.25%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324176" style="bottom:32.54474708171206%; right:19.75%; " >
+      Laukoja: Ivo Sedlacek<br>
+      Joukkue: JoKP<br>
+      Aika: 14:47<br>
+      Kenttäpelaaja blokkasi
+      
+        (Bryce Martin)
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-1 event-block player-31487430" data-tooltipid="324183" style="top: 77.37743190661479%; left: 78.1015625%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324183" style="bottom:22.622568093385212%; right:21.8984375%; " >
+      Laukoja: Taneli Kovaniemi<br>
+      Joukkue: JoKP<br>
+      Aika: 15:55<br>
+      Kenttäpelaaja blokkasi
+      
+        (Bryce Martin)
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-1 event-miss player-31556002" data-tooltipid="324182" style="top: 45.081712062256805%; left: 71.0703125%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324182" style="top:49.081712062256805%; right:28.9296875%; " >
+      Laukoja: Samu Romakkaniemi<br>
+      Joukkue: JoKP<br>
+      Aika: 15:44<br>
+      Laukaus ohi maalin
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-1 event-block player-60763275" data-tooltipid="324181" style="top: 19.98443579766537%; left: 76.83203125%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324181" style="top:23.98443579766537%; right:23.16796875%; " >
+      Laukoja: Ivo Sedlacek<br>
+      Joukkue: JoKP<br>
+      Aika: 15:35<br>
+      Kenttäpelaaja blokkasi
+      
+        (Bryce Martin)
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-1 event-save player-31556002" data-tooltipid="324170" style="top: 48.778210116731515%; left: 65.30859375%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324170" style="bottom:51.221789883268485%; right:34.69140625%; " >
+      Laukoja: Samu Romakkaniemi<br>
+      Joukkue: JoKP<br>
+      Aika: 13:56<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-1 event-miss player-31995760" data-tooltipid="324156" style="top: 10.2568093385214%; left: 64.625%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324156" style="top:14.2568093385214%; right:35.375%; " >
+      Laukoja: Roope Loukasvuori<br>
+      Joukkue: JoKP<br>
+      Aika: 10:17<br>
+      Laukaus ohi maalin
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-1 event-save player-31487430" data-tooltipid="324154" style="top: 41.3852140077821%; left: 89.33203125%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324154" style="top:45.3852140077821%; right:10.66796875%; " >
+      Laukoja: Taneli Kovaniemi<br>
+      Joukkue: JoKP<br>
+      Aika: 09:55<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-1 event-save player-31487430" data-tooltipid="324153" style="top: 27.766536964980546%; left: 74.390625%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324153" style="top:31.766536964980546%; right:25.609375%; " >
+      Laukoja: Taneli Kovaniemi<br>
+      Joukkue: JoKP<br>
+      Aika: 09:37<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-1 event-save player-60763275" data-tooltipid="324152" style="top: 15.509727626459142%; left: 72.73046875%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324152" style="top:19.509727626459142%; right:27.26953125%; " >
+      Laukoja: Ivo Sedlacek<br>
+      Joukkue: JoKP<br>
+      Aika: 09:36<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-1 event-save player-60794462" data-tooltipid="324151" style="top: 76.59922178988327%; left: 83.86328125%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324151" style="bottom:23.400778210116727%; right:16.13671875%; " >
+      Laukoja: Adam Dvorak<br>
+      Joukkue: JoKP<br>
+      Aika: 08:24<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-1 event-save player-30985519" data-tooltipid="324150" style="top: 47.221789883268485%; left: 87.96484375%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324150" style="top:51.221789883268485%; right:12.03515625%; " >
+      Laukoja: Patrick Isiguzo<br>
+      Joukkue: JoKP<br>
+      Aika: 07:14<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-1 event-miss player-31487430" data-tooltipid="324149" style="top: 28.35019455252918%; left: 82.0078125%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324149" style="top:32.35019455252918%; right:17.9921875%; " >
+      Laukoja: Taneli Kovaniemi<br>
+      Joukkue: JoKP<br>
+      Aika: 06:59<br>
+      Laukaus ohi maalin
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-1 event-miss player-33388168" data-tooltipid="324148" style="top: 39.82879377431907%; left: 65.69921875%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324148" style="top:43.82879377431907%; right:34.30078125%; " >
+      Laukoja: Kristjan Kombe<br>
+      Joukkue: JoKP<br>
+      Aika: 06:25<br>
+      Laukaus ohi maalin
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-1 event-save player-60794462" data-tooltipid="324147" style="top: 22.708171206225682%; left: 77.515625%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324147" style="top:26.708171206225682%; right:22.484375%; " >
+      Laukoja: Adam Dvorak<br>
+      Joukkue: JoKP<br>
+      Aika: 06:15<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-1 event-miss player-60794462" data-tooltipid="324146" style="top: 23.680933852140075%; left: 84.15625%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324146" style="top:27.680933852140075%; right:15.84375%; " >
+      Laukoja: Adam Dvorak<br>
+      Joukkue: JoKP<br>
+      Aika: 06:04<br>
+      Laukaus ohi maalin
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-1 event-save player-33388168" data-tooltipid="324145" style="top: 58.89494163424124%; left: 70.6796875%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324145" style="bottom:41.10505836575876%; right:29.3203125%; " >
+      Laukoja: Kristjan Kombe<br>
+      Joukkue: JoKP<br>
+      Aika: 05:54<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-1 event-miss player-32269699" data-tooltipid="324144" style="top: 54.22568093385214%; left: 89.91796875%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324144" style="bottom:45.77431906614786%; right:10.08203125%; " >
+      Laukoja: Osku Koivistoinen<br>
+      Joukkue: JoKP<br>
+      Aika: 04:58<br>
+      Laukaus ohi maalin
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-1 event-save player-33388168" data-tooltipid="324143" style="top: 73.87548638132296%; left: 71.8515625%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324143" style="bottom:26.124513618677042%; right:28.1484375%; " >
+      Laukoja: Kristjan Kombe<br>
+      Joukkue: JoKP<br>
+      Aika: 04:52<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+  <div class="shot home period-1 event-save player-30793549" data-tooltipid="324141" style="top: 15.898832684824903%; left: 63.74609375%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324141" style="top:19.898832684824903%; right:36.25390625%; " >
+      Laukoja: Niklas Grönlund<br>
+      Joukkue: JoKP<br>
+      Aika: 03:11<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+  
+    
+  
+  
+  
+  
+    
+  
+  <div class="shot away period-3 event-miss player-31607883" data-tooltipid="324375" style="top: 37.88326848249027%; left: 19.41015625%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324375" style="top:41.88326848249027%; left:21.41015625%; " >
+      Laukoja: Otto Pasonen<br>
+      Joukkue: FPS<br>
+      Aika: 58:24<br>
+      Laukaus ohi maalin
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+    
+  
+  <div class="shot away period-3 event-miss player-60823808" data-tooltipid="324373" style="top: 57.92217898832685%; left: 26.63671875%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324373" style="bottom:42.07782101167315%; left:28.63671875%; " >
+      Laukoja: Bryce Martin<br>
+      Joukkue: FPS<br>
+      Aika: 57:41<br>
+      Laukaus ohi maalin
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+    
+  
+  <div class="shot away period-3 event-goal player-33219651" data-tooltipid="324372" style="top: 50.14007782101168%; left: 9.546875%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324372" style="bottom:49.85992217898832%; left:11.546875%; " >
+      Laukoja: Juuso Fagerström<br>
+      Joukkue: FPS<br>
+      Aika: 57:21<br>
+      Maali
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+    
+  
+  <div class="shot away period-3 event-miss player-60823808" data-tooltipid="324371" style="top: 53.252918287937746%; left: 34.05859375%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324371" style="bottom:46.747081712062254%; left:36.05859375%; " >
+      Laukoja: Bryce Martin<br>
+      Joukkue: FPS<br>
+      Aika: 56:50<br>
+      Laukaus ohi maalin
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+    
+  
+  <div class="shot away period-2 event-block player-60814429" data-tooltipid="324339" style="top: 70.95719844357976%; left: 25.953125%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324339" style="bottom:29.042801556420244%; left:27.953125%; " >
+      Laukoja: Devon Skoleski<br>
+      Joukkue: FPS<br>
+      Aika: 36:34<br>
+      Kenttäpelaaja blokkasi
+      
+        (Niklas Grönlund)
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+    
+  
+  <div class="shot away period-2 event-miss player-60826101" data-tooltipid="324338" style="top: 33.40856031128405%; left: 12.96484375%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324338" style="top:37.40856031128405%; left:14.96484375%; " >
+      Laukoja: Jack Jeffers<br>
+      Joukkue: FPS<br>
+      Aika: 36:27<br>
+      Laukaus ohi maalin
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+    
+  
+  <div class="shot away period-2 event-goal player-31761541" data-tooltipid="324337" style="top: 57.92217898832685%; left: 6.71484375%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324337" style="bottom:42.07782101167315%; left:8.71484375%; " >
+      Laukoja: Jere Ohtonen<br>
+      Joukkue: FPS<br>
+      Aika: 35:09<br>
+      Maali
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+    
+  
+  <div class="shot away period-2 event-miss player-30234082" data-tooltipid="324336" style="top: 65.12062256809338%; left: 32.88671875%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324336" style="bottom:34.87937743190662%; left:34.88671875%; " >
+      Laukoja: Joonas Virtanen<br>
+      Joukkue: FPS<br>
+      Aika: 34:03<br>
+      Laukaus ohi maalin
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+    
+  
+  <div class="shot away period-2 event-save player-33434096" data-tooltipid="324335" style="top: 31.26848249027237%; left: 16.87109375%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324335" style="top:35.26848249027237%; left:18.87109375%; " >
+      Laukoja: Tomi Palo<br>
+      Joukkue: FPS<br>
+      Aika: 33:57<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+    
+  
+  <div class="shot away period-2 event-save player-60823812" data-tooltipid="324334" style="top: 47.80544747081712%; left: 21.8515625%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324334" style="top:51.80544747081712%; left:23.8515625%; " >
+      Laukoja: Samuel Zahradnik<br>
+      Joukkue: FPS<br>
+      Aika: 33:44<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+    
+  
+  <div class="shot away period-2 event-miss player-31607883" data-tooltipid="324333" style="top: 32.63035019455253%; left: 22.4375%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324333" style="top:36.63035019455253%; left:24.4375%; " >
+      Laukoja: Otto Pasonen<br>
+      Joukkue: FPS<br>
+      Aika: 33:43<br>
+      Laukaus ohi maalin
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+    
+  
+  <div class="shot away period-2 event-miss player-30234082" data-tooltipid="324332" style="top: 86.715953307393%; left: 33.5703125%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324332" style="bottom:13.284046692607006%; left:35.5703125%; " >
+      Laukoja: Joonas Virtanen<br>
+      Joukkue: FPS<br>
+      Aika: 33:08<br>
+      Laukaus ohi maalin
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+    
+  
+  <div class="shot away period-2 event-goal player-33219651" data-tooltipid="324331" style="top: 54.42023346303502%; left: 14.4296875%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324331" style="bottom:45.57976653696498%; left:16.4296875%; " >
+      Laukoja: Juuso Fagerström<br>
+      Joukkue: FPS<br>
+      Aika: 32:50<br>
+      Maali
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+    
+  
+  <div class="shot away period-3 event-block player-60814429" data-tooltipid="324360" style="top: 60.06225680933852%; left: 28.98046875%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324360" style="bottom:39.93774319066148%; left:30.98046875%; " >
+      Laukoja: Devon Skoleski<br>
+      Joukkue: FPS<br>
+      Aika: 51:54<br>
+      Kenttäpelaaja blokkasi
+      
+        (Mikael Tapio)
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+    
+  
+  <div class="shot away period-3 event-block player-60823808" data-tooltipid="324355" style="top: 13.17509727626459%; left: 34.05859375%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324355" style="top:17.17509727626459%; left:36.05859375%; " >
+      Laukoja: Bryce Martin<br>
+      Joukkue: FPS<br>
+      Aika: 44:54<br>
+      Kenttäpelaaja blokkasi
+      
+        (Eppu Karuvaara)
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+    
+  
+  <div class="shot away period-3 event-save player-34332087" data-tooltipid="324354" style="top: 53.05836575875487%; left: 25.66015625%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324354" style="bottom:46.94163424124513%; left:27.66015625%; " >
+      Laukoja: Santtu Rantanen<br>
+      Joukkue: FPS<br>
+      Aika: 44:38<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+    
+  
+  <div class="shot away period-3 event-save player-31531739" data-tooltipid="324353" style="top: 11.229571984435799%; left: 30.4453125%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324353" style="top:15.229571984435799%; left:32.4453125%; " >
+      Laukoja: Risto Saarinen<br>
+      Joukkue: FPS<br>
+      Aika: 44:35<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+    
+  
+  <div class="shot away period-3 event-miss player-30968248" data-tooltipid="324350" style="top: 78.1556420233463%; left: 16.28515625%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324350" style="bottom:21.844357976653697%; left:18.28515625%; " >
+      Laukoja: Oskari Lahtinen<br>
+      Joukkue: FPS<br>
+      Aika: 43:38<br>
+      Laukaus ohi maalin
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+    
+  
+  <div class="shot away period-2 event-miss player-33223197" data-tooltipid="324327" style="top: 69.98443579766537%; left: 11.20703125%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324327" style="bottom:30.01556420233463%; left:13.20703125%; " >
+      Laukoja: Kasper Seppälä<br>
+      Joukkue: FPS<br>
+      Aika: 30:48<br>
+      Laukaus ohi maalin
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+    
+  
+  <div class="shot away period-2 event-save player-31761541" data-tooltipid="324326" style="top: 54.22568093385214%; left: 8.66796875%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324326" style="bottom:45.77431906614786%; left:10.66796875%; " >
+      Laukoja: Jere Ohtonen<br>
+      Joukkue: FPS<br>
+      Aika: 30:44<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+    
+  
+  <div class="shot away period-2 event-save player-60826101" data-tooltipid="324325" style="top: 40.996108949416346%; left: 10.1328125%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324325" style="top:44.996108949416346%; left:12.1328125%; " >
+      Laukoja: Jack Jeffers<br>
+      Joukkue: FPS<br>
+      Aika: 30:04<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+    
+  
+  <div class="shot away period-3 event-save player-30811890" data-tooltipid="324362" style="top: 81.65758754863813%; left: 30.8359375%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324362" style="bottom:18.342412451361866%; left:32.8359375%; " >
+      Laukoja: Eetu Santanen<br>
+      Joukkue: FPS<br>
+      Aika: 53:11<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+    
+  
+  <div class="shot away period-2 event-save player-30968248" data-tooltipid="324319" style="top: 16.8715953307393%; left: 14.4296875%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324319" style="top:20.8715953307393%; left:16.4296875%; " >
+      Laukoja: Oskari Lahtinen<br>
+      Joukkue: FPS<br>
+      Aika: 26:44<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+    
+  
+  <div class="shot away period-2 event-save player-31761541" data-tooltipid="324309" style="top: 87.10505836575877%; left: 22.92578125%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324309" style="bottom:12.894941634241235%; left:24.92578125%; " >
+      Laukoja: Jere Ohtonen<br>
+      Joukkue: FPS<br>
+      Aika: 25:18<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+    
+  
+  <div class="shot away period-2 event-save player-60814429" data-tooltipid="324305" style="top: 57.143968871595334%; left: 13.6484375%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324305" style="bottom:42.856031128404666%; left:15.6484375%; " >
+      Laukoja: Devon Skoleski<br>
+      Joukkue: FPS<br>
+      Aika: 24:15<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+    
+  
+  <div class="shot away period-2 event-save player-31607883" data-tooltipid="324299" style="top: 54.809338521400775%; left: 7.7890625%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324299" style="bottom:45.190661478599225%; left:9.7890625%; " >
+      Laukoja: Otto Pasonen<br>
+      Joukkue: FPS<br>
+      Aika: 22:01<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+    
+  
+  <div class="shot away period-2 event-save player-60826101" data-tooltipid="324295" style="top: 43.91439688715953%; left: 16.7734375%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324295" style="top:47.91439688715953%; left:18.7734375%; " >
+      Laukoja: Jack Jeffers<br>
+      Joukkue: FPS<br>
+      Aika: 20:47<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+    
+  
+  <div class="shot away period-1 event-save player-60823812" data-tooltipid="324194" style="top: 27.961089494163424%; left: 25.26953125%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324194" style="top:31.961089494163424%; left:27.26953125%; " >
+      Laukoja: Samuel Zahradnik<br>
+      Joukkue: FPS<br>
+      Aika: 17:31<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+    
+  
+  <div class="shot away period-1 event-save player-30234082" data-tooltipid="324158" style="top: 79.1284046692607%; left: 33.08203125%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324158" style="bottom:20.871595330739297%; left:35.08203125%; " >
+      Laukoja: Joonas Virtanen<br>
+      Joukkue: FPS<br>
+      Aika: 10:51<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+    
+  
+  <div class="shot away period-1 event-save player-30968248" data-tooltipid="324142" style="top: 15.509727626459142%; left: 32.69140625%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324142" style="top:19.509727626459142%; left:34.69140625%; " >
+      Laukoja: Oskari Lahtinen<br>
+      Joukkue: FPS<br>
+      Aika: 04:08<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+    
+  
+  <div class="shot away period-1 event-goal player-33434096" data-tooltipid="324140" style="top: 57.143968871595334%; left: 13.453125%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324140" style="bottom:42.856031128404666%; left:15.453125%; " >
+      Laukoja: Tomi Palo<br>
+      Joukkue: FPS<br>
+      Aika: 01:56<br>
+      Maali
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+    
+  
+  <div class="shot away period-1 event-save player-60814429" data-tooltipid="324139" style="top: 67.06614785992218%; left: 20.77734375%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324139" style="bottom:32.93385214007782%; left:22.77734375%; " >
+      Laukoja: Devon Skoleski<br>
+      Joukkue: FPS<br>
+      Aika: 01:04<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+    
+  
+  
+  
+  
+    
+  
+  <div class="shot away period-1 event-save player-30968248" data-tooltipid="324138" style="top: 15.315175097276263%; left: 13.6484375%;"></div>
+
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    <div class="shot-tooltip tooltip-324138" style="top:19.315175097276263%; left:15.6484375%; " >
+      Laukoja: Oskari Lahtinen<br>
+      Joukkue: FPS<br>
+      Aika: 00:17<br>
+      Maalivahti torjui
+      
+    </div>
+
+  
+
+    </div>
+  </div>
+  <div class="shooting-map-types">
+    
+      <button data-event="goal" class="event event-goal button checked" ><div class="icon-container"><i class="fa fa-check-square-o check"></i><i class="fa fa-square-o uncheck"></i></div> Maali </button>
+    
+      <button data-event="miss" class="event event-miss button checked" ><div class="icon-container"><i class="fa fa-check-square-o check"></i><i class="fa fa-square-o uncheck"></i></div> Ohi </button>
+    
+      <button data-event="save" class="event event-save button checked" ><div class="icon-container"><i class="fa fa-check-square-o check"></i><i class="fa fa-square-o uncheck"></i></div> Torjuttu </button>
+    
+      <button data-event="block" class="event event-block button checked" ><div class="icon-container"><i class="fa fa-check-square-o check"></i><i class="fa fa-square-o uncheck"></i></div> Blokattu </button>
+    
+  </div>
+  <div class="shooting-map-periods">
+    
+       
+      <button data-period="1" class="period period-1 button checked" ><div class="icon-container"><i class="fa fa-check-square-o check"></i><i class="fa fa-square-o uncheck"></i></div> 1. erä </button>
+    
+       
+      <button data-period="2" class="period period-2 button checked" ><div class="icon-container"><i class="fa fa-check-square-o check"></i><i class="fa fa-square-o uncheck"></i></div> 2. erä </button>
+    
+       
+      <button data-period="3" class="period period-3 button checked" ><div class="icon-container"><i class="fa fa-check-square-o check"></i><i class="fa fa-square-o uncheck"></i></div> 3. erä </button>
+    
+       
+      <button data-period="4" class="period period-4 button checked" ><div class="icon-container"><i class="fa fa-check-square-o check"></i><i class="fa fa-square-o uncheck"></i></div> Jatkoaika </button>
+    
+  </div>
+  <div class="shooting-map-players">
+    <div class="select" style="display: inline-block; width: 280px; vertical-align: middle">
+      <select name="shooting-player-filter">
+        <option value="">Kaikki pelaajat</option>
+        
+          <optgroup label="JoKP">
+            
+              <option value="60778797">
+                #96 Böhm, Martin
+              </option>
+            
+              <option value="60794462">
+                #63 Dvorak, Adam
+              </option>
+            
+              <option value="30793549">
+                #84 Grönlund, Niklas
+              </option>
+            
+              <option value="40015226">
+                #26 Hattunen, Miska
+              </option>
+            
+              <option value="30985519">
+                #19 Isiguzo, Patrick
+              </option>
+            
+              <option value="31568870">
+                #13 Karuvaara, Eppu
+              </option>
+            
+              <option value="32269699">
+                #88 Koivistoinen, Osku
+              </option>
+            
+              <option value="33388168">
+                #86 Kombe, Kristjan
+              </option>
+            
+              <option value="31487430">
+                #17 Kovaniemi, Taneli
+              </option>
+            
+              <option value="31995760">
+                #74 Loukasvuori, Roope
+              </option>
+            
+              <option value="40125780">
+                #95 Muhonen, Niilopekka
+              </option>
+            
+              <option value="33464927">
+                #20 Nieminen, Kim
+              </option>
+            
+              <option value="31556002">
+                #77 Romakkaniemi, Samu
+              </option>
+            
+              <option value="31338628">
+                #11 Savijoki, Severi
+              </option>
+            
+              <option value="60763275">
+                #14 Sedlacek, Ivo
+              </option>
+            
+              <option value="40046505">
+                #4 Tapio, Mikael
+              </option>
+            
+              <option value="40152268">
+                #41 Vaittinen, Valtteri
+              </option>
+            
+              <option value="32742637">
+                #72 Viitala, Jasper
+              </option>
+            
+          </optgroup>
+        
+          <optgroup label="FPS">
+            
+              <option value="33219651">
+                #19 Fagerström, Juuso
+              </option>
+            
+              <option value="60826101">
+                #44 Jeffers, Jack
+              </option>
+            
+              <option value="30968248">
+                #55 Lahtinen, Oskari
+              </option>
+            
+              <option value="60823808">
+                #4 Martin, Bryce
+              </option>
+            
+              <option value="31761541">
+                #12 Ohtonen, Jere
+              </option>
+            
+              <option value="33434096">
+                #41 Palo, Tomi
+              </option>
+            
+              <option value="31607883">
+                #33 Pasonen, Otto
+              </option>
+            
+              <option value="34332087">
+                #85 Rantanen, Santtu
+              </option>
+            
+              <option value="31531739">
+                #90 Saarinen, Risto
+              </option>
+            
+              <option value="30811890">
+                #20 Santanen, Eetu
+              </option>
+            
+              <option value="33223197">
+                #18 Seppälä, Kasper
+              </option>
+            
+              <option value="60814429">
+                #16 Skoleski, Devon
+              </option>
+            
+              <option value="30234082">
+                #91 Virtanen, Joonas
+              </option>
+            
+              <option value="60823812">
+                #96 Zahradnik, Samuel
+              </option>
+            
+          </optgroup>
+        
+      </select>
+    </div>
+  </div>
+  <div class="shooting-map-legend">
+    <ul>
+      <li><img src="/static/liiga/common/img/circle-home.v7ca15c4b.png"> Kotijoukkueen laukaus</li>
+      <li><img src="/static/liiga/common/img/circle-home-goal.vbfd625b5.png"> Kotijoukkueen maali</li>
+      <li><img src="/static/liiga/common/img/circle-away.v12d8f2be.png"> Vierasjoukkueen laukaus</li>
+      <li><img src="/static/liiga/common/img/circle-away-goal.vd90289fe.png"> Vierasjoukkueen maali</li>
+    </ul>
+  </div>
+  <div class="abbrevation-legend">
+    <h3>Lyhenteet</h3>
+    <ul>
+      <li>YV – ylivoimamaali</li>
+      <li>AV – alivoimamaali</li>
+      <li>VM – voittomaali</li>
+      <li>VT – videotarkistus</li>
+      <li>SR – siirretty rangaistus</li>
+      <li>RL – rangaistuslaukaus</li>
+      <li>TV – tasavajaa</li>
+      <li>VL – voittomaalikilpailu / ratkaisumaali VL-kilpailussa</li>
+      <li>TM – tyhjä maali</li>
+      <li>IM – ilman maalivahtia</li>
+    </ul>
+    <p>Maalitilastoissa on merkitty sulkuihin ko. pelaajan maalin tai syöttöpisteen kokonaismäärä kaudella.</p>
+  </div>
+</div>
+
+      </div>
+    </div>
+    <div class="sidebar">
+      <h3>Ottelut 17.2.2024</h3>
+      <div class="sidebar-games" data-date="2024-02-17">
+        
+<div class="games-container">
+  <div class="games" data-goals="34">
+  
+    
+  <div class="game">
+    <div class="status-short">60:00 - Päättynyt</div>
+    <div class="status-reverse">60:00 - Päättynyt</div>
+
+
+    <a class="game_link mobile-view" href="/fi/ottelut/2023-2024/runkosarja/3908/">
+      <div class="scores-container">
+        <div class="home">
+          <div class="team-score">
+            <div class="logo-container">
+              
+                <img class="logo" src=/media/team-logos/hermes.png.110x110_q85.png>
+              
+            </div>
+            <div class="goals">7</div>
+          </div>
+        </div>
+        <div class="away">
+          <div class="team-score">
+            <div class="logo-container">
+              
+                 <img class="logo" src=/media/team-logos/keupa_elAJWhB.png.110x110_q85.png>
+              
+            </div>
+            <div class="goals">2</div>
+          </div>
+        </div>
+        <div class="dash">-</div>
+      </div>
+    </a>
+
+    <a class="game_link desktop-view" href="/fi/ottelut/2023-2024/runkosarja/3908/">
+      <div class="horiz-scores">
+        <div class="home">
+          <div class="logo-container">
+            
+              <img class="logo" src=/media/team-logos/hermes.png.110x110_q85.png>
+            
+          </div>
+          <div class="goals">7</div>
+        </div>
+        <div class="divider">-</div>
+        <div class="away">
+          <div class="goals">2</div>
+          <div class="logo-container">
+            
+               <img class="logo" src=/media/team-logos/keupa_elAJWhB.png.110x110_q85.png>
+            
+          </div>
+        </div>
+      </div>
+    </a>
+    
+    
+    <div class="wager mobile-view" style="visibility:hidden">
+      <a target="_blank" href="">
+        <div class="odds">
+          <div>
+            <span>1</span>
+            <span class="odds-1"></span>
+          </div>
+          <div>
+            <span>X</span>
+            <span class="odds-X"></span>
+          </div>
+          <div>
+            <span>2</span>
+            <span class="odds-2"></span>
+          </div>
+        </div>
+        <div class="veikkaus-link">
+          <img src="/static/liiga/common/img/veikkaus_arrow2.vc9beafc2.png">&nbsp;&nbsp;veikkaus.fi
+        </div>
+      </a>
+    </div>
+    
+      <a class="cmore mobile-view" target="_blank" href=" https://www.mtv.fi/kampanja/jaakiekkoa?utm_source=mestis&utm_medium=own_online&utm_campaign=jatkuva&utm_content=display&utm_custom=convert"><img src="/static/liiga/common/img/katsomo.vb6fdb796.png"></a>
+    
+    <div class="latest-event">
+      
+        
+          <table class="latest-event-table">
+            <tr>
+              <td class="time-team">
+                <span class="time">49:47</span>
+                <br>
+                <span class="team">KEU</span></td>
+              <td class="text">KeuPa HT aikalisä</td>
+            </tr>
+          </table>
+        
+      
+    </div>
+    <div class="wager desktop-view" style="visibility:hidden">
+      <a target="_blank" href="">
+        <div class="odds">
+          <div>
+            <span>1</span>
+            <span class="odds-1"></span>
+          </div>
+          <div>
+            <span>X</span>
+            <span class="odds-X"></span>
+          </div>
+          <div>
+            <span>2</span>
+            <span class="odds-2"></span>
+          </div>
+        </div>
+        <div class="veikkaus-link">
+          <img src="/static/liiga/common/img/veikkaus_arrow2.vc9beafc2.png">&nbsp;&nbsp;veikkaus.fi
+        </div>
+      </a>
+    </div>
+
+    
+      <a class="cmore desktop-view" target="_blank" href="https://www.mtv.fi/kampanja/jaakiekkoa?utm_source=mestis&utm_medium=own_online&utm_campaign=jatkuva&utm_content=display&utm_custom=convert"><img src="/static/liiga/common/img/katsomo.vb6fdb796.png"></a>
+    
+
+    <div class="link-container has-hover-toggle mobile-view">
+      <span class="link"><span class="menu-caret"><i class="fa fa-caret-right"></i></span> Katso lisää</span>
+      <div class="more hover-toggle">
+        
+        
+        
+          <a href="/fi/ottelut/2023-2024/runkosarja/3908/kokoonpanot/" class="rosters_link">Kokoonpanot</a>
+        
+        
+          <a href="/fi/ottelut/2023-2024/runkosarja/3908/seuranta/" class="report_link">Seuranta</a>
+        
+        
+          <a href="/fi/ottelut/2023-2024/runkosarja/3908/tilastot/" class="stats_link">Tilastot</a>
+        
+        
+        
+      </div>
+    </div>
+    <div class="link-container has-hover-toggle desktop-view">
+      <span class="link"><i class="fa fa-angle-double-right"></i></span>
+      <div class="more hover-toggle">
+        
+        
+        
+          <a href="/fi/ottelut/2023-2024/runkosarja/3908/kokoonpanot/" class="rosters_link">Kokoonpanot</a>
+        
+        
+          <a href="/fi/ottelut/2023-2024/runkosarja/3908/seuranta/" class="report_link">Seuranta</a>
+        
+        
+          <a href="/fi/ottelut/2023-2024/runkosarja/3908/tilastot/" class="stats_link">Tilastot</a>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+    
+  <div class="game">
+    <div class="status-short">60:00 - Päättynyt</div>
+    <div class="status-reverse">60:00 - Päättynyt</div>
+
+
+    <a class="game_link mobile-view" href="/fi/ottelut/2023-2024/runkosarja/3917/">
+      <div class="scores-container">
+        <div class="home">
+          <div class="team-score">
+            <div class="logo-container">
+              
+                <img class="logo" src=/media/team-logos/hokki.png.110x110_q85.png>
+              
+            </div>
+            <div class="goals">2</div>
+          </div>
+        </div>
+        <div class="away">
+          <div class="team-score">
+            <div class="logo-container">
+              
+                 <img class="logo" src=/media/team-logos/ipk.png.110x110_q85.png>
+              
+            </div>
+            <div class="goals">3</div>
+          </div>
+        </div>
+        <div class="dash">-</div>
+      </div>
+    </a>
+
+    <a class="game_link desktop-view" href="/fi/ottelut/2023-2024/runkosarja/3917/">
+      <div class="horiz-scores">
+        <div class="home">
+          <div class="logo-container">
+            
+              <img class="logo" src=/media/team-logos/hokki.png.110x110_q85.png>
+            
+          </div>
+          <div class="goals">2</div>
+        </div>
+        <div class="divider">-</div>
+        <div class="away">
+          <div class="goals">3</div>
+          <div class="logo-container">
+            
+               <img class="logo" src=/media/team-logos/ipk.png.110x110_q85.png>
+            
+          </div>
+        </div>
+      </div>
+    </a>
+    
+    
+    <div class="wager mobile-view" style="visibility:hidden">
+      <a target="_blank" href="">
+        <div class="odds">
+          <div>
+            <span>1</span>
+            <span class="odds-1"></span>
+          </div>
+          <div>
+            <span>X</span>
+            <span class="odds-X"></span>
+          </div>
+          <div>
+            <span>2</span>
+            <span class="odds-2"></span>
+          </div>
+        </div>
+        <div class="veikkaus-link">
+          <img src="/static/liiga/common/img/veikkaus_arrow2.vc9beafc2.png">&nbsp;&nbsp;veikkaus.fi
+        </div>
+      </a>
+    </div>
+    
+      <a class="cmore mobile-view" target="_blank" href=" https://www.mtv.fi/kampanja/jaakiekkoa?utm_source=mestis&utm_medium=own_online&utm_campaign=jatkuva&utm_content=display&utm_custom=convert"><img src="/static/liiga/common/img/katsomo.vb6fdb796.png"></a>
+    
+    <div class="latest-event">
+      
+        
+          <table class="latest-event-table">
+            <tr>
+              <td class="time-team">
+                <span class="time">59:25</span>
+                <br>
+                <span class="team">HOK</span></td>
+              <td class="text">Hokki aikalisä</td>
+            </tr>
+          </table>
+        
+      
+    </div>
+    <div class="wager desktop-view" style="visibility:hidden">
+      <a target="_blank" href="">
+        <div class="odds">
+          <div>
+            <span>1</span>
+            <span class="odds-1"></span>
+          </div>
+          <div>
+            <span>X</span>
+            <span class="odds-X"></span>
+          </div>
+          <div>
+            <span>2</span>
+            <span class="odds-2"></span>
+          </div>
+        </div>
+        <div class="veikkaus-link">
+          <img src="/static/liiga/common/img/veikkaus_arrow2.vc9beafc2.png">&nbsp;&nbsp;veikkaus.fi
+        </div>
+      </a>
+    </div>
+
+    
+      <a class="cmore desktop-view" target="_blank" href="https://www.mtv.fi/kampanja/jaakiekkoa?utm_source=mestis&utm_medium=own_online&utm_campaign=jatkuva&utm_content=display&utm_custom=convert"><img src="/static/liiga/common/img/katsomo.vb6fdb796.png"></a>
+    
+
+    <div class="link-container has-hover-toggle mobile-view">
+      <span class="link"><span class="menu-caret"><i class="fa fa-caret-right"></i></span> Katso lisää</span>
+      <div class="more hover-toggle">
+        
+        
+        
+          <a href="/fi/ottelut/2023-2024/runkosarja/3917/kokoonpanot/" class="rosters_link">Kokoonpanot</a>
+        
+        
+          <a href="/fi/ottelut/2023-2024/runkosarja/3917/seuranta/" class="report_link">Seuranta</a>
+        
+        
+          <a href="/fi/ottelut/2023-2024/runkosarja/3917/tilastot/" class="stats_link">Tilastot</a>
+        
+        
+        
+      </div>
+    </div>
+    <div class="link-container has-hover-toggle desktop-view">
+      <span class="link"><i class="fa fa-angle-double-right"></i></span>
+      <div class="more hover-toggle">
+        
+        
+        
+          <a href="/fi/ottelut/2023-2024/runkosarja/3917/kokoonpanot/" class="rosters_link">Kokoonpanot</a>
+        
+        
+          <a href="/fi/ottelut/2023-2024/runkosarja/3917/seuranta/" class="report_link">Seuranta</a>
+        
+        
+          <a href="/fi/ottelut/2023-2024/runkosarja/3917/tilastot/" class="stats_link">Tilastot</a>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+    
+  <div class="game">
+    <div class="status-short">64:43 - Päättynyt (JA)</div>
+    <div class="status-reverse">64:43 - Päättynyt (JA)</div>
+
+
+    <a class="game_link mobile-view" href="/fi/ottelut/2023-2024/runkosarja/3996/">
+      <div class="scores-container">
+        <div class="home">
+          <div class="team-score">
+            <div class="logo-container">
+              
+                <img class="logo" src=/media/team-logos/jokerit_Lcja1zD.png.110x110_q85.png>
+              
+            </div>
+            <div class="goals">2</div>
+          </div>
+        </div>
+        <div class="away">
+          <div class="team-score">
+            <div class="logo-container">
+              
+                 <img class="logo" src=/media/team-logos/tuto.png.110x110_q85.png>
+              
+            </div>
+            <div class="goals">1</div>
+          </div>
+        </div>
+        <div class="dash">-</div>
+      </div>
+    </a>
+
+    <a class="game_link desktop-view" href="/fi/ottelut/2023-2024/runkosarja/3996/">
+      <div class="horiz-scores">
+        <div class="home">
+          <div class="logo-container">
+            
+              <img class="logo" src=/media/team-logos/jokerit_Lcja1zD.png.110x110_q85.png>
+            
+          </div>
+          <div class="goals">2</div>
+        </div>
+        <div class="divider">-</div>
+        <div class="away">
+          <div class="goals">1</div>
+          <div class="logo-container">
+            
+               <img class="logo" src=/media/team-logos/tuto.png.110x110_q85.png>
+            
+          </div>
+        </div>
+      </div>
+    </a>
+    
+    
+    <div class="wager mobile-view" style="visibility:hidden">
+      <a target="_blank" href="">
+        <div class="odds">
+          <div>
+            <span>1</span>
+            <span class="odds-1"></span>
+          </div>
+          <div>
+            <span>X</span>
+            <span class="odds-X"></span>
+          </div>
+          <div>
+            <span>2</span>
+            <span class="odds-2"></span>
+          </div>
+        </div>
+        <div class="veikkaus-link">
+          <img src="/static/liiga/common/img/veikkaus_arrow2.vc9beafc2.png">&nbsp;&nbsp;veikkaus.fi
+        </div>
+      </a>
+    </div>
+    
+      <a class="cmore mobile-view" target="_blank" href=" https://www.mtv.fi/kampanja/jaakiekkoa?utm_source=mestis&utm_medium=own_online&utm_campaign=jatkuva&utm_content=display&utm_custom=convert"><img src="/static/liiga/common/img/katsomo.vb6fdb796.png"></a>
+    
+    <div class="latest-event">
+      
+        
+          <table class="latest-event-table">
+            <tr>
+              <td class="time-team">
+                <span class="time">64:43</span>
+                <br>
+                <span class="team">JOK</span></td>
+              <td class="text"><strong><span class="full">#7 </span><a href="/fi/pelaajat/32681170/hakkila-hannes">Hannes Häkkilä</a>  (4) 2-1 VM</strong><br><span class="full">#22 </span><a href="/fi/pelaajat/31275998/forslund-alexander">Alexander Forslund</a> (41) , <span class="full">#51 </span><a href="/fi/pelaajat/30411041/lemberg-leevi">Leevi Lemberg</a> (14) </td>
+            </tr>
+          </table>
+        
+      
+    </div>
+    <div class="wager desktop-view" style="visibility:hidden">
+      <a target="_blank" href="">
+        <div class="odds">
+          <div>
+            <span>1</span>
+            <span class="odds-1"></span>
+          </div>
+          <div>
+            <span>X</span>
+            <span class="odds-X"></span>
+          </div>
+          <div>
+            <span>2</span>
+            <span class="odds-2"></span>
+          </div>
+        </div>
+        <div class="veikkaus-link">
+          <img src="/static/liiga/common/img/veikkaus_arrow2.vc9beafc2.png">&nbsp;&nbsp;veikkaus.fi
+        </div>
+      </a>
+    </div>
+
+    
+      <a class="cmore desktop-view" target="_blank" href="https://www.mtv.fi/kampanja/jaakiekkoa?utm_source=mestis&utm_medium=own_online&utm_campaign=jatkuva&utm_content=display&utm_custom=convert"><img src="/static/liiga/common/img/katsomo.vb6fdb796.png"></a>
+    
+
+    <div class="link-container has-hover-toggle mobile-view">
+      <span class="link"><span class="menu-caret"><i class="fa fa-caret-right"></i></span> Katso lisää</span>
+      <div class="more hover-toggle">
+        
+        
+        
+          <a href="/fi/ottelut/2023-2024/runkosarja/3996/kokoonpanot/" class="rosters_link">Kokoonpanot</a>
+        
+        
+          <a href="/fi/ottelut/2023-2024/runkosarja/3996/seuranta/" class="report_link">Seuranta</a>
+        
+        
+          <a href="/fi/ottelut/2023-2024/runkosarja/3996/tilastot/" class="stats_link">Tilastot</a>
+        
+        
+        
+      </div>
+    </div>
+    <div class="link-container has-hover-toggle desktop-view">
+      <span class="link"><i class="fa fa-angle-double-right"></i></span>
+      <div class="more hover-toggle">
+        
+        
+        
+          <a href="/fi/ottelut/2023-2024/runkosarja/3996/kokoonpanot/" class="rosters_link">Kokoonpanot</a>
+        
+        
+          <a href="/fi/ottelut/2023-2024/runkosarja/3996/seuranta/" class="report_link">Seuranta</a>
+        
+        
+          <a href="/fi/ottelut/2023-2024/runkosarja/3996/tilastot/" class="stats_link">Tilastot</a>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+    
+  <div class="game">
+    <div class="status-short">63:22 - Päättynyt (JA)</div>
+    <div class="status-reverse">63:22 - Päättynyt (JA)</div>
+
+
+    <a class="game_link mobile-view" href="/fi/ottelut/2023-2024/runkosarja/3994/">
+      <div class="scores-container">
+        <div class="home">
+          <div class="team-score">
+            <div class="logo-container">
+              
+                <img class="logo" src=/media/team-logos/kiekkopojat.png.110x110_q85.png>
+              
+            </div>
+            <div class="goals">5</div>
+          </div>
+        </div>
+        <div class="away">
+          <div class="team-score">
+            <div class="logo-container">
+              
+                 <img class="logo" src=/media/team-logos/fps_new.png.110x110_q85.png>
+              
+            </div>
+            <div class="goals">4</div>
+          </div>
+        </div>
+        <div class="dash">-</div>
+      </div>
+    </a>
+
+    <a class="game_link desktop-view" href="/fi/ottelut/2023-2024/runkosarja/3994/">
+      <div class="horiz-scores">
+        <div class="home">
+          <div class="logo-container">
+            
+              <img class="logo" src=/media/team-logos/kiekkopojat.png.110x110_q85.png>
+            
+          </div>
+          <div class="goals">5</div>
+        </div>
+        <div class="divider">-</div>
+        <div class="away">
+          <div class="goals">4</div>
+          <div class="logo-container">
+            
+               <img class="logo" src=/media/team-logos/fps_new.png.110x110_q85.png>
+            
+          </div>
+        </div>
+      </div>
+    </a>
+    
+    
+    <div class="wager mobile-view" style="visibility:hidden">
+      <a target="_blank" href="">
+        <div class="odds">
+          <div>
+            <span>1</span>
+            <span class="odds-1"></span>
+          </div>
+          <div>
+            <span>X</span>
+            <span class="odds-X"></span>
+          </div>
+          <div>
+            <span>2</span>
+            <span class="odds-2"></span>
+          </div>
+        </div>
+        <div class="veikkaus-link">
+          <img src="/static/liiga/common/img/veikkaus_arrow2.vc9beafc2.png">&nbsp;&nbsp;veikkaus.fi
+        </div>
+      </a>
+    </div>
+    
+      <a class="cmore mobile-view" target="_blank" href=" https://www.mtv.fi/kampanja/jaakiekkoa?utm_source=mestis&utm_medium=own_online&utm_campaign=jatkuva&utm_content=display&utm_custom=convert"><img src="/static/liiga/common/img/katsomo.vb6fdb796.png"></a>
+    
+    <div class="latest-event">
+      
+        
+          <table class="latest-event-table">
+            <tr>
+              <td class="time-team">
+                <span class="time">63:22</span>
+                <br>
+                <span class="team">JKP</span></td>
+              <td class="text"><strong><span class="full">#14 </span><a href="/fi/pelaajat/60763275/sedlacek-ivo">Ivo Sedlacek</a>  (13) 5-4 YV, VM</strong><br><span class="full">#20 </span><a href="/fi/pelaajat/33464927/nieminen-kim">Kim Nieminen</a> (3) , <span class="full">#26 </span><a href="/fi/pelaajat/40015226/hattunen-miska">Miska Hattunen</a> (15) </td>
+            </tr>
+          </table>
+        
+      
+    </div>
+    <div class="wager desktop-view" style="visibility:hidden">
+      <a target="_blank" href="">
+        <div class="odds">
+          <div>
+            <span>1</span>
+            <span class="odds-1"></span>
+          </div>
+          <div>
+            <span>X</span>
+            <span class="odds-X"></span>
+          </div>
+          <div>
+            <span>2</span>
+            <span class="odds-2"></span>
+          </div>
+        </div>
+        <div class="veikkaus-link">
+          <img src="/static/liiga/common/img/veikkaus_arrow2.vc9beafc2.png">&nbsp;&nbsp;veikkaus.fi
+        </div>
+      </a>
+    </div>
+
+    
+      <a class="cmore desktop-view" target="_blank" href="https://www.mtv.fi/kampanja/jaakiekkoa?utm_source=mestis&utm_medium=own_online&utm_campaign=jatkuva&utm_content=display&utm_custom=convert"><img src="/static/liiga/common/img/katsomo.vb6fdb796.png"></a>
+    
+
+    <div class="link-container has-hover-toggle mobile-view">
+      <span class="link"><span class="menu-caret"><i class="fa fa-caret-right"></i></span> Katso lisää</span>
+      <div class="more hover-toggle">
+        
+        
+        
+          <a href="/fi/ottelut/2023-2024/runkosarja/3994/kokoonpanot/" class="rosters_link">Kokoonpanot</a>
+        
+        
+          <a href="/fi/ottelut/2023-2024/runkosarja/3994/seuranta/" class="report_link">Seuranta</a>
+        
+        
+          <a href="/fi/ottelut/2023-2024/runkosarja/3994/tilastot/" class="stats_link">Tilastot</a>
+        
+        
+        
+      </div>
+    </div>
+    <div class="link-container has-hover-toggle desktop-view">
+      <span class="link"><i class="fa fa-angle-double-right"></i></span>
+      <div class="more hover-toggle">
+        
+        
+        
+          <a href="/fi/ottelut/2023-2024/runkosarja/3994/kokoonpanot/" class="rosters_link">Kokoonpanot</a>
+        
+        
+          <a href="/fi/ottelut/2023-2024/runkosarja/3994/seuranta/" class="report_link">Seuranta</a>
+        
+        
+          <a href="/fi/ottelut/2023-2024/runkosarja/3994/tilastot/" class="stats_link">Tilastot</a>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+    
+  <div class="game">
+    <div class="status-short">60:00 - Päättynyt</div>
+    <div class="status-reverse">60:00 - Päättynyt</div>
+
+
+    <a class="game_link mobile-view" href="/fi/ottelut/2023-2024/runkosarja/4088/">
+      <div class="scores-container">
+        <div class="home">
+          <div class="team-score">
+            <div class="logo-container">
+              
+                <img class="logo" src=/media/team-logos/roki_new.png.110x110_q85.png>
+              
+            </div>
+            <div class="goals">6</div>
+          </div>
+        </div>
+        <div class="away">
+          <div class="team-score">
+            <div class="logo-container">
+              
+                 <img class="logo" src=/media/team-logos/kiekko-vantaa.png.110x110_q85.png>
+              
+            </div>
+            <div class="goals">2</div>
+          </div>
+        </div>
+        <div class="dash">-</div>
+      </div>
+    </a>
+
+    <a class="game_link desktop-view" href="/fi/ottelut/2023-2024/runkosarja/4088/">
+      <div class="horiz-scores">
+        <div class="home">
+          <div class="logo-container">
+            
+              <img class="logo" src=/media/team-logos/roki_new.png.110x110_q85.png>
+            
+          </div>
+          <div class="goals">6</div>
+        </div>
+        <div class="divider">-</div>
+        <div class="away">
+          <div class="goals">2</div>
+          <div class="logo-container">
+            
+               <img class="logo" src=/media/team-logos/kiekko-vantaa.png.110x110_q85.png>
+            
+          </div>
+        </div>
+      </div>
+    </a>
+    
+    
+    <div class="wager mobile-view" style="visibility:hidden">
+      <a target="_blank" href="">
+        <div class="odds">
+          <div>
+            <span>1</span>
+            <span class="odds-1"></span>
+          </div>
+          <div>
+            <span>X</span>
+            <span class="odds-X"></span>
+          </div>
+          <div>
+            <span>2</span>
+            <span class="odds-2"></span>
+          </div>
+        </div>
+        <div class="veikkaus-link">
+          <img src="/static/liiga/common/img/veikkaus_arrow2.vc9beafc2.png">&nbsp;&nbsp;veikkaus.fi
+        </div>
+      </a>
+    </div>
+    
+      <a class="cmore mobile-view" target="_blank" href=" https://www.mtv.fi/kampanja/jaakiekkoa?utm_source=mestis&utm_medium=own_online&utm_campaign=jatkuva&utm_content=display&utm_custom=convert"><img src="/static/liiga/common/img/katsomo.vb6fdb796.png"></a>
+    
+    <div class="latest-event">
+      
+        
+          <table class="latest-event-table">
+            <tr>
+              <td class="time-team">
+                <span class="time">54:04</span>
+                <br>
+                <span class="team">ROK</span></td>
+              <td class="text"><strong><span class="full">#26 </span><a href="/fi/pelaajat/21303401/alanen-jere-matias">Jere-Matias Alanen</a>  (22) 6-2</strong><br><span class="full">#42 </span><a href="/fi/pelaajat/31413035/wolin-adam">Adam Wolin</a> (8) , <span class="full">#15 </span><a href="/fi/pelaajat/30153338/kaarela-elias">Elias Kaarela</a> (12) </td>
+            </tr>
+          </table>
+        
+      
+    </div>
+    <div class="wager desktop-view" style="visibility:hidden">
+      <a target="_blank" href="">
+        <div class="odds">
+          <div>
+            <span>1</span>
+            <span class="odds-1"></span>
+          </div>
+          <div>
+            <span>X</span>
+            <span class="odds-X"></span>
+          </div>
+          <div>
+            <span>2</span>
+            <span class="odds-2"></span>
+          </div>
+        </div>
+        <div class="veikkaus-link">
+          <img src="/static/liiga/common/img/veikkaus_arrow2.vc9beafc2.png">&nbsp;&nbsp;veikkaus.fi
+        </div>
+      </a>
+    </div>
+
+    
+      <a class="cmore desktop-view" target="_blank" href="https://www.mtv.fi/kampanja/jaakiekkoa?utm_source=mestis&utm_medium=own_online&utm_campaign=jatkuva&utm_content=display&utm_custom=convert"><img src="/static/liiga/common/img/katsomo.vb6fdb796.png"></a>
+    
+
+    <div class="link-container has-hover-toggle mobile-view">
+      <span class="link"><span class="menu-caret"><i class="fa fa-caret-right"></i></span> Katso lisää</span>
+      <div class="more hover-toggle">
+        
+        
+        
+          <a href="/fi/ottelut/2023-2024/runkosarja/4088/kokoonpanot/" class="rosters_link">Kokoonpanot</a>
+        
+        
+          <a href="/fi/ottelut/2023-2024/runkosarja/4088/seuranta/" class="report_link">Seuranta</a>
+        
+        
+          <a href="/fi/ottelut/2023-2024/runkosarja/4088/tilastot/" class="stats_link">Tilastot</a>
+        
+        
+        
+      </div>
+    </div>
+    <div class="link-container has-hover-toggle desktop-view">
+      <span class="link"><i class="fa fa-angle-double-right"></i></span>
+      <div class="more hover-toggle">
+        
+        
+        
+          <a href="/fi/ottelut/2023-2024/runkosarja/4088/kokoonpanot/" class="rosters_link">Kokoonpanot</a>
+        
+        
+          <a href="/fi/ottelut/2023-2024/runkosarja/4088/seuranta/" class="report_link">Seuranta</a>
+        
+        
+          <a href="/fi/ottelut/2023-2024/runkosarja/4088/tilastot/" class="stats_link">Tilastot</a>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  </div>
+</div>
+
+        <div id='mestis_mestis-fi-sidebar'></div>
+<script>
+var isMobile = (window.innerWidth ||
+document.documentElement.clientWidth ||
+document.body.clientWidth) < 700;
+if (!isMobile) {
+lwhbim.cmd.push(function() {
+lwhbim.loadAd({tagId: 'mestis_mestis-fi-sidebar', keywords: window.mestis ? window.mestis : {'content_group': 'unknown'}});
+});
+}
+</script>
+      </div>
+      
+  <h3>Luistelumatka</h3>
+  <div class="match-ext-stats-grid">
+    
+  <div class="team-image-container home">
+    <img src="/media/team-logos/kiekkopojat.png.50x50_q85.png" class="team-image">
+  </div>
+
+    <div></div>
+    
+  <div class="team-image-container away">
+    <img src="/media/team-logos/fps_new.png.50x50_q85.png" class="team-image">
+  </div>
+
+    
+      <div class="home">
+        
+          <div class="stats-row"></div>
+        
+      </div>
+      <div class="rank">1</div>
+      <div class="away">
+        
+          <div class="stats-row"></div>
+        
+      </div>
+    
+      <div class="home">
+        
+          <div class="stats-row"></div>
+        
+      </div>
+      <div class="rank">2</div>
+      <div class="away">
+        
+          <div class="stats-row"></div>
+        
+      </div>
+    
+      <div class="home">
+        
+          <div class="stats-row"></div>
+        
+      </div>
+      <div class="rank">3</div>
+      <div class="away">
+        
+          <div class="stats-row"></div>
+        
+      </div>
+    
+  </div>
+  <h3>Nopein luistelija</h3>
+  <div class="match-ext-stats-grid">
+    
+  <div class="team-image-container home">
+    <img src="/media/team-logos/kiekkopojat.png.50x50_q85.png" class="team-image">
+  </div>
+
+    <div></div>
+    
+  <div class="team-image-container away">
+    <img src="/media/team-logos/fps_new.png.50x50_q85.png" class="team-image">
+  </div>
+
+    
+      <div class="home">
+        
+          <div class="stats-row"></div>
+        
+      </div>
+      <div class="rank">1</div>
+      <div class="away">
+        
+        <div class="stats-row"></div>
+        
+      </div>
+    
+      <div class="home">
+        
+          <div class="stats-row"></div>
+        
+      </div>
+      <div class="rank">2</div>
+      <div class="away">
+        
+        <div class="stats-row"></div>
+        
+      </div>
+    
+      <div class="home">
+        
+          <div class="stats-row"></div>
+        
+      </div>
+      <div class="rank">3</div>
+      <div class="away">
+        
+        <div class="stats-row"></div>
+        
+      </div>
+    
+  </div>
+  <h3>Kovin laukaus</h3>
+  <div class="match-ext-stats-grid">
+    
+  <div class="team-image-container home">
+    <img src="/media/team-logos/kiekkopojat.png.50x50_q85.png" class="team-image">
+  </div>
+
+    <div></div>
+    
+  <div class="team-image-container away">
+    <img src="/media/team-logos/fps_new.png.50x50_q85.png" class="team-image">
+  </div>
+
+    
+      <div class="home">
+        
+          <div class="stats-row"></div>
+        
+      </div>
+      <div class="rank">1</div>
+      <div class="away">
+        
+          <div class="stats-row"></div>
+        
+      </div>
+    
+      <div class="home">
+        
+          <div class="stats-row"></div>
+        
+      </div>
+      <div class="rank">2</div>
+      <div class="away">
+        
+          <div class="stats-row"></div>
+        
+      </div>
+    
+      <div class="home">
+        
+          <div class="stats-row"></div>
+        
+      </div>
+      <div class="rank">3</div>
+      <div class="away">
+        
+          <div class="stats-row"></div>
+        
+      </div>
+    
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+
+    </div>
+    <div style="display:flex;padding:1rem;justify-content:center;">
+      
+<div id='mestis_mestis-fi-content'></div>
+<div id='mestis_mestis-fi-mobile-middle'></div>
+<script>
+  var isMobile = (window.innerWidth ||
+  document.documentElement.clientWidth ||
+  document.body.clientWidth) < 1000;
+  lwhbim.cmd.push(function() {
+    lwhbim.loadAd({tagId: isMobile ? 'mestis_mestis-fi-mobile-middle' : 'mestis_mestis-fi-content'});
+  });
+</script>
+
+    </div>
+    
+    
+      <div class="bottom-sponsors">
+        
+          <div class="sponsor">
+            <a class="bottom-sponsor-logo" target="_blank" href="https://www.mtv.fi/ohjelmat/mestis" data-id="19">
+              <img src="/media/ads/katsomo_200x200.png" alt="" />
+            </a>
+          </div>
+        
+          <div class="sponsor">
+            <a class="bottom-sponsor-logo" target="_blank" href="https://www.veikkaus.fi/" data-id="10">
+              <img src="/media/ads/veikkaus_200x200.png" alt="" />
+            </a>
+          </div>
+        
+          <div class="sponsor">
+            <a class="bottom-sponsor-logo" target="_blank" href="https://www.veripalvelu.fi/" data-id="11">
+              <img src="/media/ads/veripalvelu_200x200.png" alt="" />
+            </a>
+          </div>
+        
+          <div class="sponsor">
+            <a class="bottom-sponsor-logo" target="_blank" href="https://louhosdigital.fi/" data-id="25">
+              <img src="/media/ads/Louhos-logo-vertical-gold-2020-web.png" alt="" />
+            </a>
+          </div>
+        
+      </div>
+    
+
+    <div id="footer">
+      <div class="wrapper clearfix">
+        <div class="one_fourth">
+          <div class="half">
+            <div class="logo">
+              <img src="/static/liiga/common/img/mestis_badge_new.vca12f15d.png" >
+            </div>
+          </div>
+          <div class="half">
+          </div>
+          <div class="clearfix"></div>
+        </div>
+
+        <div class="one_fourth">
+          <h3>Jääkiekkoliitto verkossa</h3>
+          <ul>
+            <li><a target="_blank" href="http://www.leijonat.fi/">Leijonat</a></li>
+            <li><a target="_blank" href="http://www.tilastopalvelu.fi/ih">Tulospalvelu</a></li>
+            <li><a target="_blank" href="http://www.finhockey.fi/">Finhockey</a></li>
+            <li><a target="_blank" href="http://www.palvelusivusto.fi/">Palvelusivusto</a></li>
+            <li><a target="_blank" href="http://store.leijonat.fi/">Leijonat Store</a></li>
+          </ul>
+        </div>
+
+        
+
+        <div class="one_fourth">
+          <h3>Seuraa meitä</h3>
+          <ul>
+            <li><i class="fa fa-facebook"></i> <a target="_blank" href="https://www.facebook.com/MestisHockey">Facebook</a></li>
+            <li><img style="height:11px;" src="/static/liiga/common/img/share/x-white.v1fa61f31.png">&nbsp; <a target="_blank" href="https://x.com/mestis">X</a></li>
+            <li><i class="fa fa-instagram"></i> <a target="_blank" href="http://instagram.com/mestisfi">Instagram</a></li>
+            <li><i class="fa fa-youtube"></i> <a target="_blank" href="https://www.youtube.com/channel/UCySVAyET4s0PF7GlSE4hzOA">Youtube</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="site-info">
+        <div class="copy"> Copyright &copy; Mestis 2026 Suomen Jääkiekkoliitto </div>
+        <div class="separator">&ndash; </div>
+        <div class="terms"><a href="/mestis/kayttoehdot">Käyttöehdot </a></div>
+        <div class="separator">&ndash; </div>
+        <div class="terms"><a href="http://www.finhockey.fi/index.php/info/tietosuoja">Tietosuoja </a></div>
+        <div class="separator">&ndash; </div>
+        <div class="terms"><a href="/mestis/evastekaytannot"> Evästekäytännöt  </a></div>
+        <div class="separator">&ndash; </div>
+        <div class="terms"><a href="javascript:if(typeof window.__tcfapi !=='undefined'){window.__tcfapi('displayConsentUi',2,function(){});}else{window.location='https://mestis.fi/fi/mestis/evastekaytannot';};">Evästevalinnat</a></div>
+        <div class="separator">&ndash; </div>
+        <div class="terms"> Sivuston toteutus:  <a href="https://nidos.fi" target="_blank"> Nidos Oy </a></div>
+      </div>
+    </div>
+
+    <script src="/static/common.da78f07cfe3ba5938594.js"></script>
+    <script src="/static/common/ad_banner_all.1a4d8d89ea8511e88e22.js"></script>
+    
+<script src="/static/site/game-report.8d04218393a6ad56cf09.js"></script>
+
+
+    <div class="body-scripts">
+
+    
+
+    
+    </div>
+  </body>
+</html>

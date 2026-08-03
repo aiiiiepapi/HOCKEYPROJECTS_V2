@@ -1,0 +1,4109 @@
+
+
+
+
+<!DOCTYPE html>
+<!--[if IE 6]><html id="ie6" lang="fi"><![endif]-->
+<!--[if IE 7]><html id="ie7" lang="fi"><![endif]-->
+<!--[if IE 8]><html id="ie8" lang="fi"><![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!--><html lang="fi"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="fb:app_id" content="732722133488972" />
+    <title>Ottelutilastot | TUTO Hockey - KOOVEE 17.3.2023 | Mestis.fi</title>
+    
+      <meta property="og:url" content="https://mestis.fi/fi/ottelut/2022-2023/runkosarja/7655/tilastot/">
+      <meta property="og:type" content="website">
+      <meta property="og:title" content="Ottelutilastot | TUTO Hockey - KOOVEE 17.3.2023 | Mestis.fi">
+      <meta property="og:description" content="Mestis.fi - Suomen viihdyttävintä lätkää">
+      <meta property="og:image" content="https://mestis.fi/static/liiga/common/img/mestis_badge_new.png">
+    
+    <link rel="icon" type="image/png" href="/static/favicon_mestis.v07581c48.png">
+    
+      <link href="https://fonts.googleapis.com/css?family=Exo:400,800,400italic,800italic" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="https://use.typekit.net/btm5kpr.css">
+      <link href="/static/ext/font-awesome-4.2.0/css/font-awesome.min.v0fb1bbca.css" rel="stylesheet">
+      <link href="/static/ext/flexslider-2.2.2/flexslider.v387114fe.css" rel="stylesheet">
+      <link href="/fi/background.css" rel="stylesheet">
+      <link href="/static/liiga/somewall/css/somewall.v1c09ef04.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+      <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+
+    
+  <link href="/static/liiga/site/css/page.v0c11ff50.css" rel="stylesheet">
+  <link href="/static/liiga/stats/css/game-base.v2be6fbcd.css" rel="stylesheet">
+
+  <link href="/static/liiga/stats/css/game-stats.v37211d72.css" rel="stylesheet">
+
+    
+
+    <script src="/static/ext/modernizr.js"></script>
+
+        
+        <!-- InMobi Choice. Consent Manager Tag v3.0 (for TCF 2.2) -->
+        <script type="text/javascript" async=true>
+        (function() {
+          var host = window.location.hostname;
+          var element = document.createElement('script');
+          var firstScript = document.getElementsByTagName('script')[0];
+          var url = 'https://cmp.inmobi.com'
+            .concat('/choice/', 'zHRH_j7NXRDvN', '/', host, '/choice.js?tag_version=V3');
+          var uspTries = 0;
+          var uspTriesLimit = 3;
+          element.async = true;
+          element.type = 'text/javascript';
+          element.src = url;
+
+          firstScript.parentNode.insertBefore(element, firstScript);
+
+          function makeStub() {
+            var TCF_LOCATOR_NAME = '__tcfapiLocator';
+            var queue = [];
+            var win = window;
+            var cmpFrame;
+
+            function addFrame() {
+              var doc = win.document;
+              var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+
+              if (!otherCMP) {
+                if (doc.body) {
+                  var iframe = doc.createElement('iframe');
+
+                  iframe.style.cssText = 'display:none';
+                  iframe.name = TCF_LOCATOR_NAME;
+                  doc.body.appendChild(iframe);
+                } else {
+                  setTimeout(addFrame, 5);
+                }
+              }
+              return !otherCMP;
+            }
+
+            function tcfAPIHandler() {
+              var gdprApplies;
+              var args = arguments;
+
+              if (!args.length) {
+                return queue;
+              } else if (args[0] === 'setGdprApplies') {
+                if (
+                  args.length > 3 &&
+                  args[2] === 2 &&
+                  typeof args[3] === 'boolean'
+                ) {
+                  gdprApplies = args[3];
+                  if (typeof args[2] === 'function') {
+                    args[2]('set', true);
+                  }
+                }
+              } else if (args[0] === 'ping') {
+                var retr = {
+                  gdprApplies: gdprApplies,
+                  cmpLoaded: false,
+                  cmpStatus: 'stub'
+                };
+
+                if (typeof args[2] === 'function') {
+                  args[2](retr);
+                }
+              } else {
+                if(args[0] === 'init' && typeof args[3] === 'object') {
+                  args[3] = Object.assign(args[3], { tag_version: 'V3' });
+                }
+                queue.push(args);
+              }
+            }
+
+            function postMessageEventHandler(event) {
+              var msgIsString = typeof event.data === 'string';
+              var json = {};
+
+              try {
+                if (msgIsString) {
+                  json = JSON.parse(event.data);
+                } else {
+                  json = event.data;
+                }
+              } catch (ignore) {}
+
+              var payload = json.__tcfapiCall;
+
+              if (payload) {
+                window.__tcfapi(
+                  payload.command,
+                  payload.version,
+                  function(retValue, success) {
+                    var returnMsg = {
+                      __tcfapiReturn: {
+                        returnValue: retValue,
+                        success: success,
+                        callId: payload.callId
+                      }
+                    };
+                    if (msgIsString) {
+                      returnMsg = JSON.stringify(returnMsg);
+                    }
+                    if (event && event.source && event.source.postMessage) {
+                      event.source.postMessage(returnMsg, '*');
+                    }
+                  },
+                  payload.parameter
+                );
+              }
+            }
+
+            while (win) {
+              try {
+                if (win.frames[TCF_LOCATOR_NAME]) {
+                  cmpFrame = win;
+                  break;
+                }
+              } catch (ignore) {}
+
+              if (win === window.top) {
+                break;
+              }
+              win = win.parent;
+            }
+            if (!cmpFrame) {
+              addFrame();
+              win.__tcfapi = tcfAPIHandler;
+              win.addEventListener('message', postMessageEventHandler, false);
+            }
+          };
+
+          makeStub();
+
+          var uspStubFunction = function() {
+            var arg = arguments;
+            if (typeof window.__uspapi !== uspStubFunction) {
+              setTimeout(function() {
+                if (typeof window.__uspapi !== 'undefined') {
+                  window.__uspapi.apply(window.__uspapi, arg);
+                }
+              }, 500);
+            }
+          };
+
+          var checkIfUspIsReady = function() {
+            uspTries++;
+            if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+              console.warn('USP is not accessible');
+            } else {
+              clearInterval(uspInterval);
+            }
+          };
+
+          if (typeof window.__uspapi === 'undefined') {
+            window.__uspapi = uspStubFunction;
+            var uspInterval = setInterval(checkIfUspIsReady, 6000);
+          }
+        })();
+        </script>
+        <!-- End InMobi Choice. Consent Manager Tag v3.0 (for TCF 2.2) -->
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src=https://www.googletagmanager.com/gtag/js?id=G-PBNR69Q1D0></script>
+    <script>window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
+    gtag('config', 'G-PBNR69Q1D0');</script>
+
+    
+    <script async='async' src='https://lwadm.com/lw/pbjs?pid=cff5efc9-c155-4cb1-bb92-0868e8a27d96'></script>
+    <script type='text/javascript'>
+      var lwhbim = lwhbim || {cmd:[]};
+    </script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '589177765323307');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=589177765323307&ev=PageView&noscript=1"/></noscript>
+    <!-- End Meta Pixel Code -->
+
+    
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="team-logos"><div id="team-logos" style="max-width: 1280px"><div>
+        <a href="https://www.kokkolanhermes.fi/" target="_blank"><img src="/static/liiga/common/img/team-logos/hermes.vc0382e5a.png"></a>
+      </div><div>
+        <a href="https://www.ipk.fi/" target="_blank"><img src="/static/liiga/common/img/team-logos/ipk.va9ad0be6.png"></a>
+      </div><div>
+        <a href="https://www.kettera.net/" target="_blank"><img src="/static/liiga/common/img/team-logos/kettera.v7d3a6faa.png"></a>
+      </div><div>
+        <a href="https://www.keupaht.fi/" target="_blank"><img src="/static/liiga/common/img/team-logos/keupa.vfa36865d.png"></a>
+      </div><div>
+        <a href="https://joensuunkiekkopojat.fi/" target="_blank"><img src="/static/liiga/common/img/team-logos/kiekko-pojat.v2e6af7bf.png"></a>
+      </div><div>
+        <a href="https://kiekko-vantaa.fi/" target="_blank"><img src="/static/liiga/common/img/team-logos/kiekko-vantaa.v3d7af107.png"></a>
+      </div><div>
+        <a href="https://pyryhockey.com/" target="_blank"><img src="/static/liiga/common/img/team-logos/pyry.v43fa5859.png"></a>
+      </div><div>
+        <a href="https://www.rokihockey.fi/" target="_blank"><img src="/static/liiga/common/img/team-logos/roki_new.v364bd5ec.png"></a>
+      </div><div>
+        <a href="https://www.tutohockey.fi/" target="_blank"><img src="/static/liiga/common/img/team-logos/tuto.v00912d18.png"></a>
+      </div></div>
+</div>
+      
+      <div id="mainmenu">
+        <div class="menubar">
+          
+  <button class="toggle-audio">
+    <i class="fa fa-bell" title="Äänet päällä"></i>
+    <i class="fa fa-bell-slash" title="Äänet pois päältä"></i>
+  </button>
+
+          
+          <div class="mobileLanguageSelect">
+            
+<span>
+  
+  
+    <a id="fimobile" href="/fi/" onClick="
+  document.cookie = 'django_language=fi;path=/;expires=false';
+">FI</a>
+  
+ | 
+  
+    <a id="enmobile" href="/en/" onClick="
+  document.cookie = 'django_language=en;path=/;expires=false';
+">EN</a>
+  
+  
+</span>
+<script type="text/javascript">
+  // Fetches the index of a cookie based on a name
+  function cookieIndex(cookie_name) {
+    var cookies = document.cookie.split(";")
+    var index = -1;
+
+    for(var i = 0; i<cookies.length; i++){
+      if(cookies[i].includes(cookie_name)){
+      index = i
+      }
+    }
+    return index;
+  }
+
+  function elementWithIdExists(idToSearch){
+    return !!document.getElementById(idToSearch);
+  }
+
+  var cookies=document.cookie.split(";")
+  // If no django_language cookie has been set, set it to default.
+  if(cookieIndex("django_language")==-1){
+    document.cookie = 'django_language=fi;path=/;expires=false';
+  }
+
+  var langselectmobile;
+  var langselectdesktop;
+
+  // Determine, if the desktop or mobile version of the site is in use.
+  // Based on that, fetch language buttons
+  if (cookies[cookieIndex("django_language")]) {
+    if(elementWithIdExists(cookies[cookieIndex("django_language")].split("=")[1].toString()+""+"mobile")){
+      var langselectmobile = document.getElementById(cookies[cookieIndex("django_language")].split("=")[1].toString()+""+"mobile")
+    }
+
+    if(elementWithIdExists(cookies[cookieIndex("django_language")].split("=")[1].toString()+""+"desktop")){
+      var langselectdesktop = document.getElementById(cookies[cookieIndex("django_language")].split("=")[1].toString()+""+"desktop")
+    }
+  }
+
+  // Bold and underline the active language
+  if(langselectdesktop != null){
+    langselectdesktop.style.textDecoration="underline";
+    langselectdesktop.style.fontWeight="bold";
+  }
+  if(langselectmobile != null){
+    langselectmobile.style.textDecoration="underline";
+    langselectmobile.style.fontWeight="bold";
+  }
+
+
+
+  // Update language selection buttons if language has been changed from the URL
+
+  window.onload = function (){
+    //Fetch current url and update cookie based on language code within it
+
+    var tmp = window.location.href
+    var location = tmp.split("/")
+    for(var l of location){
+      if(l == "en"){
+      document.cookie = 'django_language=en;path=/;expires=false';
+      }else if (l == "fi"){
+      document.cookie = 'django_language=fi;path=/;expires=false';
+      }
+    }
+
+    // Bold and underline language selection button based on active language
+    var cookies=document.cookie.split(";");
+    var currentLang = cookies[cookieIndex("django_language")].split("=")[1].toString();
+
+    if(currentLang == "fi"){
+      if(elementWithIdExists(currentLang+""+"mobile")){
+        var langselectmobilefi = document.getElementById(currentLang+"mobile")
+        var langselectmobileen = document.getElementById("en"+"mobile")
+
+        langselectmobilefi.style.textDecoration="underline";
+        langselectmobilefi.style.fontWeight="bold";
+        langselectmobileen.style.textDecoration="none";
+        langselectmobileen.style.fontWeight="normal";
+
+      }
+      if(elementWithIdExists(currentLang+""+"desktop")){
+        var langselectdesktopfi = document.getElementById(currentLang+"desktop")
+        var langselectdesktopen = document.getElementById("en"+"desktop")
+
+        langselectdesktopfi.style.textDecoration="underline";
+        langselectdesktopfi.style.fontWeight="bold";
+        langselectdesktopen.style.textDecoration="none";
+        langselectdesktopen.style.fontWeight="normal";
+
+      }
+    } else if(currentLang == "en") {
+     if(elementWithIdExists(currentLang+""+"mobile")){
+        var langselectmobileen = document.getElementById(currentLang+"mobile");
+        var langselectmobilefi = document.getElementById("fi"+"mobile");
+        langselectmobileen.style.textDecoration="underline";
+        langselectmobileen.style.fontWeight="bold";
+        langselectmobilefi.style.textDecoration="none";
+        langselectmobilefi.style.fontWeight="normal";
+      }
+      if(elementWithIdExists(currentLang+""+"desktop")){
+        var langselectdesktopen = document.getElementById(currentLang+"desktop");
+        var langselectdesktopfi = document.getElementById("fi"+"desktop");
+
+        langselectdesktopen.style.textDecoration="underline";
+        langselectdesktopen.style.fontWeight="bold";
+        langselectdesktopfi.style.textDecoration="none";
+        langselectdesktopfi.style.fontWeight="normal";
+
+      }
+    }
+  }
+</script>
+
+          </div>
+          <button class="toggle-menu"><i class="fa fa-bars"></i></button>
+        </div>
+
+        
+        <div class="logo ">
+          <a href="/fi/"><img src="/static/liiga/common/img/liiga_logo.v84079fa5.png"></a>
+        </div>
+        <ul class="menu menu-">
+          <li><a class="uutiset" href="/fi/uutiset/">Uutiset</a></li>
+          <li><a class="ottelut" href="/fi/ottelut/">Ottelut</a></li>
+          <li class="has-submenu"><p class="tilastot"><span>Tilastot<span class="menu-caret">&nbsp;<i class="fa fa-caret-right"></i></span></span></p>
+            <ul class="submenu">
+              <li><a href="/fi/tilastot/joukkueet/">Joukkuetilastot</a></li>
+              <li><a href="/fi/tilastot/pelaajat/">Pelaajatilastot</a></li>
+              
+              <li><a href="/fi/tilastot/tyokalut/">Sarjataulukkolaskuri</a></li>
+           </ul>
+          </li>
+          <li><a class="pelaajat" href="/fi/pelaajat/">Pelaajat</a></li>
+          <li class="has-submenu"><p class="joukkueet"><span>Joukkueet<span class="menu-caret">&nbsp;<i class="fa fa-caret-right"></i></span></span></p>
+
+            <ul class="submenu">
+              <li><a href="/fi/joukkueet/hermes/" >Hermes</a></li><li><a href="/fi/joukkueet/ipk/" >IPK</a></li><li><a href="/fi/joukkueet/kettera/" >Ketterä</a></li><li><a href="/fi/joukkueet/keupa-ht/" >KeuPa HT</a></li><li><a href="/fi/joukkueet/jokp/" >Kiekko-Pojat</a></li><li><a href="/fi/joukkueet/k-vantaa/" >Kiekko-Vantaa</a></li><li><a href="/fi/joukkueet/pyry/" >Pyry Hockey</a></li><li><a href="/fi/joukkueet/roki/" >RoKi</a></li><li><a href="/fi/joukkueet/tuto-hockey/" >TUTO Hockey</a></li>
+            </ul>
+          </li>
+          <li><a class="uutiset" target="_blank" href="/kumppanuus/">Kumppanuus</a></li>
+          <li><a class="uutiset" target="_blank" href="https://hengenpelastajaliiga.fi/">Hengenpelastajaliiga</a></li>
+          <li class="has-submenu"><p class="liiga"><span>Mestis<span class="menu-caret">&nbsp;<i class="fa fa-caret-right"></i></span></span></p>
+            <ul class="submenu">
+              
+              
+              
+                
+                
+                
+                  
+                    <li><a href="/fi/mestis/kokoonpanosaannot">Kokoonpanosäännöt</a></li>
+                      
+                  
+                
+                  
+                    <li><a href="/fi/mestis/kurinpitosaannot">Kurinpitosäännöt</a></li>
+                      
+                  
+                
+                  
+                    <li><a href="/fi/mestis/lisenssiehdot">Lisenssiehdot</a></li>
+                      
+                  
+                
+                  
+                    <li><a href="/fi/mestis/pelaamistapa">Pelaamistapa</a></li>
+                      
+                  
+                
+                  
+                    <li><a href="/fi/mestis/vapaakortit">Vapaakortit</a></li>
+                      
+                  
+                
+                  
+                    <li><a href="/fi/mestis/yhteystiedot">Yhteystiedot</a></li>
+                      
+                  
+                
+
+                
+                
+              
+            </ul>
+          </li>
+        </ul>
+        <div class="languageSelect">
+          
+<span>
+  
+  
+    <a id="fidesktop" href="/fi/" onClick="
+  document.cookie = 'django_language=fi;path=/;expires=false';
+">FI</a>
+  
+ | 
+  
+    <a id="endesktop" href="/en/" onClick="
+  document.cookie = 'django_language=en;path=/;expires=false';
+">EN</a>
+  
+  
+</span>
+<script type="text/javascript">
+  // Fetches the index of a cookie based on a name
+  function cookieIndex(cookie_name) {
+    var cookies = document.cookie.split(";")
+    var index = -1;
+
+    for(var i = 0; i<cookies.length; i++){
+      if(cookies[i].includes(cookie_name)){
+      index = i
+      }
+    }
+    return index;
+  }
+
+  function elementWithIdExists(idToSearch){
+    return !!document.getElementById(idToSearch);
+  }
+
+  var cookies=document.cookie.split(";")
+  // If no django_language cookie has been set, set it to default.
+  if(cookieIndex("django_language")==-1){
+    document.cookie = 'django_language=fi;path=/;expires=false';
+  }
+
+  var langselectmobile;
+  var langselectdesktop;
+
+  // Determine, if the desktop or mobile version of the site is in use.
+  // Based on that, fetch language buttons
+  if (cookies[cookieIndex("django_language")]) {
+    if(elementWithIdExists(cookies[cookieIndex("django_language")].split("=")[1].toString()+""+"mobile")){
+      var langselectmobile = document.getElementById(cookies[cookieIndex("django_language")].split("=")[1].toString()+""+"mobile")
+    }
+
+    if(elementWithIdExists(cookies[cookieIndex("django_language")].split("=")[1].toString()+""+"desktop")){
+      var langselectdesktop = document.getElementById(cookies[cookieIndex("django_language")].split("=")[1].toString()+""+"desktop")
+    }
+  }
+
+  // Bold and underline the active language
+  if(langselectdesktop != null){
+    langselectdesktop.style.textDecoration="underline";
+    langselectdesktop.style.fontWeight="bold";
+  }
+  if(langselectmobile != null){
+    langselectmobile.style.textDecoration="underline";
+    langselectmobile.style.fontWeight="bold";
+  }
+
+
+
+  // Update language selection buttons if language has been changed from the URL
+
+  window.onload = function (){
+    //Fetch current url and update cookie based on language code within it
+
+    var tmp = window.location.href
+    var location = tmp.split("/")
+    for(var l of location){
+      if(l == "en"){
+      document.cookie = 'django_language=en;path=/;expires=false';
+      }else if (l == "fi"){
+      document.cookie = 'django_language=fi;path=/;expires=false';
+      }
+    }
+
+    // Bold and underline language selection button based on active language
+    var cookies=document.cookie.split(";");
+    var currentLang = cookies[cookieIndex("django_language")].split("=")[1].toString();
+
+    if(currentLang == "fi"){
+      if(elementWithIdExists(currentLang+""+"mobile")){
+        var langselectmobilefi = document.getElementById(currentLang+"mobile")
+        var langselectmobileen = document.getElementById("en"+"mobile")
+
+        langselectmobilefi.style.textDecoration="underline";
+        langselectmobilefi.style.fontWeight="bold";
+        langselectmobileen.style.textDecoration="none";
+        langselectmobileen.style.fontWeight="normal";
+
+      }
+      if(elementWithIdExists(currentLang+""+"desktop")){
+        var langselectdesktopfi = document.getElementById(currentLang+"desktop")
+        var langselectdesktopen = document.getElementById("en"+"desktop")
+
+        langselectdesktopfi.style.textDecoration="underline";
+        langselectdesktopfi.style.fontWeight="bold";
+        langselectdesktopen.style.textDecoration="none";
+        langselectdesktopen.style.fontWeight="normal";
+
+      }
+    } else if(currentLang == "en") {
+     if(elementWithIdExists(currentLang+""+"mobile")){
+        var langselectmobileen = document.getElementById(currentLang+"mobile");
+        var langselectmobilefi = document.getElementById("fi"+"mobile");
+        langselectmobileen.style.textDecoration="underline";
+        langselectmobileen.style.fontWeight="bold";
+        langselectmobilefi.style.textDecoration="none";
+        langselectmobilefi.style.fontWeight="normal";
+      }
+      if(elementWithIdExists(currentLang+""+"desktop")){
+        var langselectdesktopen = document.getElementById(currentLang+"desktop");
+        var langselectdesktopfi = document.getElementById("fi"+"desktop");
+
+        langselectdesktopen.style.textDecoration="underline";
+        langselectdesktopen.style.fontWeight="bold";
+        langselectdesktopfi.style.textDecoration="none";
+        langselectdesktopfi.style.fontWeight="normal";
+
+      }
+    }
+  }
+</script>
+
+        </div>
+
+      </div>
+      
+  
+    
+  <div id="top-ad">
+    <div id='mestis_mestis-fi-top-hb'></div>
+    <div id='mestis_mestis-fi-mobile-top'></div>
+    <script>
+      var isMobile = (window.innerWidth ||
+      document.documentElement.clientWidth ||
+      document.body.clientWidth) < 1000;
+      lwhbim.cmd.push(function() {
+        lwhbim.loadAd({tagId: isMobile ? 'mestis_mestis-fi-mobile-top' : 'mestis_mestis-fi-top-hb'});
+      });
+    </script>
+  </div>
+
+  
+
+
+      
+  <div id="page">
+    
+    
+    
+    
+    
+    <div class="menu menu-count3">
+      
+      <a class="kokoonpanot " href="/fi/ottelut/2022-2023/runkosarja/7655/kokoonpanot/">Kokoonpanot</a>
+      <a class="seuranta " href="/fi/ottelut/2022-2023/runkosarja/7655/seuranta/">Seuranta</a>
+      
+        <a class="tilastot active" href="/fi/ottelut/2022-2023/runkosarja/7655/tilastot/">Tilastot</a>
+        
+        
+      
+      
+      <button class="toggle-audio">
+        <i class="fa fa-bell" style="font-weight: 900;"></i>
+        <i class="fa fa-bell-slash" style="font-weight: 900;"></i>
+      </button>
+    </div>
+    
+  <div class="content-wrapper">
+    <div class="stats-wrapper">
+      <div class="stats">
+        
+  <div class="head started finished">
+    <div class="home" >
+      <div class="block-container">
+        
+  
+    
+      <img  src="/media/team-logos/tuto.png.200x200_q85.png">
+    
+  
+
+        
+      </div>
+    </div>
+    <div class="info">
+      <p class="score">
+        2
+        &ndash;
+        4
+      </p>
+      <p>(1-0, 0-1, 1-3)</p>
+      <p class="status">60:00 - Päättynyt&nbsp;<i class="fa fa-caret-down" title="Näytä aika laskevasti"></i></p>
+      <p class="status-reverse">60:00 - Päättynyt&nbsp;<i class="fa fa-caret-up" title="Näytä aika nousevasti"></i></p>
+      <p>Yleisöä 1064</p>
+      
+      
+    </div>
+    <div class="away">
+      <div class="block-container">
+        
+  
+    
+      <img  src="/media/team-logos/koovee.png.200x200_q85.png">
+    
+  
+
+        
+      </div>
+    </div>
+    
+  </div>
+
+
+        <div class="clearfix"></div>
+        <div id="filters">
+          <form>
+            <input type="hidden" name="sort_p" value="Nimi">
+            <input type="hidden" name="sort_g" value="Nimi">
+          </form>
+        </div>
+
+        <div class="goal-stats">
+          <h2>Maalit</h2>
+          <table>
+            
+              <tr>
+                <td class="goal">
+                  <span class="score">1&nbsp;&ndash;&nbsp;0</span><br>
+                  <span class="time">11:51</span>
+                </td>
+                <td class="ta-l">
+                  <strong>#9 
+  <a href="/fi/pelaajat/29577200/virtanen-valtteri">Valtteri Virtanen</a></strong>
+                  
+                    (#11 
+  <a href="/fi/pelaajat/22999225/ranta-roope">Roope Ranta</a>, #40 
+  <a href="/fi/pelaajat/22394684/levo-mikke">Mikke Levo</a>)
+                  
+                  YV
+                  
+                </td>
+              </tr>
+            
+              <tr>
+                <td class="goal">
+                  <span class="score">1&nbsp;&ndash;&nbsp;1</span><br>
+                  <span class="time">23:52</span>
+                </td>
+                <td class="ta-l">
+                  <strong>#26 
+  <a href="/fi/pelaajat/33510428/kangasniemi-okko">Okko Kangasniemi</a></strong>
+                  
+                    (#12 
+  <a href="/fi/pelaajat/28557276/pelamo-jesse">Jesse Pelamo</a>, #33 
+  <a href="/fi/pelaajat/33583439/jarventie-emil">Emil Järventie</a>)
+                  
+                  
+                  
+                    <table>
+                      <tbody>
+                        <th>+</th>
+                        <td>
+                          
+                            #12 
+  <a href="/fi/pelaajat/28557276/pelamo-jesse">Jesse Pelamo</a>, 
+                          
+                            #26 
+  <a href="/fi/pelaajat/33510428/kangasniemi-okko">Okko Kangasniemi</a>, 
+                          
+                            #33 
+  <a href="/fi/pelaajat/33583439/jarventie-emil">Emil Järventie</a>, 
+                          
+                            #36 
+  <a href="/fi/pelaajat/31508351/ruusu-elias">Elias Ruusu</a>, 
+                          
+                            #49 
+  <a href="/fi/pelaajat/23835443/vastila-markus">Markus Västilä</a>
+                          
+                        </td>
+                      </tbody>
+                    </table>
+                    <table>
+                      <tbody>
+                        <th>-</th>
+                        <td>
+                          
+                            #9 
+  <a href="/fi/pelaajat/29577200/virtanen-valtteri">Valtteri Virtanen</a>, 
+                          
+                            #11 
+  <a href="/fi/pelaajat/22999225/ranta-roope">Roope Ranta</a>, 
+                          
+                            #21 
+  <a href="/fi/pelaajat/60695610/higgins-michael">Michael Higgins</a>, 
+                          
+                            #22 
+  <a href="/fi/pelaajat/32579127/rannisto-jasper">Jasper Rannisto</a>, 
+                          
+                            #73 
+  <a href="/fi/pelaajat/29477410/larinmaa-jesper">Jesper Larinmaa</a>
+                          
+                        </td>
+                      </tbody>
+                    </table>
+                  
+                </td>
+              </tr>
+            
+              <tr>
+                <td class="goal">
+                  <span class="score">1&nbsp;&ndash;&nbsp;2</span><br>
+                  <span class="time">45:57</span>
+                </td>
+                <td class="ta-l">
+                  <strong>#11 
+  <a href="/fi/pelaajat/40005288/aho-karri">Karri Aho</a></strong>
+                  
+                    (#33 
+  <a href="/fi/pelaajat/33583439/jarventie-emil">Emil Järventie</a>, #72 
+  <a href="/fi/pelaajat/29815001/sillanpaa-santeri">Santeri Sillanpää</a>)
+                  
+                  YV
+                  
+                </td>
+              </tr>
+            
+              <tr>
+                <td class="goal">
+                  <span class="score">2&nbsp;&ndash;&nbsp;2</span><br>
+                  <span class="time">54:02</span>
+                </td>
+                <td class="ta-l">
+                  <strong>#51 
+  <a href="/fi/pelaajat/30411041/lemberg-leevi">Leevi Lemberg</a></strong>
+                  
+                    (#77 
+  <a href="/fi/pelaajat/30670031/takkunen-daniel">Daniel Takkunen</a>, #73 
+  <a href="/fi/pelaajat/29477410/larinmaa-jesper">Jesper Larinmaa</a>)
+                  
+                  YV
+                  
+                </td>
+              </tr>
+            
+              <tr>
+                <td class="goal">
+                  <span class="score">2&nbsp;&ndash;&nbsp;3</span><br>
+                  <span class="time">56:55</span>
+                </td>
+                <td class="ta-l">
+                  <strong>#26 
+  <a href="/fi/pelaajat/33510428/kangasniemi-okko">Okko Kangasniemi</a></strong>
+                  
+                    (#7 
+  <a href="/fi/pelaajat/34271245/kantola-oskari">Oskari Kantola</a>, #12 
+  <a href="/fi/pelaajat/28557276/pelamo-jesse">Jesse Pelamo</a>)
+                  
+                  YV VM 
+                  
+                </td>
+              </tr>
+            
+              <tr>
+                <td class="goal">
+                  <span class="score">2&nbsp;&ndash;&nbsp;4</span><br>
+                  <span class="time">57:48</span>
+                </td>
+                <td class="ta-l">
+                  <strong>#20 
+  <a href="/fi/pelaajat/29969148/aalto-santeri">Santeri Aalto</a></strong>
+                  
+                  AV
+                  
+                    <table>
+                      <tbody>
+                        <th>+</th>
+                        <td>
+                          
+                            #20 
+  <a href="/fi/pelaajat/29969148/aalto-santeri">Santeri Aalto</a>, 
+                          
+                            #21 
+  <a href="/fi/pelaajat/30605909/kivimaki-jere">Jere Kivimäki</a>, 
+                          
+                            #22 
+  <a href="/fi/pelaajat/21662236/hovinen-miro">Miro Hovinen</a>, 
+                          
+                            #36 
+  <a href="/fi/pelaajat/31508351/ruusu-elias">Elias Ruusu</a>
+                          
+                        </td>
+                      </tbody>
+                    </table>
+                    <table>
+                      <tbody>
+                        <th>-</th>
+                        <td>
+                          
+                            #7 
+  <a href="/fi/pelaajat/33296946/paivarinta-sami">Sami Päivärinta</a>, 
+                          
+                            #9 
+  <a href="/fi/pelaajat/29577200/virtanen-valtteri">Valtteri Virtanen</a>, 
+                          
+                            #40 
+  <a href="/fi/pelaajat/22394684/levo-mikke">Mikke Levo</a>, 
+                          
+                            #51 
+  <a href="/fi/pelaajat/30411041/lemberg-leevi">Leevi Lemberg</a>, 
+                          
+                            #73 
+  <a href="/fi/pelaajat/29477410/larinmaa-jesper">Jesper Larinmaa</a>
+                          
+                        </td>
+                      </tbody>
+                    </table>
+                  
+                </td>
+              </tr>
+            
+          </table>
+        </div>
+
+        <div><i>Ottelun pelaajatilastot päivitetään erätauoilla ja pelin päätyttyä.</i></div>
+
+        <div class="team home">
+          <h2>TUTO Hockey</h2>
+          <table>
+            <thead class="header">
+              <tr>
+                <th colspan="18">Kenttäpelaajat</th>
+              </tr>
+            </thead>
+            
+  <thead class="player-stats">
+    <tr>
+      
+  
+  
+    
+      
+    
+  <th class="ta-l active">
+    <a href="#" data-sort-field="Nimi">Nimi</a>
+  </th>
+
+      
+    
+  
+  
+  
+  <th class="h-l" title="Pelinumero">
+    <a href="#" data-sort-field="#">#</a>
+  </th>
+
+      
+  
+  
+  <th class="h-l" title="Pelipaikka">
+    <a href="#" data-sort-field="PP">PP</a>
+  </th>
+
+      
+  
+  
+  <th title="Maalit">
+    <a href="#" data-sort-field="M">M</a>
+  </th>
+
+      
+  
+  
+  <th title="Syötöt">
+    <a href="#" data-sort-field="S">S</a>
+  </th>
+
+      
+  
+  
+  <th title="Pisteet">
+    <a href="#" data-sort-field="P">P</a>
+  </th>
+
+      
+  
+  
+  <th title="Rangaistukset">
+    <a href="#" data-sort-field="R">R</a>
+  </th>
+
+      
+    
+  
+  
+  
+  <th class="h-m" title="Pluspisteet">
+    <a href="#" data-sort-field="+">+</a>
+  </th>
+
+      
+    
+  
+  
+  
+  <th class="h-m" title="Miinuspisteet">
+    <a href="#" data-sort-field="-">-</a>
+  </th>
+
+      
+    
+  
+  
+  
+  <th title="Plus-miinus-erotus">
+    <a href="#" data-sort-field="±">±</a>
+  </th>
+
+      
+  
+  
+  <th class="h-l" title="Ylivoimamaalit">
+    <a href="#" data-sort-field="YV">YV</a>
+  </th>
+
+      
+  
+  
+  <th class="h-l" title="Alivoimamaalit">
+    <a href="#" data-sort-field="AV">AV</a>
+  </th>
+
+      
+  
+  
+  <th class="h-m" title="Voittomaalit">
+    <a href="#" data-sort-field="VM">VM</a>
+  </th>
+
+      
+  
+  
+  <th class="h-m" title="Laukaukset">
+    <a href="#" data-sort-field="L">L</a>
+  </th>
+
+      
+  
+  
+  <th class="h-s" title="Laukausprosentti">
+    <a href="#" data-sort-field="L%">L%</a>
+  </th>
+
+      
+  
+  
+  <th class="h-m" title="Aloitukset">
+    <a href="#" data-sort-field="A">A</a>
+  </th>
+
+      
+  
+  
+  <th class="h-s" title="Aloitusprosentti">
+    <a href="#" data-sort-field="A%">A%</a>
+  </th>
+
+      
+  
+  
+  <th class="h-s">
+    <a href="#" data-sort-field="Aika">Aika</a>
+  </th>
+
+    </tr>
+  </thead>
+  <tbody>
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/60659010/andzans-arturs">Andzans, Arturs</a></strong></td>
+    <td class="h-l">
+  92</td>
+    <td class="h-l">
+  VP</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  2</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td>
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  1</td>
+    <td class="h-s">
+  0,0</td>
+    
+    <td class="h-m">
+  0</td>
+    <td class="h-s">
+  -</td>
+    <td class="h-s">
+  16:01</td>
+  </tr>
+
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/60459276/colomban-robin">Colomban, Robin</a></strong></td>
+    <td class="h-l">
+  67</td>
+    <td class="h-l">
+  KH</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td>
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  2</td>
+    <td class="h-s">
+  0,0</td>
+    
+    <td class="h-m">
+  12</td>
+    <td class="h-s">
+  83,3</td>
+    <td class="h-s">
+  15:49</td>
+  </tr>
+
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/60695610/higgins-michael">Higgins, Michael</a></strong></td>
+    <td class="h-l">
+  21</td>
+    <td class="h-l">
+  OP</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  1</td>
+    <td>
+  -1</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  3</td>
+    <td class="h-s">
+  0,0</td>
+    
+    <td class="h-m">
+  0</td>
+    <td class="h-s">
+  -</td>
+    <td class="h-s">
+  21:27</td>
+  </tr>
+
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/32623222/kaski-topias">Kaski, Topias</a></strong></td>
+    <td class="h-l">
+  13</td>
+    <td class="h-l">
+  OH</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td>
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  4</td>
+    <td class="h-s">
+  0,0</td>
+    
+    <td class="h-m">
+  0</td>
+    <td class="h-s">
+  -</td>
+    <td class="h-s">
+  14:22</td>
+  </tr>
+
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/60348469/kiik-rasmus">Kiik, Rasmus</a></strong></td>
+    <td class="h-l">
+  18</td>
+    <td class="h-l">
+  H</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td>
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  3</td>
+    <td class="h-s">
+  0,0</td>
+    
+    <td class="h-m">
+  0</td>
+    <td class="h-s">
+  -</td>
+    <td class="h-s">
+  10:27</td>
+  </tr>
+
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/27772544/konttila-niklas">Konttila, Niklas</a></strong></td>
+    <td class="h-l">
+  26</td>
+    <td class="h-l">
+  OH</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td>
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  5</td>
+    <td class="h-s">
+  0,0</td>
+    
+    <td class="h-m">
+  0</td>
+    <td class="h-s">
+  -</td>
+    <td class="h-s">
+  16:00</td>
+  </tr>
+
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/30968248/lahtinen-oskari">Lahtinen, Oskari</a></strong></td>
+    <td class="h-l">
+  55</td>
+    <td class="h-l">
+  OP</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td>
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-s">
+  -</td>
+    
+    <td class="h-m">
+  0</td>
+    <td class="h-s">
+  -</td>
+    <td class="h-s">
+  2:10</td>
+  </tr>
+
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/29477410/larinmaa-jesper">Larinmaa, Jesper</a></strong></td>
+    <td class="h-l">
+  73</td>
+    <td class="h-l">
+  KH</td>
+    <td>
+  0</td>
+    <td>
+  1</td>
+    <td>
+  1</td>
+    <td>
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  2</td>
+    <td>
+  -2</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-s">
+  -</td>
+    
+    <td class="h-m">
+  15</td>
+    <td class="h-s">
+  60,0</td>
+    <td class="h-s">
+  16:41</td>
+  </tr>
+
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/30411041/lemberg-leevi">Lemberg, Leevi</a></strong></td>
+    <td class="h-l">
+  51</td>
+    <td class="h-l">
+  OH</td>
+    <td>
+  1</td>
+    <td>
+  0</td>
+    <td>
+  1</td>
+    <td>
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  1</td>
+    <td>
+  -1</td>
+    <td class="h-l">
+  1</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  7</td>
+    <td class="h-s">
+  14,3</td>
+    
+    <td class="h-m">
+  0</td>
+    <td class="h-s">
+  -</td>
+    <td class="h-s">
+  14:32</td>
+  </tr>
+
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/29866173/leppikoski-jesse">Leppikoski, Jesse</a></strong></td>
+    <td class="h-l">
+  27</td>
+    <td class="h-l">
+  VH</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td>
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  5</td>
+    <td class="h-s">
+  0,0</td>
+    
+    <td class="h-m">
+  0</td>
+    <td class="h-s">
+  -</td>
+    <td class="h-s">
+  18:26</td>
+  </tr>
+
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/22394684/levo-mikke">Levo, Mikke</a></strong></td>
+    <td class="h-l">
+  40</td>
+    <td class="h-l">
+  VP</td>
+    <td>
+  0</td>
+    <td>
+  1</td>
+    <td>
+  1</td>
+    <td>
+  2</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  1</td>
+    <td>
+  -1</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  11</td>
+    <td class="h-s">
+  0,0</td>
+    
+    <td class="h-m">
+  0</td>
+    <td class="h-s">
+  -</td>
+    <td class="h-s">
+  21:28</td>
+  </tr>
+
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/31599933/mutikainen-matias">Mutikainen, Matias</a></strong></td>
+    <td class="h-l">
+  78</td>
+    <td class="h-l">
+  KH</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td>
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  1</td>
+    <td class="h-s">
+  0,0</td>
+    
+    <td class="h-m">
+  9</td>
+    <td class="h-s">
+  55,6</td>
+    <td class="h-s">
+  9:14</td>
+  </tr>
+
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/33296946/paivarinta-sami">Päivärinta, Sami</a></strong></td>
+    <td class="h-l">
+  7</td>
+    <td class="h-l">
+  KH</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  1</td>
+    <td>
+  -1</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  3</td>
+    <td class="h-s">
+  0,0</td>
+    
+    <td class="h-m">
+  23</td>
+    <td class="h-s">
+  30,4</td>
+    <td class="h-s">
+  18:32</td>
+  </tr>
+
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/32579127/rannisto-jasper">Rannisto, Jasper</a></strong></td>
+    <td class="h-l">
+  22</td>
+    <td class="h-l">
+  VP</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  1</td>
+    <td>
+  -1</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  4</td>
+    <td class="h-s">
+  0,0</td>
+    
+    <td class="h-m">
+  0</td>
+    <td class="h-s">
+  -</td>
+    <td class="h-s">
+  18:05</td>
+  </tr>
+
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/22999225/ranta-roope">Ranta, Roope</a></strong></td>
+    <td class="h-l">
+  11</td>
+    <td class="h-l">
+  VH</td>
+    <td>
+  0</td>
+    <td>
+  1</td>
+    <td>
+  1</td>
+    <td>
+  12</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  1</td>
+    <td>
+  -1</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  6</td>
+    <td class="h-s">
+  0,0</td>
+    
+    <td class="h-m">
+  0</td>
+    <td class="h-s">
+  -</td>
+    <td class="h-s">
+  16:43</td>
+  </tr>
+
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/29609699/siren-tino">Sirén, Tino</a></strong></td>
+    <td class="h-l">
+  15</td>
+    <td class="h-l">
+  VH</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td>
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  1</td>
+    <td class="h-s">
+  0,0</td>
+    
+    <td class="h-m">
+  0</td>
+    <td class="h-s">
+  -</td>
+    <td class="h-s">
+  9:04</td>
+  </tr>
+
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/30670031/takkunen-daniel">Takkunen, Daniel</a></strong></td>
+    <td class="h-l">
+  77</td>
+    <td class="h-l">
+  OP</td>
+    <td>
+  0</td>
+    <td>
+  1</td>
+    <td>
+  1</td>
+    <td>
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td>
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  2</td>
+    <td class="h-s">
+  0,0</td>
+    
+    <td class="h-m">
+  0</td>
+    <td class="h-s">
+  -</td>
+    <td class="h-s">
+  23:17</td>
+  </tr>
+
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/27777358/virtanen-juho">Virtanen, Juho</a></strong></td>
+    <td class="h-l">
+  70</td>
+    <td class="h-l">
+  VH</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td>
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  2</td>
+    <td class="h-s">
+  0,0</td>
+    
+    <td class="h-m">
+  3</td>
+    <td class="h-s">
+  33,3</td>
+    <td class="h-s">
+  16:13</td>
+  </tr>
+
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/29577200/virtanen-valtteri">Virtanen, Valtteri</a></strong></td>
+    <td class="h-l">
+  9</td>
+    <td class="h-l">
+  OH</td>
+    <td>
+  1</td>
+    <td>
+  0</td>
+    <td>
+  1</td>
+    <td>
+  2</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  2</td>
+    <td>
+  -2</td>
+    <td class="h-l">
+  1</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  4</td>
+    <td class="h-s">
+  25,0</td>
+    
+    <td class="h-m">
+  0</td>
+    <td class="h-s">
+  -</td>
+    <td class="h-s">
+  17:06</td>
+  </tr>
+
+    
+  </tbody>
+
+          </table>
+          <table>
+            <thead class="header">
+              <tr>
+                <th colspan="10">Maalivahdit</th>
+              </tr>
+            </thead>
+            
+  <thead class="goalie-stats">
+    <tr>
+      
+  
+  
+    
+      
+    
+  <th class="ta-l active">
+    <a href="#" data-sort-field="Nimi">Nimi</a>
+  </th>
+
+      
+    
+  
+  
+  
+  <th class="h-l" title="Pelinumero">
+    <a href="#" data-sort-field="#">#</a>
+  </th>
+
+      
+  
+  
+  <th title="Torjunnat">
+    <a href="#" data-sort-field="TO">TO</a>
+  </th>
+
+      
+  
+  
+  <th title="Päästetyt maalit">
+    <a href="#" data-sort-field="PM">PM</a>
+  </th>
+
+      
+  
+  
+  <th title="Torjuntaprosentti">
+    <a href="#" data-sort-field="T%">T%</a>
+  </th>
+
+      
+  
+  
+  <th class="h-m" title="Maalit">
+    <a href="#" data-sort-field="M">M</a>
+  </th>
+
+      
+  
+  
+  <th class="h-m" title="Syötöt">
+    <a href="#" data-sort-field="S">S</a>
+  </th>
+
+      
+  
+  
+  <th class="h-m" title="Pisteet">
+    <a href="#" data-sort-field="P">P</a>
+  </th>
+
+      
+  
+  
+  <th class="h-m" title="Rangaistusminuutit">
+    <a href="#" data-sort-field="R">R</a>
+  </th>
+
+      
+  
+  
+  <th>
+    <a href="#" data-sort-field="Aika">Aika</a>
+  </th>
+
+    </tr>
+  </thead>
+  <tbody>
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/25650749/pohjanoksa-julius">Pohjanoksa, Julius</a></strong></td>
+    <td class="h-l">
+  31</td>
+    <td>
+  26</td>
+    <td>
+  4</td>
+    <td>
+  86,67</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td>
+  58:59</td>
+  </tr>
+
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/32637771/vuorio-emil">Vuorio, Emil</a></strong></td>
+    <td class="h-l">
+  37</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  -</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td>
+  0:00</td>
+  </tr>
+
+    
+  </tbody>
+
+          </table>
+        </div>
+
+        <div class="team away">
+          <h2>KOOVEE</h2>
+          <table>
+            <thead class="header">
+              <tr>
+                <th colspan="18">Kenttäpelaajat</th>
+              </tr>
+            </thead>
+            
+  <thead class="player-stats">
+    <tr>
+      
+  
+  
+    
+      
+    
+  <th class="ta-l active">
+    <a href="#" data-sort-field="Nimi">Nimi</a>
+  </th>
+
+      
+    
+  
+  
+  
+  <th class="h-l" title="Pelinumero">
+    <a href="#" data-sort-field="#">#</a>
+  </th>
+
+      
+  
+  
+  <th class="h-l" title="Pelipaikka">
+    <a href="#" data-sort-field="PP">PP</a>
+  </th>
+
+      
+  
+  
+  <th title="Maalit">
+    <a href="#" data-sort-field="M">M</a>
+  </th>
+
+      
+  
+  
+  <th title="Syötöt">
+    <a href="#" data-sort-field="S">S</a>
+  </th>
+
+      
+  
+  
+  <th title="Pisteet">
+    <a href="#" data-sort-field="P">P</a>
+  </th>
+
+      
+  
+  
+  <th title="Rangaistukset">
+    <a href="#" data-sort-field="R">R</a>
+  </th>
+
+      
+    
+  
+  
+  
+  <th class="h-m" title="Pluspisteet">
+    <a href="#" data-sort-field="+">+</a>
+  </th>
+
+      
+    
+  
+  
+  
+  <th class="h-m" title="Miinuspisteet">
+    <a href="#" data-sort-field="-">-</a>
+  </th>
+
+      
+    
+  
+  
+  
+  <th title="Plus-miinus-erotus">
+    <a href="#" data-sort-field="±">±</a>
+  </th>
+
+      
+  
+  
+  <th class="h-l" title="Ylivoimamaalit">
+    <a href="#" data-sort-field="YV">YV</a>
+  </th>
+
+      
+  
+  
+  <th class="h-l" title="Alivoimamaalit">
+    <a href="#" data-sort-field="AV">AV</a>
+  </th>
+
+      
+  
+  
+  <th class="h-m" title="Voittomaalit">
+    <a href="#" data-sort-field="VM">VM</a>
+  </th>
+
+      
+  
+  
+  <th class="h-m" title="Laukaukset">
+    <a href="#" data-sort-field="L">L</a>
+  </th>
+
+      
+  
+  
+  <th class="h-s" title="Laukausprosentti">
+    <a href="#" data-sort-field="L%">L%</a>
+  </th>
+
+      
+  
+  
+  <th class="h-m" title="Aloitukset">
+    <a href="#" data-sort-field="A">A</a>
+  </th>
+
+      
+  
+  
+  <th class="h-s" title="Aloitusprosentti">
+    <a href="#" data-sort-field="A%">A%</a>
+  </th>
+
+      
+  
+  
+  <th class="h-s">
+    <a href="#" data-sort-field="Aika">Aika</a>
+  </th>
+
+    </tr>
+  </thead>
+  <tbody>
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/29969148/aalto-santeri">Aalto, Santeri</a></strong></td>
+    <td class="h-l">
+  20</td>
+    <td class="h-l">
+  KH</td>
+    <td>
+  1</td>
+    <td>
+  0</td>
+    <td>
+  1</td>
+    <td>
+  0</td>
+    <td class="h-m">
+  1</td>
+    <td class="h-m">
+  0</td>
+    <td>
+  1</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-l">
+  1</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  3</td>
+    <td class="h-s">
+  33,3</td>
+    
+    <td class="h-m">
+  18</td>
+    <td class="h-s">
+  38,9</td>
+    <td class="h-s">
+  14:41</td>
+  </tr>
+
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/40005288/aho-karri">Aho, Karri</a></strong></td>
+    <td class="h-l">
+  11</td>
+    <td class="h-l">
+  OP</td>
+    <td>
+  1</td>
+    <td>
+  0</td>
+    <td>
+  1</td>
+    <td>
+  4</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td>
+  0</td>
+    <td class="h-l">
+  1</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  5</td>
+    <td class="h-s">
+  20,0</td>
+    
+    <td class="h-m">
+  0</td>
+    <td class="h-s">
+  -</td>
+    <td class="h-s">
+  20:06</td>
+  </tr>
+
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/40005668/aho-perttu">Aho, Perttu</a></strong></td>
+    <td class="h-l">
+  16</td>
+    <td class="h-l">
+  KH</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td>
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  2</td>
+    <td class="h-s">
+  0,0</td>
+    
+    <td class="h-m">
+  8</td>
+    <td class="h-s">
+  37,5</td>
+    <td class="h-s">
+  11:32</td>
+  </tr>
+
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/31494258/hakanen-santtu">Hakanen, Santtu</a></strong></td>
+    <td class="h-l">
+  27</td>
+    <td class="h-l">
+  KH</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  2</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td>
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  3</td>
+    <td class="h-s">
+  0,0</td>
+    
+    <td class="h-m">
+  14</td>
+    <td class="h-s">
+  57,1</td>
+    <td class="h-s">
+  17:57</td>
+  </tr>
+
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/40155005/heinonen-otto">Heinonen, Otto</a></strong></td>
+    <td class="h-l">
+  55</td>
+    <td class="h-l">
+  P</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td>
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-s">
+  -</td>
+    
+    <td class="h-m">
+  0</td>
+    <td class="h-s">
+  -</td>
+    <td class="h-s">
+  10:48</td>
+  </tr>
+
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/21662236/hovinen-miro">Hovinen, Miro</a></strong></td>
+    <td class="h-l">
+  22</td>
+    <td class="h-l">
+  VP</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td class="h-m">
+  1</td>
+    <td class="h-m">
+  0</td>
+    <td>
+  1</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  2</td>
+    <td class="h-s">
+  0,0</td>
+    
+    <td class="h-m">
+  0</td>
+    <td class="h-s">
+  -</td>
+    <td class="h-s">
+  16:46</td>
+  </tr>
+
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/40005667/hallfors-kalle">Hällfors, Kalle</a></strong></td>
+    <td class="h-l">
+  5</td>
+    <td class="h-l">
+  OH</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td>
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-s">
+  -</td>
+    
+    <td class="h-m">
+  0</td>
+    <td class="h-s">
+  -</td>
+    <td class="h-s">
+  7:20</td>
+  </tr>
+
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/33583439/jarventie-emil">Järventie, Emil</a></strong></td>
+    <td class="h-l">
+  33</td>
+    <td class="h-l">
+  OH</td>
+    <td>
+  0</td>
+    <td>
+  2</td>
+    <td>
+  2</td>
+    <td>
+  0</td>
+    <td class="h-m">
+  1</td>
+    <td class="h-m">
+  0</td>
+    <td>
+  1</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  1</td>
+    <td class="h-s">
+  0,0</td>
+    
+    <td class="h-m">
+  0</td>
+    <td class="h-s">
+  -</td>
+    <td class="h-s">
+  16:38</td>
+  </tr>
+
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/33510428/kangasniemi-okko">Kangasniemi, Okko</a></strong></td>
+    <td class="h-l">
+  26</td>
+    <td class="h-l">
+  VH</td>
+    <td>
+  2</td>
+    <td>
+  0</td>
+    <td>
+  2</td>
+    <td>
+  2</td>
+    <td class="h-m">
+  1</td>
+    <td class="h-m">
+  0</td>
+    <td>
+  1</td>
+    <td class="h-l">
+  1</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-m">
+  1</td>
+    <td class="h-m">
+  3</td>
+    <td class="h-s">
+  66,7</td>
+    
+    <td class="h-m">
+  0</td>
+    <td class="h-s">
+  -</td>
+    <td class="h-s">
+  19:12</td>
+  </tr>
+
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/34271245/kantola-oskari">Kantola, Oskari</a></strong></td>
+    <td class="h-l">
+  7</td>
+    <td class="h-l">
+  VP</td>
+    <td>
+  0</td>
+    <td>
+  1</td>
+    <td>
+  1</td>
+    <td>
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td>
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  3</td>
+    <td class="h-s">
+  0,0</td>
+    
+    <td class="h-m">
+  0</td>
+    <td class="h-s">
+  -</td>
+    <td class="h-s">
+  17:27</td>
+  </tr>
+
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/31580065/kinnari-aku">Kinnari, Aku</a></strong></td>
+    <td class="h-l">
+  17</td>
+    <td class="h-l">
+  VH</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td>
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  4</td>
+    <td class="h-s">
+  0,0</td>
+    
+    <td class="h-m">
+  0</td>
+    <td class="h-s">
+  -</td>
+    <td class="h-s">
+  11:25</td>
+  </tr>
+
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/30605909/kivimaki-jere">Kivimäki, Jere</a></strong></td>
+    <td class="h-l">
+  21</td>
+    <td class="h-l">
+  VH</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td class="h-m">
+  1</td>
+    <td class="h-m">
+  0</td>
+    <td>
+  1</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  1</td>
+    <td class="h-s">
+  0,0</td>
+    
+    <td class="h-m">
+  0</td>
+    <td class="h-s">
+  -</td>
+    <td class="h-s">
+  13:11</td>
+  </tr>
+
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/31760283/metsanen-verneri">Metsänen, Verneri</a></strong></td>
+    <td class="h-l">
+  28</td>
+    <td class="h-l">
+  OH</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  4</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td>
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  2</td>
+    <td class="h-s">
+  0,0</td>
+    
+    <td class="h-m">
+  0</td>
+    <td class="h-s">
+  -</td>
+    <td class="h-s">
+  14:06</td>
+  </tr>
+
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/27839775/nieminen-ville">Nieminen, Ville</a></strong></td>
+    <td class="h-l">
+  8</td>
+    <td class="h-l">
+  VH</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td>
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  1</td>
+    <td class="h-s">
+  0,0</td>
+    
+    <td class="h-m">
+  0</td>
+    <td class="h-s">
+  -</td>
+    <td class="h-s">
+  8:02</td>
+  </tr>
+
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/28557276/pelamo-jesse">Pelamo, Jesse</a></strong></td>
+    <td class="h-l">
+  12</td>
+    <td class="h-l">
+  KH</td>
+    <td>
+  0</td>
+    <td>
+  2</td>
+    <td>
+  2</td>
+    <td>
+  2</td>
+    <td class="h-m">
+  1</td>
+    <td class="h-m">
+  0</td>
+    <td>
+  1</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  4</td>
+    <td class="h-s">
+  0,0</td>
+    
+    <td class="h-m">
+  22</td>
+    <td class="h-s">
+  54,5</td>
+    <td class="h-s">
+  23:12</td>
+  </tr>
+
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/31508351/ruusu-elias">Ruusu, Elias</a></strong></td>
+    <td class="h-l">
+  36</td>
+    <td class="h-l">
+  OP</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td class="h-m">
+  2</td>
+    <td class="h-m">
+  0</td>
+    <td>
+  2</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  4</td>
+    <td class="h-s">
+  0,0</td>
+    
+    <td class="h-m">
+  0</td>
+    <td class="h-s">
+  -</td>
+    <td class="h-s">
+  16:10</td>
+  </tr>
+
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/29815001/sillanpaa-santeri">Sillanpää, Santeri</a></strong></td>
+    <td class="h-l">
+  72</td>
+    <td class="h-l">
+  OH</td>
+    <td>
+  0</td>
+    <td>
+  1</td>
+    <td>
+  1</td>
+    <td>
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td>
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  2</td>
+    <td class="h-s">
+  0,0</td>
+    
+    <td class="h-m">
+  0</td>
+    <td class="h-s">
+  -</td>
+    <td class="h-s">
+  11:12</td>
+  </tr>
+
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/23835443/vastila-markus">Västilä, Markus</a></strong></td>
+    <td class="h-l">
+  49</td>
+    <td class="h-l">
+  VP</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td class="h-m">
+  1</td>
+    <td class="h-m">
+  0</td>
+    <td>
+  1</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  1</td>
+    <td class="h-s">
+  0,0</td>
+    
+    <td class="h-m">
+  0</td>
+    <td class="h-s">
+  -</td>
+    <td class="h-s">
+  18:33</td>
+  </tr>
+
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/32604513/wehmas-jeremi">Wehmas, Jeremi</a></strong></td>
+    <td class="h-l">
+  18</td>
+    <td class="h-l">
+  OP</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  2</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td>
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-l">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  2</td>
+    <td class="h-s">
+  0,0</td>
+    
+    <td class="h-m">
+  0</td>
+    <td class="h-s">
+  -</td>
+    <td class="h-s">
+  20:30</td>
+  </tr>
+
+    
+  </tbody>
+
+          </table>
+          <table>
+            <thead class="header">
+              <tr>
+                <th colspan="10">Maalivahdit</th>
+              </tr>
+            </thead>
+            
+  <thead class="goalie-stats">
+    <tr>
+      
+  
+  
+    
+      
+    
+  <th class="ta-l active">
+    <a href="#" data-sort-field="Nimi">Nimi</a>
+  </th>
+
+      
+    
+  
+  
+  
+  <th class="h-l" title="Pelinumero">
+    <a href="#" data-sort-field="#">#</a>
+  </th>
+
+      
+  
+  
+  <th title="Torjunnat">
+    <a href="#" data-sort-field="TO">TO</a>
+  </th>
+
+      
+  
+  
+  <th title="Päästetyt maalit">
+    <a href="#" data-sort-field="PM">PM</a>
+  </th>
+
+      
+  
+  
+  <th title="Torjuntaprosentti">
+    <a href="#" data-sort-field="T%">T%</a>
+  </th>
+
+      
+  
+  
+  <th class="h-m" title="Maalit">
+    <a href="#" data-sort-field="M">M</a>
+  </th>
+
+      
+  
+  
+  <th class="h-m" title="Syötöt">
+    <a href="#" data-sort-field="S">S</a>
+  </th>
+
+      
+  
+  
+  <th class="h-m" title="Pisteet">
+    <a href="#" data-sort-field="P">P</a>
+  </th>
+
+      
+  
+  
+  <th class="h-m" title="Rangaistusminuutit">
+    <a href="#" data-sort-field="R">R</a>
+  </th>
+
+      
+  
+  
+  <th>
+    <a href="#" data-sort-field="Aika">Aika</a>
+  </th>
+
+    </tr>
+  </thead>
+  <tbody>
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/60460180/bizon-ondrej">Bizon, Ondrej</a></strong></td>
+    <td class="h-l">
+  30</td>
+    <td>
+  0</td>
+    <td>
+  0</td>
+    <td>
+  -</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td>
+  0:00</td>
+  </tr>
+
+    
+      
+  <tr>
+    <td class="ta-l">
+  <strong>
+  <a href="/fi/pelaajat/33741666/roos-reima-ville">Roos, Reima-Ville</a></strong></td>
+    <td class="h-l">
+  35</td>
+    <td>
+  37</td>
+    <td>
+  2</td>
+    <td>
+  94,87</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td class="h-m">
+  0</td>
+    <td>
+  60:00</td>
+  </tr>
+
+    
+  </tbody>
+
+          </table>
+        </div>
+
+        <div class="legend">
+          <h4>Lyhenteet</h4>
+          <dl>
+            <dt>#</dt><dd>Pelinumero</dd>
+            <dt>PP</dt><dd>Pelipaikka</dd>
+            <dt>O</dt><dd>Ottelut</dd>
+            <dt>M</dt><dd>Maalit</dd>
+          </dl>
+          <dl>
+            <dt>S</dt><dd>Syötöt</dd>
+            <dt>P</dt><dd>Pisteet</dd>
+            <dt>R</dt><dd>Rangaistusminuutit</dd>
+            <dt>+</dt><dd>Pluspisteet</dd>
+          </dl>
+          <dl>
+            <dt>-</dt><dd>Miinuspisteet</dd>
+            <dt>±</dt><dd>Plus-miinus-erotus</dd>
+            <dt>YV</dt><dd>Ylivoimamaalit</dd>
+            <dt>AV</dt><dd>Alivoimamaalit</dd>
+          </dl>
+          <dl>
+            <dt>VM</dt><dd>Voittomaalit</dd>
+            <dt>L</dt><dd>Laukaukset</dd>
+            <dt>L%</dt><dd>Laukausprosentti</dd>
+            
+          </dl>
+          <dl>
+            <dt>A</dt><dd>Aloitukset</dd>
+            <dt>A%</dt><dd>Aloitusprosentti</dd>
+            <dt>TO</dt><dd>Torjunnat</dd>
+            <dt>PM</dt><dd>Päästetyt maalit</dd>
+            <dt>T%</dt><dd>Torjuntaprosentti</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar">
+      <h3>Ottelut 17.3.2023</h3>
+      <div class="sidebar-games" data-date="2023-03-17">
+        
+<div class="games-container">
+  <div class="games" data-goals="21">
+  
+    
+  <div class="game">
+    <div class="status-short">60:00 - Päättynyt</div>
+    <div class="status-reverse">60:00 - Päättynyt</div>
+
+
+    <a class="game_link mobile-view" href="/fi/ottelut/2022-2023/runkosarja/7292/">
+      <div class="scores-container">
+        <div class="home">
+          <div class="team-score">
+            <div class="logo-container">
+              
+                <img class="logo" src=/media/team-logos/hermes.png.110x110_q85.png>
+              
+            </div>
+            <div class="goals">3</div>
+          </div>
+        </div>
+        <div class="away">
+          <div class="team-score">
+            <div class="logo-container">
+              
+                 <img class="logo" src=/media/team-logos/kiekko-espoo_9mv9rhV.png.110x110_q85.png>
+              
+            </div>
+            <div class="goals">2</div>
+          </div>
+        </div>
+        <div class="dash">-</div>
+      </div>
+    </a>
+
+    <a class="game_link desktop-view" href="/fi/ottelut/2022-2023/runkosarja/7292/">
+      <div class="horiz-scores">
+        <div class="home">
+          <div class="logo-container">
+            
+              <img class="logo" src=/media/team-logos/hermes.png.110x110_q85.png>
+            
+          </div>
+          <div class="goals">3</div>
+        </div>
+        <div class="divider">-</div>
+        <div class="away">
+          <div class="goals">2</div>
+          <div class="logo-container">
+            
+               <img class="logo" src=/media/team-logos/kiekko-espoo_9mv9rhV.png.110x110_q85.png>
+            
+          </div>
+        </div>
+      </div>
+    </a>
+    
+    
+    <div class="wager mobile-view" style="visibility:hidden">
+      <a target="_blank" href="">
+        <div class="odds">
+          <div>
+            <span>1</span>
+            <span class="odds-1"></span>
+          </div>
+          <div>
+            <span>X</span>
+            <span class="odds-X"></span>
+          </div>
+          <div>
+            <span>2</span>
+            <span class="odds-2"></span>
+          </div>
+        </div>
+        <div class="veikkaus-link">
+          <img src="/static/liiga/common/img/veikkaus_arrow2.vc9beafc2.png">&nbsp;&nbsp;veikkaus.fi
+        </div>
+      </a>
+    </div>
+    
+      <a class="cmore mobile-view" target="_blank" href=" https://www.mtv.fi/kampanja/jaakiekkoa?utm_source=mestis&utm_medium=own_online&utm_campaign=jatkuva&utm_content=display&utm_custom=convert"><img src="/static/liiga/common/img/katsomo.vb6fdb796.png"></a>
+    
+    <div class="latest-event">
+      
+        
+          <table class="latest-event-table">
+            <tr>
+              <td class="time-team">
+                <span class="time">57:20</span>
+                <br>
+                <span class="team">KES</span></td>
+              <td class="text">Maalivahti ulos: <span class="full">#1 </span><a href="/fi/pelaajat/33039983/lampinen-jani">Jani Lampinen</a></td>
+            </tr>
+          </table>
+        
+      
+    </div>
+    <div class="wager desktop-view" style="visibility:hidden">
+      <a target="_blank" href="">
+        <div class="odds">
+          <div>
+            <span>1</span>
+            <span class="odds-1"></span>
+          </div>
+          <div>
+            <span>X</span>
+            <span class="odds-X"></span>
+          </div>
+          <div>
+            <span>2</span>
+            <span class="odds-2"></span>
+          </div>
+        </div>
+        <div class="veikkaus-link">
+          <img src="/static/liiga/common/img/veikkaus_arrow2.vc9beafc2.png">&nbsp;&nbsp;veikkaus.fi
+        </div>
+      </a>
+    </div>
+
+    
+      <a class="cmore desktop-view" target="_blank" href="https://www.mtv.fi/kampanja/jaakiekkoa?utm_source=mestis&utm_medium=own_online&utm_campaign=jatkuva&utm_content=display&utm_custom=convert"><img src="/static/liiga/common/img/katsomo.vb6fdb796.png"></a>
+    
+
+    <div class="link-container has-hover-toggle mobile-view">
+      <span class="link"><span class="menu-caret"><i class="fa fa-caret-right"></i></span> Katso lisää</span>
+      <div class="more hover-toggle">
+        
+        
+        
+          <a href="/fi/ottelut/2022-2023/runkosarja/7292/kokoonpanot/" class="rosters_link">Kokoonpanot</a>
+        
+        
+          <a href="/fi/ottelut/2022-2023/runkosarja/7292/seuranta/" class="report_link">Seuranta</a>
+        
+        
+          <a href="/fi/ottelut/2022-2023/runkosarja/7292/tilastot/" class="stats_link">Tilastot</a>
+        
+        
+        
+      </div>
+    </div>
+    <div class="link-container has-hover-toggle desktop-view">
+      <span class="link"><i class="fa fa-angle-double-right"></i></span>
+      <div class="more hover-toggle">
+        
+        
+        
+          <a href="/fi/ottelut/2022-2023/runkosarja/7292/kokoonpanot/" class="rosters_link">Kokoonpanot</a>
+        
+        
+          <a href="/fi/ottelut/2022-2023/runkosarja/7292/seuranta/" class="report_link">Seuranta</a>
+        
+        
+          <a href="/fi/ottelut/2022-2023/runkosarja/7292/tilastot/" class="stats_link">Tilastot</a>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+    
+  <div class="game">
+    <div class="status-short">60:00 - Päättynyt</div>
+    <div class="status-reverse">60:00 - Päättynyt</div>
+
+
+    <a class="game_link mobile-view" href="/fi/ottelut/2022-2023/runkosarja/8191/">
+      <div class="scores-container">
+        <div class="home">
+          <div class="team-score">
+            <div class="logo-container">
+              
+                <img class="logo" src=/media/team-logos/zemgale.vafff72e5.png.110x110_q85.png>
+              
+            </div>
+            <div class="goals">2</div>
+          </div>
+        </div>
+        <div class="away">
+          <div class="team-score">
+            <div class="logo-container">
+              
+                 <img class="logo" src=/media/team-logos/hokki.png.110x110_q85.png>
+              
+            </div>
+            <div class="goals">1</div>
+          </div>
+        </div>
+        <div class="dash">-</div>
+      </div>
+    </a>
+
+    <a class="game_link desktop-view" href="/fi/ottelut/2022-2023/runkosarja/8191/">
+      <div class="horiz-scores">
+        <div class="home">
+          <div class="logo-container">
+            
+              <img class="logo" src=/media/team-logos/zemgale.vafff72e5.png.110x110_q85.png>
+            
+          </div>
+          <div class="goals">2</div>
+        </div>
+        <div class="divider">-</div>
+        <div class="away">
+          <div class="goals">1</div>
+          <div class="logo-container">
+            
+               <img class="logo" src=/media/team-logos/hokki.png.110x110_q85.png>
+            
+          </div>
+        </div>
+      </div>
+    </a>
+    
+    
+    <div class="wager mobile-view" style="visibility:hidden">
+      <a target="_blank" href="">
+        <div class="odds">
+          <div>
+            <span>1</span>
+            <span class="odds-1"></span>
+          </div>
+          <div>
+            <span>X</span>
+            <span class="odds-X"></span>
+          </div>
+          <div>
+            <span>2</span>
+            <span class="odds-2"></span>
+          </div>
+        </div>
+        <div class="veikkaus-link">
+          <img src="/static/liiga/common/img/veikkaus_arrow2.vc9beafc2.png">&nbsp;&nbsp;veikkaus.fi
+        </div>
+      </a>
+    </div>
+    
+      <a class="cmore mobile-view" target="_blank" href=" https://www.mtv.fi/kampanja/jaakiekkoa?utm_source=mestis&utm_medium=own_online&utm_campaign=jatkuva&utm_content=display&utm_custom=convert"><img src="/static/liiga/common/img/katsomo.vb6fdb796.png"></a>
+    
+    <div class="latest-event">
+      
+        
+          <table class="latest-event-table">
+            <tr>
+              <td class="time-team">
+                <span class="time">57:46</span>
+                <br>
+                <span class="team">HOK</span></td>
+              <td class="text">Maalivahti ulos: <span class="full">#33 </span><a href="/fi/pelaajat/28505888/koivisto-patrik">Patrik Koivisto</a></td>
+            </tr>
+          </table>
+        
+      
+    </div>
+    <div class="wager desktop-view" style="visibility:hidden">
+      <a target="_blank" href="">
+        <div class="odds">
+          <div>
+            <span>1</span>
+            <span class="odds-1"></span>
+          </div>
+          <div>
+            <span>X</span>
+            <span class="odds-X"></span>
+          </div>
+          <div>
+            <span>2</span>
+            <span class="odds-2"></span>
+          </div>
+        </div>
+        <div class="veikkaus-link">
+          <img src="/static/liiga/common/img/veikkaus_arrow2.vc9beafc2.png">&nbsp;&nbsp;veikkaus.fi
+        </div>
+      </a>
+    </div>
+
+    
+      <a class="cmore desktop-view" target="_blank" href="https://www.mtv.fi/kampanja/jaakiekkoa?utm_source=mestis&utm_medium=own_online&utm_campaign=jatkuva&utm_content=display&utm_custom=convert"><img src="/static/liiga/common/img/katsomo.vb6fdb796.png"></a>
+    
+
+    <div class="link-container has-hover-toggle mobile-view">
+      <span class="link"><span class="menu-caret"><i class="fa fa-caret-right"></i></span> Katso lisää</span>
+      <div class="more hover-toggle">
+        
+        
+        
+          <a href="/fi/ottelut/2022-2023/runkosarja/8191/kokoonpanot/" class="rosters_link">Kokoonpanot</a>
+        
+        
+          <a href="/fi/ottelut/2022-2023/runkosarja/8191/seuranta/" class="report_link">Seuranta</a>
+        
+        
+          <a href="/fi/ottelut/2022-2023/runkosarja/8191/tilastot/" class="stats_link">Tilastot</a>
+        
+        
+        
+      </div>
+    </div>
+    <div class="link-container has-hover-toggle desktop-view">
+      <span class="link"><i class="fa fa-angle-double-right"></i></span>
+      <div class="more hover-toggle">
+        
+        
+        
+          <a href="/fi/ottelut/2022-2023/runkosarja/8191/kokoonpanot/" class="rosters_link">Kokoonpanot</a>
+        
+        
+          <a href="/fi/ottelut/2022-2023/runkosarja/8191/seuranta/" class="report_link">Seuranta</a>
+        
+        
+          <a href="/fi/ottelut/2022-2023/runkosarja/8191/tilastot/" class="stats_link">Tilastot</a>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+    
+  <div class="game">
+    <div class="status-short">60:00 - Päättynyt</div>
+    <div class="status-reverse">60:00 - Päättynyt</div>
+
+
+    <a class="game_link mobile-view" href="/fi/ottelut/2022-2023/runkosarja/7683/">
+      <div class="scores-container">
+        <div class="home">
+          <div class="team-score">
+            <div class="logo-container">
+              
+                <img class="logo" src=/media/team-logos/ipk.png.110x110_q85.png>
+              
+            </div>
+            <div class="goals">2</div>
+          </div>
+        </div>
+        <div class="away">
+          <div class="team-score">
+            <div class="logo-container">
+              
+                 <img class="logo" src=/media/team-logos/kiekko-vantaa.png.110x110_q85.png>
+              
+            </div>
+            <div class="goals">5</div>
+          </div>
+        </div>
+        <div class="dash">-</div>
+      </div>
+    </a>
+
+    <a class="game_link desktop-view" href="/fi/ottelut/2022-2023/runkosarja/7683/">
+      <div class="horiz-scores">
+        <div class="home">
+          <div class="logo-container">
+            
+              <img class="logo" src=/media/team-logos/ipk.png.110x110_q85.png>
+            
+          </div>
+          <div class="goals">2</div>
+        </div>
+        <div class="divider">-</div>
+        <div class="away">
+          <div class="goals">5</div>
+          <div class="logo-container">
+            
+               <img class="logo" src=/media/team-logos/kiekko-vantaa.png.110x110_q85.png>
+            
+          </div>
+        </div>
+      </div>
+    </a>
+    
+    
+    <div class="wager mobile-view" style="visibility:hidden">
+      <a target="_blank" href="">
+        <div class="odds">
+          <div>
+            <span>1</span>
+            <span class="odds-1"></span>
+          </div>
+          <div>
+            <span>X</span>
+            <span class="odds-X"></span>
+          </div>
+          <div>
+            <span>2</span>
+            <span class="odds-2"></span>
+          </div>
+        </div>
+        <div class="veikkaus-link">
+          <img src="/static/liiga/common/img/veikkaus_arrow2.vc9beafc2.png">&nbsp;&nbsp;veikkaus.fi
+        </div>
+      </a>
+    </div>
+    
+      <a class="cmore mobile-view" target="_blank" href=" https://www.mtv.fi/kampanja/jaakiekkoa?utm_source=mestis&utm_medium=own_online&utm_campaign=jatkuva&utm_content=display&utm_custom=convert"><img src="/static/liiga/common/img/katsomo.vb6fdb796.png"></a>
+    
+    <div class="latest-event">
+      
+        
+          <table class="latest-event-table">
+            <tr>
+              <td class="time-team">
+                <span class="time">57:32</span>
+                <br>
+                <span class="team">IPK</span></td>
+              <td class="text"><span class="full">#7 </span><a href="/fi/pelaajat/30729937/suhonen-pekka">Pekka Suhonen</a> 2 min kampitus</td>
+            </tr>
+          </table>
+        
+      
+    </div>
+    <div class="wager desktop-view" style="visibility:hidden">
+      <a target="_blank" href="">
+        <div class="odds">
+          <div>
+            <span>1</span>
+            <span class="odds-1"></span>
+          </div>
+          <div>
+            <span>X</span>
+            <span class="odds-X"></span>
+          </div>
+          <div>
+            <span>2</span>
+            <span class="odds-2"></span>
+          </div>
+        </div>
+        <div class="veikkaus-link">
+          <img src="/static/liiga/common/img/veikkaus_arrow2.vc9beafc2.png">&nbsp;&nbsp;veikkaus.fi
+        </div>
+      </a>
+    </div>
+
+    
+      <a class="cmore desktop-view" target="_blank" href="https://www.mtv.fi/kampanja/jaakiekkoa?utm_source=mestis&utm_medium=own_online&utm_campaign=jatkuva&utm_content=display&utm_custom=convert"><img src="/static/liiga/common/img/katsomo.vb6fdb796.png"></a>
+    
+
+    <div class="link-container has-hover-toggle mobile-view">
+      <span class="link"><span class="menu-caret"><i class="fa fa-caret-right"></i></span> Katso lisää</span>
+      <div class="more hover-toggle">
+        
+        
+        
+          <a href="/fi/ottelut/2022-2023/runkosarja/7683/kokoonpanot/" class="rosters_link">Kokoonpanot</a>
+        
+        
+          <a href="/fi/ottelut/2022-2023/runkosarja/7683/seuranta/" class="report_link">Seuranta</a>
+        
+        
+          <a href="/fi/ottelut/2022-2023/runkosarja/7683/tilastot/" class="stats_link">Tilastot</a>
+        
+        
+        
+      </div>
+    </div>
+    <div class="link-container has-hover-toggle desktop-view">
+      <span class="link"><i class="fa fa-angle-double-right"></i></span>
+      <div class="more hover-toggle">
+        
+        
+        
+          <a href="/fi/ottelut/2022-2023/runkosarja/7683/kokoonpanot/" class="rosters_link">Kokoonpanot</a>
+        
+        
+          <a href="/fi/ottelut/2022-2023/runkosarja/7683/seuranta/" class="report_link">Seuranta</a>
+        
+        
+          <a href="/fi/ottelut/2022-2023/runkosarja/7683/tilastot/" class="stats_link">Tilastot</a>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+    
+  <div class="game">
+    <div class="status-short">60:00 - Päättynyt</div>
+    <div class="status-reverse">60:00 - Päättynyt</div>
+
+
+    <a class="game_link mobile-view" href="/fi/ottelut/2022-2023/runkosarja/7655/">
+      <div class="scores-container">
+        <div class="home">
+          <div class="team-score">
+            <div class="logo-container">
+              
+                <img class="logo" src=/media/team-logos/tuto.png.110x110_q85.png>
+              
+            </div>
+            <div class="goals">2</div>
+          </div>
+        </div>
+        <div class="away">
+          <div class="team-score">
+            <div class="logo-container">
+              
+                 <img class="logo" src=/media/team-logos/koovee.png.110x110_q85.png>
+              
+            </div>
+            <div class="goals">4</div>
+          </div>
+        </div>
+        <div class="dash">-</div>
+      </div>
+    </a>
+
+    <a class="game_link desktop-view" href="/fi/ottelut/2022-2023/runkosarja/7655/">
+      <div class="horiz-scores">
+        <div class="home">
+          <div class="logo-container">
+            
+              <img class="logo" src=/media/team-logos/tuto.png.110x110_q85.png>
+            
+          </div>
+          <div class="goals">2</div>
+        </div>
+        <div class="divider">-</div>
+        <div class="away">
+          <div class="goals">4</div>
+          <div class="logo-container">
+            
+               <img class="logo" src=/media/team-logos/koovee.png.110x110_q85.png>
+            
+          </div>
+        </div>
+      </div>
+    </a>
+    
+    
+    <div class="wager mobile-view" style="visibility:hidden">
+      <a target="_blank" href="">
+        <div class="odds">
+          <div>
+            <span>1</span>
+            <span class="odds-1"></span>
+          </div>
+          <div>
+            <span>X</span>
+            <span class="odds-X"></span>
+          </div>
+          <div>
+            <span>2</span>
+            <span class="odds-2"></span>
+          </div>
+        </div>
+        <div class="veikkaus-link">
+          <img src="/static/liiga/common/img/veikkaus_arrow2.vc9beafc2.png">&nbsp;&nbsp;veikkaus.fi
+        </div>
+      </a>
+    </div>
+    
+      <a class="cmore mobile-view" target="_blank" href=" https://www.mtv.fi/kampanja/jaakiekkoa?utm_source=mestis&utm_medium=own_online&utm_campaign=jatkuva&utm_content=display&utm_custom=convert"><img src="/static/liiga/common/img/katsomo.vb6fdb796.png"></a>
+    
+    <div class="latest-event">
+      
+        
+          <table class="latest-event-table">
+            <tr>
+              <td class="time-team">
+                <span class="time">59:05</span>
+                <br>
+                <span class="team">TUT</span></td>
+              <td class="text">Maalivahti sisään: <span class="full">#31 </span><a href="/fi/pelaajat/25650749/pohjanoksa-julius">Julius Pohjanoksa</a></td>
+            </tr>
+          </table>
+        
+      
+    </div>
+    <div class="wager desktop-view" style="visibility:hidden">
+      <a target="_blank" href="">
+        <div class="odds">
+          <div>
+            <span>1</span>
+            <span class="odds-1"></span>
+          </div>
+          <div>
+            <span>X</span>
+            <span class="odds-X"></span>
+          </div>
+          <div>
+            <span>2</span>
+            <span class="odds-2"></span>
+          </div>
+        </div>
+        <div class="veikkaus-link">
+          <img src="/static/liiga/common/img/veikkaus_arrow2.vc9beafc2.png">&nbsp;&nbsp;veikkaus.fi
+        </div>
+      </a>
+    </div>
+
+    
+      <a class="cmore desktop-view" target="_blank" href="https://www.mtv.fi/kampanja/jaakiekkoa?utm_source=mestis&utm_medium=own_online&utm_campaign=jatkuva&utm_content=display&utm_custom=convert"><img src="/static/liiga/common/img/katsomo.vb6fdb796.png"></a>
+    
+
+    <div class="link-container has-hover-toggle mobile-view">
+      <span class="link"><span class="menu-caret"><i class="fa fa-caret-right"></i></span> Katso lisää</span>
+      <div class="more hover-toggle">
+        
+        
+        
+          <a href="/fi/ottelut/2022-2023/runkosarja/7655/kokoonpanot/" class="rosters_link">Kokoonpanot</a>
+        
+        
+          <a href="/fi/ottelut/2022-2023/runkosarja/7655/seuranta/" class="report_link">Seuranta</a>
+        
+        
+          <a href="/fi/ottelut/2022-2023/runkosarja/7655/tilastot/" class="stats_link">Tilastot</a>
+        
+        
+        
+      </div>
+    </div>
+    <div class="link-container has-hover-toggle desktop-view">
+      <span class="link"><i class="fa fa-angle-double-right"></i></span>
+      <div class="more hover-toggle">
+        
+        
+        
+          <a href="/fi/ottelut/2022-2023/runkosarja/7655/kokoonpanot/" class="rosters_link">Kokoonpanot</a>
+        
+        
+          <a href="/fi/ottelut/2022-2023/runkosarja/7655/seuranta/" class="report_link">Seuranta</a>
+        
+        
+          <a href="/fi/ottelut/2022-2023/runkosarja/7655/tilastot/" class="stats_link">Tilastot</a>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  </div>
+</div>
+
+        <div id='mestis_mestis-fi-sidebar'></div>
+<script>
+var isMobile = (window.innerWidth ||
+document.documentElement.clientWidth ||
+document.body.clientWidth) < 700;
+if (!isMobile) {
+lwhbim.cmd.push(function() {
+lwhbim.loadAd({tagId: 'mestis_mestis-fi-sidebar', keywords: window.mestis ? window.mestis : {'content_group': 'unknown'}});
+});
+}
+</script>
+      </div>
+      
+  <h3>Luistelumatka</h3>
+  <div class="match-ext-stats-grid">
+    
+  <div class="team-image-container home">
+    <img src="/media/team-logos/tuto.png.50x50_q85.png" class="team-image">
+  </div>
+
+    <div></div>
+    
+  <div class="team-image-container away">
+    <img src="/media/team-logos/koovee.png.50x50_q85.png" class="team-image">
+  </div>
+
+    
+      <div class="home">
+        
+          <div class="stats-row"></div>
+        
+      </div>
+      <div class="rank">1</div>
+      <div class="away">
+        
+          <div class="stats-row"></div>
+        
+      </div>
+    
+      <div class="home">
+        
+          <div class="stats-row"></div>
+        
+      </div>
+      <div class="rank">2</div>
+      <div class="away">
+        
+          <div class="stats-row"></div>
+        
+      </div>
+    
+      <div class="home">
+        
+          <div class="stats-row"></div>
+        
+      </div>
+      <div class="rank">3</div>
+      <div class="away">
+        
+          <div class="stats-row"></div>
+        
+      </div>
+    
+  </div>
+  <h3>Nopein luistelija</h3>
+  <div class="match-ext-stats-grid">
+    
+  <div class="team-image-container home">
+    <img src="/media/team-logos/tuto.png.50x50_q85.png" class="team-image">
+  </div>
+
+    <div></div>
+    
+  <div class="team-image-container away">
+    <img src="/media/team-logos/koovee.png.50x50_q85.png" class="team-image">
+  </div>
+
+    
+      <div class="home">
+        
+          <div class="stats-row"></div>
+        
+      </div>
+      <div class="rank">1</div>
+      <div class="away">
+        
+        <div class="stats-row"></div>
+        
+      </div>
+    
+      <div class="home">
+        
+          <div class="stats-row"></div>
+        
+      </div>
+      <div class="rank">2</div>
+      <div class="away">
+        
+        <div class="stats-row"></div>
+        
+      </div>
+    
+      <div class="home">
+        
+          <div class="stats-row"></div>
+        
+      </div>
+      <div class="rank">3</div>
+      <div class="away">
+        
+        <div class="stats-row"></div>
+        
+      </div>
+    
+  </div>
+  <h3>Kovin laukaus</h3>
+  <div class="match-ext-stats-grid">
+    
+  <div class="team-image-container home">
+    <img src="/media/team-logos/tuto.png.50x50_q85.png" class="team-image">
+  </div>
+
+    <div></div>
+    
+  <div class="team-image-container away">
+    <img src="/media/team-logos/koovee.png.50x50_q85.png" class="team-image">
+  </div>
+
+    
+      <div class="home">
+        
+          <div class="stats-row"></div>
+        
+      </div>
+      <div class="rank">1</div>
+      <div class="away">
+        
+          <div class="stats-row"></div>
+        
+      </div>
+    
+      <div class="home">
+        
+          <div class="stats-row"></div>
+        
+      </div>
+      <div class="rank">2</div>
+      <div class="away">
+        
+          <div class="stats-row"></div>
+        
+      </div>
+    
+      <div class="home">
+        
+          <div class="stats-row"></div>
+        
+      </div>
+      <div class="rank">3</div>
+      <div class="away">
+        
+          <div class="stats-row"></div>
+        
+      </div>
+    
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+
+    </div>
+    <div style="display:flex;padding:1rem;justify-content:center;">
+      
+<div id='mestis_mestis-fi-content'></div>
+<div id='mestis_mestis-fi-mobile-middle'></div>
+<script>
+  var isMobile = (window.innerWidth ||
+  document.documentElement.clientWidth ||
+  document.body.clientWidth) < 1000;
+  lwhbim.cmd.push(function() {
+    lwhbim.loadAd({tagId: isMobile ? 'mestis_mestis-fi-mobile-middle' : 'mestis_mestis-fi-content'});
+  });
+</script>
+
+    </div>
+    
+    
+      <div class="bottom-sponsors">
+        
+          <div class="sponsor">
+            <a class="bottom-sponsor-logo" target="_blank" href="https://www.mtv.fi/ohjelmat/mestis" data-id="19">
+              <img src="/media/ads/katsomo_200x200.png" alt="" />
+            </a>
+          </div>
+        
+          <div class="sponsor">
+            <a class="bottom-sponsor-logo" target="_blank" href="https://www.veikkaus.fi/" data-id="10">
+              <img src="/media/ads/veikkaus_200x200.png" alt="" />
+            </a>
+          </div>
+        
+          <div class="sponsor">
+            <a class="bottom-sponsor-logo" target="_blank" href="https://www.veripalvelu.fi/" data-id="11">
+              <img src="/media/ads/veripalvelu_200x200.png" alt="" />
+            </a>
+          </div>
+        
+          <div class="sponsor">
+            <a class="bottom-sponsor-logo" target="_blank" href="https://louhosdigital.fi/" data-id="25">
+              <img src="/media/ads/Louhos-logo-vertical-gold-2020-web.png" alt="" />
+            </a>
+          </div>
+        
+      </div>
+    
+
+    <div id="footer">
+      <div class="wrapper clearfix">
+        <div class="one_fourth">
+          <div class="half">
+            <div class="logo">
+              <img src="/static/liiga/common/img/mestis_badge_new.vca12f15d.png" >
+            </div>
+          </div>
+          <div class="half">
+          </div>
+          <div class="clearfix"></div>
+        </div>
+
+        <div class="one_fourth">
+          <h3>Jääkiekkoliitto verkossa</h3>
+          <ul>
+            <li><a target="_blank" href="http://www.leijonat.fi/">Leijonat</a></li>
+            <li><a target="_blank" href="http://www.tilastopalvelu.fi/ih">Tulospalvelu</a></li>
+            <li><a target="_blank" href="http://www.finhockey.fi/">Finhockey</a></li>
+            <li><a target="_blank" href="http://www.palvelusivusto.fi/">Palvelusivusto</a></li>
+            <li><a target="_blank" href="http://store.leijonat.fi/">Leijonat Store</a></li>
+          </ul>
+        </div>
+
+        
+
+        <div class="one_fourth">
+          <h3>Seuraa meitä</h3>
+          <ul>
+            <li><i class="fa fa-facebook"></i> <a target="_blank" href="https://www.facebook.com/MestisHockey">Facebook</a></li>
+            <li><img style="height:11px;" src="/static/liiga/common/img/share/x-white.v1fa61f31.png">&nbsp; <a target="_blank" href="https://x.com/mestis">X</a></li>
+            <li><i class="fa fa-instagram"></i> <a target="_blank" href="http://instagram.com/mestisfi">Instagram</a></li>
+            <li><i class="fa fa-youtube"></i> <a target="_blank" href="https://www.youtube.com/channel/UCySVAyET4s0PF7GlSE4hzOA">Youtube</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="site-info">
+        <div class="copy"> Copyright &copy; Mestis 2026 Suomen Jääkiekkoliitto </div>
+        <div class="separator">&ndash; </div>
+        <div class="terms"><a href="/mestis/kayttoehdot">Käyttöehdot </a></div>
+        <div class="separator">&ndash; </div>
+        <div class="terms"><a href="http://www.finhockey.fi/index.php/info/tietosuoja">Tietosuoja </a></div>
+        <div class="separator">&ndash; </div>
+        <div class="terms"><a href="/mestis/evastekaytannot"> Evästekäytännöt  </a></div>
+        <div class="separator">&ndash; </div>
+        <div class="terms"><a href="javascript:if(typeof window.__tcfapi !=='undefined'){window.__tcfapi('displayConsentUi',2,function(){});}else{window.location='https://mestis.fi/fi/mestis/evastekaytannot';};">Evästevalinnat</a></div>
+        <div class="separator">&ndash; </div>
+        <div class="terms"> Sivuston toteutus:  <a href="https://nidos.fi" target="_blank"> Nidos Oy </a></div>
+      </div>
+    </div>
+
+    <script src="/static/common.da78f07cfe3ba5938594.js"></script>
+    <script src="/static/common/ad_banner_all.1a4d8d89ea8511e88e22.js"></script>
+    
+  <script src="/static/site/game-stats.e63f0d97f3fbfb91a3b5.js"></script>
+
+
+    <div class="body-scripts">
+
+    
+
+    
+    </div>
+  </body>
+</html>

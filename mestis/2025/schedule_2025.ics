@@ -1,0 +1,2944 @@
+BEGIN:VCALENDAR
+DTSTART;VALUE=DATE:20240528
+SUMMARY:Ottelut 2024-09-12 - 2025-03-01
+BEGIN:VEVENT
+SUMMARY:IPK - Ketterä
+DTSTART;VALUE=DATE-TIME:20240912T153000Z
+DTEND;VALUE=DATE-TIME:20240912T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95010@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3161/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3161/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - Hermes
+DTSTART;VALUE=DATE-TIME:20240913T153000Z
+DTEND;VALUE=DATE-TIME:20240913T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95014@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3000/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3000/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - JoKP
+DTSTART;VALUE=DATE-TIME:20240913T153000Z
+DTEND;VALUE=DATE-TIME:20240913T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95013@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3166/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3166/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20240913T153000Z
+DTEND;VALUE=DATE-TIME:20240913T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95012@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /2982/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/2982/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - IPK
+DTSTART;VALUE=DATE-TIME:20240913T153000Z
+DTEND;VALUE=DATE-TIME:20240913T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95011@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /2972/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/2972/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - RoKi
+DTSTART;VALUE=DATE-TIME:20240914T140000Z
+DTEND;VALUE=DATE-TIME:20240914T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95017@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /2999/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/2999/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - Jokerit
+DTSTART;VALUE=DATE-TIME:20240914T140000Z
+DTEND;VALUE=DATE-TIME:20240914T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95016@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /2974/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/2974/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - JoKP
+DTSTART;VALUE=DATE-TIME:20240914T140000Z
+DTEND;VALUE=DATE-TIME:20240914T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95015@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3188/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3188/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20240917T153000Z
+DTEND;VALUE=DATE-TIME:20240917T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95018@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3009/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3009/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - Hokki
+DTSTART;VALUE=DATE-TIME:20240918T153000Z
+DTEND;VALUE=DATE-TIME:20240918T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95020@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3115/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3115/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - Ketterä
+DTSTART;VALUE=DATE-TIME:20240918T153000Z
+DTEND;VALUE=DATE-TIME:20240918T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95019@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /2996/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/2996/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - IPK
+DTSTART;VALUE=DATE-TIME:20240919T153000Z
+DTEND;VALUE=DATE-TIME:20240919T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95021@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3071/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3071/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - Hermes
+DTSTART;VALUE=DATE-TIME:20240920T153000Z
+DTEND;VALUE=DATE-TIME:20240920T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95023@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3012/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3012/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - JoKP
+DTSTART;VALUE=DATE-TIME:20240920T153000Z
+DTEND;VALUE=DATE-TIME:20240920T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95022@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3138/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3138/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20240920T153000Z
+DTEND;VALUE=DATE-TIME:20240920T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95024@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3049/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3049/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20240921T140000Z
+DTEND;VALUE=DATE-TIME:20240921T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95025@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3139/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3139/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - Jokerit
+DTSTART;VALUE=DATE-TIME:20240921T140000Z
+DTEND;VALUE=DATE-TIME:20240921T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95027@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3171/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3171/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20240921T140000Z
+DTEND;VALUE=DATE-TIME:20240921T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95026@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /2990/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/2990/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - JoKP
+DTSTART;VALUE=DATE-TIME:20240921T140000Z
+DTEND;VALUE=DATE-TIME:20240921T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95028@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3148/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3148/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - Ketterä
+DTSTART;VALUE=DATE-TIME:20240924T153000Z
+DTEND;VALUE=DATE-TIME:20240924T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95029@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3021/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3021/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - RoKi
+DTSTART;VALUE=DATE-TIME:20240925T153000Z
+DTEND;VALUE=DATE-TIME:20240925T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95030@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /2988/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/2988/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20240927T153000Z
+DTEND;VALUE=DATE-TIME:20240927T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95033@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3001/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3001/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20240927T153000Z
+DTEND;VALUE=DATE-TIME:20240927T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95032@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3128/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3128/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - RoKi
+DTSTART;VALUE=DATE-TIME:20240927T153000Z
+DTEND;VALUE=DATE-TIME:20240927T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95034@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3028/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3028/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - Hokki
+DTSTART;VALUE=DATE-TIME:20240927T153000Z
+DTEND;VALUE=DATE-TIME:20240927T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95031@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3035/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3035/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - JoKP
+DTSTART;VALUE=DATE-TIME:20240928T140000Z
+DTEND;VALUE=DATE-TIME:20240928T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95035@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /2992/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/2992/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - RoKi
+DTSTART;VALUE=DATE-TIME:20240928T130000Z
+DTEND;VALUE=DATE-TIME:20240928T153000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95037@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3039/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3039/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20240928T140000Z
+DTEND;VALUE=DATE-TIME:20240928T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95036@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3100/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3100/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - Hokki
+DTSTART;VALUE=DATE-TIME:20241001T153000Z
+DTEND;VALUE=DATE-TIME:20241001T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95038@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3105/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3105/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20241003T153000Z
+DTEND;VALUE=DATE-TIME:20241003T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95039@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3034/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3034/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - IPK
+DTSTART;VALUE=DATE-TIME:20241004T153000Z
+DTEND;VALUE=DATE-TIME:20241004T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95042@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3137/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3137/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - Jokerit
+DTSTART;VALUE=DATE-TIME:20241004T153000Z
+DTEND;VALUE=DATE-TIME:20241004T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95040@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3120/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3120/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - Ketterä
+DTSTART;VALUE=DATE-TIME:20241004T153000Z
+DTEND;VALUE=DATE-TIME:20241004T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95041@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3056/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3056/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - JoKP
+DTSTART;VALUE=DATE-TIME:20241004T153000Z
+DTEND;VALUE=DATE-TIME:20241004T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95043@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3043/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3043/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - Jokerit
+DTSTART;VALUE=DATE-TIME:20241005T140000Z
+DTEND;VALUE=DATE-TIME:20241005T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95046@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3113/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3113/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - JoKP
+DTSTART;VALUE=DATE-TIME:20241005T140000Z
+DTEND;VALUE=DATE-TIME:20241005T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95044@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3058/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3058/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - Ketterä
+DTSTART;VALUE=DATE-TIME:20241005T140000Z
+DTEND;VALUE=DATE-TIME:20241005T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95045@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3146/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3146/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20241008T153000Z
+DTEND;VALUE=DATE-TIME:20241008T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95047@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3061/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3061/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - JoKP
+DTSTART;VALUE=DATE-TIME:20241009T153000Z
+DTEND;VALUE=DATE-TIME:20241009T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95048@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3112/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3112/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - IPK
+DTSTART;VALUE=DATE-TIME:20241009T153000Z
+DTEND;VALUE=DATE-TIME:20241009T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95049@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3187/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3187/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - JoKP
+DTSTART;VALUE=DATE-TIME:20241010T153000Z
+DTEND;VALUE=DATE-TIME:20241010T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95051@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3153/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3153/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - IPK
+DTSTART;VALUE=DATE-TIME:20241010T153000Z
+DTEND;VALUE=DATE-TIME:20241010T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95050@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3177/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3177/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - Ketterä
+DTSTART;VALUE=DATE-TIME:20241011T153000Z
+DTEND;VALUE=DATE-TIME:20241011T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95052@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3046/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3046/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - RoKi
+DTSTART;VALUE=DATE-TIME:20241011T153000Z
+DTEND;VALUE=DATE-TIME:20241011T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95053@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3050/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3050/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - Jokerit
+DTSTART;VALUE=DATE-TIME:20241012T140000Z
+DTEND;VALUE=DATE-TIME:20241012T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95057@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3234/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3234/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - Hokki
+DTSTART;VALUE=DATE-TIME:20241012T140000Z
+DTEND;VALUE=DATE-TIME:20241012T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95055@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3045/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3045/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - RoKi
+DTSTART;VALUE=DATE-TIME:20241012T140000Z
+DTEND;VALUE=DATE-TIME:20241012T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95056@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3017/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3017/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20241012T140000Z
+DTEND;VALUE=DATE-TIME:20241012T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95054@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3041/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3041/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - Hermes
+DTSTART;VALUE=DATE-TIME:20241015T153000Z
+DTEND;VALUE=DATE-TIME:20241015T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95058@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3158/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3158/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20241016T153000Z
+DTEND;VALUE=DATE-TIME:20241016T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95061@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /2979/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/2979/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - IPK
+DTSTART;VALUE=DATE-TIME:20241016T153000Z
+DTEND;VALUE=DATE-TIME:20241016T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95060@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3020/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3020/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - Hermes
+DTSTART;VALUE=DATE-TIME:20241016T153000Z
+DTEND;VALUE=DATE-TIME:20241016T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95059@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /2993/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/2993/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20241018T153000Z
+DTEND;VALUE=DATE-TIME:20241018T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95064@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3117/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3117/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - JoKP
+DTSTART;VALUE=DATE-TIME:20241018T153000Z
+DTEND;VALUE=DATE-TIME:20241018T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95065@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3008/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3008/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - Ketterä
+DTSTART;VALUE=DATE-TIME:20241018T153000Z
+DTEND;VALUE=DATE-TIME:20241018T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95069@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3006/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3006/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - Jokerit
+DTSTART;VALUE=DATE-TIME:20241018T153000Z
+DTEND;VALUE=DATE-TIME:20241018T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95062@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3073/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3073/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20241019T140000Z
+DTEND;VALUE=DATE-TIME:20241019T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95068@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3002/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3002/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - JoKP
+DTSTART;VALUE=DATE-TIME:20241019T140000Z
+DTEND;VALUE=DATE-TIME:20241019T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95067@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3178/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3178/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - Jokerit
+DTSTART;VALUE=DATE-TIME:20241019T140000Z
+DTEND;VALUE=DATE-TIME:20241019T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95066@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3163/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3163/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - Ketterä
+DTSTART;VALUE=DATE-TIME:20241019T140000Z
+DTEND;VALUE=DATE-TIME:20241019T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95063@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /2970/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/2970/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20241023T153000Z
+DTEND;VALUE=DATE-TIME:20241023T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95070@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3106/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3106/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - Hermes
+DTSTART;VALUE=DATE-TIME:20241024T153000Z
+DTEND;VALUE=DATE-TIME:20241024T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95071@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3180/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3180/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20241025T153000Z
+DTEND;VALUE=DATE-TIME:20241025T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95073@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3143/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3143/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - IPK
+DTSTART;VALUE=DATE-TIME:20241025T153000Z
+DTEND;VALUE=DATE-TIME:20241025T180000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95072@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3097/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3097/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - IPK
+DTSTART;VALUE=DATE-TIME:20241026T140000Z
+DTEND;VALUE=DATE-TIME:20241026T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95074@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3122/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3122/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20241026T140000Z
+DTEND;VALUE=DATE-TIME:20241026T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95077@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3181/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3181/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - Jokerit
+DTSTART;VALUE=DATE-TIME:20241026T140000Z
+DTEND;VALUE=DATE-TIME:20241026T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95078@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3059/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3059/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - JoKP
+DTSTART;VALUE=DATE-TIME:20241026T140000Z
+DTEND;VALUE=DATE-TIME:20241026T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95076@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3160/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3160/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - RoKi
+DTSTART;VALUE=DATE-TIME:20241026T140000Z
+DTEND;VALUE=DATE-TIME:20241026T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95075@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3089/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3089/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - Hokki
+DTSTART;VALUE=DATE-TIME:20241029T163000Z
+DTEND;VALUE=DATE-TIME:20241029T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95079@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /2985/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/2985/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - JoKP
+DTSTART;VALUE=DATE-TIME:20241029T163000Z
+DTEND;VALUE=DATE-TIME:20241029T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95080@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3133/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3133/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - Hokki
+DTSTART;VALUE=DATE-TIME:20241030T163000Z
+DTEND;VALUE=DATE-TIME:20241030T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95081@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /2995/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/2995/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - RoKi
+DTSTART;VALUE=DATE-TIME:20241031T163000Z
+DTEND;VALUE=DATE-TIME:20241031T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95082@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3078/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3078/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - JoKP
+DTSTART;VALUE=DATE-TIME:20241031T163000Z
+DTEND;VALUE=DATE-TIME:20241031T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95083@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3048/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3048/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - RoKi
+DTSTART;VALUE=DATE-TIME:20241101T163000Z
+DTEND;VALUE=DATE-TIME:20241101T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95087@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3094/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3094/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - IPK
+DTSTART;VALUE=DATE-TIME:20241101T163000Z
+DTEND;VALUE=DATE-TIME:20241101T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95086@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3200/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3200/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - JoKP
+DTSTART;VALUE=DATE-TIME:20241101T163000Z
+DTEND;VALUE=DATE-TIME:20241101T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95085@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3031/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3031/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20241101T163000Z
+DTEND;VALUE=DATE-TIME:20241101T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95084@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3074/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3074/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - RoKi
+DTSTART;VALUE=DATE-TIME:20241102T150000Z
+DTEND;VALUE=DATE-TIME:20241102T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95088@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3129/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3129/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - Hermes
+DTSTART;VALUE=DATE-TIME:20241102T150000Z
+DTEND;VALUE=DATE-TIME:20241102T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95089@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3192/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3192/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - Jokerit
+DTSTART;VALUE=DATE-TIME:20241108T173000Z
+DTEND;VALUE=DATE-TIME:20241108T200000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95090@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3054/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3054/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - Hokki
+DTSTART;VALUE=DATE-TIME:20241112T163000Z
+DTEND;VALUE=DATE-TIME:20241112T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95092@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3155/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3155/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - Ketterä
+DTSTART;VALUE=DATE-TIME:20241112T163000Z
+DTEND;VALUE=DATE-TIME:20241112T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95091@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3096/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3096/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20241113T163000Z
+DTEND;VALUE=DATE-TIME:20241113T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95093@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3024/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3024/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - Ketterä
+DTSTART;VALUE=DATE-TIME:20241113T163000Z
+DTEND;VALUE=DATE-TIME:20241113T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95094@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3060/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3060/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - JoKP
+DTSTART;VALUE=DATE-TIME:20241115T163000Z
+DTEND;VALUE=DATE-TIME:20241115T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95096@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /2980/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/2980/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20241115T163000Z
+DTEND;VALUE=DATE-TIME:20241115T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95097@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /2994/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/2994/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - Hermes
+DTSTART;VALUE=DATE-TIME:20241115T163000Z
+DTEND;VALUE=DATE-TIME:20241115T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95095@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3029/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3029/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20241116T150000Z
+DTEND;VALUE=DATE-TIME:20241116T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95098@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3156/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3156/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20241116T150000Z
+DTEND;VALUE=DATE-TIME:20241116T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95099@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3084/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3084/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - Hermes
+DTSTART;VALUE=DATE-TIME:20241116T150000Z
+DTEND;VALUE=DATE-TIME:20241116T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95101@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3198/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3198/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20241116T150000Z
+DTEND;VALUE=DATE-TIME:20241116T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95100@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3182/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3182/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - IPK
+DTSTART;VALUE=DATE-TIME:20241119T163000Z
+DTEND;VALUE=DATE-TIME:20241119T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95102@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3087/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3087/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20241120T163000Z
+DTEND;VALUE=DATE-TIME:20241120T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95104@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3131/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3131/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - IPK
+DTSTART;VALUE=DATE-TIME:20241120T163000Z
+DTEND;VALUE=DATE-TIME:20241120T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95103@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3007/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3007/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - JoKP
+DTSTART;VALUE=DATE-TIME:20241121T163000Z
+DTEND;VALUE=DATE-TIME:20241121T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95105@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /2973/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/2973/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - JoKP
+DTSTART;VALUE=DATE-TIME:20241122T163000Z
+DTEND;VALUE=DATE-TIME:20241122T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95108@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3022/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3022/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - Hokki
+DTSTART;VALUE=DATE-TIME:20241122T163000Z
+DTEND;VALUE=DATE-TIME:20241122T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95106@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3055/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3055/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - Jokerit
+DTSTART;VALUE=DATE-TIME:20241122T163000Z
+DTEND;VALUE=DATE-TIME:20241122T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95107@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3149/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3149/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20241123T150000Z
+DTEND;VALUE=DATE-TIME:20241123T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95111@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3091/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3091/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - IPK
+DTSTART;VALUE=DATE-TIME:20241123T150000Z
+DTEND;VALUE=DATE-TIME:20241123T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95110@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3057/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3057/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - JoKP
+DTSTART;VALUE=DATE-TIME:20241123T150000Z
+DTEND;VALUE=DATE-TIME:20241123T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95109@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3202/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3202/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - Hokki
+DTSTART;VALUE=DATE-TIME:20241123T150000Z
+DTEND;VALUE=DATE-TIME:20241123T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95112@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3145/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3145/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - Hermes
+DTSTART;VALUE=DATE-TIME:20241126T163000Z
+DTEND;VALUE=DATE-TIME:20241126T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95113@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3079/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3079/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - Hermes
+DTSTART;VALUE=DATE-TIME:20241127T163000Z
+DTEND;VALUE=DATE-TIME:20241127T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95114@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3068/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3068/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - JoKP
+DTSTART;VALUE=DATE-TIME:20241128T163000Z
+DTEND;VALUE=DATE-TIME:20241128T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95115@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3172/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3172/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - Jokerit
+DTSTART;VALUE=DATE-TIME:20241129T163000Z
+DTEND;VALUE=DATE-TIME:20241129T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95116@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3030/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3030/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20241129T163000Z
+DTEND;VALUE=DATE-TIME:20241129T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95117@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3162/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3162/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - RoKi
+DTSTART;VALUE=DATE-TIME:20241130T150000Z
+DTEND;VALUE=DATE-TIME:20241130T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95119@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3179/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3179/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - Hokki
+DTSTART;VALUE=DATE-TIME:20241130T150000Z
+DTEND;VALUE=DATE-TIME:20241130T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95120@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3150/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3150/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - Jokerit
+DTSTART;VALUE=DATE-TIME:20241130T150000Z
+DTEND;VALUE=DATE-TIME:20241130T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95118@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3042/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3042/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20241130T150000Z
+DTEND;VALUE=DATE-TIME:20241130T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95121@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3159/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3159/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20241203T163000Z
+DTEND;VALUE=DATE-TIME:20241203T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95122@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3014/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3014/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - Ketterä
+DTSTART;VALUE=DATE-TIME:20241205T163000Z
+DTEND;VALUE=DATE-TIME:20241205T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95123@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /2986/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/2986/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - Hokki
+DTSTART;VALUE=DATE-TIME:20241205T163000Z
+DTEND;VALUE=DATE-TIME:20241205T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95125@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3005/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3005/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20241205T163000Z
+DTEND;VALUE=DATE-TIME:20241205T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95129@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3027/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3027/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - IPK
+DTSTART;VALUE=DATE-TIME:20241205T163000Z
+DTEND;VALUE=DATE-TIME:20241205T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95124@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3237/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3237/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - Hermes
+DTSTART;VALUE=DATE-TIME:20241207T150000Z
+DTEND;VALUE=DATE-TIME:20241207T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95127@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3134/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3134/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - IPK
+DTSTART;VALUE=DATE-TIME:20241207T150000Z
+DTEND;VALUE=DATE-TIME:20241207T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95126@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3037/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3037/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - Jokerit
+DTSTART;VALUE=DATE-TIME:20241207T150000Z
+DTEND;VALUE=DATE-TIME:20241207T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95128@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3064/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3064/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20241208T140000Z
+DTEND;VALUE=DATE-TIME:20241208T163000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95130@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3080/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3080/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - Ketterä
+DTSTART;VALUE=DATE-TIME:20241210T163000Z
+DTEND;VALUE=DATE-TIME:20241210T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95131@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3216/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3216/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - RoKi
+DTSTART;VALUE=DATE-TIME:20241211T163000Z
+DTEND;VALUE=DATE-TIME:20241211T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95132@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3107/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3107/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - RoKi
+DTSTART;VALUE=DATE-TIME:20241213T163000Z
+DTEND;VALUE=DATE-TIME:20241213T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95136@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3191/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3191/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20241213T163000Z
+DTEND;VALUE=DATE-TIME:20241213T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95135@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3099/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3099/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20241213T163000Z
+DTEND;VALUE=DATE-TIME:20241213T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95134@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3193/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3193/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - IPK
+DTSTART;VALUE=DATE-TIME:20241213T163000Z
+DTEND;VALUE=DATE-TIME:20241213T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95133@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3047/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3047/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - Hokki
+DTSTART;VALUE=DATE-TIME:20241214T150000Z
+DTEND;VALUE=DATE-TIME:20241214T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95137@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3135/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3135/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - RoKi
+DTSTART;VALUE=DATE-TIME:20241214T150000Z
+DTEND;VALUE=DATE-TIME:20241214T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95138@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3067/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3067/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - Jokerit
+DTSTART;VALUE=DATE-TIME:20241214T150000Z
+DTEND;VALUE=DATE-TIME:20241214T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95139@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3144/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3144/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20241214T150000Z
+DTEND;VALUE=DATE-TIME:20241214T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95140@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3142/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3142/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20241217T163000Z
+DTEND;VALUE=DATE-TIME:20241217T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95141@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3010/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3010/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20241218T163000Z
+DTEND;VALUE=DATE-TIME:20241218T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95142@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /2987/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/2987/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20241218T163000Z
+DTEND;VALUE=DATE-TIME:20241218T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95143@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3053/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3053/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20241219T163000Z
+DTEND;VALUE=DATE-TIME:20241219T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95144@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3199/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3199/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - Hokki
+DTSTART;VALUE=DATE-TIME:20241220T163000Z
+DTEND;VALUE=DATE-TIME:20241220T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95147@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3085/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3085/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - Hermes
+DTSTART;VALUE=DATE-TIME:20241220T163000Z
+DTEND;VALUE=DATE-TIME:20241220T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95145@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3108/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3108/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - Ketterä
+DTSTART;VALUE=DATE-TIME:20241220T163000Z
+DTEND;VALUE=DATE-TIME:20241220T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95146@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3086/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3086/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - Hermes
+DTSTART;VALUE=DATE-TIME:20241221T150000Z
+DTEND;VALUE=DATE-TIME:20241221T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95148@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3141/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3141/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20241221T150000Z
+DTEND;VALUE=DATE-TIME:20241221T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95149@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /2971/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/2971/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - IPK
+DTSTART;VALUE=DATE-TIME:20241221T150000Z
+DTEND;VALUE=DATE-TIME:20241221T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95150@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3062/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3062/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - Hokki
+DTSTART;VALUE=DATE-TIME:20241221T150000Z
+DTEND;VALUE=DATE-TIME:20241221T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95151@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3075/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3075/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - Hokki
+DTSTART;VALUE=DATE-TIME:20241228T150000Z
+DTEND;VALUE=DATE-TIME:20241228T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95154@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3095/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3095/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - Ketterä
+DTSTART;VALUE=DATE-TIME:20241228T150000Z
+DTEND;VALUE=DATE-TIME:20241228T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95155@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3116/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3116/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - Jokerit
+DTSTART;VALUE=DATE-TIME:20241228T150000Z
+DTEND;VALUE=DATE-TIME:20241228T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95153@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3003/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3003/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20241228T150000Z
+DTEND;VALUE=DATE-TIME:20241228T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95152@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3207/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3207/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20241228T150000Z
+DTEND;VALUE=DATE-TIME:20241228T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95156@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3164/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3164/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - Hermes
+DTSTART;VALUE=DATE-TIME:20241229T150000Z
+DTEND;VALUE=DATE-TIME:20241229T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95158@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3119/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3119/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20241229T130000Z
+DTEND;VALUE=DATE-TIME:20241229T153000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95159@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3072/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3072/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - Jokerit
+DTSTART;VALUE=DATE-TIME:20241229T150000Z
+DTEND;VALUE=DATE-TIME:20241229T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95157@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3081/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3081/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - RoKi
+DTSTART;VALUE=DATE-TIME:20241229T150000Z
+DTEND;VALUE=DATE-TIME:20241229T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95160@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3230/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3230/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - IPK
+DTSTART;VALUE=DATE-TIME:20241229T150000Z
+DTEND;VALUE=DATE-TIME:20241229T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95161@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3127/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3127/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - Ketterä
+DTSTART;VALUE=DATE-TIME:20250103T163000Z
+DTEND;VALUE=DATE-TIME:20250103T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95163@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3036/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3036/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20250103T163000Z
+DTEND;VALUE=DATE-TIME:20250103T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95162@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3130/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3130/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20250103T163000Z
+DTEND;VALUE=DATE-TIME:20250103T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95164@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3088/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3088/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20250104T150000Z
+DTEND;VALUE=DATE-TIME:20250104T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95165@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3103/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3103/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20250104T150000Z
+DTEND;VALUE=DATE-TIME:20250104T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95167@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3066/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3066/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20250104T150000Z
+DTEND;VALUE=DATE-TIME:20250104T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95168@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3033/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3033/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - Hermes
+DTSTART;VALUE=DATE-TIME:20250104T150000Z
+DTEND;VALUE=DATE-TIME:20250104T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95166@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3102/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3102/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - RoKi
+DTSTART;VALUE=DATE-TIME:20250108T163000Z
+DTEND;VALUE=DATE-TIME:20250108T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95170@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3197/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3197/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - Hermes
+DTSTART;VALUE=DATE-TIME:20250108T163000Z
+DTEND;VALUE=DATE-TIME:20250108T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95169@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3090/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3090/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20250109T163000Z
+DTEND;VALUE=DATE-TIME:20250109T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95171@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3019/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3019/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - Ketterä
+DTSTART;VALUE=DATE-TIME:20250110T163000Z
+DTEND;VALUE=DATE-TIME:20250110T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95172@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3201/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3201/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - RoKi
+DTSTART;VALUE=DATE-TIME:20250110T163000Z
+DTEND;VALUE=DATE-TIME:20250110T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95173@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3157/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3157/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20250111T150000Z
+DTEND;VALUE=DATE-TIME:20250111T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95174@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3169/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3169/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20250111T150000Z
+DTEND;VALUE=DATE-TIME:20250111T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95178@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3016/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3016/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - Hokki
+DTSTART;VALUE=DATE-TIME:20250111T150000Z
+DTEND;VALUE=DATE-TIME:20250111T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95177@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3205/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3205/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - IPK
+DTSTART;VALUE=DATE-TIME:20250111T150000Z
+DTEND;VALUE=DATE-TIME:20250111T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95175@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /2981/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/2981/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - RoKi
+DTSTART;VALUE=DATE-TIME:20250111T150000Z
+DTEND;VALUE=DATE-TIME:20250111T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95176@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3118/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3118/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - Hermes
+DTSTART;VALUE=DATE-TIME:20250114T163000Z
+DTEND;VALUE=DATE-TIME:20250114T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95179@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3224/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3224/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20250115T163000Z
+DTEND;VALUE=DATE-TIME:20250115T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95180@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3204/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3204/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20250117T163000Z
+DTEND;VALUE=DATE-TIME:20250117T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95182@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3167/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3167/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - Ketterä
+DTSTART;VALUE=DATE-TIME:20250117T163000Z
+DTEND;VALUE=DATE-TIME:20250117T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95184@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3176/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3176/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20250117T163000Z
+DTEND;VALUE=DATE-TIME:20250117T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95183@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3040/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3040/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - Jokerit
+DTSTART;VALUE=DATE-TIME:20250117T163000Z
+DTEND;VALUE=DATE-TIME:20250117T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95181@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3183/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3183/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - Jokerit
+DTSTART;VALUE=DATE-TIME:20250118T150000Z
+DTEND;VALUE=DATE-TIME:20250118T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95188@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3132/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3132/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - JoKP
+DTSTART;VALUE=DATE-TIME:20250118T150000Z
+DTEND;VALUE=DATE-TIME:20250118T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95189@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3121/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3121/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20250118T150000Z
+DTEND;VALUE=DATE-TIME:20250118T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95186@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3190/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3190/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20250118T150000Z
+DTEND;VALUE=DATE-TIME:20250118T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95187@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /2984/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/2984/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20250118T150000Z
+DTEND;VALUE=DATE-TIME:20250118T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95185@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3174/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3174/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - Hermes
+DTSTART;VALUE=DATE-TIME:20250122T163000Z
+DTEND;VALUE=DATE-TIME:20250122T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95190@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3173/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3173/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - Hermes
+DTSTART;VALUE=DATE-TIME:20250123T163000Z
+DTEND;VALUE=DATE-TIME:20250123T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95191@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3083/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3083/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - Jokerit
+DTSTART;VALUE=DATE-TIME:20250124T163000Z
+DTEND;VALUE=DATE-TIME:20250124T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95195@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /2983/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/2983/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20250124T163000Z
+DTEND;VALUE=DATE-TIME:20250124T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95193@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /2998/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/2998/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - Hokki
+DTSTART;VALUE=DATE-TIME:20250124T163000Z
+DTEND;VALUE=DATE-TIME:20250124T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95194@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /2975/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/2975/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - Ketterä
+DTSTART;VALUE=DATE-TIME:20250124T163000Z
+DTEND;VALUE=DATE-TIME:20250124T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95192@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3136/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3136/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20250125T150000Z
+DTEND;VALUE=DATE-TIME:20250125T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95196@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /2976/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/2976/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20250125T150000Z
+DTEND;VALUE=DATE-TIME:20250125T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95197@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3123/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3123/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - JoKP
+DTSTART;VALUE=DATE-TIME:20250125T150000Z
+DTEND;VALUE=DATE-TIME:20250125T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95199@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3070/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3070/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - Jokerit
+DTSTART;VALUE=DATE-TIME:20250125T150000Z
+DTEND;VALUE=DATE-TIME:20250125T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95198@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3023/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3023/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20250128T163000Z
+DTEND;VALUE=DATE-TIME:20250128T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95200@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3104/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3104/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - RoKi
+DTSTART;VALUE=DATE-TIME:20250130T163000Z
+DTEND;VALUE=DATE-TIME:20250130T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95201@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3168/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3168/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - Ketterä
+DTSTART;VALUE=DATE-TIME:20250131T163000Z
+DTEND;VALUE=DATE-TIME:20250131T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95203@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3026/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3026/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - RoKi
+DTSTART;VALUE=DATE-TIME:20250131T163000Z
+DTEND;VALUE=DATE-TIME:20250131T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95204@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3184/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3184/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - Hokki
+DTSTART;VALUE=DATE-TIME:20250131T163000Z
+DTEND;VALUE=DATE-TIME:20250131T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95205@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3165/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3165/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - JoKP
+DTSTART;VALUE=DATE-TIME:20250131T163000Z
+DTEND;VALUE=DATE-TIME:20250131T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95202@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3063/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3063/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - JoKP
+DTSTART;VALUE=DATE-TIME:20250201T150000Z
+DTEND;VALUE=DATE-TIME:20250201T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95209@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3098/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3098/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - Hokki
+DTSTART;VALUE=DATE-TIME:20250201T150000Z
+DTEND;VALUE=DATE-TIME:20250201T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95208@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3175/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3175/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - RoKi
+DTSTART;VALUE=DATE-TIME:20250201T150000Z
+DTEND;VALUE=DATE-TIME:20250201T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95206@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3004/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3004/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - Ketterä
+DTSTART;VALUE=DATE-TIME:20250201T150000Z
+DTEND;VALUE=DATE-TIME:20250201T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95207@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3186/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3186/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - Ketterä
+DTSTART;VALUE=DATE-TIME:20250205T163000Z
+DTEND;VALUE=DATE-TIME:20250205T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95211@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3076/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3076/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - Hokki
+DTSTART;VALUE=DATE-TIME:20250205T163000Z
+DTEND;VALUE=DATE-TIME:20250205T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95212@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3065/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3065/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20250205T163000Z
+DTEND;VALUE=DATE-TIME:20250205T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95210@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3124/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3124/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20250206T163000Z
+DTEND;VALUE=DATE-TIME:20250206T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95213@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3069/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3069/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20250207T163000Z
+DTEND;VALUE=DATE-TIME:20250207T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95216@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3170/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3170/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - Jokerit
+DTSTART;VALUE=DATE-TIME:20250207T163000Z
+DTEND;VALUE=DATE-TIME:20250207T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95214@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /2991/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/2991/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - Hermes
+DTSTART;VALUE=DATE-TIME:20250207T163000Z
+DTEND;VALUE=DATE-TIME:20250207T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95215@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3018/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3018/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - IPK
+DTSTART;VALUE=DATE-TIME:20250207T163000Z
+DTEND;VALUE=DATE-TIME:20250207T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95217@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3032/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3032/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - Hermes
+DTSTART;VALUE=DATE-TIME:20250208T150000Z
+DTEND;VALUE=DATE-TIME:20250208T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95219@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3051/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3051/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - Hokki
+DTSTART;VALUE=DATE-TIME:20250208T150000Z
+DTEND;VALUE=DATE-TIME:20250208T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95218@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3185/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3185/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - IPK
+DTSTART;VALUE=DATE-TIME:20250208T150000Z
+DTEND;VALUE=DATE-TIME:20250208T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95220@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /2997/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/2997/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20250211T163000Z
+DTEND;VALUE=DATE-TIME:20250211T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95221@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3196/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3196/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - IPK
+DTSTART;VALUE=DATE-TIME:20250212T163000Z
+DTEND;VALUE=DATE-TIME:20250212T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95224@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3147/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3147/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - Jokerit
+DTSTART;VALUE=DATE-TIME:20250212T163000Z
+DTEND;VALUE=DATE-TIME:20250212T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95223@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3154/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3154/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - Hokki
+DTSTART;VALUE=DATE-TIME:20250212T163000Z
+DTEND;VALUE=DATE-TIME:20250212T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95222@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3025/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3025/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - Hokki
+DTSTART;VALUE=DATE-TIME:20250213T163000Z
+DTEND;VALUE=DATE-TIME:20250213T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95225@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3015/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3015/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20250213T163000Z
+DTEND;VALUE=DATE-TIME:20250213T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95226@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3189/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3189/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20250214T163000Z
+DTEND;VALUE=DATE-TIME:20250214T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070230Z
+UID:Mestis-Runkosarja-2024-game-95227@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3052/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3052/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20250215T150000Z
+DTEND;VALUE=DATE-TIME:20250215T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070231Z
+UID:Mestis-Runkosarja-2024-game-95230@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3013/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3013/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - Ketterä
+DTSTART;VALUE=DATE-TIME:20250215T150000Z
+DTEND;VALUE=DATE-TIME:20250215T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070231Z
+UID:Mestis-Runkosarja-2024-game-95228@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3111/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3111/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - IPK
+DTSTART;VALUE=DATE-TIME:20250215T130000Z
+DTEND;VALUE=DATE-TIME:20250215T153000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070231Z
+UID:Mestis-Runkosarja-2024-game-95232@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3110/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3110/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - Hermes
+DTSTART;VALUE=DATE-TIME:20250215T150000Z
+DTEND;VALUE=DATE-TIME:20250215T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070231Z
+UID:Mestis-Runkosarja-2024-game-95231@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3044/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3044/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20250215T150000Z
+DTEND;VALUE=DATE-TIME:20250215T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070231Z
+UID:Mestis-Runkosarja-2024-game-95229@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3194/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3194/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20250218T163000Z
+DTEND;VALUE=DATE-TIME:20250218T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070231Z
+UID:Mestis-Runkosarja-2024-game-95233@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3092/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3092/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - RoKi
+DTSTART;VALUE=DATE-TIME:20250219T163000Z
+DTEND;VALUE=DATE-TIME:20250219T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070231Z
+UID:Mestis-Runkosarja-2024-game-95234@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /2977/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/2977/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - K-Vantaa
+DTSTART;VALUE=DATE-TIME:20250220T163000Z
+DTEND;VALUE=DATE-TIME:20250220T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070231Z
+UID:Mestis-Runkosarja-2024-game-95235@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3109/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3109/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - Hermes
+DTSTART;VALUE=DATE-TIME:20250221T163000Z
+DTEND;VALUE=DATE-TIME:20250221T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070231Z
+UID:Mestis-Runkosarja-2024-game-95237@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /2989/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/2989/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - RoKi
+DTSTART;VALUE=DATE-TIME:20250221T163000Z
+DTEND;VALUE=DATE-TIME:20250221T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070231Z
+UID:Mestis-Runkosarja-2024-game-95238@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3011/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3011/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - Hokki
+DTSTART;VALUE=DATE-TIME:20250221T163000Z
+DTEND;VALUE=DATE-TIME:20250221T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070231Z
+UID:Mestis-Runkosarja-2024-game-95236@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3125/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3125/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - JoKP
+DTSTART;VALUE=DATE-TIME:20250222T150000Z
+DTEND;VALUE=DATE-TIME:20250222T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070231Z
+UID:Mestis-Runkosarja-2024-game-95241@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3082/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3082/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - RoKi
+DTSTART;VALUE=DATE-TIME:20250222T150000Z
+DTEND;VALUE=DATE-TIME:20250222T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070231Z
+UID:Mestis-Runkosarja-2024-game-95239@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3101/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3101/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - Hermes
+DTSTART;VALUE=DATE-TIME:20250222T150000Z
+DTEND;VALUE=DATE-TIME:20250222T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070231Z
+UID:Mestis-Runkosarja-2024-game-95240@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /2978/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/2978/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20250222T150000Z
+DTEND;VALUE=DATE-TIME:20250222T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070231Z
+UID:Mestis-Runkosarja-2024-game-95242@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3114/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3114/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - Jokerit
+DTSTART;VALUE=DATE-TIME:20250225T163000Z
+DTEND;VALUE=DATE-TIME:20250225T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070231Z
+UID:Mestis-Runkosarja-2024-game-95244@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3093/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3093/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TUTO Hockey - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20250225T163000Z
+DTEND;VALUE=DATE-TIME:20250225T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070231Z
+UID:Mestis-Runkosarja-2024-game-95243@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3151/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3151/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - Hokki
+DTSTART;VALUE=DATE-TIME:20250226T163000Z
+DTEND;VALUE=DATE-TIME:20250226T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070231Z
+UID:Mestis-Runkosarja-2024-game-95247@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3225/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3225/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:RoKi - IPK
+DTSTART;VALUE=DATE-TIME:20250226T163000Z
+DTEND;VALUE=DATE-TIME:20250226T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070231Z
+UID:Mestis-Runkosarja-2024-game-95245@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3152/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3152/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ketterä - KeuPa HT
+DTSTART;VALUE=DATE-TIME:20250226T163000Z
+DTEND;VALUE=DATE-TIME:20250226T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070231Z
+UID:Mestis-Runkosarja-2024-game-95246@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3221/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3221/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jokerit - Ketterä
+DTSTART;VALUE=DATE-TIME:20250227T163000Z
+DTEND;VALUE=DATE-TIME:20250227T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070231Z
+UID:Mestis-Runkosarja-2024-game-95248@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3126/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3126/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:IPK - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20250228T163000Z
+DTEND;VALUE=DATE-TIME:20250228T190000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070231Z
+UID:Mestis-Runkosarja-2024-game-95249@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3077/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3077/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hokki - RoKi
+DTSTART;VALUE=DATE-TIME:20250301T150000Z
+DTEND;VALUE=DATE-TIME:20250301T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070231Z
+UID:Mestis-Runkosarja-2024-game-95252@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3140/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3140/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KeuPa HT - Jokerit
+DTSTART;VALUE=DATE-TIME:20250301T150000Z
+DTEND;VALUE=DATE-TIME:20250301T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070231Z
+UID:Mestis-Runkosarja-2024-game-95250@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3239/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3239/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:K-Vantaa - Ketterä
+DTSTART;VALUE=DATE-TIME:20250301T150000Z
+DTEND;VALUE=DATE-TIME:20250301T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070231Z
+UID:Mestis-Runkosarja-2024-game-95253@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3226/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3226/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:JoKP - IPK
+DTSTART;VALUE=DATE-TIME:20250301T150000Z
+DTEND;VALUE=DATE-TIME:20250301T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070231Z
+UID:Mestis-Runkosarja-2024-game-95251@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3217/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3217/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermes - TUTO Hockey
+DTSTART;VALUE=DATE-TIME:20250301T150000Z
+DTEND;VALUE=DATE-TIME:20250301T173000Z
+DTSTAMP;VALUE=DATE-TIME:20260803T070231Z
+UID:Mestis-Runkosarja-2024-game-95254@mestis.fi
+DESCRIPTION:Kokoonpanot: https://mestis.fi/fi/ottelut/2024-2025/runkosarja
+ /3038/kokoonpanot/\n\nSeuranta: https://mestis.fi/fi/ottelut/2024-2025/run
+ kosarja/3038/seuranta/
+PRODID:mestis.fi
+VERSION:2.0
+END:VEVENT
+END:VCALENDAR
