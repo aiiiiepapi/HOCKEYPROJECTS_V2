@@ -423,3 +423,30 @@ def test_random_audit_vs_raw_lakes():
         sample, bad = audit(lg)
         assert len(sample) == 60, lg
         assert not bad, (lg, bad)
+
+
+def test_magnus_ground_truth():
+    """Magnus batch-0 GT (9 sheets, 5 seasons, hand-traced 2026-08-02; two
+    hand-trace errors corrected BY the engine cross-check — see
+    ground_truth_traces/magnus_batch0.md). Pins window detection, TOI-fit
+    net-empty inference (EN anchors are hard constraints), sheet_empty, OT
+    duration, scheduled swaps. Pull-positive in-window logic still requires
+    batch 1 from the full lake before Magnus ledgers ship."""
+    from hockeycore.leagues.magnus import parse_game
+    from hockeycore.gap.segments import extract_instances
+    gt = json.load(open(ROOT / "tests" / "ground_truth_magnus.json"))["games"]
+    for gid, g in gt.items():
+        r = parse_game(str(ROOT / f"tests/reference_raw/magnus/{gid}.pdf"))
+        if g.get("sheet_empty"):
+            assert r is None, gid
+            continue
+        insts = extract_instances(r)
+        assert len(insts) == len(g["instances"]), gid
+        for e, a in zip(g["instances"], insts):
+            assert (e["opened_secs"], e["closed_secs"], e["pulled"]) == \
+                   (a["opened_secs"], a["closed_secs"], a["pulled"]), (gid, e["n"])
+    # Case-1 arithmetic pin (16351): GRE off 126s ends at the J- confirmed
+    # EN goal -> [3249, 3375], never the arithmetically-consistent horn fit
+    r = parse_game(str(ROOT / "tests/reference_raw/magnus/16351.pdf"))
+    assert r["empty"]["away"] == [(3249, 3375)]
+    assert r["coach_home"] == "LHENRY Fabrice" and r["coach_away"] == "AHO Jyrki"

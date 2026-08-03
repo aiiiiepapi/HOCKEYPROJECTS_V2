@@ -48,7 +48,7 @@
    "instances": [
     {
      "n": 1,
-     "opened_secs": 0,
+     "opened_secs": 15,
      "closed_secs": 1049,
      "closed_reason": "widened",
      "trailing": "GAP",
@@ -59,19 +59,29 @@
     "goal_abs": 3449,
     "sheet_type": "SUP1",
     "true_type": "INF1"
-   }
+   },
+   "trace_correction": "opened 0->15: creating goal was 40:15 (IN P3), hand-trace misread period boundary"
   },
   "41851": {
    "instances": [
     {
      "n": 1,
+     "opened_secs": 0,
+     "closed_secs": 647,
+     "closed_reason": "widened",
+     "trailing": "CERGY-PONTOISE",
+     "pulled": false
+    },
+    {
+     "n": 2,
      "opened_secs": 1064,
      "closed_secs": 1200,
      "closed_reason": "end_of_game",
      "trailing": "CERGY-PONTOISE",
      "pulled": false
     }
-   ]
+   ],
+   "trace_correction": "P3 entry was 4-1 (gap 3, window from 0, widened 647) \u2014 hand-trace miscounted 24:54 as P3"
   },
   "46501": {
    "instances": []

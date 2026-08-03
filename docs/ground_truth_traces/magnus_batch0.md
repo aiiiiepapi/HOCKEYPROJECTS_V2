@@ -51,3 +51,15 @@ case; 2 scheduled-swap cases; 1 Type-field lie caught by penalty windows.
 Next: batch 1 from the full lake targets PULL-positive windows (batch 0 is
 pull-negative-heavy by luck of the scan) before any adapter classification
 logic ships.
+
+## Batch-0 corrections (2026-08-02, engine cross-check)
+Two hand-trace errors were caught by the freshly built adapter (the reason
+exact-value cross-checking exists — recorded per rule 15b):
+- 32701: window opens at 15, not 0 — the gap-3-creating goal was 40:15,
+  INSIDE P3 (hand-trace misread the period boundary).
+- 41851: P3 entry was 4-1 (gap 3) — a P2 goal (24:54) was miscounted as P3.
+  Two windows: [0,647] widened + [1064,1200] horn, both no-pull.
+Adapter fix from the same pass: EN anchors are HARD constraints in the TOI
+fit (a J-confirmed EN moment proves the net empty at that second); the
+16351 horn-fit alternative was arithmetically consistent but physically
+contradicted — now impossible by construction and pinned in the gate.
