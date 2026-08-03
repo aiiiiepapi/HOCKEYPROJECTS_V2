@@ -134,10 +134,12 @@ def check_season(season_dir, seed):
             data = f.read_bytes()
             if b"</html>" not in data[-4096:].lower():
                 incomplete.append(f.name)
-            if pg == "seuranta" and b"Maalivahti ulos" in data:
-                goalie_ev += 1
-            if pg == "tilastot" and (b"pois:" in data or b"out:" in data):
-                pois += 1
+            if pg == "seuranta":
+                if b"Maalivahti ulos" in data:
+                    goalie_ev += 1
+                # off-ice intervals live in the seuranta goalie section
+                if b"pois:" in data or b"out:" in data:
+                    pois += 1
         rf = season_dir / f"game_{year}_{n}_rosters.json"
         if rf.exists():
             rosters += 1
