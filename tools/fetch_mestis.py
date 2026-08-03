@@ -15,9 +15,19 @@ Source (verified 2026-08-03, docs/MESTIS_SOURCE.md):
   {S} = "2024-2025" style season string; {N} = match number (unique only
   within season+series — files are always keyed (season, N)).
 
+SECONDARY source (probe v7, 2026-08-03): the federation Tulospalvelu at
+tilastopalvelu.fi hosts Mestis under the SAME game ids and carries
+GAME-LEVEL staff rosters incl. Head Coach (verified 3016: RAISKIO home,
+VIRTANEN away — resolving TUTO's two-HC season). Per game we also save:
+    POST https://tilastopalvelu.fi/ih/game/helpers/getRosters.php
+         {gameid: N, season: END_YEAR}      (legacy-TLS context; the
+         host's TLS is broken for modern clients — see probe history)
+
 Saves: <out>/<END_YEAR>/game_<END_YEAR>_<N>_<page>.html
+       <out>/<END_YEAR>/game_<END_YEAR>_<N>_rosters.json   (tilastopalvelu)
        <out>/<END_YEAR>/schedule_<END_YEAR>.ics
        <out>/<END_YEAR>/schedule_page_<END_YEAR>.html
+       <out>/<END_YEAR>/statgroups_<END_YEAR>.json         (tilastopalvelu)
        <out>/<END_YEAR>/manifest_<END_YEAR>.json   (sha256/bytes/url/utc)
 Seasons: END year (2023 = 2022-23). Default 2023..2026, runkosarja only.
 Resumable (existing valid files skipped); stdlib-only; run on Seb's PC.
@@ -32,14 +42,17 @@ import argparse
 import hashlib
 import json
 import re
+import ssl
 import sys
 import time
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.error import HTTPError, URLError
-from urllib.request import Request, urlopen
+from urllib.parse import urlencode
+from urllib.request import Request, urlopen, build_opener, HTTPSHandler
 
 BASE = "https://mestis.fi"
+TP_BASE = "https://tilastopalvelu.fi"
 PAGES = ("kokoonpanot", "seuranta", "tilastot")
 HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
            "Accept": "text/html,application/xhtml+xml,*/*"}
@@ -74,6 +87,45 @@ def http_get(url, retries=3, delay=2.0, verbose=False):
         except (URLError, TimeoutError, ValueError, OSError) as e:
             print(f"  {type(e).__name__}: {e} on {url} (attempt {attempt+1})",
                   flush=True)
+            if attempt < retries - 1:
+                time.sleep(delay * (attempt + 1))
+    return None
+
+
+def tp_opener():
+    """tilastopalvelu.fi TLS is broken for modern clients (self-signed
+    chain + legacy ciphers) — permissive context, read-only public data."""
+    ctx = ssl.SSLContext(ssl.PROTOCOL_TLS_CLIENT)
+    ctx.check_hostname = False
+    ctx.verify_mode = ssl.CERT_NONE
+    try:
+        ctx.set_ciphers("DEFAULT:@SECLEVEL=0")
+    except ssl.SSLError:
+        ctx.set_ciphers("DEFAULT:@SECLEVEL=1")
+    return build_opener(HTTPSHandler(context=ctx))
+
+
+def tp_post(opener, path, form, retries=3, delay=2.0):
+    """POST to tilastopalvelu; returns bytes, 'MISS' on 404, None on fail."""
+    url = TP_BASE + path
+    hdrs = dict(HEADERS)
+    hdrs["Referer"] = "https://tilastopalvelu.fi/ih/game/"
+    hdrs["X-Requested-With"] = "XMLHttpRequest"
+    for attempt in range(retries):
+        try:
+            with opener.open(Request(url, data=urlencode(form).encode(),
+                                     headers=hdrs), timeout=30) as resp:
+                return resp.read()
+        except HTTPError as e:
+            if e.code in (404, 400, 410):
+                return "MISS"
+            print(f"  HTTP {e.code} on {url} (attempt {attempt+1})",
+                  flush=True)
+            if attempt < retries - 1:
+                time.sleep(delay * (attempt + 1))
+        except (URLError, TimeoutError, ValueError, OSError) as e:
+            print(f"  {type(e).__name__}: {e} on {url} "
+                  f"(attempt {attempt+1})", flush=True)
             if attempt < retries - 1:
                 time.sleep(delay * (attempt + 1))
     return None
@@ -197,8 +249,23 @@ def fetch_season(year, out_root):
     man.save()
     time.sleep(THROTTLE)
 
+    # 2b) tilastopalvelu statgroup map for the season (tiny, verbatim)
+    tp = tp_opener()
+    sg_path = out_dir / f"statgroups_{year}.json"
+    sg = tp_post(tp, "/ih/serie/helpers/getStatGroups.php",
+                 {"season": year, "levelid": 65, "districtid": 0})
+    if isinstance(sg, bytes) and len(sg) > 2:
+        atomic_write_bytes(sg_path, sg)
+        man.record(sg_path.name, TP_BASE + "/ih/serie/helpers/"
+                   "getStatGroups.php", sg_path)
+    else:
+        print(f"[{year}] WARN: statgroups fetch failed ({sg!r})")
+    man.save()
+    time.sleep(THROTTLE)
+
     # 3) per-game pages
     saved = skipped = failed = 0
+    ros_saved = ros_skipped = ros_missing = 0
     for i, n in enumerate(matchnos, 1):
         for pg in PAGES:
             fname = f"game_{year}_{n}_{pg}.html"
@@ -237,6 +304,35 @@ def fetch_season(year, out_root):
                 del man.data["missing"][fname]
             man.record(fname, url, fpath)
             saved += 1
+        # 3b) tilastopalvelu game-level rosters (coaches live here)
+        rname = f"game_{year}_{n}_rosters.json"
+        rpath = out_dir / rname
+        if rpath.exists() and rpath.stat().st_size > 500 \
+                and rname in man.data["files"]:
+            ros_skipped += 1
+        else:
+            rdata = tp_post(tp, "/ih/game/helpers/getRosters.php",
+                            {"gameid": n, "season": year})
+            time.sleep(THROTTLE)
+            if isinstance(rdata, bytes) and len(rdata) > 2:
+                atomic_write_bytes(rpath, rdata)
+                if rname in man.data["missing"]:
+                    del man.data["missing"][rname]
+                man.record(rname, TP_BASE + "/ih/game/helpers/"
+                           f"getRosters.php?gameid={n}&season={year}",
+                           rpath)
+                ros_saved += 1
+                if len(rdata) <= 500 or b"GameRoster" not in rdata:
+                    man.record_missing(
+                        rname, TP_BASE + "/ih/game/helpers/getRosters.php",
+                        f"SUSPICIOUS rosters: {len(rdata)} bytes, "
+                        f"GameRoster marker "
+                        f"{'present' if b'GameRoster' in rdata else 'ABSENT'}")
+            else:
+                ros_missing += 1
+                man.record_missing(rname, TP_BASE + "/ih/game/helpers/"
+                                   "getRosters.php",
+                                   f"rosters fetch: {rdata!r}")
         if i % 10 == 0 or i == len(matchnos):
             man.save()
             print(f"[{year}] {i}/{len(matchnos)} games  "
@@ -249,10 +345,17 @@ def fetch_season(year, out_root):
         1 for n in matchnos
         if all(valid_html_file(out_dir / f"game_{year}_{n}_{p}.html")
                for p in PAGES))
+    n_rosters = sum(1 for n in matchnos
+                    if (out_dir / f"game_{year}_{n}_rosters.json").exists())
     print(f"[{year}] DONE: {len(matchnos)} games in schedule, "
           f"{complete} with all {len(PAGES)} pages saved, "
           f"{len(matchnos) - complete} incomplete, "
+          f"rosters {n_rosters}/{len(matchnos)} "
+          f"(+{ros_saved} new, {ros_missing} failed), "
           f"{len(man.data['missing'])} recorded problems", flush=True)
+    if n_rosters == 0:
+        print(f"[{year}] WARN: ZERO tilastopalvelu rosters for the whole "
+              f"season — coach source absent here (report to session)")
     if complete != len(matchnos):
         bad = [n for n in matchnos
                if not all(valid_html_file(out_dir / f"game_{year}_{n}_{p}.html")

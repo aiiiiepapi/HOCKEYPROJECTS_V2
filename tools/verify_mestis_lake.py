@@ -125,6 +125,7 @@ def check_season(season_dir, seed):
 
     # 3) smoke-read + 4) capability presence
     incomplete, goalie_ev, pois = [], 0, 0
+    rosters, rosters_staff, rosters_hc = 0, 0, 0
     for n in sorted(sched):
         for pg in PAGES:
             f = season_dir / f"game_{year}_{n}_{pg}.html"
@@ -137,6 +138,20 @@ def check_season(season_dir, seed):
                 goalie_ev += 1
             if pg == "tilastot" and (b"pois:" in data or b"out:" in data):
                 pois += 1
+        rf = season_dir / f"game_{year}_{n}_rosters.json"
+        if rf.exists():
+            rosters += 1
+            rdata = rf.read_bytes()
+            if b'"Staff"' in rdata:
+                rosters_staff += 1
+            if b"Vastuuvalmentaja" in rdata:
+                rosters_hc += 1
+    if rosters == 0:
+        notes.append("WARN: 0 tilastopalvelu rosters files this season "
+                     "(coach source absent — decision for Manager)")
+    elif rosters_hc < rosters:
+        notes.append(f"rosters without a Vastuuvalmentaja (head coach) "
+                     f"marker: {rosters - rosters_hc}/{rosters}")
     if incomplete:
         fails.append(f"{len(incomplete)} truncated HTML files "
                      f"(first: {incomplete[:6]})")
@@ -153,6 +168,7 @@ def check_season(season_dir, seed):
         "sched": len(sched),
         "complete": len(sched) - len({f.split("_")[2] for f in missing}),
         "goalie_ev": goalie_ev, "pois": pois, "sample": sample,
+        "rosters": rosters, "rosters_hc": rosters_hc,
     }, sched
 
 
@@ -171,8 +187,8 @@ def main():
     lines = ["# Mestis lake completeness report", ""]
     lines.append("| Season | Games in ICS | Complete (3/3 pages) | "
                  "Seuranta w/ goalie-out | Tilastot w/ pois-interval | "
-                 "Status |")
-    lines.append("|---|---|---|---|---|---|")
+                 "Rosters (w/ HC) | Status |")
+    lines.append("|---|---|---|---|---|---|---|")
     all_ok = True
     details = []
     for sd in seasons:
@@ -182,11 +198,13 @@ def main():
         lines.append(f"| {int(r['year'])-1}-{r['year'][2:]} "
                      f"| {r.get('sched', '?')} | {r.get('complete', '?')} "
                      f"| {r.get('goalie_ev', '?')} | {r.get('pois', '?')} "
+                     f"| {r.get('rosters', '?')} ({r.get('rosters_hc', '?')}) "
                      f"| {'PASS' if ok else 'FAIL'} |")
         details.append(r)
         print(f"[{r['year']}] {'PASS' if ok else 'FAIL'}  "
               f"sched={r.get('sched')}  goalie_ev={r.get('goalie_ev')}  "
-              f"pois={r.get('pois')}")
+              f"pois={r.get('pois')}  rosters={r.get('rosters')} "
+              f"(hc {r.get('rosters_hc')})")
         for fl in r["fails"]:
             print(f"    FAIL: {fl}")
         for nt in r.get("notes", []):

@@ -84,12 +84,32 @@ dog:2025-01-11}` → 35,767 B JSON):
   getGames, getStandings, getTeams, getTeamStats, getTeamSerieRoster,
   getPlayers, getGoalkeepers, getgamereportdata, getRinks, getBarometer,
   gamerosters/index.php, plus dwl* CSV-download variants.
-- Caution: the SPA UI deliberately does NOT open its own gamecentre for
-  LevelID 65 (Mestis clicks route to mestis.fi; StatGroupID 5563
-  special-cases in the scoreboard). Whether game-level sheets
-  (rosters/officials/**coaches**) are served for Mestis game ids is
-  exactly what probe v5 tests (gamecentre page + getgamereportdata.php
-  + gamerosters for game 3016). RESULT: pending.
+- The SPA UI deliberately does NOT open its own gamecentre for LevelID
+  65 (Mestis clicks route to mestis.fi) — but the BACKEND serves Mestis
+  fine (probe v7, verified on game 3016):
+  - **`POST /ih/game/helpers/getRosters.php {gameid, season}` → 86 KB
+    JSON with GAME-LEVEL staff rosters incl. Head Coach.** Keys:
+    PlayerRoles, StaffRoles, Home/AwayTeamSerieRoster,
+    Home/AwayTeamGameRoster — each roster has Players + Staff, staff
+    rows carry RoleName/RoleName_EN (Vastuuvalmentaja = Head Coach),
+    names, birth years, ids. Game 3016: home HC RAISKIO Niko, away HC
+    VIRTANEN Jonne — and TUTO's SERIE roster lists TWO HCs for the
+    season (MARJETA + VIRTANEN), so game-level attribution is not just
+    nice, it is REQUIRED, and this endpoint provides it. **The coach
+    gap is CLOSED** (fetcher saves this per game as
+    `game_{year}_{n}_rosters.json`).
+  - `POST /ih/serie/helpers/getStatGroups.php {season, levelid:65}` →
+    Mestis statgroups 2025: **168 = Mestis (runkosarja)**, 3333 =
+    pudotuspelit, 5522 = karsintaottelut, 5563 = harjoitusottelut.
+  - `/ih/gamerosters//helper/game.php?game=N&season=Y` (+ gamerosters/
+    referees siblings; empty-POST, query-string params) → small JSONs
+    (referee names verified; note double-encoded UTF-8 mojibake in
+    referees.php — kept verbatim, adapter concern).
+  - `getgamereportdata.php` 404s at every helper dir tried — the
+    gamecentre event feed endpoint remains unlocated (not needed:
+    mestis.fi seuranta is the event source).
+  - "season" parameter = season END year (3016+2025 = the 2024-25
+    game), same convention as our lake dirs.
 
 ### 1.3 v1 Finland research (read 2026-08-03)
 
@@ -167,7 +187,7 @@ anywhere).
 | Delayed-penalty visibility | None as events; `SR` flag observed on goals (decode TBD) — whistle-coincidence discriminators unavailable | 7458 |
 | EN flag reliability | `TM` flag on goals; cross-checkable against goalie-out intervals | 3000, 2999 |
 | Strength at any second | Penalty begin+minutes (AHL-style reconstruction; no explicit end) | 3000, 3161 |
-| Coaches on sheet | **NO** — needs external source (tilastopalvelu probe / hand-curated map, AHL precedent) | 3161, 2999 |
+| Coaches on sheet | **YES via tilastopalvelu getRosters.php — GAME-level Staff incl. Head Coach** (not on mestis.fi pages themselves) | 3016 (both teams; dual-HC season resolved) |
 | Live in-game feed | Unknown; seuranta page presumably live-updates in season (irrelevant to lake) | — |
 | Season volume | TBD exactly at fetch; teams: 2022-23 ≈14-15 listed (incl. HK Zemgale — verify), 2023-24 = 13, 2024-25 = 10 (incl. Jokerit), 2025-26 = 10 | season pages |
 
@@ -189,9 +209,11 @@ mestis/
   2023/                       # season END year = 2022-23
     schedule_2023.ics         # verbatim ICS (authority)
     schedule_page_2023.html   # verbatim season list page (secondary)
+    statgroups_2023.json      # tilastopalvelu statgroup map (verbatim)
     game_2023_7458_kokoonpanot.html
     game_2023_7458_seuranta.html
     game_2023_7458_tilastot.html
+    game_2023_7458_rosters.json   # tilastopalvelu game-level staff/coaches
     ...
     manifest_2023.json        # per-file sha256, bytes, url, fetched_utc
   2024/ 2025/ 2026/           # same layout
@@ -201,10 +223,11 @@ All files are the raw HTTP response bytes, verbatim, never edited.
 
 ## 7. Open questions for Manager / Seb
 
-1. **Coach identity**: not on mestis.fi. Options: (a) PC-side
-   tilastopalvelu probe (script shipped, run pending), (b) hand-curated
-   per-season coach map (10-15 teams — AHL precedent says feasible),
-   (c) news/team-page scrape. Decision belongs to Manager.
+1. **Coach identity: RESOLVED** — tilastopalvelu getRosters.php,
+   game-level (see 1.2). Open sub-question: does it cover ALL 4 target
+   seasons? Settled by the fetch run's per-season rosters counts (the
+   fetcher WARNs loudly on a zero-roster season; fallback if old seasons
+   are absent = hand-curated map, AHL precedent).
 2. Flag vocabulary decode (`SR`, `IM`, `AV`, `TV`, `VL`, `VM`) — adapter
    work, needs systematic samples from the lake.
 3. Exact per-season game counts + team lists (incl. the HK Zemgale
