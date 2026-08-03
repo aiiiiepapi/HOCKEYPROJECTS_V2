@@ -19,7 +19,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 import hockeycore.pricing.mc_pricer as MP                          # noqa: E402
-from hockeycore.leagues import ahl as ahl_mod, liiga as liiga_mod  # noqa: E402
+from hockeycore.leagues import ahl as ahl_mod, liiga as liiga_mod, mestis as mestis_mod  # noqa: E402
 
 DER = ROOT / "data" / "derived"
 CHECKPOINTS = [900, 780, 660, 600, 480, 360, 300, 240, 180]
@@ -27,8 +27,9 @@ CUTOFF = "2025-09-01"
 HL = 10.0
 EDGE = 0.10
 LAKES = {"ahl": Path("/home/claude/work/ahl_lake"),
-         "liiga": Path("/home/claude/work/liiga_lake")}
-HOLDOUT = {"ahl": "90", "liiga": "2026"}
+         "liiga": Path("/home/claude/work/liiga_lake"),
+         "mestis": Path("/home/claude/work/mestis_lake/mestis")}
+HOLDOUT = {"ahl": "90", "liiga": "2026", "mestis": "2026"}
 
 
 def load_estimator(league):
@@ -89,6 +90,10 @@ def main(league, nhl_rates=False):
                 g = ahl_mod.parse_game(
                     LAKES["ahl"] / r["season"] / f"{r['game_id']}_pxp.json",
                     season=r["season"])
+            elif league == "mestis":
+                g = mestis_mod.parse_game(
+                    LAKES["mestis"] / r["season"] /
+                    f"game_{r['season']}_{r['game_id']}_seuranta.html")
             else:
                 g = liiga_mod.parse_game(
                     LAKES["liiga"] / r["season"] / f"game_{r['season']}_{r['game_id']}.json")

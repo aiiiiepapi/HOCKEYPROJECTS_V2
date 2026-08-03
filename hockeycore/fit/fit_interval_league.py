@@ -28,7 +28,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 from hockeycore.gap.segments import extract_instances          # noqa: E402
-from hockeycore.leagues import ahl as ahl_mod, liiga as liiga_mod  # noqa: E402
+from hockeycore.leagues import ahl as ahl_mod, liiga as liiga_mod, mestis as mestis_mod  # noqa: E402
 
 DER = ROOT / "data" / "derived"
 
@@ -39,6 +39,11 @@ CFG = {
     "liiga": {"lake": Path("/home/claude/work/liiga_lake"),
               "seasons": ["2023", "2024", "2025", "2026"], "holdout": "2026",
               "no_goalie": {"2023"}, "hbin": 120},
+    # Mestis (added 2026-08-03): goalie channel present in ALL 4 seasons;
+    # 82 gap-3 EV pulls total -> Liiga-thin, hbin 120.
+    "mestis": {"lake": Path("/home/claude/work/mestis_lake/mestis"),
+               "seasons": ["2023", "2024", "2025", "2026"], "holdout": "2026",
+               "no_goalie": set(), "hbin": 120},
 }
 
 
@@ -46,11 +51,20 @@ def iter_games(league, seasons):
     cfg = CFG[league]
     for season in seasons:
         d = cfg["lake"] / season
-        files = sorted(d.glob("*_pxp.json")) if league == "ahl" else \
-            sorted(d.glob("game_*.json"), key=lambda p: int(p.stem.split("_")[2]))
+        if league == "ahl":
+            files = sorted(d.glob("*_pxp.json"))
+        elif league == "mestis":
+            files = sorted(d.glob("game_*_seuranta.html"),
+                           key=lambda p: int(p.stem.split("_")[2]))
+        else:
+            files = sorted(d.glob("game_*.json"), key=lambda p: int(p.stem.split("_")[2]))
         for f in files:
-            g = ahl_mod.parse_game(f, season=season) if league == "ahl" \
-                else liiga_mod.parse_game(f)
+            if league == "ahl":
+                g = ahl_mod.parse_game(f, season=season)
+            elif league == "mestis":
+                g = mestis_mod.parse_game(f)
+            else:
+                g = liiga_mod.parse_game(f)
             yield season, g
 
 

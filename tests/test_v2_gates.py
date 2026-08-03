@@ -529,3 +529,13 @@ def test_mestis_random_audit():
     sample, bad = audit("mestis")
     assert len(sample) == 60
     assert not bad, bad
+
+
+def test_mestis_not_bettable_flagged():
+    """Mestis blind FAILED the ruling-25 bar (2026-08-03: +11.5pt conservative
+    late-window drift, docs/MESTIS_BLIND_2026.md). No session may quietly
+    price Mestis: the NO-GO record must stand and no lines file may exist
+    until a blind pass is recorded."""
+    s = open(ROOT / "docs" / "MESTIS_BLIND_2026.md").read()
+    assert "NO-GO for self-priced markets" in s
+    assert not (DER / "lines_10ev_mestis.csv").exists()
