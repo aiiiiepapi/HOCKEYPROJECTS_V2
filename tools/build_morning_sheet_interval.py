@@ -40,8 +40,8 @@ if LG == "ahl":
     L.append("STATUS: AHL = COACH INTEL ONLY — no priced markets (ruling 24). "
              "Rule 28: base % < 40 = NO-BET regardless of situation.")
 elif LG == "mestis":
-    L.append("STATUS: Mestis = COACH INTEL ONLY — no pricer exists yet (no blind "
-             "validation; adapter+ledger gated 2026-08-03). Rule 28: base % < 40 = NO-BET.")
+    L.append("STATUS: Mestis = PROVISIONAL paper-trade from September (ruling 43, "
+             "pooled multi-fold pass 2026-08-03). Rule 28: base % < 40 = NO-BET.")
 else:
     L.append("STATUS: Liiga = paper-trade from September (ruling 25, provisional). "
              "Rule 28: base % < 40 = NO-BET.")

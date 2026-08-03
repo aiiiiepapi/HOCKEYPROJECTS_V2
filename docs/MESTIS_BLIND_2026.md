@@ -5,7 +5,12 @@ Fit 2023-2025 (fits_mestis_train, hbin 120, ruling-27 EN shrinkage), price
 CUTOFF 2025-09-01, one pricer (rule 15). 292 checkpoints / 74 instances /
 61 games. Rows: data/derived/backtest_rows_mestis.json.
 
-## Result: NO-GO for self-priced markets (Manager verdict, pending Seb)
+## Result history: single-fold NO-GO -> RULING 43 UPGRADE (Seb, 2026-08-03)
+
+Final status: **Liiga-class PROVISIONAL — paper-trade from September**
+(ruling 43; pooled multi-fold evidence in docs/BACKTEST_FOLDS_2026-08-03.md,
+variance attribution per ruling 42's founding case). The single-fold
+numbers below are kept as the historical record of the first exam.
 
 | market | bias | bad deciles | ROI@10%EV (model lines) | P(>0) |
 |---|---|---|---|---|
@@ -52,8 +57,9 @@ lines this evidence does not transfer.
 
 ## Standing state
 
-- Self-priced Mestis markets: NO-GO. No lines_10ev_mestis.csv may exist
-  until a blind pass is recorded here (gate test_mestis_not_bettable_flagged).
+- RULING 43 (2026-08-03): provisional pass on pooled forward folds;
+  lines_10ev_mestis.csv exists (full 4-season fit, all three markets,
+  rule-28 floor). Gate test_mestis_provisional_status pins this state.
 - Coach intel (ledger/profiles/morning sheet): STANDS — outcome-based,
   same validity class as AHL intel under ruling 24.
 - Path to money: (1) September — check the Odds API catalog for a Mestis

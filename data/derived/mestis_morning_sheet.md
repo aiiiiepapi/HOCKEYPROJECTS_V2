@@ -1,6 +1,6 @@
 # MESTIS MORNING SHEET — coach pull expectancy (ruling-33 estimator)
 
-STATUS: Mestis = COACH INTEL ONLY — no pricer exists yet (no blind validation; adapter+ledger gated 2026-08-03). Rule 28: base % < 40 = NO-BET.
+STATUS: Mestis = PROVISIONAL paper-trade from September (ruling 43, pooled multi-fold pass 2026-08-03). Rule 28: base % < 40 = NO-BET.
 Teams = last-seen bench; off-season coaching changes NOT applied — September refresh re-maps before opening night.
 
 ## Active benches (seen 2025-26), sorted by expected pull %

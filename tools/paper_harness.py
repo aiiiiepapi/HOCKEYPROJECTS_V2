@@ -53,6 +53,12 @@ LEAGUES = {
     "ahl":   {"sport": "icehockey_ahl",
               "ht_key": "ccb91f29d6744675", "ht_client": "ahl"},
     "liiga": {"sport": "icehockey_liiga", "season": 2027},
+    # icehockey_mestis CONFIRMED in the odds catalog 2026-08-03 (ruling 43).
+    # Live source = mestis.fi seuranta HTML (server-rendered; the page
+    # presumably live-updates in season) — parser is a September shakedown
+    # item like the AHL/Liiga clocks; raw pages are cached for offline fixes.
+    "mestis": {"sport": "icehockey_mestis",
+               "season_slug": "2026-2027", "series": "runkosarja"},
 }
 
 
@@ -70,7 +76,8 @@ def load_tables():
     tables, profiles = {}, {}
     files = {"nhl": ("lines_10ev_per_second.csv", "coach_profiles.json"),
              "ahl": ("lines_10ev_ahl.csv", "ahl_coach_profiles.json"),
-             "liiga": ("lines_10ev_liiga.csv", "liiga_coach_profiles.json")}
+             "liiga": ("lines_10ev_liiga.csv", "liiga_coach_profiles.json"),
+             "mestis": ("lines_10ev_mestis.csv", "mestis_coach_profiles.json")}
     for lg, (lines_f, prof_f) in files.items():
         lp = ROOT / "data" / "derived" / lines_f
         pp = ROOT / "data" / "derived" / prof_f
@@ -171,13 +178,50 @@ def live_liiga():
     return out
 
 
-LIVE = {"nhl": live_nhl, "ahl": live_ahl, "liiga": live_liiga}
+def live_mestis():
+    """mestis.fi season page -> live games; seuranta HTML -> score + clock.
+    SEPTEMBER SHAKEDOWN ITEM (ruling 43): the in-season live markup is
+    unverified (lake pages are post-game). Strategy: fetch the season list
+    page, find today's games, fetch each seuranta page, parse the main
+    event table (td.home/td.time/td.away — ticker excluded, see
+    hockeycore/leagues/mestis.py) for the running score; the latest event
+    time bounds the clock. Raw pages cached for offline parser fixes."""
+    cfg = LEAGUES["mestis"]
+    import re as _re
+    try:
+        from urllib.request import urlopen as _uo, Request as _Rq
+        url = f"https://mestis.fi/fi/ottelut/{cfg['season_slug']}/{cfg['series']}/"
+        with _uo(_Rq(url, headers=UA), timeout=15) as r:
+            page = r.read().decode("utf-8", "replace")
+    except Exception as e:
+        print(f"  [warn] mestis season page: {type(e).__name__}")
+        return []
+    out = []
+    for m in set(_re.findall(rf"/fi/ottelut/{cfg['season_slug']}/{cfg['series']}/(\d+)/", page)):
+        try:
+            surl = (f"https://mestis.fi/fi/ottelut/{cfg['season_slug']}/"
+                    f"{cfg['series']}/{m}/seuranta/")
+            with _uo(_Rq(surl, headers=UA), timeout=15) as r:
+                seu = r.read().decode("utf-8", "replace")
+        except Exception:
+            continue
+        Path(RAWDIR).mkdir(parents=True, exist_ok=True)
+        (Path(RAWDIR) / f"raw_mestis_{m}.html").write_text(seu)
+        out.append({"league": "mestis", "gid": str(m), "home": None,
+                    "away": None, "hs": None, "as": None, "period": None,
+                    "R": None, "raw": None, "clock_unverified": True,
+                    "parse_pending_shakedown": True})
+    return out
+
+
+LIVE = {"nhl": live_nhl, "ahl": live_ahl, "liiga": live_liiga,
+        "mestis": live_mestis}
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--once", action="store_true")
-    ap.add_argument("--leagues", nargs="*", default=["nhl", "ahl", "liiga"])
+    ap.add_argument("--leagues", nargs="*", default=["nhl", "ahl", "liiga", "mestis"])
     args = ap.parse_args()
 
     LOGDIR.mkdir(exist_ok=True)

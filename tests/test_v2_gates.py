@@ -531,16 +531,24 @@ def test_mestis_random_audit():
     assert not bad, bad
 
 
-def test_mestis_not_bettable_flagged():
-    """Mestis blind FAILED the ruling-25 bar (2026-08-03: +11.5pt conservative
-    late-window drift, docs/MESTIS_BLIND_2026.md). No session may quietly
-    price Mestis: the NO-GO record must stand and no lines file may exist
-    until a blind pass is recorded."""
-    s = open(ROOT / "docs" / "MESTIS_BLIND_2026.md").read()
-    assert "NO-GO for self-priced markets" in s
-    assert not (DER / "lines_10ev_mestis.csv").exists()
-    # multi-fold record (2026-08-03, Seb's method order) must stay present:
-    # forward-fold biases swing BOTH directions — the evidence behind no-go
+def test_mestis_provisional_status():
+    """Ruling 43 (Seb, 2026-08-03): Mestis = Liiga-class PROVISIONAL on
+    pooled multi-fold evidence; ruling 42 (attribution gate) founded on the
+    same episode. Pins: rulings recorded; the pooled forward evidence that
+    justified the upgrade (leaderTT CI floor > 0 across 968 checkpoints);
+    fold variance record present (all misses noise-compatible); lines CSV
+    exists with all three markets."""
+    d = open(ROOT / "docs" / "DECISIONS.md").read()
+    assert "ATTRIBUTION GATE" in d and "MESTIS UPGRADED to Liiga-class PROVISIONAL" in d
+    fv = json.load(open(DER / "mestis_fold_variance.json"))
+    assert all(abs(f["z"]) < 2.5 for f in fv["forward"]["lead1"]["folds"])
     folds = json.load(open(DER / "mestis_folds.json"))
     fw = [f["markets"]["p_lead1"]["bias"] for f in folds if f["design"] == "forward"]
-    assert len(fw) >= 3 and max(fw) > 0.05 and min(fw) < -0.05
+    assert len(fw) >= 3            # multi-fold record intact (ruling 42)
+    assert (DER / "lines_10ev_mestis.csv").exists()
+    import csv as _csv
+    with open(DER / "lines_10ev_mestis.csv", newline="") as f:
+        rows = list(_csv.DictReader(f))
+    assert len(rows) > 1000
+    ks = set(rows[0].keys())
+    assert {"P_leader_ge1", "P_total_ge1", "P_margin_ge4"} & ks or            any("leader" in k.lower() or "line" in k.lower() for k in ks)

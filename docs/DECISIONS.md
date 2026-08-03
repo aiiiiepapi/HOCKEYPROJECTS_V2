@@ -375,3 +375,39 @@ NOTE: new coach layer is PROVISIONAL until blind re-validation (next block).
     m_PP, pen via splice.py) — all three markets on lines_10ev_ahl.csv.
     Direction sanity checks pass (rule 9). UNVALIDATED banner updated.
     Paper harness + December re-litigation remain the empirical arbiters.
+
+## 2026-08-03 (Mestis block — Manager session)
+
+42. **ATTRIBUTION GATE (Seb, 2026-08-03: "almost every one of my challenges
+    overturns your conclusions, that's an issue").** Extends 15b from
+    comparative claims to CAUSAL/attribution claims. No attribution or
+    verdict ships without, attached: (a) a NULL TEST — the effect must be
+    distinguishable from sampling noise at the correct clustering level,
+    computed, never eyeballed ("it's noise" is permanently the first
+    candidate hypothesis); (b) at least one competing explanation
+    explicitly tested; (c) a stated limit of what the test design cannot
+    distinguish — if the design can't separate the claim from an
+    alternative, only the numbers ship, not the story. Context: the
+    pipeline layer has never been overturned (audits 0/60, GT first-run
+    passes); the overturned claims were all interpretation-layer (rulings
+    27, 29, 39b, and twice on 2026-08-03: "25-26 drift" then "season
+    wobble" — both fell to Seb's variance hypothesis, confirmed by
+    tools/fold_variance_test.py: all folds |z|<2, tau~0). Multi-fold
+    backtest (tools/backtest_folds.py) replaces single-fold blind as
+    deciding evidence for every future league verdict.
+
+43. **MESTIS UPGRADED to Liiga-class PROVISIONAL (Seb ratified 2026-08-03).**
+    Basis: pooled forward folds (3 blind seasons, 968 checkpoints / 225
+    games — evidence order of Liiga's ruling-25 basis): leaderTT bias
+    +4.5pts / ROI@10%EV +22.3% [+4.7,+38.8] P(>0)=0.996; total over
+    +0.7pts / +11.3% [-2.0,+24.5] 0.95; leader -3.5 +0.8pts / +14.9%
+    [n.s. 0.90]. Per-fold swings confirmed pure sampling variance
+    (ruling 42's founding case). Production: lines_10ev_mestis.csv from
+    the full 4-season fit, all three markets (no -3.5 exclusion — unlike
+    AHL, Mestis marg4 is calibrated), rule-28 40%% floor, paper-trade from
+    September alongside NHL+Liiga. Recorded caveats: single-season luck
+    band is 6-10pts at this sample size (the 2025 fold LOSES ~6%% at model
+    lines — sit-through variance), leaderTT tail deciles 3/10 (2026 tail),
+    total-over pooled CI floor -2%%, all model-line (not market-line)
+    evidence; September paper log is the arbiter. NO-GO pin replaced by
+    the provisional-status gate; re-blind when 26-27 accrues (standing).

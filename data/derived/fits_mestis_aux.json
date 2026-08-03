@@ -1,0 +1,13 @@
+{
+ "return_hazard_per_sec": 0.003075216777576124,
+ "h_repull": 0.02959220498015157,
+ "evidence_lag": 0,
+ "dead": 18,
+ "seasons": [
+  "2023",
+  "2024",
+  "2025",
+  "2026"
+ ],
+ "league": "mestis"
+}
