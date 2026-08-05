@@ -191,25 +191,17 @@ def main():
         if got:
             try:
                 tree = json.loads(got.decode("utf-8"))
-
-                def walk(o):
-                    if isinstance(o, dict):
-                        vals = {str(v) for v in o.values() if isinstance(v, (str, int))}
-                        name = None
-                        for v in vals:
-                            mm = re.match(r"^(20\d\d)/(20\d\d)$", v)
-                            if mm:
-                                name = int(mm.group(2))
-                        if name:
-                            for k, v in o.items():
-                                if isinstance(v, str) and re.match(r"^[a-z0-9]{8,12}$", v) and "uuid" in k.lower():
-                                    season_uuids.setdefault(name, v)
-                        for v in o.values():
-                            walk(v)
-                    elif isinstance(o, list):
-                        for v in o:
-                            walk(v)
-                walk(tree)
+                # season[].code = season START year; lake dirs use END year
+                for s in tree.get("season", []):
+                    if s.get("uuid") and str(s.get("code", "")).isdigit():
+                        season_uuids.setdefault(int(s["code"]) + 1, s["uuid"])
+                # sanity: the regular-season gameType uuid we hardcode must be
+                # the one the endpoint calls 'regular' (Grundserie)
+                for gt in tree.get("gameType", []):
+                    if gt.get("code") == "regular" and gt.get("uuid") != SHL_GAMETYPE_UUID:
+                        log("stage0 WARNING: regular gameType uuid %s != expected %s — using endpoint value"
+                            % (gt.get("uuid"), SHL_GAMETYPE_UUID))
+                        globals()["SHL_GAMETYPE_UUID"] = gt["uuid"]
             except Exception as e:  # noqa: BLE001
                 log("stage0: could not parse season list: %r" % e)
         log("stage0 season uuids resolved: %s" % json.dumps(season_uuids))
