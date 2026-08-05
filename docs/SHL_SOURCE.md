@@ -1,10 +1,39 @@
 # SHL — data source documentation (Scraping session, started 2026-08-05)
 
-Status: **DISCOVERY IN PROGRESS — probe 1 awaiting PC run.** Nothing in
-this doc is capability-verified yet unless a NAMED fetched game is cited
-(rule: every claim verified on a fetched sample, not documentation).
+Status: **DISCOVERY ROUND 1 COMPLETE (probe 1 fetched on PC 2026-08-05).**
+Claims below cite the fetched sample that verifies them; anything not yet
+sample-verified is marked TBD.
 Session branch: `claude/shl-scrape-ly11nk` (the cloud harness maps the
 kickoff's `shl-scrape` branch name to this; Manager note in HANDOFF).
+PC push channel: `C:\dev\HP_V2` clone on this branch (Seb-approved,
+2026-08-05; separate clone per session, never shared).
+
+## Probe 1 headline results (all verified on fetched files)
+
+1. **shl.se has an OPEN JSON schedule API** (no auth):
+   `GET https://www.shl.se/api/sports-v2/game-schedule?seasonUuid=xs4m9qupsi&seriesUuid=qQ9-bb0bzEWUk&gameTypeUuid=qQ9-af37Ti40B`
+   → 429,484 B JSON: `gameInfo[364]` (uuid, rawStartDateTime UTC, state,
+   overtime/shootout bools, home/away code+score, venue, roundNumber
+   1-52, seriesInfo SHL), `teamList[14]`, `ssgtUuid`. Season resolved
+   from content: **xs4m9qupsi = 2025-26** (2025-09-13 → 2026-03-14, all
+   364 post-game, every team exactly 52 games — 14×52 bar VERIFIED for
+   25-26). Other seasons' uuids NOT in page payload (runtime API) —
+   probe 2 target: `/assets/index-RNjyxFdd.js` (single Vite bundle, all
+   routes). Naive guesses 404: /api/sports-v2/seasons, /api/site-settings.
+2. **stats.swehockey.se serves everything server-rendered, no auth**:
+   series **18263 = SHL 2025-26**; Schedule page (459,991 B) lists all
+   364 games with date/time/teams/result+periods/spectators/venue and
+   exactly one `/Game/Events/{gameId}` link per game (ids 1004308-1004853,
+   unique 364). Cross-source: both sources open the season 2025-09-13. ✔
+3. **Game Events sheet = capability WIN** (verified on fetched game
+   **1004308**, Brynäs IF - Växjö Lakers 4-7, 2025-09-13):
+   see capability table below.
+4. **api.shl.se / doc.openapi.shl.se: DEAD** — both 522 (Cloudflare,
+   origin down) from Seb's PC 2026-08-05. Official Open API path CLOSED
+   (nothing to authenticate against; no scraping around auth needed).
+5. **statistik.swehockey.se: NXDOMAIN** from both cloud and Seb's PC —
+   old host retired. `historical.stats.swehockey.se` exists (933 B
+   redirect/stub fetched; role TBD).
 
 ## Environment facts (verified 2026-08-05)
 
@@ -89,20 +118,29 @@ docs on PyPI; NOT yet verified on our own fetched sample):
   schedule JSON. Two independent sources available → both-direction
   reconciliation between them AND vs fetched games.
 
-## 3. Capability table (MAGNUS_DATA_GAPS bar) — ALL ROWS PENDING PROBE
+## 3. Capability table (MAGNUS_DATA_GAPS bar)
 
-| Capability | stats.swehockey.se | shl.se | Verified on |
+| Capability | stats.swehockey.se (Game/Events HTML) | shl.se | Verified on |
 |---|---|---|---|
-| Event timeline | expected (goals/penalties/shots) | unknown | — |
-| Explicit goalie in/out with times | unknown | unknown | — |
-| Delayed-penalty visibility | unknown | unknown | — |
-| EN flag on goals | unknown | unknown | — |
-| Penalties begin+minutes or begin+end | unknown | unknown | — |
-| Coaches per game | unknown | unknown | — |
-| Schedule authority | per-season Schedule page | schedule JSON | — |
+| Event timeline | YES: goals, penalties, GK in/out, per period (NEWEST-FIRST order; shots as period totals only) | TBD (game endpoints unknown; probe 2) | 1004308 |
+| Explicit goalie in/out with times | **YES — "GK Out"/"GK In" rows with cumulative clock**: 1004308 has 00:00 GK In (both starters), 57:12 GK Out BIF (pull, down 4-6), 57:39 GK In BIF (after EN goal), 60:00 GK Out both (END-OF-GAME rows — adapter must not read as pulls) | TBD | 1004308 |
+| Delayed-penalty visibility | none observed yet (no dp events in sample; TBD across more games) | TBD | 1004308 (absence) |
+| EN flag on goals | **YES — "ENG" flag** on the 57:39 goal (4-7 EQ), cross-checkable against the GK-out window (57:12-57:39) — dual-channel like Mestis | TBD | 1004308 |
+| Penalties begin+end | **YES — EXPLICIT begin AND end** "(46:03 - 47:10)" incl. early termination at PP goal, and team penalties "(03:05 - 05:05)". Liiga-class, better than AHL | TBD | 1004308 |
+| Strength on goals | YES: (EQ)/(PP1)/(SH1) + on-ice jersey lists both teams ("Pos. Part."/"Neg. Part.") — independent strength cross-check | TBD | 1004308 |
+| Coaches per game | NOT on Events page; LineUps page verdict PENDING (file fetched, in transfer) | TBD | 1004308 (Events negative) |
+| Schedule authority | per-season Schedule page (server-rendered, has ALL games + ids) | schedule JSON (has uuids, rounds, OT/SO flags) | 18263 / xs4m9qupsi |
+| Live in-game feed | Live/{seriesId} pages exist (irrelevant to lake; paper-harness question later) | site is live-scoring capable | — |
 
-No row gets filled without a named fetched game (ticker lesson applies:
-any per-game count must be proven scoped to the game's own container).
+Parser/verification notes from 1004308 (recorded now, adapter's problem later):
+- Period sections and rows are listed newest-first; clock is cumulative (57:12 not 17:12).
+- 60:00 "GK Out" pair = end-of-game bookkeeping, NOT pulls; 00:00 "GK In" = starters.
+- Swedish decimal commas ("15,38%"), NBSP in team headers, `&#xD;&#xA;` inline styles.
+- A third per-game artifact exists: `/Game/Reports/{gameId}` (content TBD, probe 2).
+- Scoping (ticker lesson): Events page structure is single-game server-rendered
+  tables — but scoping is PROVEN only when the verifier counts rows inside the
+  game's own table element and matches header totals (PIM/goals). Standing item
+  for verify_shl_lake.py, not assumed.
 
 ## 4. Probe log
 
