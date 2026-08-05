@@ -251,18 +251,31 @@ def main():
             save(root, "%d/schedule_shl_%d.json" % (year, year), sblob, surl, man)
             sj = json.loads(sblob.decode("utf-8"))
             ginfo = sj.get("gameInfo", [])
-            rounds = sorted({g.get("roundNumber") for g in ginfo})
             gate(len(ginfo) == EXPECTED_GAMES, "shl %d games %d == 364" % (year, len(ginfo)), failures)
             gate(all(g.get("state") == "post-game" for g in ginfo),
                  "shl %d all post-game" % year, failures)
-            gate(rounds and rounds[0] == 1 and rounds[-1] == 52,
-                 "shl %d rounds 1..52" % year, failures)
+            # roundNumber is only populated for the current season on shl.se —
+            # absent rounds are a WARN, wrong rounds are a FAIL
+            rounds = sorted({g.get("roundNumber") for g in ginfo if g.get("roundNumber")})
+            if rounds:
+                gate(rounds[0] == 1 and rounds[-1] == 52,
+                     "shl %d rounds present -> 1..52 (got %s..%s)" % (year, rounds[0], rounds[-1]), failures)
+            else:
+                log("  WARN: shl %d has no roundNumber data (historical season)" % year)
+            # join on (date, NORMALIZED home) — raw names differ between the
+            # sources for 5 of 14 clubs (HV71, Luleå, Malmö, Växjö, Örebro)
             for g in ginfo:
-                key = (g["startDateTime"][:10], g["homeTeamInfo"]["names"]["long"].strip())
+                key = (g["startDateTime"][:10], norm_team(g["homeTeamInfo"]["names"]["long"]))
                 plan[year]["uuid_by_key"][key] = g["uuid"]
-            joined = sum(1 for g in games if (g["date"], g["home"]) in plan[year]["uuid_by_key"])
+            joined = sum(1 for g in games
+                         if (g["date"], norm_team(g["home"] or "")) in plan[year]["uuid_by_key"])
             gate(joined == EXPECTED_GAMES,
-                 "join swe<->shl %d/%d (date+home)" % (joined, EXPECTED_GAMES), failures)
+                 "join swe<->shl %d/%d (date+norm home)" % (joined, EXPECTED_GAMES), failures)
+            if joined != EXPECTED_GAMES:
+                miss = sorted({(g["date"], g["home"]) for g in games
+                               if (g["date"], norm_team(g["home"] or "")) not in plan[year]["uuid_by_key"]})
+                for mk in miss[:10]:
+                    log("    unmatched: %s %s" % mk)
         man.flush()
 
     if failures:
@@ -286,7 +299,7 @@ def main():
                 ("game_%d_%d_lineups.html" % (year, gid), SWE + "/Game/LineUps/%d" % gid, b"TSMstats"),
             ]
             if not args.swe_only:
-                uuid = umap.get((g["date"], g["home"]))
+                uuid = umap.get((g["date"], norm_team(g["home"] or "")))
                 arts += [
                     ("game_%d_%d_pbp.json" % (year, gid), SHL + "/api/gameday/play-by-play/" + uuid, b"["),
                     ("game_%d_%d_boxscore.json" % (year, gid), SHL + "/api/gameday/boxscore/" + uuid, b"{"),
