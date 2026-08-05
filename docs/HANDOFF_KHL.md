@@ -5,6 +5,23 @@ kickoff's `khl-scrape` at creation — Manager: treat this as the khl-scrape
 branch). Push capability CONFIRMED 2026-08-05 (empty commit + this block
 pushed via session GitHub App auth; no token involved).
 
+## State (2026-08-05, block 3 — DISCOVERY COMPLETE, fetcher shipped)
+
+- Probe round 2 analyzed (a7f7ce3; manifest re-hash 0/10 altered —
+  .gitattributes fix verified working). Capability bar FULLY MET on named
+  games in all 4 seasons — full table in docs/KHL_SOURCE.md: protocol
+  page carries goal times/strength/on-ice lists (EN via goalie absence)
+  + penalty table; text page carries pulls/returns/dp/coaches/EN-TOI.
+  Archive depth confirmed (2022-25 pages full weight, structured events).
+- Artifact set DECIDED: text + protocol (resume + EN mirror excluded, no
+  capability content). ~1.3 MB/game raw, ~4.0 GB total.
+- Lake plan PROPOSED: single orphan branch khl-data-lake, one commit+push
+  per season (<300 MB packed each); per-season sparse-checkout for cloud
+  verification; fallback per-season branches if size rejects.
+- tools/fetch_khl.py SHIPPED: stdlib-only, resume-safe, scoped-count gate
+  before fetch, truncation flags, per-season manifests. Awaiting smoke
+  run then full fetch (~2.5-3.5 h) on PC.
+
 ## State (2026-08-05, block 2 — probe round 1 analyzed)
 
 - PC probe round 1 ran clean (commit 5f6b07b): khl.ru fully open from

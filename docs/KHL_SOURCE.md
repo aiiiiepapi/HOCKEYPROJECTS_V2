@@ -1,9 +1,11 @@
 # KHL data source discovery (khl-scrape session, started 2026-08-05)
 
-Status: **PHASE 2 — probe round 1 analyzed (18 raw files in
-tests/reference_raw/khl_probe/, commit 5f6b07b), round 2 pending
-(tools/probe2_khl.ps1).** Everything marked VERIFIED below is verified on
-the named fetched files, per rule 6 / ruling 42.
+Status: **DISCOVERY COMPLETE — probe rounds 1+2 analyzed (28 raw files in
+tests/reference_raw/khl_probe*/; commits 5f6b07b, a7f7ce3). Capability bar
+fully met on named games in all 4 seasons. Fetcher shipped
+(tools/fetch_khl.py); awaiting smoke run + full fetch on PC.** Everything
+marked VERIFIED below is verified on the named fetched files, per rule 6 /
+ruling 42.
 
 ## Reachability (VERIFIED 2026-08-05)
 
@@ -90,14 +92,31 @@ Verbatim vocabulary (capability table anchors):
   Кравец Михаил Григорьевич / Десятков Павел Николаевич on 898094 —
   both are the actual 2025-26 HCs of Lada/Barys).
 
-### www.khl.ru/game/<tid>/<gid>/protocol/ and /resume/
-Link pattern verified from calendars; **payloads NOT yet fetched**
-(round-1 guesses used the WRONG url form `/game/<tid>/<gid>/` -> 404;
-tabs are mandatory). Round 2 fetches protocol+resume for named games.
-Expected to carry goal times + official protocol. UNVERIFIED.
+### www.khl.ru/game/<tid>/<gid>/protocol/ — the goal-times channel (VERIFIED round 2)
+(NB: the tab-less form `/game/<tid>/<gid>/` is a 404 — tabs are mandatory.)
+Verified on 898094 (517 KB) + openers 881261/885442/889850 (498-523 KB):
+- **«Заброшенные шайбы» table**: per goal — number, period, cumulative
+  game clock (`01′23′′` format), running score, strength state (glossary:
+  рав./бол./мен./буллит — NO empty-net state), scorer + up to 2 assists
+  (with season totals), and **on-ice jersey lists for BOTH teams** ->
+  EN goals resolve from goalie-number absence in the scoring context
+  (Magnus Joueurs-list method, but with full on-ice data). Solves the
+  text channel's missing goal times.
+- **«Штраф» fineTable**: per team — time (cumulative), player, minutes,
+  offense text, per-period totals. Together with the text channel's
+  back-to-full-strength events: penalty begin AND end covered.
+- Full per-player stat tables (incl. goalie TOI), team stats,
+  special-teams section. **Coaches NOT on this page** (nav-menu hits
+  only) — the TEXT page is the coach channel.
 
-### en.khl.ru — English mirror
-Root reachable (435 KB). Game-page equivalence UNVERIFIED (round 2).
+### /resume/ — summary page, NOT in artifact set (decision, round 2)
+317 KB on 898094: video highlights, match stats, goals recap, post-game
+standings. No capability content beyond protocol+text -> not fetched for
+the lake.
+
+### en.khl.ru — English mirror exists (proto verified on 898094, 494 KB,
+"Goals" table with glossary). RU stays the authority; EN NOT in the
+artifact set (no additional content, doubles size).
 
 ### khl.api.webcaster.pro — VIDEO platform, not pbp (VERIFIED)
 `/api/khl_mobile/events_v2.json` returns the KHL **video/stream** event
@@ -112,48 +131,62 @@ robots.txt: no global crawl-delay directive (politeness stays at our
 enumeration. online.khl.ru: live text platform (10 KB shell), not needed
 for historical lake.
 
-## Capability bar vs MAGNUS_DATA_GAPS (state after round 1)
+## Capability bar vs MAGNUS_DATA_GAPS — COMPLETE (rounds 1+2)
 
-| Capability | KHL finding | Verified on |
+| Capability | KHL finding | Verified on (named) |
 |---|---|---|
-| Goalie in/out with times | YES — explicit paired events, game clock | 898094 |
-| Multi-pull windows | YES — each out/in event explicit | 898094 (58:33/58:47/59:11) |
+| Goalie in/out with times | YES — explicit paired events, game clock, ALL 4 seasons | 898094; 885442 (3 pairs); 889850; 881700 |
+| Multi-pull windows | YES — each out/in event explicit | 898094 (58:33/58:47/59:11); 889850 |
+| Mid-game substitution vs pull | separable: `Замена вратаря. <Team>. <new> вместо <old>` distinct class | 881261 (Паскуале за Кошечкина) |
 | Delayed-penalty visibility | YES — explicit dp event + observed dp-pull episode | 898094 |
-| Penalties | begin (time+minutes+offense) AND explicit back-to-full-strength events | 898094 |
-| EN flags on goals | INDIRECT so far (goal lines lack times/flags; ВППВ TOI table = EN exposure per player) | 898094; protocol page TBD |
-| Goal times | **MISSING in text channel** — round-2 protocol check | — |
-| Coach per game | YES — Тренер rows on text page | 898094 |
-| Event timeline granularity | curated broadcast (~80 events/game): goals, penalties+ends, pulls, dp, icings, ad breaks, periods | 898094 |
-| Live feed | online.khl.ru + webcaster (Sept shakedown scope) | — |
-| Archive depth 2022-25 | links exist for 100% of games; CONTENT unverified | round 2 |
+| Penalties | protocol table (time+player+minutes+offense per team) + text back-to-full-strength END events | 898094 both channels |
+| Goal times + strength | protocol goals table: period, cumulative clock, running score, рав/бол/мен/буллит | 898094 (8 goals) |
+| EN goals | on-ice jersey lists per goal (goalie absent) + ВППВ per-player EN-TOI | 898094 |
+| Coach per game | YES — text-page preview-frame, both teams | 898094 (Кравец/Десятков); 881261 (Фёдоров, 2022-23) |
+| Event timeline granularity | curated broadcast 42-90 events/game + protocol tables | all 6 sampled games |
+| Live feed | online.khl.ru + webcaster video API (Sept shakedown scope) | — |
+| Archive depth 2022-25 | CONFIRMED: full-weight pages, structured events present | 881261/881700/885442/889850 |
 
-## Sizing (updated with real bytes)
+Known feed quirks for the adapter (recorded now, handled later): duplicate
+penalty line (898094 51:57), mixed clock semantics (play events = game
+clock, period boundaries = wall clock), goal lines in text channel carry
+no time (protocol is the time authority), free-text commentary mentions
+goalies constantly (counts must scope to structured `textBroadcast-item`
+lines — ticker lesson analogue, proven on 885442's "15 page-wide pulls"
+that are 3 real ones).
 
-Text page: 866 KB raw. 3,060 texts ≈ 2.6 GB raw + protocol/resume pages
-(sizes TBD round 2). HTML compresses well in git packs, but this is the
-biggest lake yet by bytes. Decision after round 2: likely **per-season
-orphan branches** `khl-data-lake-<END_YEAR>` (each ~650 MB raw / est.
-100-200 MB packed) instead of one branch; every push well under GitHub's
-2 GB per-push limit. Cloud-side verification can sparse-checkout one
-season at a time (session disk allowance).
-Fetch time: ~2-3 artifacts × 3,060 games at ~1.5 s/request ≈ **3-5 h per
-full run** — resume-safety in fetch_khl.py is mandatory, per-season runs
-recommended.
+## Sizing (FINAL, real bytes from rounds 1+2)
+
+Artifact set per game: text (720-870 KB) + protocol (500-525 KB) ≈
+**1.3 MB/game raw** -> 3,060 games ≈ **4.0 GB raw**, ~1 GB/season.
+Boilerplate-heavy HTML compresses ~5-6x in git packs -> est. 150-250 MB
+packed per season.
+**Proposed lake plan (Seb to ratify by running the fetch)**: single orphan
+branch `khl-data-lake` (Mestis convention), ONE COMMIT + PUSH PER SEASON
+(each push est. <300 MB, safely under GitHub's 2 GB/push limit). Cloud
+verification uses per-season sparse-checkout (session disk allowance
+can't hold 4 GB + workspace). Fallback if a push is rejected on size:
+per-season branches `khl-data-lake-<year>` — decision recorded here
+before fetch per kickoff §2.
+Fetch time: 6,120 game fetches + 4 calendars at 0.7 s delay ≈ **2.5-3.5 h
+full run**; per-season runs ~40-50 min. fetch_khl.py is resume-safe
+(manifest+disk skip), retries 3x with backoff, flags small/truncated
+payloads, and REFUSES to fetch a season whose scoped calendar count
+mismatches the verified expectation.
 
 ## Market note (Manager, on record)
 
 Odds provider has NO icehockey_khl market. Lake serves coach intel +
 model-side lines (ruling 5). Seb ordered with this heard.
 
-## Open items (round 2 + fetcher)
+## Open items (fetch phase)
 
-1. Protocol/resume payloads: goal times, EN/PP flags on goals, official
-   lineups/coaches, shootout format. (probe2_khl.ps1 — awaiting PC run)
-2. Text-broadcast CONTENT depth for 2022-23/2023-24/2024-25 (named first
-   games + one mid-season spot). Risk: old seasons may have empty
-   broadcast pages; then protocol pages become the primary event source —
-   capability re-check required.
-3. en.khl.ru protocol equivalence (English event texts would ease adapter
-   work but RU stays the authority).
-4. Artifact set per game (text + protocol + resume vs subset) — decide on
-   round-2 evidence, then write tools/fetch_khl.py.
+1. Smoke run (`--season 2026 --limit 3`), verify payloads + manifest, then
+   full per-season runs on the PC.
+2. Lake branch mechanics paste-block (orphan `khl-data-lake`, per-season
+   commits, .gitattributes carried, manifest re-hash after every
+   push/pull — the autocrlf incident makes this non-negotiable).
+3. tools/verify_khl_lake.py: 0 missing/0 stray vs scoped calendar id set
+   both directions, 0 truncation flags, manifest re-hash, seeded-random
+   spot-opens re-checking capability rows on real games (scoped counts).
+4. Round-2 manifest re-hash on cloud: 0/10 altered (.gitattributes works).
