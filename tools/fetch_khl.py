@@ -23,6 +23,7 @@ Optional: --limit N (smoke run), --delay 0.7
 import argparse
 import csv
 import hashlib
+import http.cookiejar
 import os
 import re
 import sys
@@ -52,25 +53,43 @@ HEADERS = {
 }
 MANIFEST_FIELDS = ['file', 'url', 'http_code', 'bytes', 'sha256', 'utc', 'flag']
 
+# khl.ru fronts a bot-protection layer that answers a cookie-less client
+# with 307 + Set-Cookie (observed on the 2026-08-05 smoke run; PowerShell's
+# Invoke-WebRequest passed because it keeps cookies across the redirect
+# chain). A shared CookieJar makes urllib do the same.
+_JAR = http.cookiejar.CookieJar()
+_OPENER = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(_JAR))
+
 
 def utcnow():
     return datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
 
 
 def fetch(url, delay, retries=3):
-    """GET url, return (code, bytes). Retries with backoff on network errors."""
-    last_err = None
+    """GET url, return (code, bytes). Retries with backoff on network errors
+    AND on 3xx-final responses (cookie-challenge second pass usually clears)."""
+    last = None
     for attempt in range(retries):
         time.sleep(delay if attempt == 0 else delay + 2 ** attempt)
         req = urllib.request.Request(url, headers=HEADERS)
         try:
-            with urllib.request.urlopen(req, timeout=60) as r:
+            with _OPENER.open(req, timeout=60) as r:
                 return r.status, r.read()
         except urllib.error.HTTPError as e:
-            return e.code, e.read() if e.fp else b''
+            body = e.read() if e.fp else b''
+            loc = e.headers.get('Location', '') if e.headers else ''
+            last = (e.code, body)
+            if 300 <= e.code < 400:
+                # challenge redirect: cookies from this response are now in
+                # the jar; loop to retry with them. Report Location once.
+                if attempt == 0:
+                    print(f'    note: {e.code} redirect at {url} '
+                          f'(Location: {loc[:120]}) — retrying with cookies')
+                continue
+            return e.code, body
         except Exception as e:  # URLError, timeout, ConnectionReset...
-            last_err = e
-    return f'ERR:{last_err}', b''
+            last = (f'ERR:{e}', b'')
+    return last if last else ('ERR:unknown', b'')
 
 
 def flag_for(body, code):
