@@ -9,9 +9,13 @@ $ErrorActionPreference = 'Continue'
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 -bor [Net.SecurityProtocolType]::Tls13
 
 # --- repo setup -------------------------------------------------------------
-$repo = 'C:\dev\HOCKEYPROJECTS_V2'
-if (-not (Test-Path $repo)) {
-  git clone https://github.com/aiiiiepapi/HOCKEYPROJECTS_V2.git $repo
+# Repo root = parent of the tools/ dir this script lives in (no hardcoded
+# path: 2026-08-05 lesson — C:\dev\HOCKEYPROJECTS_V2 existed on the PC as a
+# non-git folder and the hardcoded path silently skipped the clone).
+$repo = Split-Path -Parent $PSScriptRoot
+if (-not (Test-Path (Join-Path $repo '.git'))) {
+  Write-Host "FATAL: $repo is not a git repository. Run this script from a real clone (see paste-block)."
+  exit 1
 }
 Set-Location $repo
 git fetch origin
