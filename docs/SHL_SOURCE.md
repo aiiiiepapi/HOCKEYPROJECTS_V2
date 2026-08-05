@@ -128,7 +128,7 @@ docs on PyPI; NOT yet verified on our own fetched sample):
 | EN flag on goals | **YES — "ENG" flag** on the 57:39 goal (4-7 EQ), cross-checkable against the GK-out window (57:12-57:39) — dual-channel like Mestis | TBD | 1004308 |
 | Penalties begin+end | **YES — EXPLICIT begin AND end** "(46:03 - 47:10)" incl. early termination at PP goal, and team penalties "(03:05 - 05:05)". Liiga-class, better than AHL | TBD | 1004308 |
 | Strength on goals | YES: (EQ)/(PP1)/(SH1) + on-ice jersey lists both teams ("Pos. Part."/"Neg. Part.") — independent strength cross-check | TBD | 1004308 |
-| Coaches per game | NOT on Events page; LineUps page verdict PENDING (file fetched, in transfer) | TBD | 1004308 (Events negative) |
+| Coaches per game | **YES — Game/LineUps has "Head Coach:" per team** (+ assistant coaches, referees, full lines, extra players): 1004308 = Gällstedt (BIF) / Hellkvist (VÄX). Coverage depth across 2022-26 TBD — probe 2 spot-checks a 2022-23 LineUps | TBD | 1004308 |
 | Schedule authority | per-season Schedule page (server-rendered, has ALL games + ids) | schedule JSON (has uuids, rounds, OT/SO flags) | 18263 / xs4m9qupsi |
 | Live in-game feed | Live/{seriesId} pages exist (irrelevant to lake; paper-harness question later) | site is live-scoring capable | — |
 
