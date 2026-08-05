@@ -285,6 +285,32 @@ def main():
         sys.exit(2)
     log("STAGE 1: ALL GATES PASS — starting per-game fetch")
 
+    # ---------- stage 1.5: per-season shl.se pbp channel probe ----------
+    # 2022-23 uuids returned 0-byte pbp/boxscore on the first run (source has
+    # no gameday data for old seasons). Measure per season (first/middle/last
+    # joined game) instead of assuming a cutoff; skip the channel where the
+    # source has nothing — that is SOURCE-ABSENT, recorded, not a fetch gap.
+    pbp_available = {}
+    if not args.swe_only:
+        for year in args.seasons:
+            umap = plan[year]["uuid_by_key"]
+            keys = [(g["date"], norm_team(g["home"] or "")) for g in plan[year]["games"]]
+            picks = [keys[0], keys[len(keys) // 2], keys[-1]]
+            hits = 0
+            for k in picks:
+                try:
+                    blob = fetch_bytes(SHL + "/api/gameday/play-by-play/" + umap[k], args.delay, tries=1)
+                    if len(blob) > 500:
+                        hits += 1
+                except RuntimeError:
+                    pass
+            pbp_available[year] = hits > 0
+            log("stage1.5: season %d shl.se pbp channel: %s (%d/3 probe games)"
+                % (year, "PRESENT" if hits else "ABSENT AT SOURCE", hits))
+            if 0 < hits < 3:
+                log("stage1.5 WARNING: season %d pbp channel PARTIAL — fetching all, "
+                    "gaps will show in the error list for adjudication" % year)
+
     # ---------- stage 2: per-game artifacts (resume-safe) ----------
     err = []
     for year in args.seasons:
@@ -298,7 +324,7 @@ def main():
                 ("game_%d_%d_events.html" % (year, gid), SWE + "/Game/Events/%d" % gid, b"TSMstats"),
                 ("game_%d_%d_lineups.html" % (year, gid), SWE + "/Game/LineUps/%d" % gid, b"TSMstats"),
             ]
-            if not args.swe_only:
+            if not args.swe_only and pbp_available.get(year):
                 uuid = umap.get((g["date"], norm_team(g["home"] or "")))
                 arts += [
                     ("game_%d_%d_pbp.json" % (year, gid), SHL + "/api/gameday/play-by-play/" + uuid, b"["),
@@ -330,8 +356,10 @@ def main():
         n_lu = sum(1 for k in man.data if k.endswith("_lineups.html"))
         n_pbp = sum(1 for k in man.data if k.endswith("_pbp.json"))
         n_box = sum(1 for k in man.data if k.endswith("_boxscore.json"))
-        log("season %d: events=%d lineups=%d pbp=%d boxscore=%d manifest=%d"
-            % (year, n_ev, n_lu, n_pbp, n_box, len(man.data)))
+        chan = "n/a(swe-only)" if args.swe_only else (
+            "PRESENT" if pbp_available.get(year) else "ABSENT AT SOURCE")
+        log("season %d: events=%d lineups=%d pbp=%d boxscore=%d manifest=%d shl_channel=%s"
+            % (year, n_ev, n_lu, n_pbp, n_box, len(man.data), chan))
     log("errors: %d" % len(err))
     for e in err[:40]:
         log("  " + e)
