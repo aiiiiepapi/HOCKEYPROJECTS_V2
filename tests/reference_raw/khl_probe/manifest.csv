@@ -1,0 +1,33 @@
+﻿file,url,http_code,bytes,sha256,utc
+"A_khl_root.html","https://www.khl.ru/",200,461024,879ed30e919e23dee7e62ff6b2e020e08b3b3ec72b331f57e1be66b095ee5bba,2026-08-05T22:18:42Z
+"A_en_root.html","https://en.khl.ru/",200,434624,892e7589204331b6622d084c903542b5a3ff45e11201bea738b66da5b1aa691d,2026-08-05T22:18:45Z
+"A_text_root.html","https://text.khl.ru/",200,83871,6349f822a79d64fe21928fd05980c94abaf267fd76a191c75cee2a5748c3bd2d,2026-08-05T22:18:47Z
+"A_online_root.html","https://online.khl.ru/online/",200,10173,8d2954872c87b6b509000169616566ba422bc9a35b20d36fd19adcf6c5a5dd6d,2026-08-05T22:18:48Z
+"A_api_khl.html","https://api.khl.ru/",ERR:The remote name could not be resolved: 'api.khl.ru',0,,2026-08-05T22:18:49Z
+"A_webcaster_root.html","https://khl.api.webcaster.pro/",200,15661,19ffcc59ae9f1d06df405a0b3f0222dbe6fb96e55d47c4593d7760f9d3242584,2026-08-05T22:18:52Z
+"A_robots.txt","https://www.khl.ru/robots.txt",200,9255,a6c3fe95081decbcf88d2d095699e7b2201b13862916d3ab4c80c7f205c38c02,2026-08-05T22:18:53Z
+"A_sitemap.xml","https://www.khl.ru/sitemap.xml",200,290769,d1d7fd6a5c0fb500cada4b4991ed2d7c2c5dc0265172ca92b3ec6aff64961725,2026-08-05T22:18:54Z
+"B_calendar_1369.html","https://www.khl.ru/calendar/1369/00/",200,2319467,440632f899e58e2a57afa3170d40a65ef404a3a00f4a81071ac2ceea50c5785c,2026-08-05T22:19:01Z
+"B_calendar_1288.html","https://www.khl.ru/calendar/1288/00/",200,2412429,9ff3c3ace82314b3586d3b64a39c946b0c804cbabaadf68ffddd79f15a99f0e2,2026-08-05T22:19:08Z
+"B_calendar_1217.html","https://www.khl.ru/calendar/1217/00/",200,2312507,9caff2fc99a48d15a02442d2d40f0b4d5a9e2ae5332c21ad5c208b8fc51c0da8,2026-08-05T22:19:14Z
+"B_calendar_1154.html","https://www.khl.ru/calendar/1154/00/",200,2227354,892a7286f2695a8a8c8506c7a209435295c99f732be1f910435f96ad70f3205a,2026-08-05T22:19:19Z
+"B_text_898094.html","https://text.khl.ru/text/898094.html",200,865838,d3ffb6c14f6036c373a8a0488eab3876eb1a6da165d440fed2e9b591cbff774f,2026-08-05T22:19:22Z
+"B_game_1369_898094.html","https://www.khl.ru/game/1369/898094/",404,0,,2026-08-05T22:19:23Z
+"B_events_v2.json","https://khl.api.webcaster.pro/api/khl_mobile/events_v2.json",200,23851,f2b78908d7edb2cd67d9c0e1e2100217d2057ea9c4e94f2369069f69faaa2975,2026-08-05T22:19:24Z
+"B_events_v2_t1369.json","https://khl.api.webcaster.pro/api/khl_mobile/events_v2.json?q[tournament_id_eq]=1369",200,23857,5960791f6c73cf1fb7055a980b73edadaa87fcbee092ddcee955d74f1cf9f1c1,2026-08-05T22:19:25Z
+"B_events_v2_apihost.json","https://api.khl.ru/khl_mobile/events_v2.json",ERR:The remote name could not be resolved: 'api.khl.ru',0,,2026-08-05T22:19:26Z
+"C_game_1436_901977.html","https://www.khl.ru/game/1436/901977/",404,0,,2026-08-05T22:19:27Z
+"C_proto_1436_901977.html","https://www.khl.ru/game/1436/901977/protocol/",404,0,,2026-08-05T22:19:28Z
+"C_online_1436_901977.html","https://www.khl.ru/game/1436/901977/online/",404,0,,2026-08-05T22:19:29Z
+"C_text_901977.html","https://text.khl.ru/text/901977.html",200,83871,6349f822a79d64fe21928fd05980c94abaf267fd76a191c75cee2a5748c3bd2d,2026-08-05T22:19:31Z
+"C_engame_1436_901977.html","https://en.khl.ru/game/1436/901977/",404,0,,2026-08-05T22:19:32Z
+"C_game_1436_901978.html","https://www.khl.ru/game/1436/901978/",404,0,,2026-08-05T22:19:33Z
+"C_proto_1436_901978.html","https://www.khl.ru/game/1436/901978/protocol/",404,0,,2026-08-05T22:19:34Z
+"C_online_1436_901978.html","https://www.khl.ru/game/1436/901978/online/",404,0,,2026-08-05T22:19:35Z
+"C_text_901978.html","https://text.khl.ru/text/901978.html",200,83871,dcac5b2f2aa48ff1188eda02e6359fca43db3ee4821c315e89ada57157041c5a,2026-08-05T22:19:36Z
+"C_engame_1436_901978.html","https://en.khl.ru/game/1436/901978/",404,0,,2026-08-05T22:19:38Z
+"C_game_1436_901979.html","https://www.khl.ru/game/1436/901979/",404,0,,2026-08-05T22:19:39Z
+"C_proto_1436_901979.html","https://www.khl.ru/game/1436/901979/protocol/",404,0,,2026-08-05T22:19:40Z
+"C_online_1436_901979.html","https://www.khl.ru/game/1436/901979/online/",404,0,,2026-08-05T22:19:41Z
+"C_text_901979.html","https://text.khl.ru/text/901979.html",200,83871,6349f822a79d64fe21928fd05980c94abaf267fd76a191c75cee2a5748c3bd2d,2026-08-05T22:19:42Z
+"C_engame_1436_901979.html","https://en.khl.ru/game/1436/901979/",404,0,,2026-08-05T22:19:43Z
