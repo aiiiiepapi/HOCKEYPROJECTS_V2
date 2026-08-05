@@ -1,138 +1,159 @@
 # KHL data source discovery (khl-scrape session, started 2026-08-05)
 
-Status: **PHASE 1 — remote discovery done, PC probe pending.** This session
-(cloud) cannot reach ANY khl.ru host or mirror: shell egress proxy returns
-CONNECT 403 for every non-allowlisted host (including google.com and
-web.archive.org — i.e. the block is OUR proxy policy, not necessarily KHL),
-and the harness WebFetch tool returns 403 for www.khl.ru, en.khl.ru,
-text.khl.ru, mhl.khl.ru, khl.api.webcaster.pro AND en.wikipedia.org (so
-WebFetch is also policy-fenced; only WebSearch works). **Conclusion: the
-session-side result CANNOT distinguish KHL geo-blocking from local proxy
-policy. The real geo/access check happens on Seb's PC via the probe
-paste-block (tools/probe_khl.ps1). Nothing below is verified on a fetched
-sample yet unless marked otherwise.**
+Status: **PHASE 2 — probe round 1 analyzed (18 raw files in
+tests/reference_raw/khl_probe/, commit 5f6b07b), round 2 pending
+(tools/probe2_khl.ps1).** Everything marked VERIFIED below is verified on
+the named fetched files, per rule 6 / ruling 42.
 
-## Reachability matrix (updated as results land)
+## Reachability (VERIFIED 2026-08-05)
 
-| Host | Cloud shell (proxy) | Cloud WebFetch | Seb PC (US/EU residential) |
-|---|---|---|---|
-| www.khl.ru | 403 CONNECT (proxy) | 403 | TBD (probe stage A) |
-| en.khl.ru | 403 CONNECT (proxy) | 403 | TBD |
-| text.khl.ru | not tested (proxy blocks all) | 403 | TBD |
-| online.khl.ru | not tested | not tested | TBD |
-| api.khl.ru | 403 CONNECT (proxy) | 403 | TBD |
-| khl.api.webcaster.pro | 403 CONNECT (proxy) | 403 | TBD |
-
-Search engines (Google/Bing, US-based) index khl.ru pages as recently as
-Feb 2026 (`text.khl.ru/text/898094.html`, indexed) — so a blanket US
-geo-block is UNLIKELY, but bot/datacenter-IP filtering is still possible.
-Residential probe decides.
-
-## Season structure (external references — re-verify against KHL's own schedule)
-
-Source: Wikipedia season pages + en.khl.ru news pages via search snippets
-(2026-08-05). NOT yet reconciled against the schedule authority; the lake
-verification will do the 1:1 reconciliation.
-
-| Season | Teams | Games/team | Total RS games | RS window | khl.ru tournament id (regular) |
-|---|---|---|---|---|---|
-| 2022-23 | 22 | 68 | 748 | 2022-09-01 – 2023-02-26 | **1154** |
-| 2023-24 | 23 | 68 | 782 | 2023-09-01 – 2024-02-26 | **1217** (playoffs 1218) |
-| 2024-25 | 23 | 68 | 782 | 2024-09-03 – 2025-03-23 | **1288** (playoffs 1289) |
-| 2025-26 | 22 | 68 | 748 | 2025-09-05 – 2026-03-20 | **1369** |
-
-Total: **3,060 regular-season games** — bigger than the kickoff's
-650-750/season estimate (that range was low; actuals 748-782). Biggest
-lake yet by game count (NHL lake: 2,624).
-
-Tournament-id provenance (search-indexed khl.ru URLs, each seen verbatim):
-- `www.khl.ru/calendar/1154/00/` — "Расписание матчей КХЛ 2022/2023 ... Регулярный чемпионат"
-- `www.khl.ru/standings/1217/conference/` — "Турнирная таблица КХЛ 2023/2024 ... Регулярный чемпионат"
-- `www.khl.ru/standings/1288/conference/` + `en.khl.ru/calendar/1288/00/208/` — 2024/2025 regular
-- `www.khl.ru/calendar/1369/00/` — "Расписание матчей КХЛ 2025/2026 ... Регулярный чемпионат"
-- Sequence sanity: ids are league-wide sequential per stage (1154 → 1217 → 1288 → 1369).
-
-## Candidate endpoints (to verify in probe — none fetched yet)
-
-1. **Calendar / schedule-authority candidate**:
-   `https://www.khl.ru/calendar/<tournament_id>/00/` (RU) and
-   `https://en.khl.ru/calendar/<tournament_id>/00/` (EN). Expect the games
-   list incl. links to game pages. The `00` segment is unexplained (month
-   filter? "all"?) — probe fetches it raw; do not assume.
-2. **Game center pages**:
-   pattern `https://www.khl.ru/game/<tournament_id>/<game_id>/<tab>/`,
-   observed verbatim on the sibling MHL site
-   (`mhl.khl.ru/game/1373/901786/summary/`, indexed Apr 2026) — same
-   platform, so KHL layout is presumed identical with tabs like
-   `summary`/`protocol`/`online`; tab names UNVERIFIED for KHL proper.
-3. **Text broadcast**: `https://text.khl.ru/text/<game_id>.html` —
-   OBSERVED (search-indexed): `text.khl.ru/text/898094.html` = "Игра номер
-   604, 14 фев 2026: Барыс-Лада (онлайн трансляция)", i.e. 2025-26 regular
-   season game #604. Russian-language event lines expected (вратарь
-   phrases for goalie in/out — exact wording TBD from raw sample).
-   Also `https://online.khl.ru/online/` (live text platform, indexed).
-4. **Mobile-app JSON (webcaster.pro)**: webcaster.pro publicly lists KHL
-   apps as their product. Historic community knowledge points at
-   `https://khl.api.webcaster.pro/api/khl_mobile/events_v2.json` (games
-   list) and `.../event_v2.json?id=<id>` (single game) — **memory-grade,
-   zero fetched evidence; probe treats these as guesses.** Alternate host
-   guess: `https://api.khl.ru/`.
-5. **Enumeration channels**: `www.khl.ru/sitemap.xml`, `robots.txt`
-   (politeness + id discovery).
-
-### Game-id scheme — platform-global hypothesis
-
-KHL text id 898094 (Feb 2026) and MHL game id 901786 (Apr 2026) sit in the
-same numeric ballpark → the platform likely uses ONE global event-id space
-shared across KHL/MHL/VHL/ZhHL. If true, **per-season KHL id ranges are NOT
-contiguous and id-range sweeps are the wrong enumeration method** (unlike
-Magnus): enumeration must come from the calendar/schedule listing per
-tournament id. Probe + first calendar payload will confirm.
-
-## Capability bar (docs/MAGNUS_DATA_GAPS.md) — all rows TBD
-
-| Capability | KHL expectation | Verified on named game? |
+| Host | Cloud shell/WebFetch | Seb PC (residential) |
 |---|---|---|
-| Event timeline | text broadcast lines + possible mobile JSON | NO — pending probe |
-| Goalie in/out with times | expected in text feed (RU phrases TBD verbatim) | NO |
-| EN flags on goals | TBD (protocol page? JSON?) | NO |
-| Penalties begin+minutes or begin+end | TBD | NO |
-| Coach per game | expected on protocol page | NO |
-| Delayed-penalty visibility | TBD | NO |
-| Live feed (paper harness) | online.khl.ru / mobile JSON — TBD | NO |
+| www.khl.ru, en.khl.ru, text.khl.ru, online.khl.ru | 403 (our egress policy fence) | **200, full payloads** |
+| khl.api.webcaster.pro | 403 | 200 |
+| api.khl.ru | 403 | **NXDOMAIN — host does not exist** |
 
-Ticker lesson (Mestis) carries: ANY per-game count from khl.ru pages must
-be provably scoped to the game's own event container — KHL pages carry
-league-wide score tickers. No page-wide greps, ever.
+No geo-block for Seb's connection. ALL fetching runs on the PC (standing
+convention). The cloud session analyzes raw files pushed to the branch.
+
+**Transfer integrity lesson (VERIFIED)**: Seb's git autocrlf ALTERED 2 of
+18 round-1 files in transit (A_robots.txt 9255->8914 B, A_sitemap.xml -1 B
+— CRLF->LF normalization; sha256 mismatch vs manifest). `.gitattributes`
+with `-text` for `tests/reference_raw/**` and `khl/**` added 2026-08-05.
+**The lake fetch must re-verify manifests AFTER push+pull, and the lake
+branch MUST carry the same .gitattributes** (manifest re-hash after
+transfer was already a standing gate; here it caught a real alteration).
+
+## Schedule authority & coverage (VERIFIED on fetched calendars)
+
+`https://www.khl.ru/calendar/<tid>/00/` is server-rendered (~2.3 MB) and
+lists every regular-season game with hrefs `/game/<tid>/<gid>/protocol/` +
+`/game/<tid>/<gid>/resume/` + a `text.khl.ru/text/<gid>.html` link.
+
+**Ticker lesson applies literally (rule: scope every count)**: each page
+embeds a 24-game `slider-item` carousel (upcoming 2026-27 preseason, tid
+1436) and a 4-game adjacent-tournament widget (tids 1145/1279/1353/1423 on
+the four pages respectively). Page-wide counts are inflated by exactly
+those; scoped-to-own-tid counts are exact:
+
+| Season | tid | game-id range | games (scoped) | External expectation | Text links |
+|---|---|---|---|---|---|
+| 2022-23 | 1154 | 881261..882008 (contiguous) | **748** | 748 ✓ | 752 = 748+4 widget ✓ |
+| 2023-24 | 1217 | 885442..886223 (contiguous) | **782** | 782 ✓ | 786 = 782+4 ✓ |
+| 2024-25 | 1288 | 889850..890631 (contiguous) | **782** | 782 ✓ | 786 = 782+4 ✓ |
+| 2025-26 | 1369 | 897491..898238 (contiguous) | **748** | 748 ✓ | 752 = 748+4 ✓ |
+
+Total **3,060 regular-season games**; every RS game in all four seasons
+has a text-broadcast link (existence of link ≠ existence of content for
+2022-25 — that's probe round 2's archive-depth check). Game-id blocks are
+CONTIGUOUS per season (the earlier platform-global interleaving worry is
+moot for enumeration; the calendar id-set is still the reconciliation
+anchor, both directions, per standing lake protocol). Month tokens on the
+calendar pages match the known season windows (Sep-Feb / Sep-Mar).
+
+## Channels (VERIFIED on named games)
+
+### text.khl.ru/text/<gid>.html — the primary event channel
+Verified on **898094** (Барыс-Лада, 2025-26 game #604, 866 KB, round-1
+file B_text_898094.html). Server-rendered, one `div.textBroadcast-item`
+per event with `time.textBroadcast-item__left-time` + team logo
+(`img.khl.ru/teams/ru/<tid>/<team_id>/…`) + text. 80 events this game.
+Verbatim vocabulary (capability table anchors):
+
+- **Pull**: `Лада. Замена вратаря на экстра-полевого игрока` (59:11, 58:33;
+  Барыс 08:47)
+- **Return**: `Лада. Вратарь в воротах` (58:47; Барыс 10:01)
+  -> a real re-pull sequence (58:33 out / 58:47 in / 59:11 out) is captured
+  explicitly; a dp-driven extra-attacker episode (Барыс 08:47-10:01 during
+  `Отложенный штраф у команды Лада`) is captured too.
+- **Delayed penalty**: `Отложенный штраф у команды <Team>` (no time on line)
+- **Penalty begin**: `Удаление. <Team>. <#>. <Фамилия Имя> . 2 мин. <offense>.`
+  team-penalty variant: `Командный штраф . 2 мин. … Отбывал: <#. Name>`
+- **Penalty end / back to full strength**: `Команда <Team> играет в полном
+  составе` (explicit END events — begin+end, better than AHL's begin+minutes)
+- **Strength notes**: `Игра 4 на 4`
+- **Goal**: `Изменение счета: <Team>. <#. Scorer> , ассистенты: …` —
+  **NO TIME on goal lines** (left-time empty). Goal times must come from
+  another channel (protocol page — round 2) or ordering-only.
+- Period boundaries: `Начало/Окончание N периода` — **WALL-CLOCK times**
+  (17:01, 18:45, 19:16 = MSK evening), while play events carry cumulative
+  GAME-CLOCK mm:ss. Mixed semantics — adapter must key on event text, never
+  trust the time column's meaning blindly.
+- Extras: icing/offside lines, `Рекламная пауза` (ad-break dead-time
+  channel), per-period + match stat lines, starting lineups, preview prose.
+- **Known defect**: duplicate penalty line observed (51:57 Бреус twice) —
+  dedupe is adapter work.
+- Same page also embeds: full per-player stat tables incl. **ВППВ = TOI
+  with empty net** ("Время на площадке при игре без вратаря (пустые
+  ворота)") — an independent EN-exposure channel; goalie section
+  («Вратари»); line combinations; and **coaches** («Тренер» rows:
+  Кравец Михаил Григорьевич / Десятков Павел Николаевич on 898094 —
+  both are the actual 2025-26 HCs of Lada/Barys).
+
+### www.khl.ru/game/<tid>/<gid>/protocol/ and /resume/
+Link pattern verified from calendars; **payloads NOT yet fetched**
+(round-1 guesses used the WRONG url form `/game/<tid>/<gid>/` -> 404;
+tabs are mandatory). Round 2 fetches protocol+resume for named games.
+Expected to carry goal times + official protocol. UNVERIFIED.
+
+### en.khl.ru — English mirror
+Root reachable (435 KB). Game-page equivalence UNVERIFIED (round 2).
+
+### khl.api.webcaster.pro — VIDEO platform, not pbp (VERIFIED)
+`/api/khl_mobile/events_v2.json` returns the KHL **video/stream** event
+list (m3u8/iframe fields, 16 upcoming 2026-27 preseason entries at probe
+time; `q[tournament_id_eq]` ignored). Carries `khl_id` per game and team
+`khl_id`s — possible live-harness aid later, NOT a lake channel. The old
+`api.khl.ru` host is dead (NXDOMAIN).
+
+### Enumeration side-channels
+robots.txt: no global crawl-delay directive (politeness stays at our
+>=0.5 s). sitemap.xml: news/clubs/players, not games — irrelevant for
+enumeration. online.khl.ru: live text platform (10 KB shell), not needed
+for historical lake.
+
+## Capability bar vs MAGNUS_DATA_GAPS (state after round 1)
+
+| Capability | KHL finding | Verified on |
+|---|---|---|
+| Goalie in/out with times | YES — explicit paired events, game clock | 898094 |
+| Multi-pull windows | YES — each out/in event explicit | 898094 (58:33/58:47/59:11) |
+| Delayed-penalty visibility | YES — explicit dp event + observed dp-pull episode | 898094 |
+| Penalties | begin (time+minutes+offense) AND explicit back-to-full-strength events | 898094 |
+| EN flags on goals | INDIRECT so far (goal lines lack times/flags; ВППВ TOI table = EN exposure per player) | 898094; protocol page TBD |
+| Goal times | **MISSING in text channel** — round-2 protocol check | — |
+| Coach per game | YES — Тренер rows on text page | 898094 |
+| Event timeline granularity | curated broadcast (~80 events/game): goals, penalties+ends, pulls, dp, icings, ad breaks, periods | 898094 |
+| Live feed | online.khl.ru + webcaster (Sept shakedown scope) | — |
+| Archive depth 2022-25 | links exist for 100% of games; CONTENT unverified | round 2 |
+
+## Sizing (updated with real bytes)
+
+Text page: 866 KB raw. 3,060 texts ≈ 2.6 GB raw + protocol/resume pages
+(sizes TBD round 2). HTML compresses well in git packs, but this is the
+biggest lake yet by bytes. Decision after round 2: likely **per-season
+orphan branches** `khl-data-lake-<END_YEAR>` (each ~650 MB raw / est.
+100-200 MB packed) instead of one branch; every push well under GitHub's
+2 GB per-push limit. Cloud-side verification can sparse-checkout one
+season at a time (session disk allowance).
+Fetch time: ~2-3 artifacts × 3,060 games at ~1.5 s/request ≈ **3-5 h per
+full run** — resume-safety in fetch_khl.py is mandatory, per-season runs
+recommended.
 
 ## Market note (Manager, on record)
 
 Odds provider has NO icehockey_khl market. Lake serves coach intel +
 model-side lines (ruling 5). Seb ordered with this heard.
 
-## Sizing & repo check (mandated before fetch)
+## Open items (round 2 + fetcher)
 
-- V2 repo today: ~3.4 MiB pack on master; `mestis-data-lake` branch exists
-  on the same repo (lake-on-V2 convention; ~4.7k files).
-- KHL: 3,060 games × est. 3-5 artifacts/game (game page, protocol tab,
-  text broadcast, JSON, maybe EN page) ≈ 9-15k files. Byte size UNKNOWN
-  until the probe reports real per-artifact sizes — khl.ru pages are
-  heavy (likely 100s of KB each).
-- Decision rule (proposed to Seb): probe measures real bytes/game →
-  projected packed size = 3,060 × measured × git-compression factor.
-  If projection > ~1.5 GB packed, split into per-season orphan branches
-  `khl-data-lake-2023` … `khl-data-lake-2026`; else single
-  `khl-data-lake` with one commit+push per season (every push must stay
-  well under GitHub's 2 GB per-push limit either way).
-- Artifact-set trimming is also on the table: if the mobile JSON proves to
-  contain the full event feed, the heavy HTML tabs may be reduced to
-  1 HTML + 1 JSON per game. Decide AFTER the probe, on evidence.
-
-## Next actions
-
-1. Seb runs `tools/probe_khl.ps1` (paste-block) on the PC → raw samples
-   land in `tests/reference_raw/khl_probe/` on this branch.
-2. This session mines the raw payloads: real endpoints, XHR URLs from
-   page source, RU goalie phrases, id scheme, per-artifact bytes.
-3. Capability table rows get verified on NAMED games; fetcher
-   (tools/fetch_khl.py) gets written against VERIFIED endpoints only.
+1. Protocol/resume payloads: goal times, EN/PP flags on goals, official
+   lineups/coaches, shootout format. (probe2_khl.ps1 — awaiting PC run)
+2. Text-broadcast CONTENT depth for 2022-23/2023-24/2024-25 (named first
+   games + one mid-season spot). Risk: old seasons may have empty
+   broadcast pages; then protocol pages become the primary event source —
+   capability re-check required.
+3. en.khl.ru protocol equivalence (English event texts would ease adapter
+   work but RU stays the authority).
+4. Artifact set per game (text + protocol + resume vs subset) — decide on
+   round-2 evidence, then write tools/fetch_khl.py.

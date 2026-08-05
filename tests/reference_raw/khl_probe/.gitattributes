@@ -1,0 +1,4 @@
+# Raw payloads: no line-ending conversion, ever (lake verbatim-ness).
+# Lesson 2026-08-05: PC autocrlf altered probe robots.txt/sitemap.xml in transit.
+tests/reference_raw/** -text
+khl/** -text

@@ -5,6 +5,22 @@ kickoff's `khl-scrape` at creation — Manager: treat this as the khl-scrape
 branch). Push capability CONFIRMED 2026-08-05 (empty commit + this block
 pushed via session GitHub App auth; no token involved).
 
+## State (2026-08-05, block 2 — probe round 1 analyzed)
+
+- PC probe round 1 ran clean (commit 5f6b07b): khl.ru fully open from
+  residential, api.khl.ru dead (NXDOMAIN), webcaster = video platform.
+- **Schedule authority verified**: calendar/<tid>/00/ pages, scoped counts
+  exact (748/782/782/748 = 3,060 games, contiguous id blocks per season) —
+  full table + verbatim event vocabulary in docs/KHL_SOURCE.md.
+- **Capability wins (verified on 898094)**: explicit pull/return events
+  with game clock, penalty begin AND end events, explicit delayed-penalty
+  events, coaches + per-player empty-net TOI tables on the same page.
+- **Open risks**: goal lines carry NO times in the text channel (protocol
+  page = round-2 check); 2022-25 text-broadcast CONTENT unverified
+  (links exist for 100%); autocrlf ALTERED 2 round-1 files in transit
+  (.gitattributes -text added — lake branch must carry it too).
+- tools/probe2_khl.ps1 shipped — awaiting PC run.
+
 ## State (2026-08-05, block 1)
 
 - Required reading done. NOTE for Manager: `docs/MESTIS_SOURCE.md` does
