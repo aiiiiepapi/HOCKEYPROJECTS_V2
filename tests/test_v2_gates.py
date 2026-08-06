@@ -552,3 +552,102 @@ def test_mestis_provisional_status():
     assert len(rows) > 1000
     ks = set(rows[0].keys())
     assert {"P_leader_ge1", "P_total_ge1", "P_margin_ge4"} & ks or            any("leader" in k.lower() or "line" in k.lower() for k in ks)
+
+
+def test_shl_ground_truth():
+    """SHL batch 1: 12 games / 12 instances hand-traced from raw Events HTML
+    BEFORE the adapter existed (2026-08-06, SHL adapter session). Covers:
+    EV pull, pp_pull x2 (leader minor at first evidence 629037; same-second
+    leader penalty 6v4 pull 1004370), no-pull, carryover-at-open x6,
+    multi-pull (774474), pull-to-horn x2, widened(ate_ENG)/narrowed(incl.
+    scored_6v5)/end_of_game closes, OT game (774733, OT-end GK bookkeeping),
+    shootout (628968: GWS goal + attempt rows excluded, header off-by-one),
+    P1/P2/P3 same-second goalie substitutions (net never empty), ENG-creates-
+    instance, PS goal + no-minutes PenaltyShot row (628999), offsetting
+    penalties with (00:00 - ) placeholder windows = no box time (628979,
+    774444), 5+20 pairs, 60:00 end-of-game GK Out bookkeeping, the
+    adjudication game 774444 (SHL_LAKE_VERIFICATION.md).
+    Trace: docs/ground_truth_traces/shl_batch1_2026-08-06.md."""
+    from hockeycore.leagues.shl import parse_game
+    from hockeycore.gap.segments import extract_instances
+    gt = json.load(open(ROOT / "tests" / "ground_truth_shl.json"))
+    for gid, gg in gt["games"].items():
+        g = parse_game(ROOT / f"tests/reference_raw/shl/game_{gid}_events.html")
+        assert (g["home"], g["away"], g["date"]) == (gg["home"], gg["away"], gg["date"]), gid
+        for sd in ("home", "away"):
+            got = [(b, e) for b, e, *_ in g["empty"][sd]]
+            assert got == [tuple(x) for x in gg["empty"].get(sd, [])], (gid, sd, got)
+        insts = extract_instances(g, 3)
+        assert len(insts) == len(gg["instances"]), (gid, len(insts))
+        for e, a in zip(gg["instances"], insts):
+            assert (e["opened_secs"], e["closed_secs"], e["closed_reason"]) == \
+                   (a["opened_secs"], a["closed_secs"], a["closed_reason"]), (gid, e["n"])
+            assert e["trailing_name"] == a["trailing_name"], (gid, e["n"])
+            assert e["pulled"] == a["pulled"], (gid, e["n"])
+            assert e["pull_evidence_secs"] == a["pull_evidence_secs"], (gid, e["n"])
+            assert e["pull_classification"] == a["pull_classification"], (gid, e["n"])
+            assert e["carryover_empty_at_open"] == \
+                   a.get("carryover_empty_at_open", False), (gid, e["n"])
+        if "coaches" in gg:                       # LineUps parser pin (1004308)
+            assert g["coaches"] == gg["coaches"], gid
+        if "regulation_goals" in gg:              # shootout exclusion pin (628968)
+            assert len([x for x in g["goals"] if x["period"] <= 3]) == gg["regulation_goals"], gid
+        for key, want_en in (("eng_goal", True), ("sh_eng_goal", True), ("ps_goal", False)):
+            if key in gg:
+                gl = [x for x in g["goals"] if x["t"] == gg[key]["t"]][0]
+                assert (gl["side"], gl["en"]) == (gg[key]["side"], want_en), (gid, key)
+        if "ot_goal" in gg:                       # OT goal present, engine-ignored (774733)
+            gl = [x for x in g["goals"] if x["t"] == gg["ot_goal"]["t"]][0]
+            assert (gl["side"], gl["period"], gl["en"]) == \
+                   (gg["ot_goal"]["side"], gg["ot_goal"]["period"], gg["ot_goal"]["en"]), gid
+        if "offsetting_rows_no_box" in gg:        # (00:00 - ) placeholder rule (628979)
+            rows = [p for p in g["penalties"] if p["t"] == gg["offsetting_rows_no_box"]["t"]]
+            assert len(rows) == gg["offsetting_rows_no_box"]["count"], gid
+            assert all(p["begin"] == p["end"] == p["t"] for p in rows), gid
+
+
+def test_shl_derived_instances():
+    """Structural gates (rule 14) over the SHL derived instance file + full
+    coach attribution (LineUps + verified shl_coaches.csv covering the 21
+    blank sides). Pulled-share band reflects the measured SHL behavior:
+    down-3 pulls are rare (40/681 = 5.9% pooled; 2.3-8.2% by season) while
+    30% of instances carry gap-2 pull evidence in from before the window
+    (carryover) — bands set structurally, not as absolute totals."""
+    rows = json.load(open(DER / "shl_instances_gap3.json"))
+    assert all(r["coach"] for r in rows)
+    assert all(r["leader_coach"] for r in rows)
+    for s in ("2023", "2024", "2025", "2026"):
+        srows = [r for r in rows if r["season"] == s]
+        n = len(srows)
+        assert 100 <= n <= 320, (s, n)
+        pulled = sum(1 for r in srows if r["pulled"])
+        assert 0.005 <= pulled / n <= 0.30, (s, pulled / n)
+    for r in rows:
+        assert 0 <= r["opened_secs"] <= r["closed_secs"] <= 1200, r["game_id"]
+        if r["pulled"]:
+            assert r["opened_secs"] <= r["pull_evidence_secs"] < r["closed_secs"], \
+                (r["game_id"], r["n"])
+            assert r["pull_classification"] in ("pull", "pp_pull")
+        else:
+            assert r["pull_classification"] is None
+    pp = sum(1 for r in rows if r["pull_classification"] == "pp_pull")
+    assert pp < sum(1 for r in rows if r["pulled"])
+    carry = sum(1 for r in rows if r.get("carryover_empty_at_open"))
+    assert 0.10 <= carry / len(rows) <= 0.50        # the SHL gap-2-pull signature
+
+
+def test_shl_random_audit():
+    """Seeded random audit (all 27 pulls in 2024-2026 + 33 no-pulls, seed
+    20260807) against the shl.se gameday pbp goalkeeper channel — an
+    independent recorder from the swe Events channel the adapter parses.
+    2023 excluded (pbp archive starts 2023-24; no second channel — liiga
+    2023 precedent). 0 disagreements is the standing bar (2026-08-06)."""
+    lakes = Path("/home/claude/work")
+    if not (lakes / "shl_lake").exists():
+        import pytest
+        pytest.skip("shl lake not mounted")
+    sys.path.insert(0, str(ROOT / "tools"))
+    from audit_interval_random import audit
+    sample, bad = audit("shl")
+    assert len(sample) == 60
+    assert not bad, bad
