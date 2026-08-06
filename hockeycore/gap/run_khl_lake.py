@@ -43,17 +43,21 @@ def dp_rows(g):
     for d in g["dp_events"]:
         offender = d["side"]
         puller = ("away" if offender == "home" else "home") if offender else None
-        linked = None
+        linked = ends_at_offender_pen = None
         if puller and d["after_t"] is not None:
             for tup in g["empty"][puller]:
                 b, e = tup[0], tup[1]
                 if d["after_t"] - 2 <= b <= d["after_t"] + 90:
                     linked = [b, e]
+                    ends_at_offender_pen = any(
+                        p["side"] == offender and abs(p["t"] - e) <= 2
+                        for p in g["penalties"])
                     break
         rows.append({"season": g["season"], "game_id": g["game_id"],
                      "offending_side": offender, "period": d["period"],
                      "after_t": d["after_t"], "raw": d["raw"],
-                     "linked_pull_window": linked})
+                     "linked_pull_window": linked,
+                     "ends_at_offender_penalty": ends_at_offender_pen})
     return rows
 
 
@@ -64,7 +68,7 @@ def main():
         for f in sorted((LAKE / season).glob("*_text.html"),
                         key=lambda p: int(p.stem.split("_")[0])):
             try:
-                g = parse_game(f)
+                g = parse_game(f, season=season)
             except Exception as e:
                 errors.append((season, f.name, repr(e)))
                 continue
