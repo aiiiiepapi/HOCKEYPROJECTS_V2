@@ -82,9 +82,11 @@ def build(league, rows_file, skip_seasons=()):
     need_boxes = "penalties_p3" not in rows[0]
     if need_boxes:
         from hockeycore.leagues import ahl as ahl_mod, liiga as liiga_mod, mestis as mestis_mod
+        from hockeycore.leagues import shl as shl_mod
         lakes = {"ahl": Path("/home/claude/work/ahl_lake"),
                  "liiga": Path("/home/claude/work/liiga_lake"),
-                 "mestis": Path("/home/claude/work/mestis_lake/mestis")}
+                 "mestis": Path("/home/claude/work/mestis_lake/mestis"),
+                 "shl": Path("/home/claude/work/shl_lake/shl")}
         cache = {}
         for r in rows:
             key = (r["season"], r["game_id"])
@@ -97,6 +99,10 @@ def build(league, rows_file, skip_seasons=()):
                     g = mestis_mod.parse_game(
                         lakes["mestis"] / r["season"] /
                         f"game_{r['season']}_{r['game_id']}_seuranta.html")
+                elif league == "shl":
+                    g = shl_mod.parse_game(
+                        lakes["shl"] / r["season"] /
+                        f"game_{r['season']}_{r['game_id']}_events.html")
                 else:
                     g = liiga_mod.parse_game(
                         lakes["liiga"] / r["season"] / f"game_{r['season']}_{r['game_id']}.json")
@@ -209,3 +215,6 @@ if __name__ == "__main__":
     if which in ("mestis", "all"):
         # Mestis 2022-23 HAS the goalie channel (unlike Liiga) — all 4 seasons in
         build("mestis", "mestis_instances_gap3.json")
+    if which in ("shl", "all"):
+        # SHL swe Events channel complete all 4 seasons
+        build("shl", "shl_instances_gap3.json")

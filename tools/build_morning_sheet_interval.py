@@ -11,7 +11,7 @@ from collections import defaultdict
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 LG = sys.argv[1]
-RECENT = {"ahl": ("86", "90"), "liiga": ("2025", "2026"), "mestis": ("2025", "2026")}[LG]
+RECENT = {"ahl": ("86", "90"), "liiga": ("2025", "2026"), "mestis": ("2025", "2026"), "shl": ("2025", "2026")}[LG]
 SEASON_START = "2025-09-01"
 prof = json.load(open(ROOT / f"data/derived/{LG}_coach_profiles.json"))
 inst = json.load(open(ROOT / f"data/derived/{LG}_instances_gap3.json"))
@@ -39,6 +39,11 @@ L = [f"# {LG.upper()} MORNING SHEET — coach pull expectancy (ruling-33 estimat
 if LG == "ahl":
     L.append("STATUS: AHL = COACH INTEL ONLY — no priced markets (ruling 24). "
              "Rule 28: base % < 40 = NO-BET regardless of situation.")
+elif LG == "shl":
+    L.append("STATUS: SHL = COACH INTEL ONLY — no pricer exists (no blind validation; "
+             "adapter merged 2026-08-07). NOTE the SHL signature: pulls happen at gap 1-2 "
+             "(29.8%% of gap-3 instances open with net already empty); down-3 pulls are rare. "
+             "Rule 28: base %% < 40 = NO-BET.")
 elif LG == "mestis":
     L.append("STATUS: Mestis = PROVISIONAL paper-trade from September (ruling 43, "
              "pooled multi-fold pass 2026-08-03). Rule 28: base % < 40 = NO-BET.")

@@ -24,6 +24,15 @@ OUT = ROOT / "data" / "derived" / "shl_instances_gap3.json"
 SEASON_LABEL = {"2023": "2022-23", "2024": "2023-24", "2025": "2024-25", "2026": "2025-26"}
 
 
+# Spelling normalization (Manager adjudication 2026-08-07, docs/
+# SHL_LAKE_VERIFICATION_ADAPTER.md): a one-game sheet misspelling is the SAME
+# person, not a different coach — 629332's "Johan Lindholm" is Johan Lindbom
+# (every neighboring listing; liiga NAME_FIX precedent). Identity unchanged,
+# listing-wins convention intact. Burström (629012) stays as listed
+# (plausible caretaker, no counter-evidence).
+COACH_SPELLING_FIX = {"Johan Lindholm": "Johan Lindbom"}
+
+
 def main():
     rows, tot, unattributed, errors = [], Counter(), [], []
     for season in ["2023", "2024", "2025", "2026"]:
@@ -38,12 +47,14 @@ def main():
             tot["games"] += 1
             for i in extract_instances(g, 3):
                 coach = g["coaches"][i["trailing"]]
+                coach = COACH_SPELLING_FIX.get(coach, coach)
                 if coach is None:
                     unattributed.append((season, g["game_id"], g[i["trailing"]], g["date"]))
                 i["season"], i["game_id"] = season, g["game_id"]
                 i["date"], i["home"], i["away"] = g["date"], g["home"], g["away"]
                 i["coach"] = coach
-                i["leader_coach"] = g["coaches"]["home" if i["trailing"] == "away" else "away"]
+                lc = g["coaches"]["home" if i["trailing"] == "away" else "away"]
+                i["leader_coach"] = COACH_SPELLING_FIX.get(lc, lc)
                 rows.append(i)
                 n_season += 1
         tot[f"instances_{season}"] = n_season
