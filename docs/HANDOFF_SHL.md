@@ -74,8 +74,40 @@ cross-channel GK audit clean 2025+2026 samples, 2 disagreements in the
 ## Known issues / adapter watch-items (recorded, not fixed — lake is raw)
 
 1. **21 blank coach sides** (7/9/2/3 by season) — AHL/Mestis-class gap
-   (99.3% vs Mestis 99.2%). Hand-curation map at adapter stage; I will
-   extract the exact game/side list from the lake as a follow-up commit.
+   (99.3% vs Mestis 99.2%). Extracted from the lake (position-based side
+   attribution, verified count == census 21/21, 0 parse fails).
+   **HV71 accounts for 8 of 21** — club-level reporting habit, so the
+   hand-curation map is cheap. Full list (season, gameId, missing side):
+
+   | season | gameId | game | missing |
+   |---|---|---|---|
+   | 2023 | 628989 | IKO-FRÖ | BOTH |
+   | 2023 | 629252 | HV71-BIF | AWAY BIF |
+   | 2023 | 629299 | LHF-HV71 | AWAY HV71 |
+   | 2023 | 629306 | TIK-HV71 | AWAY HV71 |
+   | 2023 | 629318 | HV71-TIK | HOME HV71 |
+   | 2023 | 629325 | HV71-MIF | HOME HV71 |
+   | 2024 | 774473 | RBK-LHF | AWAY LHF |
+   | 2024 | 774528 | HV71-SKE | HOME HV71 |
+   | 2024 | 774534 | HV71-MoDo | HOME HV71 |
+   | 2024 | 774548 | SKE-VÄX | AWAY VÄX |
+   | 2024 | 774556 | RBK-HV71 | AWAY HV71 |
+   | 2024 | 774615 | MIF-IKO | BOTH |
+   | 2024 | 774783 | LIF-HV71 | AWAY HV71 |
+   | 2024 | 774804 | SKE-ÖHK | AWAY ÖHK |
+   | 2025 | 882211 | LIF-BIF | AWAY BIF |
+   | 2025 | 882278 | MIF-BIF | AWAY BIF |
+   | 2026 | 1004650 | VÄX-TIK | AWAY TIK |
+   | 2026 | 1004675 | LHC-DIF | HOME LHC |
+   | 2026 | 1004741 | TIK-FRÖ | AWAY FRÖ |
+
+1b. **CRLF incident (caught & repaired)**: the first lake push stored
+   CRLF→LF-normalized text (Seb's PC git autocrlf; 2,916 html files) —
+   detected by the cloud-side manifest re-hash (exact CRLF-restore
+   reproduced manifest hashes bit-for-bit), repaired by recommitting from
+   staging with `.gitattributes * -text` at the lake branch root.
+   STANDING RULE for all future lake branches (KHL, Allsvenskan):
+   `.gitattributes * -text` FIRST, and always re-hash after transfer.
 2. **GK channel disagreements**: 2024/774444 (swe 8 vs pbp 10 events),
    2024/775029 (swe 8 vs pbp 6) in the 24-game sample. Channels are
    independent recorders; first hypothesis = convention differences
