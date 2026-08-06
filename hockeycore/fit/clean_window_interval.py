@@ -17,7 +17,11 @@ per league (rule: league fits from league data; NHL supplies SHAPES only):
   goalie channel).
 
   chance quality frac = hazard mass over the instance's pullable seconds
-  divided by mass over the full [opened, 1200) window (ideal opportunity).
+  divided by mass over the FULL PERIOD [0, 1200) (ideal opportunity) —
+  UNIFIED with the NHL clean-window baseline (ruling 45, Seb 2026-08-07:
+  the original port divided by [opened, 1200), which never penalized a
+  late-arriving chance; a coach down 3 with <2:00 left was charged a
+  missed chance the NHL definition calls junk. Rule-15 violation, fixed).
   clear chance if frac >= 0.7. Ledger: taken = EV pull (pp pulls EXCLUDED
   from the bettable number, same ruling as NHL); a no-pull counts against
   the coach only on a clear chance.
@@ -130,7 +134,8 @@ def build(league, rows_file, skip_seasons=()):
     out_rows = []
     for (pullable, ev_pull, pp_pull), r in zip(per, rows):
         o = r["opened_secs"]
-        ideal = mass(range(o, 1200))
+        # Ruling 45: baseline = full period, same as NHL (late open = penalized)
+        ideal = mass(range(0, 1200))
         frac = (mass(pullable) / ideal) if ideal > 0 else 0.0
         taken = bool(ev_pull or (r["pulled"] and r.get("synthetic_pull_evidence")
                                  and r["pull_classification"] != "pp_pull"))

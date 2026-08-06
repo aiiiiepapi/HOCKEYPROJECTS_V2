@@ -42,9 +42,15 @@ for a NEW Manager session; it supersedes HANDOFF_2026-08-02_MANAGER.md.
   re-litigation.
 - **SHL** — lake + adapter + ledger DONE (verifications in docs/). NO
   pricer: 28 EV pulls = too thin, and the league personality is
-  gap-1/2 pulls (29.8% carryover-open; clean-chance take 17.4%). The
-  bettable SHL product, if any, is the UNBUILT gap-1/2 class — open
-  strategic question for Seb.
+  gap-1/2 pulls (29.8% carryover-open; clean-chance take 23.0% under
+  ruling 45). The bettable SHL product, if any, is the UNBUILT gap-1/2
+  class — open strategic question for Seb.
+- **Ruling 45 (2026-08-07)**: interval-league clear-chance baseline
+  unified to NHL full-period semantics (the Euro port never penalized
+  late-arriving chances — Manager port error, rule 15). Take rates now
+  cross-comparable: AHL 66.8 / Liiga 55.0 / Mestis 63.6 / SHL 23.0 /
+  NHL 54.5. Any pre-45 take-rate figure in older STATUS rows or docs
+  (AHL 50.2 / Liiga 41.9 / Mestis 45.6 / SHL 17.4) is the OLD baseline.
 - **KHL** — lake verified (3,060 games, coach census 100%). Adapter
   kickoff written (docs/KICKOFF_KHL_ADAPTER.md), session may be
   running — its dp-event census feeds a 17/17b cross-calibration

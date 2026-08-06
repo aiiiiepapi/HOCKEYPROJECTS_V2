@@ -446,3 +446,51 @@ NOTE: new coach layer is PROVISIONAL until blind re-validation (next block).
     a "This season" column. RISKY keyed on season chances (<3).
     Implementation: posterior_sheet(window_season) in prior_fit — ONE
     implementation; pricing estimator still untouched (ruling 44 scope).
+
+45. **CLEAR-CHANCE BASELINE UNIFIED TO NHL FULL-PERIOD (Seb, 2026-08-07:
+    "fix it").** Found by Seb's own audit question (5 random NHL games in
+    the 50-69% band): the interval-league ledger's chance-quality frac
+    divided by mass over [opened, 1200) while the validated NHL ledger
+    divides by the FULL period [0, 1200). Consequence of the old Euro
+    port: a late-arriving chance was never penalized — a coach down 3
+    with <2:00 left was charged a missed chance the NHL definition calls
+    junk (7 Liiga / 9 AHL / 11 Mestis / 0 SHL such no-pulls). A rule-15
+    violation (second implementation of the same concept, drifted),
+    Manager's own port error, on record. FIX: ideal = mass([0,1200)) in
+    clean_window_interval.py; ledgers+profiles+sheets rebuilt. Effect:
+    charged no-pulls AHL 270->135, Liiga 100->59, Mestis 98->47, SHL
+    133->94; clean-chance take rates now cross-comparable with NHL
+    semantics (AHL 66.8 / Liiga 55.0 / Mestis 63.6 / SHL 23.0 vs NHL
+    54.5); a clean window must now open by ~4:00-4:45 left (league
+    hazard dependent) to be clear — same territory as NHL (earliest
+    counted NHL no-pull opens 4:58). Blomqvist unchanged (2/2 season,
+    81%). Gate ceiling 0.98 -> 0.995 (Seth Appert AHL 13/13 verified
+    row-by-row — perfect records no longer diluted by junk no-pulls).
+    Gates 29 green. Liiga+Mestis multi-fold backtests re-run under the
+    new ledger (their pricing coach layer consumes clear rows) — results
+    recorded below when complete.
+
+45 (cont). **FOLD RE-EXAM RESULTS under the unified ledger (Manager,
+    same day).** The pricing coach layer consumes clear rows, so both
+    provisional leagues were re-examined with the multi-fold law.
+    POOLED forward folds, old ledger -> new ledger:
+      Liiga  (970cp/201g): leaderTT bias +3.2pts -> -0.4pts,
+        ROI@10%EV +18.9% P=0.988 -> +9.9% P=0.896; total over
+        +17.1% P=0.996 -> +9.9% P=0.948; -3.5 +16.7% -> +5.3% P=0.684.
+      Mestis (968cp/209g): leaderTT bias +4.5pts -> +1.1pts,
+        ROI +22.3% P=0.997 -> +12.3% P=0.944; total +11.3% -> +4.0%
+        P=0.759; -3.5 +14.9% -> +3.9% P=0.659.
+    ATTRIBUTION (rule 42): calibration IMPROVED to near-zero bias in
+    both leagues — the old ledger's junk no-pulls dragged coach
+    posteriors low, the model under-predicted pulls, and the old
+    positive "ROI" was largely that conservative bias paying itself
+    back, not skill (the same mechanism named in the 2026-08-03 Mestis
+    single-fold post-mortem). The corrected model is better calibrated
+    but its residual edge is smaller and no longer clears the 0.95
+    evidence bar on every flagship market. Design limits: same folds,
+    same seasons, per-fold swings remain variance-dominated (Mestis
+    2025 fold negative, 2024/2026 positive — consistent with ruling
+    42's variance findings). STATUS pending Seb: whether Liiga/Mestis
+    provisional paper-trade stands (September paper month is itself
+    the cheap test) or is demoted. Gates 29 green both before and
+    after fold regeneration.

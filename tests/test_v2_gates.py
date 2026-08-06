@@ -273,17 +273,23 @@ def test_ahl_liiga_clean_window():
         # SHL's clean-chance take rate is genuinely ~17%: its pull culture is
         # gap-1/2 pulls (29.8% of gap-3 instances open carryover-empty) and
         # down-3 chances are mostly declined — clean-window controlled, so
-        # this IS comparable cross-league (AHL 50.2 / Liiga 41.9 / Mestis
-        # 45.6 / SHL 17.4). Bound widened for shl only, evidence in
-        # docs/SHL_ADAPTER_VERIFICATION.md; NOT a tuning knob.
+        # this IS comparable cross-league (ruling-45 unified baseline:
+        # AHL 66.8 / Liiga 55.0 / Mestis 63.6 / SHL 23.0). Bound widened
+        # for shl only, evidence in docs/SHL_ADAPTER_VERIFICATION.md;
+        # NOT a tuning knob.
         mu_lo = 0.08 if lg == "shl" else 0.30
         assert mu_lo <= meta["prior_mu"] <= 0.70, lg
         # Profile floor also per-league (2026-08-07): in SHL's mu=0.17
         # environment a genuine hard-never-puller (Thomas Berglund, 0/16
         # clear chances over 38 instances) legitimately posts <2%.
         pct_lo = 0.002 if lg == "shl" else 0.02
+        # Ceiling raised 0.98 -> 0.995 with ruling 45 (full-period baseline):
+        # junk no-pulls no longer dilute perfect records, so a genuine
+        # near-deterministic puller (Seth Appert AHL, 13/13 clear chances
+        # over 40 instances — verified row-by-row 2026-08-07) legitimately
+        # posts 0.988. NOT a tuning knob.
         for p in prof["profiles"]:
-            assert pct_lo <= p["expected_pull_pct"] <= 0.98, (lg, p["coach"])
+            assert pct_lo <= p["expected_pull_pct"] <= 0.995, (lg, p["coach"])
             assert p["clear_taken"] <= p["clear_chances"] <= p["instances"], (lg, p["coach"])
             assert p["band"][0] <= p["expected_pull_pct"] <= p["band"][1], (lg, p["coach"])
             if p["clear_chances"] < 5:
