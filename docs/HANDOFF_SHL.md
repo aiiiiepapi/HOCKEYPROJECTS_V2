@@ -7,8 +7,12 @@ everything below is a CLAIM until the Manager re-derives it.
 ## What exists now
 
 - **Lake branch `shl-data-lake`** (V2 repo, orphan, Mestis convention):
-  `shl/<END_YEAR>/` for 2023..2026 + root COMPLETENESS.md.
-  Pushed from Seb's PC after verify_shl_lake.py returned hard-fails 0.
+  `shl/<END_YEAR>/` for 2023..2026 + root COMPLETENESS.md + `.gitattributes
+  * -text`. **Authoritative tip: `6b77add`** (root 03d8547 had the CRLF
+  normalization — see 1b — never read lake bytes from it).
+  VERIFIED TWICE with hard-fails 0: on Seb's PC against staging
+  (2026-08-06), and cloud-side on the transferred branch content
+  (manifest re-hash 5,104/5,104 after PC→GitHub→cloud round trip).
 - **Session branch `claude/shl-scrape-ly11nk`** (== the kickoff's
   `shl-scrape`; the cloud harness fixed this name and forbade renaming):
   docs/SHL_SOURCE.md, tools/fetch_shl.py, tools/verify_shl_lake.py,
