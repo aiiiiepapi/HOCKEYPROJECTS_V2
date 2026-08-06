@@ -1,5 +1,5 @@
 """All v2 release gates in one pytest run. Any failure blocks release."""
-import json, math, sys
+import json, math, os, sys
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
@@ -661,5 +661,125 @@ def test_shl_random_audit():
     sys.path.insert(0, str(ROOT / "tools"))
     from audit_interval_random import audit
     sample, bad = audit("shl")
+    assert len(sample) == 60
+    assert not bad, bad
+
+
+def test_khl_ground_truth():
+    """KHL batch 1: 14 games / 16 instances hand-traced from raw text+protocol
+    HTML BEFORE the adapter existed (2026-08-07, KHL adapter session; one
+    898094 instance initially missed by hand was caught by the engine
+    cross-check, re-verified and recorded — Magnus batch-0 precedent).
+    Covers: EV pull x3 (incl. a 3s token pull at the horn 889859), pp_pull x6
+    (6v3 pull-to-horn 881356, 6v4 re-pull after an ENG-created instance
+    886054, penalty_on_trailer ender 889939), no-pull, carryover-at-open x2,
+    multi-pull (3 windows 881725), ruling-17 dp artifacts x3 (886161+889859
+    bracketed by EXPLICIT dp events — portfolio first; 889995 invisible),
+    OT game (881270) + shootout game (889995: RB/bullit rows excluded with
+    the score increment consumed), goalie substitutions incl. period-boundary
+    swaps (never intervals), EN via 'V pustye vorota' + protocol
+    jersey-absence x4 (incl. SH-ENG), own-net-empty goals en=False x3,
+    898094 duplicate penalty re-ruled a REAL 2+2 double minor (VPM-exact),
+    PS-award rows excluded, coincident cancellation, same-player stacking,
+    wall-clock/cumulative collision (881356). Every GT empty-interval list
+    reconciles to the second with the protocol team VPPV table (14/14).
+    Trace: docs/ground_truth_traces/khl_batch1_2026-08-07.md."""
+    from hockeycore.leagues.khl import parse_game
+    from hockeycore.gap.segments import extract_instances
+    gt = json.load(open(ROOT / "tests" / "ground_truth_khl.json"))
+    for gid, gg in gt["games"].items():
+        g = parse_game(ROOT / f"tests/reference_raw/khl/game_{gid}_text.html")
+        assert (g["home"], g["away"], g["date"]) == (gg["home"], gg["away"], gg["date"]), gid
+        assert g["coaches"] == gg["coaches"], gid
+        for sd in ("home", "away"):
+            got = [(b, e) for b, e, *_ in g["empty"][sd]]
+            assert got == [tuple(x) for x in gg["empty"].get(sd, [])], (gid, sd, got)
+        insts = extract_instances(g, 3)
+        assert len(insts) == len(gg["instances"]), (gid, len(insts))
+        for e, a in zip(gg["instances"], insts):
+            assert (e["opened_secs"], e["closed_secs"], e["closed_reason"]) == \
+                   (a["opened_secs"], a["closed_secs"], a["closed_reason"]), (gid, e["n"])
+            assert e["trailing_name"] == a["trailing_name"], (gid, e["n"])
+            assert e["pulled"] == a["pulled"], (gid, e["n"])
+            assert e["pull_evidence_secs"] == a["pull_evidence_secs"], (gid, e["n"])
+            assert e["pull_classification"] == a["pull_classification"], (gid, e["n"])
+            assert e.get("carryover_empty_at_open", False) == \
+                   a.get("carryover_empty_at_open", False), (gid, e["n"])
+            assert e.get("dp_only_empty", False) == a.get("dp_only_empty", False), (gid, e["n"])
+        if "regulation_goals" in gg:
+            assert len([x for x in g["goals"] if x["period"] <= 3]) == gg["regulation_goals"], gid
+        for key, want_en in (("eng_goal", True), ("sh_eng_goal", True),
+                             ("extra_attacker_goal", False)):
+            if key in gg:
+                gl = [x for x in g["goals"] if x["t"] == gg[key]["t"]][0]
+                assert (gl["side"], gl["en"]) == (gg[key]["side"], want_en), (gid, key)
+        if "ot_goal" in gg:
+            gl = [x for x in g["goals"] if x["t"] == gg["ot_goal"]["t"]][0]
+            assert (gl["side"], gl["period"], gl["en"]) == \
+                   (gg["ot_goal"]["side"], gg["ot_goal"]["period"], gg["ot_goal"]["en"]), gid
+        if "dp_events" in gg:
+            assert len(g["dp_events"]) == gg["dp_events"], gid
+        if "double_minor_pin" in gg:            # real 2+2, never deduped (898094 adjudication)
+            p = gg["double_minor_pin"]
+            rows = [(x["begin"], x["end"]) for x in g["penalties"]
+                    if x["side"] == p["side"] and x["t"] == p["t"]]
+            assert sorted(rows) == sorted(tuple(w) for w in p["windows"]), (gid, rows)
+        if "ps_zero_min" in gg:                 # PS award: protocol mins 0, no box row
+            assert not [x for x in g["penalties"] if x["t"] == gg["ps_zero_min"]["t"]], gid
+        if "cancelled_pairs_at" in gg:          # coincident cancellation -> whistle markers
+            rows = [x for x in g["penalties"] if x["t"] == gg["cancelled_pairs_at"]]
+            assert rows and all(x["begin"] == x["end"] == x["t"] for x in rows), gid
+        if "misconduct_pin" in gg:              # >=10min never shorthands (2026-08-02 fix)
+            assert [x for x in g["penalties"]
+                    if x["t"] == gg["misconduct_pin"]["t"] and x["misconduct"]], gid
+
+
+def test_khl_derived_instances():
+    """Structural gates (rule 14) over the KHL derived instance file + 100%
+    coach attribution (preview-frame channel, NO map — census is 100.0% per
+    docs/KHL_LAKE_VERIFICATION.md, so any blank is a parser bug). Bands from
+    the measured seasons (268-327 instances, pulled 7.9-14.7%, carryover
+    20-23%, dp_only_empty 5-16/season) set structurally per season."""
+    rows = json.load(open(DER / "khl_instances_gap3.json"))
+    assert all(r["coach"] for r in rows)
+    assert all(r["leader_coach"] for r in rows)
+    for s in ("2023", "2024", "2025", "2026"):
+        srows = [r for r in rows if r["season"] == s]
+        n = len(srows)
+        assert 180 <= n <= 450, (s, n)
+        pulled = sum(1 for r in srows if r["pulled"])
+        assert 0.03 <= pulled / n <= 0.30, (s, pulled / n)
+    for r in rows:
+        assert 0 <= r["opened_secs"] <= r["closed_secs"] <= 1200, r["game_id"]
+        if r["pulled"]:
+            assert r["opened_secs"] <= r["pull_evidence_secs"] < r["closed_secs"], \
+                (r["game_id"], r["n"])
+            assert r["pull_classification"] in ("pull", "pp_pull")
+        else:
+            assert r["pull_classification"] is None
+    pp = sum(1 for r in rows if r["pull_classification"] == "pp_pull")
+    assert pp < sum(1 for r in rows if r["pulled"])
+    carry = sum(1 for r in rows if r.get("carryover_empty_at_open"))
+    assert 0.08 <= carry / len(rows) <= 0.45
+    dponly = sum(1 for r in rows if r.get("dp_only_empty"))
+    assert 0.01 <= dponly / len(rows) <= 0.10   # the KHL dp-visibility signature
+
+
+def test_khl_random_audit():
+    """Seeded random audit (30 pulls + 30 no-pulls, seed 20260808) with TWO
+    independent checks per sampled instance: (a) net-empty intervals
+    re-derived from the raw text pull/return phrases outside the adapter
+    state machine vs the derived instance (family standard), and (b) the
+    re-derived intervals must reconcile per period TO THE SECOND with the
+    protocol page's team VPPV column — the game officials' TOI accounting,
+    a fully independent recorder. 0 disagreements is the standing bar
+    (first run 2026-08-07)."""
+    lake = Path(os.environ.get("KHL_LAKE", "/home/user/work/khl_lake/khl"))
+    if not lake.exists():
+        import pytest
+        pytest.skip("khl lake not mounted")
+    sys.path.insert(0, str(ROOT / "tools"))
+    from audit_interval_random import audit
+    sample, bad = audit("khl")
     assert len(sample) == 60
     assert not bad, bad
