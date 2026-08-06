@@ -266,17 +266,25 @@ def parse_game(text_path, protocol_path=None, season=None):
             continue
         if t is None or period == 0 or period == 5:
             continue                               # untimed/minute-only/SO rows
-        # rule 10: cumulative clock must agree with the running period
+        # Running marker vs cumulative clock, for CONSUMED events only: when
+        # they disagree the CLOCK wins (SHL 774455 precedent — 886068 misfiles
+        # a `Начало 3 периода` marker mid-P2 while play events continue with
+        # P2 clocks up to `Окончание 2 периода`). Unconsumed classes (strength
+        # notes, penalty-end corroboration lines, commentary) occasionally
+        # carry typo'd times (897556 «Игра 4 на 4» 55:51-for-25:51, 898039
+        # penend 23:05) and never reach the consuming branches. Goal periods
+        # come from the protocol column, which stays strictly checked; pull
+        # windows are backstopped by the ВППВ random audit.
+        ev_period = period
         if period <= 3:
             t_per = min((t - 1) // PERIOD_LEN + 1, 3) if t > 0 else 1
             if not (t_per == period or t == (period - 1) * PERIOD_LEN):
-                # minute-only times ("NN мин") never reach here (regex is MM:SS)
-                raise ValueError(f"period {period} vs clock {t_txt} in {text_path.name}: {txt[:60]!r}")
+                ev_period = t_per
         if txt.startswith("Изменение счета"):
             sd = side_of(txt, "Изменение счета: {}.")
             if sd is None:
                 raise ValueError(f"goal side unmatched: {txt[:80]!r}")
-            text_goals.append({"t": t, "side": sd, "period": period,
+            text_goals.append({"t": t, "side": sd, "period": ev_period,
                                "pv": "В пустые ворота" in txt,
                                "ea": "С экстра-полевым игроком" in txt})
             last_t = t
@@ -285,13 +293,13 @@ def parse_game(text_path, protocol_path=None, season=None):
             sd = side_of(txt, "{}. Замена вратаря")
             if sd is None:
                 raise ValueError(f"pull side unmatched: {txt[:80]!r}")
-            pulls.append((period, t, len(pulls), sd, "out"))
+            pulls.append((ev_period, t, len(pulls), sd, "out"))
             last_t = t
             continue
         if re.match(r"^.+?\. Вратарь в воротах", txt) and not txt.startswith("Замена вратаря."):
             sd = side_of(txt, "{}. Вратарь в воротах")
             if sd is not None:                     # None = commentary mention
-                pulls.append((period, t, len(pulls), sd, "in"))
+                pulls.append((ev_period, t, len(pulls), sd, "in"))
                 last_t = t
                 continue
         if txt.startswith("Удаление."):
@@ -302,7 +310,7 @@ def parse_game(text_path, protocol_path=None, season=None):
             mins = int(pmt.group(4))
             offense = pmt.group(5)
             player = f"{pmt.group(2) or ''} {pmt.group(3)}".strip()
-            text_pens.append({"side": sd, "t": t, "period": period,
+            text_pens.append({"side": sd, "t": t, "period": ev_period,
                               "mins": mins, "player": player, "offense": offense})
             last_t = t
             continue
