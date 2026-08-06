@@ -1,0 +1,126 @@
+{
+  "_meta": {
+    "derived": "2026-08-06 hand-traced from raw stats.swehockey.se Game/Events HTML (SHL adapter session) BEFORE the adapter existed (rule 2). Times cumulative secs; P3 secs = t-2400. Trace notes: docs/ground_truth_traces/shl_batch1_2026-08-06.md. 12 games / 12 instances. Coverage: EV pull, pp_pull x2 (leader minor active at first evidence, incl. a same-second leader penalty 6v4 pull), no-pull gap-3, carryover-at-open x6, multi-pull, pull-to-horn x2, widened(ate_ENG)/narrowed(incl. scored_6v5)/end_of_game closes, OT game (OT-end GK bookkeeping), shootout game (GWS goal + attempt rows excluded, header off-by-one), mid-game goalie substitutions in P1/P2/P3 (same-second Out+In: net never empty), ENG-creates-instance, SH-ENG goals, PS goal + PenaltyShot no-minutes rows, offsetting penalties with (00:00 - ) placeholder windows, 5+20 major/GM pairs with degenerate windows, 60:00 end-of-game GK Out bookkeeping rows (never pulls).",
+    "empty_intervals_note": "empty = expected net-empty intervals (cumulative secs) for the side that had them; games without gap-3 instances still pin adapter-level extraction. Sides keyed home/away."
+  },
+  "games": {
+    "2026_1004308": {
+      "home": "Brynäs IF", "away": "Växjö Lakers HC", "date": "2025-09-13",
+      "empty": {"home": [[3432, 3459]], "away": []},
+      "coaches": {"home": "Niklas Gällstedt", "away": "Björn Hellkvist"},
+      "eng_goal": {"t": 3459, "side": "away", "en": true},
+      "instances": [
+        {"n": 1, "opened_secs": 1059, "closed_secs": 1200, "closed_reason": "end_of_game",
+         "trailing_name": "Brynäs IF", "pulled": false, "pull_evidence_secs": null,
+         "pull_classification": null, "carryover_empty_at_open": true}
+      ]
+    },
+    "2023_629020": {
+      "home": "Timrå IK", "away": "IF Malmö Redhawks", "date": "2023-02-25",
+      "empty": {"home": [[3441, 3494]], "away": []},
+      "swaps_ignored": 1,
+      "instances": [
+        {"n": 1, "opened_secs": 1094, "closed_secs": 1200, "closed_reason": "end_of_game",
+         "trailing_name": "Timrå IK", "pulled": false, "pull_evidence_secs": null,
+         "pull_classification": null, "carryover_empty_at_open": true}
+      ]
+    },
+    "2025_882278": {
+      "home": "IF Malmö Redhawks", "away": "Brynäs IF", "date": "2025-02-11",
+      "empty": {"home": [], "away": []},
+      "swaps_ignored": 1,
+      "blank_coach_side": "away",
+      "instances": [
+        {"n": 1, "opened_secs": 677, "closed_secs": 1200, "closed_reason": "end_of_game",
+         "trailing_name": "IF Malmö Redhawks", "pulled": false, "pull_evidence_secs": null,
+         "pull_classification": null, "carryover_empty_at_open": false}
+      ]
+    },
+    "2024_774733": {
+      "home": "HV 71", "away": "Linköping HC", "date": "2024-01-06",
+      "empty": {"home": [], "away": []},
+      "ot_goal": {"t": 3652, "side": "home", "period": 4, "en": false},
+      "instances": [
+        {"n": 1, "opened_secs": 93, "closed_secs": 279, "closed_reason": "narrowed",
+         "trailing_name": "Linköping HC", "pulled": false, "pull_evidence_secs": null,
+         "pull_classification": null, "carryover_empty_at_open": false}
+      ]
+    },
+    "2023_628968": {
+      "home": "IK Oskarshamn", "away": "Växjö Lakers HC", "date": "2022-09-17",
+      "empty": {"home": [], "away": []},
+      "regulation_goals": 8,
+      "instances": []
+    },
+    "2023_629037": {
+      "home": "HV 71", "away": "Växjö Lakers HC", "date": "2022-10-22",
+      "empty": {"home": [], "away": [[3367, 3600]]},
+      "swaps_ignored": 1,
+      "instances": [
+        {"n": 1, "opened_secs": 803, "closed_secs": 1200, "closed_reason": "end_of_game",
+         "trailing_name": "Växjö Lakers HC", "pulled": true, "pull_evidence_secs": 967,
+         "pull_classification": "pp_pull", "carryover_empty_at_open": false}
+      ]
+    },
+    "2024_774474": {
+      "home": "MoDo Hockey", "away": "Leksands IF", "date": "2023-10-03",
+      "empty": {"home": [[3264, 3284], [3310, 3501]], "away": []},
+      "instances": [
+        {"n": 1, "opened_secs": 833, "closed_secs": 1101, "closed_reason": "widened",
+         "trailing_name": "MoDo Hockey", "pulled": true, "pull_evidence_secs": 864,
+         "pull_classification": "pull", "carryover_empty_at_open": false}
+      ]
+    },
+    "2023_628999": {
+      "home": "Skellefteå AIK", "away": "Timrå IK", "date": "2022-10-06",
+      "empty": {"home": [], "away": [[3412, 3567]]},
+      "ps_goal": {"t": 3001, "side": "away", "types_has": "PS", "en": false},
+      "instances": [
+        {"n": 1, "opened_secs": 954, "closed_secs": 1167, "closed_reason": "widened",
+         "trailing_name": "Timrå IK", "pulled": true, "pull_evidence_secs": 1012,
+         "pull_classification": "pull", "carryover_empty_at_open": false}
+      ]
+    },
+    "2023_628979": {
+      "home": "Brynäs IF", "away": "Luleå HF", "date": "2022-09-24",
+      "empty": {"home": [[3407, 3432], [3454, 3600]], "away": []},
+      "sh_eng_goal": {"t": 3432, "side": "away", "en": true},
+      "offsetting_rows_no_box": {"t": 3547, "count": 4},
+      "instances": [
+        {"n": 1, "opened_secs": 1032, "closed_secs": 1200, "closed_reason": "end_of_game",
+         "trailing_name": "Brynäs IF", "pulled": true, "pull_evidence_secs": 1054,
+         "pull_classification": "pull", "carryover_empty_at_open": true}
+      ]
+    },
+    "2023_629011": {
+      "home": "Växjö Lakers HC", "away": "Rögle BK", "date": "2022-10-08",
+      "empty": {"home": [], "away": [[3485, 3496]]},
+      "instances": [
+        {"n": 1, "opened_secs": 453, "closed_secs": 1046, "closed_reason": "narrowed",
+         "trailing_name": "Rögle BK", "pulled": false, "pull_evidence_secs": null,
+         "pull_classification": null, "carryover_empty_at_open": false},
+        {"n": 2, "opened_secs": 1096, "closed_secs": 1200, "closed_reason": "end_of_game",
+         "trailing_name": "Rögle BK", "pulled": false, "pull_evidence_secs": null,
+         "pull_classification": null, "carryover_empty_at_open": true}
+      ]
+    },
+    "2024_774444": {
+      "home": "HV 71", "away": "Färjestad BK", "date": "2023-09-21",
+      "empty": {"home": [[3464, 3475], [3496, 3553]], "away": []},
+      "instances": [
+        {"n": 1, "opened_secs": 1152, "closed_secs": 1200, "closed_reason": "end_of_game",
+         "trailing_name": "HV 71", "pulled": false, "pull_evidence_secs": null,
+         "pull_classification": null, "carryover_empty_at_open": true}
+      ]
+    },
+    "2026_1004370": {
+      "home": "Luleå HF", "away": "Djurgårdens IF", "date": "2025-09-25",
+      "empty": {"home": [[3372, 3439], [3476, 3485], [3487, 3600]], "away": []},
+      "instances": [
+        {"n": 1, "opened_secs": 1039, "closed_secs": 1085, "closed_reason": "narrowed",
+         "trailing_name": "Luleå HF", "pulled": true, "pull_evidence_secs": 1076,
+         "pull_classification": "pp_pull", "carryover_empty_at_open": true}
+      ]
+    }
+  }
+}
