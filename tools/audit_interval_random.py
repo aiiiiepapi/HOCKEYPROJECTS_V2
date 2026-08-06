@@ -4,7 +4,7 @@ audit_interval_random.py — seeded random instance audit for interval leagues
 (AHL / Liiga): re-verifies pulls and no-pulls DIRECTLY against the raw lake
 goalie channels, bypassing the adapter state machine (rule 0/6).
 
-Usage: python3 tools/audit_interval_random.py {ahl|liiga|mestis|shl} [n_per_side] [seed]
+Usage: python3 tools/audit_interval_random.py {ahl|liiga|mestis|shl|khl} [n_per_side] [seed]
 Exit code 0 = no disagreements. Prints each disagreement.
 First run (liiga, seed 20260802, 30+30): 0 disagreements, 2026-08-02.
 AHL twin (seed 20260801, 30+30): 0 disagreements, 2026-08-01 (ahl_batch1.md).
@@ -23,7 +23,7 @@ events by (period, time, team) keeping the latest revision; end-of-game
 GK-out rows are bookkeeping (they fall at the period boundary and produce
 zero-length intervals here, so no special-casing is needed).
 """
-import json, random, sys
+import json, os, random, sys
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 P3 = 2400
@@ -140,9 +140,77 @@ def shl_raw_empty(season, gid, trailing):
     return [(b, e) for b, e in out if e > b]
 
 
+def khl_raw_empty(season, gid, trailing):
+    """Net-empty intervals for one side re-derived DIRECTLY from the raw text
+    page pull/return phrases (independent implementation, no adapter state
+    machine, no period markers — clock//1200 closes unreturned windows at the
+    period boundary like the GT-gated convention). Cross-checked per period
+    against the PROTOCOL page's team ВППВ table by khl_vppv()."""
+    import re, html as _h
+    lake = Path(os.environ.get("KHL_LAKE", "/home/user/work/khl_lake/khl"))
+    raw = (lake / season / f"{gid}_text.html").read_text(encoding="utf-8", errors="replace")
+    def strip(s):
+        return re.sub(r"\s+", " ", _h.unescape(re.sub(r"<[^>]+>", " ", s))).strip()
+    clubs = re.findall(r'preview-frame__club-nameClub[^>]*>\s*([^<]+?)\s*</p>', raw)
+    name = strip(clubs[0]) if trailing == "home" else strip(clubs[1])
+    rows = []
+    for m in re.finditer(r'<div class="textBroadcast-item(?: filter-ready)?">(.*?)'
+                         r'(?=<div class="textBroadcast-item(?: filter-ready)?">|'
+                         r'<div class="textBroadcast-statistics)', raw, re.S):
+        tm = re.search(r'left-time[^"]*">\s*(.*?)\s*</', m.group(1), re.S)
+        tx = re.search(r'right-text[^"]*">(.*?)</div>', m.group(1), re.S)
+        t_txt = strip(tm.group(1)) if tm else ""
+        txt = strip(tx.group(1)) if tx else ""
+        if not re.match(r"^\d{1,3}:\d{2}$", t_txt):
+            continue
+        mm, ss = t_txt.split(":")
+        t = int(mm) * 60 + int(ss)
+        if txt.startswith(f"{name}. Замена вратаря на экстра-полевого игрока"):
+            rows.append((t, "out"))
+        elif txt.startswith(f"{name}. Вратарь в воротах"):
+            rows.append((t, "in"))
+    rows.reverse()                                 # page is newest-first
+    rows.sort(key=lambda r: (r[0], r[1] == "in")) # OUT-first at same second
+    out, open_t = [], None
+    for t, kind in rows:
+        if open_t is not None and t > (open_t // 1200 + 1) * 1200:
+            # next event past the open window's period end: close at boundary
+            out.append((open_t, (open_t // 1200 + 1) * 1200)); open_t = None
+        if kind == "out" and open_t is None:
+            open_t = t
+        elif kind == "in" and open_t is not None:
+            out.append((open_t, t)); open_t = None
+    if open_t is not None:
+        out.append((open_t, min((open_t // 1200 + 1) * 1200, 3600)))
+    return [(b, e) for b, e in out if e > b and b < 3600]
+
+
+def khl_vppv(season, gid, trailing):
+    """Per-period team net-empty seconds from the PROTOCOL ВППВ table
+    (independent recorder — game officials' TOI accounting, not the
+    broadcast event stream)."""
+    import re, html as _h
+    lake = Path(os.environ.get("KHL_LAKE", "/home/user/work/khl_lake/khl"))
+    raw = (lake / season / f"{gid}_protocol.html").read_text(encoding="utf-8", errors="replace")
+    i = raw.find("ВРЕМЯ НА ЛЬДУ")
+    seg = raw[i:]
+    seg = seg[:seg.find("</section>")] if "</section>" in seg else seg[:20000]
+    txt = re.sub(r"\s+", " ", _h.unescape(re.sub(r"<[^>]+>", " ", seg)))
+    blocks = re.findall(r"(первый период|второй период|третий период)((?: \d{1,3}:\d{2}){4})", txt)
+    # table layout: home team's 3 period rows first, then away's (then a
+    # duplicated mobile rendering — take the first 6)
+    vals = []
+    for _p, nums in blocks[:6]:
+        mm, ss = nums.split()[-1].split(":")
+        vals.append(int(mm) * 60 + int(ss))
+    if len(vals) < 6:
+        raise ValueError(f"khl vppv table unparsed for {season}/{gid}")
+    return vals[0:3] if trailing == "home" else vals[3:6]
+
+
 def audit(lg, n_side=30, seed=None):
     seed = seed or {"ahl": 20260801, "liiga": 20260802, "mestis": 20260803,
-                    "shl": 20260807}[lg]
+                    "shl": 20260807, "khl": 20260808}[lg]
     rows = json.load(open(ROOT / "data" / "derived" / f"{lg}_instances_gap3.json"))
     pulls = [r for r in rows if r.get("pulled")
              and not (lg == "shl" and r.get("season") == "2023")]
@@ -154,7 +222,23 @@ def audit(lg, n_side=30, seed=None):
     sample = rng.sample(pulls, n_pull) + rng.sample(nops, 2 * n_side - n_pull)
     bad = []
     for r in sample:
-        if lg == "mestis":
+        if lg == "khl":
+            tr = r["trailing"]
+            ivs = khl_raw_empty(r["season"], r["game_id"], tr)
+            # cross-channel check: text-derived intervals must reconcile per
+            # period to the second with the protocol's team ВППВ column
+            # (officials' TOI accounting, fully independent recorder), unless
+            # the adapter had to synthesize evidence (text-channel gap).
+            if not r.get("synthetic_pull_evidence"):
+                vppv = khl_vppv(r["season"], r["game_id"], tr)
+                for pi in range(3):
+                    lo, hi = pi * 1200, (pi + 1) * 1200
+                    got = sum(min(e, hi) - max(b, lo) for b, e in ivs
+                              if b < hi and e > lo)
+                    if got != vppv[pi]:
+                        bad.append((r["season"], r["game_id"],
+                                    f"P{pi+1} text-empty {got}s != protocol ВППВ {vppv[pi]}s"))
+        elif lg == "mestis":
             tr = r["trailing"]                       # side string: pois lines carry side cells
             ivs = mestis_raw_empty(r["season"], r["game_id"], tr)
         elif lg == "shl":
