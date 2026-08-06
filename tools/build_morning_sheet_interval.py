@@ -30,10 +30,11 @@ def clock(s):
     if s is None: return "n/a (no recent EV pulls)"
     return f"{int(s//60)}:{int(s%60):02d} P3 ({int((1200-s)//60)}:{int((1200-s)%60):02d} left)"
 rows = [{**p, "avg": wavg(times.get(p["coach"]))} for p in prof["profiles"]]
-active = sorted([r for r in rows if r["last_seen"] >= SEASON_START],
-                key=lambda r: -r["expected_pull_pct"])
-stale = sorted([r for r in rows if r["last_seen"] < SEASON_START],
-               key=lambda r: -r["expected_pull_pct"])
+def _sk(r):
+    p = r.get("sheet_pct")
+    return -(p if p is not None else -1.0)
+active = sorted([r for r in rows if r["last_seen"] >= SEASON_START], key=_sk)
+stale = sorted([r for r in rows if r["last_seen"] < SEASON_START], key=_sk)
 meta = prof["meta"]
 L = [f"# {LG.upper()} MORNING SHEET — coach pull expectancy (ruling-33 estimator)", ""]
 if LG == "ahl":
@@ -53,20 +54,40 @@ else:
 L += ["Teams = last-seen bench; off-season coaching changes NOT applied — "
       "September refresh re-maps before opening night.", "",
       "## Active benches (seen 2025-26), sorted by expected pull %", "",
-      "| Coach | Team | Expected % | Band | Career clean | Last 3 | PP pulls | Avg pull time (rec-wt) | Flags |",
-      "|---|---|---|---|---|---|---|---|---|"]
+      "| Coach | Team | Expected % | Band | This season | Career | Last 3 | PP pulls | Avg pull time (rec-wt) | Flags |",
+      "|---|---|---|---|---|---|---|---|---|---|"]
+# Ruling 44 (Seb 2026-08-07, sheets-first scope): display the NO-ANCHOR sheet
+# estimator (sheet_pct); RISKY at <3 clean chances (was <5); a 0-chance coach
+# shows NO DATA and is automatic NO-BET. League clean take rate = context only.
 for r in active:
-    flags = list(r["flags"])
-    if r["expected_pull_pct"] < 0.40: flags.append("NO-BET(<40, rule 28)")
-    L.append(f'| {r["coach"]} | {r["team"]} | **{r["expected_pull_pct"]:.0%}** | '
-             f'{r["band"][0]:.0%}-{r["band"][1]:.0%} | {r["clear_taken"]}/{r["clear_chances"]} | '
+    pct = r.get("sheet_pct")
+    band = r.get("sheet_band")
+    flags = [f for f in r["flags"] if not f.startswith("RISKY")]
+    if r.get("window_chances", 0) < 3:
+        flags.append("RISKY: <3 season chances (ruling 44)")
+    if pct is None:
+        flags.append("NO DATA = NO-BET (ruling 44)")
+    elif pct < 0.40:
+        flags.append("NO-BET(<40, rule 28)")
+    # Ruling 28b: pulled last clean chance OR 2 of last 3 -> HOT FORM flag
+    # for manual review, regardless of % (does not authorize below floor).
+    l3 = r.get("last3") or ""
+    if l3.endswith("P") or l3.count("P") >= 2:
+        flags.insert(0, "HOT FORM (28b: manual review)")
+    pct_s = f"{pct:.0%}" if pct is not None else "NO DATA"
+    band_s = f"{band[0]:.0%}-{band[1]:.0%}" if band else "—"
+    win_s = f'{r.get("window_taken", 0)}/{r.get("window_chances", 0)}'
+    L.append(f'| {r["coach"]} | {r["team"]} | **{pct_s}** | '
+             f'{band_s} | {win_s} | {r["clear_taken"]}/{r["clear_chances"]} | '
              f'{r["last3"] or "—"} | {r["pp_pulls"]} | {clock(r["avg"])} | {", ".join(flags) or "—"} |')
-L += ["", f"Active coaches: {len(active)}. Prior mu {meta['prior_mu']:.2f}, "
-      f"strength {meta['prior_strength']} (predictive fit).", "",
+L += ["", f"Active coaches: {len(active)}. Sheet estimator = coach record ONLY, "
+      f"no league average (ruling 44), season window w/ Jan-1 bridge (ruling 44b; career = context, never blended); league clean take rate {meta['prior_mu']:.0%} "
+      "is context, not an input.", "",
       "## Departed / stale benches — reference only", "",
       "| Coach | Team | Expected % | Career clean | Last seen |", "|---|---|---|---|---|"]
 for r in stale:
-    L.append(f'| {r["coach"]} | {r["team"]} | {r["expected_pull_pct"]:.0%} | '
+    spct = f'{r["sheet_pct"]:.0%}' if r.get("sheet_pct") is not None else "NO DATA"
+    L.append(f'| {r["coach"]} | {r["team"]} | {spct} | '
              f'{r["clear_taken"]}/{r["clear_chances"]} | {r["last_seen"]} |')
 out = Path(f"/home/claude/work/{LG}_morning_sheet.md")
 out.write_text("\n".join(L))

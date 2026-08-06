@@ -103,3 +103,45 @@ def fit_prior(seqs):
             best = (S, ll / n)
     S = best[0]
     return mu * S, (1 - mu) * S, mu, S
+
+
+# ---------------------------------------------------------------------------
+# SHEET ESTIMATOR (ruling 44, Seb 2026-08-07, scope: coach-intel sheets only;
+# the validated pricing estimator above is UNTOUCHED pending re-exams).
+# NO league average in the calculation. Calendar recency unchanged (within-
+# career, ruling 32). The ONLY stabilizer is a Jeffreys half-chance each way
+# (a=b=0.5) — a neutral 50/50 statistical prior, NOT a league number: it
+# stops 2/2 from printing a flat 100% (measured 3-streak continuation is 67%,
+# n=79 — Seb heard this and ruled; drop JEFFREYS to 0 for raw records).
+# Perfect records weigh heavily as ruled: 2/2 -> ~83%, 0/2 -> ~17%.
+JEFFREYS = 0.5
+
+
+def _season_year(d):
+    y, m = int(d[:4]), int(d[5:7])
+    return y - 1 if m < 9 else y
+
+
+def posterior_sheet(seq, asof=None, window_season=None):
+    """(mean, lo, hi, n) with NO league anchor. seq: [(date, took)].
+    RULING 44b (Seb 2026-08-07, amended same day): the sheet record is
+    the NEWEST season; the PREVIOUS season keeps its weight through the
+    new season's opening months and drops on JANUARY 1 ("last season
+    keeps weight until at least january 1st"). Older seasons carry ZERO
+    weight always (career = context on the sheet, never blended).
+    Today (post-Jan-1 of the 25-26 season): 2025-26 only — Jan/Mar 2025
+    chances are 2024-25 and excluded, per Seb's ruling.
+    Returns (None, None, None, 0) for a no-data coach."""
+    if window_season is not None:
+        cutoff = f"{window_season + 1}-01-01"
+        bridge = (asof or "9999")[:10] < cutoff
+        seq = [(d, t) for d, t in seq
+               if _season_year(d) == window_season
+               or (bridge and _season_year(d) == window_season - 1)]
+    if not seq:
+        return None, None, None, 0
+    kw, nw = _weights(seq, asof)
+    a, b = kw + JEFFREYS, (nw - kw) + JEFFREYS
+    m = a / (a + b)
+    sd = (m * (1 - m) / (a + b + 1)) ** 0.5
+    return m, max(m - 1.28 * sd, 0.0), min(m + 1.28 * sd, 1.0), len(seq)

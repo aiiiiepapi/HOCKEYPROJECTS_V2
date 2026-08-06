@@ -411,3 +411,38 @@ NOTE: new coach layer is PROVISIONAL until blind re-validation (next block).
     total-over pooled CI floor -2%%, all model-line (not market-line)
     evidence; September paper log is the arbiter. NO-GO pin replaced by
     the provisional-status gate; re-blind when 26-27 accrues (standing).
+
+44. **NO-ANCHOR SHEET ESTIMATOR (Seb, 2026-08-07; scope "sheets first").**
+    Three directives, ruled with the evidence on the table (0b): (a) league
+    average removed from every coach-card calculation — the only stabilizer
+    is a neutral Jeffreys half-chance (50/50, NOT a league number; 2/2 ->
+    ~83% raw-weights, drop JEFFREYS for raw records); a 0-chance coach shows
+    NO DATA = automatic NO-BET instead of an invented number; (b) RISKY
+    threshold 5 -> 3 clean chances; (c) perfect small records (2/2, 0/2)
+    weigh heavily as their own evidence. Evidence heard before ruling:
+    perfect 3-streaks continued at 67% (n=79) — the reason a naked 100%
+    display would overbet; the old estimator's 2/2 -> 71% already matched
+    that, and the anchor's real bite was mid-record coaches (Blomqvist
+    2/6: 34% -> 47% no-anchor, now above the rule-28 floor with the 28b
+    HOT FORM flag). SCOPE: interval-league coach sheets ONLY
+    (posterior_sheet in prior_fit, ONE implementation); the validated
+    pricing estimator (rulings 29-33) is untouched for NHL/Liiga/Mestis
+    pricing + paper harness until multi-fold re-exams run under the
+    no-anchor config ("everywhere" upgrade = separate ruling after exams).
+    Manager correction on record (rule 42): the "preseason staleness bug"
+    claim was WRONG — decay runs to the coach's own latest chance, not
+    today; the anchor, not the clock, was Blomqvist's drag.
+
+44b. **SEASON WINDOW WITH JAN-1 BRIDGE (Seb, 2026-08-07, two amendments
+    same conversation).** (a) "Jan and March 2025 is not part of the
+    2025-2026 season": the sheet record is the NEWEST season's clean
+    chances only — older seasons are ZERO weight, career shown as
+    context, never blended. (b) "Last season keeps weight until at
+    least January 1st": at season rollover the previous season's
+    chances stay in the record until Jan 1 of the new season, then drop.
+    Today (post-Jan-1 of 25-26): 25-26 only. Effect: Blomqvist 47% ->
+    81% (2/2 this season; career 2/6 context), Hedberg 65%, everyone
+    without a season pull sub-40 NO-BET on their own record. Sheet adds
+    a "This season" column. RISKY keyed on season chances (<3).
+    Implementation: posterior_sheet(window_season) in prior_fit — ONE
+    implementation; pricing estimator still untouched (ruling 44 scope).

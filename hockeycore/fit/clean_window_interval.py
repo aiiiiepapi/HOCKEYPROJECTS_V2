@@ -161,8 +161,10 @@ def build(league, rows_file, skip_seasons=()):
             t["taken"] += int(cr["taken"])
             t["seq"].append((cr["date"], int(cr["taken"])))
 
-    from hockeycore.fit.prior_fit import fit_prior
+    from hockeycore.fit.prior_fit import fit_prior, posterior_sheet, _season_year
     a, b, mu, strength = fit_prior([t["seq"] for t in coach.values()])
+    league_asof = max((cr["date"] for cr in out_rows), default=None)
+    league_season = max((_season_year(cr["date"]) for cr in out_rows), default=None)
 
     profiles = []
     for name, t in coach.items():
@@ -176,8 +178,18 @@ def build(league, rows_file, skip_seasons=()):
             flags.append("RISKY: <5 clean chances")
         if t["chances"] >= 4 and t["taken"] == 0 and t["pp_pulls"] >= 2:
             flags.append("PP-only puller")
+        sp, slo, shi, sn = posterior_sheet(seq, asof=league_asof,
+                                           window_season=league_season)
+        _cut = f"{league_season + 1}-01-01" if league_season is not None else ""
+        _bridge = league_season is not None and (league_asof or "9999")[:10] < _cut
+        win = [(d, t) for d, t in seq if league_season is not None
+               and (_season_year(d) == league_season
+                    or (_bridge and _season_year(d) == league_season - 1))]
         profiles.append({
             "coach": name, "team": t["team"], "last_seen": t["last_seen"],
+            "sheet_pct": round(sp, 4) if sp is not None else None,
+            "sheet_band": [round(slo, 3), round(shi, 3)] if sp is not None else None,
+            "window_taken": sum(t for _, t in win), "window_chances": len(win),
             "clear_chances": t["chances"], "clear_taken": t["taken"],
             "pp_pulls": t["pp_pulls"], "instances": t["instances"],
             "expected_pull_pct": round(m, 4),
