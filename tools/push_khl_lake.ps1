@@ -1,13 +1,10 @@
-# KHL lake push — paste-block PowerShell (2026-08-05)
+# KHL lake push - paste-block PowerShell (2026-08-05, ASCII-only for
+# Windows PowerShell 5.1 ANSI parsing; ${} for variable-colon strings).
 # Publishes C:\dev\khl_lake\khl\<year>\ to the V2 repo orphan branch
-# `khl-data-lake` (lake-on-V2 convention), ONE COMMIT + PUSH PER SEASON so
-# each push stays small. Verbatim-safe: core.autocrlf=false + .gitattributes
-# `-text` BEFORE any add (the 2026-08-05 transfer-alteration lesson).
-# Run AFTER tools/verify_khl_lake.py reports OVERALL: PASS on the lake root:
-#   python C:\dev\HOCKEYPROJECTS_V2_scrape\tools\verify_khl_lake.py --lake C:\dev\khl_lake --write-completeness
-#   & C:\dev\HOCKEYPROJECTS_V2_scrape\tools\push_khl_lake.ps1
-# Safe to re-run: existing branch is reused, already-committed seasons are
-# detected by directory presence and skipped.
+# `khl-data-lake`, ONE COMMIT + PUSH PER SEASON. Verbatim-safe:
+# core.autocrlf=false + .gitattributes `-text` BEFORE any add.
+# Run AFTER verify_khl_lake.py reports OVERALL: PASS.
+# Safe to re-run: existing branch reused, committed seasons skipped.
 
 $ErrorActionPreference = 'Stop'
 $lakeSrc  = 'C:\dev\khl_lake\khl'
@@ -25,7 +22,7 @@ if (-not (Test-Path (Join-Path $lakeRepo '.git'))) {
   Set-Location $lakeRepo
   git remote add origin $repoUrl
   git config core.autocrlf false
-  git fetch origin $branch 2>$null
+  git fetch origin ${branch} 2>$null
   if ($LASTEXITCODE -eq 0) {
     git checkout -b $branch "origin/$branch"
   } else {
@@ -34,7 +31,7 @@ if (-not (Test-Path (Join-Path $lakeRepo '.git'))) {
 } else {
   Set-Location $lakeRepo
   git config core.autocrlf false
-  git fetch origin $branch 2>$null
+  git fetch origin ${branch} 2>$null
   git checkout $branch
 }
 
@@ -53,12 +50,12 @@ foreach ($year in 2023, 2024, 2025, 2026) {
   $dst = "khl\$year"
   if (-not (Test-Path $src)) { Write-Host "skip $year (not fetched)"; continue }
   if (Test-Path $dst) { Write-Host "skip $year (already in branch)"; continue }
-  Write-Host "== season $year: copying + committing (this is ~1 GB, be patient)"
+  Write-Host "== season ${year}: copying + committing (about 1 GB, be patient)"
   Copy-Item -Recurse $src $dst
   git add $dst
-  git commit -m "KHL lake season $year-ending: raw text+protocol per game, calendar authority, manifest (fetched on Seb's PC)"
+  git commit -m "KHL lake season ${year}-ending: raw text+protocol per game, calendar authority, manifest (fetched on Seb's PC)"
   git push -u origin $branch
-  if ($LASTEXITCODE -ne 0) { Write-Host "PUSH FAILED for $year — STOP, report to session"; exit 1 }
+  if ($LASTEXITCODE -ne 0) { Write-Host "PUSH FAILED for ${year} - STOP, report to session"; exit 1 }
 }
 
 # lake-root completeness file last
@@ -68,4 +65,5 @@ if (-not (Test-Path 'khl\COMPLETENESS.md')) {
   git commit -m 'KHL lake: completeness report (verify_khl_lake.py)'
   git push -u origin $branch
 }
-Write-Host "`nDONE. Tell the KHL session the lake is pushed."
+Write-Host ''
+Write-Host 'DONE. Tell the KHL session the lake is pushed.'
