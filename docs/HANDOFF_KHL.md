@@ -1,80 +1,107 @@
-# KHL scrape session — handoff (living doc, updated per working block)
+# KHL scrape session — HANDOFF to Manager (final, 2026-08-06)
 
-Session branch: **claude/khl-scrape-f5emx6** (the environment renamed the
-kickoff's `khl-scrape` at creation — Manager: treat this as the khl-scrape
-branch). Push capability CONFIRMED 2026-08-05 (empty commit + this block
-pushed via session GitHub App auth; no token involved).
+Session branch: **claude/khl-scrape-f5emx6** (environment renamed the
+kickoff's `khl-scrape` at creation). Lake branch: **khl-data-lake**
+(orphan, V2 repo, tip 4ed99df). Mission per docs/KICKOFF_KHL_SCRAPE.md:
+lake + research only — COMPLETE. No adapter/model/ledger work done, none
+attempted. My "done" below is a claim; Manager verifies per rule 0
+(tools/verify_khl_lake.py re-runs anywhere; independent re-derivation
+recommended as with Mestis).
 
-## State (2026-08-05, block 3 — DISCOVERY COMPLETE, fetcher shipped)
+## The lake
 
-- Probe round 2 analyzed (a7f7ce3; manifest re-hash 0/10 altered —
-  .gitattributes fix verified working). Capability bar FULLY MET on named
-  games in all 4 seasons — full table in docs/KHL_SOURCE.md: protocol
-  page carries goal times/strength/on-ice lists (EN via goalie absence)
-  + penalty table; text page carries pulls/returns/dp/coaches/EN-TOI.
-  Archive depth confirmed (2022-25 pages full weight, structured events).
-- Artifact set DECIDED: text + protocol (resume + EN mirror excluded, no
-  capability content). ~1.3 MB/game raw, ~4.0 GB total.
-- Lake plan PROPOSED: single orphan branch khl-data-lake, one commit+push
-  per season (<300 MB packed each); per-season sparse-checkout for cloud
-  verification; fallback per-season branches if size rejects.
-- tools/fetch_khl.py SHIPPED: stdlib-only, resume-safe, scoped-count gate
-  before fetch, truncation flags, per-season manifests. Awaiting smoke
-  run then full fetch (~2.5-3.5 h) on PC.
+| Season | tid | game ids | Games | Payloads | Bytes |
+|---|---|---|---|---|---|
+| 2022-23 | 1154 | 881261..882008 | 748 | 1,496 | 0.93 GB |
+| 2023-24 | 1217 | 885442..886223 | 782 | 1,564 | 1.04 GB |
+| 2024-25 | 1288 | 889850..890631 | 782 | 1,564 | 1.10 GB |
+| 2025-26 | 1369 | 897491..898238 | 748 | 1,496 | 1.07 GB |
 
-## State (2026-08-05, block 2 — probe round 1 analyzed)
+Total 3,060 regular-season games × 2 artifacts (`<gid>_text.html` +
+`<gid>_protocol.html`) + per-season `calendar_<tid>.html` (schedule
+authority) + `manifest.csv` (sha256/bytes/url/utc/flag per file) +
+lake-root `COMPLETENESS.md`. Fetched 2026-08-05/06 on Seb's PC
+(tools/fetch_khl.py, 0.7 s delay, ~57 min/season, ZERO fetch failures).
 
-- PC probe round 1 ran clean (commit 5f6b07b): khl.ru fully open from
-  residential, api.khl.ru dead (NXDOMAIN), webcaster = video platform.
-- **Schedule authority verified**: calendar/<tid>/00/ pages, scoped counts
-  exact (748/782/782/748 = 3,060 games, contiguous id blocks per season) —
-  full table + verbatim event vocabulary in docs/KHL_SOURCE.md.
-- **Capability wins (verified on 898094)**: explicit pull/return events
-  with game clock, penalty begin AND end events, explicit delayed-penalty
-  events, coaches + per-player empty-net TOI tables on the same page.
-- **Open risks**: goal lines carry NO times in the text channel (protocol
-  page = round-2 check); 2022-25 text-broadcast CONTENT unverified
-  (links exist for 100%); autocrlf ALTERED 2 round-1 files in transit
-  (.gitattributes -text added — lake branch must carry it too).
-- tools/probe2_khl.ps1 shipped — awaiting PC run.
+## Verification (both PASS, lake-level only)
 
-## State (2026-08-05, block 1)
+1. PC-side: verify_khl_lake.py, seed 20260805, 5 spots/season.
+2. Cloud-side ON THE PUSHED BRANCH (this session, seed 20260806, 8
+   spots/season, per-season sparse checkouts): scoped calendar id set ==
+   disk set both directions (0 missing / 0 stray), ALL 6,124 files
+   re-hashed against manifests (0 altered — transfer integrity through
+   PC->GitHub->cloud), 0 truncation flags, spot-opens confirm structured
+   broadcast events + coach blocks + protocol tables on real games.
+   Size distributions tight (texts 596K-1.15M, protos 470-570K — no
+   soft-404-sized outliers).
 
-- Required reading done. NOTE for Manager: `docs/MESTIS_SOURCE.md` does
-  NOT exist on master (kickoff points to it) — presumably it lives only on
-  the `mestis-scrape` branch; the ticker lesson was absorbed from
-  `docs/MESTIS_LAKE_VERIFICATION.md` + the SHL kickoff instead.
-- **Cloud session cannot fetch KHL at all**: shell proxy CONNECT-403s every
-  non-allowlisted host; WebFetch 403s all khl.ru hosts AND wikipedia/
-  archive.org, so the block is (at least partly) our egress policy —
-  geo-block vs bot-block vs proxy CANNOT be distinguished from here.
-  Full detail: docs/KHL_SOURCE.md reachability matrix. All fetching runs
-  on Seb's PC (standing convention; kickoff anticipated this).
-- Discovery via search (no fetched samples yet): season structure + all 4
-  regular-season tournament ids pinned (1154/1217/1288/1369 = 748/782/782/
-  748 games, **3,060 total** — above the kickoff's 650-750/season
-  estimate), khl.ru URL patterns (calendar/standings/game), text.khl.ru
-  format with a named 2025-26 sample (898094 Barys-Lada), platform-global
-  game-id hypothesis (id-range sweeps wrong; enumerate from calendar).
-- **tools/probe_khl.ps1 shipped** — paste-block for Seb: reachability
-  stage + verbatim named samples (4 calendars, text broadcast, game-page
-  guesses, mobile-API candidates) into tests/reference_raw/khl_probe/ with
-  a manifest, then commits+pushes this branch. AWAITING PC RUN.
-- Repo-size check (mandated): master pack ~3.4 MiB; decision rule for the
-  lake documented in KHL_SOURCE.md §Sizing (per-season branch split if
-  projected packed size >~1.5 GB; final numbers after probe measures real
-  bytes/game).
+## What the channels give (full detail + verbatim vocabulary: docs/KHL_SOURCE.md)
 
-## Open questions
+- **text channel**: explicit goalie pull/return events with game clock
+  (all 4 seasons, incl. multi-pull sequences and dp-driven pulls),
+  explicit delayed-penalty events, penalty END events ("играет в полном
+  составе"), coaches per game-side, per-player EN-TOI tables, ad-break/
+  icing/offside lines. Goal lines carry NO time here.
+- **protocol channel**: goals with period + cumulative clock + running
+  score + strength (рав/бол/мен/буллит) + on-ice jersey lists BOTH teams
+  (EN goals resolve via goalie absence), penalty table (time/player/min/
+  offense). Coaches NOT on this page.
 
-1. Seb: run tools/probe_khl.ps1 (paste-block also delivered in chat).
-2. If khl.ru blocks even residential — options to discuss: mobile-API
-   host (webcaster.pro may be served from EU CDN), or a VPN egress; NOT
-   proceeding without Seb's call (kickoff: unreachable everywhere = STOP).
-3. Lake branch layout (single vs per-season) — decision after probe sizes.
+## Quirks the adapter must handle (recorded, NOT fixed — lake is verbatim)
 
-## Not started (blocked on probe)
+1. Mixed clock semantics in text channel: play events = cumulative game
+   clock; period/game boundaries = WALL clock (MSK).
+2. Duplicate event lines exist (898094: same penalty twice at 51:57).
+3. Goalie mid-game substitution is its own text class ("Замена вратаря.
+   <Team>. <new> вместо <old>") — distinct from pulls, like Mestis vaihto.
+4. Free-text commentary mentions goalies constantly — every count must
+   scope to `div.textBroadcast-item` structured lines (ticker-lesson
+   analogue, proven: a page-wide grep showed "15 pulls" where 3 are real).
+5. Calendar pages embed a site-wide slider (other tournaments) + a
+   4-game adjacent-tournament widget — scope by tid, never page-wide.
+6. Season tid on the 2022-23 calendar URL is 1154 but a widget links tid
+   1145 games (adjacent stage) — the scoped sets are clean.
 
-Capability-table verification on named games, tools/fetch_khl.py against
-verified endpoints, schedule-authority reconciliation, lake fetch,
-tools/verify_khl_lake.py.
+## Environment/process notes for the Manager
+
+- The cloud egress fence blocks ALL khl hosts AND WebFetch generally;
+  every fetch ran on Seb's PC via paste-blocks (probe rounds 1-2, smoke,
+  full fetch, lake push). Scripts: tools/probe_khl.ps1, probe2_khl.ps1,
+  fetch_khl.py, verify_khl_lake.py, push_khl_lake.ps1.
+- khl.ru fronts a cookie-challenge bot layer (307 + Set-Cookie): python
+  urllib needs a CookieJar (fetch_khl.py has it); plain PowerShell IWR
+  passes natively.
+- **Transfer-alteration incident (resolved)**: Seb's git autocrlf ALTERED
+  2 probe files in transit before `.gitattributes -text` was added (repo
+  root, scrape branch; the lake branch got its own as its FIRST commit,
+  before any payload). Manifest re-hash after transfer caught it — keep
+  that gate standing for every future lake.
+- PS 5.1 lessons baked into the scripts: ASCII-only (em-dashes break ANSI
+  parsing), `${var}:` interpolation, ErrorActionPreference 'Continue' +
+  explicit $LASTEXITCODE asserts (git writes progress to stderr).
+- `C:\dev\HOCKEYPROJECTS_V2` on Seb's PC exists but is NOT a git repo
+  (contains only data/ + data_samples/) — the working clone is
+  **C:\dev\HOCKEYPROJECTS_V2_scrape**; local lake copies at
+  C:\dev\khl_lake (raw) and C:\dev\khl_lake_repo (push clone).
+
+## Open questions for Seb / Manager
+
+1. docs/MESTIS_SOURCE.md is referenced by the KHL kickoff but does not
+   exist on master (likely never merged from mestis-scrape). Cosmetic,
+   but the next kickoff template should point at files that exist.
+2. Market note stands (no icehockey_khl at the odds provider): lake
+   serves coach intel + model-side lines (ruling 5) — Seb ordered with
+   this heard, re-recorded here.
+3. Live-feed channel for the paper harness (online.khl.ru / webcaster
+   video API with khl_id linkage) was mapped but NOT built — September
+   shakedown scope, Manager's call.
+4. STATUS row in CLAUDE.md: Manager updates on merge (scrape session
+   does not touch master).
+
+## Superseded history (blocks 1-3, 2026-08-05)
+
+Earlier states of this doc tracked discovery in progress; the full
+discovery record (reachability matrix, candidate elimination, probe
+evidence, capability table with named games, sizing math) lives in
+docs/KHL_SOURCE.md and the probe raw files in tests/reference_raw/
+khl_probe*/ on this branch.

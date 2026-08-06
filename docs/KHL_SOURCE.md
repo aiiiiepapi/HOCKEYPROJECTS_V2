@@ -1,11 +1,13 @@
 # KHL data source discovery (khl-scrape session, started 2026-08-05)
 
-Status: **DISCOVERY COMPLETE — probe rounds 1+2 analyzed (28 raw files in
-tests/reference_raw/khl_probe*/; commits 5f6b07b, a7f7ce3). Capability bar
-fully met on named games in all 4 seasons. Fetcher shipped
-(tools/fetch_khl.py); awaiting smoke run + full fetch on PC.** Everything
-marked VERIFIED below is verified on the named fetched files, per rule 6 /
-ruling 42.
+Status: **LAKE SHIPPED & VERIFIED (2026-08-06)** — branch `khl-data-lake`
+tip 4ed99df: 3,060 games × (text+protocol), 4.14 GB payloads, fetched on
+Seb's PC (0 fails), verified twice: PC-side (seed 20260805) and
+cloud-side on the PUSHED content (seed 20260806, full re-hash all 6,124
+files, scoped reconciliation, 8 spot-opens/season — all PASS). Discovery
+record below; capability bar fully met on named games in all 4 seasons.
+Everything marked VERIFIED is verified on named fetched files, per rule 6
+/ ruling 42.
 
 ## Reachability (VERIFIED 2026-08-05)
 
