@@ -1,0 +1,8 @@
+{
+ "season_series_game_types.json": {
+  "bytes": 11397,
+  "fetched_utc": "2026-08-05T23:14:08Z",
+  "sha256": "a6c04b2d46c65c2536cd8538953b093b2c47b3b4f260f4ff6ffd9cfde930a7ab",
+  "url": "https://www.shl.se/api/sports-v2/season-series-game-types-filter"
+ }
+}

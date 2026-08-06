@@ -1,0 +1,4382 @@
+{
+ "2023/game_2023_628964_events.html": {
+  "bytes": 11984,
+  "fetched_utc": "2026-08-05T23:10:28Z",
+  "sha256": "b1ced28205cb9438f11073f7c5d83574ab481d2617a1ebed255dda029ffb07fb",
+  "url": "https://stats.swehockey.se/Game/Events/628964"
+ },
+ "2023/game_2023_628964_lineups.html": {
+  "bytes": 14947,
+  "fetched_utc": "2026-08-05T23:10:30Z",
+  "sha256": "956cd0cf5be90901d5cd2dc9396f123c207082daf090bd374368e38ce601ff83",
+  "url": "https://stats.swehockey.se/Game/LineUps/628964"
+ },
+ "2023/game_2023_628965_events.html": {
+  "bytes": 16069,
+  "fetched_utc": "2026-08-05T23:10:32Z",
+  "sha256": "00a255d2470c7c1cdf70a0c74124ae7b65e09f3e6613e93d18f0d54551c71a88",
+  "url": "https://stats.swehockey.se/Game/Events/628965"
+ },
+ "2023/game_2023_628965_lineups.html": {
+  "bytes": 14829,
+  "fetched_utc": "2026-08-05T23:10:34Z",
+  "sha256": "104426c1570e8bf6522a22929e23677ffa71dc2eae28be2a9cb8f7996ed470d4",
+  "url": "https://stats.swehockey.se/Game/LineUps/628965"
+ },
+ "2023/game_2023_628966_events.html": {
+  "bytes": 13494,
+  "fetched_utc": "2026-08-05T23:10:37Z",
+  "sha256": "57012fcfde06774fa8e1235cb742c0ee64f6593ae08217aa87e316f81a775d2c",
+  "url": "https://stats.swehockey.se/Game/Events/628966"
+ },
+ "2023/game_2023_628966_lineups.html": {
+  "bytes": 14675,
+  "fetched_utc": "2026-08-05T23:10:38Z",
+  "sha256": "1ec0a2340bbe4173f8aeb74f504ffaa0a64111c2e6562210158e15e6f3e68aa0",
+  "url": "https://stats.swehockey.se/Game/LineUps/628966"
+ },
+ "2023/game_2023_628967_events.html": {
+  "bytes": 15138,
+  "fetched_utc": "2026-08-05T23:10:41Z",
+  "sha256": "ac6e92cc40c4edf57a6d087e8979645f1325651f0c6a13c849dc0ae05677baf1",
+  "url": "https://stats.swehockey.se/Game/Events/628967"
+ },
+ "2023/game_2023_628967_lineups.html": {
+  "bytes": 15029,
+  "fetched_utc": "2026-08-05T23:10:42Z",
+  "sha256": "d80afe7941c98ef68c0c222128aaa9a8f8be254c5ece6481b2bd98b37e412350",
+  "url": "https://stats.swehockey.se/Game/LineUps/628967"
+ },
+ "2023/game_2023_628968_events.html": {
+  "bytes": 20322,
+  "fetched_utc": "2026-08-05T23:10:16Z",
+  "sha256": "baa67295a7a02f63901caec94fc722526a80863b56d34f2e594b7aa28ce5a7b6",
+  "url": "https://stats.swehockey.se/Game/Events/628968"
+ },
+ "2023/game_2023_628968_lineups.html": {
+  "bytes": 14996,
+  "fetched_utc": "2026-08-05T23:10:17Z",
+  "sha256": "2d766e4444ce96971482ea37fe58c373ec0e1e096ae82f04a84ac7aa76aebd06",
+  "url": "https://stats.swehockey.se/Game/LineUps/628968"
+ },
+ "2023/game_2023_628969_events.html": {
+  "bytes": 18219,
+  "fetched_utc": "2026-08-05T23:10:20Z",
+  "sha256": "f72cad33d3a10d27281ef056c93b47f1b1b855e06af5c6d199bbce3e0c990440",
+  "url": "https://stats.swehockey.se/Game/Events/628969"
+ },
+ "2023/game_2023_628969_lineups.html": {
+  "bytes": 14468,
+  "fetched_utc": "2026-08-05T23:10:21Z",
+  "sha256": "dcbe523f8a0f242a158030016ff153845f2ec4d6760709023466fe45960e460d",
+  "url": "https://stats.swehockey.se/Game/LineUps/628969"
+ },
+ "2023/game_2023_628970_events.html": {
+  "bytes": 18846,
+  "fetched_utc": "2026-08-05T23:10:24Z",
+  "sha256": "a9a936f8753390c082fa448172d2d01d3693ab8ebea8307cc80de89354d45093",
+  "url": "https://stats.swehockey.se/Game/Events/628970"
+ },
+ "2023/game_2023_628970_lineups.html": {
+  "bytes": 14940,
+  "fetched_utc": "2026-08-05T23:10:25Z",
+  "sha256": "513a3f774b470886acd770e067c06a2a250e78c272c671c425131d056f024ddc",
+  "url": "https://stats.swehockey.se/Game/LineUps/628970"
+ },
+ "2023/game_2023_628971_events.html": {
+  "bytes": 15780,
+  "fetched_utc": "2026-08-05T23:10:49Z",
+  "sha256": "d3d7572e41736bad21443255f8352a5bff790ccf03de6631cb5ecc0439c3135c",
+  "url": "https://stats.swehockey.se/Game/Events/628971"
+ },
+ "2023/game_2023_628971_lineups.html": {
+  "bytes": 14928,
+  "fetched_utc": "2026-08-05T23:10:50Z",
+  "sha256": "26a520526298505f3d41e694696ee57acb24491560dba7a4f6c791530526de79",
+  "url": "https://stats.swehockey.se/Game/LineUps/628971"
+ },
+ "2023/game_2023_628972_events.html": {
+  "bytes": 14114,
+  "fetched_utc": "2026-08-05T23:10:53Z",
+  "sha256": "ddf8b2dd3891db99e9c9748547bb7b62612d2277ea5d312ef9b6a822a82ff198",
+  "url": "https://stats.swehockey.se/Game/Events/628972"
+ },
+ "2023/game_2023_628972_lineups.html": {
+  "bytes": 14958,
+  "fetched_utc": "2026-08-05T23:10:54Z",
+  "sha256": "c3a72fd46d50cd41bd62734d021c3daeb1113ab3f673aa866290fcd6a6f3ce55",
+  "url": "https://stats.swehockey.se/Game/LineUps/628972"
+ },
+ "2023/game_2023_628973_events.html": {
+  "bytes": 10219,
+  "fetched_utc": "2026-08-05T23:10:58Z",
+  "sha256": "3656776b4aee7e5245506357521267b8a43121e688fe46cf218375ac382970e2",
+  "url": "https://stats.swehockey.se/Game/Events/628973"
+ },
+ "2023/game_2023_628973_lineups.html": {
+  "bytes": 14685,
+  "fetched_utc": "2026-08-05T23:10:59Z",
+  "sha256": "0b83914cb994d8aa4864e881c55d16394a1246d2444dab27f94117d4e5342863",
+  "url": "https://stats.swehockey.se/Game/LineUps/628973"
+ },
+ "2023/game_2023_628974_events.html": {
+  "bytes": 15640,
+  "fetched_utc": "2026-08-05T23:11:02Z",
+  "sha256": "3baa2ca7a7f4970a4e688e2a81f9571a0762651859311314848a6bb058bd3563",
+  "url": "https://stats.swehockey.se/Game/Events/628974"
+ },
+ "2023/game_2023_628974_lineups.html": {
+  "bytes": 14699,
+  "fetched_utc": "2026-08-05T23:11:03Z",
+  "sha256": "1755a9bbbff223de3170487b054bf643b2f801146d5f97f4be58d7daefc45488",
+  "url": "https://stats.swehockey.se/Game/LineUps/628974"
+ },
+ "2023/game_2023_628975_events.html": {
+  "bytes": 10371,
+  "fetched_utc": "2026-08-05T23:11:06Z",
+  "sha256": "77381457a499de7412757c052dd94230f4067d7886ebc491f81003781a99c5e3",
+  "url": "https://stats.swehockey.se/Game/Events/628975"
+ },
+ "2023/game_2023_628975_lineups.html": {
+  "bytes": 14965,
+  "fetched_utc": "2026-08-05T23:11:07Z",
+  "sha256": "32ebbf144b79fd33b77c3082aa59e75886c7fa4fc70a4d1dbe2ba74f24397eda",
+  "url": "https://stats.swehockey.se/Game/LineUps/628975"
+ },
+ "2023/game_2023_628976_events.html": {
+  "bytes": 15863,
+  "fetched_utc": "2026-08-05T23:11:10Z",
+  "sha256": "aad0db08d1388ffe8f5bee5a34a98411a8d5d2520c06cf618f8d110a7f9492f5",
+  "url": "https://stats.swehockey.se/Game/Events/628976"
+ },
+ "2023/game_2023_628976_lineups.html": {
+  "bytes": 15011,
+  "fetched_utc": "2026-08-05T23:11:11Z",
+  "sha256": "5171d346689ff10edb1ee1e0707d433de50b23773099bd75099af5860ec63712",
+  "url": "https://stats.swehockey.se/Game/LineUps/628976"
+ },
+ "2023/game_2023_628977_events.html": {
+  "bytes": 19130,
+  "fetched_utc": "2026-08-05T23:11:14Z",
+  "sha256": "434a5703639134838829a03af46213feffab0deba3a52a8d0c4e766d516a7a92",
+  "url": "https://stats.swehockey.se/Game/Events/628977"
+ },
+ "2023/game_2023_628977_lineups.html": {
+  "bytes": 15024,
+  "fetched_utc": "2026-08-05T23:11:15Z",
+  "sha256": "5fe4a78ef186604986500f5efc06f11554aee8c6a46ce39f1138504294b0e935",
+  "url": "https://stats.swehockey.se/Game/LineUps/628977"
+ },
+ "2023/game_2023_628978_events.html": {
+  "bytes": 16706,
+  "fetched_utc": "2026-08-05T23:11:35Z",
+  "sha256": "3339492ae4911b40791d6be4700f80b4d5567050b4bd06d407ccd17e6024a938",
+  "url": "https://stats.swehockey.se/Game/Events/628978"
+ },
+ "2023/game_2023_628978_lineups.html": {
+  "bytes": 15027,
+  "fetched_utc": "2026-08-05T23:11:37Z",
+  "sha256": "28ffcd63622a40c972698638ef3f8a8fdbed1413c2c57664d1e651f969fc74b7",
+  "url": "https://stats.swehockey.se/Game/LineUps/628978"
+ },
+ "2023/game_2023_628979_events.html": {
+  "bytes": 18082,
+  "fetched_utc": "2026-08-05T23:11:18Z",
+  "sha256": "1f33709b571ebc45427c7476b9e87e063dc35894e5529419cb878b2b01cd6fc4",
+  "url": "https://stats.swehockey.se/Game/Events/628979"
+ },
+ "2023/game_2023_628979_lineups.html": {
+  "bytes": 14958,
+  "fetched_utc": "2026-08-05T23:11:20Z",
+  "sha256": "a74bc13bbe6c0a64c01c7c48b2e16989bd54c9ae15b7f238c63576e4168b26ef",
+  "url": "https://stats.swehockey.se/Game/LineUps/628979"
+ },
+ "2023/game_2023_628980_events.html": {
+  "bytes": 15993,
+  "fetched_utc": "2026-08-05T23:11:23Z",
+  "sha256": "a6561cdadac2c4026acfd4cc13bc300fe158aace7ccabec5bdba8527d1734399",
+  "url": "https://stats.swehockey.se/Game/Events/628980"
+ },
+ "2023/game_2023_628980_lineups.html": {
+  "bytes": 15019,
+  "fetched_utc": "2026-08-05T23:11:24Z",
+  "sha256": "05eaa695a759aa55366efa868cf840d76aefcb518b1f21ee5706ea6a4ee3d28b",
+  "url": "https://stats.swehockey.se/Game/LineUps/628980"
+ },
+ "2023/game_2023_628981_events.html": {
+  "bytes": 13718,
+  "fetched_utc": "2026-08-05T23:11:44Z",
+  "sha256": "c9e6ace2c32fa8ae9ff6fcec9e0f72c61935a15d7197e87500833fd1671a2168",
+  "url": "https://stats.swehockey.se/Game/Events/628981"
+ },
+ "2023/game_2023_628981_lineups.html": {
+  "bytes": 14677,
+  "fetched_utc": "2026-08-05T23:11:45Z",
+  "sha256": "81a00c22ffe0525f82908546f4c28c7b0ac48bf32a0d31d8db69e17de0602016",
+  "url": "https://stats.swehockey.se/Game/LineUps/628981"
+ },
+ "2023/game_2023_628982_events.html": {
+  "bytes": 20465,
+  "fetched_utc": "2026-08-05T23:11:27Z",
+  "sha256": "14c339e36b86ca4eefb173ba02c407cc7d8849493e922e15c4c54796fc2a9695",
+  "url": "https://stats.swehockey.se/Game/Events/628982"
+ },
+ "2023/game_2023_628982_lineups.html": {
+  "bytes": 14975,
+  "fetched_utc": "2026-08-05T23:11:28Z",
+  "sha256": "b1d0e455d9b5a070b839638730b8e6db5e14829d17c7b910a8684c35f26d1228",
+  "url": "https://stats.swehockey.se/Game/LineUps/628982"
+ },
+ "2023/game_2023_628983_events.html": {
+  "bytes": 13583,
+  "fetched_utc": "2026-08-05T23:11:40Z",
+  "sha256": "f1ad03ddd5f1960bbf78ad4e73d2990ccaa9d7444a26751f4a947946bb6804fa",
+  "url": "https://stats.swehockey.se/Game/Events/628983"
+ },
+ "2023/game_2023_628983_lineups.html": {
+  "bytes": 14446,
+  "fetched_utc": "2026-08-05T23:11:41Z",
+  "sha256": "912102ec2382e745d02c3a67c66a24707a3117ce9906f181bee9ddb6ec6f4920",
+  "url": "https://stats.swehockey.se/Game/LineUps/628983"
+ },
+ "2023/game_2023_628984_events.html": {
+  "bytes": 12540,
+  "fetched_utc": "2026-08-05T23:11:31Z",
+  "sha256": "59f674e5cf0569e4d3633579ab4b1cc0f8c93fef5ca231ad508e02d27d479f80",
+  "url": "https://stats.swehockey.se/Game/Events/628984"
+ },
+ "2023/game_2023_628984_lineups.html": {
+  "bytes": 14958,
+  "fetched_utc": "2026-08-05T23:11:32Z",
+  "sha256": "a13aac474a7ce52c4ab1ad524030cfcd7bbafa362a0c8088e69628cfcd72d675",
+  "url": "https://stats.swehockey.se/Game/LineUps/628984"
+ },
+ "2023/game_2023_628985_events.html": {
+  "bytes": 16098,
+  "fetched_utc": "2026-08-05T23:14:32Z",
+  "sha256": "51d2e9aaad7a4297f6d172633e302663248a798eafdca1847113c6e250e2e93a",
+  "url": "https://stats.swehockey.se/Game/Events/628985"
+ },
+ "2023/game_2023_628985_lineups.html": {
+  "bytes": 14949,
+  "fetched_utc": "2026-08-05T23:14:33Z",
+  "sha256": "dc372d1aadc067fbfd1a70ac533af41d2880f30d1db19ee75ccb5218cae0fa71",
+  "url": "https://stats.swehockey.se/Game/LineUps/628985"
+ },
+ "2023/game_2023_628986_events.html": {
+  "bytes": 17791,
+  "fetched_utc": "2026-08-05T23:14:34Z",
+  "sha256": "c6e8dfb9f8976abb6ea252641aa3ad8d62e28fe7fd6c04bfb1f08faffb8d3412",
+  "url": "https://stats.swehockey.se/Game/Events/628986"
+ },
+ "2023/game_2023_628986_lineups.html": {
+  "bytes": 15085,
+  "fetched_utc": "2026-08-05T23:14:35Z",
+  "sha256": "19afd79a62ed0d92ce4cefd788766051a5d5a628f9aab217e89e937e37da565a",
+  "url": "https://stats.swehockey.se/Game/LineUps/628986"
+ },
+ "2023/game_2023_628987_events.html": {
+  "bytes": 20242,
+  "fetched_utc": "2026-08-05T23:14:37Z",
+  "sha256": "56a3f7eadee5bdc5abe76174b6eb0ec602476a897ae52c8e331cc75b0deb9b63",
+  "url": "https://stats.swehockey.se/Game/Events/628987"
+ },
+ "2023/game_2023_628987_lineups.html": {
+  "bytes": 14960,
+  "fetched_utc": "2026-08-05T23:14:38Z",
+  "sha256": "19d4ad22a5085b1424964584fdaa29fe1913672313c0b75b75dc0865f54438d5",
+  "url": "https://stats.swehockey.se/Game/LineUps/628987"
+ },
+ "2023/game_2023_628988_events.html": {
+  "bytes": 12046,
+  "fetched_utc": "2026-08-05T23:14:39Z",
+  "sha256": "73d6b9088d47f52123b664a2dda1826479eb57297c88fdd5e37893755362ff97",
+  "url": "https://stats.swehockey.se/Game/Events/628988"
+ },
+ "2023/game_2023_628988_lineups.html": {
+  "bytes": 14947,
+  "fetched_utc": "2026-08-05T23:14:40Z",
+  "sha256": "e07c8e08116a84498fbef300ca7ce154e6d876526c16632853085c31ec27e7c9",
+  "url": "https://stats.swehockey.se/Game/LineUps/628988"
+ },
+ "2023/game_2023_628989_events.html": {
+  "bytes": 19240,
+  "fetched_utc": "2026-08-05T23:14:41Z",
+  "sha256": "24ae3b5717d744821915556daace4d129bb1d8dd78dee5bbac50a2d4458e03d4",
+  "url": "https://stats.swehockey.se/Game/Events/628989"
+ },
+ "2023/game_2023_628989_lineups.html": {
+  "bytes": 14740,
+  "fetched_utc": "2026-08-05T23:14:42Z",
+  "sha256": "86eb1752cc774542d96dbc4af3f95ef3787562f14d31d887d23b65ba1e6e68de",
+  "url": "https://stats.swehockey.se/Game/LineUps/628989"
+ },
+ "2023/game_2023_628990_events.html": {
+  "bytes": 13570,
+  "fetched_utc": "2026-08-05T23:14:43Z",
+  "sha256": "2afae492f49d8e5e44f122b1a659707cff7c8e4d7ee667a6d29254d293bdd944",
+  "url": "https://stats.swehockey.se/Game/Events/628990"
+ },
+ "2023/game_2023_628990_lineups.html": {
+  "bytes": 14690,
+  "fetched_utc": "2026-08-05T23:14:45Z",
+  "sha256": "bd230c21695634fd16fb90591075dc3174c6a3ff591616e3d961704e42dd0b6b",
+  "url": "https://stats.swehockey.se/Game/LineUps/628990"
+ },
+ "2023/game_2023_628991_events.html": {
+  "bytes": 11613,
+  "fetched_utc": "2026-08-05T23:14:46Z",
+  "sha256": "a9087e5f8c3a4cbd18b8395171cce249ba80c6283311b1fce8ccfc405cbe2aa9",
+  "url": "https://stats.swehockey.se/Game/Events/628991"
+ },
+ "2023/game_2023_628991_lineups.html": {
+  "bytes": 14973,
+  "fetched_utc": "2026-08-05T23:14:47Z",
+  "sha256": "0d3ee0dc71fc0bde6bb2b0ccb5bda1afaa5b71d603c10b11ed610c1896132a3e",
+  "url": "https://stats.swehockey.se/Game/LineUps/628991"
+ },
+ "2023/game_2023_628992_events.html": {
+  "bytes": 12544,
+  "fetched_utc": "2026-08-05T23:14:48Z",
+  "sha256": "064b414249dcb453c330ebbeecee871913af0b542b81a9295bed5d226d91fc2b",
+  "url": "https://stats.swehockey.se/Game/Events/628992"
+ },
+ "2023/game_2023_628992_lineups.html": {
+  "bytes": 14703,
+  "fetched_utc": "2026-08-05T23:14:49Z",
+  "sha256": "37fc347ae25e1a89bf35bb7d90c2676a06d001033176c347ebc7fccaded70175",
+  "url": "https://stats.swehockey.se/Game/LineUps/628992"
+ },
+ "2023/game_2023_628993_events.html": {
+  "bytes": 16297,
+  "fetched_utc": "2026-08-05T23:14:50Z",
+  "sha256": "0f4c01eb43f42a7f7779644867dd9a9b6807d18aac096df5ab0996590aacfb51",
+  "url": "https://stats.swehockey.se/Game/Events/628993"
+ },
+ "2023/game_2023_628993_lineups.html": {
+  "bytes": 14697,
+  "fetched_utc": "2026-08-05T23:14:52Z",
+  "sha256": "0f3ac3949b4ee7dcc16ac6976cdeefe3bed1e3375936f76fd48087327ec55add",
+  "url": "https://stats.swehockey.se/Game/LineUps/628993"
+ },
+ "2023/game_2023_628994_events.html": {
+  "bytes": 18402,
+  "fetched_utc": "2026-08-05T23:14:55Z",
+  "sha256": "71822a5b782076551f465866b995ffc8cd71b6093795883fe60b52fe919b22f9",
+  "url": "https://stats.swehockey.se/Game/Events/628994"
+ },
+ "2023/game_2023_628994_lineups.html": {
+  "bytes": 14803,
+  "fetched_utc": "2026-08-05T23:14:56Z",
+  "sha256": "ab898bb940e031c1f9e25176bbaf72585eb680e8504da04d9798da3e5cbd053a",
+  "url": "https://stats.swehockey.se/Game/LineUps/628994"
+ },
+ "2023/game_2023_628995_events.html": {
+  "bytes": 18913,
+  "fetched_utc": "2026-08-05T23:14:53Z",
+  "sha256": "54a4c257f0bf9442c4ffe78503cc79bbe3b781d3340a09da4a7c837c96855165",
+  "url": "https://stats.swehockey.se/Game/Events/628995"
+ },
+ "2023/game_2023_628995_lineups.html": {
+  "bytes": 14958,
+  "fetched_utc": "2026-08-05T23:14:54Z",
+  "sha256": "0b6b4c05de7b44d508583e8e17f05cc8b03e5dd427078987102dd40413f48dc6",
+  "url": "https://stats.swehockey.se/Game/LineUps/628995"
+ },
+ "2023/game_2023_628996_events.html": {
+  "bytes": 15998,
+  "fetched_utc": "2026-08-05T23:14:57Z",
+  "sha256": "189c6db57497602b161cb2d1d4269d1698532c9aaec4c4e862c7a055450fc644",
+  "url": "https://stats.swehockey.se/Game/Events/628996"
+ },
+ "2023/game_2023_628996_lineups.html": {
+  "bytes": 14678,
+  "fetched_utc": "2026-08-05T23:14:59Z",
+  "sha256": "d32045761662dcbc77400ba5c3082c325da560e66a93f65efa337035f6adc073",
+  "url": "https://stats.swehockey.se/Game/LineUps/628996"
+ },
+ "2023/game_2023_628997_events.html": {
+  "bytes": 20537,
+  "fetched_utc": "2026-08-05T23:15:00Z",
+  "sha256": "a6575faaecaec3f1ee68c86b5e4f77d4f96e0094fa6e6bff85014de4e31890f1",
+  "url": "https://stats.swehockey.se/Game/Events/628997"
+ },
+ "2023/game_2023_628997_lineups.html": {
+  "bytes": 14958,
+  "fetched_utc": "2026-08-05T23:15:01Z",
+  "sha256": "f50d6d9d215feaf8d082c4a00a7146e4ba944bca6eccc5fe15a4b512998a20bd",
+  "url": "https://stats.swehockey.se/Game/LineUps/628997"
+ },
+ "2023/game_2023_628998_events.html": {
+  "bytes": 23498,
+  "fetched_utc": "2026-08-05T23:15:02Z",
+  "sha256": "308368d4fc354042bbc1c08addc008375350bfcdcaff80ba3df1a030d33d9e81",
+  "url": "https://stats.swehockey.se/Game/Events/628998"
+ },
+ "2023/game_2023_628998_lineups.html": {
+  "bytes": 15002,
+  "fetched_utc": "2026-08-05T23:15:03Z",
+  "sha256": "e42f9b8bcaee2a211b22ea96fc9cbc64f75299fea27efa6ba80fefc21f7739c5",
+  "url": "https://stats.swehockey.se/Game/LineUps/628998"
+ },
+ "2023/game_2023_628999_events.html": {
+  "bytes": 17007,
+  "fetched_utc": "2026-08-05T23:15:05Z",
+  "sha256": "a1249429b2fac1e65c0d5d0ec50b88f06d46deb2627785281b233bfd9f6b4911",
+  "url": "https://stats.swehockey.se/Game/Events/628999"
+ },
+ "2023/game_2023_628999_lineups.html": {
+  "bytes": 15052,
+  "fetched_utc": "2026-08-05T23:15:06Z",
+  "sha256": "498a59aae69829c34cd8e54f30b4ca14aad640b97f1c2d4c5856830f42412771",
+  "url": "https://stats.swehockey.se/Game/LineUps/628999"
+ },
+ "2023/game_2023_629000_events.html": {
+  "bytes": 16622,
+  "fetched_utc": "2026-08-05T23:15:07Z",
+  "sha256": "3a503451d252f6371005acdfba3d616182d3744394b8cbd5cecbaa8339feacad",
+  "url": "https://stats.swehockey.se/Game/Events/629000"
+ },
+ "2023/game_2023_629000_lineups.html": {
+  "bytes": 14925,
+  "fetched_utc": "2026-08-05T23:15:08Z",
+  "sha256": "1821b2b43427a52f6a22cdc5ba6dd19ab2d16376dd84338dfeed28658783e072",
+  "url": "https://stats.swehockey.se/Game/LineUps/629000"
+ },
+ "2023/game_2023_629001_events.html": {
+  "bytes": 17592,
+  "fetched_utc": "2026-08-05T23:15:09Z",
+  "sha256": "fb8cc50389ffc94c94ff7fcca2e6a4c37e9e8d0c4f2101dc40acfe872b5905ac",
+  "url": "https://stats.swehockey.se/Game/Events/629001"
+ },
+ "2023/game_2023_629001_lineups.html": {
+  "bytes": 14928,
+  "fetched_utc": "2026-08-05T23:15:10Z",
+  "sha256": "6ad9aee939defb4b7e7477ccb7418e48bb25ce3cc9fa9af287d6599d7f76c873",
+  "url": "https://stats.swehockey.se/Game/LineUps/629001"
+ },
+ "2023/game_2023_629002_events.html": {
+  "bytes": 12610,
+  "fetched_utc": "2026-08-05T23:15:11Z",
+  "sha256": "618a81ab44fa45781993b3f9f8a935aac8682446907280ca9543d0e09c7c086f",
+  "url": "https://stats.swehockey.se/Game/Events/629002"
+ },
+ "2023/game_2023_629002_lineups.html": {
+  "bytes": 14998,
+  "fetched_utc": "2026-08-05T23:15:12Z",
+  "sha256": "6ee3b134139879f0f67ddeb8441bda72a1767a892deaa7c87c53e990b5a8f910",
+  "url": "https://stats.swehockey.se/Game/LineUps/629002"
+ },
+ "2023/game_2023_629003_events.html": {
+  "bytes": 15404,
+  "fetched_utc": "2026-08-05T23:15:14Z",
+  "sha256": "25751b3b19b149b36ae52a013e41567752d83efba649d4b10a8cb97c1af8bd06",
+  "url": "https://stats.swehockey.se/Game/Events/629003"
+ },
+ "2023/game_2023_629003_lineups.html": {
+  "bytes": 15025,
+  "fetched_utc": "2026-08-05T23:15:15Z",
+  "sha256": "34e7933eb852b10b13d344641c64fd6c0acabcae45cc38f7c14cc636d5edf7b5",
+  "url": "https://stats.swehockey.se/Game/LineUps/629003"
+ },
+ "2023/game_2023_629004_events.html": {
+  "bytes": 12751,
+  "fetched_utc": "2026-08-05T23:15:16Z",
+  "sha256": "5c940b58edec3a9cffeb952759c2638971c39f12b2fb0a86ad51246a9b1d27b9",
+  "url": "https://stats.swehockey.se/Game/Events/629004"
+ },
+ "2023/game_2023_629004_lineups.html": {
+  "bytes": 14944,
+  "fetched_utc": "2026-08-05T23:15:17Z",
+  "sha256": "7896dd1e525cbbc213785b390eb6bb3065e99f6ac59edeff8c0c15ec42d5ba1b",
+  "url": "https://stats.swehockey.se/Game/LineUps/629004"
+ },
+ "2023/game_2023_629005_events.html": {
+  "bytes": 14517,
+  "fetched_utc": "2026-08-05T23:15:18Z",
+  "sha256": "d96d29b44026df26414d9b6da0251ad6469551127eeaa3fe5b8bfe93e65cfbd6",
+  "url": "https://stats.swehockey.se/Game/Events/629005"
+ },
+ "2023/game_2023_629005_lineups.html": {
+  "bytes": 14997,
+  "fetched_utc": "2026-08-05T23:15:19Z",
+  "sha256": "315300087e081e53b2bd29a83547e2c602572e8570a419d7ebb9674f62a7691c",
+  "url": "https://stats.swehockey.se/Game/LineUps/629005"
+ },
+ "2023/game_2023_629006_events.html": {
+  "bytes": 16599,
+  "fetched_utc": "2026-08-05T23:15:20Z",
+  "sha256": "53e6c01bc907a592c548aef1f1e1593ca4547fa31db3d9f0739be2d123475e87",
+  "url": "https://stats.swehockey.se/Game/Events/629006"
+ },
+ "2023/game_2023_629006_lineups.html": {
+  "bytes": 14861,
+  "fetched_utc": "2026-08-05T23:15:22Z",
+  "sha256": "112a05957064926cc840a6620e933ea1b76a2900c759c4d2fd8ce829aaecaa5f",
+  "url": "https://stats.swehockey.se/Game/LineUps/629006"
+ },
+ "2023/game_2023_629007_events.html": {
+  "bytes": 13387,
+  "fetched_utc": "2026-08-05T23:15:30Z",
+  "sha256": "d34e6309bdc6e1f19b9edfd65886d84a4a61998b02387a75e7c1cb40b7474229",
+  "url": "https://stats.swehockey.se/Game/Events/629007"
+ },
+ "2023/game_2023_629007_lineups.html": {
+  "bytes": 14689,
+  "fetched_utc": "2026-08-05T23:15:31Z",
+  "sha256": "c288bbdf1a0a2aa1c1a6468ca703f57291b7827a4aed8190742b1fc6c780c4be",
+  "url": "https://stats.swehockey.se/Game/LineUps/629007"
+ },
+ "2023/game_2023_629008_events.html": {
+  "bytes": 13299,
+  "fetched_utc": "2026-08-05T23:15:23Z",
+  "sha256": "de9bc156a0b7d3d9dc5f11b07e9ec9ef702edf6de79e414542276280703b2a8d",
+  "url": "https://stats.swehockey.se/Game/Events/629008"
+ },
+ "2023/game_2023_629008_lineups.html": {
+  "bytes": 14804,
+  "fetched_utc": "2026-08-05T23:15:24Z",
+  "sha256": "f38a139f05e46dd4d2025d5ff1c8b2a501c2b5e380cd3927b9424e963b73d0f2",
+  "url": "https://stats.swehockey.se/Game/LineUps/629008"
+ },
+ "2023/game_2023_629009_events.html": {
+  "bytes": 14388,
+  "fetched_utc": "2026-08-05T23:15:32Z",
+  "sha256": "dcbe64b93ace7e3b50916d72954de43d23c12eb600a966a13cfb77b6d0990fbc",
+  "url": "https://stats.swehockey.se/Game/Events/629009"
+ },
+ "2023/game_2023_629009_lineups.html": {
+  "bytes": 14951,
+  "fetched_utc": "2026-08-05T23:15:33Z",
+  "sha256": "c069f5984d3d4e64f5b2aaa8f5dd4b0893a5f5811dae1a1e42f5bcbedd98e8f1",
+  "url": "https://stats.swehockey.se/Game/LineUps/629009"
+ },
+ "2023/game_2023_629010_events.html": {
+  "bytes": 19047,
+  "fetched_utc": "2026-08-05T23:15:25Z",
+  "sha256": "11507ded7470b63bee7c3babf5db36e5af0cf08db5af3fe75c5a40e1071f2018",
+  "url": "https://stats.swehockey.se/Game/Events/629010"
+ },
+ "2023/game_2023_629010_lineups.html": {
+  "bytes": 14939,
+  "fetched_utc": "2026-08-05T23:15:26Z",
+  "sha256": "9c26d017161672829304ccca358583e08a711e40a945a1a54436df1592298e1f",
+  "url": "https://stats.swehockey.se/Game/LineUps/629010"
+ },
+ "2023/game_2023_629011_events.html": {
+  "bytes": 15154,
+  "fetched_utc": "2026-08-05T23:15:34Z",
+  "sha256": "9e79357f77a5f083410601889d50afd62899eaf3cc82066dbdbe237e6cfd2f4b",
+  "url": "https://stats.swehockey.se/Game/Events/629011"
+ },
+ "2023/game_2023_629011_lineups.html": {
+  "bytes": 14942,
+  "fetched_utc": "2026-08-05T23:15:35Z",
+  "sha256": "56ba0ae49374263e1a2256781df32e3bd91e47b0d7da4345d85a6b2273b11a26",
+  "url": "https://stats.swehockey.se/Game/LineUps/629011"
+ },
+ "2023/game_2023_629012_events.html": {
+  "bytes": 11529,
+  "fetched_utc": "2026-08-05T23:15:27Z",
+  "sha256": "3b486feaf1e60b3b7cccebe2de5b19cd8588672eb81a8db76c64dbdd6104cb6a",
+  "url": "https://stats.swehockey.se/Game/Events/629012"
+ },
+ "2023/game_2023_629012_lineups.html": {
+  "bytes": 14878,
+  "fetched_utc": "2026-08-05T23:15:29Z",
+  "sha256": "c549dfc82ab78f27f2e03afd941b6cb844c3afb0033fec2da130bb1dce6f5090",
+  "url": "https://stats.swehockey.se/Game/LineUps/629012"
+ },
+ "2023/game_2023_629013_events.html": {
+  "bytes": 10950,
+  "fetched_utc": "2026-08-05T23:15:37Z",
+  "sha256": "0420293fe988d719c98ebeaa1023db97d651db753bab2dc5375f1624612cc72b",
+  "url": "https://stats.swehockey.se/Game/Events/629013"
+ },
+ "2023/game_2023_629013_lineups.html": {
+  "bytes": 14956,
+  "fetched_utc": "2026-08-05T23:15:38Z",
+  "sha256": "d60a1feaadb1276268a79c091a4c08bfa337a9f1756d476970bd0d5c457ea39c",
+  "url": "https://stats.swehockey.se/Game/LineUps/629013"
+ },
+ "2023/game_2023_629014_events.html": {
+  "bytes": 16508,
+  "fetched_utc": "2026-08-05T23:15:39Z",
+  "sha256": "4c65fbc64786180b18ded314b5b21d2b61abce0700eb700ae4bbb5caed450566",
+  "url": "https://stats.swehockey.se/Game/Events/629014"
+ },
+ "2023/game_2023_629014_lineups.html": {
+  "bytes": 15022,
+  "fetched_utc": "2026-08-05T23:15:40Z",
+  "sha256": "29a7ccd378d4d8809103bf2d0727947a61a8743ce510806b9e3be63d59d122f4",
+  "url": "https://stats.swehockey.se/Game/LineUps/629014"
+ },
+ "2023/game_2023_629015_events.html": {
+  "bytes": 8838,
+  "fetched_utc": "2026-08-05T23:15:41Z",
+  "sha256": "c318999015bd5a15d8c86193aa4174e163c2ad1ac761f7f3dd8cd792bc7bd7f9",
+  "url": "https://stats.swehockey.se/Game/Events/629015"
+ },
+ "2023/game_2023_629015_lineups.html": {
+  "bytes": 15015,
+  "fetched_utc": "2026-08-05T23:15:42Z",
+  "sha256": "5c421c7e08df9a57aa5818be696f9807acc3b12ec66b994f216a99a6986fed28",
+  "url": "https://stats.swehockey.se/Game/LineUps/629015"
+ },
+ "2023/game_2023_629016_events.html": {
+  "bytes": 15181,
+  "fetched_utc": "2026-08-05T23:15:44Z",
+  "sha256": "46fc450a3947e292c2b31cda834d417b8c8e6aef5b9d013a611cffe7fc05f48c",
+  "url": "https://stats.swehockey.se/Game/Events/629016"
+ },
+ "2023/game_2023_629016_lineups.html": {
+  "bytes": 15008,
+  "fetched_utc": "2026-08-05T23:15:45Z",
+  "sha256": "51af860671558a3aa3aaf7d9473dc0d12c155b0855a84374fb059cdf917afc15",
+  "url": "https://stats.swehockey.se/Game/LineUps/629016"
+ },
+ "2023/game_2023_629017_events.html": {
+  "bytes": 18489,
+  "fetched_utc": "2026-08-05T23:15:46Z",
+  "sha256": "63c4228a470a88fffeefa44bf5a1c9b61c30f68402a8962dfd91b4784045c469",
+  "url": "https://stats.swehockey.se/Game/Events/629017"
+ },
+ "2023/game_2023_629017_lineups.html": {
+  "bytes": 14807,
+  "fetched_utc": "2026-08-05T23:15:47Z",
+  "sha256": "aa53ba6efb83a603619359bcc69c7cf4a4de3b6546e12874c4095b6a4315a92c",
+  "url": "https://stats.swehockey.se/Game/LineUps/629017"
+ },
+ "2023/game_2023_629018_events.html": {
+  "bytes": 10174,
+  "fetched_utc": "2026-08-05T23:15:48Z",
+  "sha256": "17470980e7f9278f83ea4d7c94a0caffeeb3007af7310f35ec1de1bb0ac997c3",
+  "url": "https://stats.swehockey.se/Game/Events/629018"
+ },
+ "2023/game_2023_629018_lineups.html": {
+  "bytes": 14936,
+  "fetched_utc": "2026-08-05T23:15:49Z",
+  "sha256": "0f4e130cf41cbffec6eb0f222395dcfd0f67cc7deb368366a229eb7927072819",
+  "url": "https://stats.swehockey.se/Game/LineUps/629018"
+ },
+ "2023/game_2023_629019_events.html": {
+  "bytes": 13297,
+  "fetched_utc": "2026-08-05T23:15:50Z",
+  "sha256": "17c8e8c16f0e0fd92c1530f212b8872a5f92d0d4e125706f651f258a28d7c76a",
+  "url": "https://stats.swehockey.se/Game/Events/629019"
+ },
+ "2023/game_2023_629019_lineups.html": {
+  "bytes": 14988,
+  "fetched_utc": "2026-08-05T23:15:52Z",
+  "sha256": "40df8187db5f850d67e76d7e7e1852bc6985c205046dc9a3001448c4cca9b5fb",
+  "url": "https://stats.swehockey.se/Game/LineUps/629019"
+ },
+ "2023/game_2023_629020_events.html": {
+  "bytes": 20187,
+  "fetched_utc": "2026-08-05T23:27:36Z",
+  "sha256": "58b3bcaf6277f95825a40b4d1571f1534a888e2220825f96152f94af6326d4da",
+  "url": "https://stats.swehockey.se/Game/Events/629020"
+ },
+ "2023/game_2023_629020_lineups.html": {
+  "bytes": 14468,
+  "fetched_utc": "2026-08-05T23:27:38Z",
+  "sha256": "f25388d457124419312bab9837a82dfe4bc786741ce40f072c9b410b161daed8",
+  "url": "https://stats.swehockey.se/Game/LineUps/629020"
+ },
+ "2023/game_2023_629021_events.html": {
+  "bytes": 17385,
+  "fetched_utc": "2026-08-05T23:20:40Z",
+  "sha256": "050c7a40ecda28ba3f88dbbd39968b0853df7ba65bfd56df1674e3aafeeb53ce",
+  "url": "https://stats.swehockey.se/Game/Events/629021"
+ },
+ "2023/game_2023_629021_lineups.html": {
+  "bytes": 14667,
+  "fetched_utc": "2026-08-05T23:20:41Z",
+  "sha256": "10b19ba506d479bf4ee789b7ded0460c2fd46fb49768a8d601038f136cc9c2f1",
+  "url": "https://stats.swehockey.se/Game/LineUps/629021"
+ },
+ "2023/game_2023_629022_events.html": {
+  "bytes": 12646,
+  "fetched_utc": "2026-08-05T23:15:53Z",
+  "sha256": "01094c6bc0094f0d11ce4f414a3cbd5b34a3838439b8a2a1e11b45ca9caf5bb8",
+  "url": "https://stats.swehockey.se/Game/Events/629022"
+ },
+ "2023/game_2023_629022_lineups.html": {
+  "bytes": 14786,
+  "fetched_utc": "2026-08-05T23:15:54Z",
+  "sha256": "1e8ce100588927fa739f5cc7dad3b23171cc5f9fbd97edf387127a6bab5aab9e",
+  "url": "https://stats.swehockey.se/Game/LineUps/629022"
+ },
+ "2023/game_2023_629023_events.html": {
+  "bytes": 18146,
+  "fetched_utc": "2026-08-05T23:10:45Z",
+  "sha256": "d1c44937142b64c2fdc3eebeb38ff9b3eded4d35f57c203b700c06dacc8f7c9e",
+  "url": "https://stats.swehockey.se/Game/Events/629023"
+ },
+ "2023/game_2023_629023_lineups.html": {
+  "bytes": 14967,
+  "fetched_utc": "2026-08-05T23:10:46Z",
+  "sha256": "f8e80f7c342f02c48f98e9f1102b587c9216765783168e2e3db8be1f3cc15231",
+  "url": "https://stats.swehockey.se/Game/LineUps/629023"
+ },
+ "2023/game_2023_629024_events.html": {
+  "bytes": 14563,
+  "fetched_utc": "2026-08-05T23:16:02Z",
+  "sha256": "dbe57d4609540e2e108c8573534bbc3544aa1b81ecd49a2a96b281d6d00413bf",
+  "url": "https://stats.swehockey.se/Game/Events/629024"
+ },
+ "2023/game_2023_629024_lineups.html": {
+  "bytes": 14959,
+  "fetched_utc": "2026-08-05T23:16:03Z",
+  "sha256": "0de1a2878235690628c557f2ff8c6ae528859fc2e43dd9980b3822fcfd992650",
+  "url": "https://stats.swehockey.se/Game/LineUps/629024"
+ },
+ "2023/game_2023_629025_events.html": {
+  "bytes": 12155,
+  "fetched_utc": "2026-08-05T23:16:04Z",
+  "sha256": "0bc9e70eff00c03dc189eb70974ca8536dc7cf765f7936e8f8fedcffa65d0243",
+  "url": "https://stats.swehockey.se/Game/Events/629025"
+ },
+ "2023/game_2023_629025_lineups.html": {
+  "bytes": 14445,
+  "fetched_utc": "2026-08-05T23:16:05Z",
+  "sha256": "15a5aa34b04289e6583513e6555152086c3f3944d07e9f4df06e42c9527b0f8c",
+  "url": "https://stats.swehockey.se/Game/LineUps/629025"
+ },
+ "2023/game_2023_629026_events.html": {
+  "bytes": 13943,
+  "fetched_utc": "2026-08-05T23:15:55Z",
+  "sha256": "c51dbeee7e363bdce178ffb836bdfe74ea783a43608a3c6027c601d058ca5919",
+  "url": "https://stats.swehockey.se/Game/Events/629026"
+ },
+ "2023/game_2023_629026_lineups.html": {
+  "bytes": 14930,
+  "fetched_utc": "2026-08-05T23:15:56Z",
+  "sha256": "49a60a5acc26c684f8401a69aa1cce5836fdb72543ff023c93b83102ba67c5ba",
+  "url": "https://stats.swehockey.se/Game/LineUps/629026"
+ },
+ "2023/game_2023_629027_events.html": {
+  "bytes": 17643,
+  "fetched_utc": "2026-08-05T23:16:11Z",
+  "sha256": "2e1d33ed9b80ba5f33312e2f98f0f49e36962582fa43dde3ac55df4d6cc18572",
+  "url": "https://stats.swehockey.se/Game/Events/629027"
+ },
+ "2023/game_2023_629027_lineups.html": {
+  "bytes": 14973,
+  "fetched_utc": "2026-08-05T23:16:12Z",
+  "sha256": "9b477eae2d6d413a24e2fe70c92893f144d1af64618f21f585aeaf6253609882",
+  "url": "https://stats.swehockey.se/Game/LineUps/629027"
+ },
+ "2023/game_2023_629028_events.html": {
+  "bytes": 19390,
+  "fetched_utc": "2026-08-05T23:18:57Z",
+  "sha256": "d4d89c64fcda77f60fa89a5cf3fe7cd30dd071bfeeaf834668348a2258d56543",
+  "url": "https://stats.swehockey.se/Game/Events/629028"
+ },
+ "2023/game_2023_629028_lineups.html": {
+  "bytes": 14772,
+  "fetched_utc": "2026-08-05T23:18:58Z",
+  "sha256": "2eab783f48ab476213f2ff3911793ba161b510755826ca414435f309093cc7f2",
+  "url": "https://stats.swehockey.se/Game/LineUps/629028"
+ },
+ "2023/game_2023_629029_events.html": {
+  "bytes": 14528,
+  "fetched_utc": "2026-08-05T23:16:13Z",
+  "sha256": "e81f37fc18246fdb62783cfa48e7db999666cf4380e7cff6cf53c6035c13d307",
+  "url": "https://stats.swehockey.se/Game/Events/629029"
+ },
+ "2023/game_2023_629029_lineups.html": {
+  "bytes": 14953,
+  "fetched_utc": "2026-08-05T23:16:15Z",
+  "sha256": "bc773ddbf9f44367cb04c57a9d2fc58beb02658a1ff4947a419cb42721b266a8",
+  "url": "https://stats.swehockey.se/Game/LineUps/629029"
+ },
+ "2023/game_2023_629030_events.html": {
+  "bytes": 15832,
+  "fetched_utc": "2026-08-05T23:16:16Z",
+  "sha256": "8578db585ffab035b06277bd1ef65bce0e98d94a6095447502f3de93f1698187",
+  "url": "https://stats.swehockey.se/Game/Events/629030"
+ },
+ "2023/game_2023_629030_lineups.html": {
+  "bytes": 14737,
+  "fetched_utc": "2026-08-05T23:16:17Z",
+  "sha256": "14faf642abaf33251b1066265b03b93d71fa307f12e68208fef7e734ad957c3d",
+  "url": "https://stats.swehockey.se/Game/LineUps/629030"
+ },
+ "2023/game_2023_629031_events.html": {
+  "bytes": 15733,
+  "fetched_utc": "2026-08-05T23:16:18Z",
+  "sha256": "5bdcc5dd127f87f5e2affe4d8939355e082af3ad6f4d1be13d9ad2530a290db0",
+  "url": "https://stats.swehockey.se/Game/Events/629031"
+ },
+ "2023/game_2023_629031_lineups.html": {
+  "bytes": 15014,
+  "fetched_utc": "2026-08-05T23:16:19Z",
+  "sha256": "a2d24943480341108e7d008a41523d564e408a57c38557f71eff07d6c8e0726b",
+  "url": "https://stats.swehockey.se/Game/LineUps/629031"
+ },
+ "2023/game_2023_629032_events.html": {
+  "bytes": 16325,
+  "fetched_utc": "2026-08-05T23:16:20Z",
+  "sha256": "5e9dfb11e069ad9d677bc696fe01cc1a8ca6d11933cb4fcbf2cbe4aa06ea36fa",
+  "url": "https://stats.swehockey.se/Game/Events/629032"
+ },
+ "2023/game_2023_629032_lineups.html": {
+  "bytes": 15028,
+  "fetched_utc": "2026-08-05T23:16:21Z",
+  "sha256": "2624227f77545b80f231de4fc9d2c38a85756be141aff41fb4db8e8c40e95af8",
+  "url": "https://stats.swehockey.se/Game/LineUps/629032"
+ },
+ "2023/game_2023_629033_events.html": {
+  "bytes": 12688,
+  "fetched_utc": "2026-08-05T23:16:22Z",
+  "sha256": "6dff6f2b38e90648d51c5a62b9b9126412df01677d3b3346b60d0ec1f96034d4",
+  "url": "https://stats.swehockey.se/Game/Events/629033"
+ },
+ "2023/game_2023_629033_lineups.html": {
+  "bytes": 14941,
+  "fetched_utc": "2026-08-05T23:16:24Z",
+  "sha256": "ae6ea29df5b56401e12cc4b3a65e08513aa3fd91c2955ee2cc7267c7931ae088",
+  "url": "https://stats.swehockey.se/Game/LineUps/629033"
+ },
+ "2023/game_2023_629034_events.html": {
+  "bytes": 16019,
+  "fetched_utc": "2026-08-05T23:16:27Z",
+  "sha256": "6a9e4e3ace9fce37b173fb11918e99345bad271935f19c526bc7ba3b5a360ef5",
+  "url": "https://stats.swehockey.se/Game/Events/629034"
+ },
+ "2023/game_2023_629034_lineups.html": {
+  "bytes": 14913,
+  "fetched_utc": "2026-08-05T23:16:28Z",
+  "sha256": "3557f1afaaae0714ef2e6369cca5fa84fcb7bce69b55dccd4b3a3dd3ee00a896",
+  "url": "https://stats.swehockey.se/Game/LineUps/629034"
+ },
+ "2023/game_2023_629035_events.html": {
+  "bytes": 15780,
+  "fetched_utc": "2026-08-05T23:16:29Z",
+  "sha256": "391ef647b079fb59035fcff92e79cd517f8afbf6f872f938e727fe076955c6ad",
+  "url": "https://stats.swehockey.se/Game/Events/629035"
+ },
+ "2023/game_2023_629035_lineups.html": {
+  "bytes": 14954,
+  "fetched_utc": "2026-08-05T23:16:31Z",
+  "sha256": "2de2c283b449a10dc693a388df4ea46973098555dce12ef0769dd2bf40ebe1b4",
+  "url": "https://stats.swehockey.se/Game/LineUps/629035"
+ },
+ "2023/game_2023_629036_events.html": {
+  "bytes": 15798,
+  "fetched_utc": "2026-08-05T23:16:36Z",
+  "sha256": "6eaed3c45fcc2dfc656b577481b9a135cc221541e41dcfe997255b9839d0d599",
+  "url": "https://stats.swehockey.se/Game/Events/629036"
+ },
+ "2023/game_2023_629036_lineups.html": {
+  "bytes": 14754,
+  "fetched_utc": "2026-08-05T23:16:37Z",
+  "sha256": "6c17c162df54e205ab1195885ec0ea3f0a5a10655b65914a418c5f6944d3f10d",
+  "url": "https://stats.swehockey.se/Game/LineUps/629036"
+ },
+ "2023/game_2023_629037_events.html": {
+  "bytes": 17080,
+  "fetched_utc": "2026-08-05T23:16:38Z",
+  "sha256": "06719bc9fb3bc1af6379290999228ea6f5e307d65305ec5f5b0976a0a10636aa",
+  "url": "https://stats.swehockey.se/Game/Events/629037"
+ },
+ "2023/game_2023_629037_lineups.html": {
+  "bytes": 14433,
+  "fetched_utc": "2026-08-05T23:16:40Z",
+  "sha256": "4ea8158c57e8df93f92a8d3ee3a0e34e0552f7a97f42162eb8c695e67679e85b",
+  "url": "https://stats.swehockey.se/Game/LineUps/629037"
+ },
+ "2023/game_2023_629038_events.html": {
+  "bytes": 17619,
+  "fetched_utc": "2026-08-05T23:16:32Z",
+  "sha256": "6be5968aa90aac338e2779b6adafaddf029caff8842d9720c261519fb4600288",
+  "url": "https://stats.swehockey.se/Game/Events/629038"
+ },
+ "2023/game_2023_629038_lineups.html": {
+  "bytes": 14942,
+  "fetched_utc": "2026-08-05T23:16:33Z",
+  "sha256": "daa16c30b64a1736a783043309b566e3319fac37f0855e1e8569a25384dac81d",
+  "url": "https://stats.swehockey.se/Game/LineUps/629038"
+ },
+ "2023/game_2023_629039_events.html": {
+  "bytes": 21156,
+  "fetched_utc": "2026-08-05T23:16:41Z",
+  "sha256": "90ea89e6948413652ef803c66eb8d83759bbc9999c970c32c4234ff06c5509f2",
+  "url": "https://stats.swehockey.se/Game/Events/629039"
+ },
+ "2023/game_2023_629039_lineups.html": {
+  "bytes": 14722,
+  "fetched_utc": "2026-08-05T23:16:42Z",
+  "sha256": "03adcef8e5d9d5d531edfc37f01eaf644bf2031969c0cd98094891e1f8b6bf80",
+  "url": "https://stats.swehockey.se/Game/LineUps/629039"
+ },
+ "2023/game_2023_629040_events.html": {
+  "bytes": 18552,
+  "fetched_utc": "2026-08-05T23:16:34Z",
+  "sha256": "67b61528f934001f2a3dcda142948ba9a6d3fad605b6754a9483ac545d05b5d6",
+  "url": "https://stats.swehockey.se/Game/Events/629040"
+ },
+ "2023/game_2023_629040_lineups.html": {
+  "bytes": 14994,
+  "fetched_utc": "2026-08-05T23:16:35Z",
+  "sha256": "8509e5f080be185d65dc2cfe2ad03226c5a1ecb8ea797b967910325a17909d60",
+  "url": "https://stats.swehockey.se/Game/LineUps/629040"
+ },
+ "2023/game_2023_629041_events.html": {
+  "bytes": 12905,
+  "fetched_utc": "2026-08-05T23:16:43Z",
+  "sha256": "7a8c98e8f887e34d08de484c73d056a0e39684d066b055009fe144fb73dcb9ba",
+  "url": "https://stats.swehockey.se/Game/Events/629041"
+ },
+ "2023/game_2023_629041_lineups.html": {
+  "bytes": 15044,
+  "fetched_utc": "2026-08-05T23:16:44Z",
+  "sha256": "7270b3471652e5895f50e81696a1b3114edb3af9bb847dbf05425159bd9c3383",
+  "url": "https://stats.swehockey.se/Game/LineUps/629041"
+ },
+ "2023/game_2023_629042_events.html": {
+  "bytes": 12764,
+  "fetched_utc": "2026-08-05T23:16:45Z",
+  "sha256": "8d68c8b2d9b1e6d0c621c37b591bf193c7d588b71391255bda5fe66e8e0622d6",
+  "url": "https://stats.swehockey.se/Game/Events/629042"
+ },
+ "2023/game_2023_629042_lineups.html": {
+  "bytes": 14944,
+  "fetched_utc": "2026-08-05T23:16:47Z",
+  "sha256": "2646dc6ec56a98223b9ec30948ea6fe5fa99b76b7213cbf26c4d63a2c11730c9",
+  "url": "https://stats.swehockey.se/Game/LineUps/629042"
+ },
+ "2023/game_2023_629043_events.html": {
+  "bytes": 15119,
+  "fetched_utc": "2026-08-05T23:16:48Z",
+  "sha256": "6922d52bcceacb0565f28f3f64d5908e9ca2e1ad7e512d3959962d266ea80b25",
+  "url": "https://stats.swehockey.se/Game/Events/629043"
+ },
+ "2023/game_2023_629043_lineups.html": {
+  "bytes": 14946,
+  "fetched_utc": "2026-08-05T23:16:49Z",
+  "sha256": "e2305e06054b911e1e731a14262c046558015d4207a78899ba2b7513f11e6521",
+  "url": "https://stats.swehockey.se/Game/LineUps/629043"
+ },
+ "2023/game_2023_629044_events.html": {
+  "bytes": 17895,
+  "fetched_utc": "2026-08-05T23:16:50Z",
+  "sha256": "35ae89f586a70b4ede114b1042267bbbfd6ba75cbb050e7a55aeaed74784f62c",
+  "url": "https://stats.swehockey.se/Game/Events/629044"
+ },
+ "2023/game_2023_629044_lineups.html": {
+  "bytes": 15053,
+  "fetched_utc": "2026-08-05T23:16:51Z",
+  "sha256": "826020b139ad0a515017e0ad234b300a5a0e32e7ca37d5ba7efd7747a224f745",
+  "url": "https://stats.swehockey.se/Game/LineUps/629044"
+ },
+ "2023/game_2023_629045_events.html": {
+  "bytes": 15405,
+  "fetched_utc": "2026-08-05T23:16:52Z",
+  "sha256": "0ba5ffa891f121fa438b3e82547fe9e8470e9e01ab67fcd0cabd202a883a095d",
+  "url": "https://stats.swehockey.se/Game/Events/629045"
+ },
+ "2023/game_2023_629045_lineups.html": {
+  "bytes": 14889,
+  "fetched_utc": "2026-08-05T23:16:53Z",
+  "sha256": "01b800483ea9f1f007e1c3b2b05c3e21a25279e45d67b34ed04e480fe15cbf77",
+  "url": "https://stats.swehockey.se/Game/LineUps/629045"
+ },
+ "2023/game_2023_629046_events.html": {
+  "bytes": 18159,
+  "fetched_utc": "2026-08-05T23:16:55Z",
+  "sha256": "03153bdc5b1d9dcd58d5353425b75687b3ec1107c013714ec78382e561f5e244",
+  "url": "https://stats.swehockey.se/Game/Events/629046"
+ },
+ "2023/game_2023_629046_lineups.html": {
+  "bytes": 14932,
+  "fetched_utc": "2026-08-05T23:16:56Z",
+  "sha256": "0006628055a728ccec120eac226dc86895c8c5df68cb3df3cc85158a06182586",
+  "url": "https://stats.swehockey.se/Game/LineUps/629046"
+ },
+ "2023/game_2023_629047_events.html": {
+  "bytes": 21019,
+  "fetched_utc": "2026-08-05T23:16:57Z",
+  "sha256": "5c1c38275e4797d1e8d8f9a755951d7eabe281ef6334c9f46c0fb57cb536678c",
+  "url": "https://stats.swehockey.se/Game/Events/629047"
+ },
+ "2023/game_2023_629047_lineups.html": {
+  "bytes": 14645,
+  "fetched_utc": "2026-08-05T23:16:58Z",
+  "sha256": "da71f8e489c0815ddb690e131031495b15bf8c8e6ab2946b310e46f5184a630c",
+  "url": "https://stats.swehockey.se/Game/LineUps/629047"
+ },
+ "2023/game_2023_629048_events.html": {
+  "bytes": 17392,
+  "fetched_utc": "2026-08-05T23:17:24Z",
+  "sha256": "1fee22dc2d2ece21a0655ea5bb1e0b309bb8d19f89e748d05517ddc4f749a74c",
+  "url": "https://stats.swehockey.se/Game/Events/629048"
+ },
+ "2023/game_2023_629048_lineups.html": {
+  "bytes": 14995,
+  "fetched_utc": "2026-08-05T23:17:25Z",
+  "sha256": "e4c6ee633d10e0092a374c3fa12279475b6d31ff0622834f7d379ec3856a1982",
+  "url": "https://stats.swehockey.se/Game/LineUps/629048"
+ },
+ "2023/game_2023_629049_events.html": {
+  "bytes": 20218,
+  "fetched_utc": "2026-08-05T23:17:27Z",
+  "sha256": "b3feda61cd1499a2ffcdb37283dce13ed29419a4a1c0e3cf7d955cb2d3b0e17d",
+  "url": "https://stats.swehockey.se/Game/Events/629049"
+ },
+ "2023/game_2023_629049_lineups.html": {
+  "bytes": 14649,
+  "fetched_utc": "2026-08-05T23:17:28Z",
+  "sha256": "53593ed6fe8e0d87e7cc9ad1dbb4f7645f1f72f678c4d76ae9cac34986312ffa",
+  "url": "https://stats.swehockey.se/Game/LineUps/629049"
+ },
+ "2023/game_2023_629050_events.html": {
+  "bytes": 16771,
+  "fetched_utc": "2026-08-05T23:17:29Z",
+  "sha256": "ab6ea4bee192e8e3aff5f86ced58ccd788af4cd93f1bf2716eec808c4761d877",
+  "url": "https://stats.swehockey.se/Game/Events/629050"
+ },
+ "2023/game_2023_629050_lineups.html": {
+  "bytes": 14866,
+  "fetched_utc": "2026-08-05T23:17:30Z",
+  "sha256": "676059a3ffc486ed293ea358bb407fa01f028c1f251dbb691fbc3c7c5e22dd6e",
+  "url": "https://stats.swehockey.se/Game/LineUps/629050"
+ },
+ "2023/game_2023_629051_events.html": {
+  "bytes": 19141,
+  "fetched_utc": "2026-08-05T23:17:31Z",
+  "sha256": "7a384c32125eb5d01b1c645d5b7812f5d5f1a074d9e1fcada8ec1b36f73e51f0",
+  "url": "https://stats.swehockey.se/Game/Events/629051"
+ },
+ "2023/game_2023_629051_lineups.html": {
+  "bytes": 14966,
+  "fetched_utc": "2026-08-05T23:17:32Z",
+  "sha256": "d0e282ff85c48e1d98202d085cf8051d8648c13390e14bd7e17f55456493384f",
+  "url": "https://stats.swehockey.se/Game/LineUps/629051"
+ },
+ "2023/game_2023_629052_events.html": {
+  "bytes": 21995,
+  "fetched_utc": "2026-08-05T23:17:34Z",
+  "sha256": "d28872a1b2ff7a94e767eb4c9f8d77997135bed990295dc9d0dd15a0b009179f",
+  "url": "https://stats.swehockey.se/Game/Events/629052"
+ },
+ "2023/game_2023_629052_lineups.html": {
+  "bytes": 14943,
+  "fetched_utc": "2026-08-05T23:17:35Z",
+  "sha256": "0f6a6a35e6f0403991e7c7826e1304051b7a52e8df9568c638da1d3c8ec065c2",
+  "url": "https://stats.swehockey.se/Game/LineUps/629052"
+ },
+ "2023/game_2023_629053_events.html": {
+  "bytes": 12440,
+  "fetched_utc": "2026-08-05T23:17:36Z",
+  "sha256": "849f41547a44b5213d4de18d384eafb95f5404451b94a8081967f8b989160283",
+  "url": "https://stats.swehockey.se/Game/Events/629053"
+ },
+ "2023/game_2023_629053_lineups.html": {
+  "bytes": 14947,
+  "fetched_utc": "2026-08-05T23:17:37Z",
+  "sha256": "5dc246fa5889ebed99d6e06f3c9fe6440cef08c11e0c02d63a214cbb0291c2ae",
+  "url": "https://stats.swehockey.se/Game/LineUps/629053"
+ },
+ "2023/game_2023_629054_events.html": {
+  "bytes": 19541,
+  "fetched_utc": "2026-08-05T23:17:38Z",
+  "sha256": "4a9dc07f1329d685c444740ca65a50d46a6bc03f399466cbfe482756a1bc499b",
+  "url": "https://stats.swehockey.se/Game/Events/629054"
+ },
+ "2023/game_2023_629054_lineups.html": {
+  "bytes": 14833,
+  "fetched_utc": "2026-08-05T23:17:40Z",
+  "sha256": "ccaa876d63bf416b372584890a7fa2de974f37aba2afeb9168526567497b2656",
+  "url": "https://stats.swehockey.se/Game/LineUps/629054"
+ },
+ "2023/game_2023_629055_events.html": {
+  "bytes": 13674,
+  "fetched_utc": "2026-08-05T23:17:41Z",
+  "sha256": "ff7940760e4858ba2921fd451e0ba4703d4f254430d8506308ecea27c944402e",
+  "url": "https://stats.swehockey.se/Game/Events/629055"
+ },
+ "2023/game_2023_629055_lineups.html": {
+  "bytes": 15037,
+  "fetched_utc": "2026-08-05T23:17:42Z",
+  "sha256": "a926940ea128118f228ae68ce67bd7152ea2f56e2deea43d2ea193063679035f",
+  "url": "https://stats.swehockey.se/Game/LineUps/629055"
+ },
+ "2023/game_2023_629056_events.html": {
+  "bytes": 13869,
+  "fetched_utc": "2026-08-05T23:17:50Z",
+  "sha256": "d050ab30b9be4b471ac20a2d4adeeef01ede73521c9ed7df2ac78d602c466fd6",
+  "url": "https://stats.swehockey.se/Game/Events/629056"
+ },
+ "2023/game_2023_629056_lineups.html": {
+  "bytes": 14702,
+  "fetched_utc": "2026-08-05T23:17:52Z",
+  "sha256": "938725ac693192371e647e151d59823ed8ad24877c87e18b0b0def17539a3cfc",
+  "url": "https://stats.swehockey.se/Game/LineUps/629056"
+ },
+ "2023/game_2023_629057_events.html": {
+  "bytes": 11790,
+  "fetched_utc": "2026-08-05T23:17:44Z",
+  "sha256": "730f5e6086281cf8bcb91a3712f4ee73fa2d784e5f9b8f0832703034d41b3041",
+  "url": "https://stats.swehockey.se/Game/Events/629057"
+ },
+ "2023/game_2023_629057_lineups.html": {
+  "bytes": 14694,
+  "fetched_utc": "2026-08-05T23:17:45Z",
+  "sha256": "045d591b5a45d2d503aafd957da328e0ca213fdd11559396c04884494a22924a",
+  "url": "https://stats.swehockey.se/Game/LineUps/629057"
+ },
+ "2023/game_2023_629058_events.html": {
+  "bytes": 15877,
+  "fetched_utc": "2026-08-05T23:17:46Z",
+  "sha256": "851389588268457b2a85e5cb7120b93b97c77a7420fd9d345cf4efdfd72995bf",
+  "url": "https://stats.swehockey.se/Game/Events/629058"
+ },
+ "2023/game_2023_629058_lineups.html": {
+  "bytes": 14745,
+  "fetched_utc": "2026-08-05T23:17:47Z",
+  "sha256": "57e308d06db303704b4db7dad636b92de6f455cc10ae5084a3eb5eb4ff563417",
+  "url": "https://stats.swehockey.se/Game/LineUps/629058"
+ },
+ "2023/game_2023_629059_events.html": {
+  "bytes": 13837,
+  "fetched_utc": "2026-08-05T23:17:53Z",
+  "sha256": "55be4aa8745569a595af10d8888b2d4f08c884bf62d93ca7d79b20f6afd08fb7",
+  "url": "https://stats.swehockey.se/Game/Events/629059"
+ },
+ "2023/game_2023_629059_lineups.html": {
+  "bytes": 14684,
+  "fetched_utc": "2026-08-05T23:17:54Z",
+  "sha256": "b2cce96dec672c1345e0d199a52709714e5b26bc194915f8146e8f3050a9e46b",
+  "url": "https://stats.swehockey.se/Game/LineUps/629059"
+ },
+ "2023/game_2023_629060_events.html": {
+  "bytes": 11029,
+  "fetched_utc": "2026-08-05T23:17:48Z",
+  "sha256": "2e471cd8c1353b12c6b6df1709e98a94c8c9cf82cf6954dba29d854aaf564551",
+  "url": "https://stats.swehockey.se/Game/Events/629060"
+ },
+ "2023/game_2023_629060_lineups.html": {
+  "bytes": 14800,
+  "fetched_utc": "2026-08-05T23:17:49Z",
+  "sha256": "b698d16b6e4530c35bafaea633dea6a1e2581336975e588609cdddeacc9aa9ad",
+  "url": "https://stats.swehockey.se/Game/LineUps/629060"
+ },
+ "2023/game_2023_629061_events.html": {
+  "bytes": 15609,
+  "fetched_utc": "2026-08-05T23:17:55Z",
+  "sha256": "3e1218225d148818d42ea4ef987113c604424400a7085e223b231477088fef86",
+  "url": "https://stats.swehockey.se/Game/Events/629061"
+ },
+ "2023/game_2023_629061_lineups.html": {
+  "bytes": 14663,
+  "fetched_utc": "2026-08-05T23:17:56Z",
+  "sha256": "25d3f5264859df075a3ad9fc11f778ea3f6fc52a29dda0ef312b09ca4534535c",
+  "url": "https://stats.swehockey.se/Game/LineUps/629061"
+ },
+ "2023/game_2023_629062_events.html": {
+  "bytes": 14120,
+  "fetched_utc": "2026-08-05T23:18:02Z",
+  "sha256": "239959eba6dced2f06b608b5fd21495a84be3c2601f8f9c692ee7d12dacd2d4a",
+  "url": "https://stats.swehockey.se/Game/Events/629062"
+ },
+ "2023/game_2023_629062_lineups.html": {
+  "bytes": 14948,
+  "fetched_utc": "2026-08-05T23:18:03Z",
+  "sha256": "51e4ccb722b2fc9ccf33296954ef464fe9bec9c8e724f5ffdd1257fc2b0fa6d5",
+  "url": "https://stats.swehockey.se/Game/LineUps/629062"
+ },
+ "2023/game_2023_629063_events.html": {
+  "bytes": 13839,
+  "fetched_utc": "2026-08-05T23:18:04Z",
+  "sha256": "62379f2d9d8d29cbafa5a564e6a8e7295efa1f39e18f3dc60083c4b2eb0b83c7",
+  "url": "https://stats.swehockey.se/Game/Events/629063"
+ },
+ "2023/game_2023_629063_lineups.html": {
+  "bytes": 14843,
+  "fetched_utc": "2026-08-05T23:18:05Z",
+  "sha256": "05fca1ced1d6a487c254678b8aecf54a102dd38a6ecb22c574f9140bf7c014f8",
+  "url": "https://stats.swehockey.se/Game/LineUps/629063"
+ },
+ "2023/game_2023_629064_events.html": {
+  "bytes": 11598,
+  "fetched_utc": "2026-08-05T23:18:06Z",
+  "sha256": "9f460ff7499c5b6cb201ecb502c3f6740391ee4584d2b4a127a9e0bb44c5230a",
+  "url": "https://stats.swehockey.se/Game/Events/629064"
+ },
+ "2023/game_2023_629064_lineups.html": {
+  "bytes": 14946,
+  "fetched_utc": "2026-08-05T23:18:08Z",
+  "sha256": "898344dbbd254358dc080a248f90d7a4405be660a29430805acbfa3e947a8a7f",
+  "url": "https://stats.swehockey.se/Game/LineUps/629064"
+ },
+ "2023/game_2023_629065_events.html": {
+  "bytes": 11306,
+  "fetched_utc": "2026-08-05T23:18:09Z",
+  "sha256": "10a2ca5c539aed442c135e1f9b32f8b7885dc7dbb237283fa730c7bcba32800b",
+  "url": "https://stats.swehockey.se/Game/Events/629065"
+ },
+ "2023/game_2023_629065_lineups.html": {
+  "bytes": 14806,
+  "fetched_utc": "2026-08-05T23:18:10Z",
+  "sha256": "01700efc5828e97450ff32186e765f5f5c4953649f8767ccdbd2cfe299be08b3",
+  "url": "https://stats.swehockey.se/Game/LineUps/629065"
+ },
+ "2023/game_2023_629066_events.html": {
+  "bytes": 12241,
+  "fetched_utc": "2026-08-05T23:18:11Z",
+  "sha256": "2253a6221676ffbd1fd968840cdeaa57a62dd1f69641e84f5b46084ddf58b3fc",
+  "url": "https://stats.swehockey.se/Game/Events/629066"
+ },
+ "2023/game_2023_629066_lineups.html": {
+  "bytes": 14683,
+  "fetched_utc": "2026-08-05T23:18:12Z",
+  "sha256": "62198d501fe3be3ff65998f20a4b505a01105fabecde1d3c05dd312dc65bfc9c",
+  "url": "https://stats.swehockey.se/Game/LineUps/629066"
+ },
+ "2023/game_2023_629067_events.html": {
+  "bytes": 13734,
+  "fetched_utc": "2026-08-05T23:18:13Z",
+  "sha256": "3921e22fb002f156a396cda78b7027a078095eed2d146784080827952fea11a1",
+  "url": "https://stats.swehockey.se/Game/Events/629067"
+ },
+ "2023/game_2023_629067_lineups.html": {
+  "bytes": 14679,
+  "fetched_utc": "2026-08-05T23:18:14Z",
+  "sha256": "526917583ef8be8e41785e123afb34b8947d92a3d7f7672c94323c620d8c0914",
+  "url": "https://stats.swehockey.se/Game/LineUps/629067"
+ },
+ "2023/game_2023_629068_events.html": {
+  "bytes": 17613,
+  "fetched_utc": "2026-08-05T23:18:15Z",
+  "sha256": "e614c61dba9b6d8e68785933edd3cd9036b5776c6cd1ce8019f10115c62ca59a",
+  "url": "https://stats.swehockey.se/Game/Events/629068"
+ },
+ "2023/game_2023_629068_lineups.html": {
+  "bytes": 14818,
+  "fetched_utc": "2026-08-05T23:18:17Z",
+  "sha256": "fd6ccf27819ddd906334e620cbf3930aa79c97abbe2fe5c11be1f74ce9d109e0",
+  "url": "https://stats.swehockey.se/Game/LineUps/629068"
+ },
+ "2023/game_2023_629069_events.html": {
+  "bytes": 13717,
+  "fetched_utc": "2026-08-05T23:18:18Z",
+  "sha256": "a38ca8cd513cd445851270ac84cd0788b0e1172de9b1c3ca5f4337687f8add98",
+  "url": "https://stats.swehockey.se/Game/Events/629069"
+ },
+ "2023/game_2023_629069_lineups.html": {
+  "bytes": 14615,
+  "fetched_utc": "2026-08-05T23:18:19Z",
+  "sha256": "26291a9a652dd3362966f3ca57dc0e3d0dc978a7ba327c5867ff8c2ed5a8cce9",
+  "url": "https://stats.swehockey.se/Game/LineUps/629069"
+ },
+ "2023/game_2023_629070_events.html": {
+  "bytes": 10621,
+  "fetched_utc": "2026-08-05T23:18:20Z",
+  "sha256": "cba0b0660d7da5acc048c3640d663f4da04608bfe4ffc7e2272d02059b9b326f",
+  "url": "https://stats.swehockey.se/Game/Events/629070"
+ },
+ "2023/game_2023_629070_lineups.html": {
+  "bytes": 14919,
+  "fetched_utc": "2026-08-05T23:18:21Z",
+  "sha256": "0bb08d0efd900fb1616689f782394358e356841f196198beb3faa73fcec58842",
+  "url": "https://stats.swehockey.se/Game/LineUps/629070"
+ },
+ "2023/game_2023_629071_events.html": {
+  "bytes": 13163,
+  "fetched_utc": "2026-08-05T23:18:22Z",
+  "sha256": "bddbdd35ffbdd9891f89d17bd38f5efeac75450ba4a5516cdfdf8b6c8f0f3ffd",
+  "url": "https://stats.swehockey.se/Game/Events/629071"
+ },
+ "2023/game_2023_629071_lineups.html": {
+  "bytes": 14820,
+  "fetched_utc": "2026-08-05T23:18:23Z",
+  "sha256": "cbcb0b727904c425fc609ada98926d59326bfbbcbae20a920faecf5786eef0e4",
+  "url": "https://stats.swehockey.se/Game/LineUps/629071"
+ },
+ "2023/game_2023_629072_events.html": {
+  "bytes": 14521,
+  "fetched_utc": "2026-08-05T23:18:29Z",
+  "sha256": "44e3775f257e0e0e47ddef04cab82031e671f98c7a1719a9324303c3cd7d5cb5",
+  "url": "https://stats.swehockey.se/Game/Events/629072"
+ },
+ "2023/game_2023_629072_lineups.html": {
+  "bytes": 14479,
+  "fetched_utc": "2026-08-05T23:18:30Z",
+  "sha256": "a81fee7dcf292d40ea5cd4fc2d795ebb1c3081f696030a7bbfc6ceeeb5725667",
+  "url": "https://stats.swehockey.se/Game/LineUps/629072"
+ },
+ "2023/game_2023_629073_events.html": {
+  "bytes": 18320,
+  "fetched_utc": "2026-08-05T23:18:31Z",
+  "sha256": "af067dca11017558ea12cd3ee388870c94fd1bc1fa55c4dab0f372cbe7f889af",
+  "url": "https://stats.swehockey.se/Game/Events/629073"
+ },
+ "2023/game_2023_629073_lineups.html": {
+  "bytes": 14877,
+  "fetched_utc": "2026-08-05T23:18:33Z",
+  "sha256": "616f393e3250927332297af8f43d92e9883287367ec8bf55ffae54b25e0b220b",
+  "url": "https://stats.swehockey.se/Game/LineUps/629073"
+ },
+ "2023/game_2023_629074_events.html": {
+  "bytes": 14944,
+  "fetched_utc": "2026-08-05T23:18:25Z",
+  "sha256": "958c125d211830303d671b2d1a7db7633684fad020113b4dc1e90a3de7ed05d3",
+  "url": "https://stats.swehockey.se/Game/Events/629074"
+ },
+ "2023/game_2023_629074_lineups.html": {
+  "bytes": 14691,
+  "fetched_utc": "2026-08-05T23:18:26Z",
+  "sha256": "5f8271309eddaf7113b4b3a21a89ec328fca7cf5794d0a2c21dbedbf29a01ae1",
+  "url": "https://stats.swehockey.se/Game/LineUps/629074"
+ },
+ "2023/game_2023_629075_events.html": {
+  "bytes": 13795,
+  "fetched_utc": "2026-08-05T23:18:27Z",
+  "sha256": "41bc6523bf2c054ea2cb5540101d6dd0b3346c5e11a2e6de05e5eeb3871912fe",
+  "url": "https://stats.swehockey.se/Game/Events/629075"
+ },
+ "2023/game_2023_629075_lineups.html": {
+  "bytes": 14919,
+  "fetched_utc": "2026-08-05T23:18:28Z",
+  "sha256": "41644e0a04400c12dbc748c2bf5f2cf01258cabcb533ce62b43f5e6c08d3dda1",
+  "url": "https://stats.swehockey.se/Game/LineUps/629075"
+ },
+ "2023/game_2023_629076_events.html": {
+  "bytes": 12817,
+  "fetched_utc": "2026-08-05T23:20:51Z",
+  "sha256": "6eed06e1f06a5b40018fabb3e7fd2e86024b7466a276a6dad47a8881c2a6a90f",
+  "url": "https://stats.swehockey.se/Game/Events/629076"
+ },
+ "2023/game_2023_629076_lineups.html": {
+  "bytes": 14955,
+  "fetched_utc": "2026-08-05T23:20:52Z",
+  "sha256": "b12f6507176405dd998a1c28e8fa986ce34aa5068da2e8d2e21554460e42cae7",
+  "url": "https://stats.swehockey.se/Game/LineUps/629076"
+ },
+ "2023/game_2023_629077_events.html": {
+  "bytes": 13622,
+  "fetched_utc": "2026-08-05T23:18:34Z",
+  "sha256": "5e84f0a79964d07cd867423800e8afe722454aa556d7fb4cda0cac3c54221a83",
+  "url": "https://stats.swehockey.se/Game/Events/629077"
+ },
+ "2023/game_2023_629077_lineups.html": {
+  "bytes": 14976,
+  "fetched_utc": "2026-08-05T23:18:35Z",
+  "sha256": "6022cde8821f014d286533ec3030cc905fbef64117962bb760b02694830a7069",
+  "url": "https://stats.swehockey.se/Game/LineUps/629077"
+ },
+ "2023/game_2023_629078_events.html": {
+  "bytes": 10626,
+  "fetched_utc": "2026-08-05T23:20:53Z",
+  "sha256": "7bca3409ffee6db47d34ddf927b1d798fba2c21fd8c64bb15168c6e38c4f0265",
+  "url": "https://stats.swehockey.se/Game/Events/629078"
+ },
+ "2023/game_2023_629078_lineups.html": {
+  "bytes": 14344,
+  "fetched_utc": "2026-08-05T23:20:54Z",
+  "sha256": "e6b4c136115db65e17779b718500684e61429c5d87ff4df833673356bc3c9d0c",
+  "url": "https://stats.swehockey.se/Game/LineUps/629078"
+ },
+ "2023/game_2023_629079_events.html": {
+  "bytes": 20709,
+  "fetched_utc": "2026-08-05T23:20:56Z",
+  "sha256": "76ce5076b14b2d2ea71910bce87c32ceeb7430cffa002dda06cd8bc5ad1e736e",
+  "url": "https://stats.swehockey.se/Game/Events/629079"
+ },
+ "2023/game_2023_629079_lineups.html": {
+  "bytes": 14747,
+  "fetched_utc": "2026-08-05T23:20:57Z",
+  "sha256": "a367b8c64aa4702ffd45ab768031f0599675b97e552064c8ea663ee4d4c75632",
+  "url": "https://stats.swehockey.se/Game/LineUps/629079"
+ },
+ "2023/game_2023_629080_events.html": {
+  "bytes": 13394,
+  "fetched_utc": "2026-08-05T23:17:57Z",
+  "sha256": "952bcec7ff2c0b61003ba46260ca06e9f2402a9c65323585999c76bfc167c6e5",
+  "url": "https://stats.swehockey.se/Game/Events/629080"
+ },
+ "2023/game_2023_629080_lineups.html": {
+  "bytes": 14959,
+  "fetched_utc": "2026-08-05T23:17:58Z",
+  "sha256": "0d7ae21732c2a0aab8df9398a9ea9b10816bc6cef6b6b7d5cf22208a38f7a049",
+  "url": "https://stats.swehockey.se/Game/LineUps/629080"
+ },
+ "2023/game_2023_629081_events.html": {
+  "bytes": 19938,
+  "fetched_utc": "2026-08-05T23:20:58Z",
+  "sha256": "8b84fda494b9888ccccc615efca86600a24c13c8a375e146e6506050cfa8809f",
+  "url": "https://stats.swehockey.se/Game/Events/629081"
+ },
+ "2023/game_2023_629081_lineups.html": {
+  "bytes": 14288,
+  "fetched_utc": "2026-08-05T23:20:59Z",
+  "sha256": "64be46ce2d9a478746ec990507812e380b5e848f81dc3a1edac7f64da6d58a58",
+  "url": "https://stats.swehockey.se/Game/LineUps/629081"
+ },
+ "2023/game_2023_629082_events.html": {
+  "bytes": 18147,
+  "fetched_utc": "2026-08-05T23:21:00Z",
+  "sha256": "d9dd564df94e5ee2c47eba559458c77bb948716169f2d47456e9d0ffdc207255",
+  "url": "https://stats.swehockey.se/Game/Events/629082"
+ },
+ "2023/game_2023_629082_lineups.html": {
+  "bytes": 14659,
+  "fetched_utc": "2026-08-05T23:21:01Z",
+  "sha256": "c3559b5ef8186d8ae7c5e1d5bfca0824f7d51bd322f6071f972509cfa9431256",
+  "url": "https://stats.swehockey.se/Game/LineUps/629082"
+ },
+ "2023/game_2023_629084_events.html": {
+  "bytes": 14747,
+  "fetched_utc": "2026-08-05T23:18:45Z",
+  "sha256": "9c48fda16f5a76dd30f4b7d72c3d8d1b52fc43241798dd1bfbd1010f4f3b27f2",
+  "url": "https://stats.swehockey.se/Game/Events/629084"
+ },
+ "2023/game_2023_629084_lineups.html": {
+  "bytes": 14868,
+  "fetched_utc": "2026-08-05T23:18:46Z",
+  "sha256": "032a8d8b710f0de7c39307a65e75bfe5e1c2c0fe926181958ab9953633622b16",
+  "url": "https://stats.swehockey.se/Game/LineUps/629084"
+ },
+ "2023/game_2023_629085_events.html": {
+  "bytes": 12608,
+  "fetched_utc": "2026-08-05T23:18:36Z",
+  "sha256": "1f4be2872e1408ea96e15d9317839d0db91877b994fc9245bd6cf94a3acac8ec",
+  "url": "https://stats.swehockey.se/Game/Events/629085"
+ },
+ "2023/game_2023_629085_lineups.html": {
+  "bytes": 14736,
+  "fetched_utc": "2026-08-05T23:18:37Z",
+  "sha256": "c72571d336123563405ea5d4e14c448128069feb7043bea8c17a5ebdde532cb6",
+  "url": "https://stats.swehockey.se/Game/LineUps/629085"
+ },
+ "2023/game_2023_629086_events.html": {
+  "bytes": 10511,
+  "fetched_utc": "2026-08-05T23:18:47Z",
+  "sha256": "149d9b7bd80afcd0b3f511562e9103febca79556b121bef3fcd8cd78b3ab5767",
+  "url": "https://stats.swehockey.se/Game/Events/629086"
+ },
+ "2023/game_2023_629086_lineups.html": {
+  "bytes": 14731,
+  "fetched_utc": "2026-08-05T23:18:48Z",
+  "sha256": "a6df7e5e500ac9deb8ee1d54256465f8f67fca74fae58812478a9b35c525a1e5",
+  "url": "https://stats.swehockey.se/Game/LineUps/629086"
+ },
+ "2023/game_2023_629087_events.html": {
+  "bytes": 14140,
+  "fetched_utc": "2026-08-05T23:18:38Z",
+  "sha256": "c9d96fcce618276d22b588db076d1f1cd6ae20f26905ec45b074b52e91b10226",
+  "url": "https://stats.swehockey.se/Game/Events/629087"
+ },
+ "2023/game_2023_629087_lineups.html": {
+  "bytes": 14990,
+  "fetched_utc": "2026-08-05T23:18:39Z",
+  "sha256": "53735cf6be0f6b1bc4b715f03d8ef33efda99c9740b623a0f1e16ac9f4d723db",
+  "url": "https://stats.swehockey.se/Game/LineUps/629087"
+ },
+ "2023/game_2023_629088_events.html": {
+  "bytes": 14930,
+  "fetched_utc": "2026-08-05T23:18:49Z",
+  "sha256": "52d6619094a79ab713fc0db7303f5fc1ad8442b2af7502dccf2ff190422bde11",
+  "url": "https://stats.swehockey.se/Game/Events/629088"
+ },
+ "2023/game_2023_629088_lineups.html": {
+  "bytes": 14979,
+  "fetched_utc": "2026-08-05T23:18:51Z",
+  "sha256": "04299ba55933a17537b0ec5aba33d65ecd84167d6fa1dd9e3576b7697978d3fb",
+  "url": "https://stats.swehockey.se/Game/LineUps/629088"
+ },
+ "2023/game_2023_629090_events.html": {
+  "bytes": 15909,
+  "fetched_utc": "2026-08-05T23:18:40Z",
+  "sha256": "71abe13bb5d542b6b784c425e7285687e0cc940d8818b8afc50730c72fde3788",
+  "url": "https://stats.swehockey.se/Game/Events/629090"
+ },
+ "2023/game_2023_629090_lineups.html": {
+  "bytes": 14992,
+  "fetched_utc": "2026-08-05T23:18:42Z",
+  "sha256": "8c5310395264963cc4911a4f6322ce63755b87e69451c8973b7722eff81e4c93",
+  "url": "https://stats.swehockey.se/Game/LineUps/629090"
+ },
+ "2023/game_2023_629091_events.html": {
+  "bytes": 13717,
+  "fetched_utc": "2026-08-05T23:18:43Z",
+  "sha256": "7e4363dd7ad75705760e1c49bdf3e107383d91a4c859622192e7701436e145d8",
+  "url": "https://stats.swehockey.se/Game/Events/629091"
+ },
+ "2023/game_2023_629091_lineups.html": {
+  "bytes": 14690,
+  "fetched_utc": "2026-08-05T23:18:44Z",
+  "sha256": "5ffd90a500ab4f3c28019a758bb7133cfb48b2bb0179dee8fe36d8609d282269",
+  "url": "https://stats.swehockey.se/Game/LineUps/629091"
+ },
+ "2023/game_2023_629093_events.html": {
+  "bytes": 10549,
+  "fetched_utc": "2026-08-05T23:16:06Z",
+  "sha256": "36b5cfc63c39d651f190b33095be083d2be1121bbf916230e22637a7f3c99875",
+  "url": "https://stats.swehockey.se/Game/Events/629093"
+ },
+ "2023/game_2023_629093_lineups.html": {
+  "bytes": 14951,
+  "fetched_utc": "2026-08-05T23:16:08Z",
+  "sha256": "12e2af0464344d43a9b085bfb387f3948b3ec40fc0681f00eb61b7f176cfba1c",
+  "url": "https://stats.swehockey.se/Game/LineUps/629093"
+ },
+ "2023/game_2023_629094_events.html": {
+  "bytes": 17758,
+  "fetched_utc": "2026-08-05T23:11:48Z",
+  "sha256": "d6225ce03fafc8eba13cdea5e453a80d8ff172b8ba07dc17f084cbfb9dfc2266",
+  "url": "https://stats.swehockey.se/Game/Events/629094"
+ },
+ "2023/game_2023_629094_lineups.html": {
+  "bytes": 15042,
+  "fetched_utc": "2026-08-05T23:11:49Z",
+  "sha256": "3960a610e98f7b63384bce753a3ea99ca6a1bc863e69839054fdab5cb15f32e9",
+  "url": "https://stats.swehockey.se/Game/LineUps/629094"
+ },
+ "2023/game_2023_629096_events.html": {
+  "bytes": 14092,
+  "fetched_utc": "2026-08-05T23:11:52Z",
+  "sha256": "fcdf98bbe63431b4c400a85fc4f181d19963eda9ac6e83fbc5f09ee967f8bd96",
+  "url": "https://stats.swehockey.se/Game/Events/629096"
+ },
+ "2023/game_2023_629096_lineups.html": {
+  "bytes": 14765,
+  "fetched_utc": "2026-08-05T23:11:53Z",
+  "sha256": "92a2c7f7e12127393cde1c5574234cd0ae223437287febcb8741b5d7c6a1f34b",
+  "url": "https://stats.swehockey.se/Game/LineUps/629096"
+ },
+ "2023/game_2023_629097_events.html": {
+  "bytes": 15689,
+  "fetched_utc": "2026-08-05T23:18:52Z",
+  "sha256": "8fa6899432035bf828e92987fa5abea44f969220b34a8cf99a1c7b65b63d8593",
+  "url": "https://stats.swehockey.se/Game/Events/629097"
+ },
+ "2023/game_2023_629097_lineups.html": {
+  "bytes": 14682,
+  "fetched_utc": "2026-08-05T23:18:53Z",
+  "sha256": "2ee4171d9ede289ca0965b9dac293647e4be545b28547e5da752a7b474b16b6a",
+  "url": "https://stats.swehockey.se/Game/LineUps/629097"
+ },
+ "2023/game_2023_629099_events.html": {
+  "bytes": 13827,
+  "fetched_utc": "2026-08-05T23:18:00Z",
+  "sha256": "e13cd24d6c3ced870083b04389465e192e44058decd2e59a1a1c4a43b2f89453",
+  "url": "https://stats.swehockey.se/Game/Events/629099"
+ },
+ "2023/game_2023_629099_lineups.html": {
+  "bytes": 14929,
+  "fetched_utc": "2026-08-05T23:18:01Z",
+  "sha256": "0d860f3488d8d9da1ba2c06f8da1d631ceab40e733935d822682519c7bcc9427",
+  "url": "https://stats.swehockey.se/Game/LineUps/629099"
+ },
+ "2023/game_2023_629100_events.html": {
+  "bytes": 17543,
+  "fetched_utc": "2026-08-05T23:20:49Z",
+  "sha256": "d1c55a10c5d3b9ff9b20cf53d35f36a8fc56384a04c117696e44dd46bbe4036d",
+  "url": "https://stats.swehockey.se/Game/Events/629100"
+ },
+ "2023/game_2023_629100_lineups.html": {
+  "bytes": 14793,
+  "fetched_utc": "2026-08-05T23:20:50Z",
+  "sha256": "f4279f7c5bce1e9adb3b372d430e009f2c324f4abbec2058199351e69b841cb7",
+  "url": "https://stats.swehockey.se/Game/LineUps/629100"
+ },
+ "2023/game_2023_629101_events.html": {
+  "bytes": 19268,
+  "fetched_utc": "2026-08-05T23:18:54Z",
+  "sha256": "8d183ae0bc84cc096c3d6a84d12b2185605fd150815c3fa82d811a34d39e5d07",
+  "url": "https://stats.swehockey.se/Game/Events/629101"
+ },
+ "2023/game_2023_629101_lineups.html": {
+  "bytes": 14989,
+  "fetched_utc": "2026-08-05T23:18:55Z",
+  "sha256": "e4e07c304ca2950f4328ed59bd4256edbe37a06518a5af277609a69959a636f1",
+  "url": "https://stats.swehockey.se/Game/LineUps/629101"
+ },
+ "2023/game_2023_629103_events.html": {
+  "bytes": 12457,
+  "fetched_utc": "2026-08-05T23:22:30Z",
+  "sha256": "04645a95c73e88a6a03b3381535a346ed422277377aa9580dcaf79886308adc0",
+  "url": "https://stats.swehockey.se/Game/Events/629103"
+ },
+ "2023/game_2023_629103_lineups.html": {
+  "bytes": 14795,
+  "fetched_utc": "2026-08-05T23:22:31Z",
+  "sha256": "e7871f6d1271b3f3262e2ea725d709947f222dd4cf199a58f81993f44499cb5d",
+  "url": "https://stats.swehockey.se/Game/LineUps/629103"
+ },
+ "2023/game_2023_629105_events.html": {
+  "bytes": 14444,
+  "fetched_utc": "2026-08-05T23:18:59Z",
+  "sha256": "fe217cff0efce45afc3cd4a1811a8ef30e7cd331d78e9947d450c276075f39dd",
+  "url": "https://stats.swehockey.se/Game/Events/629105"
+ },
+ "2023/game_2023_629105_lineups.html": {
+  "bytes": 14981,
+  "fetched_utc": "2026-08-05T23:19:00Z",
+  "sha256": "96058d7416e801ae6767338ed50174f84dfb2f7908563a9e2a9185e371e6434d",
+  "url": "https://stats.swehockey.se/Game/LineUps/629105"
+ },
+ "2023/game_2023_629106_events.html": {
+  "bytes": 14147,
+  "fetched_utc": "2026-08-05T23:19:01Z",
+  "sha256": "c262bb211d5d47938ff1042e23070ee7487b21dc3c8af5cd0bca563713e22562",
+  "url": "https://stats.swehockey.se/Game/Events/629106"
+ },
+ "2023/game_2023_629106_lineups.html": {
+  "bytes": 14717,
+  "fetched_utc": "2026-08-05T23:19:02Z",
+  "sha256": "482bd3cf8f60897ea70fd2a44ae759204bdef1cb5eb04becda190604c53c34a1",
+  "url": "https://stats.swehockey.se/Game/LineUps/629106"
+ },
+ "2023/game_2023_629107_events.html": {
+  "bytes": 12349,
+  "fetched_utc": "2026-08-05T23:19:03Z",
+  "sha256": "6ea00ad1c0eb5c70e2c6cb3c7dc12ab3641097f6943f15d1c2fea009ef67b557",
+  "url": "https://stats.swehockey.se/Game/Events/629107"
+ },
+ "2023/game_2023_629107_lineups.html": {
+  "bytes": 15002,
+  "fetched_utc": "2026-08-05T23:19:04Z",
+  "sha256": "1bc22aed35e79a47c5713108dbf8ecb6b41b2b978ab8e5394bc4c23a80783dd1",
+  "url": "https://stats.swehockey.se/Game/LineUps/629107"
+ },
+ "2023/game_2023_629110_events.html": {
+  "bytes": 15106,
+  "fetched_utc": "2026-08-05T23:16:25Z",
+  "sha256": "232d924d4d75610d359887d4ab80c06530ab9b3f28c9710cc043b167c54594e2",
+  "url": "https://stats.swehockey.se/Game/Events/629110"
+ },
+ "2023/game_2023_629110_lineups.html": {
+  "bytes": 15047,
+  "fetched_utc": "2026-08-05T23:16:26Z",
+  "sha256": "3f472487c59b35d2eef59d20211bf38d39c53976b9499bf47e7ac824ba2eecc8",
+  "url": "https://stats.swehockey.se/Game/LineUps/629110"
+ },
+ "2023/game_2023_629111_events.html": {
+  "bytes": 19715,
+  "fetched_utc": "2026-08-05T23:19:06Z",
+  "sha256": "be47ead3cb32f8d4bff3dd776965ccc2daf5a1c3674e30d8d5de84637210461f",
+  "url": "https://stats.swehockey.se/Game/Events/629111"
+ },
+ "2023/game_2023_629111_lineups.html": {
+  "bytes": 14967,
+  "fetched_utc": "2026-08-05T23:19:07Z",
+  "sha256": "6a90f6fa5fd437eb5987033e8aafda02f2178c3cfb61d168aa07491c82350319",
+  "url": "https://stats.swehockey.se/Game/LineUps/629111"
+ },
+ "2023/game_2023_629112_events.html": {
+  "bytes": 17601,
+  "fetched_utc": "2026-08-05T23:19:08Z",
+  "sha256": "653085e108c6f9416fd51e085bd65ad66409d3c7f1c61650d11b861030c96816",
+  "url": "https://stats.swehockey.se/Game/Events/629112"
+ },
+ "2023/game_2023_629112_lineups.html": {
+  "bytes": 14936,
+  "fetched_utc": "2026-08-05T23:19:09Z",
+  "sha256": "ea0277bc267e5108ab484b7165b01d49604c41664e35ba12fa3e2dbeaf5519e2",
+  "url": "https://stats.swehockey.se/Game/LineUps/629112"
+ },
+ "2023/game_2023_629175_events.html": {
+  "bytes": 14569,
+  "fetched_utc": "2026-08-05T23:19:17Z",
+  "sha256": "2cf69657d143faa55b1d5e07936c9371879bd91fa7e97a541796f93e580f1469",
+  "url": "https://stats.swehockey.se/Game/Events/629175"
+ },
+ "2023/game_2023_629175_lineups.html": {
+  "bytes": 14942,
+  "fetched_utc": "2026-08-05T23:19:18Z",
+  "sha256": "3cabdb6e5667013295dc562739113f7fc0f693f111dfef94897442e10cdb9d57",
+  "url": "https://stats.swehockey.se/Game/LineUps/629175"
+ },
+ "2023/game_2023_629176_events.html": {
+  "bytes": 17004,
+  "fetched_utc": "2026-08-05T23:19:19Z",
+  "sha256": "7b4a07ca806dabf62a0a2a47e8f7e270f782001463b3e10e0fa5cf6ce9edb880",
+  "url": "https://stats.swehockey.se/Game/Events/629176"
+ },
+ "2023/game_2023_629176_lineups.html": {
+  "bytes": 14665,
+  "fetched_utc": "2026-08-05T23:19:21Z",
+  "sha256": "637e48258fc90ecba7cd95f73cb759e9b0ad9ca26e99e628fd43c58e27a7f732",
+  "url": "https://stats.swehockey.se/Game/LineUps/629176"
+ },
+ "2023/game_2023_629177_events.html": {
+  "bytes": 12250,
+  "fetched_utc": "2026-08-05T23:19:22Z",
+  "sha256": "4ce398e4a6cb81e0e0f298378b8fa2de9d60f19f3d107f69caf9ed45ba46b804",
+  "url": "https://stats.swehockey.se/Game/Events/629177"
+ },
+ "2023/game_2023_629177_lineups.html": {
+  "bytes": 14758,
+  "fetched_utc": "2026-08-05T23:19:23Z",
+  "sha256": "d7619bdbccd3457f7f204b0ae2327531dae76f13554b2f1812ee8a1285811086",
+  "url": "https://stats.swehockey.se/Game/LineUps/629177"
+ },
+ "2023/game_2023_629178_events.html": {
+  "bytes": 15642,
+  "fetched_utc": "2026-08-05T23:19:13Z",
+  "sha256": "e8f96a25c9a9cd3678789f2863df4dd8953990bb3bf27e7088cd3de0c0140db9",
+  "url": "https://stats.swehockey.se/Game/Events/629178"
+ },
+ "2023/game_2023_629178_lineups.html": {
+  "bytes": 14925,
+  "fetched_utc": "2026-08-05T23:19:14Z",
+  "sha256": "ac6893f893195eb2198ddd3f246c7293d7bc4d91df6e9a7b12b87e1603407509",
+  "url": "https://stats.swehockey.se/Game/LineUps/629178"
+ },
+ "2023/game_2023_629179_events.html": {
+  "bytes": 12840,
+  "fetched_utc": "2026-08-05T23:19:15Z",
+  "sha256": "2f65bb5e97787405d5020bda6ccfc6e2b4f3fab99beedbc004eef28606b10a8f",
+  "url": "https://stats.swehockey.se/Game/Events/629179"
+ },
+ "2023/game_2023_629179_lineups.html": {
+  "bytes": 14684,
+  "fetched_utc": "2026-08-05T23:19:16Z",
+  "sha256": "bda7173e0f6b1ba46807b59f96b23bf3704143bb671138226c929e0d4f413868",
+  "url": "https://stats.swehockey.se/Game/LineUps/629179"
+ },
+ "2023/game_2023_629180_events.html": {
+  "bytes": 12972,
+  "fetched_utc": "2026-08-05T23:19:24Z",
+  "sha256": "13e5012229dda6b7526c3e860488526c04b2a6348d1e8fe296a1f8c63c402650",
+  "url": "https://stats.swehockey.se/Game/Events/629180"
+ },
+ "2023/game_2023_629180_lineups.html": {
+  "bytes": 14599,
+  "fetched_utc": "2026-08-05T23:19:25Z",
+  "sha256": "672606391ab087cdb251b43e757a6915d35863db428b6492e0735fcb8183233e",
+  "url": "https://stats.swehockey.se/Game/LineUps/629180"
+ },
+ "2023/game_2023_629181_events.html": {
+  "bytes": 14938,
+  "fetched_utc": "2026-08-05T23:19:26Z",
+  "sha256": "6cbb14e97af609c9a98a8bce55e6d24a69c344d29233bd3161f7a3dc38dc58a8",
+  "url": "https://stats.swehockey.se/Game/Events/629181"
+ },
+ "2023/game_2023_629181_lineups.html": {
+  "bytes": 14725,
+  "fetched_utc": "2026-08-05T23:19:27Z",
+  "sha256": "2f96ab849e247197c3b151e9523a090774a53ce68fd38419f1dce73b877407c3",
+  "url": "https://stats.swehockey.se/Game/LineUps/629181"
+ },
+ "2023/game_2023_629182_events.html": {
+  "bytes": 9406,
+  "fetched_utc": "2026-08-05T23:19:31Z",
+  "sha256": "a17c5fc6a0910787103d557eb9546d08bc931be19e445716aeeb164af946e935",
+  "url": "https://stats.swehockey.se/Game/Events/629182"
+ },
+ "2023/game_2023_629182_lineups.html": {
+  "bytes": 14861,
+  "fetched_utc": "2026-08-05T23:19:32Z",
+  "sha256": "3ceae9144366d1ee820355111f4582bc9fdffbe38a4549ec2917ff9c2fb037bf",
+  "url": "https://stats.swehockey.se/Game/LineUps/629182"
+ },
+ "2023/game_2023_629183_events.html": {
+  "bytes": 13178,
+  "fetched_utc": "2026-08-05T23:19:33Z",
+  "sha256": "c78510cbb343cdd7f1878830fb2bb6128bed590268bb02295b4d94de83a275c5",
+  "url": "https://stats.swehockey.se/Game/Events/629183"
+ },
+ "2023/game_2023_629183_lineups.html": {
+  "bytes": 14934,
+  "fetched_utc": "2026-08-05T23:19:34Z",
+  "sha256": "95c90914df01364c16fe4434d0455b8cf5e84a8e2c41ec25a38e814f1e3f034f",
+  "url": "https://stats.swehockey.se/Game/LineUps/629183"
+ },
+ "2023/game_2023_629184_events.html": {
+  "bytes": 13779,
+  "fetched_utc": "2026-08-05T23:19:35Z",
+  "sha256": "b799ea8fdbf6c0c5c4b4919499956af3f9880b64bb98e7ed079059a07d5082b2",
+  "url": "https://stats.swehockey.se/Game/Events/629184"
+ },
+ "2023/game_2023_629184_lineups.html": {
+  "bytes": 14997,
+  "fetched_utc": "2026-08-05T23:19:36Z",
+  "sha256": "ef728c411ee1b50f024a12a4e395511fef7e372ca308887d46e3afd40a430093",
+  "url": "https://stats.swehockey.se/Game/LineUps/629184"
+ },
+ "2023/game_2023_629185_events.html": {
+  "bytes": 14966,
+  "fetched_utc": "2026-08-05T23:19:38Z",
+  "sha256": "cba2394cfa703059442a9b92ddadd57fc72e1d7c20d9809c75ae081b7c0d0405",
+  "url": "https://stats.swehockey.se/Game/Events/629185"
+ },
+ "2023/game_2023_629185_lineups.html": {
+  "bytes": 14682,
+  "fetched_utc": "2026-08-05T23:19:39Z",
+  "sha256": "940561b16136b37435243b63356c7236a8d337f91a842d97315cfbffa266827b",
+  "url": "https://stats.swehockey.se/Game/LineUps/629185"
+ },
+ "2023/game_2023_629186_events.html": {
+  "bytes": 15086,
+  "fetched_utc": "2026-08-05T23:19:40Z",
+  "sha256": "be2e0e0c98a2c312ce1dd84201578f2f6027b0cb18b0ec69e7bba1f4071584cb",
+  "url": "https://stats.swehockey.se/Game/Events/629186"
+ },
+ "2023/game_2023_629186_lineups.html": {
+  "bytes": 14943,
+  "fetched_utc": "2026-08-05T23:19:41Z",
+  "sha256": "fddc915cf5fcc819b3e9d00f88f2d3a2330fd2b0a753f17919639294a21279ab",
+  "url": "https://stats.swehockey.se/Game/LineUps/629186"
+ },
+ "2023/game_2023_629187_events.html": {
+  "bytes": 16458,
+  "fetched_utc": "2026-08-05T23:19:28Z",
+  "sha256": "9a82c17dc6c92ff0cf3360f5fc91734547fb27575e88fb36b6fed75fe1e6b317",
+  "url": "https://stats.swehockey.se/Game/Events/629187"
+ },
+ "2023/game_2023_629187_lineups.html": {
+  "bytes": 14995,
+  "fetched_utc": "2026-08-05T23:19:30Z",
+  "sha256": "ff689e7cbd02579711cdd84ee1d4fba86e06906a07c7a3ac594e1687608aab4b",
+  "url": "https://stats.swehockey.se/Game/LineUps/629187"
+ },
+ "2023/game_2023_629188_events.html": {
+  "bytes": 13363,
+  "fetched_utc": "2026-08-05T23:19:42Z",
+  "sha256": "c2d760beb9b0e450dec98535a85070f35331235b30ce2be52d9727fa5ab705bd",
+  "url": "https://stats.swehockey.se/Game/Events/629188"
+ },
+ "2023/game_2023_629188_lineups.html": {
+  "bytes": 14953,
+  "fetched_utc": "2026-08-05T23:19:43Z",
+  "sha256": "55fa78d5970f2439292d020d6dae954c54b9ebc2550cbc85a575c5245a4fd518",
+  "url": "https://stats.swehockey.se/Game/LineUps/629188"
+ },
+ "2023/game_2023_629189_events.html": {
+  "bytes": 15657,
+  "fetched_utc": "2026-08-05T23:19:44Z",
+  "sha256": "38c40ee721e0bb3c6c6ffafca0abab29c057db5dd1f64e7866226a390f714ffd",
+  "url": "https://stats.swehockey.se/Game/Events/629189"
+ },
+ "2023/game_2023_629189_lineups.html": {
+  "bytes": 15064,
+  "fetched_utc": "2026-08-05T23:19:45Z",
+  "sha256": "0058ad91c9f537eec149b4dcfe28b3bba282685bf8d7ffa7d2f2e259b542acd2",
+  "url": "https://stats.swehockey.se/Game/LineUps/629189"
+ },
+ "2023/game_2023_629190_events.html": {
+  "bytes": 14529,
+  "fetched_utc": "2026-08-05T23:19:47Z",
+  "sha256": "8e93d2c32c735e21c1e90ef6b7c58550d77a0d3c9148297e85a6708960c29566",
+  "url": "https://stats.swehockey.se/Game/Events/629190"
+ },
+ "2023/game_2023_629190_lineups.html": {
+  "bytes": 14668,
+  "fetched_utc": "2026-08-05T23:19:48Z",
+  "sha256": "128ae1dbb3e560c9e8e00e5311151826e6e3057e711d82f4a8ca99290db8c4ab",
+  "url": "https://stats.swehockey.se/Game/LineUps/629190"
+ },
+ "2023/game_2023_629191_events.html": {
+  "bytes": 11177,
+  "fetched_utc": "2026-08-05T23:19:49Z",
+  "sha256": "7d6c3fb940b4cb5bfa6546d8f2be078f30ffc65a80f84accd5a4c1e810f6441f",
+  "url": "https://stats.swehockey.se/Game/Events/629191"
+ },
+ "2023/game_2023_629191_lineups.html": {
+  "bytes": 14910,
+  "fetched_utc": "2026-08-05T23:19:50Z",
+  "sha256": "e28dfe0055071e3e550a9013ccd4406f12ff13d75a87b6a31655e9376beae974",
+  "url": "https://stats.swehockey.se/Game/LineUps/629191"
+ },
+ "2023/game_2023_629192_events.html": {
+  "bytes": 14921,
+  "fetched_utc": "2026-08-05T23:19:51Z",
+  "sha256": "2faff2022a6c91c76026a58465e05ba28bfc35171244bd0585f44737de5ae93b",
+  "url": "https://stats.swehockey.se/Game/Events/629192"
+ },
+ "2023/game_2023_629192_lineups.html": {
+  "bytes": 14749,
+  "fetched_utc": "2026-08-05T23:19:52Z",
+  "sha256": "8c4c0355864d1e8195158ca34c1473a08f7e6dfbb7b853f6160cbed441a7dec5",
+  "url": "https://stats.swehockey.se/Game/LineUps/629192"
+ },
+ "2023/game_2023_629193_events.html": {
+  "bytes": 16010,
+  "fetched_utc": "2026-08-05T23:19:53Z",
+  "sha256": "820fc0c04407a5c990add8755a0cbbfb06c00af8c99ec96546a5232145f0c777",
+  "url": "https://stats.swehockey.se/Game/Events/629193"
+ },
+ "2023/game_2023_629193_lineups.html": {
+  "bytes": 14840,
+  "fetched_utc": "2026-08-05T23:19:55Z",
+  "sha256": "7aabe9f3f15cb4caf9fee1236c3bb26a6e79da931481726a55132e1bed8d3522",
+  "url": "https://stats.swehockey.se/Game/LineUps/629193"
+ },
+ "2023/game_2023_629194_events.html": {
+  "bytes": 13995,
+  "fetched_utc": "2026-08-05T23:19:56Z",
+  "sha256": "943b2343f0231eae3ed8db81176da1e6f50264684af9c4190695be53e2e57246",
+  "url": "https://stats.swehockey.se/Game/Events/629194"
+ },
+ "2023/game_2023_629194_lineups.html": {
+  "bytes": 14993,
+  "fetched_utc": "2026-08-05T23:19:57Z",
+  "sha256": "f255b483c6bda606f3442a5555b600f9c34e7805faa20979a1bd239f2855756c",
+  "url": "https://stats.swehockey.se/Game/LineUps/629194"
+ },
+ "2023/game_2023_629195_events.html": {
+  "bytes": 15563,
+  "fetched_utc": "2026-08-05T23:19:58Z",
+  "sha256": "2b22488608d055e4154cb85f711ce89c096b05f4f2cc321b96ad2c4a840a507f",
+  "url": "https://stats.swehockey.se/Game/Events/629195"
+ },
+ "2023/game_2023_629195_lineups.html": {
+  "bytes": 14661,
+  "fetched_utc": "2026-08-05T23:19:59Z",
+  "sha256": "c8e1e4aff5a9d070cb6a920053959550ec68cd29ce87990a1f6fbe70676d52ab",
+  "url": "https://stats.swehockey.se/Game/LineUps/629195"
+ },
+ "2023/game_2023_629196_events.html": {
+  "bytes": 12444,
+  "fetched_utc": "2026-08-05T23:20:10Z",
+  "sha256": "36a92dcb86f263a082d14eaab68d7d4958507a85781e34c210175ccc5c78f373",
+  "url": "https://stats.swehockey.se/Game/Events/629196"
+ },
+ "2023/game_2023_629196_lineups.html": {
+  "bytes": 15038,
+  "fetched_utc": "2026-08-05T23:20:11Z",
+  "sha256": "54c3a83e89e073792b19a6e24031b2488ca567187c4437e2f4163d2521de6cca",
+  "url": "https://stats.swehockey.se/Game/LineUps/629196"
+ },
+ "2023/game_2023_629197_events.html": {
+  "bytes": 16576,
+  "fetched_utc": "2026-08-05T23:20:00Z",
+  "sha256": "b3fc52f6f5f7bc3b6b7deb4ea30e92442252b70790218203f8db5a0f98806c43",
+  "url": "https://stats.swehockey.se/Game/Events/629197"
+ },
+ "2023/game_2023_629197_lineups.html": {
+  "bytes": 14593,
+  "fetched_utc": "2026-08-05T23:20:01Z",
+  "sha256": "1d0c6ae65a8c39c721cc965520bbcc86457c87c6d77179961cd2eb89ba838257",
+  "url": "https://stats.swehockey.se/Game/LineUps/629197"
+ },
+ "2023/game_2023_629198_events.html": {
+  "bytes": 18913,
+  "fetched_utc": "2026-08-05T23:20:03Z",
+  "sha256": "60c083f44c2994503567a53753463d97eda93eba4903668331c8fd5f7489aae0",
+  "url": "https://stats.swehockey.se/Game/Events/629198"
+ },
+ "2023/game_2023_629198_lineups.html": {
+  "bytes": 14974,
+  "fetched_utc": "2026-08-05T23:20:04Z",
+  "sha256": "235df43aa79e5ccf08acce301a7f449d096567cafa242e916612988a0d787fcd",
+  "url": "https://stats.swehockey.se/Game/LineUps/629198"
+ },
+ "2023/game_2023_629199_events.html": {
+  "bytes": 18682,
+  "fetched_utc": "2026-08-05T23:20:05Z",
+  "sha256": "2752327211ddeaf0604a99280df6a92fa783a6985b6eaace8f5b838c56a70df6",
+  "url": "https://stats.swehockey.se/Game/Events/629199"
+ },
+ "2023/game_2023_629199_lineups.html": {
+  "bytes": 15061,
+  "fetched_utc": "2026-08-05T23:20:06Z",
+  "sha256": "4964e5355c4d5a727f22f300e24bc939920291d455b108c231c189f01f14ea6c",
+  "url": "https://stats.swehockey.se/Game/LineUps/629199"
+ },
+ "2023/game_2023_629200_events.html": {
+  "bytes": 18775,
+  "fetched_utc": "2026-08-05T23:20:07Z",
+  "sha256": "ef7a16b46582613d1c7aa0c8098a86a490e142b57613f52649bcc2a00a085e3f",
+  "url": "https://stats.swehockey.se/Game/Events/629200"
+ },
+ "2023/game_2023_629200_lineups.html": {
+  "bytes": 14935,
+  "fetched_utc": "2026-08-05T23:20:08Z",
+  "sha256": "314689e989a29d92b23423a8f9a0c8d8e08df73d1fc859e6a078125cfb66a8fd",
+  "url": "https://stats.swehockey.se/Game/LineUps/629200"
+ },
+ "2023/game_2023_629201_events.html": {
+  "bytes": 17115,
+  "fetched_utc": "2026-08-05T23:20:12Z",
+  "sha256": "04576ba7eeabd3d44659a7935f133a5b77401728e478431c8bd9c54ddfbbf64e",
+  "url": "https://stats.swehockey.se/Game/Events/629201"
+ },
+ "2023/game_2023_629201_lineups.html": {
+  "bytes": 14686,
+  "fetched_utc": "2026-08-05T23:20:13Z",
+  "sha256": "7ac759fc207b1099526fdb8cac6713c874e142173b15da594007bf659a6addda",
+  "url": "https://stats.swehockey.se/Game/LineUps/629201"
+ },
+ "2023/game_2023_629202_events.html": {
+  "bytes": 19701,
+  "fetched_utc": "2026-08-05T23:20:14Z",
+  "sha256": "b5983b3526e28a92882da9702a9177ffd5dd2c92d573befa60f76a44ca301214",
+  "url": "https://stats.swehockey.se/Game/Events/629202"
+ },
+ "2023/game_2023_629202_lineups.html": {
+  "bytes": 14536,
+  "fetched_utc": "2026-08-05T23:20:15Z",
+  "sha256": "b6056e6962bef9e6e728aadc30806f742d6bcc547b4d9c523a371ceddcebb3f9",
+  "url": "https://stats.swehockey.se/Game/LineUps/629202"
+ },
+ "2023/game_2023_629203_events.html": {
+  "bytes": 13606,
+  "fetched_utc": "2026-08-05T23:20:17Z",
+  "sha256": "cc986217c7b87a83cd2132a82a28ee4c844a4060ee9ae9915451178cb0bed01e",
+  "url": "https://stats.swehockey.se/Game/Events/629203"
+ },
+ "2023/game_2023_629203_lineups.html": {
+  "bytes": 14927,
+  "fetched_utc": "2026-08-05T23:20:18Z",
+  "sha256": "cdff9e92b9379051d49af042c9cb7b3695b04db01efbe7bf5011144bf0e0a96d",
+  "url": "https://stats.swehockey.se/Game/LineUps/629203"
+ },
+ "2023/game_2023_629204_events.html": {
+  "bytes": 15837,
+  "fetched_utc": "2026-08-05T23:20:19Z",
+  "sha256": "5c2a78c283851b63df0b5687ea0bd2efc3c4c2353a8df4630a589a34afd74178",
+  "url": "https://stats.swehockey.se/Game/Events/629204"
+ },
+ "2023/game_2023_629204_lineups.html": {
+  "bytes": 14751,
+  "fetched_utc": "2026-08-05T23:20:20Z",
+  "sha256": "3faf86f9ef5b7c89bde83518004a3f9bdf80ca6a9f3ff199fa84716fde613c8d",
+  "url": "https://stats.swehockey.se/Game/LineUps/629204"
+ },
+ "2023/game_2023_629205_events.html": {
+  "bytes": 12307,
+  "fetched_utc": "2026-08-05T23:20:21Z",
+  "sha256": "f8cfbf3d5a43e332573b0baf84afc3e301aa7926b7181307ab14483413acb35d",
+  "url": "https://stats.swehockey.se/Game/Events/629205"
+ },
+ "2023/game_2023_629205_lineups.html": {
+  "bytes": 14937,
+  "fetched_utc": "2026-08-05T23:20:22Z",
+  "sha256": "1017480b9e6500b384a97f408874ecab458d0ba2002497215411f12c5f2ceb53",
+  "url": "https://stats.swehockey.se/Game/LineUps/629205"
+ },
+ "2023/game_2023_629206_events.html": {
+  "bytes": 20652,
+  "fetched_utc": "2026-08-05T23:20:24Z",
+  "sha256": "b68cbfe80211449940d0ef5db9e7703fee68325740855f3a49323a0d2f4ce0b2",
+  "url": "https://stats.swehockey.se/Game/Events/629206"
+ },
+ "2023/game_2023_629206_lineups.html": {
+  "bytes": 14936,
+  "fetched_utc": "2026-08-05T23:20:25Z",
+  "sha256": "822bcaabecbbde700be141ea2ce093fb28ede2db5f788cd2dbc324b006d16f56",
+  "url": "https://stats.swehockey.se/Game/LineUps/629206"
+ },
+ "2023/game_2023_629207_events.html": {
+  "bytes": 18546,
+  "fetched_utc": "2026-08-05T23:20:26Z",
+  "sha256": "ab217d5070fed1e109ea33c23ad9a7993c820c7992d1e4fe3d0e4f167d296cf2",
+  "url": "https://stats.swehockey.se/Game/Events/629207"
+ },
+ "2023/game_2023_629207_lineups.html": {
+  "bytes": 14747,
+  "fetched_utc": "2026-08-05T23:20:27Z",
+  "sha256": "22be44efb86ec13b525069ebee89728c1f3c881990a1ae7e1e9ce33fe14157b1",
+  "url": "https://stats.swehockey.se/Game/LineUps/629207"
+ },
+ "2023/game_2023_629208_events.html": {
+  "bytes": 16157,
+  "fetched_utc": "2026-08-05T23:20:28Z",
+  "sha256": "67b72b0c0e8d3324c5be24d836427d03d9e487a037ccb59e06b53374aee4b99d",
+  "url": "https://stats.swehockey.se/Game/Events/629208"
+ },
+ "2023/game_2023_629208_lineups.html": {
+  "bytes": 14672,
+  "fetched_utc": "2026-08-05T23:20:29Z",
+  "sha256": "8af1eba4639f14733e86f77d6810d581d03230b9f16062c4f238d6be675617ee",
+  "url": "https://stats.swehockey.se/Game/LineUps/629208"
+ },
+ "2023/game_2023_629209_events.html": {
+  "bytes": 19075,
+  "fetched_utc": "2026-08-05T23:20:30Z",
+  "sha256": "a21a3c8bf2a969f3f4e0bfa9c5a5218d0ee1766a996f8cde173b68e641144b83",
+  "url": "https://stats.swehockey.se/Game/Events/629209"
+ },
+ "2023/game_2023_629209_lineups.html": {
+  "bytes": 14995,
+  "fetched_utc": "2026-08-05T23:20:32Z",
+  "sha256": "91cc031aaab3f1f0e492cc30cf561257e8ef57ad9be3154439ef605410bfadd2",
+  "url": "https://stats.swehockey.se/Game/LineUps/629209"
+ },
+ "2023/game_2023_629210_events.html": {
+  "bytes": 12561,
+  "fetched_utc": "2026-08-05T23:20:42Z",
+  "sha256": "01d99d1b7694d5e8d05e3e9cf65c135a356c37bd5061f3d254daf2d030a6faf7",
+  "url": "https://stats.swehockey.se/Game/Events/629210"
+ },
+ "2023/game_2023_629210_lineups.html": {
+  "bytes": 15019,
+  "fetched_utc": "2026-08-05T23:20:43Z",
+  "sha256": "294c5d338fc208ca7d513d09f73b6b8844a3e9063a8994c2444f72e84749588a",
+  "url": "https://stats.swehockey.se/Game/LineUps/629210"
+ },
+ "2023/game_2023_629211_events.html": {
+  "bytes": 13968,
+  "fetched_utc": "2026-08-05T23:20:35Z",
+  "sha256": "449549f6ab29dd5585e8534efcb915438ea57ed97da09fbe77a65f4206b3fff0",
+  "url": "https://stats.swehockey.se/Game/Events/629211"
+ },
+ "2023/game_2023_629211_lineups.html": {
+  "bytes": 14920,
+  "fetched_utc": "2026-08-05T23:20:36Z",
+  "sha256": "e23cead5fa91b12ccfdc02e6bfc0306e320098ebb68cd7c61e4177843de52bfa",
+  "url": "https://stats.swehockey.se/Game/LineUps/629211"
+ },
+ "2023/game_2023_629212_events.html": {
+  "bytes": 18162,
+  "fetched_utc": "2026-08-05T23:20:44Z",
+  "sha256": "ed7bb302803026e4ee00a0ec934a516d559292a6f50a6386ae0a48379e2fec58",
+  "url": "https://stats.swehockey.se/Game/Events/629212"
+ },
+ "2023/game_2023_629212_lineups.html": {
+  "bytes": 14689,
+  "fetched_utc": "2026-08-05T23:20:45Z",
+  "sha256": "c4de523de26ff46b33650903b68c643a2deb4d4eb8da4764142d55f49e16886a",
+  "url": "https://stats.swehockey.se/Game/LineUps/629212"
+ },
+ "2023/game_2023_629213_events.html": {
+  "bytes": 16281,
+  "fetched_utc": "2026-08-05T23:20:33Z",
+  "sha256": "10147b304f1f4124cfaca3b57eea7006c97e8e36cf37dc235a700d39c6ac6ea9",
+  "url": "https://stats.swehockey.se/Game/Events/629213"
+ },
+ "2023/game_2023_629213_lineups.html": {
+  "bytes": 15052,
+  "fetched_utc": "2026-08-05T23:20:34Z",
+  "sha256": "066ead680897a1c2d19a92853c8da9287f353b04eb4551ae653c36ff84394f8c",
+  "url": "https://stats.swehockey.se/Game/LineUps/629213"
+ },
+ "2023/game_2023_629214_events.html": {
+  "bytes": 11642,
+  "fetched_utc": "2026-08-05T23:20:46Z",
+  "sha256": "5e94d89ae9d0d4bb3fe77b84b768e8f9f7067d94e698b521c29fb2f30f42b8b6",
+  "url": "https://stats.swehockey.se/Game/Events/629214"
+ },
+ "2023/game_2023_629214_lineups.html": {
+  "bytes": 14767,
+  "fetched_utc": "2026-08-05T23:20:48Z",
+  "sha256": "91b17f9eca1cdfeffde09fc8c97f6c34bb5a2722bbf0468f9459a7671f3fd0fe",
+  "url": "https://stats.swehockey.se/Game/LineUps/629214"
+ },
+ "2023/game_2023_629215_events.html": {
+  "bytes": 20013,
+  "fetched_utc": "2026-08-05T23:15:57Z",
+  "sha256": "c1707676fd0b0782e324566473355a28ff7c364079ca25532b38147cd4b75a07",
+  "url": "https://stats.swehockey.se/Game/Events/629215"
+ },
+ "2023/game_2023_629215_lineups.html": {
+  "bytes": 14938,
+  "fetched_utc": "2026-08-05T23:15:59Z",
+  "sha256": "4ce2f6c0650821d198498cf83537bc9c6e4c3f5970c4620744bc27bf1bb76586",
+  "url": "https://stats.swehockey.se/Game/LineUps/629215"
+ },
+ "2023/game_2023_629216_events.html": {
+  "bytes": 13628,
+  "fetched_utc": "2026-08-05T23:20:37Z",
+  "sha256": "16111f92505b54dc4f197158ba2142475693f148217250f2215bdd40941b41cb",
+  "url": "https://stats.swehockey.se/Game/Events/629216"
+ },
+ "2023/game_2023_629216_lineups.html": {
+  "bytes": 14929,
+  "fetched_utc": "2026-08-05T23:20:38Z",
+  "sha256": "25fb0df287a445eb8ffb4714b8d0b6756ee7dc5b2cebed27810d159dcf372b13",
+  "url": "https://stats.swehockey.se/Game/LineUps/629216"
+ },
+ "2023/game_2023_629218_events.html": {
+  "bytes": 11499,
+  "fetched_utc": "2026-08-05T23:21:14Z",
+  "sha256": "6f78599c3fc18121229fe7df645d4cea73d0dd2ffd55cc6faf9d85bf29d96c1e",
+  "url": "https://stats.swehockey.se/Game/Events/629218"
+ },
+ "2023/game_2023_629218_lineups.html": {
+  "bytes": 15023,
+  "fetched_utc": "2026-08-05T23:21:15Z",
+  "sha256": "dfa8733116badb57c3323d83fe171e137a83a499c0a1ffb64ad33344fc909d24",
+  "url": "https://stats.swehockey.se/Game/LineUps/629218"
+ },
+ "2023/game_2023_629219_events.html": {
+  "bytes": 11233,
+  "fetched_utc": "2026-08-05T23:21:16Z",
+  "sha256": "8249d6b9fd5518159a046e8546f7b281960e148dc512a1159c739f5573f5709f",
+  "url": "https://stats.swehockey.se/Game/Events/629219"
+ },
+ "2023/game_2023_629219_lineups.html": {
+  "bytes": 14994,
+  "fetched_utc": "2026-08-05T23:21:17Z",
+  "sha256": "0f47a54fded98af0c5da0d926d9d4b798c81c9a0ea84e2528e7f7daa4d01ca70",
+  "url": "https://stats.swehockey.se/Game/LineUps/629219"
+ },
+ "2023/game_2023_629220_events.html": {
+  "bytes": 13641,
+  "fetched_utc": "2026-08-05T23:21:07Z",
+  "sha256": "102d2bdfa347c1d6b60c7101520060179f5da13c8a79e8bfe69227047e213ec5",
+  "url": "https://stats.swehockey.se/Game/Events/629220"
+ },
+ "2023/game_2023_629220_lineups.html": {
+  "bytes": 14670,
+  "fetched_utc": "2026-08-05T23:21:08Z",
+  "sha256": "9efe9b9d1e86ee988e1230d550d451e3fb53c9d3105bce26d8318e8aef61fff2",
+  "url": "https://stats.swehockey.se/Game/LineUps/629220"
+ },
+ "2023/game_2023_629221_events.html": {
+  "bytes": 15695,
+  "fetched_utc": "2026-08-05T23:21:03Z",
+  "sha256": "d528323b5d93410119cf3c9543a40d2ec778a2955c7b88f8e6eb68507f7e98d5",
+  "url": "https://stats.swehockey.se/Game/Events/629221"
+ },
+ "2023/game_2023_629221_lineups.html": {
+  "bytes": 15004,
+  "fetched_utc": "2026-08-05T23:21:04Z",
+  "sha256": "e56267dabc217f455992319ecdf7e46a4c52ccdbef3db880ce630c21f1fb2a7e",
+  "url": "https://stats.swehockey.se/Game/LineUps/629221"
+ },
+ "2023/game_2023_629222_events.html": {
+  "bytes": 10797,
+  "fetched_utc": "2026-08-05T23:21:09Z",
+  "sha256": "28f83e137837aff156f38d8fda32e172d05a5675db902e3e3bda32652db09b2e",
+  "url": "https://stats.swehockey.se/Game/Events/629222"
+ },
+ "2023/game_2023_629222_lineups.html": {
+  "bytes": 14857,
+  "fetched_utc": "2026-08-05T23:21:11Z",
+  "sha256": "62ab674c8945c2c23ff4bdca23526d6b05c521ffe677210bc0fda364492cd1e3",
+  "url": "https://stats.swehockey.se/Game/LineUps/629222"
+ },
+ "2023/game_2023_629223_events.html": {
+  "bytes": 17985,
+  "fetched_utc": "2026-08-05T23:21:19Z",
+  "sha256": "06ea81103c98c0226195bc70a13bb0ca591d68dbdb0f955d490c8e9305f5ab05",
+  "url": "https://stats.swehockey.se/Game/Events/629223"
+ },
+ "2023/game_2023_629223_lineups.html": {
+  "bytes": 14941,
+  "fetched_utc": "2026-08-05T23:21:20Z",
+  "sha256": "b6d8e31df4d36c57a23763e1c83efbe660dcd9f3a2d37905c50356792d832b40",
+  "url": "https://stats.swehockey.se/Game/LineUps/629223"
+ },
+ "2023/game_2023_629225_events.html": {
+  "bytes": 14116,
+  "fetched_utc": "2026-08-05T23:21:12Z",
+  "sha256": "64aa89381beee4d267b7fec92bcddad994bc6e7057e64f705e68be7ee50a4cd0",
+  "url": "https://stats.swehockey.se/Game/Events/629225"
+ },
+ "2023/game_2023_629225_lineups.html": {
+  "bytes": 14971,
+  "fetched_utc": "2026-08-05T23:21:13Z",
+  "sha256": "72cb974bf7919573388d724dca245ee39962bedff00ce20c66e98a0f4003e0a0",
+  "url": "https://stats.swehockey.se/Game/LineUps/629225"
+ },
+ "2023/game_2023_629228_events.html": {
+  "bytes": 22473,
+  "fetched_utc": "2026-08-05T23:21:21Z",
+  "sha256": "691b53170d79dc72f9f22d8c7fbce9d39cf95af60f8a73f5104317b1c13db489",
+  "url": "https://stats.swehockey.se/Game/Events/629228"
+ },
+ "2023/game_2023_629228_lineups.html": {
+  "bytes": 14936,
+  "fetched_utc": "2026-08-05T23:21:22Z",
+  "sha256": "88c2a6f2ddd236f32a4c9c0f14665ec22c9a9a0430329cd8a7a925b7370e364b",
+  "url": "https://stats.swehockey.se/Game/LineUps/629228"
+ },
+ "2023/game_2023_629230_events.html": {
+  "bytes": 12878,
+  "fetched_utc": "2026-08-05T23:21:23Z",
+  "sha256": "1359da39bc35ac1f0103c55a1573c5fc696b8f8b89117ef09dbd592343ca23b9",
+  "url": "https://stats.swehockey.se/Game/Events/629230"
+ },
+ "2023/game_2023_629230_lineups.html": {
+  "bytes": 14671,
+  "fetched_utc": "2026-08-05T23:21:24Z",
+  "sha256": "107b0c618eb43fc0eedf72f79448342be18b0c0f4211e4f93df142ac7502b01b",
+  "url": "https://stats.swehockey.se/Game/LineUps/629230"
+ },
+ "2023/game_2023_629231_events.html": {
+  "bytes": 20642,
+  "fetched_utc": "2026-08-05T23:16:09Z",
+  "sha256": "bd27b9d20c7a355f987a174684426e770e3a594653619d3fe66177d8f38faf66",
+  "url": "https://stats.swehockey.se/Game/Events/629231"
+ },
+ "2023/game_2023_629231_lineups.html": {
+  "bytes": 15020,
+  "fetched_utc": "2026-08-05T23:16:10Z",
+  "sha256": "f2b52da322520c9e8dac39b5cf4720c9d1e1fa846e2b384688032a48f1c03ae3",
+  "url": "https://stats.swehockey.se/Game/LineUps/629231"
+ },
+ "2023/game_2023_629232_events.html": {
+  "bytes": 15821,
+  "fetched_utc": "2026-08-05T23:21:26Z",
+  "sha256": "d525f1c6ade7d01be0666eb35546e4ccb7551ccc8cc32abe0cb562973424e52a",
+  "url": "https://stats.swehockey.se/Game/Events/629232"
+ },
+ "2023/game_2023_629232_lineups.html": {
+  "bytes": 14971,
+  "fetched_utc": "2026-08-05T23:21:27Z",
+  "sha256": "f5607d50a04170301356277facd62fbfa1362f49111286a935debba055aa3b92",
+  "url": "https://stats.swehockey.se/Game/LineUps/629232"
+ },
+ "2023/game_2023_629233_events.html": {
+  "bytes": 17772,
+  "fetched_utc": "2026-08-05T23:21:28Z",
+  "sha256": "b1e840ea511b7bd93189d140acc77eda5561dab5a779d4b8024e4128930f919a",
+  "url": "https://stats.swehockey.se/Game/Events/629233"
+ },
+ "2023/game_2023_629233_lineups.html": {
+  "bytes": 14832,
+  "fetched_utc": "2026-08-05T23:21:29Z",
+  "sha256": "1bc3c19ecc2f32b9f8a805d649c2b3ebd7342b2f7184905832d83fc490eaf7b5",
+  "url": "https://stats.swehockey.se/Game/LineUps/629233"
+ },
+ "2023/game_2023_629234_events.html": {
+  "bytes": 22275,
+  "fetched_utc": "2026-08-05T23:21:30Z",
+  "sha256": "741845caebb532ec8d9baa68eba72e7e08c7de4ba5b9392645afcb66b3cc0fe3",
+  "url": "https://stats.swehockey.se/Game/Events/629234"
+ },
+ "2023/game_2023_629234_lineups.html": {
+  "bytes": 14809,
+  "fetched_utc": "2026-08-05T23:21:31Z",
+  "sha256": "2bcab131c1754daae6d31ba9f7716358f615c21264e8c81098d12b7c85010bf2",
+  "url": "https://stats.swehockey.se/Game/LineUps/629234"
+ },
+ "2023/game_2023_629235_events.html": {
+  "bytes": 11223,
+  "fetched_utc": "2026-08-05T23:21:33Z",
+  "sha256": "862dbdf7856c0f1d9c3a21872fe758cceb6bd8abb3a5b0b85a7185562a79d92a",
+  "url": "https://stats.swehockey.se/Game/Events/629235"
+ },
+ "2023/game_2023_629235_lineups.html": {
+  "bytes": 15074,
+  "fetched_utc": "2026-08-05T23:21:34Z",
+  "sha256": "d453f6bcfb260040c9698063a1da3194a23fba41d6eb44b19cacac12311ae4bd",
+  "url": "https://stats.swehockey.se/Game/LineUps/629235"
+ },
+ "2023/game_2023_629236_events.html": {
+  "bytes": 16901,
+  "fetched_utc": "2026-08-05T23:21:35Z",
+  "sha256": "7670b22c1e2d3ba298e5af14eefd98831fba407c0ff5f3b535a5a782ae49d577",
+  "url": "https://stats.swehockey.se/Game/Events/629236"
+ },
+ "2023/game_2023_629236_lineups.html": {
+  "bytes": 14990,
+  "fetched_utc": "2026-08-05T23:21:36Z",
+  "sha256": "95e06f9ed247b5576160de54342929a6c2a88a2f94bcfb3c728da046676d3d8c",
+  "url": "https://stats.swehockey.se/Game/LineUps/629236"
+ },
+ "2023/game_2023_629237_events.html": {
+  "bytes": 12985,
+  "fetched_utc": "2026-08-05T23:21:37Z",
+  "sha256": "3c6cbbacc26f716f696c0ac6eda305377dff0321f54732707b2206801b2116a9",
+  "url": "https://stats.swehockey.se/Game/Events/629237"
+ },
+ "2023/game_2023_629237_lineups.html": {
+  "bytes": 14983,
+  "fetched_utc": "2026-08-05T23:21:38Z",
+  "sha256": "218417d2d537d7191fa1483e241fcb104f876ccea70b905b0171d8188dbf3f9f",
+  "url": "https://stats.swehockey.se/Game/LineUps/629237"
+ },
+ "2023/game_2023_629238_events.html": {
+  "bytes": 19209,
+  "fetched_utc": "2026-08-05T23:22:04Z",
+  "sha256": "7549a449d12dd68985869027161d0ed80aaed3af8279cd8b31971e016e308df5",
+  "url": "https://stats.swehockey.se/Game/Events/629238"
+ },
+ "2023/game_2023_629238_lineups.html": {
+  "bytes": 14758,
+  "fetched_utc": "2026-08-05T23:22:06Z",
+  "sha256": "85f609941807baa2ef714bb326e482fb1b79e6f8bce56a5cdb20810f8fafe109",
+  "url": "https://stats.swehockey.se/Game/LineUps/629238"
+ },
+ "2023/game_2023_629239_events.html": {
+  "bytes": 11221,
+  "fetched_utc": "2026-08-05T23:22:07Z",
+  "sha256": "42c68dbb2de123d0bca64893ef6fd6aee46b1d4bbeeb6c892e48f0f59fbee04d",
+  "url": "https://stats.swehockey.se/Game/Events/629239"
+ },
+ "2023/game_2023_629239_lineups.html": {
+  "bytes": 14679,
+  "fetched_utc": "2026-08-05T23:22:08Z",
+  "sha256": "581849d42ce2c7edde4dda8be6b88a5237c39e983607e963e7953c9733acab58",
+  "url": "https://stats.swehockey.se/Game/LineUps/629239"
+ },
+ "2023/game_2023_629240_events.html": {
+  "bytes": 18219,
+  "fetched_utc": "2026-08-05T23:22:09Z",
+  "sha256": "8e5afc4be749b7538ebb2c295e57a6f3a3e009e4abf0b61b1e51a5f26e387645",
+  "url": "https://stats.swehockey.se/Game/Events/629240"
+ },
+ "2023/game_2023_629240_lineups.html": {
+  "bytes": 14688,
+  "fetched_utc": "2026-08-05T23:22:10Z",
+  "sha256": "e9c1998b5677f4f3bf92f9613e1d4e8349fa898ba73d6b0abf81261369c8beb9",
+  "url": "https://stats.swehockey.se/Game/LineUps/629240"
+ },
+ "2023/game_2023_629241_events.html": {
+  "bytes": 13402,
+  "fetched_utc": "2026-08-05T23:24:03Z",
+  "sha256": "6c1e82bd66c0ab099850e89fcc15ab44c2941a4df5c536633ed9c3e6bc96a258",
+  "url": "https://stats.swehockey.se/Game/Events/629241"
+ },
+ "2023/game_2023_629241_lineups.html": {
+  "bytes": 14815,
+  "fetched_utc": "2026-08-05T23:24:04Z",
+  "sha256": "38430c6fa1854b9c351cd978c3e6c2ea4bb1ca49da5b5b3020c4e60b726d47eb",
+  "url": "https://stats.swehockey.se/Game/LineUps/629241"
+ },
+ "2023/game_2023_629242_events.html": {
+  "bytes": 23970,
+  "fetched_utc": "2026-08-05T23:22:11Z",
+  "sha256": "547ddd385c6cb09e5edbd622f9b082a7cb7e1f9c642ca71499774ea4e9d09b75",
+  "url": "https://stats.swehockey.se/Game/Events/629242"
+ },
+ "2023/game_2023_629242_lineups.html": {
+  "bytes": 14913,
+  "fetched_utc": "2026-08-05T23:22:13Z",
+  "sha256": "4f0bd0bcc28c9cbab92206a65921d8b1eb8f56a56ac9bdd4a7d4871b160fa071",
+  "url": "https://stats.swehockey.se/Game/LineUps/629242"
+ },
+ "2023/game_2023_629243_events.html": {
+  "bytes": 19466,
+  "fetched_utc": "2026-08-05T23:22:14Z",
+  "sha256": "6a22aee9a6e8cb15036f94aa4c9f36971ba16a0231d936b659f7853567b1faff",
+  "url": "https://stats.swehockey.se/Game/Events/629243"
+ },
+ "2023/game_2023_629243_lineups.html": {
+  "bytes": 14952,
+  "fetched_utc": "2026-08-05T23:22:15Z",
+  "sha256": "84711dfc72e8c541b8230bd73b6dab432376d65e4abf5b723f95e1744820d721",
+  "url": "https://stats.swehockey.se/Game/LineUps/629243"
+ },
+ "2023/game_2023_629244_events.html": {
+  "bytes": 16556,
+  "fetched_utc": "2026-08-05T23:22:16Z",
+  "sha256": "4981c16a8053d3283c2ceb5e7c22ffbd71e46825ebe1fbcc90fae471cbf4270c",
+  "url": "https://stats.swehockey.se/Game/Events/629244"
+ },
+ "2023/game_2023_629244_lineups.html": {
+  "bytes": 14954,
+  "fetched_utc": "2026-08-05T23:22:17Z",
+  "sha256": "98897c7de7b49c7102ec8cfe5f470c4851f962e88c92789198fcfdb96b644c3b",
+  "url": "https://stats.swehockey.se/Game/LineUps/629244"
+ },
+ "2023/game_2023_629245_events.html": {
+  "bytes": 13809,
+  "fetched_utc": "2026-08-05T23:22:18Z",
+  "sha256": "68636551d5fd4fef5906d2e0305bbcf83725df718dc395bcf0bbb87cc06f01d2",
+  "url": "https://stats.swehockey.se/Game/Events/629245"
+ },
+ "2023/game_2023_629245_lineups.html": {
+  "bytes": 14780,
+  "fetched_utc": "2026-08-05T23:22:19Z",
+  "sha256": "56580e5c0cc50e381ccbfb96a9f8477642e825582528e8f78a9409c7414bd9ed",
+  "url": "https://stats.swehockey.se/Game/LineUps/629245"
+ },
+ "2023/game_2023_629246_events.html": {
+  "bytes": 19875,
+  "fetched_utc": "2026-08-05T23:22:21Z",
+  "sha256": "447eab24b727eb09dc5cd9c66944213c2b2843304e6a30b0ec477f79ae2616e9",
+  "url": "https://stats.swehockey.se/Game/Events/629246"
+ },
+ "2023/game_2023_629246_lineups.html": {
+  "bytes": 14597,
+  "fetched_utc": "2026-08-05T23:22:22Z",
+  "sha256": "eabc85bf1023d8916fddaec7f66d4cdd9e73fcb699dc64527a8197a0aebf492d",
+  "url": "https://stats.swehockey.se/Game/LineUps/629246"
+ },
+ "2023/game_2023_629247_events.html": {
+  "bytes": 13451,
+  "fetched_utc": "2026-08-05T23:22:23Z",
+  "sha256": "b792d4ad88a3b11c4026c962bc8e2e1828f476837cf86c62431699962fd61e90",
+  "url": "https://stats.swehockey.se/Game/Events/629247"
+ },
+ "2023/game_2023_629247_lineups.html": {
+  "bytes": 14931,
+  "fetched_utc": "2026-08-05T23:22:24Z",
+  "sha256": "edc90e4ea454138a759732d32d62411ab9d5293e5c638a0eaf92ebe6f8517543",
+  "url": "https://stats.swehockey.se/Game/LineUps/629247"
+ },
+ "2023/game_2023_629248_events.html": {
+  "bytes": 13352,
+  "fetched_utc": "2026-08-05T23:22:25Z",
+  "sha256": "d3b5ad7deb4958029c6363f445f40801ba8161d35f747f472d5628232ec5ff4b",
+  "url": "https://stats.swehockey.se/Game/Events/629248"
+ },
+ "2023/game_2023_629248_lineups.html": {
+  "bytes": 14844,
+  "fetched_utc": "2026-08-05T23:22:26Z",
+  "sha256": "444b23d719c9255affb8cc6dc64024ca399c6db9bfe8ad7e63b776cd80d483a5",
+  "url": "https://stats.swehockey.se/Game/LineUps/629248"
+ },
+ "2023/game_2023_629249_events.html": {
+  "bytes": 12443,
+  "fetched_utc": "2026-08-05T23:22:28Z",
+  "sha256": "56ba9c9775a92ea3cf9e562d08d5c4b7a305df716bacd4c6597f55ed0392f862",
+  "url": "https://stats.swehockey.se/Game/Events/629249"
+ },
+ "2023/game_2023_629249_lineups.html": {
+  "bytes": 14982,
+  "fetched_utc": "2026-08-05T23:22:29Z",
+  "sha256": "85c1ea6584718b387cf3e04e456a3c98efdd2d5f3b1a95ac81c7104e024d7430",
+  "url": "https://stats.swehockey.se/Game/LineUps/629249"
+ },
+ "2023/game_2023_629250_events.html": {
+  "bytes": 15345,
+  "fetched_utc": "2026-08-05T23:19:10Z",
+  "sha256": "60bb6dfa20ed3eed4a2f971f7507eb65b6c1a3c989c2c6a5f287999253729879",
+  "url": "https://stats.swehockey.se/Game/Events/629250"
+ },
+ "2023/game_2023_629250_lineups.html": {
+  "bytes": 14701,
+  "fetched_utc": "2026-08-05T23:19:11Z",
+  "sha256": "cb14b4b307e67965ddfd52e4c1adcd80f048877d5e2d91e0334f478d20ddacbc",
+  "url": "https://stats.swehockey.se/Game/LineUps/629250"
+ },
+ "2023/game_2023_629251_events.html": {
+  "bytes": 10735,
+  "fetched_utc": "2026-08-05T23:22:32Z",
+  "sha256": "c0848d351281a771b8489e9c35fda68e2d19868d3dc61cffd76be0889f1d2828",
+  "url": "https://stats.swehockey.se/Game/Events/629251"
+ },
+ "2023/game_2023_629251_lineups.html": {
+  "bytes": 14724,
+  "fetched_utc": "2026-08-05T23:22:33Z",
+  "sha256": "55c7bd8e838bbf70821a353b9bce4c2a51932251e72d5baa7bd54e518d6e645e",
+  "url": "https://stats.swehockey.se/Game/LineUps/629251"
+ },
+ "2023/game_2023_629252_events.html": {
+  "bytes": 12863,
+  "fetched_utc": "2026-08-05T23:22:34Z",
+  "sha256": "1f99563d97b8a5ca11f3349ce7378c03481fb5d08897afc4a93b85803c21ec56",
+  "url": "https://stats.swehockey.se/Game/Events/629252"
+ },
+ "2023/game_2023_629252_lineups.html": {
+  "bytes": 14812,
+  "fetched_utc": "2026-08-05T23:22:36Z",
+  "sha256": "bd82fbd7d434200eee09f693bf19db176c96ec6095bc8bd0b47057fce6d46b5e",
+  "url": "https://stats.swehockey.se/Game/LineUps/629252"
+ },
+ "2023/game_2023_629253_events.html": {
+  "bytes": 11561,
+  "fetched_utc": "2026-08-05T23:22:37Z",
+  "sha256": "711c7b027eea452bb7a3c2173717d9807e82c5451ec547a2d99acb5ff428db43",
+  "url": "https://stats.swehockey.se/Game/Events/629253"
+ },
+ "2023/game_2023_629253_lineups.html": {
+  "bytes": 14992,
+  "fetched_utc": "2026-08-05T23:22:38Z",
+  "sha256": "548841dbe7afa31d1df59a8bde03ab7d3be35489d1d9e43e297c1d7c2155dc8d",
+  "url": "https://stats.swehockey.se/Game/LineUps/629253"
+ },
+ "2023/game_2023_629254_events.html": {
+  "bytes": 11905,
+  "fetched_utc": "2026-08-05T23:22:40Z",
+  "sha256": "f095741801700a90515dbc7de120a7b9e1cfca313308d19310ef606bea49fa93",
+  "url": "https://stats.swehockey.se/Game/Events/629254"
+ },
+ "2023/game_2023_629254_lineups.html": {
+  "bytes": 14951,
+  "fetched_utc": "2026-08-05T23:22:41Z",
+  "sha256": "1b2f3f3f866f18786d8b74922c444df5776ec2c3fb32558301ae95b40a688dac",
+  "url": "https://stats.swehockey.se/Game/LineUps/629254"
+ },
+ "2023/game_2023_629255_events.html": {
+  "bytes": 15862,
+  "fetched_utc": "2026-08-05T23:22:42Z",
+  "sha256": "fa06a5e5808a623f0850cc9ded178a56f34fd1e0a96426221bc87cf80d88d63c",
+  "url": "https://stats.swehockey.se/Game/Events/629255"
+ },
+ "2023/game_2023_629255_lineups.html": {
+  "bytes": 14417,
+  "fetched_utc": "2026-08-05T23:22:43Z",
+  "sha256": "757a82fd7dbd755e35aa059cdbf4a380773a7ac23a4801d66c94278ea1bfd1d8",
+  "url": "https://stats.swehockey.se/Game/LineUps/629255"
+ },
+ "2023/game_2023_629256_events.html": {
+  "bytes": 21861,
+  "fetched_utc": "2026-08-05T23:22:44Z",
+  "sha256": "687f125a6870ea6eee381b12abd13f3d3a2c3efd8461f93b8bc2a6f267c3ac6a",
+  "url": "https://stats.swehockey.se/Game/Events/629256"
+ },
+ "2023/game_2023_629256_lineups.html": {
+  "bytes": 15021,
+  "fetched_utc": "2026-08-05T23:22:46Z",
+  "sha256": "a58e949e6c65cb27a9ea66baa6a9e2809417195d89b6293231a731cd2bb6cd54",
+  "url": "https://stats.swehockey.se/Game/LineUps/629256"
+ },
+ "2023/game_2023_629257_events.html": {
+  "bytes": 19287,
+  "fetched_utc": "2026-08-05T23:22:47Z",
+  "sha256": "e9e56b13cd123b295739bba60b049079b0fffe79bfa64a708b9afd6fe0a3d858",
+  "url": "https://stats.swehockey.se/Game/Events/629257"
+ },
+ "2023/game_2023_629257_lineups.html": {
+  "bytes": 14443,
+  "fetched_utc": "2026-08-05T23:22:48Z",
+  "sha256": "9f4626191644ea75616a0feeee8abe6d61145039dde80c63e1cd03128ae1abf9",
+  "url": "https://stats.swehockey.se/Game/LineUps/629257"
+ },
+ "2023/game_2023_629258_events.html": {
+  "bytes": 13866,
+  "fetched_utc": "2026-08-05T23:22:58Z",
+  "sha256": "86ff04543849ae83259fb160f8fb817b507b1a6ccc252d5524213bcc473585ca",
+  "url": "https://stats.swehockey.se/Game/Events/629258"
+ },
+ "2023/game_2023_629258_lineups.html": {
+  "bytes": 14743,
+  "fetched_utc": "2026-08-05T23:23:00Z",
+  "sha256": "30071f00d6a339b80d07f1e3ee8138dee228e306bd05fb1229a98e9174ad4bff",
+  "url": "https://stats.swehockey.se/Game/LineUps/629258"
+ },
+ "2023/game_2023_629259_events.html": {
+  "bytes": 21080,
+  "fetched_utc": "2026-08-05T23:23:01Z",
+  "sha256": "f62b3fba7f33b6732228999fb18a5e35f30c62eef1c467da81c7d0f7db89b651",
+  "url": "https://stats.swehockey.se/Game/Events/629259"
+ },
+ "2023/game_2023_629259_lineups.html": {
+  "bytes": 14959,
+  "fetched_utc": "2026-08-05T23:23:02Z",
+  "sha256": "e89bf159f365db55876aef902ce294150e675d2598ca72469f0589a184cac62a",
+  "url": "https://stats.swehockey.se/Game/LineUps/629259"
+ },
+ "2023/game_2023_629260_events.html": {
+  "bytes": 18545,
+  "fetched_utc": "2026-08-05T23:22:49Z",
+  "sha256": "a0b271a4942bdbc071d9bf574d53bfe565683ee3a6a96d6ad50baf7052bfcb39",
+  "url": "https://stats.swehockey.se/Game/Events/629260"
+ },
+ "2023/game_2023_629260_lineups.html": {
+  "bytes": 14952,
+  "fetched_utc": "2026-08-05T23:22:51Z",
+  "sha256": "a9cca2f9800ab51ac1409f1a3f869dd99b99bc939e825714fad5faaace28e5df",
+  "url": "https://stats.swehockey.se/Game/LineUps/629260"
+ },
+ "2023/game_2023_629261_events.html": {
+  "bytes": 16043,
+  "fetched_utc": "2026-08-05T23:22:52Z",
+  "sha256": "f3848ffbac6f74e9753c734fcb44577d7c1b2e88772f7b3ed00c6da649d7d089",
+  "url": "https://stats.swehockey.se/Game/Events/629261"
+ },
+ "2023/game_2023_629261_lineups.html": {
+  "bytes": 14848,
+  "fetched_utc": "2026-08-05T23:22:53Z",
+  "sha256": "580a4ecf3aa30c4c429fc8b1a7efa85232c30d8c5b17909f6f33070c3c224a2f",
+  "url": "https://stats.swehockey.se/Game/LineUps/629261"
+ },
+ "2023/game_2023_629262_events.html": {
+  "bytes": 12628,
+  "fetched_utc": "2026-08-05T23:22:54Z",
+  "sha256": "fa7fa6cbfd9e001fa0426142bce020b60cab3806463a62ae5196e0ab97bc2d1d",
+  "url": "https://stats.swehockey.se/Game/Events/629262"
+ },
+ "2023/game_2023_629262_lineups.html": {
+  "bytes": 14636,
+  "fetched_utc": "2026-08-05T23:22:55Z",
+  "sha256": "33c5fd7b401dae4002dbc755eb6535b37e10d28ff1717bcdeb1840574bc91171",
+  "url": "https://stats.swehockey.se/Game/LineUps/629262"
+ },
+ "2023/game_2023_629263_events.html": {
+  "bytes": 13542,
+  "fetched_utc": "2026-08-05T23:22:56Z",
+  "sha256": "ba9744cfbd54c44b5a8354428975b9e4641634abf4d82e3d8524093209bef897",
+  "url": "https://stats.swehockey.se/Game/Events/629263"
+ },
+ "2023/game_2023_629263_lineups.html": {
+  "bytes": 14808,
+  "fetched_utc": "2026-08-05T23:22:57Z",
+  "sha256": "58db948b1cae2ca17f745791215c3b90d32d2d3b0929e4d4ad91957c89f9d9cd",
+  "url": "https://stats.swehockey.se/Game/LineUps/629263"
+ },
+ "2023/game_2023_629264_events.html": {
+  "bytes": 19227,
+  "fetched_utc": "2026-08-05T23:23:03Z",
+  "sha256": "a43396b9da7513ea95861c8c8e9a4a6769bdfeadc33be4657bc9a8e4e707727f",
+  "url": "https://stats.swehockey.se/Game/Events/629264"
+ },
+ "2023/game_2023_629264_lineups.html": {
+  "bytes": 14709,
+  "fetched_utc": "2026-08-05T23:23:05Z",
+  "sha256": "faa03cab901690ec7ef85dbc8f2a58b02ab7b40e90cbd7fb122dd402ae21ee4d",
+  "url": "https://stats.swehockey.se/Game/LineUps/629264"
+ },
+ "2023/game_2023_629265_events.html": {
+  "bytes": 15735,
+  "fetched_utc": "2026-08-05T23:23:06Z",
+  "sha256": "36cabf635fb40bb4ea80e7d5e220fa910e47640a94193de65d6b032d2a79bf46",
+  "url": "https://stats.swehockey.se/Game/Events/629265"
+ },
+ "2023/game_2023_629265_lineups.html": {
+  "bytes": 15009,
+  "fetched_utc": "2026-08-05T23:23:07Z",
+  "sha256": "41b8c40f8cb2707d22117811e31d4a5fd5263a5a3fda734d1df8cb3cd29f73de",
+  "url": "https://stats.swehockey.se/Game/LineUps/629265"
+ },
+ "2023/game_2023_629266_events.html": {
+  "bytes": 14518,
+  "fetched_utc": "2026-08-05T23:23:08Z",
+  "sha256": "1b01a3fa0ad2c28638f697e15b83ed65be8590bf012c028613666875ead09dc7",
+  "url": "https://stats.swehockey.se/Game/Events/629266"
+ },
+ "2023/game_2023_629266_lineups.html": {
+  "bytes": 14918,
+  "fetched_utc": "2026-08-05T23:23:09Z",
+  "sha256": "2c21277efe2a6d8e94dd83c7f6556e67575ec91d88c73e2134eef19307e44696",
+  "url": "https://stats.swehockey.se/Game/LineUps/629266"
+ },
+ "2023/game_2023_629267_events.html": {
+  "bytes": 16604,
+  "fetched_utc": "2026-08-05T23:23:10Z",
+  "sha256": "124b243971ed2da39abda5a2ede135cd115c1cb267b20baba922d52f7a77f57d",
+  "url": "https://stats.swehockey.se/Game/Events/629267"
+ },
+ "2023/game_2023_629267_lineups.html": {
+  "bytes": 14742,
+  "fetched_utc": "2026-08-05T23:23:11Z",
+  "sha256": "0bef2d4a90045479841f3ed6972b0e15f6abdfd27cdb5230d0990d2c7364f9e3",
+  "url": "https://stats.swehockey.se/Game/LineUps/629267"
+ },
+ "2023/game_2023_629268_events.html": {
+  "bytes": 12738,
+  "fetched_utc": "2026-08-05T23:23:13Z",
+  "sha256": "7acc941e5e4c6a39e41966f73d773e4ba516e519516692a4a75caa97bd2c586d",
+  "url": "https://stats.swehockey.se/Game/Events/629268"
+ },
+ "2023/game_2023_629268_lineups.html": {
+  "bytes": 15032,
+  "fetched_utc": "2026-08-05T23:23:14Z",
+  "sha256": "3f019ab37be4d7ac1b1382a8c82807dca50ce8ad29e9f78e30c70f0cddd29baa",
+  "url": "https://stats.swehockey.se/Game/LineUps/629268"
+ },
+ "2023/game_2023_629269_events.html": {
+  "bytes": 18683,
+  "fetched_utc": "2026-08-05T23:24:05Z",
+  "sha256": "3abc38529a964e61fcc37cd34fcecad11772b40a69be5829fe3966ac7d4256e8",
+  "url": "https://stats.swehockey.se/Game/Events/629269"
+ },
+ "2023/game_2023_629269_lineups.html": {
+  "bytes": 14640,
+  "fetched_utc": "2026-08-05T23:24:06Z",
+  "sha256": "f6c48806453b88bfb25d6b3e5069b742f028980426ffd9c8c272d3d5e5465d48",
+  "url": "https://stats.swehockey.se/Game/LineUps/629269"
+ },
+ "2023/game_2023_629270_events.html": {
+  "bytes": 10486,
+  "fetched_utc": "2026-08-05T23:23:15Z",
+  "sha256": "42c1932da4103fd4333739d2e53779d5251852be3d1e7333d8d37302354d0194",
+  "url": "https://stats.swehockey.se/Game/Events/629270"
+ },
+ "2023/game_2023_629270_lineups.html": {
+  "bytes": 14922,
+  "fetched_utc": "2026-08-05T23:23:16Z",
+  "sha256": "c7892b17c5475b33c52b05d16ecf453f296b1924df774f338d67a9534c1f8d52",
+  "url": "https://stats.swehockey.se/Game/LineUps/629270"
+ },
+ "2023/game_2023_629271_events.html": {
+  "bytes": 13356,
+  "fetched_utc": "2026-08-05T23:23:17Z",
+  "sha256": "052e5ef9e963d69aeaeea43f9f62403dca5a4d3c52c5df85095e2392b07e5c24",
+  "url": "https://stats.swehockey.se/Game/Events/629271"
+ },
+ "2023/game_2023_629271_lineups.html": {
+  "bytes": 14886,
+  "fetched_utc": "2026-08-05T23:23:18Z",
+  "sha256": "fd09fe0279dd703492c7be7792460ab74c7fb913f75053480cdbfec0b0c999c5",
+  "url": "https://stats.swehockey.se/Game/LineUps/629271"
+ },
+ "2023/game_2023_629272_events.html": {
+  "bytes": 14042,
+  "fetched_utc": "2026-08-05T23:23:19Z",
+  "sha256": "8f66d01a034149b96225bfa2eeed221513cbe1665751040596cc849ff2a00c4e",
+  "url": "https://stats.swehockey.se/Game/Events/629272"
+ },
+ "2023/game_2023_629272_lineups.html": {
+  "bytes": 14895,
+  "fetched_utc": "2026-08-05T23:23:21Z",
+  "sha256": "586cb0036630a3a00ee5cc90d7da253f3d0406f7f4723ab017864a6af7683ee8",
+  "url": "https://stats.swehockey.se/Game/LineUps/629272"
+ },
+ "2023/game_2023_629273_events.html": {
+  "bytes": 11753,
+  "fetched_utc": "2026-08-05T23:23:22Z",
+  "sha256": "eda2e16e0b7c8beadd631d026e3608bc933b1e90ff29b6437999554a14081ecc",
+  "url": "https://stats.swehockey.se/Game/Events/629273"
+ },
+ "2023/game_2023_629273_lineups.html": {
+  "bytes": 14783,
+  "fetched_utc": "2026-08-05T23:23:23Z",
+  "sha256": "6519d1daacb900dd4abbd3e265498ec2f0e4ad015a5e5bd9549c7136c02d1e79",
+  "url": "https://stats.swehockey.se/Game/LineUps/629273"
+ },
+ "2023/game_2023_629274_events.html": {
+  "bytes": 14532,
+  "fetched_utc": "2026-08-05T23:23:24Z",
+  "sha256": "db5cd356e9b8ed2f06e3f8e793b14bd401d837a8f4739e51a5a9d9d4b860dce1",
+  "url": "https://stats.swehockey.se/Game/Events/629274"
+ },
+ "2023/game_2023_629274_lineups.html": {
+  "bytes": 14683,
+  "fetched_utc": "2026-08-05T23:23:25Z",
+  "sha256": "e54ce611a725f9b629d9910977a6310855b4e294809840c5130e61a0e2629daf",
+  "url": "https://stats.swehockey.se/Game/LineUps/629274"
+ },
+ "2023/game_2023_629275_events.html": {
+  "bytes": 11586,
+  "fetched_utc": "2026-08-05T23:23:26Z",
+  "sha256": "4fbfe45faa4685bff2289093cf69dabec9911e9b70503aee4a15876474841802",
+  "url": "https://stats.swehockey.se/Game/Events/629275"
+ },
+ "2023/game_2023_629275_lineups.html": {
+  "bytes": 14995,
+  "fetched_utc": "2026-08-05T23:23:27Z",
+  "sha256": "17024741a38c7e4e4ccfc2cfd969e81746f3dd970f7c43e3d08820a56eba81af",
+  "url": "https://stats.swehockey.se/Game/LineUps/629275"
+ },
+ "2023/game_2023_629276_events.html": {
+  "bytes": 13136,
+  "fetched_utc": "2026-08-05T23:23:29Z",
+  "sha256": "17649d5141a772dd169055fd91b40fd702f25c8a28263d2c526aa0ecf5778781",
+  "url": "https://stats.swehockey.se/Game/Events/629276"
+ },
+ "2023/game_2023_629276_lineups.html": {
+  "bytes": 14617,
+  "fetched_utc": "2026-08-05T23:23:30Z",
+  "sha256": "05840252c3bb2de35fd5704725270a08825809dee7ff0a9bb414694952ecd588",
+  "url": "https://stats.swehockey.se/Game/LineUps/629276"
+ },
+ "2023/game_2023_629277_events.html": {
+  "bytes": 21808,
+  "fetched_utc": "2026-08-05T23:23:31Z",
+  "sha256": "56e8fb0447f2d8d786202b6d81309bf7e0540abbd4f5c6a123ae9e1513c4ff30",
+  "url": "https://stats.swehockey.se/Game/Events/629277"
+ },
+ "2023/game_2023_629277_lineups.html": {
+  "bytes": 14711,
+  "fetched_utc": "2026-08-05T23:23:32Z",
+  "sha256": "d4820d46e4248ca376f1df38a9115d7e12dcef857a02e3ed24c50ce8fb054bdd",
+  "url": "https://stats.swehockey.se/Game/LineUps/629277"
+ },
+ "2023/game_2023_629278_events.html": {
+  "bytes": 13165,
+  "fetched_utc": "2026-08-05T23:23:33Z",
+  "sha256": "31307b94cd6cca4e3462396395fe8e3c1e985ba56dd220b491bca0e5e02fea14",
+  "url": "https://stats.swehockey.se/Game/Events/629278"
+ },
+ "2023/game_2023_629278_lineups.html": {
+  "bytes": 15009,
+  "fetched_utc": "2026-08-05T23:23:34Z",
+  "sha256": "a3afaab95cda8a6a5a4f77dd623ef20b55b69b745a8cfcbca5f3345f33e8f702",
+  "url": "https://stats.swehockey.se/Game/LineUps/629278"
+ },
+ "2023/game_2023_629279_events.html": {
+  "bytes": 13215,
+  "fetched_utc": "2026-08-05T23:23:35Z",
+  "sha256": "23e7104d6f7caf8de1fd3a29c9b3912df8bec26670b0884c4d500d0532277a70",
+  "url": "https://stats.swehockey.se/Game/Events/629279"
+ },
+ "2023/game_2023_629279_lineups.html": {
+  "bytes": 14686,
+  "fetched_utc": "2026-08-05T23:23:37Z",
+  "sha256": "a90dac755b1cdcaf5ea941fec887094054d271673b399becda8835442d624b13",
+  "url": "https://stats.swehockey.se/Game/LineUps/629279"
+ },
+ "2023/game_2023_629280_events.html": {
+  "bytes": 13022,
+  "fetched_utc": "2026-08-05T23:23:38Z",
+  "sha256": "be507348e92ca4184c4374ab396b30d83055108baf73189d0ed3f28c61254ce6",
+  "url": "https://stats.swehockey.se/Game/Events/629280"
+ },
+ "2023/game_2023_629280_lineups.html": {
+  "bytes": 14769,
+  "fetched_utc": "2026-08-05T23:23:39Z",
+  "sha256": "cc1705a5fdfc132110ec331c937855f33b17cf682d114fb782473ec6a99af3fa",
+  "url": "https://stats.swehockey.se/Game/LineUps/629280"
+ },
+ "2023/game_2023_629281_events.html": {
+  "bytes": 18254,
+  "fetched_utc": "2026-08-05T23:23:47Z",
+  "sha256": "a8dce3601f1fb6a2c0f11afd08d050bbc4fcd5e43cbc691e8935eb3685a3e71a",
+  "url": "https://stats.swehockey.se/Game/Events/629281"
+ },
+ "2023/game_2023_629281_lineups.html": {
+  "bytes": 14923,
+  "fetched_utc": "2026-08-05T23:23:48Z",
+  "sha256": "18bc249e06665349706f0fc2f98fd9cb2de919bbe2a42de005569e08ed33349d",
+  "url": "https://stats.swehockey.se/Game/LineUps/629281"
+ },
+ "2023/game_2023_629282_events.html": {
+  "bytes": 20251,
+  "fetched_utc": "2026-08-05T23:23:40Z",
+  "sha256": "d9b8c765eee7ab0e2584c54d9d3acb1d34d83c776a2b24dc9fbe431d6089a8f9",
+  "url": "https://stats.swehockey.se/Game/Events/629282"
+ },
+ "2023/game_2023_629282_lineups.html": {
+  "bytes": 14628,
+  "fetched_utc": "2026-08-05T23:23:41Z",
+  "sha256": "550a2c9dda44edd47ea82f48e7cfe20265ff86da211f189d238f419f91403808",
+  "url": "https://stats.swehockey.se/Game/LineUps/629282"
+ },
+ "2023/game_2023_629283_events.html": {
+  "bytes": 14771,
+  "fetched_utc": "2026-08-05T23:23:42Z",
+  "sha256": "d6fe8bf6ae0af181ea3594e0e822b4d8205f344641facae6c2fcf8ef5d50f947",
+  "url": "https://stats.swehockey.se/Game/Events/629283"
+ },
+ "2023/game_2023_629283_lineups.html": {
+  "bytes": 14998,
+  "fetched_utc": "2026-08-05T23:23:44Z",
+  "sha256": "649d6cd629c42b1b1d1e07f362f26d93973688a3c5eecd6558e6c23f2642f396",
+  "url": "https://stats.swehockey.se/Game/LineUps/629283"
+ },
+ "2023/game_2023_629284_events.html": {
+  "bytes": 16217,
+  "fetched_utc": "2026-08-05T23:23:45Z",
+  "sha256": "f80163cb45595564b9ce59c241be971984a6f2632945168ca36ff9c92dbe2b6f",
+  "url": "https://stats.swehockey.se/Game/Events/629284"
+ },
+ "2023/game_2023_629284_lineups.html": {
+  "bytes": 14943,
+  "fetched_utc": "2026-08-05T23:23:46Z",
+  "sha256": "ad58a351016d78c56e0821dd1b49159bc41fa5b4552682f38c267181cc7e4760",
+  "url": "https://stats.swehockey.se/Game/LineUps/629284"
+ },
+ "2023/game_2023_629285_events.html": {
+  "bytes": 14011,
+  "fetched_utc": "2026-08-05T23:23:49Z",
+  "sha256": "ff250f768de3ba897eba28fdedbd5f7922e95f708f35d06cf9f0475096524626",
+  "url": "https://stats.swehockey.se/Game/Events/629285"
+ },
+ "2023/game_2023_629285_lineups.html": {
+  "bytes": 14783,
+  "fetched_utc": "2026-08-05T23:23:50Z",
+  "sha256": "1fc020d19f329ff5cb6bd398ae597da337ede3321c87fc1e059a738e3bbbc4e8",
+  "url": "https://stats.swehockey.se/Game/LineUps/629285"
+ },
+ "2023/game_2023_629286_events.html": {
+  "bytes": 10863,
+  "fetched_utc": "2026-08-05T23:23:52Z",
+  "sha256": "755c24b6f318615e4b8cd6e8f99600e287fc00a90014bb4feae6cb3b517e7bc9",
+  "url": "https://stats.swehockey.se/Game/Events/629286"
+ },
+ "2023/game_2023_629286_lineups.html": {
+  "bytes": 14966,
+  "fetched_utc": "2026-08-05T23:23:53Z",
+  "sha256": "dfa9daebdde2acd82aaa6f999eff56c105acc0fa688380701f198f6dcf370771",
+  "url": "https://stats.swehockey.se/Game/LineUps/629286"
+ },
+ "2023/game_2023_629287_events.html": {
+  "bytes": 16092,
+  "fetched_utc": "2026-08-05T23:23:56Z",
+  "sha256": "7a608a2c8c31aedac9d60fc0b3a892314efc95e8558847acb31f83fdb2076d37",
+  "url": "https://stats.swehockey.se/Game/Events/629287"
+ },
+ "2023/game_2023_629287_lineups.html": {
+  "bytes": 15008,
+  "fetched_utc": "2026-08-05T23:23:57Z",
+  "sha256": "f74b0a84826939114e8ab27445642ea84b9ea44859d5f81eda035be642f0a143",
+  "url": "https://stats.swehockey.se/Game/LineUps/629287"
+ },
+ "2023/game_2023_629288_events.html": {
+  "bytes": 13531,
+  "fetched_utc": "2026-08-05T23:23:54Z",
+  "sha256": "14b2e7466ddaf923c2f9c11180037674f1b2f9af32608b819510e24393a0ef0b",
+  "url": "https://stats.swehockey.se/Game/Events/629288"
+ },
+ "2023/game_2023_629288_lineups.html": {
+  "bytes": 14881,
+  "fetched_utc": "2026-08-05T23:23:55Z",
+  "sha256": "05870804317b7595b0703861a18dc1caaffb26e9df8f2f1fd281759635846a38",
+  "url": "https://stats.swehockey.se/Game/LineUps/629288"
+ },
+ "2023/game_2023_629289_events.html": {
+  "bytes": 15022,
+  "fetched_utc": "2026-08-05T23:23:58Z",
+  "sha256": "59864936f30a4a1d3d6c9007d19f82397ee992b632179a344618cae8e66529bc",
+  "url": "https://stats.swehockey.se/Game/Events/629289"
+ },
+ "2023/game_2023_629289_lineups.html": {
+  "bytes": 14680,
+  "fetched_utc": "2026-08-05T23:24:00Z",
+  "sha256": "ecb00a70cddd9c1130ba91d7be86ecf8c13acc6608f22505a3336265e98bf133",
+  "url": "https://stats.swehockey.se/Game/LineUps/629289"
+ },
+ "2023/game_2023_629290_events.html": {
+  "bytes": 12846,
+  "fetched_utc": "2026-08-05T23:21:05Z",
+  "sha256": "e668d662895ceeb19e58c7fb8804dd399e80eb09174b529380394d375058102a",
+  "url": "https://stats.swehockey.se/Game/Events/629290"
+ },
+ "2023/game_2023_629290_lineups.html": {
+  "bytes": 14759,
+  "fetched_utc": "2026-08-05T23:21:06Z",
+  "sha256": "7381c0fb69306212cf3c2e898c363e36a96e2f69cc81527d82a9013b058bc0fe",
+  "url": "https://stats.swehockey.se/Game/LineUps/629290"
+ },
+ "2023/game_2023_629291_events.html": {
+  "bytes": 13251,
+  "fetched_utc": "2026-08-05T23:24:01Z",
+  "sha256": "8a53f95847529b0978f302d47d2cf5dba1933e39dd99d194044e69866f076496",
+  "url": "https://stats.swehockey.se/Game/Events/629291"
+ },
+ "2023/game_2023_629291_lineups.html": {
+  "bytes": 14994,
+  "fetched_utc": "2026-08-05T23:24:02Z",
+  "sha256": "f8167cd158847ec5ae1a3599ce0f2679b358b188ac81da3f8b1fbfe15a67250a",
+  "url": "https://stats.swehockey.se/Game/LineUps/629291"
+ },
+ "2023/game_2023_629292_events.html": {
+  "bytes": 9504,
+  "fetched_utc": "2026-08-05T23:24:08Z",
+  "sha256": "64bef118124ec20b238f6b216d77e72213647fb1a0c3bb5829ae3e8fe414b8f7",
+  "url": "https://stats.swehockey.se/Game/Events/629292"
+ },
+ "2023/game_2023_629292_lineups.html": {
+  "bytes": 14930,
+  "fetched_utc": "2026-08-05T23:24:09Z",
+  "sha256": "276a8894ac5293ed05b7a03ba5203bc4758718d1517a9e389f33147c993f0435",
+  "url": "https://stats.swehockey.se/Game/LineUps/629292"
+ },
+ "2023/game_2023_629293_events.html": {
+  "bytes": 16247,
+  "fetched_utc": "2026-08-05T23:24:10Z",
+  "sha256": "b37680a32ca93c43631fd5af9b6b05e183bc67c457f65a6466033eb033b641b1",
+  "url": "https://stats.swehockey.se/Game/Events/629293"
+ },
+ "2023/game_2023_629293_lineups.html": {
+  "bytes": 14949,
+  "fetched_utc": "2026-08-05T23:24:11Z",
+  "sha256": "3f44ecc2422a83fcff7bc29cd1826a54dae71e65b088966c3e92c9b76e9a3e9d",
+  "url": "https://stats.swehockey.se/Game/LineUps/629293"
+ },
+ "2023/game_2023_629294_events.html": {
+  "bytes": 14882,
+  "fetched_utc": "2026-08-05T23:24:12Z",
+  "sha256": "562f5d85fd2d4d678bf106e194bbf46138d1a6444ac7387f0f37aad135f75441",
+  "url": "https://stats.swehockey.se/Game/Events/629294"
+ },
+ "2023/game_2023_629294_lineups.html": {
+  "bytes": 14947,
+  "fetched_utc": "2026-08-05T23:24:13Z",
+  "sha256": "2848e14d193f1815a0ee0c0c61320d6afbaf0ebff6151d6d6a9635bba608176c",
+  "url": "https://stats.swehockey.se/Game/LineUps/629294"
+ },
+ "2023/game_2023_629295_events.html": {
+  "bytes": 13743,
+  "fetched_utc": "2026-08-05T23:24:14Z",
+  "sha256": "c278cb192b4f90d42cdcbebdbaf590e2a349329496cc7f1697347eae8c4966f6",
+  "url": "https://stats.swehockey.se/Game/Events/629295"
+ },
+ "2023/game_2023_629295_lineups.html": {
+  "bytes": 14746,
+  "fetched_utc": "2026-08-05T23:24:16Z",
+  "sha256": "1a832e859020725b4fb9b0ece294ae5e8b33160342c3ce6bb93a6cd8b0c5c566",
+  "url": "https://stats.swehockey.se/Game/LineUps/629295"
+ },
+ "2023/game_2023_629296_events.html": {
+  "bytes": 14744,
+  "fetched_utc": "2026-08-05T23:24:17Z",
+  "sha256": "922951802596417d1785e5d181927800e2143f7aa1ceae1920ed202934d426f6",
+  "url": "https://stats.swehockey.se/Game/Events/629296"
+ },
+ "2023/game_2023_629296_lineups.html": {
+  "bytes": 14924,
+  "fetched_utc": "2026-08-05T23:24:18Z",
+  "sha256": "7a54ac75d18858727541bcc859cb869c89a538035666e368aa8e28a45fc8773c",
+  "url": "https://stats.swehockey.se/Game/LineUps/629296"
+ },
+ "2023/game_2023_629297_events.html": {
+  "bytes": 9288,
+  "fetched_utc": "2026-08-05T23:24:19Z",
+  "sha256": "5874a137e026db29c0da9b045ca14c11b68ca8fa5a11a70732a6b9691fbb2a1b",
+  "url": "https://stats.swehockey.se/Game/Events/629297"
+ },
+ "2023/game_2023_629297_lineups.html": {
+  "bytes": 14960,
+  "fetched_utc": "2026-08-05T23:24:20Z",
+  "sha256": "722137e7c8d3393b147b93fb08240ab41ddb170e8fa66c0a44d3be031f2b361b",
+  "url": "https://stats.swehockey.se/Game/LineUps/629297"
+ },
+ "2023/game_2023_629298_events.html": {
+  "bytes": 11836,
+  "fetched_utc": "2026-08-05T23:24:21Z",
+  "sha256": "c11f7c23422cb304ca4ea34cafd2878ed94dd60d97d95165b22027ad76d3886a",
+  "url": "https://stats.swehockey.se/Game/Events/629298"
+ },
+ "2023/game_2023_629298_lineups.html": {
+  "bytes": 15003,
+  "fetched_utc": "2026-08-05T23:24:22Z",
+  "sha256": "76acdab5dbc38c7560562fe8b7c0e91b66183edd28fd3954f432241ee4e8790b",
+  "url": "https://stats.swehockey.se/Game/LineUps/629298"
+ },
+ "2023/game_2023_629299_events.html": {
+  "bytes": 13158,
+  "fetched_utc": "2026-08-05T23:25:52Z",
+  "sha256": "5dc4db01323fbb65b7a3cb621104a1273d105ae28562c7537fcef6167f9fc4ca",
+  "url": "https://stats.swehockey.se/Game/Events/629299"
+ },
+ "2023/game_2023_629299_lineups.html": {
+  "bytes": 14560,
+  "fetched_utc": "2026-08-05T23:25:54Z",
+  "sha256": "62ec159a2aba3fa35d089a7be25079336351b85551fd7d8187a8b44148226fd6",
+  "url": "https://stats.swehockey.se/Game/LineUps/629299"
+ },
+ "2023/game_2023_629300_events.html": {
+  "bytes": 13569,
+  "fetched_utc": "2026-08-05T23:24:55Z",
+  "sha256": "8a1cb117cf42d7ada2a0319f5a4f1624b398b18d0c3cfabc86f0f1a1d0f48658",
+  "url": "https://stats.swehockey.se/Game/Events/629300"
+ },
+ "2023/game_2023_629300_lineups.html": {
+  "bytes": 14620,
+  "fetched_utc": "2026-08-05T23:24:57Z",
+  "sha256": "f8ccb5a71e2937f1afa0b91ed7a8af8ed3ea800519b7e56a44944c6568259607",
+  "url": "https://stats.swehockey.se/Game/LineUps/629300"
+ },
+ "2023/game_2023_629301_events.html": {
+  "bytes": 17054,
+  "fetched_utc": "2026-08-05T23:24:23Z",
+  "sha256": "1b1533581e8ecc1bc382180c7eff0f8a0e5d5aecbb0073c0acebeda0c31bf896",
+  "url": "https://stats.swehockey.se/Game/Events/629301"
+ },
+ "2023/game_2023_629301_lineups.html": {
+  "bytes": 14365,
+  "fetched_utc": "2026-08-05T23:24:25Z",
+  "sha256": "6b91ee0de2fd535a6b7816afdf2a82a316b08598f12bfe3dfd3c04f0e656ee04",
+  "url": "https://stats.swehockey.se/Game/LineUps/629301"
+ },
+ "2023/game_2023_629302_events.html": {
+  "bytes": 12173,
+  "fetched_utc": "2026-08-05T23:24:58Z",
+  "sha256": "f3a4ad2de5fdaff00d855ffac12f8889e073a8c622e1da7d39329687fb6f4384",
+  "url": "https://stats.swehockey.se/Game/Events/629302"
+ },
+ "2023/game_2023_629302_lineups.html": {
+  "bytes": 14998,
+  "fetched_utc": "2026-08-05T23:24:59Z",
+  "sha256": "c8409626c48237fa95e87ece58709ad75b4217d592110bddaa3768a3cb3158d4",
+  "url": "https://stats.swehockey.se/Game/LineUps/629302"
+ },
+ "2023/game_2023_629303_events.html": {
+  "bytes": 14881,
+  "fetched_utc": "2026-08-05T23:25:00Z",
+  "sha256": "745e0a4e70f5bea052a5cd22103673517b75b3d0ded6fd0ed6bf969027f8c5d1",
+  "url": "https://stats.swehockey.se/Game/Events/629303"
+ },
+ "2023/game_2023_629303_lineups.html": {
+  "bytes": 14668,
+  "fetched_utc": "2026-08-05T23:25:01Z",
+  "sha256": "142dc0236a8b10e2272e91503fbdb8488fdfa29bdd5d756fc04b8f0071655c59",
+  "url": "https://stats.swehockey.se/Game/LineUps/629303"
+ },
+ "2023/game_2023_629304_events.html": {
+  "bytes": 15919,
+  "fetched_utc": "2026-08-05T23:25:02Z",
+  "sha256": "63909dfa3f305e795dde8eddcebc5fb9bc5f238b3f1aca0b153c9fa4a53e6fdd",
+  "url": "https://stats.swehockey.se/Game/Events/629304"
+ },
+ "2023/game_2023_629304_lineups.html": {
+  "bytes": 14775,
+  "fetched_utc": "2026-08-05T23:25:03Z",
+  "sha256": "64e378b6fa23d601db73a5eb12a2b5917abb16678094104c7dbaa4c0a53f1ffb",
+  "url": "https://stats.swehockey.se/Game/LineUps/629304"
+ },
+ "2023/game_2023_629305_events.html": {
+  "bytes": 11202,
+  "fetched_utc": "2026-08-05T23:24:51Z",
+  "sha256": "da7f945e40a5f64d40ee57c256f251eba6f5e44598a3ce832214ee111227851c",
+  "url": "https://stats.swehockey.se/Game/Events/629305"
+ },
+ "2023/game_2023_629305_lineups.html": {
+  "bytes": 14910,
+  "fetched_utc": "2026-08-05T23:24:52Z",
+  "sha256": "de52bfedd1d0b71bc8c930f412fce4655f02509e43e542743331f5ac5074602f",
+  "url": "https://stats.swehockey.se/Game/LineUps/629305"
+ },
+ "2023/game_2023_629306_events.html": {
+  "bytes": 10555,
+  "fetched_utc": "2026-08-05T23:25:20Z",
+  "sha256": "c319fa00760e2db0f4a4e23ab2333a2af01ddddfe8ac2537f04eff67b071a9ad",
+  "url": "https://stats.swehockey.se/Game/Events/629306"
+ },
+ "2023/game_2023_629306_lineups.html": {
+  "bytes": 14455,
+  "fetched_utc": "2026-08-05T23:25:22Z",
+  "sha256": "11f0e208c1dc0ae90f495049a3f5cb49392868410a84eba52d6f28885d985dfc",
+  "url": "https://stats.swehockey.se/Game/LineUps/629306"
+ },
+ "2023/game_2023_629307_events.html": {
+  "bytes": 18212,
+  "fetched_utc": "2026-08-05T23:25:04Z",
+  "sha256": "db1355e637b5f93470d10055b683fade88cd9a9d90b9d3c1e4c4701f738573a7",
+  "url": "https://stats.swehockey.se/Game/Events/629307"
+ },
+ "2023/game_2023_629307_lineups.html": {
+  "bytes": 14730,
+  "fetched_utc": "2026-08-05T23:25:06Z",
+  "sha256": "53adc71fb7f18ab1eda74fe238ece40c82377e89d3449190311ac9c1f97eff07",
+  "url": "https://stats.swehockey.se/Game/LineUps/629307"
+ },
+ "2023/game_2023_629308_events.html": {
+  "bytes": 16797,
+  "fetched_utc": "2026-08-05T23:25:07Z",
+  "sha256": "5fc8973b5d8d582bfd543b8a6c387afbbe998e77ebe5022a72b7605e9d8374e8",
+  "url": "https://stats.swehockey.se/Game/Events/629308"
+ },
+ "2023/game_2023_629308_lineups.html": {
+  "bytes": 14700,
+  "fetched_utc": "2026-08-05T23:25:08Z",
+  "sha256": "680cef1b52e3dc458d22c8aabdd5ae96cec398c7b8561053f2b986ec94bc3743",
+  "url": "https://stats.swehockey.se/Game/LineUps/629308"
+ },
+ "2023/game_2023_629309_events.html": {
+  "bytes": 15829,
+  "fetched_utc": "2026-08-05T23:25:09Z",
+  "sha256": "88880075982ce2bff352ca70b5db6ccf0932180d43e66e0c356a038dd0139b83",
+  "url": "https://stats.swehockey.se/Game/Events/629309"
+ },
+ "2023/game_2023_629309_lineups.html": {
+  "bytes": 14764,
+  "fetched_utc": "2026-08-05T23:25:10Z",
+  "sha256": "0367ebd9900353172500dfe0f6d976605c999a96c52e6372ffa7976341f57a9b",
+  "url": "https://stats.swehockey.se/Game/LineUps/629309"
+ },
+ "2023/game_2023_629310_events.html": {
+  "bytes": 16129,
+  "fetched_utc": "2026-08-05T23:25:11Z",
+  "sha256": "5814890106e5c76a1587cceeaa7920cd8ba9eeb40e8633f13325a6bd6421019c",
+  "url": "https://stats.swehockey.se/Game/Events/629310"
+ },
+ "2023/game_2023_629310_lineups.html": {
+  "bytes": 14954,
+  "fetched_utc": "2026-08-05T23:25:12Z",
+  "sha256": "9afdb2ab0c218ddcf693df525e8d61182e62cd5b700b727f20cae95aa8a60e61",
+  "url": "https://stats.swehockey.se/Game/LineUps/629310"
+ },
+ "2023/game_2023_629311_events.html": {
+  "bytes": 16971,
+  "fetched_utc": "2026-08-05T23:25:14Z",
+  "sha256": "d0f541b000933bc9f32c32c8e74b5d4a21aec678c8ebac9de431075ec37b9b26",
+  "url": "https://stats.swehockey.se/Game/Events/629311"
+ },
+ "2023/game_2023_629311_lineups.html": {
+  "bytes": 14737,
+  "fetched_utc": "2026-08-05T23:25:15Z",
+  "sha256": "6826df5195fde542ac2d5a0d39c0ad45732936847a28a4b6e033caa7cf75e351",
+  "url": "https://stats.swehockey.se/Game/LineUps/629311"
+ },
+ "2023/game_2023_629312_events.html": {
+  "bytes": 12143,
+  "fetched_utc": "2026-08-05T23:25:16Z",
+  "sha256": "8642f9efabe8944660e81d7d698fa690741f24854ea782e99a517a926c0e835b",
+  "url": "https://stats.swehockey.se/Game/Events/629312"
+ },
+ "2023/game_2023_629312_lineups.html": {
+  "bytes": 14986,
+  "fetched_utc": "2026-08-05T23:25:17Z",
+  "sha256": "915837aa4b8bbeed77e98eba0cfe600b8b4227acfd4e3093ea91df490d6fe9a8",
+  "url": "https://stats.swehockey.se/Game/LineUps/629312"
+ },
+ "2023/game_2023_629313_events.html": {
+  "bytes": 11305,
+  "fetched_utc": "2026-08-05T23:25:23Z",
+  "sha256": "862d84a8f948ce79a7e7d44535a1ff377afc9508be330c64a3507665a96567e3",
+  "url": "https://stats.swehockey.se/Game/Events/629313"
+ },
+ "2023/game_2023_629313_lineups.html": {
+  "bytes": 14978,
+  "fetched_utc": "2026-08-05T23:25:24Z",
+  "sha256": "bf4d91503add0e2e02d860e1a5db1086e7aca641acbab503d57bca7afc30bf30",
+  "url": "https://stats.swehockey.se/Game/LineUps/629313"
+ },
+ "2023/game_2023_629314_events.html": {
+  "bytes": 19291,
+  "fetched_utc": "2026-08-05T23:25:25Z",
+  "sha256": "0c06a907f8c30ac04318c102127458275312d027bb453866992a9647f8f9502e",
+  "url": "https://stats.swehockey.se/Game/Events/629314"
+ },
+ "2023/game_2023_629314_lineups.html": {
+  "bytes": 14790,
+  "fetched_utc": "2026-08-05T23:25:26Z",
+  "sha256": "cf8847b081f28329997fb2de4c245e858b18396cc2711ab25295f9257f9c871e",
+  "url": "https://stats.swehockey.se/Game/LineUps/629314"
+ },
+ "2023/game_2023_629315_events.html": {
+  "bytes": 17110,
+  "fetched_utc": "2026-08-05T23:25:27Z",
+  "sha256": "2f03d182a04525e27480e077a982359257b21a90e1c0d0c82b3faa5924b4f751",
+  "url": "https://stats.swehockey.se/Game/Events/629315"
+ },
+ "2023/game_2023_629315_lineups.html": {
+  "bytes": 14732,
+  "fetched_utc": "2026-08-05T23:25:29Z",
+  "sha256": "115966ada5d61203f759707154cb5da3cebaa0cbfa521eae590376432840c038",
+  "url": "https://stats.swehockey.se/Game/LineUps/629315"
+ },
+ "2023/game_2023_629316_events.html": {
+  "bytes": 13834,
+  "fetched_utc": "2026-08-05T23:25:30Z",
+  "sha256": "37303e9dbc0b7e6b6c5467d295f88f14d27b60281ca1b9f21bb26b93e7089716",
+  "url": "https://stats.swehockey.se/Game/Events/629316"
+ },
+ "2023/game_2023_629316_lineups.html": {
+  "bytes": 14959,
+  "fetched_utc": "2026-08-05T23:25:31Z",
+  "sha256": "c4462c97747f3dd9929fc7d42f995be2fab20cae6a3e7a9cc9fdd40ed761838e",
+  "url": "https://stats.swehockey.se/Game/LineUps/629316"
+ },
+ "2023/game_2023_629317_events.html": {
+  "bytes": 13623,
+  "fetched_utc": "2026-08-05T23:25:32Z",
+  "sha256": "033f970e707192dc6c9c152c77480604db9b8658438788212b87b86fb587e426",
+  "url": "https://stats.swehockey.se/Game/Events/629317"
+ },
+ "2023/game_2023_629317_lineups.html": {
+  "bytes": 14757,
+  "fetched_utc": "2026-08-05T23:25:33Z",
+  "sha256": "d3f681329459067a313876e56e27acbf344e5a9b86ddb0d6a6e2eba8413d9c2a",
+  "url": "https://stats.swehockey.se/Game/LineUps/629317"
+ },
+ "2023/game_2023_629318_events.html": {
+  "bytes": 13144,
+  "fetched_utc": "2026-08-05T23:25:18Z",
+  "sha256": "518cea81ac5ec687c35c704085c0d09b2a754418ef873eb3980705d60a987cb0",
+  "url": "https://stats.swehockey.se/Game/Events/629318"
+ },
+ "2023/game_2023_629318_lineups.html": {
+  "bytes": 14406,
+  "fetched_utc": "2026-08-05T23:25:19Z",
+  "sha256": "d16638b346b25554754f8a8feaa882b388323af3b7a49cb0083ef219b5f351a4",
+  "url": "https://stats.swehockey.se/Game/LineUps/629318"
+ },
+ "2023/game_2023_629319_events.html": {
+  "bytes": 17955,
+  "fetched_utc": "2026-08-05T23:25:34Z",
+  "sha256": "93d1cadeba2b5d33fcbc19e16689bb4eb559c83212f6faabb4fc390706fc74e6",
+  "url": "https://stats.swehockey.se/Game/Events/629319"
+ },
+ "2023/game_2023_629319_lineups.html": {
+  "bytes": 14979,
+  "fetched_utc": "2026-08-05T23:25:35Z",
+  "sha256": "2918548457c4758a2129cac90dc6aa6ffcfdb8a9d18b1fcb37934781dd3714a5",
+  "url": "https://stats.swehockey.se/Game/LineUps/629319"
+ },
+ "2023/game_2023_629320_events.html": {
+  "bytes": 14276,
+  "fetched_utc": "2026-08-05T23:25:36Z",
+  "sha256": "69de12daf48aa5457040e3194a905aef2a373fc6210a57db6e65a9786e89d1c7",
+  "url": "https://stats.swehockey.se/Game/Events/629320"
+ },
+ "2023/game_2023_629320_lineups.html": {
+  "bytes": 14774,
+  "fetched_utc": "2026-08-05T23:25:38Z",
+  "sha256": "bf863c26b35114a196f96ffff2e6f6c69cd51a3b3ba805e24c6d57576182794b",
+  "url": "https://stats.swehockey.se/Game/LineUps/629320"
+ },
+ "2023/game_2023_629321_events.html": {
+  "bytes": 13740,
+  "fetched_utc": "2026-08-05T23:25:39Z",
+  "sha256": "088876ffef149e1bcdfd43c9a8144fa8ed213273b12214f67afd11fdf3abd6c9",
+  "url": "https://stats.swehockey.se/Game/Events/629321"
+ },
+ "2023/game_2023_629321_lineups.html": {
+  "bytes": 15039,
+  "fetched_utc": "2026-08-05T23:25:40Z",
+  "sha256": "a854cd74c11e79810c5fded72d2186b82d9df8302da2218faba2b466e49936c8",
+  "url": "https://stats.swehockey.se/Game/LineUps/629321"
+ },
+ "2023/game_2023_629322_events.html": {
+  "bytes": 12072,
+  "fetched_utc": "2026-08-05T23:25:46Z",
+  "sha256": "9f1e09ae960a5a62e90e505d57d80be319a3dcf6bc08e4c7daab0407bdd11334",
+  "url": "https://stats.swehockey.se/Game/Events/629322"
+ },
+ "2023/game_2023_629322_lineups.html": {
+  "bytes": 14659,
+  "fetched_utc": "2026-08-05T23:25:47Z",
+  "sha256": "503194d0fe86b8c81507aac59ba1f60c494d516df0a9f94af44125a46587ce3e",
+  "url": "https://stats.swehockey.se/Game/LineUps/629322"
+ },
+ "2023/game_2023_629323_events.html": {
+  "bytes": 12692,
+  "fetched_utc": "2026-08-05T23:25:41Z",
+  "sha256": "4c0ca705927905c8164b75231753b3a875300f15d1f993b436eef8638ffe7d71",
+  "url": "https://stats.swehockey.se/Game/Events/629323"
+ },
+ "2023/game_2023_629323_lineups.html": {
+  "bytes": 14925,
+  "fetched_utc": "2026-08-05T23:25:42Z",
+  "sha256": "7dd11643daca7d64ca700c233baf4d764582d441968e161a0dbeee7c972b4ecb",
+  "url": "https://stats.swehockey.se/Game/LineUps/629323"
+ },
+ "2023/game_2023_629324_events.html": {
+  "bytes": 16904,
+  "fetched_utc": "2026-08-05T23:25:48Z",
+  "sha256": "1838e63d2de414b485936bedb42b1fcf7dacb780ffc8a4f795ccb469b9143c70",
+  "url": "https://stats.swehockey.se/Game/Events/629324"
+ },
+ "2023/game_2023_629324_lineups.html": {
+  "bytes": 14743,
+  "fetched_utc": "2026-08-05T23:25:49Z",
+  "sha256": "15be841a0e263bf06cb91768f86e643262ff6327b43690456a8f5eae012547ea",
+  "url": "https://stats.swehockey.se/Game/LineUps/629324"
+ },
+ "2023/game_2023_629325_events.html": {
+  "bytes": 16795,
+  "fetched_utc": "2026-08-05T23:25:43Z",
+  "sha256": "991b2e680fd9c2a0e0a49745914e23a5f885edd36832c8e40ea094b71b5699f5",
+  "url": "https://stats.swehockey.se/Game/Events/629325"
+ },
+ "2023/game_2023_629325_lineups.html": {
+  "bytes": 14777,
+  "fetched_utc": "2026-08-05T23:25:44Z",
+  "sha256": "8f98650295b7080d4a5d19bce85c85774d31d4966baea175e8eadda982c566ae",
+  "url": "https://stats.swehockey.se/Game/LineUps/629325"
+ },
+ "2023/game_2023_629326_events.html": {
+  "bytes": 13056,
+  "fetched_utc": "2026-08-05T23:25:50Z",
+  "sha256": "411d34fc7c2b5104098d42dd5ea127d22a7958bb42ddafbcdc2fc7b7f21867ab",
+  "url": "https://stats.swehockey.se/Game/Events/629326"
+ },
+ "2023/game_2023_629326_lineups.html": {
+  "bytes": 14692,
+  "fetched_utc": "2026-08-05T23:25:51Z",
+  "sha256": "a8a6e6d032d8e6ef7b89221359c4e6f68e6fc74a952659c6ca4ee1e9bbc302f5",
+  "url": "https://stats.swehockey.se/Game/LineUps/629326"
+ },
+ "2023/game_2023_629327_events.html": {
+  "bytes": 13881,
+  "fetched_utc": "2026-08-05T23:25:55Z",
+  "sha256": "b6c90502458547c6ec11918434258516dade02e79e6e1d7a48a8772ea8d33ddc",
+  "url": "https://stats.swehockey.se/Game/Events/629327"
+ },
+ "2023/game_2023_629327_lineups.html": {
+  "bytes": 14928,
+  "fetched_utc": "2026-08-05T23:25:56Z",
+  "sha256": "65cde19c1961a41ec701b39c3048b90b92f95f265946c30669e80cf77ea0ccfb",
+  "url": "https://stats.swehockey.se/Game/LineUps/629327"
+ },
+ "2023/game_2023_629328_events.html": {
+  "bytes": 10309,
+  "fetched_utc": "2026-08-05T23:25:57Z",
+  "sha256": "5dd7602b16214d550f69f8a51c2c43e3cae6e3fbb15440b8c7ab3d663f573a6d",
+  "url": "https://stats.swehockey.se/Game/Events/629328"
+ },
+ "2023/game_2023_629328_lineups.html": {
+  "bytes": 15006,
+  "fetched_utc": "2026-08-05T23:25:58Z",
+  "sha256": "614537843d9cc46f74dc6a68d4be4155f11bbc7986d9d7fd1f6ddfb43bb686b9",
+  "url": "https://stats.swehockey.se/Game/LineUps/629328"
+ },
+ "2023/game_2023_629329_events.html": {
+  "bytes": 21018,
+  "fetched_utc": "2026-08-05T23:25:59Z",
+  "sha256": "1b6bcc9c07b4fee95fa63f12b2b2029bbabe989ac920ae60db1fa3626ffc9b3e",
+  "url": "https://stats.swehockey.se/Game/Events/629329"
+ },
+ "2023/game_2023_629329_lineups.html": {
+  "bytes": 14718,
+  "fetched_utc": "2026-08-05T23:26:01Z",
+  "sha256": "7df20d82c2091ac3538a81d16846ab204e66a6e933c78f484fc95d9692a2cfee",
+  "url": "https://stats.swehockey.se/Game/LineUps/629329"
+ },
+ "2023/game_2023_629330_events.html": {
+  "bytes": 18073,
+  "fetched_utc": "2026-08-05T23:26:02Z",
+  "sha256": "5d70e798f95b61ca740e4c01b0fa2c2b2103339145b26edafdbb63235783239f",
+  "url": "https://stats.swehockey.se/Game/Events/629330"
+ },
+ "2023/game_2023_629330_lineups.html": {
+  "bytes": 14979,
+  "fetched_utc": "2026-08-05T23:26:03Z",
+  "sha256": "a2036f5d57721be3d431934871aec11fc2da3e61cd8f80e49c4e4f9e6a80bd1e",
+  "url": "https://stats.swehockey.se/Game/LineUps/629330"
+ },
+ "2023/game_2023_629331_events.html": {
+  "bytes": 17594,
+  "fetched_utc": "2026-08-05T23:26:04Z",
+  "sha256": "63888bcfec5044b1610e33e010d9fd09fa9d7cc71cdb25c3dcd38bd757916366",
+  "url": "https://stats.swehockey.se/Game/Events/629331"
+ },
+ "2023/game_2023_629331_lineups.html": {
+  "bytes": 14934,
+  "fetched_utc": "2026-08-05T23:26:05Z",
+  "sha256": "589c04ba361389fbd13c835e3105be4fb388b9240c9c8b7045cc55345c5e927c",
+  "url": "https://stats.swehockey.se/Game/LineUps/629331"
+ },
+ "2023/game_2023_629332_events.html": {
+  "bytes": 20408,
+  "fetched_utc": "2026-08-05T23:26:06Z",
+  "sha256": "c7bdc920a332786efe567ef7958cf17ece19d0610c7e4932bc964af653b64eeb",
+  "url": "https://stats.swehockey.se/Game/Events/629332"
+ },
+ "2023/game_2023_629332_lineups.html": {
+  "bytes": 14949,
+  "fetched_utc": "2026-08-05T23:26:08Z",
+  "sha256": "e1899d27481f8e84eccdb6cdb9e3a7dc5b698a807496f2a9af3a78eadb8a2fb6",
+  "url": "https://stats.swehockey.se/Game/LineUps/629332"
+ },
+ "2023/game_2023_629333_events.html": {
+  "bytes": 16651,
+  "fetched_utc": "2026-08-05T23:26:09Z",
+  "sha256": "dbc7f432bdb37dce42076fa32af36bbee20e8990d0c52618af5bfd71e949f525",
+  "url": "https://stats.swehockey.se/Game/Events/629333"
+ },
+ "2023/game_2023_629333_lineups.html": {
+  "bytes": 14940,
+  "fetched_utc": "2026-08-05T23:26:10Z",
+  "sha256": "6365b329289537d6e87cfc22de481696c2261971b7a188588d7cfeed5b2c448e",
+  "url": "https://stats.swehockey.se/Game/LineUps/629333"
+ },
+ "2023/game_2023_629334_events.html": {
+  "bytes": 18198,
+  "fetched_utc": "2026-08-05T23:26:11Z",
+  "sha256": "5ee79d1ce538e5818225fb359f393cfdf07d0618ad5c093710e9120214e57c69",
+  "url": "https://stats.swehockey.se/Game/Events/629334"
+ },
+ "2023/game_2023_629334_lineups.html": {
+  "bytes": 14948,
+  "fetched_utc": "2026-08-05T23:26:12Z",
+  "sha256": "e8af088be61199db8d97f0ffa6e391bab5c3b9a0d4ca540234b85827240072d5",
+  "url": "https://stats.swehockey.se/Game/LineUps/629334"
+ },
+ "2023/game_2023_629335_events.html": {
+  "bytes": 17831,
+  "fetched_utc": "2026-08-05T23:26:13Z",
+  "sha256": "def89f1b8d9b83f55e2659823e1c6bc1e2c7f6bf50d92d2f2a2f774a3d9bb280",
+  "url": "https://stats.swehockey.se/Game/Events/629335"
+ },
+ "2023/game_2023_629335_lineups.html": {
+  "bytes": 14681,
+  "fetched_utc": "2026-08-05T23:26:14Z",
+  "sha256": "f1c6473b5647de492f2ec1a1af6f64d30faffe309db71166db0b0907a0f70142",
+  "url": "https://stats.swehockey.se/Game/LineUps/629335"
+ },
+ "2023/game_2023_629336_events.html": {
+  "bytes": 11465,
+  "fetched_utc": "2026-08-05T23:26:16Z",
+  "sha256": "8b4c6b951094ca4eecc37918b278e6d686107e4f2d482cf279876955062703ef",
+  "url": "https://stats.swehockey.se/Game/Events/629336"
+ },
+ "2023/game_2023_629336_lineups.html": {
+  "bytes": 14678,
+  "fetched_utc": "2026-08-05T23:26:17Z",
+  "sha256": "30b5602776c9ea1d2aa50cc70820991fad7b5d160e268ebdeb69eab17dfcdbb2",
+  "url": "https://stats.swehockey.se/Game/LineUps/629336"
+ },
+ "2023/game_2023_629337_events.html": {
+  "bytes": 15931,
+  "fetched_utc": "2026-08-05T23:26:18Z",
+  "sha256": "ab8bcc72bd6dc1108ea0294d2c9c7b46d820b6b314b194caa3ad58ead318eccb",
+  "url": "https://stats.swehockey.se/Game/Events/629337"
+ },
+ "2023/game_2023_629337_lineups.html": {
+  "bytes": 14691,
+  "fetched_utc": "2026-08-05T23:26:19Z",
+  "sha256": "87681d0e1f14f4952b19f6bd51436064f7637f069aa5fa6744896dea7535e3c8",
+  "url": "https://stats.swehockey.se/Game/LineUps/629337"
+ },
+ "2023/game_2023_629338_events.html": {
+  "bytes": 16982,
+  "fetched_utc": "2026-08-05T23:26:20Z",
+  "sha256": "b12112784a293a53864d4594fab7bc40d8927498eb0b9b900ed32c740c30b647",
+  "url": "https://stats.swehockey.se/Game/Events/629338"
+ },
+ "2023/game_2023_629338_lineups.html": {
+  "bytes": 14786,
+  "fetched_utc": "2026-08-05T23:26:22Z",
+  "sha256": "e2dee9688e3ce12a4989939a5f87bdf85d002c2805b2364e7d89cf668ba1705c",
+  "url": "https://stats.swehockey.se/Game/LineUps/629338"
+ },
+ "2023/game_2023_629339_events.html": {
+  "bytes": 16804,
+  "fetched_utc": "2026-08-05T23:26:23Z",
+  "sha256": "05b24cd3a2275a1c94c04c8d6c7401e420db7f29cffe274a35b69f5c9822dc13",
+  "url": "https://stats.swehockey.se/Game/Events/629339"
+ },
+ "2023/game_2023_629339_lineups.html": {
+  "bytes": 14823,
+  "fetched_utc": "2026-08-05T23:26:24Z",
+  "sha256": "9bc22bb97c547a56eba7c461e08e7f56852094868fc46ce68eb70eb58b016ada",
+  "url": "https://stats.swehockey.se/Game/LineUps/629339"
+ },
+ "2023/game_2023_629340_events.html": {
+  "bytes": 15500,
+  "fetched_utc": "2026-08-05T23:26:25Z",
+  "sha256": "a30125f2cd2c28c2b536a077490b470390db461e7171ec444d763da66daf0ea8",
+  "url": "https://stats.swehockey.se/Game/Events/629340"
+ },
+ "2023/game_2023_629340_lineups.html": {
+  "bytes": 14959,
+  "fetched_utc": "2026-08-05T23:26:26Z",
+  "sha256": "aac578c6c4821737565df1a826e0a88d963a233276f2da0f312b22f5bc16db92",
+  "url": "https://stats.swehockey.se/Game/LineUps/629340"
+ },
+ "2023/game_2023_629341_events.html": {
+  "bytes": 16455,
+  "fetched_utc": "2026-08-05T23:26:27Z",
+  "sha256": "68ec80d3e470cc470d5bfbacdc5fb06730963ab22e270b3ede070290e03a5e70",
+  "url": "https://stats.swehockey.se/Game/Events/629341"
+ },
+ "2023/game_2023_629341_lineups.html": {
+  "bytes": 14955,
+  "fetched_utc": "2026-08-05T23:26:29Z",
+  "sha256": "8d52a1045bd8ba736dc42b28df95455d01057de30d4e416fa3db4c1186593c8b",
+  "url": "https://stats.swehockey.se/Game/LineUps/629341"
+ },
+ "2023/game_2023_629342_events.html": {
+  "bytes": 11463,
+  "fetched_utc": "2026-08-05T23:26:30Z",
+  "sha256": "c6c4fa14db992c927bbc71f4ccb02757b7c5a3ed242de7da2f79bfa2c3d40510",
+  "url": "https://stats.swehockey.se/Game/Events/629342"
+ },
+ "2023/game_2023_629342_lineups.html": {
+  "bytes": 14682,
+  "fetched_utc": "2026-08-05T23:26:31Z",
+  "sha256": "3fa73fea5e39821d37c9f9dd7b32f3a7ce0c468406428b82902e49a7d00f6b1e",
+  "url": "https://stats.swehockey.se/Game/LineUps/629342"
+ },
+ "2023/game_2023_629343_events.html": {
+  "bytes": 11256,
+  "fetched_utc": "2026-08-05T23:26:32Z",
+  "sha256": "0b626cdbe896e987e7d719d2fa16430818fc66bf1159637afc4417f9ce92fccc",
+  "url": "https://stats.swehockey.se/Game/Events/629343"
+ },
+ "2023/game_2023_629343_lineups.html": {
+  "bytes": 14417,
+  "fetched_utc": "2026-08-05T23:26:33Z",
+  "sha256": "4475fffa5e1b426c0763f8c4638638acb49767d65eed18108774455e6a31e25a",
+  "url": "https://stats.swehockey.se/Game/LineUps/629343"
+ },
+ "2023/game_2023_629344_events.html": {
+  "bytes": 16423,
+  "fetched_utc": "2026-08-05T23:24:53Z",
+  "sha256": "113b2f632e63dc00a816b1d0417e309d6bdf7aa820490ff5bd0806e47871dd74",
+  "url": "https://stats.swehockey.se/Game/Events/629344"
+ },
+ "2023/game_2023_629344_lineups.html": {
+  "bytes": 14785,
+  "fetched_utc": "2026-08-05T23:24:54Z",
+  "sha256": "94c3372b887ed0a10f1dd99bc61efdd247765b2bc7875d2d94375ad0ccbb175d",
+  "url": "https://stats.swehockey.se/Game/LineUps/629344"
+ },
+ "2023/game_2023_629345_events.html": {
+  "bytes": 13064,
+  "fetched_utc": "2026-08-05T23:26:34Z",
+  "sha256": "71ee7cab87fa109b6ceae0b3ed230645a7e31fb20b376002bbc68872d6acc70f",
+  "url": "https://stats.swehockey.se/Game/Events/629345"
+ },
+ "2023/game_2023_629345_lineups.html": {
+  "bytes": 14886,
+  "fetched_utc": "2026-08-05T23:26:35Z",
+  "sha256": "3974b24151fe026001f7246762518611aab0c5e3dacacacb1a25e22299cba472",
+  "url": "https://stats.swehockey.se/Game/LineUps/629345"
+ },
+ "2023/game_2023_629346_events.html": {
+  "bytes": 23155,
+  "fetched_utc": "2026-08-05T23:26:37Z",
+  "sha256": "a0604b5891c8d7c176d7bfe00bba3fe8b0e0607d1ed876654e32fc426ffc93ed",
+  "url": "https://stats.swehockey.se/Game/Events/629346"
+ },
+ "2023/game_2023_629346_lineups.html": {
+  "bytes": 14931,
+  "fetched_utc": "2026-08-05T23:26:38Z",
+  "sha256": "c5924e5021f420b343e8d29ff65801d0ac7dceb97a7e89f3ab65ff4b95ac98d1",
+  "url": "https://stats.swehockey.se/Game/LineUps/629346"
+ },
+ "2023/game_2023_629347_events.html": {
+  "bytes": 19244,
+  "fetched_utc": "2026-08-05T23:26:39Z",
+  "sha256": "164940df078e287ed0a3ecbee70819f3aa54d126ef7f607f057e840ce2b70ecf",
+  "url": "https://stats.swehockey.se/Game/Events/629347"
+ },
+ "2023/game_2023_629347_lineups.html": {
+  "bytes": 14646,
+  "fetched_utc": "2026-08-05T23:27:05Z",
+  "sha256": "28b010a52860420979dd356f7dd0d0a0542ff6823bbecee1a8192cca423333c2",
+  "url": "https://stats.swehockey.se/Game/LineUps/629347"
+ },
+ "2023/game_2023_629348_events.html": {
+  "bytes": 12162,
+  "fetched_utc": "2026-08-05T23:27:06Z",
+  "sha256": "3cb6dfc9d609186578b2b5147aa90e51c9f89c6f4cd7487dc50737faa207a688",
+  "url": "https://stats.swehockey.se/Game/Events/629348"
+ },
+ "2023/game_2023_629348_lineups.html": {
+  "bytes": 14624,
+  "fetched_utc": "2026-08-05T23:27:08Z",
+  "sha256": "940b26210db6d20e518f9855c0f9a1d5a545e07b758cb0b4b4393620b91b968d",
+  "url": "https://stats.swehockey.se/Game/LineUps/629348"
+ },
+ "2023/game_2023_629349_events.html": {
+  "bytes": 11022,
+  "fetched_utc": "2026-08-05T23:27:09Z",
+  "sha256": "ae5f4bfbc68bd24f77f0adb9af79287230645162abe392d9bea19873b86876fe",
+  "url": "https://stats.swehockey.se/Game/Events/629349"
+ },
+ "2023/game_2023_629349_lineups.html": {
+  "bytes": 14982,
+  "fetched_utc": "2026-08-05T23:27:10Z",
+  "sha256": "dbb28c6501802d9e1282afb2d65f2165ac41d5f95181d14ef9b3ae667cf6aabb",
+  "url": "https://stats.swehockey.se/Game/LineUps/629349"
+ },
+ "2023/game_2023_629350_events.html": {
+  "bytes": 18489,
+  "fetched_utc": "2026-08-05T23:27:11Z",
+  "sha256": "8bce9828e83e65ef20169f0c941fb1af2a71e016eec8a5d4b4884fc68ef34954",
+  "url": "https://stats.swehockey.se/Game/Events/629350"
+ },
+ "2023/game_2023_629350_lineups.html": {
+  "bytes": 14424,
+  "fetched_utc": "2026-08-05T23:27:12Z",
+  "sha256": "a98ebe424ce0e8e96b9919ff9e9591f64f40c6aa8ae9ff462b3379d41bf614ab",
+  "url": "https://stats.swehockey.se/Game/LineUps/629350"
+ },
+ "2023/game_2023_629351_events.html": {
+  "bytes": 16640,
+  "fetched_utc": "2026-08-05T23:27:13Z",
+  "sha256": "e86e0ed5c4123584149ff470e9c553e825ea96444a178d14fbde644fa1d2015d",
+  "url": "https://stats.swehockey.se/Game/Events/629351"
+ },
+ "2023/game_2023_629351_lineups.html": {
+  "bytes": 14779,
+  "fetched_utc": "2026-08-05T23:27:14Z",
+  "sha256": "c76a255e1b98a96c161a417f128050a671e668fccc6989b168fac2f11b1c569c",
+  "url": "https://stats.swehockey.se/Game/LineUps/629351"
+ },
+ "2023/game_2023_629352_events.html": {
+  "bytes": 18566,
+  "fetched_utc": "2026-08-05T23:27:15Z",
+  "sha256": "4ce72f0f499b67fa45b41107245052b69b5f08b5149b5080a7b8f42a763e0f00",
+  "url": "https://stats.swehockey.se/Game/Events/629352"
+ },
+ "2023/game_2023_629352_lineups.html": {
+  "bytes": 14984,
+  "fetched_utc": "2026-08-05T23:27:17Z",
+  "sha256": "7060fb0b05ceb80d2eeb5bf0ad2810bb315ab31018474dc0509a3c24be7a029d",
+  "url": "https://stats.swehockey.se/Game/LineUps/629352"
+ },
+ "2023/game_2023_629353_events.html": {
+  "bytes": 15085,
+  "fetched_utc": "2026-08-05T23:27:18Z",
+  "sha256": "8d7b3196f33e0dd2aebaed63b7435b6e8e85816752f245688ecaaaf94ef557db",
+  "url": "https://stats.swehockey.se/Game/Events/629353"
+ },
+ "2023/game_2023_629353_lineups.html": {
+  "bytes": 14600,
+  "fetched_utc": "2026-08-05T23:27:19Z",
+  "sha256": "e377140ee6dc03d6adc823d0f8f0f58de75de9dd8506278d6a23a20b6986b26c",
+  "url": "https://stats.swehockey.se/Game/LineUps/629353"
+ },
+ "2023/game_2023_629354_events.html": {
+  "bytes": 10761,
+  "fetched_utc": "2026-08-05T23:27:20Z",
+  "sha256": "813e2060b3e3c08d53a559742fa207ac42856079a8c259610400ab71ca5139e6",
+  "url": "https://stats.swehockey.se/Game/Events/629354"
+ },
+ "2023/game_2023_629354_lineups.html": {
+  "bytes": 14959,
+  "fetched_utc": "2026-08-05T23:27:21Z",
+  "sha256": "8fb1073d50641e5afe91f04bb5bca20d77cc49f77fd8705391af2fb1525f3123",
+  "url": "https://stats.swehockey.se/Game/LineUps/629354"
+ },
+ "2023/game_2023_629355_events.html": {
+  "bytes": 14049,
+  "fetched_utc": "2026-08-05T23:27:22Z",
+  "sha256": "df534f0493b5c5c1e15cda8a852cce2add74c09787f40fe6a5b934be534564b8",
+  "url": "https://stats.swehockey.se/Game/Events/629355"
+ },
+ "2023/game_2023_629355_lineups.html": {
+  "bytes": 14685,
+  "fetched_utc": "2026-08-05T23:27:23Z",
+  "sha256": "d00272e998ce6cf7260e57465c4a4b309ea97b9f675bc7241017f414c7815543",
+  "url": "https://stats.swehockey.se/Game/LineUps/629355"
+ },
+ "2023/game_2023_629356_events.html": {
+  "bytes": 14452,
+  "fetched_utc": "2026-08-05T23:27:25Z",
+  "sha256": "39c67ee05217ed4a30bba0603e35919859fa1962e9b8f10d23032fe1bde1e1b6",
+  "url": "https://stats.swehockey.se/Game/Events/629356"
+ },
+ "2023/game_2023_629356_lineups.html": {
+  "bytes": 14981,
+  "fetched_utc": "2026-08-05T23:27:26Z",
+  "sha256": "48228407523e7e270118a7d6a0cc7da2f2a1492f09b52946bb37763fd5bcfb56",
+  "url": "https://stats.swehockey.se/Game/LineUps/629356"
+ },
+ "2023/game_2023_629357_events.html": {
+  "bytes": 18664,
+  "fetched_utc": "2026-08-05T23:27:27Z",
+  "sha256": "88dfcf2fb09895f9211d87b9ef0c8d30b2c545eb186f8a6e1b810a12354fa9e5",
+  "url": "https://stats.swehockey.se/Game/Events/629357"
+ },
+ "2023/game_2023_629357_lineups.html": {
+  "bytes": 14744,
+  "fetched_utc": "2026-08-05T23:27:28Z",
+  "sha256": "160463e52cbbc76293322d8fe183ebc62b9d1a7e73dc8a40e77590f24c9e5da4",
+  "url": "https://stats.swehockey.se/Game/LineUps/629357"
+ },
+ "2023/game_2023_629358_events.html": {
+  "bytes": 13651,
+  "fetched_utc": "2026-08-05T23:27:29Z",
+  "sha256": "52061cc7c5707fb44c912e4bae2e0ddbbdf9c9b7a663f0e39f3855481b849ddf",
+  "url": "https://stats.swehockey.se/Game/Events/629358"
+ },
+ "2023/game_2023_629358_lineups.html": {
+  "bytes": 14944,
+  "fetched_utc": "2026-08-05T23:27:30Z",
+  "sha256": "622bb8e276dfa42e2f67014858fed9556e3fb1af43b54056659875070bdccfee",
+  "url": "https://stats.swehockey.se/Game/LineUps/629358"
+ },
+ "2023/game_2023_629359_events.html": {
+  "bytes": 19647,
+  "fetched_utc": "2026-08-05T23:27:32Z",
+  "sha256": "9beb399a92315dba1a9ede101ed93696220cd94cdbb62449d4f182ec008423f1",
+  "url": "https://stats.swehockey.se/Game/Events/629359"
+ },
+ "2023/game_2023_629359_lineups.html": {
+  "bytes": 14948,
+  "fetched_utc": "2026-08-05T23:27:33Z",
+  "sha256": "669e9f201cf307d4a8ef9792cb464ea9eeb853d906c0733858f3c21009d39dec",
+  "url": "https://stats.swehockey.se/Game/LineUps/629359"
+ },
+ "2023/game_2023_629360_events.html": {
+  "bytes": 12872,
+  "fetched_utc": "2026-08-05T23:11:56Z",
+  "sha256": "3a54b18f42ae1585cadb3bdb635c8f506f40259c3dc394aaa9434146b7316c71",
+  "url": "https://stats.swehockey.se/Game/Events/629360"
+ },
+ "2023/game_2023_629360_lineups.html": {
+  "bytes": 14693,
+  "fetched_utc": "2026-08-05T23:11:57Z",
+  "sha256": "ff38ec76d637a2099e5ba8bf8b2f7a310dd3d9d760540279648441ac75746cca",
+  "url": "https://stats.swehockey.se/Game/LineUps/629360"
+ },
+ "2023/game_2023_629361_events.html": {
+  "bytes": 14038,
+  "fetched_utc": "2026-08-05T23:27:34Z",
+  "sha256": "2e83de24de36bf1b4278b2181153d17c1e9b3973afaf7cbe35d43e85bcca6eff",
+  "url": "https://stats.swehockey.se/Game/Events/629361"
+ },
+ "2023/game_2023_629361_lineups.html": {
+  "bytes": 14901,
+  "fetched_utc": "2026-08-05T23:27:35Z",
+  "sha256": "e86f3060d92680324a538f574c51a850ff29374548335fdbc8e4b92b25154516",
+  "url": "https://stats.swehockey.se/Game/LineUps/629361"
+ },
+ "2023/game_2023_629362_events.html": {
+  "bytes": 12459,
+  "fetched_utc": "2026-08-05T23:27:49Z",
+  "sha256": "c13933dd441305e1a2f3010eeabd907bec0f34f8bd73c581bbb3edbd399a0831",
+  "url": "https://stats.swehockey.se/Game/Events/629362"
+ },
+ "2023/game_2023_629362_lineups.html": {
+  "bytes": 14753,
+  "fetched_utc": "2026-08-05T23:27:50Z",
+  "sha256": "eab44e378a9add3fae2ca1ac71d82c130cc599eecc5e2fa007f45d1e43453317",
+  "url": "https://stats.swehockey.se/Game/LineUps/629362"
+ },
+ "2023/game_2023_629363_events.html": {
+  "bytes": 13237,
+  "fetched_utc": "2026-08-05T23:27:39Z",
+  "sha256": "fbd0b478d0a504e0276dacc0c31921e7e7906e1814c016066249b1c859c4b3ea",
+  "url": "https://stats.swehockey.se/Game/Events/629363"
+ },
+ "2023/game_2023_629363_lineups.html": {
+  "bytes": 14669,
+  "fetched_utc": "2026-08-05T23:27:41Z",
+  "sha256": "99f8ddf5352975f175688772adde7dad260bd30aeb9c13a4c69eb87bbdb7d12c",
+  "url": "https://stats.swehockey.se/Game/LineUps/629363"
+ },
+ "2023/game_2023_629364_events.html": {
+  "bytes": 18933,
+  "fetched_utc": "2026-08-05T23:27:51Z",
+  "sha256": "bb3de78b07c803381532245e7718d10358836a535d35a82bbe946009b18f8bb4",
+  "url": "https://stats.swehockey.se/Game/Events/629364"
+ },
+ "2023/game_2023_629364_lineups.html": {
+  "bytes": 14942,
+  "fetched_utc": "2026-08-05T23:27:52Z",
+  "sha256": "f9ad6178af556490be8c78c2ecc95cc8fc837dfb3081f6069f42e765f5a9e3a1",
+  "url": "https://stats.swehockey.se/Game/LineUps/629364"
+ },
+ "2023/game_2023_629365_events.html": {
+  "bytes": 14294,
+  "fetched_utc": "2026-08-05T23:27:42Z",
+  "sha256": "e8fc4bb833502d0a14557887db4ffa104de510a202498b563d6ff0cf7e7ef204",
+  "url": "https://stats.swehockey.se/Game/Events/629365"
+ },
+ "2023/game_2023_629365_lineups.html": {
+  "bytes": 14968,
+  "fetched_utc": "2026-08-05T23:27:43Z",
+  "sha256": "0078eb9d6a485ab0d6d07d4c626a4aa37cd287b3403caf1d7d1761df728e9a0d",
+  "url": "https://stats.swehockey.se/Game/LineUps/629365"
+ },
+ "2023/game_2023_629366_events.html": {
+  "bytes": 12833,
+  "fetched_utc": "2026-08-05T23:27:44Z",
+  "sha256": "bb4ae68e551c0f22b7c1de6f333649d7620af39f5a4af177450bf2ef139db49e",
+  "url": "https://stats.swehockey.se/Game/Events/629366"
+ },
+ "2023/game_2023_629366_lineups.html": {
+  "bytes": 14625,
+  "fetched_utc": "2026-08-05T23:27:45Z",
+  "sha256": "18d24e9c55105ec8c9a997384cbd94eeaace16c6969c5a0bc279119263c5a489",
+  "url": "https://stats.swehockey.se/Game/LineUps/629366"
+ },
+ "2023/game_2023_629367_events.html": {
+  "bytes": 12193,
+  "fetched_utc": "2026-08-05T23:27:46Z",
+  "sha256": "fed3728f50080605feb383fe2e40dbd20f635e70fa5668bc36809e88ae2a3e90",
+  "url": "https://stats.swehockey.se/Game/Events/629367"
+ },
+ "2023/game_2023_629367_lineups.html": {
+  "bytes": 14664,
+  "fetched_utc": "2026-08-05T23:27:48Z",
+  "sha256": "e7082dee922397abd864dcc8ca5a607ab495c5e019e2ec0b132b8e442936c3a3",
+  "url": "https://stats.swehockey.se/Game/LineUps/629367"
+ },
+ "2023/game_2023_629368_events.html": {
+  "bytes": 17045,
+  "fetched_utc": "2026-08-05T23:16:00Z",
+  "sha256": "90176141c5ca65184bf8a11fd72d8314c9ee1eed6d34bd0b8d5c5fe6f08436e3",
+  "url": "https://stats.swehockey.se/Game/Events/629368"
+ },
+ "2023/game_2023_629368_lineups.html": {
+  "bytes": 14733,
+  "fetched_utc": "2026-08-05T23:16:01Z",
+  "sha256": "f6f87d60960d83783b527fbf87e4fae90610b407ffcb2b983de852905c205cd1",
+  "url": "https://stats.swehockey.se/Game/LineUps/629368"
+ },
+ "2023/game_2023_629369_events.html": {
+  "bytes": 14317,
+  "fetched_utc": "2026-08-05T23:27:53Z",
+  "sha256": "bed8c30931689ea1e4eb99f623e6f579a674aebcb2e4a407e8e7c6d4bdbdd751",
+  "url": "https://stats.swehockey.se/Game/Events/629369"
+ },
+ "2023/game_2023_629369_lineups.html": {
+  "bytes": 14950,
+  "fetched_utc": "2026-08-05T23:27:54Z",
+  "sha256": "4723a53280fac787ae081850535eaee08af2edcb624e525cb3f5f083855b2140",
+  "url": "https://stats.swehockey.se/Game/LineUps/629369"
+ },
+ "2023/game_2023_629370_events.html": {
+  "bytes": 13049,
+  "fetched_utc": "2026-08-05T23:27:56Z",
+  "sha256": "57214d89962eff5b2abc8fd906f98126d655a2d63daa9cd05c4c444081ea4570",
+  "url": "https://stats.swehockey.se/Game/Events/629370"
+ },
+ "2023/game_2023_629370_lineups.html": {
+  "bytes": 14932,
+  "fetched_utc": "2026-08-05T23:27:57Z",
+  "sha256": "47c981bcb9729a394120ee23df94e693cac4f7f92faace645954f52cd95e5f67",
+  "url": "https://stats.swehockey.se/Game/LineUps/629370"
+ },
+ "2023/game_2023_629371_events.html": {
+  "bytes": 17320,
+  "fetched_utc": "2026-08-05T23:27:58Z",
+  "sha256": "05840cbb27a93e5d600cc270952800436cb43a8316af1281a57a61b4fc76ded2",
+  "url": "https://stats.swehockey.se/Game/Events/629371"
+ },
+ "2023/game_2023_629371_lineups.html": {
+  "bytes": 14960,
+  "fetched_utc": "2026-08-05T23:27:59Z",
+  "sha256": "7b062a6a71e2ec6290e5274b05c8476fa9f6f35af8b18c2bb321953e9344adc3",
+  "url": "https://stats.swehockey.se/Game/LineUps/629371"
+ },
+ "2023/game_2023_629372_events.html": {
+  "bytes": 14880,
+  "fetched_utc": "2026-08-05T23:28:00Z",
+  "sha256": "795ef816fe8d3930085e006e040fbeb74a88de0ed37edb29b0014ecbd6c60c90",
+  "url": "https://stats.swehockey.se/Game/Events/629372"
+ },
+ "2023/game_2023_629372_lineups.html": {
+  "bytes": 15041,
+  "fetched_utc": "2026-08-05T23:28:01Z",
+  "sha256": "690f92bede1aa653d1da7ca2d92033d7a0f5cb8c761f5a8e8acead1bad1ae81f",
+  "url": "https://stats.swehockey.se/Game/LineUps/629372"
+ },
+ "2023/game_2023_629373_events.html": {
+  "bytes": 16473,
+  "fetched_utc": "2026-08-05T23:28:03Z",
+  "sha256": "706e939adcb14ccb8433425a95ba41a46f051087d6a46be8b16a719973a6ade8",
+  "url": "https://stats.swehockey.se/Game/Events/629373"
+ },
+ "2023/game_2023_629373_lineups.html": {
+  "bytes": 14938,
+  "fetched_utc": "2026-08-05T23:28:04Z",
+  "sha256": "0995a8b285538a7e84517921a8f3beaa7840b90b9865912400cc32faacb00c8f",
+  "url": "https://stats.swehockey.se/Game/LineUps/629373"
+ },
+ "2023/game_2023_629374_events.html": {
+  "bytes": 10548,
+  "fetched_utc": "2026-08-05T23:28:05Z",
+  "sha256": "544b52937f2b8c9a642c7a060b80d422b74b1db8428f239a0b6977101ee2ff23",
+  "url": "https://stats.swehockey.se/Game/Events/629374"
+ },
+ "2023/game_2023_629374_lineups.html": {
+  "bytes": 14730,
+  "fetched_utc": "2026-08-05T23:28:06Z",
+  "sha256": "009964fdc7516d975e0362562781c800556bef570c25213a92e873fa66af7d06",
+  "url": "https://stats.swehockey.se/Game/LineUps/629374"
+ },
+ "2023/game_2023_629375_events.html": {
+  "bytes": 11363,
+  "fetched_utc": "2026-08-05T23:28:07Z",
+  "sha256": "af80b7678b3565283a610bcafccf690ec1a43c8c5ccf8d876ba6b459cbbbb2ef",
+  "url": "https://stats.swehockey.se/Game/Events/629375"
+ },
+ "2023/game_2023_629375_lineups.html": {
+  "bytes": 14930,
+  "fetched_utc": "2026-08-05T23:28:08Z",
+  "sha256": "16260e5a8c5a762a9fab1313971a7888de4b445e3fc73bd2731769759c9e5d9e",
+  "url": "https://stats.swehockey.se/Game/LineUps/629375"
+ },
+ "2023/game_2023_629376_events.html": {
+  "bytes": 10832,
+  "fetched_utc": "2026-08-05T23:28:09Z",
+  "sha256": "cacf223c09591fc820d0fc31e7abf5c965b96439aa8802d8e764269584f28003",
+  "url": "https://stats.swehockey.se/Game/Events/629376"
+ },
+ "2023/game_2023_629376_lineups.html": {
+  "bytes": 15054,
+  "fetched_utc": "2026-08-05T23:28:11Z",
+  "sha256": "a8b85e4f65bd630c800ef8d828be9d9da040237c24ac0cd57ab45cb1137eba1c",
+  "url": "https://stats.swehockey.se/Game/LineUps/629376"
+ },
+ "2023/game_2023_629377_events.html": {
+  "bytes": 13772,
+  "fetched_utc": "2026-08-05T23:28:12Z",
+  "sha256": "a2cddce458047379d5b53ab8352be2a2126dfe73868565cd2c47285a8b634b06",
+  "url": "https://stats.swehockey.se/Game/Events/629377"
+ },
+ "2023/game_2023_629377_lineups.html": {
+  "bytes": 15055,
+  "fetched_utc": "2026-08-05T23:28:13Z",
+  "sha256": "90dc2873bd8bc60ad9bbc0996be6d55a5aa745df915dd8e0af5a3e834d3d3df8",
+  "url": "https://stats.swehockey.se/Game/LineUps/629377"
+ },
+ "2023/game_2023_629378_events.html": {
+  "bytes": 13315,
+  "fetched_utc": "2026-08-05T23:28:14Z",
+  "sha256": "e75e637d02072ed4a602869acf590fd4bbb7d40bdbac4633b10cd70745f34653",
+  "url": "https://stats.swehockey.se/Game/Events/629378"
+ },
+ "2023/game_2023_629378_lineups.html": {
+  "bytes": 15019,
+  "fetched_utc": "2026-08-05T23:28:15Z",
+  "sha256": "452db88c742bb8fd466422bb2f81602d60e8aac46ced882b45f9dfedc5aac636",
+  "url": "https://stats.swehockey.se/Game/LineUps/629378"
+ },
+ "2023/game_2023_629379_events.html": {
+  "bytes": 10084,
+  "fetched_utc": "2026-08-05T23:28:16Z",
+  "sha256": "6749eb576b6787e22648cde51dfed1b1dcbb415e2d22fc7ab45b5d6b7748f739",
+  "url": "https://stats.swehockey.se/Game/Events/629379"
+ },
+ "2023/game_2023_629379_lineups.html": {
+  "bytes": 14759,
+  "fetched_utc": "2026-08-05T23:28:18Z",
+  "sha256": "52e0b2675e49b6003f0bbf3a2a268941c076b0f8fe365138ee14a0714e2b53e8",
+  "url": "https://stats.swehockey.se/Game/LineUps/629379"
+ },
+ "2023/game_2023_629380_events.html": {
+  "bytes": 12127,
+  "fetched_utc": "2026-08-05T23:28:19Z",
+  "sha256": "033b1a338d40f07937de5fe294efdc7f9302f471859fb163adf58af117141593",
+  "url": "https://stats.swehockey.se/Game/Events/629380"
+ },
+ "2023/game_2023_629380_lineups.html": {
+  "bytes": 14963,
+  "fetched_utc": "2026-08-05T23:28:20Z",
+  "sha256": "8d9e520e7bb97cd6028420596396a936c18947bac79d2af552a52c880a99db8d",
+  "url": "https://stats.swehockey.se/Game/LineUps/629380"
+ },
+ "2023/game_2023_629381_events.html": {
+  "bytes": 14841,
+  "fetched_utc": "2026-08-05T23:28:21Z",
+  "sha256": "9ee111effb59eda0ce055bfeada9f59fd3c1f8976a6e4e690d9cd2925c8c9893",
+  "url": "https://stats.swehockey.se/Game/Events/629381"
+ },
+ "2023/game_2023_629381_lineups.html": {
+  "bytes": 14728,
+  "fetched_utc": "2026-08-05T23:28:22Z",
+  "sha256": "c7601d8a82368bfd34bfcb2c854ea52b2c8bbe3a5cf203c33a817846ced481f7",
+  "url": "https://stats.swehockey.se/Game/LineUps/629381"
+ },
+ "2023/game_2023_629382_events.html": {
+  "bytes": 15864,
+  "fetched_utc": "2026-08-05T23:28:23Z",
+  "sha256": "a3c87f44917b41c8019637b4ac1dc2cf11472afaffd30158dba642989cf9c48a",
+  "url": "https://stats.swehockey.se/Game/Events/629382"
+ },
+ "2023/game_2023_629382_lineups.html": {
+  "bytes": 14935,
+  "fetched_utc": "2026-08-05T23:28:24Z",
+  "sha256": "e0f4910f5ffd340df258884eaebba4d597906a38930c37792befe3446e82cce0",
+  "url": "https://stats.swehockey.se/Game/LineUps/629382"
+ },
+ "2023/game_2023_629383_events.html": {
+  "bytes": 12911,
+  "fetched_utc": "2026-08-05T23:28:32Z",
+  "sha256": "8ee087882da1a21650ea736108a10c937931db4b21cb706b286d6399dc71fc96",
+  "url": "https://stats.swehockey.se/Game/Events/629383"
+ },
+ "2023/game_2023_629383_lineups.html": {
+  "bytes": 14948,
+  "fetched_utc": "2026-08-05T23:28:34Z",
+  "sha256": "fc95b40d7290df95a6da69450228a874745338aff6dda0fd8816962737509426",
+  "url": "https://stats.swehockey.se/Game/LineUps/629383"
+ },
+ "2023/game_2023_629384_events.html": {
+  "bytes": 10716,
+  "fetched_utc": "2026-08-05T23:28:26Z",
+  "sha256": "61881358225a19024560ee1ec3c735aaf517cb6a3fa82066fa76aebd24c52a0c",
+  "url": "https://stats.swehockey.se/Game/Events/629384"
+ },
+ "2023/game_2023_629384_lineups.html": {
+  "bytes": 14645,
+  "fetched_utc": "2026-08-05T23:28:27Z",
+  "sha256": "0aed7eaa5a434ad71767fc303c9828934ba9b6ce1e64d43dbbdc7236aa747012",
+  "url": "https://stats.swehockey.se/Game/LineUps/629384"
+ },
+ "2023/game_2023_629385_events.html": {
+  "bytes": 17509,
+  "fetched_utc": "2026-08-05T23:28:35Z",
+  "sha256": "2e7955403bc11fa82b8995251305412ccc54f3290940e75679d83a50e301d773",
+  "url": "https://stats.swehockey.se/Game/Events/629385"
+ },
+ "2023/game_2023_629385_lineups.html": {
+  "bytes": 15021,
+  "fetched_utc": "2026-08-05T23:28:36Z",
+  "sha256": "7c851cda0453b460ea650ada868860e721debbed7df05cd53ba914530e2c7696",
+  "url": "https://stats.swehockey.se/Game/LineUps/629385"
+ },
+ "2023/game_2023_629386_events.html": {
+  "bytes": 12979,
+  "fetched_utc": "2026-08-05T23:28:28Z",
+  "sha256": "ba63d2917ebedcd02726e369a7ff76fcd2c30d793a65b2e8d2d406d5463f93c9",
+  "url": "https://stats.swehockey.se/Game/Events/629386"
+ },
+ "2023/game_2023_629386_lineups.html": {
+  "bytes": 14984,
+  "fetched_utc": "2026-08-05T23:28:29Z",
+  "sha256": "a792ee1fb2bb3e5cc19aa62572ada99d9daa039e793848e6478cfe537c4f1460",
+  "url": "https://stats.swehockey.se/Game/LineUps/629386"
+ },
+ "2023/game_2023_629387_events.html": {
+  "bytes": 15058,
+  "fetched_utc": "2026-08-05T23:28:37Z",
+  "sha256": "4c5dbea90bc73c1cc0aa345b24b0f160966988f9686f52d5cf1bfb223ebe9577",
+  "url": "https://stats.swehockey.se/Game/Events/629387"
+ },
+ "2023/game_2023_629387_lineups.html": {
+  "bytes": 14704,
+  "fetched_utc": "2026-08-05T23:28:38Z",
+  "sha256": "0e5e3062c8575cd35012b5842814ffefc66272c32b6c50b487311d9c7dcfd15a",
+  "url": "https://stats.swehockey.se/Game/LineUps/629387"
+ },
+ "2023/game_2023_629388_events.html": {
+  "bytes": 14061,
+  "fetched_utc": "2026-08-05T23:28:39Z",
+  "sha256": "db12bad619b64a0ff126322d3e025f4a602c5d304c74c0fd86688e0d50953953",
+  "url": "https://stats.swehockey.se/Game/Events/629388"
+ },
+ "2023/game_2023_629388_lineups.html": {
+  "bytes": 14687,
+  "fetched_utc": "2026-08-05T23:28:40Z",
+  "sha256": "9d549ed56965be4b2737653a2a144f87b3cb84da3f304f913180c64a9ab5e0ab",
+  "url": "https://stats.swehockey.se/Game/LineUps/629388"
+ },
+ "2023/game_2023_629389_events.html": {
+  "bytes": 20180,
+  "fetched_utc": "2026-08-05T23:28:30Z",
+  "sha256": "f6f7ec437766baa0344d9584529c173e0acfee9f18fc58a0778e428e21db1732",
+  "url": "https://stats.swehockey.se/Game/Events/629389"
+ },
+ "2023/game_2023_629389_lineups.html": {
+  "bytes": 14691,
+  "fetched_utc": "2026-08-05T23:28:31Z",
+  "sha256": "e4d8cb9e1888dda0c1cc76b517609917088b4ef325b62c2ecd80492ecb8ceddd",
+  "url": "https://stats.swehockey.se/Game/LineUps/629389"
+ },
+ "2023/game_2023_629390_events.html": {
+  "bytes": 13235,
+  "fetched_utc": "2026-08-05T23:28:42Z",
+  "sha256": "1ef03543358145b550ed65bf5282b55ea67c9260f71da8c60afc2fa57dc61701",
+  "url": "https://stats.swehockey.se/Game/Events/629390"
+ },
+ "2023/game_2023_629390_lineups.html": {
+  "bytes": 14936,
+  "fetched_utc": "2026-08-05T23:28:43Z",
+  "sha256": "1334804d52088fd15bb2667d6b50d3fe662a86796c63c0a7d9820188e88a6819",
+  "url": "https://stats.swehockey.se/Game/LineUps/629390"
+ },
+ "2023/game_2023_629391_events.html": {
+  "bytes": 19397,
+  "fetched_utc": "2026-08-05T23:28:44Z",
+  "sha256": "02c155ee45422625c1ee5a45eae047ae5d26da76dbcb275b2c7d6b7b4196a1f2",
+  "url": "https://stats.swehockey.se/Game/Events/629391"
+ },
+ "2023/game_2023_629391_lineups.html": {
+  "bytes": 14731,
+  "fetched_utc": "2026-08-05T23:28:45Z",
+  "sha256": "5c521b2026f77ef9bc1db88c49b2586189600b41b1966fd49bbf2b746b7e4e5f",
+  "url": "https://stats.swehockey.se/Game/LineUps/629391"
+ },
+ "2023/game_2023_629392_events.html": {
+  "bytes": 15773,
+  "fetched_utc": "2026-08-05T23:28:46Z",
+  "sha256": "789fabc59579c5fcf6071cd39197d5e078c52bb271a8225a6bca1da9b1e9b546",
+  "url": "https://stats.swehockey.se/Game/Events/629392"
+ },
+ "2023/game_2023_629392_lineups.html": {
+  "bytes": 14934,
+  "fetched_utc": "2026-08-05T23:28:47Z",
+  "sha256": "23773beebe01bc7fcee3e25805de5af25b80fb15c0820e5a55b284278ff8eb82",
+  "url": "https://stats.swehockey.se/Game/LineUps/629392"
+ },
+ "2023/game_2023_629393_events.html": {
+  "bytes": 10947,
+  "fetched_utc": "2026-08-05T23:28:49Z",
+  "sha256": "4293d95890dc545668e15f6574b6167792a79f2b0f8ab6ee7548f6d7010cdbdd",
+  "url": "https://stats.swehockey.se/Game/Events/629393"
+ },
+ "2023/game_2023_629393_lineups.html": {
+  "bytes": 14961,
+  "fetched_utc": "2026-08-05T23:28:50Z",
+  "sha256": "7f5253f36258a08dc2579b3833805bba6e795bc6fcb62e2402595f6d4b9ad4a0",
+  "url": "https://stats.swehockey.se/Game/LineUps/629393"
+ },
+ "2023/game_2023_629394_events.html": {
+  "bytes": 10811,
+  "fetched_utc": "2026-08-05T23:28:51Z",
+  "sha256": "aa73320c9799c23c5621ed46b3e9ed4fb32d0fc6e6c5839c6dd8f2bfcc904b81",
+  "url": "https://stats.swehockey.se/Game/Events/629394"
+ },
+ "2023/game_2023_629394_lineups.html": {
+  "bytes": 14959,
+  "fetched_utc": "2026-08-05T23:28:52Z",
+  "sha256": "29b283f4588ae460cbd36a2a2bcaf9438c7180473a7ce2a2a34cce086fb01cf4",
+  "url": "https://stats.swehockey.se/Game/LineUps/629394"
+ },
+ "2023/game_2023_629395_events.html": {
+  "bytes": 16711,
+  "fetched_utc": "2026-08-05T23:28:53Z",
+  "sha256": "4ee2bc64ff3ffbd8512c722c4cbfd54b4d15914be284c682d93732c1dd8acab0",
+  "url": "https://stats.swehockey.se/Game/Events/629395"
+ },
+ "2023/game_2023_629395_lineups.html": {
+  "bytes": 15003,
+  "fetched_utc": "2026-08-05T23:28:54Z",
+  "sha256": "7289ae6762656b7aa21b4c56b8937829c9cfdca0f406b09c84302de503cddd34",
+  "url": "https://stats.swehockey.se/Game/LineUps/629395"
+ },
+ "2023/game_2023_629396_events.html": {
+  "bytes": 13692,
+  "fetched_utc": "2026-08-05T23:28:55Z",
+  "sha256": "85f9005b522202e3c74ae051d2e5773db8f9614e63a34ca9859264522dc8e687",
+  "url": "https://stats.swehockey.se/Game/Events/629396"
+ },
+ "2023/game_2023_629396_lineups.html": {
+  "bytes": 14962,
+  "fetched_utc": "2026-08-05T23:28:57Z",
+  "sha256": "6f4325126e8bbc35587ae1cdf0729cb426af4fba014964e23824dfbf55d01d3d",
+  "url": "https://stats.swehockey.se/Game/LineUps/629396"
+ },
+ "2023/game_2023_629397_events.html": {
+  "bytes": 11983,
+  "fetched_utc": "2026-08-05T23:28:58Z",
+  "sha256": "19b7a3923cdef8a0a4c5dc7f672b55dc075d9d9cf6935ecc8c328b2b9edb0bb4",
+  "url": "https://stats.swehockey.se/Game/Events/629397"
+ },
+ "2023/game_2023_629397_lineups.html": {
+  "bytes": 14730,
+  "fetched_utc": "2026-08-05T23:28:59Z",
+  "sha256": "f4ecb3c22d42fa8e32ce6b9a5db44de24a793d8b458146cdc5edd3bd29d39419",
+  "url": "https://stats.swehockey.se/Game/LineUps/629397"
+ },
+ "2023/game_2023_629398_events.html": {
+  "bytes": 16278,
+  "fetched_utc": "2026-08-05T23:29:00Z",
+  "sha256": "9817a6690182bd6d44ab6639edcd86a31b71089b8ce351f86bafc517b41ca7f9",
+  "url": "https://stats.swehockey.se/Game/Events/629398"
+ },
+ "2023/game_2023_629398_lineups.html": {
+  "bytes": 15047,
+  "fetched_utc": "2026-08-05T23:29:01Z",
+  "sha256": "2c85c573dc35d31446ed76f25750e629e95ba489cbfa3250e3d55228fb60facc",
+  "url": "https://stats.swehockey.se/Game/LineUps/629398"
+ },
+ "2023/game_2023_629399_events.html": {
+  "bytes": 14329,
+  "fetched_utc": "2026-08-05T23:29:02Z",
+  "sha256": "1108895591bbb68c6746dea5b73c3b18c5484402d59f952fd22a43659314e302",
+  "url": "https://stats.swehockey.se/Game/Events/629399"
+ },
+ "2023/game_2023_629399_lineups.html": {
+  "bytes": 14548,
+  "fetched_utc": "2026-08-05T23:29:03Z",
+  "sha256": "ad791203ae453552b9118591a0e234305571e9c8799a153658836c7ff816c38e",
+  "url": "https://stats.swehockey.se/Game/LineUps/629399"
+ },
+ "2023/game_2023_629400_events.html": {
+  "bytes": 15545,
+  "fetched_utc": "2026-08-05T23:29:05Z",
+  "sha256": "e0f2f109f85b6d7184b0c6f25d47cf5c26cf1ed421e8a42e720ae2c2b2dd00ed",
+  "url": "https://stats.swehockey.se/Game/Events/629400"
+ },
+ "2023/game_2023_629400_lineups.html": {
+  "bytes": 14728,
+  "fetched_utc": "2026-08-05T23:29:06Z",
+  "sha256": "cf75f56b06a2c3171587f980047bf67bb3e72f17df07198c661dc4872158d208",
+  "url": "https://stats.swehockey.se/Game/LineUps/629400"
+ },
+ "2023/game_2023_629401_events.html": {
+  "bytes": 15384,
+  "fetched_utc": "2026-08-05T23:29:07Z",
+  "sha256": "9d0955d0bc916bd2ce9286ac50cad0893749f0589d7736746c59295e7b09ec4e",
+  "url": "https://stats.swehockey.se/Game/Events/629401"
+ },
+ "2023/game_2023_629401_lineups.html": {
+  "bytes": 14936,
+  "fetched_utc": "2026-08-05T23:29:08Z",
+  "sha256": "afbe42118ab8b2be4efb494b5586b7de8329cc73d01ffa7547b5d2fc4d559d6f",
+  "url": "https://stats.swehockey.se/Game/LineUps/629401"
+ },
+ "2023/game_2023_629402_events.html": {
+  "bytes": 10372,
+  "fetched_utc": "2026-08-05T23:29:09Z",
+  "sha256": "b4ec8193a6f7baf6f24a23e19cae9470bb9b3d68c81c7ff1ef120f4e480c61f3",
+  "url": "https://stats.swehockey.se/Game/Events/629402"
+ },
+ "2023/game_2023_629402_lineups.html": {
+  "bytes": 14985,
+  "fetched_utc": "2026-08-05T23:29:10Z",
+  "sha256": "8ece319012685df08f08b581134806f0d67fe1319bee62e9a0258bade82c62dd",
+  "url": "https://stats.swehockey.se/Game/LineUps/629402"
+ },
+ "2023/game_2023_629403_events.html": {
+  "bytes": 11251,
+  "fetched_utc": "2026-08-05T23:29:11Z",
+  "sha256": "d3dbc5e2e0ffbfcc6dfb032426e77ebda9f1e3d2d7188bc38be4e4b92660da7c",
+  "url": "https://stats.swehockey.se/Game/Events/629403"
+ },
+ "2023/game_2023_629403_lineups.html": {
+  "bytes": 14937,
+  "fetched_utc": "2026-08-05T23:29:12Z",
+  "sha256": "2945164e27426bd640907fba0946b6128a6c36e6436a64eab869f2e88c23dae1",
+  "url": "https://stats.swehockey.se/Game/LineUps/629403"
+ },
+ "2023/schedule_shl_2023.json": {
+  "bytes": 432418,
+  "fetched_utc": "2026-08-05T23:14:10Z",
+  "sha256": "0349155fe91aa58396e6427c47f21d5e561ef027917152ee5fe6c36d547dcb01",
+  "url": "https://www.shl.se/api/sports-v2/game-schedule?seasonUuid=qbN-XMFfjGVt&seriesUuid=qQ9-bb0bzEWUk&gameTypeUuid=qQ9-af37Ti40B"
+ },
+ "2023/schedule_swe_13469.html": {
+  "bytes": 459458,
+  "fetched_utc": "2026-08-05T23:14:09Z",
+  "sha256": "b2be4f90f5f093a4e5c8ec6935b777d71757b78c0745a3273e029acc6107a1c6",
+  "url": "https://stats.swehockey.se/ScheduleAndResults/Schedule/13469"
+ }
+}
