@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "derived": "2026-08-07 hand-traced from raw text.khl.ru + www.khl.ru protocol HTML (KHL adapter session) BEFORE the adapter existed (rule 2). Times cumulative secs; P3 secs = t-2400. Trace notes: docs/ground_truth_traces/khl_batch1_2026-08-07.md. 14 games / 15 instances. Every empty-interval list cross-checked to the second against the protocol team per-period VPPV table (independent channel, 14/14 exact). Coverage: EV pull x3, pp_pull x6 (incl. 6v3 pull-to-horn, 6v4 re-pull after ENG-created instance, penalty_on_trailer ender), no-pull gap-3, carryover-at-open x2, multi-pull (3 windows), pull-to-horn x3, OT game + shootout game (bullit rows excluded), mid-game + period-boundary goalie substitutions (never intervals), ruling-17 dp artifacts x3 (2 bracketed by EXPLICIT dp events - portfolio first, 1 invisible), EN goals via 'V pustye vorota' + protocol jersey-absence x4 (incl. SH-ENG), own-net-empty 'S ekstra-polevym igrokom' goals (en=False) x3, duplicate-penalty game 898094 re-ruled as a real 2+2 double minor (VPM-exact), PS-award rows (mins 0, no box), 5+20 major/disciplinary, coincident-penalty cancellation, same-player stacking, minute-only and absent penalty-end events.",
+    "derived": "2026-08-07 hand-traced from raw text.khl.ru + www.khl.ru protocol HTML (KHL adapter session) BEFORE the adapter existed (rule 2). Times cumulative secs; P3 secs = t-2400. Trace notes: docs/ground_truth_traces/khl_batch1_2026-08-07.md. 14 games / 16 instances (one 898094 instance initially missed by hand, caught by the engine cross-check, re-verified by hand and recorded — Magnus batch-0 precedent). Every empty-interval list cross-checked to the second against the protocol team per-period VPPV table (independent channel, 14/14 exact). Coverage: EV pull x3, pp_pull x6 (incl. 6v3 pull-to-horn, 6v4 re-pull after ENG-created instance, penalty_on_trailer ender), no-pull gap-3, carryover-at-open x2, multi-pull (3 windows), pull-to-horn x3, OT game + shootout game (bullit rows excluded), mid-game + period-boundary goalie substitutions (never intervals), ruling-17 dp artifacts x3 (2 bracketed by EXPLICIT dp events - portfolio first, 1 invisible), EN goals via 'V pustye vorota' + protocol jersey-absence x4 (incl. SH-ENG), own-net-empty 'S ekstra-polevym igrokom' goals (en=False) x3, duplicate-penalty game 898094 re-ruled as a real 2+2 double minor (VPM-exact), PS-award rows (mins 0, no box), 5+20 major/disciplinary, coincident-penalty cancellation, same-player stacking, minute-only and absent penalty-end events.",
     "empty_intervals_note": "empty = expected net-empty intervals (cumulative secs) per side; games without gap-3 instances still pin adapter-level extraction. Sides keyed home/away."
   },
   "games": {
@@ -177,7 +177,11 @@
       "dp_events": 1,
       "regulation_goals": 8,
       "double_minor_pin": {"side": "home", "t": 3117, "count": 2, "windows": [[3117, 3237], [3237, 3357]]},
-      "instances": []
+      "instances": [
+        {"n": 1, "opened_secs": 512, "closed_secs": 591, "closed_reason": "narrowed",
+         "trailing_name": "Лада", "pulled": false, "pull_evidence_secs": null,
+         "pull_classification": null, "carryover_empty_at_open": false}
+      ]
     }
   }
 }
