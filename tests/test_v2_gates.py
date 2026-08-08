@@ -841,3 +841,37 @@ def test_khl_random_audit():
     sample, bad = audit("khl")
     assert len(sample) == 60
     assert not bad, bad
+
+
+def test_del_probe_detector_never_false_no_go():
+    """Gate for tools/del_round1_probe.py, the DEL Round-1 capability triage.
+
+    The probe answers one question — does a source show WHEN a goalie was
+    pulled — and a (d) verdict means NO-GO: the Manager does not spend a
+    session on that adapter. So a FALSE (d) is the expensive failure, and
+    the detector is calibrated against the seven lakes whose capability
+    class we already know from raw bytes.
+
+    Both false NO-GOs below were real defects caught by this gate while the
+    probe was being written: literal token strings missed the AHL feed's
+    `goalie_change` key, and an arbitrary GOALS co-requirement sank the NHL.
+    """
+    sys.path.insert(0, str(ROOT / "tools"))
+    from del_round1_probe import scan_tokens, verdict
+    ref = ROOT / "tests" / "reference_raw"
+    explicit = {"ahl", "liiga", "eihl"}      # explicit goalie events in the feed
+    onice = {"nhl", "khl", "shl", "mestis"}  # on-ice / lineup lists per goal
+    seen = 0
+    for league in explicit | onice:
+        files = sorted(p for p in (ref / league).glob("*") if p.is_file())
+        if not files:
+            continue
+        seen += 1
+        v = verdict({str(p): scan_tokens(str(p)) for p in files})
+        assert not v.startswith("(d)"), f"FALSE NO-GO on {league}: {v}"
+        assert not v.startswith("INCONCLUSIVE"), f"blind on {league}: {v}"
+        if league in explicit:
+            assert v.startswith("(a)"), f"{league} is explicit-event class: {v}"
+        else:
+            assert v.startswith(("(a)", "(b)")), f"{league}: {v}"
+    assert seen >= 6, f"only {seen} reference lakes found"
