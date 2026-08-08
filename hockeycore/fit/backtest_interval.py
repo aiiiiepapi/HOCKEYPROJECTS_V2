@@ -43,9 +43,10 @@ def load_estimator(league, cutoff=None):
     from hockeycore.fit.prior_fit import fit_prior
     A, B, mu, st = fit_prior(list(seqs.values()))
 
-    from hockeycore.fit.prior_fit import posterior
+    from hockeycore.fit.prior_fit import posterior_mode
     def p_c(name):
-        return posterior(seqs.get(name, []), A, B)
+        # ruling 49: mode-switched (HP_ESTIMATOR), default incumbent
+        return posterior_mode(seqs.get(name, []), A, B, asof=cutoff)
     return p_c, mu, seqs
 
 

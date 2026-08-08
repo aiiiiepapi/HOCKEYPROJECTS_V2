@@ -529,3 +529,42 @@ NOTE: new coach layer is PROVISIONAL until blind re-validation (next block).
     disproportionately wait for a power play. Sheet delivered (35 active;
     Буше 92% 7/7). NO pricer, NO lines — no icehockey_khl market
     (ruling 5) and no blind validation. COACH INTEL ONLY. Gates 31 -> 34.
+
+47. **LIIGA + MESTIS PROVISIONAL PAPER-TRADE STANDS (Seb, 2026-08-08,
+    "sure" — ruled after hearing the weakened numbers).** Under the
+    ruling-45 corrected ledger the pooled forward-fold edge shrank
+    (Liiga leaderTT +18.9%->+9.9% ROI, P 0.988->0.896; Mestis
+    +22.3%->+12.3%, P 0.997->0.944) while calibration IMPROVED to ~zero
+    bias. Seb heard both facts and ruled: September paper-trade proceeds
+    for both, status unchanged. Rationale on record: a paper month costs
+    nothing and produces live evidence cheaper than more fold argument.
+    NO real money is at stake in this ruling — paper only; the 26-27
+    re-blind standing requirement is untouched.
+
+48. **DOWN-1/DOWN-2 PULLS ARE OUT OF SCOPE — SHL gap-1/2 product
+    DROPPED (Seb, 2026-08-08: "we dont care about down 1 or 2 pulls").**
+    The SHL's bettable signature is early gap-1/2 pulls (29.8% of gap-3
+    instances open with the net already empty; down-3 clean-chance take
+    rate 23.0%, portfolio low). Building that product = a new class, and
+    Seb ruled the whole down-1/2 family out of the portfolio. CONSEQUENCE
+    ON RECORD: SHL is permanently COACH INTEL ONLY under current scope —
+    its down-3 market is too thin to price (28 EV pulls) and the class
+    that would be rich is now out of scope. The lake/adapter/ledger stay
+    maintained (coach intel + cross-league composition control). This
+    also closes the question for any future league whose personality is
+    gap-1/2: intel only, no product.
+
+49. **RULING-44 "EVERYWHERE" SCOPE — RE-EXAMS ORDERED (Seb, 2026-08-08:
+    "yes").** The no-league-anchor estimator is authorized to move from
+    sheets into PRICING (NHL/Liiga/Mestis lines, backtests, paper
+    harness) IF the multi-fold re-exams support it. Exams run under
+    rule-15 discipline (ONE implementation, mode-switched in prior_fit)
+    against the incumbent rulings-29-33 estimator, on the ruling-45
+    corrected ledger. Manager engineering note stated BEFORE running
+    (rule 0b): the full 44/44b config (season window + Jan-1 bridge) is
+    expected to DEGRADE in pricing where the sheet does not — a pricer
+    needs a number for every coach at every checkpoint, and in October a
+    coach has ~0-2 season chances, which on a sheet prints NO-BET but in
+    a pricer has nothing to price. The realistic candidate is therefore
+    "no anchor, full career, calendar decay, Jeffreys stabilizer"; both
+    are tested. NOTHING SHIPS until Seb sees the numbers.

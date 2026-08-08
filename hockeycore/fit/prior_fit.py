@@ -145,3 +145,35 @@ def posterior_sheet(seq, asof=None, window_season=None):
     m = a / (a + b)
     sd = (m * (1 - m) / (a + b + 1)) ** 0.5
     return m, max(m - 1.28 * sd, 0.0), min(m + 1.28 * sd, 1.0), len(seq)
+
+
+# ---------------------------------------------------------------------------
+# ESTIMATOR MODE SWITCH (ruling 49 re-exams, 2026-08-08). Rule 15: ONE
+# implementation — every pricing consumer (backtest.py NHL, backtest_interval
+# .py Liiga/Mestis, backtest_density.py) calls posterior_mode, which selects
+# between the incumbent and the ruling-44 candidates. Default is INCUMBENT:
+# nothing changes in production unless HP_ESTIMATOR is set, and it only ships
+# if Seb rules on the exam numbers.
+#   incumbent : rulings 29-33 — league anchor (fitted S, whisper fade, hot cap)
+#   noanchor  : ruling 44 stabilizer only (Jeffreys 0.5/0.5), FULL career,
+#               calendar decay — the realistic pricing candidate
+#   window    : full ruling 44/44b — noanchor + season window w/ Jan-1 bridge;
+#               a coach with no chances in the window falls back to the league
+#               mean (a pricer must return a number; the SHEET prints NO-BET,
+#               which has no pricing analogue — see ruling 49's stated
+#               expectation that this config degrades)
+import os
+
+
+def posterior_mode(seq, A, B, asof=None, mode=None):
+    mode = mode or os.environ.get("HP_ESTIMATOR", "incumbent")
+    if mode == "incumbent":
+        return posterior(seq, A, B, asof)
+    if mode == "noanchor":
+        kw, nw = _weights(seq, asof)
+        return (kw + JEFFREYS) / (nw + 2 * JEFFREYS)
+    if mode == "window":
+        ws = _season_year(asof) if asof else None
+        m, _, _, n = posterior_sheet(seq, asof=asof, window_season=ws)
+        return m if m is not None else A / (A + B)
+    raise ValueError(f"unknown HP_ESTIMATOR {mode!r}")

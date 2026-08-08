@@ -50,9 +50,10 @@ for _r in sorted(_cw, key=lambda x: x["date"]):
 from hockeycore.fit.prior_fit import fit_prior as _fit_prior
 _A, _B, _mu, _st = _fit_prior(list(_seqs.values()))
 
-from hockeycore.fit.prior_fit import posterior as _posterior
+from hockeycore.fit.prior_fit import posterior_mode as _posterior_mode
 def p_coach(name):
-    return _posterior(_seqs.get(name, []), _A, _B)
+    # ruling 49: mode-switched (HP_ESTIMATOR), default incumbent
+    return _posterior_mode(_seqs.get(name, []), _A, _B, asof=CUTOFF)
 
 _haz_cache = {}
 def _haz_for(pi):
