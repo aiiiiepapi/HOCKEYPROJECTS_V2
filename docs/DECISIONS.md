@@ -720,3 +720,40 @@ NOTE: new coach layer is PROVISIONAL until blind re-validation (next block).
     ruling 52 with 5a open. TOOL LESSON, portfolio-wide: a channel
     check must compare CONTENT HASHES, never HTTP status — the same
     trap will recur on any JS-rendered source.
+
+54. **DEL DEFECT ROUND RATIFIED + MANAGER PROBE RESULTS (2026-08-08).**
+    The scrape session fixed all three ruling-53 defects and self-caught
+    a FOURTH of the same family: with the network dead, `--schedule`
+    printed "TOTAL 0 games" followed by "All seasons pass the structural
+    completeness check" — a total fetch failure reporting as a PASS.
+    That is the ruling-53 defect-3 shape exactly (a summariser that
+    counts only what it saw), and catching it while testing the fix for
+    its sibling is the right instinct. Failed seasons are now tracked
+    separately and the pass line only prints when a season produced
+    fixtures. RATIFIED, plus: month-param acceptance now requires a
+    DIFFERENT CONTENT HASH **and** new fixtures (a status check would
+    have rebuilt defect 1 inside the fix — the session applied the
+    defect-2 lesson to defect 1 unprompted); tab URLs never fetched with
+    TABS_NOT_FETCHED keeping the sha256 so nobody re-adds them;
+    completeness structural per rule 14 (clubs and games/team derived
+    from the fixtures, surviving promotion/relegation) with a
+    "DO NOT RUN --full" flag; the generic channel check is now a GATE
+    (test_channel_check_compares_content_not_status) written against
+    the checker, not against DEL. Gates 38 green in the full-lake env.
+    MANAGER PROBE (egress available here, not in that session) — two
+    month-URL shapes tested and RULED OUT so nobody re-tests them:
+    `/spielplan/oktober-2022` returns 404; `?monat=oktober-2022`
+    returns HTTP 200 but is SILENTLY IGNORED, serving the default
+    September page. The second is the live proof of why the new
+    acceptance test is right. Also established: the month filter emits
+    NO links in the served HTML (client-side), the per-team route
+    `/teams/{club}/spielplan` serves only the latest PHASE (Eisbären
+    returns 20 playoff games, Mar-May 2026, not a season), and the
+    site's custom.js could not be read through WebFetch (returned as
+    unparseable binary). CONSEQUENCE: the mechanism is most likely an
+    AJAX shape inside that JS. The fetcher already saves it on failure —
+    and the Manager CAN read raw bytes once Seb stages them, which
+    WebFetch cannot. That is the escalation path, not DevTools.
+    STILL UNRUN: the corrected fetcher. No fixture counts, no
+    reconciliation, no projection exist yet; the session correctly
+    reported none.
