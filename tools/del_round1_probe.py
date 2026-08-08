@@ -243,6 +243,47 @@ def absolutize(src, base="https://www.penny-del.org"):
     return base + "/" + src
 
 
+# --------------------------------------------------------------- channel check
+def channel_groups(paths):
+    """Group saved files by CONTENT hash -> {sha256: [names]}."""
+    groups = {}
+    for p in paths:
+        if not p:
+            continue
+        try:
+            with open(p, "rb") as f:
+                h = hashlib.sha256(f.read()).hexdigest()
+        except Exception:
+            continue
+        groups.setdefault(h, []).append(os.path.basename(p))
+    return groups
+
+
+def report_channel_distinctness(paths):
+    """Are these URLs actually DIFFERENT channels?
+
+    RULING 53, portfolio-wide lesson. The first version of this probe called
+    the DEL tabs "10/10 ok" because it checked HTTP STATUS. They were the
+    same page five times over (game 2580: detail, aufstellung and
+    spielerstats all sha256 a6106d4c...), client-side rendered by DataTables.
+    A status code says the server answered, not that it answered the question
+    you asked. Any JS-rendered source will spring the same trap, so the check
+    is content-based and lives here rather than in the DEL fetcher.
+    """
+    groups = channel_groups(paths)
+    if not groups:
+        return groups
+    dupes = {h: n for h, n in groups.items() if len(n) > 1}
+    print("    channels: %d URL(s) -> %d DISTINCT document(s)"
+          % (sum(len(v) for v in groups.values()), len(groups)))
+    for h, names in sorted(dupes.items(), key=lambda kv: -len(kv[1])):
+        print("      IDENTICAL BYTES (%s...): %s" % (h[:12], ", ".join(sorted(names))))
+        print("      ^ NOT separate channels. Fetch one and move on.")
+    if not dupes:
+        print("      all distinct -- these are genuinely separate documents")
+    return groups
+
+
 # ------------------------------------------------------------------ capability
 def scan_tokens(path, max_hits=3):
     """Return {group: [(token, verbatim_line)]} for one saved file."""
@@ -372,12 +413,17 @@ def main():
                 print("    '%s' is not a spieldetails slug -- the confirmed"
                       " pattern needs DDMMYYYY_home_gg_away_gameid" % gid)
                 continue
+            got = []
             for nm, url in targets:
                 if not args.refetch and already(nm):
-                    paths.append(already(nm)); continue
+                    p = already(nm); paths.append(p); got.append(p); continue
                 st, data, furl, ct = fetch(url)
-                paths.append(save(nm, furl, st, data, ct, manifest))
+                p = save(nm, furl, st, data, ct, manifest)
+                paths.append(p)
+                if p:
+                    got.append(p)
                 time.sleep(0.5)
+            report_channel_distinctness(got)
 
     print("\n=== STAGE 4: capability scan ===")
     all_hits = {}

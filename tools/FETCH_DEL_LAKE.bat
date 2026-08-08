@@ -8,6 +8,8 @@ REM
 REM    1. FETCH_DEL_LAKE.bat schedule    (fixture lists per season)
 REM    2. FETCH_DEL_LAKE.bat reconcile   (0/0 both directions)
 REM    3. FETCH_DEL_LAKE.bat sample      (SIZE PROJECTION - stop here)
+REM       Step 1 now fetches EVERY month; if it flags a season INCOMPLETE,
+REM       stop and report - do not run step 4.
 REM    4. FETCH_DEL_LAKE.bat full        (builds the lake; hours)
 REM    5. FETCH_DEL_LAKE.bat verify      (re-hash AFTER transfer)
 REM

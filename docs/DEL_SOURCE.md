@@ -2,20 +2,20 @@
 
 Round 1 is **ANSWERED: GO, capability (a)** (ruling 51, Manager, 2026-08-08).
 
-Provenance of everything below: the CONFIRMED rows come from the Manager's
-Round 1 verdict (ruling 51 in `docs/DECISIONS.md`), which quotes verbatim
-evidence from two named games. Rows marked UNCONFIRMED were not observed by
-anyone yet and are settled by the first real run of
-`tools/fetch_del_raw.py`. Nothing here was derived by this session from raw
-bytes — its egress is blocked (see `docs/HANDOFF_DEL.md` §1), so per rule 0
-every line is a claim awaiting re-derivation against the lake.
+Provenance, since it now differs by section:
 
-> **Note for the Manager:** ruling 51 and the CLAUDE.md STATUS row both cite
-> `docs/DEL_ROUND1_VERDICT.md`, but commit `c669f48` added only `CLAUDE.md`
-> and `docs/DECISIONS.md` — **the verdict document is not on master.** The
-> headline evidence survives inline in ruling 51 and is used here; the full
-> per-game trace does not. Worth pushing, since it is the primary evidence
-> for the (a) verdict.
+- **From LAKE BYTES** (strongest): the event table, period markers, penalty
+  offence codes, the month-pagination and duplicate-tab findings, and
+  bytes/game. These come from the sample Seb fetched and the Manager checked
+  directly — `docs/DEL_ROUND2_FINDINGS.md`, ruling 53.
+- **From the Round 1 verdict**: the capability call and the penalty
+  convention — `docs/DEL_ROUND1_VERDICT.md`, ruling 51 (WebFetch-derived).
+- **UNCONFIRMED** rows were observed by nobody yet and are settled by the
+  next `tools/fetch_del_raw.py` run.
+
+This session derived none of it from bytes itself — its egress is blocked
+(see `docs/HANDOFF_DEL.md` §1) — so per rule 0 every line stays a claim
+awaiting re-derivation against the full lake.
 
 ## 1. Capability verdict — (a), top of the ladder
 
@@ -44,23 +44,94 @@ truth batch 1 must confirm rather than inherit.
 
 | Channel | Pattern | Status |
 |---|---|---|
-| Season schedule | `/statistik/saison-{YYYY-YY}/hauptrunde/spielplan` | CONFIRMED |
-| Game detail | `/statistik/spieldetails/{DDMMYYYY}_{home}_gg_{away}_{gameid}` | CONFIRMED |
-| Tabs | `aufstellung`, `spielerstats`, `schuesse`, `bullies` | tabs CONFIRMED to exist; **how they compose onto the detail URL is UNCONFIRMED** |
+| Season schedule | `/statistik/saison-{YYYY-YY}/hauptrunde/spielplan` | CONFIRMED — **MONTH-PAGINATED** |
+| Game detail | `/statistik/spieldetails/{DDMMYYYY}_{home}_gg_{away}_{gameid}` | CONFIRMED — one page carries everything |
+| Tabs | `aufstellung`, `spielerstats`, `schuesse`, `bullies` | CONFIRMED **NOT separate channels** — see below |
 | League TOI table | `/statistik/{saison}/hauptrunde/playerstats/toi` | UNCONFIRMED (Manager recon lead) |
 
 Host `https://www.penny-del.org`. Example detail slug shape:
-`12092025_erc-ingolstadt_gg_iserlohn-roosters_3947`.
+`12092025_erc-ingolstadt_gg_iserlohn-roosters_3947`. The club slugs in the
+URL are also the club identifiers — derive the team list from them, never
+from memory (promotion/relegation silently breaks a hardcoded list).
 
-The tab composition is the one open URL question. `fetch_del_raw.py` appends
-tabs as a path suffix (`.../{slug}/aufstellung`) and prints per-tab HTTP
-status on `--sample`, so the first run settles it from response codes; if
-they 404, re-run with `--tab-mode=query`. The club slugs in the URL are also
-the club identifiers — derive the team list from them, never from memory.
+### The schedule is month-paginated (ruling 53, Defect 1)
+
+The page serves **one month at a time**. The 2025-26 page carries a month
+selector spanning `September 2025 … März 2026` (7 months) plus a team
+filter. The first fetcher took the default month for a whole season and
+reported 41 games for 2022-23 — every one of them dated September 2022,
+about 10% of the league. A `--full` run on that would have produced a lake
+that looked complete and was not.
+
+The paging mechanism is **not** in the static HTML (no visible `?monat=`,
+`?spieltag=` or `?page=`). `fetch_del_raw.py` discovers it at runtime,
+falling back to reading the DataTables JS asset, and applies a structural
+completeness check (clubs and games/team derived from the fixtures
+themselves) that refuses to call a one-month season complete.
+
+### The four tabs are one page fetched four times (ruling 53, Defect 2)
+
+For game 2580, `detail`, `aufstellung` and `spielerstats` are byte-identical:
+
+```
+a6106d4cef0ddd442a01e35555716d6879024b7eadfcf8ea583a62cd4a66dd42
+```
+
+The tabs are rendered client-side (DataTables + jQuery), so the server
+returns the same shell for every tab URL. The first probe passed them as
+"10/10 ok" because it compared **HTTP status, not content** — a false
+positive now gated portfolio-wide by
+`test_channel_check_compares_content_not_status`.
+
+Consequences: fetch **one page per game** (~247 KB, not the ~1.07 MB first
+reported, giving a whole-lake projection of ~360 MB); and per-tab tables
+(goalie TOI, lineups) are **not reachable over plain HTTP** — which is also
+why coaches are absent and the coach map stands.
 
 **Retired guesses** (made before Round 1 was answered, superseded — do not
 resurrect): `/spielbericht/{id}`, `/spiele/{id}`, and the invented
 hockeydata LOS REST paths `/rest/icehockey/los/game/{id}/{fullreport,livebox,events}`.
+
+## 2b. The event table (confirmed from lake bytes, ruling 53)
+
+The game detail page carries a structured `time | description` table on a
+**cumulative game clock**, verbatim from the saved `2580_detail.html`:
+
+```
+60:00 | Drittelende
+58:31 | Torhüter ins Tor : Mathias Niederberger (#35)
+56:56 | Torhüter aus dem Tor : Mathias Niederberger (#35)
+56:28 | Torhüter ins Tor : Mathias Niederberger (#35)
+56:04 | Torhüter aus dem Tor : Mathias Niederberger (#35)
+55:50 | Torhüter ins Tor : Mathias Niederberger (#35)
+55:40 | Torhüter aus dem Tor : Mathias Niederberger (#35)
+52:36 | 2 Min. Strafe gegen Nicolas Appendino (#32) wegen DELAY
+40:00 | Drittelende
+40:00 | Drittelstart
+```
+
+This is what the capability-(a) verdict now rests on — lake bytes, not a
+WebFetch summary. Two things found here that were not previously known:
+
+- **Explicit period markers**: `Drittelstart` / `Drittelende`. Period
+  boundaries do not have to be inferred from the clock.
+- **Penalty rows carry an offence code**: `DELAY`, `TRIP`, `ROUGH`,
+  `SLASH`, `CROSS`.
+
+Goalie rows name the goalie and shirt number, so goalie identity is
+available per event, not just the fact of a change.
+
+### ⚠ Warning for the adapter session — do not read `aus dem Tor` as "pull"
+
+Game 2580 has **three out/in cycles inside three minutes**: out 55:40 / in
+55:50 (10s), out 56:04 / in 56:28 (24s), out 56:56 / in 58:31 (95s). Two of
+those are far too short to be pull decisions — that is the **ruling-17
+delayed-penalty extra-attacker signature**, not three separate pulls.
+
+**DEL will exercise rulings 17 / 17b from day one.** Any adapter that treats
+every `Torhüter aus dem Tor` as a pull will manufacture phantom pulls at
+scale. The KHL dp cross-calibration (ruling 46) is the reference for how
+these get classified.
 
 ## 3. Penalties — START-TIME-ONLY (settled, do not go looking)
 
@@ -77,12 +148,14 @@ re-derived, and no session should spend time hunting for end times.
 
 ## 4. Known gaps (Round-2 work, ruling 51)
 
-1. **No second audit channel identified.** The adapter's 0/60 random audit
-   needs an independent recorder to compare against. Candidates to test:
-   the `spielerstats` tab (does it carry goalie TOI or saves?) and any
-   hockeydata feed the page embeds. `fetch_del_raw.py --sample` probes both.
-   **This is an adapter blocker, not a lake blocker** — the lake can be
-   built while it is open.
+1. **No second audit channel — still open after ruling 53.** The tab
+   candidate is dead (the tabs are duplicates), and the saved bytes contain
+   no embedded JSON and no `hockeydata` / `apiKey` / `divisionId` string
+   anywhere. `fetch_del_raw.py --sample` re-checks both on every run.
+   **Ruling 52: the lake proceeds regardless.** This is an adapter-stage
+   blocker, and having the full bytes is what will make it solvable — or
+   provably unsolvable, in which case the audit is scoped and the limit
+   stated, as SHL 2023 was.
 2. **Coaches are on neither game nor squad pages.** A coach map with dated
    spells and a primary source per row is mandatory:
    `data/coach_maps/del_coaches.csv` (schema written, zero rows) with
@@ -108,6 +181,11 @@ re-derived, and no session should spend time hunting for end times.
 ## 6. Order of operations
 
 `--schedule` → `--reconcile` (0/0 both directions vs an independent list)
-→ `--sample 10` → **report the projected size to the Manager and wait**
-→ `--full` → `--verify`. KHL was 4.14 GB; a surprise of that order is not
-acceptable.
+→ `--sample 10` → **report the projection to the Manager and wait**
+→ `--full` → `--verify`.
+
+`--schedule` must now clear its structural completeness check before
+anything else runs: a season served one month at a time looks complete and
+is not. Size turned out never to be the risk — at ~247 KB/game the whole
+four-season lake projects to **~360 MB**, an order of magnitude under KHL's
+4.14 GB. Completeness was the risk, and that is what the check defends.

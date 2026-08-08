@@ -906,3 +906,72 @@ def test_del_fixture_parser_is_scoped():
     # the slug must round-trip into the confirmed URL shape
     assert fx["3964"]["slug"].endswith("_3964")
     assert parse_fixtures(b"<html>no games here, 1234 5678</html>") == {}
+
+
+def test_channel_check_compares_content_not_status(tmp_path):
+    """Ruling 53, portfolio-wide: a 'channel' check must compare CONTENT.
+
+    The DEL probe reported the four game tabs as "10/10 ok" because it
+    checked HTTP status. They were one page served five times (game 2580:
+    detail, aufstellung and spielerstats all sha256 a6106d4c...), rendered
+    client-side by DataTables. Any JS-rendered source springs the same trap,
+    so this gate is written against the generic checker, not against DEL.
+    """
+    sys.path.insert(0, str(ROOT / "tools"))
+    from del_round1_probe import channel_groups
+    same = b"<html><body><div id='dt'></div></body></html>"
+    files = []
+    for nm in ("2580_detail.html", "2580_aufstellung.html", "2580_spielerstats.html"):
+        p = tmp_path / nm
+        p.write_bytes(same)          # byte-identical, as the real ones were
+        files.append(str(p))
+    real = tmp_path / "2580_other.html"
+    real.write_bytes(b"<html>genuinely different document</html>")
+    files.append(str(real))
+
+    groups = channel_groups(files)
+    assert len(groups) == 2, groups          # 4 URLs -> 2 distinct documents
+    biggest = max(groups.values(), key=len)
+    assert len(biggest) == 3, groups         # the three duplicates collapse
+    # and the status-code fallacy: all four "succeeded", only two are channels
+    assert sum(len(v) for v in groups.values()) == 4
+
+
+def test_del_schedule_month_completeness_flag():
+    """Ruling 53 Defect 1: a month-paginated season must not pass as complete.
+
+    The fetcher captured the schedule page's DEFAULT month and reported 41
+    games as the 2022-23 season -- every one of them September 2022. The
+    structural check derives clubs and games/team from the fixtures
+    themselves (rule 14: never an absolute total), so it survives
+    promotion/relegation and league-size changes.
+    """
+    sys.path.insert(0, str(ROOT / "tools"))
+    from fetch_del_raw import completeness, month_histogram
+    clubs = ["club%02d" % i for i in range(14)]
+
+    def mk(pairs):
+        return {str(i): {"game_id": str(i), "date": d, "home": h, "away": a,
+                         "slug": "%s_%s_gg_%s_%s" % (d, h, a, i)}
+                for i, (d, h, a) in enumerate(pairs)}
+
+    # one month only -- the Defect-1 signature
+    one = mk([("%02d092022" % (1 + i % 28), clubs[i % 14], clubs[(i + 7) % 14])
+              for i in range(41)])
+    assert len(month_histogram(one)) == 1
+    n, gpt, warn = completeness(one)
+    assert n == 14 and gpt < 30
+    assert any("ONE MONTH" in w for w in warn), warn
+
+    # a full season spread across the real Sep..Mar range
+    full, i = [], 0
+    for mon, yr in [("09", "2022"), ("10", "2022"), ("11", "2022"), ("12", "2022"),
+                    ("01", "2023"), ("02", "2023"), ("03", "2023")]:
+        for k in range(52):
+            full.append(("%02d%s%s" % (1 + k % 28, mon, yr),
+                         clubs[i % 14], clubs[(i + 5) % 14]))
+            i += 1
+    many = mk(full)
+    n2, gpt2, warn2 = completeness(many)
+    assert n2 == 14 and gpt2 >= 50, (n2, gpt2)
+    assert warn2 == [], warn2

@@ -1,151 +1,121 @@
-# HANDOFF — DEL scrape session, Round 2 (2026-08-08)
+# HANDOFF — DEL scrape session, Round 2 corrections (2026-08-08)
 
-Branch `del-scrape`, rebased onto master at `c669f48` (ruling 51). Master
-untouched. Lake branch `del-data-lake` created.
+Branch `del-scrape`, rebased onto master at ruling 53. Master untouched.
+Lake branch `del-data-lake` exists (`.gitattributes` `* -text` only).
 
-**Summary: every Round-2 item that is code has been built and gated. Every
-Round-2 item that requires FETCHING is blocked in this session and must run
-on Seb's PC.** Numbers — fixture counts, reconciliation, size projection —
-are therefore *not* reported here, because I have not fetched a byte. They
-come out of the first run.
+**All three defects from `docs/DEL_ROUND2_FINDINGS.md` are fixed, plus a
+fourth of the same family that I found while testing the fix.** Nothing is
+re-run here — this session still has no egress — so every number below is
+the Manager's from the sampled bytes, not mine.
 
-## 1. The egress correction, corrected back
+## Defect 1 (critical) — month pagination. FIXED.
 
-Ruling 51's standing rule is accepted and was followed: **try WebFetch
-before declaring a host unreachable, and name the channel tested.** I did
-test both channels in Round 1 and reported both, so the rule costs nothing
-here — but my Round-1 write-up did generalise "my session is blocked" into
-"the environment is blocked", and that was over-reach. Corrected.
+`--schedule` now fetches **every month**, not the default one.
 
-The factual half of the correction does not hold for this session, and it
-matters for who can do Round 2. Re-tested this session, naming each channel:
+The mechanism isn't in the static HTML, so it's discovered at runtime:
+parse the month `<select>` if present, else synthesise Sep–Apr from the
+season slug; then try each candidate parameter shape (`monat`, `month`, `m`,
+`spieltag`, `page`, `date`, `zeitraum`).
 
-| Host | WebFetch tool | python/curl |
-|---|---|---|
-| `www.penny-del.org` | `EGRESS_BLOCKED` | 403 CONNECT |
-| `www.eliteprospects.com` | `EGRESS_BLOCKED` | — |
-| `en.wikipedia.org` (control) | `EGRESS_BLOCKED` | — |
+**The acceptance test is the important part.** A candidate is accepted only
+when the response **content hash differs from the default page AND it yields
+fixtures the default page didn't have.** That is deliberately the same
+lesson as Defect 2: an ignored query parameter returns a cheerful HTTP 200
+with the default month, so status codes would re-create the original bug in
+a new place. If no shape works, it saves the DataTables JS asset, prints
+every URL-ish and param-ish string found inside it, and tells the operator
+to read those or watch the network tab — it does **not** quietly proceed.
 
-The control is the decisive one: **WebFetch in this session cannot reach
-Wikipedia either.** So this is not a DEL-host policy — this session has no
-WebFetch egress at all, while the Manager session evidently does. The
-difference is per-session, not per-tool. WebSearch remains my only route out.
+**Completeness check** (rule 14 — structural, never an absolute total):
+clubs and games/team are derived from the fixtures themselves, so it
+survives promotion/relegation and league-size change. A season is flagged
+INCOMPLETE if all fixtures fall in one month, if fewer than 5 months are
+covered, or if games/team is under 30 (a full DEL season is ~52; one month
+is ~6). Any flag prints `*** DO NOT RUN --full`.
 
-Consequence, stated plainly: **I cannot run the schedule fetch, the fixture
-reconciliation, the size projection, the second-channel test, or the EN-marker
-check from here.** Not "it would be slow" — the bytes are unreachable. Those
-five items are built and ready to run, and they need Seb's PC or the Ubuntu
-server. I have not guessed at any of their outputs.
+My earlier "seasons that return 0 may not exist in the archive" caveat was
+wrong and is gone — those seasons exist, we had fetched one month of each.
 
-## 2. Built this round
+## Defect 2 — five copies of one page. FIXED.
 
-### `tools/fetch_del_raw.py` (+ `FETCH_DEL_LAKE.bat`)
-The Round-2 lake fetcher, on the **confirmed** URL contract. Stdlib-only,
-fetch-only, verbatim bytes, sha256 manifest. Staged deliberately so the
-size projection lands before any bulk fetch:
+One page per game now. The four tab URLs are never fetched, and
+`TABS_NOT_FETCHED` documents why with the sha256 so nobody re-adds them.
 
-```
-FETCH_DEL_LAKE.bat schedule     # fixtures per season -> fixtures_{season}.csv
-FETCH_DEL_LAKE.bat reconcile    # 0/0 both directions vs an independent list
-FETCH_DEL_LAKE.bat sample       # bytes/game -> PROJECTED LAKE SIZE. STOP HERE.
-FETCH_DEL_LAKE.bat full         # builds the lake, per-season SHA256SUMS.txt
-FETCH_DEL_LAKE.bat verify       # re-hash AFTER transfer
-```
+The probe's channel check is rewritten to compare **content hashes**, and
+per your instruction the lesson is a gate rather than a comment:
+`test_channel_check_compares_content_not_status` builds three byte-identical
+"channels" plus one genuinely different document and asserts that four
+successful URLs collapse to two distinct documents. It's written against the
+generic checker, not against DEL, because the next JS-rendered source will
+spring the identical trap.
 
-Behaviours worth knowing before someone runs it:
+## Defect 3 — projection arithmetic. FIXED.
 
-- **Reconciliation refuses to fake a pass.** It tries a list of candidate
-  independent sources; if none resolves it prints
-  `NO INDEPENDENT LIST RESOLVED -- reconciliation NOT done` rather than
-  comparing the schedule against itself and reporting a meaningless 0/0.
-- **Season depth is not padded.** A season that yields 0 games is reported
-  as 0, with a note that the archive may simply be shallower than four
-  seasons. Ruling 51 did not establish archive depth and neither do I.
-- **The tab URL shape is the one thing I could not confirm.** Ruling 51
-  names the tabs but not how they compose onto the detail URL. The script
-  appends them as a path suffix, prints per-tab HTTP status on `--sample`,
-  and tells you to re-run with `--tab-mode=query` if they 404. First run
-  settles it from response codes rather than from my guess.
-- **Retired guesses are gone**, per your order: `/spielbericht/{id}`,
-  `/spiele/{id}` and the invented LOS REST paths are deleted from the probe,
-  and listed as retired in `DEL_SOURCE.md` so nobody resurrects them.
+The projector counts **every season with a fixture list**, not just sampled
+ones, and marks which seasons are projected from another season's average.
+It also refuses to dress up a broken number: if any season is flagged
+incomplete it prints `projection is meaningless for <seasons>`.
 
-### `tools/del_round1_probe.py` — repurposed, not discarded
-Re-pointed at the confirmed `spieldetails` pattern + tabs. Its detector and
-gate stay as calibrated triage for the **next** league. Stage 2 still mines
-the page's widget JavaScript, because an embedded hockeydata feed is a live
-candidate for the missing audit channel.
+## Defect 4 — found while testing the fix, same family
 
-### `data/coach_maps/del_coaches.csv` + `_notes.md`
-Schema and build rules, **zero rows** — I cannot reach Elite Prospects or
-any primary source, and inventing coach spells would be fabricated data on
-the join key for every downstream coach number.
+With the network dead, `--schedule` printed `TOTAL 0 games` and then **"All
+seasons pass the structural completeness check."** A total fetch failure was
+reporting as a pass. Fixed: failed seasons are tracked separately, and the
+pass line only prints when at least one season actually produced fixtures
+and nothing was flagged. Worth naming because it's the Defect-3 failure mode
+exactly — a summary line that looks precise and means nothing.
 
-The notes record the thing that makes DEL different: for every other league
-the map is a blank-filler and the listing wins. Here it is the **only**
-coach source, so it must cover every team-season with contiguous,
-non-overlapping, dated spells. Two build rules recorded: derive the club
-list from the fixture slugs rather than typing it from memory (promotion and
-relegation silently break a hardcoded list), and prefer **first game behind
-the bench** over announcement date, since the map joins to games.
+## Recorded in `DEL_SOURCE.md`
 
-### `del-data-lake` branch
-Created, first and only commit is `.gitattributes` containing `* -text`,
-pushed. The CRLF protection is in place *before* any bytes land, which is
-the whole point of the rule.
+- The event table verbatim, with the cumulative clock.
+- **`Drittelstart` / `Drittelende`** — period boundaries are explicit and
+  don't need to be inferred from the clock.
+- Penalty offence codes `DELAY` / `TRIP` / `ROUGH` / `SLASH` / `CROSS`, and
+  that goalie rows carry name + shirt number, so goalie identity is
+  available per event.
+- Month pagination and the duplicate-tab sha256, both as confirmed findings.
+- Corrected size: ~247 KB/game, **~360 MB** for the whole four-season lake.
+- The provenance header now separates byte-derived facts from
+  WebFetch-derived ones, since those are no longer the same evidence class.
 
-## 3. Gates
+### The ruling-17 warning, carried into the source contract
 
-Two DEL gates, both green, added to the cumulative suite:
+Game 2580's three cycles — 10s, 24s, 95s inside three minutes — are written
+into `DEL_SOURCE.md` under an explicit warning heading: **do not read
+`Torhüter aus dem Tor` as "pull"**. DEL exercises rulings 17/17b from day
+one, and an adapter that counts every `aus dem Tor` will manufacture phantom
+pulls at scale. Ruling 46's KHL dp cross-calibration is cited as the
+reference. It should be repeated in the adapter kickoff, not left to whoever
+reads the source doc carefully.
 
-- `test_del_probe_detector_never_false_no_go` — ratified in ruling 51, kept.
-- `test_del_fixture_parser_is_scoped` — **new.** Fixture discovery must match
-  the structural game-detail URL shape only and ignore loose ids, attendance
-  numbers and neighbouring link types. This is the ticker lesson written as
-  a test, since it has now bitten twice; it also collapses duplicate links,
-  which a schedule page will contain.
+## Gates
 
-Full suite: **32 passed, 4 skipped** (skips are unmounted AHL/Liiga/KHL lakes).
+**34 passed, 4 skipped** (skips are unmounted AHL/Liiga/KHL lakes). Four DEL
+gates now: the ratified detector calibration, fixture-parser scoping, the
+new content-vs-status channel check, and the new month-completeness flag.
 
-## 4. Three Round-2 questions — status
+## What I could not do, and what I need
 
-**(a) Second audit channel — BUILT, UNRUN.** `--sample` saves the
-`spielerstats` tab and scans it for goalie TOI/saves, and separately mines
-the detail page for an embedded hockeydata feed (host + apiKey + divisionId).
-If neither yields an independent recorder it says so plainly rather than
-reporting a weak one as a pass. I cannot tell you the answer without bytes,
-and I am not going to infer it from documentation.
+Still no egress from this session — WebFetch returns `EGRESS_BLOCKED` for
+`penny-del.org`, `eliteprospects.com` and `en.wikipedia.org` alike, so the
+corrected fetcher is **unrun**. I have deliberately reported no fixture
+counts, no reconciliation and no projection of my own.
 
-**(b) Coaches — SCAFFOLDED, UNPOPULATED.** Schema, build rules and
-verification criteria written; rows need network. Elite Prospects is
-recorded as a **lead, not a primary source** — it is user-maintained, so
-each row still needs a club announcement or dated report behind it.
+**The corrected fetcher is ready for Seb.** Order of work as you set it:
 
-**(c) EN markers — BUILT, UNRUN.** `--sample` scans sampled goal rows for
-empty-net markers and, if none are found, records the consequence: the
-adapter loses one cross-check, and the (a) verdict is unaffected because
-pull timing comes from the explicit `Torhüter` events.
+1. `FETCH_DEL_LAKE.bat schedule` — the one that matters. It will either
+   discover the month mechanism and report real per-season depth, or fail
+   loudly with the JS strings needed to find it by hand. Send the console
+   output either way; if it can't find the mechanism, the network tab while
+   changing the month selector is the fastest path and the shape goes into
+   `MONTH_PARAMS`.
+2. `reconcile`, then `sample` — expect ~247 KB/game and ~360 MB.
+3. `full`, `verify`, then the lake onto `del-data-lake`.
 
-## 5. One discrepancy to flag
-
-Ruling 51 and the CLAUDE.md STATUS row both cite
-**`docs/DEL_ROUND1_VERDICT.md`**, but commit `c669f48` added only
-`CLAUDE.md` and `docs/DECISIONS.md`. **The verdict document is not on
-master.** The headline evidence survives inline in ruling 51 — the 3947
-`57:34 / 57:51 / 58:22` sequence and 3964's `58:18` — and I used it. The
-full per-game trace does not, and it is the primary evidence for the (a)
-verdict. Probably an unstaged file in the PC push.
-
-## 6. What I need back
-
-1. **Someone runs steps 1-3 on Seb's PC** and sends the console output plus
-   `tools/del_lake/fixtures_*.csv`. That gives fixture counts, real archive
-   depth, the reconciliation result, the tab-shape answer and the size
-   projection — the numbers this handoff deliberately does not contain.
-2. **`docs/DEL_ROUND1_VERDICT.md` pushed**, so the (a) verdict has its
-   primary evidence in the repo.
-3. Then `--full`, `--verify`, and the lake commits onto `del-data-lake`.
+Two things stay open and neither blocks the lake: the second audit channel
+(ruling 52 — proceed) and the coach map, which still needs primary sources
+per row and is now confirmed unavoidable, since the per-tab tables aren't
+reachable over plain HTTP at all.
 
 Scope fence held: no adapter, no gap logic, no instances, no ledger, no
-coach numbers, no pull rates. Everything above is a claim for the Manager to
-re-derive.
+coach numbers. Everything is a claim for the Manager to re-derive.
