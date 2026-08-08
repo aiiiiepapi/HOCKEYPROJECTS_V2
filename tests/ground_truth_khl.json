@@ -1,0 +1,187 @@
+{
+  "_meta": {
+    "derived": "2026-08-07 hand-traced from raw text.khl.ru + www.khl.ru protocol HTML (KHL adapter session) BEFORE the adapter existed (rule 2). Times cumulative secs; P3 secs = t-2400. Trace notes: docs/ground_truth_traces/khl_batch1_2026-08-07.md. 14 games / 16 instances (one 898094 instance initially missed by hand, caught by the engine cross-check, re-verified by hand and recorded — Magnus batch-0 precedent). Every empty-interval list cross-checked to the second against the protocol team per-period VPPV table (independent channel, 14/14 exact). Coverage: EV pull x3, pp_pull x6 (incl. 6v3 pull-to-horn, 6v4 re-pull after ENG-created instance, penalty_on_trailer ender), no-pull gap-3, carryover-at-open x2, multi-pull (3 windows), pull-to-horn x3, OT game + shootout game (bullit rows excluded), mid-game + period-boundary goalie substitutions (never intervals), ruling-17 dp artifacts x3 (2 bracketed by EXPLICIT dp events - portfolio first, 1 invisible), EN goals via 'V pustye vorota' + protocol jersey-absence x4 (incl. SH-ENG), own-net-empty 'S ekstra-polevym igrokom' goals (en=False) x3, duplicate-penalty game 898094 re-ruled as a real 2+2 double minor (VPM-exact), PS-award rows (mins 0, no box), 5+20 major/disciplinary, coincident-penalty cancellation, same-player stacking, minute-only and absent penalty-end events.",
+    "empty_intervals_note": "empty = expected net-empty intervals (cumulative secs) per side; games without gap-3 instances still pin adapter-level extraction. Sides keyed home/away."
+  },
+  "games": {
+    "2023_881261": {
+      "home": "ЦСКА", "away": "Металлург Мг", "date": "2022-09-01",
+      "coaches": {"home": "Фёдоров Сергей", "away": "Воробьёв Илья"},
+      "empty": {"home": [], "away": []},
+      "swaps_ignored": 1,
+      "regulation_goals": 8,
+      "misconduct_pin": {"t": 713, "mins": 20},
+      "double_minor_pin": {"side": "away", "t": 2608, "count": 2, "windows": [[2608, 2614], [2608, 2608]]},
+      "instances": [
+        {"n": 1, "opened_secs": 0, "closed_secs": 214, "closed_reason": "widened",
+         "trailing_name": "Металлург Мг", "pulled": false, "pull_evidence_secs": null,
+         "pull_classification": null, "carryover_empty_at_open": false}
+      ]
+    },
+    "2023_881270": {
+      "home": "СКА", "away": "Салават Юлаев", "date": "2022-09-03",
+      "coaches": {"home": "Ротенберг Роман", "away": "Козлов Виктор"},
+      "empty": {"home": [[313, 319]], "away": [[504, 507], [3494, 3532]]},
+      "extra_attacker_goal": {"t": 3532, "side": "away", "en": false},
+      "ot_goal": {"t": 3815, "side": "home", "period": 4, "en": false},
+      "ps_zero_min": {"t": 1153, "side": "home"},
+      "cancelled_pairs_at": 2054,
+      "instances": []
+    },
+    "2023_881281": {
+      "home": "ЦСКА", "away": "Ак Барс", "date": "2022-09-05",
+      "coaches": {"home": "Фёдоров Сергей", "away": "Знарок Олег"},
+      "empty": {"home": [[3461, 3565]], "away": [[1913, 1935]]},
+      "eng_goal": {"t": 3565, "side": "away", "en": true},
+      "instances": [
+        {"n": 1, "opened_secs": 1165, "closed_secs": 1179, "closed_reason": "widened",
+         "trailing_name": "ЦСКА", "pulled": false, "pull_evidence_secs": null,
+         "pull_classification": null, "carryover_empty_at_open": true}
+      ]
+    },
+    "2023_881356": {
+      "home": "Куньлунь РС", "away": "СКА", "date": "2022-09-22",
+      "coaches": {"home": "Айрленд Грег", "away": "Ротенберг Роман"},
+      "empty": {"home": [[3550, 3600]], "away": [[652, 664], [2449, 2461]]},
+      "swaps_ignored": 1,
+      "wall_clock_collision_goal": {"t": 1198, "side": "home", "period": 1},
+      "instances": [
+        {"n": 1, "opened_secs": 914, "closed_secs": 1200, "closed_reason": "end_of_game",
+         "trailing_name": "Куньлунь РС", "pulled": true, "pull_evidence_secs": 1150,
+         "pull_classification": "pp_pull", "carryover_empty_at_open": false}
+      ]
+    },
+    "2023_881725": {
+      "home": "Северсталь", "away": "Динамо Мн", "date": "2022-12-24",
+      "coaches": {"home": "Разин Андрей", "away": "Перепехин Павел"},
+      "empty": {"home": [], "away": [[2518, 2519], [2897, 2980], [3113, 3293]]},
+      "eng_goal": {"t": 3293, "side": "home", "en": true},
+      "dp_artifact_segments": [[118, 119]],
+      "instances": [
+        {"n": 1, "opened_secs": 0, "closed_secs": 893, "closed_reason": "widened",
+         "trailing_name": "Динамо Мн", "pulled": true, "pull_evidence_secs": 497,
+         "pull_classification": "pp_pull", "carryover_empty_at_open": false}
+      ]
+    },
+    "2023_881827": {
+      "home": "ЦСКА", "away": "СКА", "date": "2023-01-17",
+      "coaches": {"home": "Фёдоров Сергей", "away": "Ротенберг Роман"},
+      "empty": {"home": [], "away": [[2599, 2717], [2985, 3042], [3181, 3267], [3550, 3600]]},
+      "extra_attacker_goal": {"t": 3042, "side": "away", "en": false},
+      "instances": [
+        {"n": 1, "opened_secs": 0, "closed_secs": 468, "closed_reason": "narrowed",
+         "trailing_name": "СКА", "pulled": true, "pull_evidence_secs": 199,
+         "pull_classification": "pp_pull", "carryover_empty_at_open": false},
+        {"n": 2, "opened_secs": 543, "closed_secs": 642, "closed_reason": "narrowed",
+         "trailing_name": "СКА", "pulled": true, "pull_evidence_secs": 585,
+         "pull_classification": "pp_pull", "carryover_empty_at_open": false}
+      ]
+    },
+    "2024_886054": {
+      "home": "Локомотив", "away": "Авангард", "date": "2024-01-21",
+      "coaches": {"home": "Никитин Игорь", "away": "Кравец Михаил"},
+      "empty": {"home": [[75, 83]], "away": [[3453, 3480], [3506, 3600]]},
+      "sh_eng_goal": {"t": 3480, "side": "home", "en": true},
+      "dp_events": 1,
+      "instances": [
+        {"n": 1, "opened_secs": 1080, "closed_secs": 1200, "closed_reason": "end_of_game",
+         "trailing_name": "Авангард", "pulled": true, "pull_evidence_secs": 1106,
+         "pull_classification": "pp_pull", "carryover_empty_at_open": true}
+      ]
+    },
+    "2024_886161": {
+      "home": "Адмирал", "away": "Барыс", "date": "2024-02-14",
+      "coaches": {"home": "Тамбиев Леонид", "away": "Болякин Олег"},
+      "empty": {"home": [[2616, 2625], [3348, 3433], [3511, 3522], [3542, 3593]], "away": []},
+      "extra_attacker_goal": {"t": 3433, "side": "home", "en": false},
+      "dp_events": 7,
+      "ps_zero_min": {"t": 349, "side": "away"},
+      "swaps_ignored": 2,
+      "instances": [
+        {"n": 1, "opened_secs": 0, "closed_secs": 251, "closed_reason": "narrowed",
+         "trailing_name": "Адмирал", "pulled": false, "pull_evidence_secs": null,
+         "pull_classification": null, "carryover_empty_at_open": false,
+         "dp_only_empty": true}
+      ]
+    },
+    "2025_889859": {
+      "home": "Лада", "away": "Локомотив", "date": "2024-09-05",
+      "coaches": {"home": "Браташ Олег Владимирович", "away": "Никитин Игорь Валерьевич"},
+      "empty": {"home": [[3175, 3183], [3597, 3600]], "away": [[1895, 1909]]},
+      "dp_events": 2,
+      "double_minor_pin": {"side": "home", "t": 1909, "count": 2, "windows": [[1909, 2029], [2029, 2037]]},
+      "instances": [
+        {"n": 1, "opened_secs": 0, "closed_secs": 1200, "closed_reason": "end_of_game",
+         "trailing_name": "Лада", "pulled": true, "pull_evidence_secs": 1197,
+         "pull_classification": "pull", "carryover_empty_at_open": false}
+      ]
+    },
+    "2025_889939": {
+      "home": "Куньлунь РС", "away": "Торпедо", "date": "2024-09-24",
+      "coaches": {"home": "Кравец Михаил Григорьевич", "away": "Ларионов Игорь Николаевич"},
+      "empty": {"home": [[3497, 3545], [3565, 3600]], "away": [[69, 88]]},
+      "dp_events": 2,
+      "swaps_ignored": 1,
+      "instances": [
+        {"n": 1, "opened_secs": 0, "closed_secs": 339, "closed_reason": "narrowed",
+         "trailing_name": "Куньлунь РС", "pulled": false, "pull_evidence_secs": null,
+         "pull_classification": null, "carryover_empty_at_open": false},
+        {"n": 2, "opened_secs": 1078, "closed_secs": 1159, "closed_reason": "narrowed",
+         "trailing_name": "Куньлунь РС", "pulled": true, "pull_evidence_secs": 1097,
+         "pull_classification": "pp_pull", "carryover_empty_at_open": false}
+      ]
+    },
+    "2025_889995": {
+      "home": "Нефтехимик", "away": "Амур", "date": "2024-10-08",
+      "coaches": {"home": "Леонтьев Олег Юрьевич", "away": "Мартемьянов Андрей Алексеевич"},
+      "empty": {"home": [], "away": [[2638, 2654]]},
+      "regulation_goals": 6,
+      "swaps_ignored": 1,
+      "instances": [
+        {"n": 1, "opened_secs": 0, "closed_secs": 291, "closed_reason": "narrowed",
+         "trailing_name": "Амур", "pulled": false, "pull_evidence_secs": null,
+         "pull_classification": null, "carryover_empty_at_open": false,
+         "dp_only_empty": true}
+      ]
+    },
+    "2026_897536": {
+      "home": "Северсталь", "away": "Металлург Мг", "date": "2025-09-16",
+      "coaches": {"home": "Козырев Андрей Леонидович", "away": "Разин Андрей Владимирович"},
+      "empty": {"home": [[3375, 3600]], "away": [[971, 982]]},
+      "dp_events": 2,
+      "swaps_ignored": 1,
+      "instances": [
+        {"n": 1, "opened_secs": 31, "closed_secs": 41, "closed_reason": "narrowed",
+         "trailing_name": "Северсталь", "pulled": false, "pull_evidence_secs": null,
+         "pull_classification": null, "carryover_empty_at_open": false},
+        {"n": 2, "opened_secs": 301, "closed_secs": 1200, "closed_reason": "end_of_game",
+         "trailing_name": "Северсталь", "pulled": true, "pull_evidence_secs": 975,
+         "pull_classification": "pull", "carryover_empty_at_open": false}
+      ]
+    },
+    "2026_897655": {
+      "home": "Барыс", "away": "Авангард", "date": "2025-10-16",
+      "coaches": {"home": "Кравец Михаил Григорьевич", "away": "Буше Ги"},
+      "empty": {"home": [], "away": [[3351, 3387]]},
+      "eng_goal": {"t": 3387, "side": "home", "en": true},
+      "instances": [
+        {"n": 1, "opened_secs": 685, "closed_secs": 987, "closed_reason": "widened",
+         "trailing_name": "Авангард", "pulled": true, "pull_evidence_secs": 951,
+         "pull_classification": "pull", "carryover_empty_at_open": false}
+      ]
+    },
+    "2026_898094": {
+      "home": "Барыс", "away": "Лада", "date": "2026-02-14",
+      "coaches": {"home": "Кравец Михаил Григорьевич", "away": "Десятков Павел Николаевич"},
+      "empty": {"home": [[527, 601]], "away": [[3513, 3527], [3551, 3600]]},
+      "dp_events": 1,
+      "regulation_goals": 8,
+      "double_minor_pin": {"side": "home", "t": 3117, "count": 2, "windows": [[3117, 3237], [3237, 3357]]},
+      "instances": [
+        {"n": 1, "opened_secs": 512, "closed_secs": 591, "closed_reason": "narrowed",
+         "trailing_name": "Лада", "pulled": false, "pull_evidence_secs": null,
+         "pull_classification": null, "carryover_empty_at_open": false}
+      ]
+    }
+  }
+}

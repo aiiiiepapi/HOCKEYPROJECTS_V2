@@ -494,3 +494,38 @@ NOTE: new coach layer is PROVISIONAL until blind re-validation (next block).
     provisional paper-trade stands (September paper month is itself
     the cheap test) or is demoted. Gates 29 green both before and
     after fold regeneration.
+
+46. **KHL ADAPTER MERGED + dp CROSS-CALIBRATION (Manager, 2026-08-08;
+    Seb ordered "do KHL").** Branch claude/khl-adapter-setup-gd4nhx
+    re-derived per rule 0 on a fresh 4.14 GB lake clone: 3,060 games /
+    0 errors / 1,223 instances / 136 pulled (74 EV + 62 pp) / 100% coach
+    attribution — every headline claim reproduced EXACTLY, audit 0/60 on
+    a fresh Manager seed (20260809) as well as theirs. Best delegated
+    handoff of the four to date. Adjudications: (1) the scrape-round
+    "dedupe 898094" instruction REFUTED and superseded — Manager re-read
+    the protocol bytes, two real 2+2 rows, period total moves by 4;
+    (2) coach patronymic split RULED — canonicalize to "Surname
+    Firstname" in the RUNNER (zero two-token collisions in 3,060 games;
+    64 identities instead of 88 fragments; adapter stays verbatim, SHL
+    Lindholm precedent); (3) clock-wins RATIFIED (SHL 774455 precedent);
+    (5) KHL_LAKE env override accepted.
+    **(4) dp CROSS-CALIBRATION — RULINGS 17/17b VALIDATED, UNCHANGED.**
+    KHL's explicit dp events give the portfolio its first direct dp
+    truth (438 linked net-empty windows). The raw "18.8% exceed the 25s
+    bar vs NHL 8.7%" reads alarming until decomposed: 69 of those 77 are
+    EARLY windows that ruling 17b-i already excuses regardless of
+    duration; only 8 (2.0%) are both >25s AND late — the single class
+    our convention counts as a real pull. Shipped-ledger exposure: AHL
+    7/272, Liiga 2/72, Mestis 1/82, SHL 1/28 = 11 instances portfolio-
+    wide (1.2-3.6% of EV pulls), each only POSSIBLY dp. The standing
+    CLAUDE.md limitation is now QUANTIFIED, not merely suspected. Design
+    limits stated (rule 42): partial dp channel (2023 absent), heuristic
+    bracket linkage, 90s link window can co-opt a real pull — all bias
+    toward over-counting dp, so 2.0% is an upper bound.
+    LEDGER (Manager scope): 186 clear chances, take rate 39.8%, 64
+    coaches. Composition-controlled (ruling-45 baseline) the session's
+    raw pp flag SURVIVES: KHL pp share 45.6% is the portfolio's highest
+    (AHL 31.1% next) with a below-EU take rate — KHL coaches pull, but
+    disproportionately wait for a power play. Sheet delivered (35 active;
+    Буше 92% 7/7). NO pricer, NO lines — no icehockey_khl market
+    (ruling 5) and no blind validation. COACH INTEL ONLY. Gates 31 -> 34.

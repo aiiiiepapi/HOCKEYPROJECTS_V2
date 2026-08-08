@@ -84,6 +84,9 @@ def build(league, rows_file, skip_seasons=()):
     # segments engine already classified pp; for 5v5 seconds we use the exported
     # penalty windows when present (older exports may lack them -> re-extract).
     need_boxes = "penalties_p3" not in rows[0]
+    if not need_boxes:
+        for r in rows:
+            r["_box"] = [tuple(x) for x in r["penalties_p3"]]
     if need_boxes:
         from hockeycore.leagues import ahl as ahl_mod, liiga as liiga_mod, mestis as mestis_mod
         from hockeycore.leagues import shl as shl_mod
@@ -238,3 +241,6 @@ if __name__ == "__main__":
     if which in ("magnus", "all"):
         # Magnus 2025-26 only (single-season lake); rows carry _box directly
         build("magnus", "magnus_instances_gap3.json")
+    if which in ("khl", "all"):
+        # KHL all 4 seasons; rows carry penalties_p3 (runner-exported)
+        build("khl", "khl_instances_gap3.json")
