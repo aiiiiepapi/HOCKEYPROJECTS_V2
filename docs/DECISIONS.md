@@ -690,3 +690,33 @@ NOTE: new coach layer is PROVISIONAL until blind re-validation (next block).
     adapter ships with the audit scoped to whatever IS checkable and
     the gap stated in the verification doc, exactly as SHL did. The
     fetch is not blocked.
+
+53. **DEL ROUND 2 — THREE DEFECTS CAUGHT FROM THE SAMPLED BYTES
+    (Manager, 2026-08-08; docs/DEL_ROUND2_FINDINGS.md).** Seb ran steps
+    1-3; the Manager pulled the sampled lake off his PC and checked it
+    rather than reading the console summary. (i) CRITICAL: fixture
+    discovery is ~10% complete — the schedule page is MONTH-PAGINATED
+    (every link in the saved 2022-23 spielplan is dated September 2022;
+    the live page carries a September..März month selector). "146 games
+    across 4 seasons" is four single months, not archive depth; a
+    --full run would have shipped a lake that looked complete and was
+    not. (ii) The five "channels" are ONE page fetched five times —
+    sha256 identical across detail/aufstellung/spielerstats for game
+    2580. The probe's "tabs 10/10 ok" was a FALSE POSITIVE: it checked
+    HTTP status, not content distinctness; the tabs are JS-hydrated.
+    Real bytes/game 247 KB, not 1.07 MB; per-tab tables (goalie TOI,
+    lineups) are NOT reachable over plain HTTP. (iii) The projector
+    counted 0 games for three seasons that the schedule stage had
+    already populated. CORRECTED PROJECTION ~360 MB (364 x 4 x 247 KB)
+    vs KHL 4.14 GB — size was never the risk, completeness was.
+    CONFIRMED GOOD: the capability-(a) verdict now rests on LAKE BYTES,
+    not on WebFetch — the saved page carries a structured event table
+    with cumulative clock, Torhüter in/out, penalties with offence
+    codes, and (newly found) explicit Drittelstart/Drittelende period
+    markers. WARNING RECORDED FOR THE ADAPTER SESSION: game 2580 shows
+    three goalie out/in cycles in 3 minutes (10s, 24s, 95s) — the
+    ruling-17 delayed-penalty signature. DEL exercises 17/17b from day
+    one; not every `aus dem Tor` is a pull. Lake still proceeds per
+    ruling 52 with 5a open. TOOL LESSON, portfolio-wide: a channel
+    check must compare CONTENT HASHES, never HTTP status — the same
+    trap will recur on any JS-rendered source.
