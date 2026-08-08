@@ -757,3 +757,38 @@ NOTE: new coach layer is PROVISIONAL until blind re-validation (next block).
     STILL UNRUN: the corrected fetcher. No fixture counts, no
     reconciliation, no projection exist yet; the session correctly
     reported none.
+
+55. **DEL MONTH MECHANISM FOUND — path segment, not a query param
+    (Manager, 2026-08-08).** The corrected fetcher failed loudly as
+    designed (all 4 seasons flagged INCOMPLETE, "DO NOT RUN --full",
+    0/4 seasons passing) and its JS scan found nothing — because the
+    answer was never in the JS. It is in the served HTML, in a <select>
+    onchange handler that the earlier parsers walked straight past:
+      /statistik/saison-{YYYY-YY}/hauptrunde/spielplan/monat/{slug}
+    slugs german/lowercase/umlaut-transliterated: september oktober
+    november dezember januar februar MAERZ. No year in the slug.
+    VERIFIED LIVE: .../monat/oktober -> 52 games, 01.10-30.10.2022.
+    Both earlier probes are explained: the Manager's
+    /spielplan/oktober-2022 was the right family with the wrong shape
+    (404); the session's 7 query-param candidates returned 200 + the
+    default page and were correctly REFUSED by the new content-hash
+    acceptance test. TRAP RECORDED: the "Alle" option does NOT mean all
+    games — its value is /spielplan/team and it serves SEPTEMBER ONLY
+    (30 games, verified). Treating it as a whole-season shortcut would
+    have rebuilt defect 1 a third time.
+    BONUS — THE RECONCILIATION PROBLEM IS ALSO SOLVED. The same page
+    carries a TEAM select with SEASON-SCOPED per-team schedules:
+    /spielplan/team/{teamid} (Adler 2, Augsburg 13, Bietigheim 22,
+    DEG 4, München 12, Ingolstadt 1, Eisbären 3, Wolfsburg 8, Iserlohn
+    7 ...). This is NOT the /teams/{club}/spielplan route ruled out in
+    ruling 54 (that one serves only the latest phase). So fixtures-by-
+    month (7 requests) and fixtures-by-team (14 requests) are two
+    INDEPENDENT derivations of the same season: reconcile 0/0 both
+    directions, plus the structural check that every game appears on
+    exactly two team pages. The kickoff's reconciliation requirement is
+    now satisfiable, and team ids must be parsed from the select, never
+    hardcoded (the club list changes across seasons — Bietigheim is in
+    2022-23 and not later).
+    METHOD NOTE for the record: this was found by re-reading BYTES ALREADY
+    IN HAND after two rounds of live probing failed. The saved page had
+    the answer before either session started guessing at URL shapes.
