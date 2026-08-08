@@ -875,3 +875,34 @@ def test_del_probe_detector_never_false_no_go():
         else:
             assert v.startswith(("(a)", "(b)")), f"{league}: {v}"
     assert seen >= 6, f"only {seen} reference lakes found"
+
+
+def test_del_fixture_parser_is_scoped():
+    """Gate for tools/fetch_del_raw.py fixture discovery (the ticker lesson).
+
+    Mestis was inflated twice by page-wide grepping that swept up numbers
+    belonging to other games. DEL fixture discovery must therefore match the
+    confirmed STRUCTURAL game-detail URL shape only
+    (/statistik/spieldetails/{DDMMYYYY}_{home}_gg_{away}_{gameid}, ruling 51)
+    and must ignore loose ids, attendance figures and neighbouring link types.
+
+    This is a parser-scoping unit test on constructed markup, not a claim
+    about DEL data -- no counts derived here are reportable (rule 4).
+    """
+    sys.path.insert(0, str(ROOT / "tools"))
+    from fetch_del_raw import parse_fixtures
+    html = (
+        b'<a href="/statistik/spieldetails/12092025_erc-ingolstadt_gg_iserlohn-roosters_3947">a</a>'
+        b'<a href="/statistik/spieldetails/13092025_adler-mannheim_gg_erc-ingolstadt_3964">b</a>'
+        b'<a href="/statistik/spieldetails/13092025_adler-mannheim_gg_erc-ingolstadt_3964">dup</a>'
+        b'<span>3947</span><div data-id="99999">Zuschauer 4711</div>'
+        b'<a href="/statistik/spielerdetails/12092025_someone_9999">decoy</a>'
+    )
+    fx = parse_fixtures(html)
+    assert sorted(fx) == ["3947", "3964"], fx          # decoys excluded, dup collapsed
+    assert fx["3947"]["home"] == "erc-ingolstadt"
+    assert fx["3947"]["away"] == "iserlohn-roosters"
+    assert fx["3947"]["date"] == "12092025"
+    # the slug must round-trip into the confirmed URL shape
+    assert fx["3964"]["slug"].endswith("_3964")
+    assert parse_fixtures(b"<html>no games here, 1234 5678</html>") == {}

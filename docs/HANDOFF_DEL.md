@@ -1,145 +1,151 @@
-# HANDOFF — DEL scrape session, Round 1 (2026-08-08)
+# HANDOFF — DEL scrape session, Round 2 (2026-08-08)
 
-**Status: ROUND 1 IS NOT ANSWERED. The session was network-blocked before it
-could touch a single byte of DEL data.** Everything below is either a
-verified statement about *this environment* or an explicitly-labelled
-unverified lead. Nothing here is a finding about the DEL source.
+Branch `del-scrape`, rebased onto master at `c669f48` (ruling 51). Master
+untouched. Lake branch `del-data-lake` created.
 
-Branch: `del-scrape`. Master untouched.
+**Summary: every Round-2 item that is code has been built and gated. Every
+Round-2 item that requires FETCHING is blocked in this session and must run
+on Seb's PC.** Numbers — fixture counts, reconciliation, size projection —
+are therefore *not* reported here, because I have not fetched a byte. They
+come out of the first run.
 
-## 1. The blocker (verified, reproducible)
+## 1. The egress correction, corrected back
 
-This cloud session cannot reach any DEL-related host. The egress proxy
-answers **403 to the CONNECT** for every one of them:
+Ruling 51's standing rule is accepted and was followed: **try WebFetch
+before declaring a host unreachable, and name the channel tested.** I did
+test both channels in Round 1 and reported both, so the rule costs nothing
+here — but my Round-1 write-up did generalise "my session is blocked" into
+"the environment is blocked", and that was over-reach. Corrected.
 
-| Host | curl (python/stdlib path) | WebFetch tool |
+The factual half of the correction does not hold for this session, and it
+matters for who can do Round 2. Re-tested this session, naming each channel:
+
+| Host | WebFetch tool | python/curl |
 |---|---|---|
-| `www.penny-del.org` | 403 CONNECT tunnel failed | `EGRESS_BLOCKED` |
-| `www.hockeydata.net` | 403 CONNECT tunnel failed | `EGRESS_BLOCKED` |
-| `apidocs.hockeydata.net` | (not probed by curl) | `EGRESS_BLOCKED` |
-| `del.hockeydata.net`, `live.hockeydata.net`, `api.hockeydata.net` | 403 | — |
-| `www.magentasport.de` | 403 | — |
+| `www.penny-del.org` | `EGRESS_BLOCKED` | 403 CONNECT |
+| `www.eliteprospects.com` | `EGRESS_BLOCKED` | — |
+| `en.wikipedia.org` (control) | `EGRESS_BLOCKED` | — |
 
-The proxy's own status endpoint records the denials verbatim:
+The control is the decisive one: **WebFetch in this session cannot reach
+Wikipedia either.** So this is not a DEL-host policy — this session has no
+WebFetch egress at all, while the Manager session evidently does. The
+difference is per-session, not per-tool. WebSearch remains my only route out.
+
+Consequence, stated plainly: **I cannot run the schedule fetch, the fixture
+reconciliation, the size projection, the second-channel test, or the EN-marker
+check from here.** Not "it would be slow" — the bytes are unreachable. Those
+five items are built and ready to run, and they need Seb's PC or the Ubuntu
+server. I have not guessed at any of their outputs.
+
+## 2. Built this round
+
+### `tools/fetch_del_raw.py` (+ `FETCH_DEL_LAKE.bat`)
+The Round-2 lake fetcher, on the **confirmed** URL contract. Stdlib-only,
+fetch-only, verbatim bytes, sha256 manifest. Staged deliberately so the
+size projection lands before any bulk fetch:
 
 ```
-"recentRelayFailures": [
-  {"kind":"connect_rejected",
-   "detail":"gateway answered 403 to CONNECT (policy denial or upstream failure)",
-   "host":"www.penny-del.org:443"},
-  {"kind":"connect_rejected",
-   "detail":"gateway answered 403 to CONNECT (policy denial or upstream failure)",
-   "host":"www.hockeydata.net:443"}
-]
+FETCH_DEL_LAKE.bat schedule     # fixtures per season -> fixtures_{season}.csv
+FETCH_DEL_LAKE.bat reconcile    # 0/0 both directions vs an independent list
+FETCH_DEL_LAKE.bat sample       # bytes/game -> PROJECTED LAKE SIZE. STOP HERE.
+FETCH_DEL_LAKE.bat full         # builds the lake, per-season SHA256SUMS.txt
+FETCH_DEL_LAKE.bat verify       # re-hash AFTER transfer
 ```
 
-`/root/.ccr/README.md` is explicit that this class is an organisation egress
-policy denial and must be **reported, not routed around**. So it was.
+Behaviours worth knowing before someone runs it:
 
-This is the same constraint CLAUDE.md already records under *Environment
-facts* ("the cloud workspace cannot reach league APIs from Python (proxy
-403); fetchers therefore run on Seb's Windows PC"). It is not new, and it is
-not fixable from inside the session. **Only WebSearch has a route out**, and
-a search snippet is not raw bytes — rule 4 forbids reporting it as one.
+- **Reconciliation refuses to fake a pass.** It tries a list of candidate
+  independent sources; if none resolves it prints
+  `NO INDEPENDENT LIST RESOLVED -- reconciliation NOT done` rather than
+  comparing the schedule against itself and reporting a meaningless 0/0.
+- **Season depth is not padded.** A season that yields 0 games is reported
+  as 0, with a note that the archive may simply be shallower than four
+  seasons. Ruling 51 did not establish archive depth and neither do I.
+- **The tab URL shape is the one thing I could not confirm.** Ruling 51
+  names the tabs but not how they compose onto the detail URL. The script
+  appends them as a path suffix, prints per-tab HTTP status on `--sample`,
+  and tells you to re-run with `--tab-mode=query` if they 404. First run
+  settles it from response codes rather than from my guess.
+- **Retired guesses are gone**, per your order: `/spielbericht/{id}`,
+  `/spiele/{id}` and the invented LOS REST paths are deleted from the probe,
+  and listed as retired in `DEL_SOURCE.md` so nobody resurrects them.
 
-## 2. What that means for the capability bar
+### `tools/del_round1_probe.py` — repurposed, not discarded
+Re-pointed at the confirmed `spieldetails` pattern + tabs. Its detector and
+gate stay as calibrated triage for the **next** league. Stage 2 still mines
+the page's widget JavaScript, because an embedded hockeydata feed is a live
+candidate for the missing audit channel.
 
-The kickoff's single go/no-go question — *does the DEL source carry goalie
-pull evidence with a game clock?* — **remains open.** It cannot be honestly
-answered from here, and I am not going to answer it from search snippets and
-inference. Per rule 0, a capability claim needs bytes.
+### `data/coach_maps/del_coaches.csv` + `_notes.md`
+Schema and build rules, **zero rows** — I cannot reach Elite Prospects or
+any primary source, and inventing coach spells would be fabricated data on
+the join key for every downstream coach number.
 
-The one thing search did establish, as an **unverified lead only**:
-hockeydata's `Game.FullReport` widget documents ice-hockey sections named
-**`GoalKeeperChanges`** and `GoalKeepers`. That is encouraging — it is the
-shape of capability (a). But the same documentation carries the warning that
-*"depending on the league, some columns may not contain values since they
-aren't recorded"*, which is precisely the DEL-specific unknown. **A
-documented column is not a populated column.** Treat this as a lead to
-verify, nothing more.
+The notes record the thing that makes DEL different: for every other league
+the map is a blank-filler and the listing wins. Here it is the **only**
+coach source, so it must cover every team-season with contiguous,
+non-overlapping, dated spells. Two build rules recorded: derive the club
+list from the fixture slugs rather than typing it from memory (promotion and
+relegation silently break a hardcoded list), and prefer **first game behind
+the bench** over announcement date, since the map joins to games.
 
-## 3. What was built instead (the thing that unblocks Round 1)
+### `del-data-lake` branch
+Created, first and only commit is `.gitattributes` containing `* -text`,
+pushed. The CRLF protection is in place *before* any bytes land, which is
+the whole point of the rule.
 
-`tools/del_round1_probe.py` + `tools/PROBE_DEL_ROUND1.bat` — a fetch-only,
-stdlib-only Round-1 probe that runs on Seb's PC, where the network works.
-It follows the established `tools/fetch_*.py` convention.
+## 3. Gates
 
-It is **discovery-first**, because the endpoints genuinely are not known:
-rather than guessing REST paths, it downloads the hockeydata widget
-JavaScript the DEL site itself loads and extracts the real config
-(`apiKey`, `divisionId`) and URL patterns out of it. Guessed endpoints are
-additive only and are written to disk with a `GUESS_` filename prefix so
-they can never be mistaken for a confirmed contract.
+Two DEL gates, both green, added to the cumulative suite:
 
-- Saves every response **verbatim** to `tools/del_probe/raw/`, with a
-  `manifest.csv` carrying status, bytes and sha256 per file.
-- Scans the saved bytes for goalie / play-by-play / penalty / coach /
-  overtime evidence in **German and English**, and prints a verbatim quoted
-  fragment for every hit — the evidence the kickoff asks for.
-- Emits a triage verdict on the kickoff's (a)/(b)/(c)/(d) ladder.
-- Re-runnable; already-downloaded files are skipped.
+- `test_del_probe_detector_never_false_no_go` — ratified in ruling 51, kept.
+- `test_del_fixture_parser_is_scoped` — **new.** Fixture discovery must match
+  the structural game-detail URL shape only and ignore loose ids, attendance
+  numbers and neighbouring link types. This is the ticker lesson written as
+  a test, since it has now bitten twice; it also collapses duplicate links,
+  which a schedule page will contain.
 
-**How to run it:** double-click `tools\PROBE_DEL_ROUND1.bat`. It takes about
-a minute and downloads a handful of pages, not a lake. Send back the whole
-`tools\del_probe\` folder — the bytes are the evidence, the printed summary
-is not. If the site turns out to be JS-hydrated (the kickoff suspects it is)
-and stage 2 finds no ids, open one game report in a browser, copy the real
-data URL out of the network tab, and re-run with `--games`.
+Full suite: **32 passed, 4 skipped** (skips are unmounted AHL/Liiga/KHL lakes).
 
-## 4. The verdict function is triage, and it is calibrated
+## 4. Three Round-2 questions — status
 
-The probe's verdict is **not** a finding — every YES is meant to be
-hand-confirmed against the raw bytes. But since a false **(d) NO-GO** would
-kill an adapter that should have been built, the detector was calibrated
-against the seven lakes whose capability class we already know, and is now a
-standing gate: `test_del_probe_detector_never_false_no_go`.
+**(a) Second audit channel — BUILT, UNRUN.** `--sample` saves the
+`spielerstats` tab and scans it for goalie TOI/saves, and separately mines
+the detail page for an embedded hockeydata feed (host + apiKey + divisionId).
+If neither yields an independent recorder it says so plainly rather than
+reporting a weak one as a pass. I cannot tell you the answer without bytes,
+and I am not going to infer it from documentation.
 
-Two real false NO-GOs were caught this way while writing it, both recorded
-in the code comments:
+**(b) Coaches — SCAFFOLDED, UNPOPULATED.** Schema, build rules and
+verification criteria written; rows need network. Elite Prospects is
+recorded as a **lead, not a primary source** — it is user-maintained, so
+each row still needs a club announcement or dated report behind it.
 
-1. **The AHL feed returned (d) NO-GO.** The first token table used literal
-   strings and missed the feed's actual `goalie_change` / `goalie_out_id`
-   keys. Fixed by matching word *parts* separator-blind, so `goalie_change`,
-   `goalieChange`, `goalie-change` and `"goalie change"` all hit one entry.
-2. **The NHL feed returned (d) NO-GO.** The `(b)` branch required an
-   arbitrary `GOALS` co-hit that the NHL pbp does not use. Fixed, and `(d)`
-   now fires only when the empty-net flag is genuinely the *only* goalie
-   signal present.
+**(c) EN markers — BUILT, UNRUN.** `--sample` scans sampled goal rows for
+empty-net markers and, if none are found, records the consequence: the
+adapter loses one cross-check, and the (a) verdict is unaffected because
+pull timing comes from the explicit `Torhüter` events.
 
-Current classification of the known lakes (all at or above their documented
-class, **zero false NO-GOs**):
+## 5. One discrepancy to flag
 
-| Lake | Probe verdict | CLAUDE.md class |
-|---|---|---|
-| AHL | (a) explicit goalie event + clock | explicit `goalie_change` ✔ |
-| Liiga | (a) explicit goalie event + clock | explicit ✔ |
-| EIHL | (a) explicit goalie event + clock | explicit ✔ |
-| NHL | (b) on-ice / lineup lists | on-ice data ✔ (conservative) |
-| KHL | (b) on-ice / lineup lists | dual-channel on-ice ✔ |
-| SHL | (b) on-ice / lineup lists | dual GK channels — **understated**, safe direction |
-| Mestis | (b) on-ice / lineup lists | scoped rows + on-ice ✔ |
+Ruling 51 and the CLAUDE.md STATUS row both cite
+**`docs/DEL_ROUND1_VERDICT.md`**, but commit `c669f48` added only
+`CLAUDE.md` and `docs/DECISIONS.md`. **The verdict document is not on
+master.** The headline evidence survives inline in ruling 51 — the 3947
+`57:34 / 57:51 / 58:22` sequence and 3964's `58:18` — and I used it. The
+full per-game trace does not, and it is the primary evidence for the (a)
+verdict. Probably an unstaged file in the PC push.
 
-Gate suite after the change: **31 passed, 4 skipped** (skips are unmounted
-AHL/Liiga/KHL lakes only).
+## 6. What I need back
 
-## 5. Open questions for the Manager / Seb
+1. **Someone runs steps 1-3 on Seb's PC** and sends the console output plus
+   `tools/del_lake/fixtures_*.csv`. That gives fixture counts, real archive
+   depth, the reconciliation result, the tab-shape answer and the size
+   projection — the numbers this handoff deliberately does not contain.
+2. **`docs/DEL_ROUND1_VERDICT.md` pushed**, so the (a) verdict has its
+   primary evidence in the repo.
+3. Then `--full`, `--verify`, and the lake commits onto `del-data-lake`.
 
-1. **Who runs the probe?** It needs Seb's PC or the Ubuntu server. Nothing
-   else in Round 1 can start until it has run.
-2. **Is a DEL egress allowlist entry possible?** If `www.penny-del.org` and
-   the hockeydata hosts were added to the environment's egress policy, this
-   and every future DEL session could do discovery directly instead of
-   round-tripping through Seb. Worth asking before the KHL-sized bulk fetch.
-3. **Id space.** The MagentaSport game ids on the DEL homepage (`432379`,
-   `432252`, `432080`) may or may not be the stats system's id space. The
-   probe collects ids from both shapes; the reconciliation is Round 2.
-4. **The market question is unchanged and unasked here.** Round 1 is a
-   source-capability question only. Whether DEL has an odds market at all is
-   a separate check before any pricing ambition (ruling 5 doctrine).
-
-## 6. Scope fence honoured
-
-No adapter, no gap logic, no instances, no ledger, no numbers about coaches
-or pull rates. No lake branch was created, because there is no lake yet.
-`docs/DEL_SOURCE.md` exists as a stub carrying only labelled leads — it will
-become the real source contract when the probe returns bytes.
+Scope fence held: no adapter, no gap logic, no instances, no ledger, no
+coach numbers, no pull rates. Everything above is a claim for the Manager to
+re-derive.

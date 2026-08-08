@@ -6,31 +6,37 @@ workspace's egress proxy returns 403 CONNECT for www.penny-del.org,
 www.hockeydata.net and apidocs.hockeydata.net, so no cloud session can
 answer the capability question (verified 2026-08-08).
 
-WHAT THIS IS FOR
-The single go/no-go question of docs/KICKOFF_DEL_SCRAPE.md: does the DEL
-source carry GOALIE PULL EVIDENCE WITH A GAME CLOCK?
+ROUND 1 IS ANSWERED (ruling 51, 2026-08-08): DEL is capability (a) —
+explicit `Torhüter aus dem Tor` / `Torhüter ins Tor` events on a cumulative
+game clock. This script's original job is therefore DONE. It is kept and
+still runs because:
+  - its detector is a calibrated, gated triage tool for the NEXT league
+    (test_del_probe_detector_never_false_no_go), and
+  - it writes VERBATIM BYTES with a sha256 manifest, which WebFetch cannot.
+For the DEL lake itself use tools/fetch_del_raw.py, which implements the
+confirmed URL contract end to end.
+
+THE LADDER it triages against:
   (a) explicit goalie-out/goalie-in events with a clock   -> best
   (b) on-ice player lists per goal (KHL-style)            -> workable
   (c) per-game goalie TOI totals (Magnus-style)           -> weakest
   (d) an "empty net" flag on goals only                   -> NO-GO, stop
-This script does NOT answer that question by itself. It saves RAW BYTES and
-prints WHERE the evidence is, so the answer is hand-verified from bytes
-(rule 2: ground truth before logic; rule 4: never fabricate).
+It does NOT decide: it saves raw bytes and prints WHERE the evidence is, so
+the answer is hand-verified from bytes (rule 2; rule 4).
 
 FETCH-ONLY. It classifies nothing, edits nothing, pretty-prints nothing.
 Every response is written verbatim, byte for byte, with a sha256 manifest.
 
-DISCOVERY-FIRST, because the endpoints are NOT known yet. The DEL stats
-system appears to be hockeydata "LOS", whose widgets are configured with
-apiKey + divisionId + gameId. Rather than guessing REST paths, this script
-pulls the widget JavaScript the site itself loads and extracts the URL
-patterns and config out of it. Guessed candidates are clearly labelled as
-GUESS in the report and are only ever additive.
+Per-game probing now uses the CONFIRMED pattern from ruling 51:
+  /statistik/spieldetails/{DDMMYYYY}_{home}_gg_{away}_{gameid}  + tabs
+The earlier guessed LOS REST paths and /spielbericht/{id} shapes are RETIRED.
+Stage 2 still mines the widget JavaScript, because an embedded hockeydata
+feed is a live candidate for the second audit channel the adapter needs.
 
 USAGE
   python del_round1_probe.py                      # stages 1-2 + 4 (discovery)
-  python del_round1_probe.py --games 432379,432252
-  python del_round1_probe.py --games-file ids.txt
+  python del_round1_probe.py --games 12092025_ingolstadt_gg_iserlohn_3947
+  python del_round1_probe.py --games-file slugs.txt
 Output: tools/del_probe/  (raw/, manifest.csv, PROBE_REPORT.txt)
 
 Re-runnable: existing non-empty raw files are skipped unless --refetch.
@@ -48,14 +54,14 @@ UA = {
     "Accept-Language": "de-DE,de;q=0.9,en;q=0.8",
 }
 
-# ---- Stage 1 seeds. Season slugs are a Manager LEAD, not a finding (rule 0).
+# ---- Stage 1 seeds. The saison-*/hauptrunde/spielplan shape is CONFIRMED
+# (ruling 51); the rest stay as discovery surface.
 SEEDS = [
-    ("home",          "https://www.penny-del.org/"),
-    ("spiele",        "https://www.penny-del.org/spiele"),
-    ("spielplan",     "https://www.penny-del.org/spielplan"),
-    ("toi_2025_26",   "https://www.penny-del.org/statistik/saison-2025-26/hauptrunde/playerstats/toi"),
-    ("toi_2024_25",   "https://www.penny-del.org/statistik/saison-2024-25/hauptrunde/playerstats/toi"),
-    ("stats_2025_26", "https://www.penny-del.org/statistik/saison-2025-26/hauptrunde"),
+    ("home",           "https://www.penny-del.org/"),
+    ("spielplan_2526", "https://www.penny-del.org/statistik/saison-2025-26/hauptrunde/spielplan"),
+    ("spielplan_2425", "https://www.penny-del.org/statistik/saison-2024-25/hauptrunde/spielplan"),
+    ("toi_2025_26",    "https://www.penny-del.org/statistik/saison-2025-26/hauptrunde/playerstats/toi"),
+    ("stats_2025_26",  "https://www.penny-del.org/statistik/saison-2025-26/hauptrunde"),
 ]
 
 # ---- Stage 4 capability tokens. German AND English: the DEL feed may be either.
@@ -188,6 +194,10 @@ RE_DIVID = re.compile(rb"""divisionId["'\s:=]+(\d+)""", re.I)
 RE_GAMEID = re.compile(rb"""gameId["'\s:=]+(\d+)""", re.I)
 RE_URLISH = re.compile(rb"""["'](/(?:rest|api|los|v\d)[A-Za-z0-9/_.{}$\-]*)["']""")
 RE_NUMLINK = re.compile(rb"""/(?:spiel|game|spielbericht|gamereport)[/_-]?(\d{4,8})""", re.I)
+# the confirmed game-detail slug (ruling 51)
+RE_SLUG = re.compile(r"^\d{8}_[A-Za-z0-9\-]+_gg_[A-Za-z0-9\-]+_\d+$")
+RE_SLUGLINK = re.compile(
+    rb"""/statistik/spieldetails/(\d{8}_[A-Za-z0-9\-]+_gg_[A-Za-z0-9\-]+_\d+)""")
 
 
 def discover(paths):
@@ -208,6 +218,10 @@ def discover(paths):
             found["apikeys"].add(m.decode("utf-8", "replace"))
         for m in RE_DIVID.findall(b):
             found["divisions"].add(m.decode("utf-8", "replace"))
+        # prefer full spieldetails slugs: they are directly fetchable under
+        # the confirmed pattern, whereas a bare numeric id is not
+        for m in RE_SLUGLINK.findall(b):
+            found["gameids"].add(m.decode("utf-8", "replace"))
         for m in RE_GAMEID.findall(b) + RE_NUMLINK.findall(b):
             found["gameids"].add(m.decode("utf-8", "replace"))
         for m in RE_URLISH.findall(b):
@@ -341,39 +355,29 @@ def main():
         print("  no game ids known yet -- rerun with --games once stage 2 or the\n"
               "  network tab gives you real ids (need 5 games across >=2 seasons)")
     else:
-        print("  probing ids: %s" % ", ".join(ids))
-        apikey = sorted(f["apikeys"])[0] if f["apikeys"] else ""
-        div = sorted(f["divisions"])[0] if f["divisions"] else ""
-        hosts = sorted(f["hosts"]) or ["https://api.hockeydata.net"]
-        host = hosts[0].rstrip("/")
+        print("  probing: %s" % ", ".join(ids))
+        # CONFIRMED pattern (ruling 51). The earlier GUESS_ LOS endpoints and
+        # the /spielbericht/{id} + /spiele/{id} shapes are RETIRED: they were
+        # guesses made before Round 1 was answered, and this supersedes them.
+        # Pass full slugs (DDMMYYYY_home_gg_away_gameid) for the real pattern;
+        # a bare numeric id can only be probed as a search fallback.
         for gid in ids:
-            # site-side game report (no guessing: this is the site's own shape)
-            for nm, url in [
-                ("game_%s_site.html" % gid,
-                 "https://www.penny-del.org/spielbericht/%s" % gid),
-                ("game_%s_site2.html" % gid,
-                 "https://www.penny-del.org/spiele/%s" % gid),
-            ]:
+            if RE_SLUG.match(gid):
+                base = "https://www.penny-del.org/statistik/spieldetails/%s" % gid
+                targets = [("game_%s_detail.html" % gid, base)] + [
+                    ("game_%s_%s.html" % (gid, t), "%s/%s" % (base, t))
+                    for t in ("aufstellung", "spielerstats", "schuesse", "bullies")
+                ]
+            else:
+                print("    '%s' is not a spieldetails slug -- the confirmed"
+                      " pattern needs DDMMYYYY_home_gg_away_gameid" % gid)
+                continue
+            for nm, url in targets:
                 if not args.refetch and already(nm):
                     paths.append(already(nm)); continue
                 st, data, furl, ct = fetch(url)
                 paths.append(save(nm, furl, st, data, ct, manifest))
                 time.sleep(0.5)
-            # LOS candidates -- GUESSES, labelled as such in the report
-            if apikey:
-                for tag, path in [
-                    ("fullreport", "/rest/icehockey/los/game/%s/fullreport" % gid),
-                    ("livebox", "/rest/icehockey/los/game/%s/livebox" % gid),
-                    ("events", "/rest/icehockey/los/game/%s/events" % gid),
-                ]:
-                    url = "%s%s?apiKey=%s%s" % (
-                        host, path, apikey, ("&divisionId=%s" % div) if div else "")
-                    nm = "GUESS_game_%s_%s.json" % (gid, tag)
-                    if not args.refetch and already(nm):
-                        paths.append(already(nm)); continue
-                    st, data, furl, ct = fetch(url)
-                    paths.append(save(nm, furl, st, data, ct, manifest))
-                    time.sleep(0.5)
 
     print("\n=== STAGE 4: capability scan ===")
     all_hits = {}

@@ -1,55 +1,113 @@
 # DEL (PENNY DEL) — source contract
 
-**STATUS: STUB. NOTHING IN THIS FILE IS VERIFIED.**
+Round 1 is **ANSWERED: GO, capability (a)** (ruling 51, Manager, 2026-08-08).
 
-This file is the intended home of the DEL source contract (every endpoint,
-its parameters, what each channel carries, quirks with named games), in the
-shape of `docs/KHL_SOURCE.md`, `docs/SHL_SOURCE.md` and
-`docs/MESTIS_SOURCE.md`.
+Provenance of everything below: the CONFIRMED rows come from the Manager's
+Round 1 verdict (ruling 51 in `docs/DECISIONS.md`), which quotes verbatim
+evidence from two named games. Rows marked UNCONFIRMED were not observed by
+anyone yet and are settled by the first real run of
+`tools/fetch_del_raw.py`. Nothing here was derived by this session from raw
+bytes — its egress is blocked (see `docs/HANDOFF_DEL.md` §1), so per rule 0
+every line is a claim awaiting re-derivation against the lake.
 
-It is empty of findings because the Round 1 scrape session (2026-08-08) was
-blocked by the environment's egress policy before it could fetch a single
-byte — `www.penny-del.org`, `www.hockeydata.net` and `apidocs.hockeydata.net`
-all answer 403 to the proxy CONNECT. See `docs/HANDOFF_DEL.md` for the
-reproduction and the proxy's own log of the denials.
+> **Note for the Manager:** ruling 51 and the CLAUDE.md STATUS row both cite
+> `docs/DEL_ROUND1_VERDICT.md`, but commit `c669f48` added only `CLAUDE.md`
+> and `docs/DECISIONS.md` — **the verdict document is not on master.** The
+> headline evidence survives inline in ruling 51 and is used here; the full
+> per-game trace does not. Worth pushing, since it is the primary evidence
+> for the (a) verdict.
 
-**Do not treat anything below as a finding.** Per rule 0 every line here gets
-re-derived from raw bytes before it earns a place in the contract, and per
-rule 4 nothing gets written down that was not observed.
+## 1. Capability verdict — (a), top of the ladder
 
-## Unverified leads (Manager recon + web search only)
+DEL publishes **explicit goalie-out / goalie-in events on a cumulative game
+clock**. No Magnus-style TOI inference is needed. This is Liiga/SHL/AHL tier.
 
-| Lead | Source of the claim | Status |
+Event wording (German), quoted in ruling 51:
+
+- `Torhüter aus dem Tor` — goalie leaves the net (the pull)
+- `Torhüter ins Tor` — goalie returns
+
+Named evidence:
+
+| Game | Fixture | Date | Evidence |
+|---|---|---|---|
+| 3947 | ERC Ingolstadt vs Iserlohn Roosters | 12.09.2025 | `aus dem Tor` **57:34**, `ins Tor` **57:51**, `aus dem Tor` **58:22** — a pull, a return, and a re-pull |
+| 3964 | Adler Mannheim vs ERC Ingolstadt | — | clean pull at **58:18** |
+
+The 3947 sequence matters beyond confirming the verdict: **the adapter must
+handle multiple pull/return cycles inside one gap-3 window**, not assume one
+pull per instance. Clock is cumulative game time, so no period-relative
+conversion is needed — but that is exactly the kind of assumption ground
+truth batch 1 must confirm rather than inherit.
+
+## 2. URL contract
+
+| Channel | Pattern | Status |
 |---|---|---|
-| Official site `www.penny-del.org`, stats server-rendered | Manager recon | UNVERIFIED |
-| Season slugs `/statistik/saison-2025-26/hauptrunde/...` | Manager recon | UNVERIFIED |
-| League-wide player TOI table at `/statistik/<saison>/hauptrunde/playerstats/toi` | Manager recon | UNVERIFIED |
-| Stats infrastructure is hockeydata "LOS" | Manager recon | UNVERIFIED |
-| LOS widgets take `apiKey`, `divisionId`, `gameId`, `sport=icehockey` | apidocs.hockeydata.net (via search snippet) | UNVERIFIED |
-| `Game.LiveBox` carries goals, penalties and a play-by-play log | apidocs (via search snippet) | UNVERIFIED |
-| `Game.FullReport` documents ice-hockey sections `GoalKeeperChanges` and `GoalKeepers` | apidocs (via search snippet, 2026-08-08) | UNVERIFIED — **and the same docs warn columns may be empty depending on the league.** A documented column is not a populated column. |
-| MagentaSport game ids on the DEL homepage (`432379`, `432252`, `432080`) | Manager recon | UNVERIFIED, and it is unknown whether this is the stats id space |
-| `/spiele` exposes no per-game hrefs in plain HTML (likely JS-hydrated) | Manager recon | UNVERIFIED |
+| Season schedule | `/statistik/saison-{YYYY-YY}/hauptrunde/spielplan` | CONFIRMED |
+| Game detail | `/statistik/spieldetails/{DDMMYYYY}_{home}_gg_{away}_{gameid}` | CONFIRMED |
+| Tabs | `aufstellung`, `spielerstats`, `schuesse`, `bullies` | tabs CONFIRMED to exist; **how they compose onto the detail URL is UNCONFIRMED** |
+| League TOI table | `/statistik/{saison}/hauptrunde/playerstats/toi` | UNCONFIRMED (Manager recon lead) |
 
-## The one question this file exists to answer
+Host `https://www.penny-del.org`. Example detail slug shape:
+`12092025_erc-ingolstadt_gg_iserlohn-roosters_3947`.
 
-Does the DEL source carry **goalie pull evidence with a game clock**?
+The tab composition is the one open URL question. `fetch_del_raw.py` appends
+tabs as a path suffix (`.../{slug}/aufstellung`) and prints per-tab HTTP
+status on `--sample`, so the first run settles it from response codes; if
+they 404, re-run with `--tab-mode=query`. The club slugs in the URL are also
+the club identifiers — derive the team list from them, never from memory.
 
-- (a) explicit goalie-out/goalie-in events with a clock — best
-- (b) on-ice player lists per goal — workable, KHL-style
-- (c) per-game goalie TOI totals — weakest, Magnus-style, extra GT class
-- (d) an "empty net" flag on goals only — **NO-GO**
+**Retired guesses** (made before Round 1 was answered, superseded — do not
+resurrect): `/spielbericht/{id}`, `/spiele/{id}`, and the invented
+hockeydata LOS REST paths `/rest/icehockey/los/game/{id}/{fullreport,livebox,events}`.
 
-**Currently unanswered.** `tools/del_round1_probe.py` (run it from
-`tools\PROBE_DEL_ROUND1.bat` on Seb's PC) fetches the evidence and saves the
-raw bytes needed to answer it by hand.
+## 3. Penalties — START-TIME-ONLY (settled, do not go looking)
 
-## Conventions already fixed for the eventual lake
+Penalties carry a player, an offence and a **start time only**:
+
+```
+2 Min. Strafe gegen X wegen TRIP at 43:32
+```
+
+There are **no Von/Bis columns**. DEL is therefore **AHL-class on penalties**
+and the adapter inherits the **AHL minor-termination convention** — not the
+Liiga/SHL explicit-end path. Ruling 51 settled this; it is not to be
+re-derived, and no session should spend time hunting for end times.
+
+## 4. Known gaps (Round-2 work, ruling 51)
+
+1. **No second audit channel identified.** The adapter's 0/60 random audit
+   needs an independent recorder to compare against. Candidates to test:
+   the `spielerstats` tab (does it carry goalie TOI or saves?) and any
+   hockeydata feed the page embeds. `fetch_del_raw.py --sample` probes both.
+   **This is an adapter blocker, not a lake blocker** — the lake can be
+   built while it is open.
+2. **Coaches are on neither game nor squad pages.** A coach map with dated
+   spells and a primary source per row is mandatory:
+   `data/coach_maps/del_coaches.csv` (schema written, zero rows) with
+   build rules in `del_coaches_notes.md`. Unlike every other league this is
+   the *only* coach source, not a blank-filler.
+3. **No empty-net flag on goals seen.** If confirmed absent, EN goals cannot
+   corroborate the pull interval — the adapter loses one cross-check. It
+   does **not** affect the (a) verdict, since pull timing comes from the
+   explicit events.
+
+## 5. Lake conventions (non-negotiable)
 
 - Branch `del-data-lake` on the V2 repo.
 - **First commit is `.gitattributes` containing `* -text`** (CRLF incident).
-- Raw bytes verbatim, never edited, never pretty-printed; one directory per
-  season; filenames carry season + game id.
-- `SHA256SUMS.txt` per season, re-hashed *after* transfer.
-- Every count scoped to the game's own structural rows (the ticker lesson,
-  which has bitten twice).
+- Raw bytes verbatim: never edited, never pretty-printed, never normalised.
+- One directory per season; filenames carry season + game id + channel.
+- `SHA256SUMS.txt` per season, **re-hashed after transfer**, result recorded
+  in the handoff (`fetch_del_raw.py --verify`).
+- Every count scoped to the game's own structural rows. Fixture discovery
+  matches the game-detail URL shape only and is gated
+  (`test_del_fixture_parser_is_scoped`) — the ticker lesson has bitten twice.
+
+## 6. Order of operations
+
+`--schedule` → `--reconcile` (0/0 both directions vs an independent list)
+→ `--sample 10` → **report the projected size to the Manager and wait**
+→ `--full` → `--verify`. KHL was 4.14 GB; a surprise of that order is not
+acceptable.
