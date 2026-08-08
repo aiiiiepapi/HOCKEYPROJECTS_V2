@@ -647,3 +647,46 @@ NOTE: new coach layer is PROVISIONAL until blind re-validation (next block).
     EGRESS-ALLOWLIST REQUEST DECLINED (not a lever we hold): the sandbox
     proxy policy is not ours to change, and the PC-fetcher pattern has
     now built six lakes. Not worth Seb's time to chase.
+
+51b. **TWO MANAGER CORRECTIONS ON THE DEL BLOCK (2026-08-08, both
+    raised by the scrape session, both upheld).**
+    (i) **EGRESS — the Manager's correction was itself wrong on the
+    facts.** Ruling 51 said "the WebFetch TOOL reaches these hosts,
+    python does not," generalizing from the Manager session to all
+    sessions. The scrape session then ran the experiment that settles
+    it: WebFetch against **en.wikipedia.org as a CONTROL** — also
+    refused. That session has NO WebFetch egress AT ALL. The split is
+    therefore **per-session, not per-tool and not per-host**. Corrected
+    record: (a) the session's original "I am blocked" was TRUE; only
+    its generalization to "the environment" was over-reach, which it
+    conceded; (b) the Manager's counter-generalization was equally
+    wrong and is withdrawn. STANDING RULE, amended: name the channel
+    tested AND run a known-good control before attributing a failure to
+    policy. A control is what turns "blocked" from a story into a
+    measurement — rule 42 for infrastructure, and the session applied
+    it better than the Manager did.
+    (ii) **MANAGER PUSH ERROR — docs/DEL_ROUND1_VERDICT.md never
+    reached master.** Commit c669f481 carried only CLAUDE.md and
+    DECISIONS.md; the verdict doc — the PRIMARY EVIDENCE for the (a)
+    call — was written to the top level of Seb's _manager folder but
+    never into the push bundle's files/docs/, so the relay script could
+    not see it. Same class as the 2026-08-07 stale-sheets incident:
+    the bundle is assembled by hand and nothing checks it. FIX SHIPPED:
+    relay scripts now carry a REQUIRED-FILES manifest and abort before
+    committing if any expected path is missing. Caught by the build
+    session reading the commit, not by the Manager — which is the
+    verification direction working correctly.
+
+52. **DEL LAKE PROCEEDS REGARDLESS OF THE SECOND-CHANNEL QUESTION
+    (Manager, 2026-08-08).** The scrape session asked whether the fetch
+    should wait on finding an independent recorder for the 0/60 audit.
+    It should not. The audit channel is an ADAPTER-stage requirement;
+    the lake is raw bytes, and having the bytes strictly increases the
+    options for solving it (an embedded feed may only be findable by
+    reading what we fetched). Precedent: SHL 2023 has no second channel
+    and its audit was scoped to 2024+ with the limitation recorded —
+    a scoped audit with a stated design limit is acceptable; a faked
+    one is not. If no independent recorder exists for DEL at all, the
+    adapter ships with the audit scoped to whatever IS checkable and
+    the gap stated in the verification doc, exactly as SHL did. The
+    fetch is not blocked.
