@@ -606,3 +606,44 @@ NOTE: new coach layer is PROVISIONAL until blind re-validation (next block).
     (125/617). The fold evidence above already prices this behaviour and
     holds up, so nothing is broken - but a minimum-chances guard on the
     bet card is available if Seb wants one.
+
+51. **DEL ROUND 1 = GO, capability (a) (Manager, 2026-08-08).** The
+    delegated scrape session reported Round 1 unanswerable — its egress
+    proxy refused every DEL host — and correctly refused to answer the
+    capability question from search snippets (rule 4). Good call: a
+    wrong capability claim costs an adapter session either way it fails.
+    BUT the blanket conclusion "this is the environment constraint in
+    CLAUDE.md" was OVER-GENERALIZED and is now corrected on record: the
+    CLAUDE.md fact is that PYTHON/bash cannot reach league hosts. The
+    WebFetch TOOL reaches penny-del.org and hockeydata.net fine from the
+    Manager session, which is how Round 1 got answered the same day.
+    STANDING RULE ADDED: a session that hits an egress refusal must try
+    the WebFetch tool before declaring a host unreachable, and must say
+    which channel it tested. Rule 42 applies to infrastructure claims
+    too — "my network is blocked" is an attribution like any other.
+    VERDICT (docs/DEL_ROUND1_VERDICT.md, verbatim quotes on two named
+    games): DEL publishes EXPLICIT `Torhüter aus dem Tor` / `ins Tor`
+    events with a cumulative game clock — game 3947 shows pull-return-
+    repull at 57:34 / 57:51 / 58:22, game 3964 a clean pull at 58:18.
+    Top tier of the kickoff ladder, Liiga/SHL/AHL class. Penalties are
+    START-TIME-ONLY (AHL minor-termination convention required, NOT the
+    Liiga/SHL explicit-end path). Coaches are NOT on DEL game or squad
+    pages -> coach map with dated spells + primary source per row
+    (mestis_coaches.csv template); Elite Prospects team-staff-history
+    pages are the lead to verify. No EN flag on goals seen, and NO
+    second channel identified yet for the 0/60 random audit — that is a
+    Round-2 blocker for the adapter, not for the lake.
+    SESSION WORK RATIFIED: tools/del_round1_probe.py + its gate
+    (test_del_probe_detector_never_false_no_go) are KEPT and merged. The
+    detector was independently re-run by the Manager against all seven
+    known lakes — no false NO-GO, gate green (35 in the full-lake env).
+    Their two self-caught false NO-GOs (AHL `goalie_change` key missed
+    by literal tokens; NHL sunk by an arbitrary GOALS co-requirement)
+    are exactly the failure direction that matters, and building the
+    gate before the answer was the right instinct. The probe is
+    repurposed for Round 2: it fetches VERBATIM BYTES with a sha256
+    manifest, which WebFetch cannot do — so it is still the tool that
+    builds the lake on Seb's PC.
+    EGRESS-ALLOWLIST REQUEST DECLINED (not a lever we hold): the sandbox
+    proxy policy is not ours to change, and the PC-fetcher pattern has
+    now built six lakes. Not worth Seb's time to chase.
