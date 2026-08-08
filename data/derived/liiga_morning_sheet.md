@@ -35,15 +35,15 @@ Active coaches: 18. Sheet estimator = coach record ONLY, no league average (ruli
 | Marko Tuomainen | Jukurit | NO DATA | 4/4 | 2025-01-10 |
 | Antti Pennanen | Ilves | NO DATA | 2/2 | 2024-02-14 |
 | Olli Salo | KooKoo | NO DATA | 1/1 | 2024-03-09 |
-| Tommi Miettinen | TPS | NO DATA | 3/6 | 2025-03-14 |
 | Ville Peltonen | HIFK | NO DATA | 1/2 | 2025-03-01 |
+| Tommi Miettinen | TPS | NO DATA | 3/6 | 2025-03-14 |
 | Jukka Rautakorpi | JYP | NO DATA | 0/0 | 2023-12-15 |
 | Juhamatti Yli-Junnila | Pelicans | NO DATA | 0/0 | 2025-01-08 |
 | Johan Pennerborn | JYP | NO DATA | 1/2 | 2025-03-15 |
 | Matias Lehtonen | HPK | NO DATA | 2/5 | 2024-09-20 |
 | Jere Härkälä | Ässät | NO DATA | 1/3 | 2024-03-06 |
-| Lauri Marjamäki | Kärpät | NO DATA | 0/1 | 2023-12-09 |
 | Ville Mäntymaa | Kärpät | NO DATA | 1/3 | 2025-03-01 |
 | Ville Hämäläinen | SaiPa | NO DATA | 1/4 | 2024-03-12 |
+| Lauri Marjamäki | Kärpät | NO DATA | 0/1 | 2023-12-09 |
 | Risto Dufva | Sport | NO DATA | 0/2 | 2024-03-09 |
 | Mikko Heiskanen | JYP | NO DATA | 0/3 | 2024-03-09 |

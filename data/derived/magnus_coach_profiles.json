@@ -47,38 +47,15 @@
 "clear_taken": 2,
 "pp_pulls": 1,
 "instances": 14,
-"expected_pull_pct": 0.8605,
+"expected_pull_pct": 0.8218,
 "band": [
-0.633,
+0.571,
 1.0
 ],
 "last3": "PP",
 "flags": [
 "RISKY: <5 clean chances"
 ]
-},
-{
-"coach": "TERGLAV Edo",
-"team": "GRENOBLE",
-"last_seen": "2026-04-18",
-"sheet_pct": 0.7045,
-"sheet_band": [
-0.468,
-0.941
-],
-"window_taken": 4,
-"window_chances": 5,
-"clear_chances": 5,
-"clear_taken": 4,
-"pp_pulls": 0,
-"instances": 10,
-"expected_pull_pct": 0.7259,
-"band": [
-0.494,
-0.958
-],
-"last3": "PP-",
-"flags": []
 },
 {
 "coach": "TARDIF Luc",
@@ -95,10 +72,10 @@
 "clear_taken": 1,
 "pp_pulls": 0,
 "instances": 12,
-"expected_pull_pct": 0.6388,
+"expected_pull_pct": 0.75,
 "band": [
-0.474,
-0.803
+0.43,
+1.0
 ],
 "last3": "P",
 "flags": [
@@ -120,10 +97,10 @@
 "clear_taken": 1,
 "pp_pulls": 0,
 "instances": 10,
-"expected_pull_pct": 0.6388,
+"expected_pull_pct": 0.75,
 "band": [
-0.474,
-0.803
+0.43,
+1.0
 ],
 "last3": "P",
 "flags": [
@@ -131,158 +108,27 @@
 ]
 },
 {
-"coach": "BUYSSE Henry Corentin",
-"team": "AMIENS",
-"last_seen": "2025-10-10",
-"sheet_pct": null,
-"sheet_band": null,
-"window_taken": 0,
-"window_chances": 0,
-"clear_chances": 0,
-"clear_taken": 0,
+"coach": "TERGLAV Edo",
+"team": "GRENOBLE",
+"last_seen": "2026-04-18",
+"sheet_pct": 0.7045,
+"sheet_band": [
+0.468,
+0.941
+],
+"window_taken": 4,
+"window_chances": 5,
+"clear_chances": 5,
+"clear_taken": 4,
 "pp_pulls": 0,
-"instances": 4,
-"expected_pull_pct": 0.6087,
+"instances": 10,
+"expected_pull_pct": 0.7045,
 "band": [
-0.435,
-0.782
+0.468,
+0.941
 ],
-"last3": "",
-"flags": [
-"RISKY: <5 clean chances"
-]
-},
-{
-"coach": "BARIN St\u00e9phane",
-"team": "ANGLET",
-"last_seen": "2026-01-16",
-"sheet_pct": null,
-"sheet_band": null,
-"window_taken": 0,
-"window_chances": 0,
-"clear_chances": 0,
-"clear_taken": 0,
-"pp_pulls": 0,
-"instances": 9,
-"expected_pull_pct": 0.6087,
-"band": [
-0.435,
-0.782
-],
-"last3": "",
-"flags": [
-"RISKY: <5 clean chances"
-]
-},
-{
-"coach": "MARGERIT Pascal",
-"team": "NICE",
-"last_seen": "2026-03-17",
-"sheet_pct": null,
-"sheet_band": null,
-"window_taken": 0,
-"window_chances": 0,
-"clear_chances": 0,
-"clear_taken": 0,
-"pp_pulls": 0,
-"instances": 12,
-"expected_pull_pct": 0.6087,
-"band": [
-0.435,
-0.782
-],
-"last3": "",
-"flags": [
-"RISKY: <5 clean chances"
-]
-},
-{
-"coach": "RAYMOND BERGIN Kevin",
-"team": "AMIENS",
-"last_seen": "2026-03-17",
-"sheet_pct": null,
-"sheet_band": null,
-"window_taken": 0,
-"window_chances": 0,
-"clear_chances": 0,
-"clear_taken": 0,
-"pp_pulls": 1,
-"instances": 14,
-"expected_pull_pct": 0.6087,
-"band": [
-0.435,
-0.782
-],
-"last3": "",
-"flags": [
-"RISKY: <5 clean chances"
-]
-},
-{
-"coach": "PAREDES Jonathan",
-"team": "ANGERS",
-"last_seen": "2026-04-08",
-"sheet_pct": null,
-"sheet_band": null,
-"window_taken": 0,
-"window_chances": 0,
-"clear_chances": 0,
-"clear_taken": 0,
-"pp_pulls": 0,
-"instances": 6,
-"expected_pull_pct": 0.6087,
-"band": [
-0.435,
-0.782
-],
-"last3": "",
-"flags": [
-"RISKY: <5 clean chances"
-]
-},
-{
-"coach": "BURNET St\u00e9phane",
-"team": "CHAMONIX",
-"last_seen": "2026-03-06",
-"sheet_pct": null,
-"sheet_band": null,
-"window_taken": 0,
-"window_chances": 0,
-"clear_chances": 0,
-"clear_taken": 0,
-"pp_pulls": 0,
-"instances": 2,
-"expected_pull_pct": 0.6087,
-"band": [
-0.435,
-0.782
-],
-"last3": "",
-"flags": [
-"RISKY: <5 clean chances"
-]
-},
-{
-"coach": "ROHAT S\u00e9bastien",
-"team": "GAP",
-"last_seen": "2026-04-03",
-"sheet_pct": null,
-"sheet_band": null,
-"window_taken": 0,
-"window_chances": 0,
-"clear_chances": 0,
-"clear_taken": 0,
-"pp_pulls": 0,
-"instances": 1,
-"expected_pull_pct": 0.6087,
-"band": [
-0.435,
-0.782
-],
-"last3": "",
-"flags": [
-"RISKY: <5 clean chances"
-]
+"last3": "PP-",
+"flags": []
 },
 {
 "coach": "SZEKELY Csaba",
@@ -299,10 +145,10 @@
 "clear_taken": 1,
 "pp_pulls": 1,
 "instances": 5,
-"expected_pull_pct": 0.599,
+"expected_pull_pct": 0.5237,
 "band": [
-0.436,
-0.762
+0.199,
+0.849
 ],
 "last3": "-P",
 "flags": [
@@ -324,12 +170,166 @@
 "clear_taken": 1,
 "pp_pulls": 0,
 "instances": 12,
-"expected_pull_pct": 0.5968,
+"expected_pull_pct": 0.5146,
 "band": [
-0.434,
-0.759
+0.191,
+0.838
 ],
 "last3": "-P",
+"flags": [
+"RISKY: <5 clean chances"
+]
+},
+{
+"coach": "BUYSSE Henry Corentin",
+"team": "AMIENS",
+"last_seen": "2025-10-10",
+"sheet_pct": null,
+"sheet_band": null,
+"window_taken": 0,
+"window_chances": 0,
+"clear_chances": 0,
+"clear_taken": 0,
+"pp_pulls": 0,
+"instances": 4,
+"expected_pull_pct": 0.5,
+"band": [
+0.047,
+0.953
+],
+"last3": "",
+"flags": [
+"RISKY: <5 clean chances"
+]
+},
+{
+"coach": "BARIN St\u00e9phane",
+"team": "ANGLET",
+"last_seen": "2026-01-16",
+"sheet_pct": null,
+"sheet_band": null,
+"window_taken": 0,
+"window_chances": 0,
+"clear_chances": 0,
+"clear_taken": 0,
+"pp_pulls": 0,
+"instances": 9,
+"expected_pull_pct": 0.5,
+"band": [
+0.047,
+0.953
+],
+"last3": "",
+"flags": [
+"RISKY: <5 clean chances"
+]
+},
+{
+"coach": "MARGERIT Pascal",
+"team": "NICE",
+"last_seen": "2026-03-17",
+"sheet_pct": null,
+"sheet_band": null,
+"window_taken": 0,
+"window_chances": 0,
+"clear_chances": 0,
+"clear_taken": 0,
+"pp_pulls": 0,
+"instances": 12,
+"expected_pull_pct": 0.5,
+"band": [
+0.047,
+0.953
+],
+"last3": "",
+"flags": [
+"RISKY: <5 clean chances"
+]
+},
+{
+"coach": "RAYMOND BERGIN Kevin",
+"team": "AMIENS",
+"last_seen": "2026-03-17",
+"sheet_pct": null,
+"sheet_band": null,
+"window_taken": 0,
+"window_chances": 0,
+"clear_chances": 0,
+"clear_taken": 0,
+"pp_pulls": 1,
+"instances": 14,
+"expected_pull_pct": 0.5,
+"band": [
+0.047,
+0.953
+],
+"last3": "",
+"flags": [
+"RISKY: <5 clean chances"
+]
+},
+{
+"coach": "PAREDES Jonathan",
+"team": "ANGERS",
+"last_seen": "2026-04-08",
+"sheet_pct": null,
+"sheet_band": null,
+"window_taken": 0,
+"window_chances": 0,
+"clear_chances": 0,
+"clear_taken": 0,
+"pp_pulls": 0,
+"instances": 6,
+"expected_pull_pct": 0.5,
+"band": [
+0.047,
+0.953
+],
+"last3": "",
+"flags": [
+"RISKY: <5 clean chances"
+]
+},
+{
+"coach": "BURNET St\u00e9phane",
+"team": "CHAMONIX",
+"last_seen": "2026-03-06",
+"sheet_pct": null,
+"sheet_band": null,
+"window_taken": 0,
+"window_chances": 0,
+"clear_chances": 0,
+"clear_taken": 0,
+"pp_pulls": 0,
+"instances": 2,
+"expected_pull_pct": 0.5,
+"band": [
+0.047,
+0.953
+],
+"last3": "",
+"flags": [
+"RISKY: <5 clean chances"
+]
+},
+{
+"coach": "ROHAT S\u00e9bastien",
+"team": "GAP",
+"last_seen": "2026-04-03",
+"sheet_pct": null,
+"sheet_band": null,
+"window_taken": 0,
+"window_chances": 0,
+"clear_chances": 0,
+"clear_taken": 0,
+"pp_pulls": 0,
+"instances": 1,
+"expected_pull_pct": 0.5,
+"band": [
+0.047,
+0.953
+],
+"last3": "",
 "flags": [
 "RISKY: <5 clean chances"
 ]
@@ -349,10 +349,10 @@
 "clear_taken": 2,
 "pp_pulls": 0,
 "instances": 15,
-"expected_pull_pct": 0.5723,
+"expected_pull_pct": 0.4782,
 "band": [
-0.403,
-0.742
+0.204,
+0.752
 ],
 "last3": "-P-",
 "flags": [
@@ -374,10 +374,10 @@
 "clear_taken": 2,
 "pp_pulls": 0,
 "instances": 21,
-"expected_pull_pct": 0.4669,
+"expected_pull_pct": 0.3353,
 "band": [
-0.284,
-0.65
+0.11,
+0.56
 ],
 "last3": "P--",
 "flags": []

@@ -7,46 +7,46 @@
   "flat_coach": false,
   "markets": {
    "p_lead1": {
-    "bias": 0.0497,
-    "skill": 0.088,
+    "bias": 0.0754,
+    "skill": 0.079,
     "bad_deciles": 1,
     "base": 0.559,
-    "roi": 0.204,
+    "roi": 0.279,
     "roi_ci": [
-     -0.06,
-     0.47
+     -0.006,
+     0.568
     ],
-    "p_gt0": 0.94
+    "p_gt0": 0.974
    },
    "p_total1": {
-    "bias": -0.0352,
-    "skill": 0.151,
+    "bias": -0.0082,
+    "skill": 0.165,
     "bad_deciles": 0,
     "base": 0.621,
-    "roi": 0.018,
+    "roi": 0.065,
     "roi_ci": [
-     -0.183,
-     0.213
+     -0.147,
+     0.273
     ],
-    "p_gt0": 0.565
+    "p_gt0": 0.728
    },
    "p_total2": {
-    "bias": -0.0003,
-    "skill": 0.087,
+    "bias": 0.007,
+    "skill": 0.088,
     "bad_deciles": 0,
     "base": 0.279
    },
    "p_marg4": {
-    "bias": 0.0475,
-    "skill": 0.04,
-    "bad_deciles": 1,
+    "bias": 0.071,
+    "skill": 0.029,
+    "bad_deciles": 2,
     "base": 0.403,
-    "roi": 0.224,
+    "roi": 0.319,
     "roi_ci": [
-     -0.119,
-     0.588
+     -0.053,
+     0.718
     ],
-    "p_gt0": 0.899
+    "p_gt0": 0.958
    }
   },
   "design": "forward",
@@ -62,46 +62,46 @@
   "flat_coach": false,
   "markets": {
    "p_lead1": {
-    "bias": -0.1019,
-    "skill": 0.067,
-    "bad_deciles": 2,
+    "bias": -0.0674,
+    "skill": 0.097,
+    "bad_deciles": 1,
     "base": 0.476,
-    "roi": -0.123,
+    "roi": -0.061,
     "roi_ci": [
-     -0.368,
-     0.163
+     -0.327,
+     0.247
     ],
-    "p_gt0": 0.183
+    "p_gt0": 0.341
    },
    "p_total1": {
-    "bias": -0.1193,
-    "skill": 0.085,
-    "bad_deciles": 2,
+    "bias": -0.0837,
+    "skill": 0.122,
+    "bad_deciles": 1,
     "base": 0.58,
-    "roi": -0.115,
+    "roi": -0.062,
     "roi_ci": [
-     -0.321,
-     0.103
+     -0.283,
+     0.171
     ],
-    "p_gt0": 0.158
+    "p_gt0": 0.305
    },
    "p_total2": {
-    "bias": -0.0112,
-    "skill": 0.133,
+    "bias": -0.0037,
+    "skill": 0.135,
     "bad_deciles": 0,
     "base": 0.276
    },
    "p_marg4": {
-    "bias": -0.1024,
-    "skill": -0.005,
-    "bad_deciles": 1,
+    "bias": -0.0686,
+    "skill": 0.021,
+    "bad_deciles": 0,
     "base": 0.343,
-    "roi": -0.173,
+    "roi": -0.098,
     "roi_ci": [
-     -0.474,
-     0.15
+     -0.428,
+     0.259
     ],
-    "p_gt0": 0.143
+    "p_gt0": 0.278
    }
   },
   "design": "forward",
@@ -118,46 +118,46 @@
   "flat_coach": false,
   "markets": {
    "p_lead1": {
-    "bias": 0.0697,
-    "skill": 0.036,
-    "bad_deciles": 0,
+    "bias": 0.0902,
+    "skill": 0.028,
+    "bad_deciles": 2,
     "base": 0.651,
-    "roi": 0.256,
+    "roi": 0.306,
     "roi_ci": [
-     -0.011,
-     0.529
+     0.027,
+     0.591
     ],
-    "p_gt0": 0.972
+    "p_gt0": 0.985
    },
    "p_total1": {
-    "bias": 0.069,
-    "skill": 0.077,
-    "bad_deciles": 1,
+    "bias": 0.0902,
+    "skill": 0.06,
+    "bad_deciles": 2,
     "base": 0.771,
-    "roi": 0.222,
+    "roi": 0.265,
     "roi_ci": [
-     0.009,
-     0.422
+     0.044,
+     0.472
     ],
-    "p_gt0": 0.979
+    "p_gt0": 0.989
    },
    "p_total2": {
-    "bias": 0.1448,
-    "skill": 0.004,
-    "bad_deciles": 5,
+    "bias": 0.1495,
+    "skill": -0.004,
+    "bad_deciles": 6,
     "base": 0.442
    },
    "p_marg4": {
-    "bias": -0.0468,
-    "skill": 0.005,
+    "bias": -0.0262,
+    "skill": 0.022,
     "bad_deciles": 0,
     "base": 0.401,
-    "roi": -0.0,
+    "roi": 0.044,
     "roi_ci": [
-     -0.365,
-     0.366
+     -0.337,
+     0.425
     ],
-    "p_gt0": 0.497
+    "p_gt0": 0.592
    }
   },
   "design": "forward",

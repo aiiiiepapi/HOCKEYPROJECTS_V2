@@ -17,6 +17,7 @@ prediction; Seb heard the numbers and ruled for the fast fade — rule 0b
 satisfied).
 """
 import math
+import os
 from datetime import date as _date
 
 CAL_HL_MONTHS = 12.0
@@ -72,9 +73,16 @@ def posterior(seq, A, B, asof=None):
     return (kw + a_e) / tot if tot > 0 else mu
 
 
-def posterior_detail(seq, A, B, asof=None):
-    """(mean, kw, nw, a_eff, b_eff) — for uncertainty bands."""
+def posterior_detail(seq, A, B, asof=None, mode=None):
+    """(mean, kw, nw, a_eff, b_eff) — for uncertainty bands.
+    RULING 50: under the default no-anchor mode the 'prior' counts are the
+    neutral Jeffreys half-chances, NOT league-derived pseudo-chances — the
+    bands stay honest without smuggling the league average back in."""
     kw, nw = _weights(seq, asof)
+    if (mode or os.environ.get("HP_ESTIMATOR", DEFAULT_MODE)) != "incumbent":
+        a_e = b_e = JEFFREYS
+        tot = nw + a_e + b_e
+        return (kw + a_e) / tot, kw, nw, a_e, b_e
     mu, S = A / (A + B), A + B
     s_eff = _anchor_strength(seq, S)
     a_e, b_e = mu * s_eff, (1 - mu) * s_eff
@@ -162,11 +170,19 @@ def posterior_sheet(seq, asof=None, window_season=None):
 #               mean (a pricer must return a number; the SHEET prints NO-BET,
 #               which has no pricing analogue — see ruling 49's stated
 #               expectation that this config degrades)
-import os
+
+# RULING 50 (Seb, 2026-08-08): "dont want league average anywhere, pointless."
+# The league anchor is REMOVED from production pricing, not just sheets. The
+# re-exams (docs/ESTIMATOR_REEXAM_2026-08-08.md) found no config measurably
+# better OR worse than the incumbent on paired skill bootstrap, so this costs
+# nothing measurable and satisfies the principle. NOTE the 'window' mode is
+# NOT the ruled config: it falls back to the league mean for coaches with no
+# window chances, which reintroduces the very number this ruling bans.
+DEFAULT_MODE = "noanchor"
 
 
 def posterior_mode(seq, A, B, asof=None, mode=None):
-    mode = mode or os.environ.get("HP_ESTIMATOR", "incumbent")
+    mode = mode or os.environ.get("HP_ESTIMATOR", DEFAULT_MODE)
     if mode == "incumbent":
         return posterior(seq, A, B, asof)
     if mode == "noanchor":

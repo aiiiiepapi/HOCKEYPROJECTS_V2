@@ -19,11 +19,11 @@ Teams = last-seen bench; off-season coaching changes NOT applied — September r
 | Niklas Eriksson | Örebro HK | **12%** | 0%-29% | 0/4 | 1/7 | --- | 0 | 17:43 P3 (2:17 left) | NO-BET(<40, rule 28) |
 | Thomas Berglund | Luleå HF | **7%** | 0%-19% | 0/7 | 0/14 | --- | 1 | n/a (no recent EV pulls) | NO-BET(<40, rule 28) |
 | Jörgen Jönsson | Färjestad BK | **NO DATA** | — | 0/0 | 2/2 | PP | 1 | n/a (no recent EV pulls) | HOT FORM (28b: manual review), RISKY: <3 season chances (ruling 44), NO DATA = NO-BET (ruling 44) |
-| Cam Abbott | Färjestad BK | **NO DATA** | — | 0/0 | 2/6 | -PP | 2 | n/a (no recent EV pulls) | HOT FORM (28b: manual review), RISKY: <3 season chances (ruling 44), NO DATA = NO-BET (ruling 44) |
-| Tommy Samuelsson | Timrå IK | **NO DATA** | — | 0/0 | 1/3 | --P | 1 | n/a (no recent EV pulls) | HOT FORM (28b: manual review), RISKY: <3 season chances (ruling 44), NO DATA = NO-BET (ruling 44) |
 | Dan Tangnes | Rögle BK | **NO DATA** | — | 0/0 | 0/0 | — | 0 | n/a (no recent EV pulls) | RISKY: <3 season chances (ruling 44), NO DATA = NO-BET (ruling 44) |
 | Nicklas Rahm | HV 71 | **NO DATA** | — | 0/0 | 0/0 | — | 0 | n/a (no recent EV pulls) | RISKY: <3 season chances (ruling 44), NO DATA = NO-BET (ruling 44) |
 | Christer Olsson | Färjestad BK | **NO DATA** | — | 0/0 | 0/0 | — | 1 | n/a (no recent EV pulls) | RISKY: <3 season chances (ruling 44), NO DATA = NO-BET (ruling 44) |
+| Cam Abbott | Färjestad BK | **NO DATA** | — | 0/0 | 2/6 | -PP | 2 | n/a (no recent EV pulls) | HOT FORM (28b: manual review), RISKY: <3 season chances (ruling 44), NO DATA = NO-BET (ruling 44) |
+| Tommy Samuelsson | Timrå IK | **NO DATA** | — | 0/0 | 1/3 | --P | 1 | n/a (no recent EV pulls) | HOT FORM (28b: manual review), RISKY: <3 season chances (ruling 44), NO DATA = NO-BET (ruling 44) |
 
 Active coaches: 17. Sheet estimator = coach record ONLY, no league average (ruling 44), season window w/ Jan-1 bridge (ruling 44b; career = context, never blended); league clean take rate 23% is context, not an input.
 
@@ -31,22 +31,22 @@ Active coaches: 17. Sheet estimator = coach record ONLY, no league average (ruli
 
 | Coach | Team | Expected % | Career clean | Last seen |
 |---|---|---|---|---|
-| Mikko Manner | Brynäs IF | NO DATA | 4/7 | 2023-03-09 |
 | Johan Davidsson | HV 71 | NO DATA | 1/1 | 2023-10-26 |
-| Klas Östman | Linköping HC | NO DATA | 2/5 | 2024-11-23 |
+| Mikko Manner | Brynäs IF | NO DATA | 4/7 | 2023-03-09 |
 | Mattias Karlin | MoDo Hockey | NO DATA | 3/5 | 2025-03-11 |
-| Roger Hansson | Rögle BK | NO DATA | 1/2 | 2025-02-13 |
-| Charles Berglund | Leksands IF | NO DATA | 1/2 | 2025-03-11 |
+| Klas Östman | Linköping HC | NO DATA | 2/5 | 2024-11-23 |
 | Antti Alamäki | Luleå HF | NO DATA | 0/0 | 2022-12-28 |
 | Pelle Prestberg | Färjestad BK | NO DATA | 0/0 | 2023-01-26 |
 | Pierre Johnsson | Skellefteå AIK | NO DATA | 0/0 | 2025-02-11 |
 | Andreas Falk | Skellefteå AIK | NO DATA | 0/0 | 2024-11-23 |
 | Jeff Jakobs | Linköping HC | NO DATA | 0/0 | 2024-12-26 |
+| Roger Hansson | Rögle BK | NO DATA | 1/2 | 2025-02-13 |
+| Charles Berglund | Leksands IF | NO DATA | 1/2 | 2025-03-11 |
 | Mikael Karlberg | Leksands IF | NO DATA | 0/1 | 2025-03-08 |
 | Anders Karlsson | Linköping HC | NO DATA | 2/6 | 2025-03-01 |
 | Thomas Mitell | Färjestad BK | NO DATA | 0/2 | 2025-03-04 |
 | Olli Jokinen | Timrå IK | NO DATA | 0/2 | 2025-03-08 |
 | Tomas Montén | HV 71 | NO DATA | 0/2 | 2023-10-19 |
 | Martin Filander | IK Oskarshamn | NO DATA | 1/8 | 2024-03-07 |
-| Johan Lindbom | HV 71 | NO DATA | 0/4 | 2024-03-12 |
 | Roger Rönnberg | Frölunda HC | NO DATA | 0/6 | 2025-03-04 |
+| Johan Lindbom | HV 71 | NO DATA | 0/4 | 2024-03-12 |

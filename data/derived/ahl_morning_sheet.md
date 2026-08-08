@@ -37,9 +37,9 @@ Teams = last-seen bench; off-season coaching changes NOT applied — September r
 | Geordie Kinnear | CLT | **11%** | 0%-29% | 0/4 | 2/11 | --- | 0 | n/a (no recent EV pulls) | NO-BET(<40, rule 28) |
 | Derek King | HER | **11%** | 0%-28% | 0/4 | 0/4 | --- | 0 | n/a (no recent EV pulls) | NO-BET(<40, rule 28) |
 | Manny Malhotra | ABB | **10%** | 0%-26% | 0/5 | 4/9 | --- | 3 | 16:56 P3 (3:03 left) | NO-BET(<40, rule 28) |
+| Dan Watson | GR | **NO DATA** | — | 0/0 | 2/3 | PP- | 0 | 17:51 P3 (2:09 left) | HOT FORM (28b: manual review), RISKY: <3 season chances (ruling 44), NO DATA = NO-BET (ruling 44) |
 | Andrew Lord | ONT | **NO DATA** | — | 0/0 | 0/0 | — | 0 | n/a (no recent EV pulls) | RISKY: <3 season chances (ruling 44), NO DATA = NO-BET (ruling 44) |
 | Spiros Anastas | CHI | **NO DATA** | — | 0/0 | 0/0 | — | 0 | n/a (no recent EV pulls) | RISKY: <3 season chances (ruling 44), NO DATA = NO-BET (ruling 44) |
-| Dan Watson | GR | **NO DATA** | — | 0/0 | 2/3 | PP- | 0 | 17:51 P3 (2:09 left) | HOT FORM (28b: manual review), RISKY: <3 season chances (ruling 44), NO DATA = NO-BET (ruling 44) |
 | Derek Laxdal | CV | **NO DATA** | — | 0/0 | 1/2 | P- | 1 | 15:36 P3 (4:24 left) | RISKY: <3 season chances (ruling 44), NO DATA = NO-BET (ruling 44) |
 | Steve Konowalchuk | SPR | **NO DATA** | — | 0/0 | 0/2 | -- | 2 | n/a (no recent EV pulls) | RISKY: <3 season chances (ruling 44), NO DATA = NO-BET (ruling 44) |
 
@@ -64,8 +64,8 @@ Active coaches: 35. Sheet estimator = coach record ONLY, no league average (ruli
 | Aaron Schneekloth | COL | NO DATA | 7/8 | 2025-04-19 |
 | Mitch Love | CGY | NO DATA | 1/1 | 2023-04-14 |
 | Kris Knoblauch | HFD | NO DATA | 3/4 | 2023-10-28 |
-| Brock Sheahan | CHI | NO DATA | 3/4 | 2023-04-11 |
 | J.D. Forrest | WBS | NO DATA | 6/8 | 2024-04-14 |
+| Brock Sheahan | CHI | NO DATA | 3/4 | 2023-04-11 |
 | Marco Sturm | ONT | NO DATA | 4/6 | 2025-04-11 |
 | Todd Nelson | HER | NO DATA | 4/6 | 2025-04-12 |
 | Jeremy Colliton | ABB | NO DATA | 3/4 | 2024-03-16 |
@@ -74,9 +74,9 @@ Active coaches: 35. Sheet estimator = coach record ONLY, no league average (ruli
 | Jean-François Houle | LAV | NO DATA | 3/4 | 2024-03-30 |
 | Brett McLean | IA | NO DATA | 3/5 | 2025-04-16 |
 | Dan Bylsma | CV | NO DATA | 1/2 | 2024-04-21 |
-| Roy Sommer | SD | NO DATA | 1/3 | 2023-04-15 |
-| Anders Sorensen | RFD | NO DATA | 3/6 | 2024-11-17 |
 | Ian Laperriere | LV | NO DATA | 5/11 | 2025-03-22 |
+| Anders Sorensen | RFD | NO DATA | 3/6 | 2024-11-17 |
+| Roy Sommer | SD | NO DATA | 1/3 | 2023-04-15 |
 | Rick Kowalsky | BRI | NO DATA | 2/8 | 2025-04-18 |
 | Ben Simon | GR | NO DATA | 1/5 | 2023-04-15 |
 | Steve Smith | HFD | NO DATA | 0/4 | 2024-04-07 |

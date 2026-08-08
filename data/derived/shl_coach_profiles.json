@@ -44,57 +44,12 @@
 "clear_taken": 2,
 "pp_pulls": 1,
 "instances": 29,
-"expected_pull_pct": 0.7395,
+"expected_pull_pct": 0.8309,
 "band": [
-0.457,
+0.59,
 1.0
 ],
 "last3": "PP",
-"flags": [
-"RISKY: <5 clean chances"
-]
-},
-{
-"coach": "Mikko Manner",
-"team": "Bryn\u00e4s IF",
-"last_seen": "2023-03-09",
-"sheet_pct": null,
-"sheet_band": null,
-"window_taken": 0,
-"window_chances": 0,
-"clear_chances": 7,
-"clear_taken": 4,
-"pp_pulls": 2,
-"instances": 20,
-"expected_pull_pct": 0.4991,
-"band": [
-0.276,
-0.722
-],
-"last3": "-P-",
-"flags": []
-},
-{
-"coach": "Johan Hedberg",
-"team": "Leksands IF",
-"last_seen": "2026-03-14",
-"sheet_pct": 0.6469,
-"sheet_band": [
-0.367,
-0.927
-],
-"window_taken": 2,
-"window_chances": 3,
-"clear_chances": 3,
-"clear_taken": 2,
-"pp_pulls": 0,
-"instances": 29,
-"expected_pull_pct": 0.4555,
-"band": [
-0.21,
-0.7
-],
-"last3": "-PP",
 "flags": [
 "RISKY: <5 clean chances"
 ]
@@ -111,10 +66,10 @@
 "clear_taken": 1,
 "pp_pulls": 0,
 "instances": 1,
-"expected_pull_pct": 0.4221,
+"expected_pull_pct": 0.75,
 "band": [
-0.139,
-0.705
+0.43,
+1.0
 ],
 "last3": "P",
 "flags": [
@@ -122,86 +77,48 @@
 ]
 },
 {
-"coach": "Klas \u00d6stman",
-"team": "Link\u00f6ping HC",
-"last_seen": "2024-11-23",
-"sheet_pct": null,
-"sheet_band": null,
-"window_taken": 0,
-"window_chances": 0,
-"clear_chances": 5,
-"clear_taken": 2,
-"pp_pulls": 0,
-"instances": 41,
-"expected_pull_pct": 0.4076,
-"band": [
-0.161,
-0.655
-],
-"last3": "P-P",
-"flags": []
-},
-{
-"coach": "Mattias Karlin",
-"team": "MoDo Hockey",
-"last_seen": "2025-03-11",
-"sheet_pct": null,
-"sheet_band": null,
-"window_taken": 0,
-"window_chances": 0,
-"clear_chances": 5,
-"clear_taken": 3,
-"pp_pulls": 0,
-"instances": 33,
-"expected_pull_pct": 0.405,
-"band": [
-0.148,
-0.662
-],
-"last3": "-P-",
-"flags": []
-},
-{
-"coach": "Anton Blomqvist",
-"team": "HV 71",
-"last_seen": "2026-03-10",
-"sheet_pct": 0.807,
+"coach": "Johan Hedberg",
+"team": "Leksands IF",
+"last_seen": "2026-03-14",
+"sheet_pct": 0.6469,
 "sheet_band": [
-0.54,
-1.0
+0.367,
+0.927
 ],
 "window_taken": 2,
-"window_chances": 2,
-"clear_chances": 6,
+"window_chances": 3,
+"clear_chances": 3,
 "clear_taken": 2,
-"pp_pulls": 1,
-"instances": 26,
-"expected_pull_pct": 0.3949,
+"pp_pulls": 0,
+"instances": 29,
+"expected_pull_pct": 0.6471,
 "band": [
-0.149,
-0.641
+0.367,
+0.927
 ],
 "last3": "-PP",
-"flags": []
+"flags": [
+"RISKY: <5 clean chances"
+]
 },
 {
-"coach": "Cam Abbott",
-"team": "F\u00e4rjestad BK",
-"last_seen": "2026-02-21",
+"coach": "Mikko Manner",
+"team": "Bryn\u00e4s IF",
+"last_seen": "2023-03-09",
 "sheet_pct": null,
 "sheet_band": null,
 "window_taken": 0,
 "window_chances": 0,
-"clear_chances": 6,
-"clear_taken": 2,
+"clear_chances": 7,
+"clear_taken": 4,
 "pp_pulls": 2,
-"instances": 23,
-"expected_pull_pct": 0.3874,
+"instances": 20,
+"expected_pull_pct": 0.5449,
 "band": [
-0.152,
-0.623
+0.32,
+0.77
 ],
-"last3": "-PP",
+"last3": "-P-",
 "flags": []
 },
 {
@@ -219,10 +136,10 @@
 "clear_taken": 1,
 "pp_pulls": 0,
 "instances": 13,
-"expected_pull_pct": 0.3464,
+"expected_pull_pct": 0.5219,
 "band": [
-0.095,
-0.598
+0.197,
+0.847
 ],
 "last3": "-P",
 "flags": [
@@ -230,70 +147,44 @@
 ]
 },
 {
-"coach": "Roger Hansson",
-"team": "R\u00f6gle BK",
-"last_seen": "2025-02-13",
-"sheet_pct": null,
-"sheet_band": null,
-"window_taken": 0,
-"window_chances": 0,
-"clear_chances": 2,
-"clear_taken": 1,
-"pp_pulls": 0,
-"instances": 15,
-"expected_pull_pct": 0.3057,
-"band": [
-0.06,
-0.551
-],
-"last3": "P-",
-"flags": [
-"RISKY: <5 clean chances"
-]
-},
-{
-"coach": "Tommy Samuelsson",
-"team": "Timr\u00e5 IK",
-"last_seen": "2026-03-10",
-"sheet_pct": null,
-"sheet_band": null,
-"window_taken": 0,
-"window_chances": 0,
-"clear_chances": 3,
-"clear_taken": 1,
-"pp_pulls": 1,
-"instances": 29,
-"expected_pull_pct": 0.2925,
-"band": [
-0.069,
-0.516
-],
-"last3": "--P",
-"flags": [
-"RISKY: <5 clean chances"
-]
-},
-{
-"coach": "Charles Berglund",
-"team": "Leksands IF",
+"coach": "Mattias Karlin",
+"team": "MoDo Hockey",
 "last_seen": "2025-03-11",
 "sheet_pct": null,
 "sheet_band": null,
 "window_taken": 0,
 "window_chances": 0,
-"clear_chances": 2,
-"clear_taken": 1,
+"clear_chances": 5,
+"clear_taken": 3,
 "pp_pulls": 0,
-"instances": 12,
-"expected_pull_pct": 0.2841,
+"instances": 33,
+"expected_pull_pct": 0.5093,
 "band": [
-0.041,
-0.528
+0.226,
+0.793
 ],
-"last3": "P-",
-"flags": [
-"RISKY: <5 clean chances"
-]
+"last3": "-P-",
+"flags": []
+},
+{
+"coach": "Klas \u00d6stman",
+"team": "Link\u00f6ping HC",
+"last_seen": "2024-11-23",
+"sheet_pct": null,
+"sheet_band": null,
+"window_taken": 0,
+"window_chances": 0,
+"clear_chances": 5,
+"clear_taken": 2,
+"pp_pulls": 0,
+"instances": 41,
+"expected_pull_pct": 0.5011,
+"band": [
+0.23,
+0.772
+],
+"last3": "P-P",
+"flags": []
 },
 {
 "coach": "Antti Alam\u00e4ki",
@@ -307,10 +198,10 @@
 "clear_taken": 0,
 "pp_pulls": 0,
 "instances": 1,
-"expected_pull_pct": 0.2295,
+"expected_pull_pct": 0.5,
 "band": [
-0.0,
-0.499
+0.047,
+0.953
 ],
 "last3": "",
 "flags": [
@@ -329,10 +220,10 @@
 "clear_taken": 0,
 "pp_pulls": 0,
 "instances": 1,
-"expected_pull_pct": 0.2295,
+"expected_pull_pct": 0.5,
 "band": [
-0.0,
-0.499
+0.047,
+0.953
 ],
 "last3": "",
 "flags": [
@@ -351,10 +242,10 @@
 "clear_taken": 0,
 "pp_pulls": 0,
 "instances": 9,
-"expected_pull_pct": 0.2295,
+"expected_pull_pct": 0.5,
 "band": [
-0.0,
-0.499
+0.047,
+0.953
 ],
 "last3": "",
 "flags": [
@@ -373,10 +264,10 @@
 "clear_taken": 0,
 "pp_pulls": 0,
 "instances": 1,
-"expected_pull_pct": 0.2295,
+"expected_pull_pct": 0.5,
 "band": [
-0.0,
-0.499
+0.047,
+0.953
 ],
 "last3": "",
 "flags": [
@@ -395,10 +286,10 @@
 "clear_taken": 0,
 "pp_pulls": 0,
 "instances": 1,
-"expected_pull_pct": 0.2295,
+"expected_pull_pct": 0.5,
 "band": [
-0.0,
-0.499
+0.047,
+0.953
 ],
 "last3": "",
 "flags": [
@@ -417,10 +308,10 @@
 "clear_taken": 0,
 "pp_pulls": 0,
 "instances": 8,
-"expected_pull_pct": 0.2295,
+"expected_pull_pct": 0.5,
 "band": [
-0.0,
-0.499
+0.047,
+0.953
 ],
 "last3": "",
 "flags": [
@@ -439,10 +330,10 @@
 "clear_taken": 0,
 "pp_pulls": 0,
 "instances": 2,
-"expected_pull_pct": 0.2295,
+"expected_pull_pct": 0.5,
 "band": [
-0.0,
-0.499
+0.047,
+0.953
 ],
 "last3": "",
 "flags": [
@@ -461,12 +352,121 @@
 "clear_taken": 0,
 "pp_pulls": 1,
 "instances": 2,
-"expected_pull_pct": 0.2295,
+"expected_pull_pct": 0.5,
 "band": [
-0.0,
-0.499
+0.047,
+0.953
 ],
 "last3": "",
+"flags": [
+"RISKY: <5 clean chances"
+]
+},
+{
+"coach": "Anton Blomqvist",
+"team": "HV 71",
+"last_seen": "2026-03-10",
+"sheet_pct": 0.807,
+"sheet_band": [
+0.54,
+1.0
+],
+"window_taken": 2,
+"window_chances": 2,
+"clear_chances": 6,
+"clear_taken": 2,
+"pp_pulls": 1,
+"instances": 26,
+"expected_pull_pct": 0.4659,
+"band": [
+0.205,
+0.727
+],
+"last3": "-PP",
+"flags": []
+},
+{
+"coach": "Roger Hansson",
+"team": "R\u00f6gle BK",
+"last_seen": "2025-02-13",
+"sheet_pct": null,
+"sheet_band": null,
+"window_taken": 0,
+"window_chances": 0,
+"clear_chances": 2,
+"clear_taken": 1,
+"pp_pulls": 0,
+"instances": 15,
+"expected_pull_pct": 0.4584,
+"band": [
+0.13,
+0.787
+],
+"last3": "P-",
+"flags": [
+"RISKY: <5 clean chances"
+]
+},
+{
+"coach": "Cam Abbott",
+"team": "F\u00e4rjestad BK",
+"last_seen": "2026-02-21",
+"sheet_pct": null,
+"sheet_band": null,
+"window_taken": 0,
+"window_chances": 0,
+"clear_chances": 6,
+"clear_taken": 2,
+"pp_pulls": 2,
+"instances": 23,
+"expected_pull_pct": 0.4507,
+"band": [
+0.201,
+0.7
+],
+"last3": "-PP",
+"flags": []
+},
+{
+"coach": "Charles Berglund",
+"team": "Leksands IF",
+"last_seen": "2025-03-11",
+"sheet_pct": null,
+"sheet_band": null,
+"window_taken": 0,
+"window_chances": 0,
+"clear_chances": 2,
+"clear_taken": 1,
+"pp_pulls": 0,
+"instances": 12,
+"expected_pull_pct": 0.4287,
+"band": [
+0.096,
+0.761
+],
+"last3": "P-",
+"flags": [
+"RISKY: <5 clean chances"
+]
+},
+{
+"coach": "Tommy Samuelsson",
+"team": "Timr\u00e5 IK",
+"last_seen": "2026-03-10",
+"sheet_pct": null,
+"sheet_band": null,
+"window_taken": 0,
+"window_chances": 0,
+"clear_chances": 3,
+"clear_taken": 1,
+"pp_pulls": 1,
+"instances": 29,
+"expected_pull_pct": 0.3975,
+"band": [
+0.111,
+0.684
+],
+"last3": "--P",
 "flags": [
 "RISKY: <5 clean chances"
 ]
@@ -483,10 +483,10 @@
 "clear_taken": 0,
 "pp_pulls": 0,
 "instances": 5,
-"expected_pull_pct": 0.1721,
+"expected_pull_pct": 0.25,
 "band": [
 0.0,
-0.388
+0.57
 ],
 "last3": "-",
 "flags": [
@@ -508,10 +508,10 @@
 "clear_taken": 0,
 "pp_pulls": 0,
 "instances": 9,
-"expected_pull_pct": 0.1721,
+"expected_pull_pct": 0.25,
 "band": [
 0.0,
-0.388
+0.57
 ],
 "last3": "-",
 "flags": [
@@ -530,38 +530,13 @@
 "clear_taken": 2,
 "pp_pulls": 0,
 "instances": 25,
-"expected_pull_pct": 0.1539,
+"expected_pull_pct": 0.2094,
 "band": [
 0.0,
-0.348
+0.438
 ],
 "last3": "---",
 "flags": []
-},
-{
-"coach": "Niklas G\u00e4llstedt",
-"team": "Bryn\u00e4s IF",
-"last_seen": "2026-03-12",
-"sheet_pct": 0.29,
-"sheet_band": [
-0.0,
-0.642
-],
-"window_taken": 0,
-"window_chances": 1,
-"clear_chances": 2,
-"clear_taken": 0,
-"pp_pulls": 1,
-"instances": 17,
-"expected_pull_pct": 0.1469,
-"band": [
-0.0,
-0.337
-],
-"last3": "--",
-"flags": [
-"RISKY: <5 clean chances"
-]
 },
 {
 "coach": "Bj\u00f6rn Hellkvist",
@@ -578,12 +553,37 @@
 "clear_taken": 1,
 "pp_pulls": 0,
 "instances": 32,
-"expected_pull_pct": 0.1457,
+"expected_pull_pct": 0.1951,
 "band": [
 0.0,
-0.338
+0.445
 ],
 "last3": "---",
+"flags": [
+"RISKY: <5 clean chances"
+]
+},
+{
+"coach": "Niklas G\u00e4llstedt",
+"team": "Bryn\u00e4s IF",
+"last_seen": "2026-03-12",
+"sheet_pct": 0.29,
+"sheet_band": [
+0.0,
+0.642
+],
+"window_taken": 0,
+"window_chances": 1,
+"clear_chances": 2,
+"clear_taken": 0,
+"pp_pulls": 1,
+"instances": 17,
+"expected_pull_pct": 0.1861,
+"band": [
+0.0,
+0.446
+],
+"last3": "--",
 "flags": [
 "RISKY: <5 clean chances"
 ]
@@ -600,10 +600,10 @@
 "clear_taken": 0,
 "pp_pulls": 0,
 "instances": 28,
-"expected_pull_pct": 0.1436,
+"expected_pull_pct": 0.179,
 "band": [
 0.0,
-0.33
+0.431
 ],
 "last3": "--",
 "flags": [
@@ -622,10 +622,10 @@
 "clear_taken": 0,
 "pp_pulls": 0,
 "instances": 11,
-"expected_pull_pct": 0.1394,
+"expected_pull_pct": 0.1701,
 "band": [
 0.0,
-0.321
+0.412
 ],
 "last3": "--",
 "flags": [
@@ -644,10 +644,10 @@
 "clear_taken": 0,
 "pp_pulls": 0,
 "instances": 6,
-"expected_pull_pct": 0.1382,
+"expected_pull_pct": 0.1676,
 "band": [
 0.0,
-0.319
+0.407
 ],
 "last3": "--",
 "flags": [
@@ -669,10 +669,10 @@
 "clear_taken": 0,
 "pp_pulls": 0,
 "instances": 12,
-"expected_pull_pct": 0.138,
+"expected_pull_pct": 0.1672,
 "band": [
 0.0,
-0.318
+0.406
 ],
 "last3": "--",
 "flags": [
@@ -694,10 +694,10 @@
 "clear_taken": 1,
 "pp_pulls": 0,
 "instances": 28,
-"expected_pull_pct": 0.1192,
+"expected_pull_pct": 0.16,
 "band": [
 0.0,
-0.273
+0.336
 ],
 "last3": "---",
 "flags": []
@@ -717,10 +717,10 @@
 "clear_taken": 0,
 "pp_pulls": 0,
 "instances": 23,
-"expected_pull_pct": 0.1157,
+"expected_pull_pct": 0.1495,
 "band": [
 0.0,
-0.287
+0.369
 ],
 "last3": "---",
 "flags": [
@@ -739,52 +739,10 @@
 "clear_taken": 1,
 "pp_pulls": 0,
 "instances": 45,
-"expected_pull_pct": 0.0994,
+"expected_pull_pct": 0.1426,
 "band": [
 0.0,
-0.24
-],
-"last3": "---",
-"flags": []
-},
-{
-"coach": "Johan Lindbom",
-"team": "HV 71",
-"last_seen": "2024-03-12",
-"sheet_pct": null,
-"sheet_band": null,
-"window_taken": 0,
-"window_chances": 0,
-"clear_chances": 4,
-"clear_taken": 0,
-"pp_pulls": 0,
-"instances": 14,
-"expected_pull_pct": 0.0887,
-"band": [
-0.0,
-0.225
-],
-"last3": "---",
-"flags": [
-"RISKY: <5 clean chances"
-]
-},
-{
-"coach": "Roger R\u00f6nnberg",
-"team": "Fr\u00f6lunda HC",
-"last_seen": "2025-03-04",
-"sheet_pct": null,
-"sheet_band": null,
-"window_taken": 0,
-"window_chances": 0,
-"clear_chances": 6,
-"clear_taken": 0,
-"pp_pulls": 0,
-"instances": 28,
-"expected_pull_pct": 0.0673,
-"band": [
-0.0,
-0.197
+0.307
 ],
 "last3": "---",
 "flags": []
@@ -804,13 +762,55 @@
 "clear_taken": 1,
 "pp_pulls": 2,
 "instances": 64,
-"expected_pull_pct": 0.0563,
+"expected_pull_pct": 0.1173,
 "band": [
 0.0,
-0.17
+0.268
 ],
 "last3": "---",
 "flags": []
+},
+{
+"coach": "Roger R\u00f6nnberg",
+"team": "Fr\u00f6lunda HC",
+"last_seen": "2025-03-04",
+"sheet_pct": null,
+"sheet_band": null,
+"window_taken": 0,
+"window_chances": 0,
+"clear_chances": 6,
+"clear_taken": 0,
+"pp_pulls": 0,
+"instances": 28,
+"expected_pull_pct": 0.1084,
+"band": [
+0.0,
+0.276
+],
+"last3": "---",
+"flags": []
+},
+{
+"coach": "Johan Lindbom",
+"team": "HV 71",
+"last_seen": "2024-03-12",
+"sheet_pct": null,
+"sheet_band": null,
+"window_taken": 0,
+"window_chances": 0,
+"clear_chances": 4,
+"clear_taken": 0,
+"pp_pulls": 0,
+"instances": 14,
+"expected_pull_pct": 0.1046,
+"band": [
+0.0,
+0.268
+],
+"last3": "---",
+"flags": [
+"RISKY: <5 clean chances"
+]
 },
 {
 "coach": "Thomas Berglund",
@@ -827,10 +827,10 @@
 "clear_taken": 0,
 "pp_pulls": 1,
 "instances": 38,
-"expected_pull_pct": 0.0063,
+"expected_pull_pct": 0.0534,
 "band": [
 0.0,
-0.039
+0.143
 ],
 "last3": "---",
 "flags": []

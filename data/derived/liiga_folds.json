@@ -7,46 +7,46 @@
   "flat_coach": false,
   "markets": {
    "p_lead1": {
-    "bias": 0.0194,
-    "skill": 0.125,
+    "bias": -0.0039,
+    "skill": 0.105,
     "bad_deciles": 0,
     "base": 0.602,
-    "roi": 0.134,
+    "roi": 0.097,
     "roi_ci": [
-     -0.099,
-     0.361
+     -0.127,
+     0.317
     ],
-    "p_gt0": 0.881
+    "p_gt0": 0.81
    },
    "p_total1": {
-    "bias": 0.0414,
-    "skill": 0.135,
+    "bias": 0.0183,
+    "skill": 0.125,
     "bad_deciles": 0,
     "base": 0.719,
-    "roi": 0.176,
+    "roi": 0.138,
     "roi_ci": [
-     -0.009,
-     0.355
+     -0.04,
+     0.309
     ],
-    "p_gt0": 0.971
+    "p_gt0": 0.939
    },
    "p_total2": {
-    "bias": 0.0953,
-    "skill": 0.112,
+    "bias": 0.0897,
+    "skill": 0.118,
     "bad_deciles": 2,
     "base": 0.391
    },
    "p_marg4": {
-    "bias": -0.0755,
-    "skill": -0.016,
-    "bad_deciles": 2,
+    "bias": -0.0982,
+    "skill": -0.064,
+    "bad_deciles": 5,
     "base": 0.348,
-    "roi": -0.079,
+    "roi": -0.108,
     "roi_ci": [
-     -0.366,
-     0.212
+     -0.388,
+     0.173
     ],
-    "p_gt0": 0.274
+    "p_gt0": 0.207
    }
   },
   "design": "forward",
@@ -63,46 +63,46 @@
   "flat_coach": false,
   "markets": {
    "p_lead1": {
-    "bias": -0.0214,
-    "skill": 0.065,
+    "bias": -0.0125,
+    "skill": 0.072,
     "bad_deciles": 0,
     "base": 0.562,
-    "roi": 0.073,
+    "roi": 0.09,
     "roi_ci": [
-     -0.131,
-     0.272
+     -0.117,
+     0.293
     ],
-    "p_gt0": 0.755
+    "p_gt0": 0.799
    },
    "p_total1": {
-    "bias": -0.041,
-    "skill": 0.076,
-    "bad_deciles": 0,
+    "bias": -0.0321,
+    "skill": 0.089,
+    "bad_deciles": 1,
     "base": 0.655,
-    "roi": 0.041,
+    "roi": 0.054,
     "roi_ci": [
-     -0.123,
-     0.207
+     -0.113,
+     0.221
     ],
-    "p_gt0": 0.668
+    "p_gt0": 0.716
    },
    "p_total2": {
-    "bias": -0.0186,
-    "skill": 0.061,
+    "bias": -0.0165,
+    "skill": 0.062,
     "bad_deciles": 0,
     "base": 0.288
    },
    "p_marg4": {
-    "bias": 0.0181,
-    "skill": 0.027,
-    "bad_deciles": 0,
+    "bias": 0.0266,
+    "skill": 0.032,
+    "bad_deciles": 1,
     "base": 0.438,
-    "roi": 0.152,
+    "roi": 0.175,
     "roi_ci": [
-     -0.132,
-     0.42
+     -0.117,
+     0.451
     ],
-    "p_gt0": 0.841
+    "p_gt0": 0.876
    }
   },
   "design": "forward",

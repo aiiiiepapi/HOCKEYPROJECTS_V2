@@ -32,11 +32,11 @@ Active coaches: 14. Sheet estimator = coach record ONLY, no league average (ruli
 | Sakari Salmela | RoKi | NO DATA | 5/5 | 2024-09-21 |
 | Tero Määttä | Jokerit | NO DATA | 3/3 | 2023-12-02 |
 | Sami Ryhänen | KeuPa HT | NO DATA | 2/2 | 2023-10-06 |
-| Tuukka Poikonen | Hermes | NO DATA | 4/5 | 2024-02-09 |
 | Hermanni Vidman | TUTO Hockey | NO DATA | 1/1 | 2023-03-04 |
 | Kari Martikainen | Ketterä | NO DATA | 1/1 | 2024-02-03 |
 | Igors Lebedevs | HK Zemgale | NO DATA | 1/1 | 2023-01-03 |
 | Toni Ruotsalainen | IPK | NO DATA | 1/1 | 2025-03-01 |
+| Tuukka Poikonen | Hermes | NO DATA | 4/5 | 2024-02-09 |
 | Miikka Kuusela | KOOVEE | NO DATA | 6/9 | 2024-02-09 |
 | Simo Liukka | Hermes | NO DATA | 2/3 | 2024-10-18 |
 | Tomas Westerlund | K-Espoo | NO DATA | 0/0 | 2024-02-10 |
@@ -45,11 +45,11 @@ Active coaches: 14. Sheet estimator = coach record ONLY, no league average (ruli
 | Kasper Vuorinen | JoKP | NO DATA | 1/2 | 2025-01-18 |
 | Hannes Hyvönen | Peliitat | NO DATA | 2/4 | 2023-03-11 |
 | Niko Härkönen | IPK | NO DATA | 2/5 | 2023-03-17 |
+| Christer Nylund | FPS | NO DATA | 2/5 | 2023-12-09 |
+| Pasi Räsänen | Hokki | NO DATA | 2/5 | 2023-12-30 |
 | Tuomo Ropo | Ketterä | NO DATA | 0/1 | 2023-03-08 |
 | Matias Lehtonen | RoKi | NO DATA | 0/1 | 2023-03-07 |
 | Mikko Rämö | JoKP | NO DATA | 0/1 | 2025-02-25 |
-| Christer Nylund | FPS | NO DATA | 2/5 | 2023-12-09 |
 | Artis Abols | HK Zemgale | NO DATA | 0/2 | 2023-03-03 |
-| Pasi Räsänen | Hokki | NO DATA | 2/5 | 2023-12-30 |
 | Antti Halonen | Hokki | NO DATA | 0/4 | 2025-03-01 |
 | Asko Rantanen | FPS | NO DATA | 0/5 | 2024-03-02 |

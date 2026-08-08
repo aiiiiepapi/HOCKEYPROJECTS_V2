@@ -568,3 +568,41 @@ NOTE: new coach layer is PROVISIONAL until blind re-validation (next block).
     a pricer has nothing to price. The realistic candidate is therefore
     "no anchor, full career, calendar decay, Jeffreys stabilizer"; both
     are tested. NOTHING SHIPS until Seb sees the numbers.
+
+50. **NO LEAGUE AVERAGE ANYWHERE (Seb, 2026-08-08: "dont want league
+    average anywhere, pointless").** Overrides the Manager's
+    keep-the-split recommendation, ruled after hearing the exam numbers
+    (ruling 49 / docs/ESTIMATOR_REEXAM_2026-08-08.md: no config
+    measurably better OR worse on paired skill bootstrap). The league
+    anchor is REMOVED from production pricing as well as sheets. Config
+    = "noanchor": Jeffreys 0.5/0.5 stabilizer, full career, calendar
+    decay (ruling 32). The 44/44b season-window variant is NOT the ruled
+    config — it falls back to the league mean for no-window coaches,
+    reintroducing the banned number; it was also the one variant the
+    exams found significantly WORSE (Mestis leaderTT, P(better)=0.011).
+    Implementation (rule 15): prior_fit.DEFAULT_MODE = "noanchor";
+    posterior_mode + posterior_detail both routed, so uncertainty bands
+    use Jeffreys counts and not league pseudo-chances. HP_ESTIMATOR=
+    incumbent still reproduces every pre-50 number for audit.
+    MEASURED EFFECT (all rebuilt, gates 34 green):
+    - NHL flagship: ROI@10%EV leaderTT +24.6% -> +24.1%, CI floor
+      +10.0% -> +9.7%, P(>edge) 0.975 -> 0.974 (gate bar 0.94). Brier
+      SKILL IMPROVED on all four markets (lead1 +0.035->+0.045, total1
+      +0.069->+0.081, total2 +0.081->+0.083, marg4 +0.005->+0.013).
+      This also settles the "why re-run NHL" question Seb raised: the
+      answer arrived free with the ruling — removing the anchor helps
+      the flagship slightly.
+    - Liiga pooled folds: leaderTT +9.3% P 0.878, total +9.0% P 0.933.
+      Mestis: leaderTT +18.7% P 0.986, total +8.8% P 0.914, -3.5 +11.3%
+      P 0.847. Ruling-47 paper-trade status unaffected.
+    - Every coach's PRICING number moved (sheets unchanged - already
+      anchor-free since 44). Ledger take rates, clear counts and all
+      structural gates unchanged.
+    CONSEQUENCE FLAGGED FOR SEB (rule 0b, no guard added without his
+    word): thin records now swing further in PRICING, where the sheet's
+    RISKY/NO-DATA guards do not exist. A 1/1 coach prints 75% (was 64%
+    Liiga), a 0/1 prints 25% (was 48% Mestis). Exposure: Liiga 12 of 33
+    coaches have <=2 clear chances (145/653 instances), Mestis 18 of 39
+    (125/617). The fold evidence above already prices this behaviour and
+    holds up, so nothing is broken - but a minimum-chances guard on the
+    bet card is available if Seb wants one.
