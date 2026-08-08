@@ -116,8 +116,12 @@ def parse_sheet(path):
                 continue
             de = _col(r, PEN_COLS, "debut")
             fi = _col(r, PEN_COLS, "fin")
+            # num 'E' = Équipe (bench penalty, no jersey — e.g. 68850 NICE
+            # 11:35 E 2 JEU 11:34-13:34; 22 sheets in 2025-26 have the class).
+            # Served by a skater: the Début/Fin box window is real. num=None.
             team["penalties"].append({
-                "t": _secs(h[0]), "num": int(n[0]), "mins": int(mi[0]),
+                "t": _secs(h[0]), "num": int(n[0]) if n[0] != "E" else None,
+                "mins": int(mi[0]),
                 "debut": _secs(de[0]) if de else _secs(h[0]),
                 "fin": _secs(fi[0]) if fi else _secs(h[0]) + int(mi[0]) * 60})
         out["teams"].append(team)
