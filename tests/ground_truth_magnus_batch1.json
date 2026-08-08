@@ -1,0 +1,152 @@
+{
+ "_meta": {
+  "batch": 1,
+  "source": "magnus-data-lake 2025-26 (v1 repo), hand-traced from raw coordinate dumps 2026-08-08 BEFORE the fix-round parses were pinned",
+  "note": "empty tuples absolute seconds; 3-tuples ending 'synthetic' = pull evidence with unusable timing (multi_pull_ambiguous)",
+  "classes": "TOI-typo repair (68882), GK layout variant (68861/68987), bench penalty E (68850), relief-goalie interleave (69059), missed-pull recovery (68988), OT sudden death (69034), shootout 65:00 (68862), multi-pull ambiguity (68841/68987), EN-anchor fit (68842/68861)"
+ },
+ "games": {
+  "68882": {
+   "home": "GAP",
+   "away": "ANGERS",
+   "empty": {
+    "home": [],
+    "away": []
+   },
+   "flags_require": [
+    "toi_repaired_B"
+   ],
+   "trace": "ANGERS #29 sheet TOI 90:42 (impossible; sum 7200>3900) -> repaired to 30:42 by #37's 30:42 entry; 30:42+29:18=60:00 exact; goalie swap, net never empty. The lake's 1842s 'pull' was this typo."
+  },
+  "68861": {
+   "home": "CHAMONIX",
+   "away": "BORDEAUX",
+   "empty": {
+    "home": [],
+    "away": [
+     [
+      3508,
+      3585
+     ]
+    ]
+   },
+   "trace": "BORDEAUX #34 58:43=3523, off 77s; EN goal against at 59:45=3585; 3585-77=3508. Stretched GK layout (jersey x~226) that the old column bands dropped."
+  },
+  "68987": {
+   "home": "CERGY-PONTOISE",
+   "away": "BORDEAUX",
+   "empty": {
+    "home": [],
+    "away": [
+     [
+      3599,
+      3600,
+      "synthetic"
+     ]
+    ]
+   },
+   "flags_require": [
+    "multi_pull_ambiguous_B"
+   ],
+   "trace": "BORDEAUX #32 59:10=3550, off 50s; TWO J-confirmed empty moments: own goal 29:27=1767 with no GB in J+ (dp/early 6-on-5) AND EN against 58:00=3480 -> split unknowable, timing unusable. Lake timed it as one 50s pull, ignoring 1767."
+  },
+  "68850": {
+   "home": "NICE",
+   "away": "ANGLET",
+   "coach_home": "MARGERIT Pascal",
+   "empty": {
+    "home": [
+     [
+      3510,
+      3600
+     ]
+    ],
+    "away": []
+   },
+   "pen_pin": {
+    "side": "away",
+    "begin": 694,
+    "end": 814,
+    "num": null
+   },
+   "trace": "Bench penalty row 11:35 num 'E' (equipe) 2min JEU 11:34-13:34 -> num None, window real. NICE off 90s to horn. Sheet names MARGERIT as principal (LEVESQUE is adjoint - the web preview confused them)."
+  },
+  "69059": {
+   "home": "BORDEAUX",
+   "away": "AMIENS",
+   "empty": {
+    "home": [],
+    "away": []
+   },
+   "flags_forbid": [
+    "toi_repaired_A",
+    "toi_repaired_B"
+   ],
+   "trace": "Relief-goalie interleave: #32 start 0:00 TOI 58:52 + #31 start 8:56 TOI 1:08 = exactly 60:00 (TOI is per-goalie TOTAL, start is first entry). Repair must NOT fire below 3900; the unconditional version fabricated an 868s pull."
+  },
+  "68988": {
+   "home": "CHAMONIX",
+   "away": "BRIANÇON",
+   "empty": {
+    "home": [
+     [
+      3432,
+      3600
+     ]
+    ],
+    "away": []
+   },
+   "trace": "CHAMONIX stints 0-23:04 + 23:04-57:12 = 3432, off 168s to horn while trailing 3-6; a real down-3 pull the lake session's ledger dropped entirely."
+  },
+  "69034": {
+   "home": "BORDEAUX",
+   "away": "BRIANÇON",
+   "empty": {
+    "home": [],
+    "away": []
+   },
+   "trace": "OT sudden death: both GK 62:57=3777; sheet's winning-goal clock 63:31=3811 disagrees with TOI by 34s (sheet self-inconsistency, scorekeeper class) - either way no net was empty; the lake's 34s/34s phantom double-pull came from using the goal clock as game length."
+  },
+  "68841": {
+   "home": "MARSEILLE",
+   "away": "ANGLET",
+   "empty": {
+    "home": [],
+    "away": [
+     [
+      3599,
+      3600,
+      "synthetic"
+     ]
+    ]
+   },
+   "flags_require": [
+    "multi_pull_ambiguous_B"
+   ],
+   "trace": "ANGLET #62 56:58=3418, off 182s; EN against at 55:55=3355 AND own goal at 59:30=3570 with empty net (J+ no GB) -> at least two episodes, split unknowable. Lake's single timed 182s row overstates."
+  },
+  "68842": {
+   "home": "CERGY-PONTOISE",
+   "away": "AMIENS",
+   "empty": {
+    "home": [],
+    "away": [
+     [
+      3426,
+      3546
+     ]
+    ]
+   },
+   "trace": "AMIENS #1 58:00=3480, off 120s; EN goals against at 58:22=3502 and 59:06=3546; single fit ends at LAST anchor 3546, must cover 3502: 3546-120=3426 < 3502 OK."
+  },
+  "68862": {
+   "home": "BRIANÇON",
+   "away": "GAP",
+   "empty": {
+    "home": [],
+    "away": []
+   },
+   "trace": "Shootout game: both GK exactly 65:00=3900 (full 5:00 OT), decider credited as a 65:00 'goal' - shootout marker, no empty net all game."
+  }
+ }
+}

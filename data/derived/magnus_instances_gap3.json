@@ -1,0 +1,6953 @@
+[
+{
+"opened_secs": 0,
+"creating_t": null,
+"trailing": "away",
+"closed_secs": 169,
+"closed_reason": "widened",
+"closing_t": 2569,
+"n": 1,
+"trailing_name": "GAP",
+"goals_in_window": [
+{
+"secs": 169,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68838",
+"date": "2025-09-12",
+"home": "ROUEN",
+"away": "GAP",
+"coach": "BASILE Antoine Lucien",
+"leader_coach": "SZEKELY Csaba",
+"penalties_p3": [
+[
+465,
+585
+],
+[
+577,
+878
+]
+],
+"_box": [
+[
+465,
+585
+],
+[
+577,
+878
+]
+]
+},
+{
+"opened_secs": 784,
+"creating_t": 3184,
+"trailing": "away",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 2,
+"trailing_name": "GAP",
+"goals_in_window": [],
+"pull_segments": [
+{
+"empty_from": 1179,
+"empty_until": 1200,
+"end_context": "horn"
+}
+],
+"pulled": true,
+"pull_evidence_secs": 1179,
+"pull_classification": "pull",
+"season": "2026",
+"game_id": "68838",
+"date": "2025-09-12",
+"home": "ROUEN",
+"away": "GAP",
+"coach": "BASILE Antoine Lucien",
+"leader_coach": "SZEKELY Csaba",
+"penalties_p3": [
+[
+465,
+585
+],
+[
+577,
+878
+]
+],
+"_box": [
+[
+465,
+585
+],
+[
+577,
+878
+]
+]
+},
+{
+"opened_secs": 239,
+"creating_t": 2639,
+"trailing": "away",
+"closed_secs": 718,
+"closed_reason": "narrowed",
+"closing_t": 3118,
+"n": 1,
+"trailing_name": "AMIENS",
+"goals_in_window": [
+{
+"secs": 718,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68842",
+"date": "2025-09-13",
+"home": "CERGY-PONTOISE",
+"away": "AMIENS",
+"coach": "BUYSSE Henry Corentin",
+"leader_coach": "DA COSTA Kevin",
+"penalties_p3": [],
+"_box": []
+},
+{
+"opened_secs": 1146,
+"creating_t": 3546,
+"trailing": "away",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 2,
+"trailing_name": "AMIENS",
+"goals_in_window": [],
+"carryover_empty_at_open": true,
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68842",
+"date": "2025-09-13",
+"home": "CERGY-PONTOISE",
+"away": "AMIENS",
+"coach": "BUYSSE Henry Corentin",
+"leader_coach": "DA COSTA Kevin",
+"penalties_p3": [],
+"_box": []
+},
+{
+"opened_secs": 0,
+"creating_t": null,
+"trailing": "away",
+"closed_secs": 652,
+"closed_reason": "narrowed",
+"closing_t": 3052,
+"n": 1,
+"trailing_name": "BORDEAUX",
+"goals_in_window": [
+{
+"secs": 652,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68843",
+"date": "2025-09-12",
+"home": "GRENOBLE",
+"away": "BORDEAUX",
+"coach": "DIMET Olivier",
+"leader_coach": "TERGLAV Edo",
+"penalties_p3": [
+[
+167,
+287
+],
+[
+590,
+710
+],
+[
+710,
+814
+]
+],
+"_box": [
+[
+167,
+287
+],
+[
+590,
+710
+],
+[
+710,
+814
+]
+]
+},
+{
+"opened_secs": 814,
+"creating_t": 3214,
+"trailing": "away",
+"closed_secs": 1193,
+"closed_reason": "widened",
+"closing_t": 3593,
+"n": 2,
+"trailing_name": "BORDEAUX",
+"goals_in_window": [
+{
+"secs": 1193,
+"by_trailer": false,
+"en": true,
+"closes": true
+}
+],
+"pull_segments": [
+{
+"empty_from": 1091,
+"empty_until": 1193,
+"end_context": "ate_ENG"
+}
+],
+"pulled": true,
+"pull_evidence_secs": 1091,
+"pull_classification": "pull",
+"season": "2026",
+"game_id": "68843",
+"date": "2025-09-12",
+"home": "GRENOBLE",
+"away": "BORDEAUX",
+"coach": "DIMET Olivier",
+"leader_coach": "TERGLAV Edo",
+"penalties_p3": [
+[
+167,
+287
+],
+[
+590,
+710
+],
+[
+710,
+814
+]
+],
+"_box": [
+[
+167,
+287
+],
+[
+590,
+710
+],
+[
+710,
+814
+]
+]
+},
+{
+"opened_secs": 1186,
+"creating_t": 3586,
+"trailing": "away",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "GRENOBLE",
+"goals_in_window": [],
+"pull_segments": [
+{
+"empty_from": 1199,
+"empty_until": 1200,
+"synthetic": true,
+"end_context": "horn"
+}
+],
+"pulled": true,
+"pull_evidence_secs": 1199,
+"synthetic_pull_evidence": true,
+"pull_classification": "pull",
+"season": "2026",
+"game_id": "68844",
+"date": "2025-09-16",
+"home": "ANGERS",
+"away": "GRENOBLE",
+"coach": "TERGLAV Edo",
+"leader_coach": "PAREDES Jonathan",
+"penalties_p3": [
+[
+351,
+471
+],
+[
+699,
+750
+],
+[
+750,
+1050
+],
+[
+699,
+999
+]
+],
+"_box": [
+[
+351,
+471
+],
+[
+699,
+750
+],
+[
+750,
+1050
+],
+[
+699,
+999
+]
+]
+},
+{
+"opened_secs": 738,
+"creating_t": 3138,
+"trailing": "home",
+"closed_secs": 1106,
+"closed_reason": "narrowed",
+"closing_t": 3506,
+"n": 1,
+"trailing_name": "BORDEAUX",
+"goals_in_window": [
+{
+"secs": 1106,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68847",
+"date": "2025-09-16",
+"home": "BORDEAUX",
+"away": "ROUEN",
+"coach": "DIMET Olivier",
+"leader_coach": "SZEKELY Csaba",
+"penalties_p3": [
+[
+587,
+707
+],
+[
+632,
+752
+],
+[
+1014,
+1134
+],
+[
+1135,
+1200
+]
+],
+"_box": [
+[
+587,
+707
+],
+[
+632,
+752
+],
+[
+1014,
+1134
+],
+[
+1135,
+1200
+]
+]
+},
+{
+"opened_secs": 1133,
+"creating_t": 3533,
+"trailing": "home",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "ANGLET",
+"goals_in_window": [],
+"carryover_empty_at_open": true,
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68848",
+"date": "2025-09-16",
+"home": "ANGLET",
+"away": "CERGY-PONTOISE",
+"coach": "BARIN St\u00e9phane",
+"leader_coach": "DA COSTA Kevin",
+"penalties_p3": [],
+"_box": []
+},
+{
+"opened_secs": 1003,
+"creating_t": 3403,
+"trailing": "home",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "GAP",
+"goals_in_window": [],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68849",
+"date": "2025-09-16",
+"home": "GAP",
+"away": "MARSEILLE",
+"coach": "BASILE Antoine Lucien",
+"leader_coach": "TARDIF Luc",
+"penalties_p3": [
+[
+0,
+44
+]
+],
+"_box": [
+[
+0,
+44
+]
+]
+},
+{
+"opened_secs": 1100,
+"creating_t": 3500,
+"trailing": "home",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "BORDEAUX",
+"goals_in_window": [],
+"carryover_empty_at_open": true,
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68853",
+"date": "2025-09-19",
+"home": "BORDEAUX",
+"away": "ANGERS",
+"coach": "DIMET Olivier",
+"leader_coach": "PAREDES Jonathan",
+"penalties_p3": [
+[
+201,
+321
+],
+[
+832,
+952
+],
+[
+1037,
+1157
+]
+],
+"_box": [
+[
+201,
+321
+],
+[
+832,
+952
+],
+[
+1037,
+1157
+]
+]
+},
+{
+"opened_secs": 1124,
+"creating_t": 3524,
+"trailing": "away",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "MARSEILLE",
+"goals_in_window": [],
+"carryover_empty_at_open": true,
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68854",
+"date": "2025-09-19",
+"home": "ROUEN",
+"away": "MARSEILLE",
+"coach": "TARDIF Luc",
+"leader_coach": "SZEKELY Csaba",
+"penalties_p3": [],
+"_box": []
+},
+{
+"opened_secs": 631,
+"creating_t": 3031,
+"trailing": "home",
+"closed_secs": 1079,
+"closed_reason": "narrowed",
+"closing_t": 3479,
+"n": 1,
+"trailing_name": "CERGY-PONTOISE",
+"goals_in_window": [
+{
+"secs": 1079,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68855",
+"date": "2025-09-19",
+"home": "CERGY-PONTOISE",
+"away": "GAP",
+"coach": "DA COSTA Kevin",
+"leader_coach": "BASILE Antoine Lucien",
+"penalties_p3": [
+[
+424,
+544
+]
+],
+"_box": [
+[
+424,
+544
+]
+]
+},
+{
+"opened_secs": 1097,
+"creating_t": 3497,
+"trailing": "away",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "ROUEN",
+"goals_in_window": [],
+"carryover_empty_at_open": true,
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68856",
+"date": "2025-09-23",
+"home": "ANGERS",
+"away": "ROUEN",
+"coach": "SZEKELY Csaba",
+"leader_coach": "PAREDES Jonathan",
+"penalties_p3": [
+[
+162,
+282
+],
+[
+1143,
+1200
+]
+],
+"_box": [
+[
+162,
+282
+],
+[
+1143,
+1200
+]
+]
+},
+{
+"opened_secs": 163,
+"creating_t": 2563,
+"trailing": "home",
+"closed_secs": 597,
+"closed_reason": "widened",
+"closing_t": 2997,
+"n": 1,
+"trailing_name": "AMIENS",
+"goals_in_window": [
+{
+"secs": 597,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68857",
+"date": "2025-09-23",
+"home": "AMIENS",
+"away": "GRENOBLE",
+"coach": "BUYSSE Henry Corentin",
+"leader_coach": "TERGLAV Edo",
+"penalties_p3": [
+[
+32,
+152
+],
+[
+1116,
+1161
+]
+],
+"_box": [
+[
+32,
+152
+],
+[
+1116,
+1161
+]
+]
+},
+{
+"opened_secs": 1185,
+"creating_t": 3585,
+"trailing": "away",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "BORDEAUX",
+"goals_in_window": [],
+"carryover_empty_at_open": true,
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68861",
+"date": "2025-09-23",
+"home": "CHAMONIX",
+"away": "BORDEAUX",
+"coach": "DIMET Olivier",
+"leader_coach": "BOGDANOV Anatoli",
+"penalties_p3": [
+[
+0,
+89
+],
+[
+1111,
+1200
+]
+],
+"_box": [
+[
+0,
+89
+],
+[
+1111,
+1200
+]
+]
+},
+{
+"opened_secs": 1130,
+"creating_t": 3530,
+"trailing": "away",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "CERGY-PONTOISE",
+"goals_in_window": [],
+"carryover_empty_at_open": true,
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68865",
+"date": "2025-09-26",
+"home": "ROUEN",
+"away": "CERGY-PONTOISE",
+"coach": "DA COSTA Kevin",
+"leader_coach": "SZEKELY Csaba",
+"penalties_p3": [],
+"_box": []
+},
+{
+"opened_secs": 968,
+"creating_t": 3368,
+"trailing": "away",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "MARSEILLE",
+"goals_in_window": [],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68866",
+"date": "2025-09-26",
+"home": "NICE",
+"away": "MARSEILLE",
+"coach": "TARDIF Luc",
+"leader_coach": "MARGERIT Pascal",
+"penalties_p3": [
+[
+312,
+432
+],
+[
+950,
+968
+],
+[
+1094,
+1214
+]
+],
+"_box": [
+[
+312,
+432
+],
+[
+950,
+968
+],
+[
+1094,
+1214
+]
+]
+},
+{
+"opened_secs": 0,
+"creating_t": null,
+"trailing": "home",
+"closed_secs": 582,
+"closed_reason": "widened",
+"closing_t": 2982,
+"n": 1,
+"trailing_name": "BORDEAUX",
+"goals_in_window": [
+{
+"secs": 582,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68867",
+"date": "2025-09-26",
+"home": "BORDEAUX",
+"away": "AMIENS",
+"coach": "DIMET Olivier",
+"leader_coach": "BUYSSE Henry Corentin",
+"penalties_p3": [
+[
+0,
+93
+],
+[
+1171,
+1200
+],
+[
+1171,
+1200
+]
+],
+"_box": [
+[
+0,
+93
+],
+[
+1171,
+1200
+],
+[
+1171,
+1200
+]
+]
+},
+{
+"opened_secs": 766,
+"creating_t": 3166,
+"trailing": "home",
+"closed_secs": 1006,
+"closed_reason": "widened",
+"closing_t": 3406,
+"n": 1,
+"trailing_name": "CHAMONIX",
+"goals_in_window": [
+{
+"secs": 1006,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68868",
+"date": "2025-09-30",
+"home": "CHAMONIX",
+"away": "ROUEN",
+"coach": "BOGDANOV Anatoli",
+"leader_coach": "SZEKELY Csaba",
+"penalties_p3": [
+[
+616,
+736
+]
+],
+"_box": [
+[
+616,
+736
+]
+]
+},
+{
+"opened_secs": 559,
+"creating_t": 2959,
+"trailing": "home",
+"closed_secs": 1096,
+"closed_reason": "widened",
+"closing_t": 3496,
+"n": 1,
+"trailing_name": "ANGLET",
+"goals_in_window": [
+{
+"secs": 1096,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68871",
+"date": "2025-09-30",
+"home": "ANGLET",
+"away": "BORDEAUX",
+"coach": "BARIN St\u00e9phane",
+"leader_coach": "DIMET Olivier",
+"penalties_p3": [
+[
+621,
+741
+],
+[
+923,
+1043
+]
+],
+"_box": [
+[
+621,
+741
+],
+[
+923,
+1043
+]
+]
+},
+{
+"opened_secs": 1098,
+"creating_t": 3498,
+"trailing": "home",
+"closed_secs": 1186,
+"closed_reason": "widened",
+"closing_t": 3586,
+"n": 1,
+"trailing_name": "CHAMONIX",
+"goals_in_window": [
+{
+"secs": 1186,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"carryover_empty_at_open": true,
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68876",
+"date": "2025-10-03",
+"home": "CHAMONIX",
+"away": "AMIENS",
+"coach": "BOGDANOV Anatoli",
+"leader_coach": "BUYSSE Henry Corentin",
+"penalties_p3": [],
+"_box": []
+},
+{
+"opened_secs": 1104,
+"creating_t": 3504,
+"trailing": "home",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "BORDEAUX",
+"goals_in_window": [],
+"carryover_empty_at_open": true,
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68879",
+"date": "2025-10-03",
+"home": "BORDEAUX",
+"away": "GAP",
+"coach": "DIMET Olivier",
+"leader_coach": "BASILE Antoine Lucien",
+"penalties_p3": [
+[
+476,
+596
+]
+],
+"_box": [
+[
+476,
+596
+]
+]
+},
+{
+"opened_secs": 309,
+"creating_t": 2709,
+"trailing": "home",
+"closed_secs": 584,
+"closed_reason": "narrowed",
+"closing_t": 2984,
+"n": 1,
+"trailing_name": "AMIENS",
+"goals_in_window": [
+{
+"secs": 584,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68880",
+"date": "2025-10-10",
+"home": "AMIENS",
+"away": "ROUEN",
+"coach": "BUYSSE Henry Corentin",
+"leader_coach": "SZEKELY Csaba",
+"penalties_p3": [],
+"_box": []
+},
+{
+"opened_secs": 307,
+"creating_t": 2707,
+"trailing": "away",
+"closed_secs": 920,
+"closed_reason": "narrowed",
+"closing_t": 3320,
+"n": 1,
+"trailing_name": "BRIAN\u00c7ON",
+"goals_in_window": [
+{
+"secs": 920,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68883",
+"date": "2025-10-10",
+"home": "NICE",
+"away": "BRIAN\u00c7ON",
+"coach": "BERGERON Pierre",
+"leader_coach": "MARGERIT Pascal",
+"penalties_p3": [
+[
+500,
+620
+],
+[
+661,
+781
+]
+],
+"_box": [
+[
+500,
+620
+],
+[
+661,
+781
+]
+]
+},
+{
+"opened_secs": 1024,
+"creating_t": 3424,
+"trailing": "away",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 2,
+"trailing_name": "BRIAN\u00c7ON",
+"goals_in_window": [],
+"carryover_empty_at_open": true,
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68883",
+"date": "2025-10-10",
+"home": "NICE",
+"away": "BRIAN\u00c7ON",
+"coach": "BERGERON Pierre",
+"leader_coach": "MARGERIT Pascal",
+"penalties_p3": [
+[
+500,
+620
+],
+[
+661,
+781
+]
+],
+"_box": [
+[
+500,
+620
+],
+[
+661,
+781
+]
+]
+},
+{
+"opened_secs": 0,
+"creating_t": null,
+"trailing": "away",
+"closed_secs": 863,
+"closed_reason": "narrowed",
+"closing_t": 3263,
+"n": 1,
+"trailing_name": "BORDEAUX",
+"goals_in_window": [
+{
+"secs": 863,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68884",
+"date": "2025-10-10",
+"home": "MARSEILLE",
+"away": "BORDEAUX",
+"coach": "DIMET Olivier",
+"leader_coach": "TARDIF Luc",
+"penalties_p3": [
+[
+0,
+90
+]
+],
+"_box": [
+[
+0,
+90
+]
+]
+},
+{
+"opened_secs": 1102,
+"creating_t": 3502,
+"trailing": "away",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 2,
+"trailing_name": "BORDEAUX",
+"goals_in_window": [],
+"carryover_empty_at_open": true,
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68884",
+"date": "2025-10-10",
+"home": "MARSEILLE",
+"away": "BORDEAUX",
+"coach": "DIMET Olivier",
+"leader_coach": "TARDIF Luc",
+"penalties_p3": [
+[
+0,
+90
+]
+],
+"_box": [
+[
+0,
+90
+]
+]
+},
+{
+"opened_secs": 83,
+"creating_t": 2483,
+"trailing": "away",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "BRIAN\u00c7ON",
+"goals_in_window": [],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68886",
+"date": "2025-10-12",
+"home": "ROUEN",
+"away": "BRIAN\u00c7ON",
+"coach": "BERGERON Pierre",
+"leader_coach": "SZEKELY Csaba",
+"penalties_p3": [],
+"_box": []
+},
+{
+"opened_secs": 0,
+"creating_t": null,
+"trailing": "away",
+"closed_secs": 977,
+"closed_reason": "narrowed",
+"closing_t": 3377,
+"n": 1,
+"trailing_name": "CERGY-PONTOISE",
+"goals_in_window": [
+{
+"secs": 977,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68890",
+"date": "2025-10-13",
+"home": "BORDEAUX",
+"away": "CERGY-PONTOISE",
+"coach": "DA COSTA Kevin",
+"leader_coach": "DIMET Olivier",
+"penalties_p3": [
+[
+695,
+815
+],
+[
+972,
+977
+]
+],
+"_box": [
+[
+695,
+815
+],
+[
+972,
+977
+]
+]
+},
+{
+"opened_secs": 1037,
+"creating_t": 3437,
+"trailing": "away",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 2,
+"trailing_name": "CERGY-PONTOISE",
+"goals_in_window": [],
+"pull_segments": [
+{
+"empty_from": 1199,
+"empty_until": 1200,
+"synthetic": true,
+"end_context": "horn"
+}
+],
+"pulled": true,
+"pull_evidence_secs": 1199,
+"synthetic_pull_evidence": true,
+"pull_classification": "pull",
+"season": "2026",
+"game_id": "68890",
+"date": "2025-10-13",
+"home": "BORDEAUX",
+"away": "CERGY-PONTOISE",
+"coach": "DA COSTA Kevin",
+"leader_coach": "DIMET Olivier",
+"penalties_p3": [
+[
+695,
+815
+],
+[
+972,
+977
+]
+],
+"_box": [
+[
+695,
+815
+],
+[
+972,
+977
+]
+]
+},
+{
+"opened_secs": 877,
+"creating_t": 3277,
+"trailing": "away",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "ROUEN",
+"goals_in_window": [],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68892",
+"date": "2025-10-17",
+"home": "ANGLET",
+"away": "ROUEN",
+"coach": "SZEKELY Csaba",
+"leader_coach": "BARIN St\u00e9phane",
+"penalties_p3": [
+[
+512,
+632
+],
+[
+765,
+877
+]
+],
+"_box": [
+[
+512,
+632
+],
+[
+765,
+877
+]
+]
+},
+{
+"opened_secs": 73,
+"creating_t": 2473,
+"trailing": "away",
+"closed_secs": 423,
+"closed_reason": "widened",
+"closing_t": 2823,
+"n": 1,
+"trailing_name": "CHAMONIX",
+"goals_in_window": [
+{
+"secs": 423,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68895",
+"date": "2025-10-17",
+"home": "MARSEILLE",
+"away": "CHAMONIX",
+"coach": "BOGDANOV Anatoli",
+"leader_coach": "TARDIF Luc",
+"penalties_p3": [
+[
+1185,
+1200
+]
+],
+"_box": [
+[
+1185,
+1200
+]
+]
+},
+{
+"opened_secs": 0,
+"creating_t": null,
+"trailing": "home",
+"closed_secs": 554,
+"closed_reason": "narrowed",
+"closing_t": 2954,
+"n": 1,
+"trailing_name": "CHAMONIX",
+"goals_in_window": [
+{
+"secs": 554,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68903",
+"date": "2026-02-21",
+"home": "CHAMONIX",
+"away": "CERGY-PONTOISE",
+"coach": "BOGDANOV Anatoli",
+"leader_coach": "DA COSTA Kevin",
+"penalties_p3": [
+[
+402,
+522
+],
+[
+778,
+884
+]
+],
+"_box": [
+[
+402,
+522
+],
+[
+778,
+884
+]
+]
+},
+{
+"opened_secs": 0,
+"creating_t": null,
+"trailing": "home",
+"closed_secs": 1156,
+"closed_reason": "narrowed",
+"closing_t": 3556,
+"n": 1,
+"trailing_name": "GRENOBLE",
+"goals_in_window": [
+{
+"secs": 1156,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [
+{
+"empty_from": 1088,
+"empty_until": 1156,
+"end_context": "scored_6v5"
+}
+],
+"pulled": true,
+"pull_evidence_secs": 1088,
+"pull_classification": "pull",
+"season": "2026",
+"game_id": "68904",
+"date": "2025-10-30",
+"home": "GRENOBLE",
+"away": "ROUEN",
+"coach": "TERGLAV Edo",
+"leader_coach": "SZEKELY Csaba",
+"penalties_p3": [
+[
+974,
+1094
+],
+[
+622,
+742
+]
+],
+"_box": [
+[
+974,
+1094
+],
+[
+622,
+742
+]
+]
+},
+{
+"opened_secs": 1191,
+"creating_t": 3591,
+"trailing": "home",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "BRIAN\u00c7ON",
+"goals_in_window": [],
+"carryover_empty_at_open": true,
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68907",
+"date": "2025-10-26",
+"home": "BRIAN\u00c7ON",
+"away": "BORDEAUX",
+"coach": "BERGERON Pierre",
+"leader_coach": "DIMET Olivier",
+"penalties_p3": [
+[
+1172,
+1292
+]
+],
+"_box": [
+[
+1172,
+1292
+]
+]
+},
+{
+"opened_secs": 0,
+"creating_t": null,
+"trailing": "away",
+"closed_secs": 992,
+"closed_reason": "widened",
+"closing_t": 3392,
+"n": 1,
+"trailing_name": "AMIENS",
+"goals_in_window": [
+{
+"secs": 992,
+"by_trailer": false,
+"en": true,
+"closes": true
+}
+],
+"pull_segments": [
+{
+"empty_from": 882,
+"empty_until": 992,
+"end_context": "ate_ENG"
+}
+],
+"pulled": true,
+"pull_evidence_secs": 882,
+"pull_classification": "pp_pull",
+"season": "2026",
+"game_id": "68908",
+"date": "2025-10-26",
+"home": "MARSEILLE",
+"away": "AMIENS",
+"coach": "RAYMOND BERGIN Kevin",
+"leader_coach": "TARDIF Luc",
+"penalties_p3": [
+[
+291,
+411
+],
+[
+781,
+901
+],
+[
+794,
+914
+]
+],
+"_box": [
+[
+291,
+411
+],
+[
+781,
+901
+],
+[
+794,
+914
+]
+]
+},
+{
+"opened_secs": 552,
+"creating_t": 2952,
+"trailing": "home",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "CERGY-PONTOISE",
+"goals_in_window": [],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68909",
+"date": "2025-10-26",
+"home": "CERGY-PONTOISE",
+"away": "CHAMONIX",
+"coach": "DA COSTA Kevin",
+"leader_coach": "BOGDANOV Anatoli",
+"penalties_p3": [
+[
+763,
+883
+]
+],
+"_box": [
+[
+763,
+883
+]
+]
+},
+{
+"opened_secs": 0,
+"creating_t": null,
+"trailing": "away",
+"closed_secs": 821,
+"closed_reason": "widened",
+"closing_t": 3221,
+"n": 1,
+"trailing_name": "ANGLET",
+"goals_in_window": [
+{
+"secs": 821,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68910",
+"date": "2025-10-28",
+"home": "ROUEN",
+"away": "ANGLET",
+"coach": "BARIN St\u00e9phane",
+"leader_coach": "SZEKELY Csaba",
+"penalties_p3": [
+[
+812,
+1200
+],
+[
+897,
+1017
+],
+[
+692,
+1200
+]
+],
+"_box": [
+[
+812,
+1200
+],
+[
+897,
+1017
+],
+[
+692,
+1200
+]
+]
+},
+{
+"opened_secs": 1112,
+"creating_t": 3512,
+"trailing": "away",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "GAP",
+"goals_in_window": [],
+"carryover_empty_at_open": true,
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68911",
+"date": "2025-10-28",
+"home": "AMIENS",
+"away": "GAP",
+"coach": "BASILE Antoine Lucien",
+"leader_coach": "RAYMOND BERGIN Kevin",
+"penalties_p3": [],
+"_box": []
+},
+{
+"opened_secs": 588,
+"creating_t": 2988,
+"trailing": "away",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "CERGY-PONTOISE",
+"goals_in_window": [],
+"pull_segments": [
+{
+"empty_from": 928,
+"empty_until": 1200,
+"end_context": "horn"
+}
+],
+"pulled": true,
+"pull_evidence_secs": 928,
+"pull_classification": "pull",
+"season": "2026",
+"game_id": "68914",
+"date": "2025-10-28",
+"home": "ANGERS",
+"away": "CERGY-PONTOISE",
+"coach": "DA COSTA Kevin",
+"leader_coach": "PAREDES Jonathan",
+"penalties_p3": [],
+"_box": []
+},
+{
+"opened_secs": 1182,
+"creating_t": 3582,
+"trailing": "home",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "NICE",
+"goals_in_window": [],
+"carryover_empty_at_open": true,
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68917",
+"date": "2025-10-26",
+"home": "NICE",
+"away": "GRENOBLE",
+"coach": "MARGERIT Pascal",
+"leader_coach": "TERGLAV Edo",
+"penalties_p3": [
+[
+1086,
+1206
+]
+],
+"_box": [
+[
+1086,
+1206
+]
+]
+},
+{
+"opened_secs": 0,
+"creating_t": null,
+"trailing": "away",
+"closed_secs": 168,
+"closed_reason": "widened",
+"closing_t": 2568,
+"n": 1,
+"trailing_name": "AMIENS",
+"goals_in_window": [
+{
+"secs": 168,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68922",
+"date": "2025-11-10",
+"home": "ROUEN",
+"away": "AMIENS",
+"coach": "RAYMOND BERGIN Kevin",
+"leader_coach": "SZEKELY Csaba",
+"penalties_p3": [
+[
+1118,
+1418
+]
+],
+"_box": [
+[
+1118,
+1418
+]
+]
+},
+{
+"opened_secs": 1199,
+"creating_t": 3599,
+"trailing": "home",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "BRIAN\u00c7ON",
+"goals_in_window": [],
+"carryover_empty_at_open": true,
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68925",
+"date": "2025-11-10",
+"home": "BRIAN\u00c7ON",
+"away": "NICE",
+"coach": "BERGERON Pierre",
+"leader_coach": "MARGERIT Pascal",
+"penalties_p3": [
+[
+0,
+3
+],
+[
+462,
+582
+],
+[
+1012,
+1132
+],
+[
+0,
+3
+],
+[
+0,
+70
+],
+[
+175,
+295
+],
+[
+462,
+582
+],
+[
+932,
+1052
+],
+[
+1012,
+1132
+]
+],
+"_box": [
+[
+0,
+3
+],
+[
+462,
+582
+],
+[
+1012,
+1132
+],
+[
+0,
+3
+],
+[
+0,
+70
+],
+[
+175,
+295
+],
+[
+462,
+582
+],
+[
+932,
+1052
+],
+[
+1012,
+1132
+]
+]
+},
+{
+"opened_secs": 1145,
+"creating_t": 3545,
+"trailing": "away",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "MARSEILLE",
+"goals_in_window": [],
+"carryover_empty_at_open": true,
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68926",
+"date": "2025-11-11",
+"home": "BORDEAUX",
+"away": "MARSEILLE",
+"coach": "TARDIF Luc",
+"leader_coach": "DIMET Olivier",
+"penalties_p3": [
+[
+501,
+621
+]
+],
+"_box": [
+[
+501,
+621
+]
+]
+},
+{
+"opened_secs": 1144,
+"creating_t": 3544,
+"trailing": "home",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "NICE",
+"goals_in_window": [],
+"carryover_empty_at_open": true,
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68928",
+"date": "2025-11-14",
+"home": "NICE",
+"away": "ROUEN",
+"coach": "MARGERIT Pascal",
+"leader_coach": "SZEKELY Csaba",
+"penalties_p3": [
+[
+223,
+343
+],
+[
+1045,
+1165
+],
+[
+1146,
+1266
+]
+],
+"_box": [
+[
+223,
+343
+],
+[
+1045,
+1165
+],
+[
+1146,
+1266
+]
+]
+},
+{
+"opened_secs": 0,
+"creating_t": null,
+"trailing": "home",
+"closed_secs": 934,
+"closed_reason": "widened",
+"closing_t": 3334,
+"n": 1,
+"trailing_name": "GAP",
+"goals_in_window": [
+{
+"secs": 934,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68932",
+"date": "2025-11-14",
+"home": "GAP",
+"away": "BORDEAUX",
+"coach": "BASILE Antoine Lucien",
+"leader_coach": "DIMET Olivier",
+"penalties_p3": [
+[
+723,
+843
+],
+[
+850,
+970
+]
+],
+"_box": [
+[
+723,
+843
+],
+[
+850,
+970
+]
+]
+},
+{
+"opened_secs": 0,
+"creating_t": null,
+"trailing": "away",
+"closed_secs": 993,
+"closed_reason": "widened",
+"closing_t": 3393,
+"n": 1,
+"trailing_name": "GRENOBLE",
+"goals_in_window": [
+{
+"secs": 993,
+"by_trailer": false,
+"en": true,
+"closes": true
+}
+],
+"pull_segments": [
+{
+"empty_from": 874,
+"empty_until": 993,
+"end_context": "ate_ENG"
+}
+],
+"pulled": true,
+"pull_evidence_secs": 874,
+"pull_classification": "pull",
+"season": "2026",
+"game_id": "68933",
+"date": "2025-11-14",
+"home": "MARSEILLE",
+"away": "GRENOBLE",
+"coach": "TERGLAV Edo",
+"leader_coach": "TARDIF Luc",
+"penalties_p3": [
+[
+975,
+1095
+],
+[
+27,
+147
+],
+[
+1027,
+1147
+]
+],
+"_box": [
+[
+975,
+1095
+],
+[
+27,
+147
+],
+[
+1027,
+1147
+]
+]
+},
+{
+"opened_secs": 0,
+"creating_t": null,
+"trailing": "away",
+"closed_secs": 134,
+"closed_reason": "widened",
+"closing_t": 2534,
+"n": 1,
+"trailing_name": "AMIENS",
+"goals_in_window": [
+{
+"secs": 134,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68935",
+"date": "2025-11-19",
+"home": "ANGERS",
+"away": "AMIENS",
+"coach": "RAYMOND BERGIN Kevin",
+"leader_coach": "PAREDES Jonathan",
+"penalties_p3": [
+[
+983,
+1103
+],
+[
+1158,
+1200
+]
+],
+"_box": [
+[
+983,
+1103
+],
+[
+1158,
+1200
+]
+]
+},
+{
+"opened_secs": 38,
+"creating_t": 2438,
+"trailing": "away",
+"closed_secs": 209,
+"closed_reason": "narrowed",
+"closing_t": 2609,
+"n": 1,
+"trailing_name": "ANGLET",
+"goals_in_window": [
+{
+"secs": 209,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68937",
+"date": "2025-11-19",
+"home": "BORDEAUX",
+"away": "ANGLET",
+"coach": "BARIN St\u00e9phane",
+"leader_coach": "DIMET Olivier",
+"penalties_p3": [],
+"_box": []
+},
+{
+"opened_secs": 1054,
+"creating_t": 3454,
+"trailing": "away",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 2,
+"trailing_name": "ANGLET",
+"goals_in_window": [],
+"carryover_empty_at_open": true,
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68937",
+"date": "2025-11-19",
+"home": "BORDEAUX",
+"away": "ANGLET",
+"coach": "BARIN St\u00e9phane",
+"leader_coach": "DIMET Olivier",
+"penalties_p3": [],
+"_box": []
+},
+{
+"opened_secs": 1094,
+"creating_t": 3494,
+"trailing": "home",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "CERGY-PONTOISE",
+"goals_in_window": [],
+"carryover_empty_at_open": true,
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68940",
+"date": "2025-11-21",
+"home": "CERGY-PONTOISE",
+"away": "ROUEN",
+"coach": "DA COSTA Kevin",
+"leader_coach": "SZEKELY Csaba",
+"penalties_p3": [
+[
+594,
+894
+],
+[
+975,
+1095
+]
+],
+"_box": [
+[
+594,
+894
+],
+[
+975,
+1095
+]
+]
+},
+{
+"opened_secs": 1015,
+"creating_t": 3415,
+"trailing": "home",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "AMIENS",
+"goals_in_window": [],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68944",
+"date": "2025-11-21",
+"home": "AMIENS",
+"away": "BORDEAUX",
+"coach": "RAYMOND BERGIN Kevin",
+"leader_coach": "DIMET Olivier",
+"penalties_p3": [],
+"_box": []
+},
+{
+"opened_secs": 35,
+"creating_t": 2435,
+"trailing": "away",
+"closed_secs": 518,
+"closed_reason": "narrowed",
+"closing_t": 2918,
+"n": 1,
+"trailing_name": "ANGERS",
+"goals_in_window": [
+{
+"secs": 518,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68946",
+"date": "2026-02-05",
+"home": "ROUEN",
+"away": "ANGERS",
+"coach": "PAREDES Jonathan",
+"leader_coach": "SZEKELY Csaba",
+"penalties_p3": [
+[
+827,
+947
+]
+],
+"_box": [
+[
+827,
+947
+]
+]
+},
+{
+"opened_secs": 567,
+"creating_t": 2967,
+"trailing": "away",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "GAP",
+"goals_in_window": [],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68949",
+"date": "2025-11-23",
+"home": "NICE",
+"away": "GAP",
+"coach": "BASILE Antoine Lucien",
+"leader_coach": "MARGERIT Pascal",
+"penalties_p3": [
+[
+0,
+68
+],
+[
+356,
+476
+],
+[
+654,
+774
+]
+],
+"_box": [
+[
+0,
+68
+],
+[
+356,
+476
+],
+[
+654,
+774
+]
+]
+},
+{
+"opened_secs": 389,
+"creating_t": 2789,
+"trailing": "away",
+"closed_secs": 1083,
+"closed_reason": "narrowed",
+"closing_t": 3483,
+"n": 1,
+"trailing_name": "BRIAN\u00c7ON",
+"goals_in_window": [
+{
+"secs": 1083,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [
+{
+"empty_from": 1004,
+"empty_until": 1083,
+"end_context": "scored_6v5"
+}
+],
+"pulled": true,
+"pull_evidence_secs": 1004,
+"pull_classification": "pull",
+"season": "2026",
+"game_id": "68953",
+"date": "2025-11-28",
+"home": "AMIENS",
+"away": "BRIAN\u00c7ON",
+"coach": "BERGERON Pierre",
+"leader_coach": "RAYMOND BERGIN Kevin",
+"penalties_p3": [
+[
+592,
+712
+],
+[
+670,
+790
+],
+[
+283,
+389
+],
+[
+320,
+440
+],
+[
+389,
+509
+],
+[
+592,
+712
+]
+],
+"_box": [
+[
+592,
+712
+],
+[
+670,
+790
+],
+[
+283,
+389
+],
+[
+320,
+440
+],
+[
+389,
+509
+],
+[
+592,
+712
+]
+]
+},
+{
+"opened_secs": 0,
+"creating_t": null,
+"trailing": "home",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "GAP",
+"goals_in_window": [],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68956",
+"date": "2025-11-28",
+"home": "GAP",
+"away": "CERGY-PONTOISE",
+"coach": "BASILE Antoine Lucien",
+"leader_coach": "DA COSTA Kevin",
+"penalties_p3": [],
+"_box": []
+},
+{
+"opened_secs": 1108,
+"creating_t": 3508,
+"trailing": "away",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "GAP",
+"goals_in_window": [],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68963",
+"date": "2025-11-30",
+"home": "MARSEILLE",
+"away": "GAP",
+"coach": "BASILE Antoine Lucien",
+"leader_coach": "TARDIF Luc",
+"penalties_p3": [
+[
+858,
+978
+],
+[
+1179,
+1299
+]
+],
+"_box": [
+[
+858,
+978
+],
+[
+1179,
+1299
+]
+]
+},
+{
+"opened_secs": 1061,
+"creating_t": 3461,
+"trailing": "home",
+"closed_secs": 1165,
+"closed_reason": "narrowed",
+"closing_t": 3565,
+"n": 1,
+"trailing_name": "ANGERS",
+"goals_in_window": [
+{
+"secs": 1165,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68971",
+"date": "2025-12-05",
+"home": "ANGERS",
+"away": "BRIAN\u00c7ON",
+"coach": "PAREDES Jonathan",
+"leader_coach": "BERGERON Pierre",
+"penalties_p3": [
+[
+0,
+33
+]
+],
+"_box": [
+[
+0,
+33
+]
+]
+},
+{
+"opened_secs": 0,
+"creating_t": null,
+"trailing": "away",
+"closed_secs": 514,
+"closed_reason": "widened",
+"closing_t": 2914,
+"n": 1,
+"trailing_name": "CHAMONIX",
+"goals_in_window": [
+{
+"secs": 514,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68972",
+"date": "2025-12-05",
+"home": "GRENOBLE",
+"away": "CHAMONIX",
+"coach": "BOGDANOV Anatoli",
+"leader_coach": "TERGLAV Edo",
+"penalties_p3": [
+[
+349,
+469
+],
+[
+944,
+1064
+]
+],
+"_box": [
+[
+349,
+469
+],
+[
+944,
+1064
+]
+]
+},
+{
+"opened_secs": 0,
+"creating_t": null,
+"trailing": "away",
+"closed_secs": 262,
+"closed_reason": "narrowed",
+"closing_t": 2662,
+"n": 1,
+"trailing_name": "GAP",
+"goals_in_window": [
+{
+"secs": 262,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68973",
+"date": "2025-12-05",
+"home": "NICE",
+"away": "GAP",
+"coach": "BASILE Antoine Lucien",
+"leader_coach": "MARGERIT Pascal",
+"penalties_p3": [
+[
+0,
+20
+],
+[
+0,
+98
+],
+[
+94,
+214
+],
+[
+1095,
+1164
+]
+],
+"_box": [
+[
+0,
+20
+],
+[
+0,
+98
+],
+[
+94,
+214
+],
+[
+1095,
+1164
+]
+]
+},
+{
+"opened_secs": 1164,
+"creating_t": 3564,
+"trailing": "away",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 2,
+"trailing_name": "GAP",
+"goals_in_window": [],
+"pull_segments": [
+{
+"empty_from": 1167,
+"empty_until": 1200,
+"end_context": "horn"
+}
+],
+"pulled": true,
+"pull_evidence_secs": 1167,
+"pull_classification": "pull",
+"season": "2026",
+"game_id": "68973",
+"date": "2025-12-05",
+"home": "NICE",
+"away": "GAP",
+"coach": "BASILE Antoine Lucien",
+"leader_coach": "MARGERIT Pascal",
+"penalties_p3": [
+[
+0,
+20
+],
+[
+0,
+98
+],
+[
+94,
+214
+],
+[
+1095,
+1164
+]
+],
+"_box": [
+[
+0,
+20
+],
+[
+0,
+98
+],
+[
+94,
+214
+],
+[
+1095,
+1164
+]
+]
+},
+{
+"opened_secs": 0,
+"creating_t": null,
+"trailing": "home",
+"closed_secs": 831,
+"closed_reason": "widened",
+"closing_t": 3231,
+"n": 1,
+"trailing_name": "MARSEILLE",
+"goals_in_window": [
+{
+"secs": 831,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68975",
+"date": "2025-12-05",
+"home": "MARSEILLE",
+"away": "BORDEAUX",
+"coach": "TARDIF Luc",
+"leader_coach": "PERONNARD Remi",
+"penalties_p3": [
+[
+0,
+86
+],
+[
+148,
+268
+],
+[
+762,
+882
+]
+],
+"_box": [
+[
+0,
+86
+],
+[
+148,
+268
+],
+[
+762,
+882
+]
+]
+},
+{
+"opened_secs": 0,
+"creating_t": null,
+"trailing": "home",
+"closed_secs": 124,
+"closed_reason": "widened",
+"closing_t": 2524,
+"n": 1,
+"trailing_name": "AMIENS",
+"goals_in_window": [
+{
+"secs": 124,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68978",
+"date": "2025-12-07",
+"home": "AMIENS",
+"away": "GRENOBLE",
+"coach": "RAYMOND BERGIN Kevin",
+"leader_coach": "TERGLAV Edo",
+"penalties_p3": [],
+"_box": []
+},
+{
+"opened_secs": 847,
+"creating_t": 3247,
+"trailing": "away",
+"closed_secs": 882,
+"closed_reason": "widened",
+"closing_t": 3282,
+"n": 1,
+"trailing_name": "NICE",
+"goals_in_window": [
+{
+"secs": 882,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68979",
+"date": "2025-10-19",
+"home": "BORDEAUX",
+"away": "NICE",
+"coach": "MARGERIT Pascal",
+"leader_coach": "DIMET Olivier",
+"penalties_p3": [
+[
+233,
+353
+],
+[
+233,
+353
+],
+[
+864,
+1164
+],
+[
+0,
+47
+],
+[
+784,
+846
+],
+[
+864,
+1164
+]
+],
+"_box": [
+[
+233,
+353
+],
+[
+233,
+353
+],
+[
+864,
+1164
+],
+[
+0,
+47
+],
+[
+784,
+846
+],
+[
+864,
+1164
+]
+]
+},
+{
+"opened_secs": 164,
+"creating_t": 2564,
+"trailing": "home",
+"closed_secs": 307,
+"closed_reason": "narrowed",
+"closing_t": 2707,
+"n": 1,
+"trailing_name": "BRIAN\u00c7ON",
+"goals_in_window": [
+{
+"secs": 307,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68982",
+"date": "2026-02-21",
+"home": "BRIAN\u00c7ON",
+"away": "ROUEN",
+"coach": "BERGERON Pierre",
+"leader_coach": "SZEKELY Csaba",
+"penalties_p3": [
+[
+50,
+170
+]
+],
+"_box": [
+[
+50,
+170
+]
+]
+},
+{
+"opened_secs": 1183,
+"creating_t": 3583,
+"trailing": "home",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 2,
+"trailing_name": "BRIAN\u00c7ON",
+"goals_in_window": [],
+"carryover_empty_at_open": true,
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68982",
+"date": "2026-02-21",
+"home": "BRIAN\u00c7ON",
+"away": "ROUEN",
+"coach": "BERGERON Pierre",
+"leader_coach": "SZEKELY Csaba",
+"penalties_p3": [
+[
+50,
+170
+]
+],
+"_box": [
+[
+50,
+170
+]
+]
+},
+{
+"opened_secs": 287,
+"creating_t": 2687,
+"trailing": "away",
+"closed_secs": 823,
+"closed_reason": "widened",
+"closing_t": 3223,
+"n": 1,
+"trailing_name": "GAP",
+"goals_in_window": [
+{
+"secs": 823,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68983",
+"date": "2025-12-19",
+"home": "GRENOBLE",
+"away": "GAP",
+"coach": "BASILE Antoine Lucien",
+"leader_coach": "TERGLAV Edo",
+"penalties_p3": [
+[
+748,
+868
+]
+],
+"_box": [
+[
+748,
+868
+]
+]
+},
+{
+"opened_secs": 449,
+"creating_t": 2849,
+"trailing": "away",
+"closed_secs": 527,
+"closed_reason": "narrowed",
+"closing_t": 2927,
+"n": 1,
+"trailing_name": "ANGERS",
+"goals_in_window": [
+{
+"secs": 527,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68984",
+"date": "2025-12-19",
+"home": "NICE",
+"away": "ANGERS",
+"coach": "PAREDES Jonathan",
+"leader_coach": "MARGERIT Pascal",
+"penalties_p3": [
+[
+68,
+188
+],
+[
+889,
+1009
+],
+[
+1184,
+1304
+]
+],
+"_box": [
+[
+68,
+188
+],
+[
+889,
+1009
+],
+[
+1184,
+1304
+]
+]
+},
+{
+"opened_secs": 634,
+"creating_t": 3034,
+"trailing": "away",
+"closed_secs": 1088,
+"closed_reason": "narrowed",
+"closing_t": 3488,
+"n": 2,
+"trailing_name": "ANGERS",
+"goals_in_window": [
+{
+"secs": 1088,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68984",
+"date": "2025-12-19",
+"home": "NICE",
+"away": "ANGERS",
+"coach": "PAREDES Jonathan",
+"leader_coach": "MARGERIT Pascal",
+"penalties_p3": [
+[
+68,
+188
+],
+[
+889,
+1009
+],
+[
+1184,
+1304
+]
+],
+"_box": [
+[
+68,
+188
+],
+[
+889,
+1009
+],
+[
+1184,
+1304
+]
+]
+},
+{
+"opened_secs": 186,
+"creating_t": 2586,
+"trailing": "away",
+"closed_secs": 285,
+"closed_reason": "narrowed",
+"closing_t": 2685,
+"n": 1,
+"trailing_name": "ANGLET",
+"goals_in_window": [
+{
+"secs": 285,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68986",
+"date": "2025-12-19",
+"home": "MARSEILLE",
+"away": "ANGLET",
+"coach": "BARIN St\u00e9phane",
+"leader_coach": "TARDIF Luc",
+"penalties_p3": [
+[
+271,
+285
+],
+[
+625,
+745
+],
+[
+807,
+820
+],
+[
+949,
+1069
+],
+[
+1194,
+1314
+],
+[
+0,
+77
+],
+[
+494,
+614
+],
+[
+563,
+683
+],
+[
+949,
+1069
+],
+[
+1194,
+1500
+]
+],
+"_box": [
+[
+271,
+285
+],
+[
+625,
+745
+],
+[
+807,
+820
+],
+[
+949,
+1069
+],
+[
+1194,
+1314
+],
+[
+0,
+77
+],
+[
+494,
+614
+],
+[
+563,
+683
+],
+[
+949,
+1069
+],
+[
+1194,
+1500
+]
+]
+},
+{
+"opened_secs": 563,
+"creating_t": 2963,
+"trailing": "away",
+"closed_secs": 820,
+"closed_reason": "narrowed",
+"closing_t": 3220,
+"n": 2,
+"trailing_name": "ANGLET",
+"goals_in_window": [
+{
+"secs": 820,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68986",
+"date": "2025-12-19",
+"home": "MARSEILLE",
+"away": "ANGLET",
+"coach": "BARIN St\u00e9phane",
+"leader_coach": "TARDIF Luc",
+"penalties_p3": [
+[
+271,
+285
+],
+[
+625,
+745
+],
+[
+807,
+820
+],
+[
+949,
+1069
+],
+[
+1194,
+1314
+],
+[
+0,
+77
+],
+[
+494,
+614
+],
+[
+563,
+683
+],
+[
+949,
+1069
+],
+[
+1194,
+1500
+]
+],
+"_box": [
+[
+271,
+285
+],
+[
+625,
+745
+],
+[
+807,
+820
+],
+[
+949,
+1069
+],
+[
+1194,
+1314
+],
+[
+0,
+77
+],
+[
+494,
+614
+],
+[
+563,
+683
+],
+[
+949,
+1069
+],
+[
+1194,
+1500
+]
+]
+},
+{
+"opened_secs": 110,
+"creating_t": 2510,
+"trailing": "away",
+"closed_secs": 1080,
+"closed_reason": "widened",
+"closing_t": 3480,
+"n": 1,
+"trailing_name": "BORDEAUX",
+"goals_in_window": [
+{
+"secs": 1080,
+"by_trailer": false,
+"en": true,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68987",
+"date": "2025-12-19",
+"home": "CERGY-PONTOISE",
+"away": "BORDEAUX",
+"coach": "DIMET Olivier",
+"leader_coach": "DA COSTA Kevin",
+"penalties_p3": [
+[
+700,
+820
+],
+[
+0,
+63
+],
+[
+313,
+433
+]
+],
+"_box": [
+[
+700,
+820
+],
+[
+0,
+63
+],
+[
+313,
+433
+]
+]
+},
+{
+"opened_secs": 658,
+"creating_t": 3058,
+"trailing": "home",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "CHAMONIX",
+"goals_in_window": [],
+"pull_segments": [
+{
+"empty_from": 1032,
+"empty_until": 1200,
+"end_context": "horn"
+}
+],
+"pulled": true,
+"pull_evidence_secs": 1032,
+"pull_classification": "pull",
+"season": "2026",
+"game_id": "68988",
+"date": "2025-12-21",
+"home": "CHAMONIX",
+"away": "BRIAN\u00c7ON",
+"coach": "BOGDANOV Anatoli",
+"leader_coach": "BERGERON Pierre",
+"penalties_p3": [
+[
+0,
+19
+],
+[
+83,
+203
+],
+[
+487,
+607
+],
+[
+502,
+622
+]
+],
+"_box": [
+[
+0,
+19
+],
+[
+83,
+203
+],
+[
+487,
+607
+],
+[
+502,
+622
+]
+]
+},
+{
+"opened_secs": 0,
+"creating_t": null,
+"trailing": "home",
+"closed_secs": 272,
+"closed_reason": "narrowed",
+"closing_t": 2672,
+"n": 1,
+"trailing_name": "GAP",
+"goals_in_window": [
+{
+"secs": 272,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68989",
+"date": "2025-12-21",
+"home": "GAP",
+"away": "AMIENS",
+"coach": "BASILE Antoine Lucien",
+"leader_coach": "RAYMOND BERGIN Kevin",
+"penalties_p3": [],
+"_box": []
+},
+{
+"opened_secs": 1164,
+"creating_t": 3564,
+"trailing": "away",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "MARSEILLE",
+"goals_in_window": [],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68991",
+"date": "2025-12-21",
+"home": "ROUEN",
+"away": "MARSEILLE",
+"coach": "TARDIF Luc",
+"leader_coach": "SZEKELY Csaba",
+"penalties_p3": [
+[
+361,
+481
+],
+[
+95,
+215
+],
+[
+852,
+972
+],
+[
+852,
+1092
+],
+[
+887,
+1187
+],
+[
+1060,
+1164
+]
+],
+"_box": [
+[
+361,
+481
+],
+[
+95,
+215
+],
+[
+852,
+972
+],
+[
+852,
+1092
+],
+[
+887,
+1187
+],
+[
+1060,
+1164
+]
+]
+},
+{
+"opened_secs": 1145,
+"creating_t": 3545,
+"trailing": "away",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "CHAMONIX",
+"goals_in_window": [],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68994",
+"date": "2025-12-23",
+"home": "GAP",
+"away": "CHAMONIX",
+"coach": "BOGDANOV Anatoli",
+"leader_coach": "BASILE Antoine Lucien",
+"penalties_p3": [],
+"_box": []
+},
+{
+"opened_secs": 744,
+"creating_t": 3144,
+"trailing": "home",
+"closed_secs": 964,
+"closed_reason": "narrowed",
+"closing_t": 3364,
+"n": 1,
+"trailing_name": "NICE",
+"goals_in_window": [
+{
+"secs": 964,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68996",
+"date": "2025-12-23",
+"home": "NICE",
+"away": "ROUEN",
+"coach": "MARGERIT Pascal",
+"leader_coach": "SZEKELY Csaba",
+"penalties_p3": [
+[
+297,
+417
+],
+[
+335,
+455
+],
+[
+706,
+744
+],
+[
+904,
+964
+]
+],
+"_box": [
+[
+297,
+417
+],
+[
+335,
+455
+],
+[
+706,
+744
+],
+[
+904,
+964
+]
+]
+},
+{
+"opened_secs": 1084,
+"creating_t": 3484,
+"trailing": "home",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 2,
+"trailing_name": "NICE",
+"goals_in_window": [],
+"carryover_empty_at_open": true,
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "68996",
+"date": "2025-12-23",
+"home": "NICE",
+"away": "ROUEN",
+"coach": "MARGERIT Pascal",
+"leader_coach": "SZEKELY Csaba",
+"penalties_p3": [
+[
+297,
+417
+],
+[
+335,
+455
+],
+[
+706,
+744
+],
+[
+904,
+964
+]
+],
+"_box": [
+[
+297,
+417
+],
+[
+335,
+455
+],
+[
+706,
+744
+],
+[
+904,
+964
+]
+]
+},
+{
+"opened_secs": 422,
+"creating_t": 2822,
+"trailing": "home",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "MARSEILLE",
+"goals_in_window": [],
+"pull_segments": [
+{
+"empty_from": 912,
+"empty_until": 1200,
+"end_context": "horn"
+}
+],
+"pulled": true,
+"pull_evidence_secs": 912,
+"pull_classification": "pull",
+"season": "2026",
+"game_id": "68999",
+"date": "2025-12-23",
+"home": "MARSEILLE",
+"away": "BRIAN\u00c7ON",
+"coach": "TARDIF Luc",
+"leader_coach": "BERGERON Pierre",
+"penalties_p3": [
+[
+493,
+613
+],
+[
+1099,
+1219
+]
+],
+"_box": [
+[
+493,
+613
+],
+[
+1099,
+1219
+]
+]
+},
+{
+"opened_secs": 1019,
+"creating_t": 3419,
+"trailing": "away",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "AMIENS",
+"goals_in_window": [],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69001",
+"date": "2025-12-30",
+"home": "ANGERS",
+"away": "AMIENS",
+"coach": "RAYMOND BERGIN Kevin",
+"leader_coach": "PAREDES Jonathan",
+"penalties_p3": [
+[
+734,
+854
+]
+],
+"_box": [
+[
+734,
+854
+]
+]
+},
+{
+"opened_secs": 1073,
+"creating_t": 3473,
+"trailing": "away",
+"closed_secs": 1156,
+"closed_reason": "narrowed",
+"closing_t": 3556,
+"n": 1,
+"trailing_name": "CERGY-PONTOISE",
+"goals_in_window": [
+{
+"secs": 1156,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"carryover_empty_at_open": true,
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69004",
+"date": "2025-12-30",
+"home": "ROUEN",
+"away": "CERGY-PONTOISE",
+"coach": "DA COSTA Kevin",
+"leader_coach": "SZEKELY Csaba",
+"penalties_p3": [
+[
+337,
+457
+]
+],
+"_box": [
+[
+337,
+457
+]
+]
+},
+{
+"opened_secs": 840,
+"creating_t": 3240,
+"trailing": "home",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "GAP",
+"goals_in_window": [],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69006",
+"date": "2026-01-02",
+"home": "GAP",
+"away": "ANGERS",
+"coach": "BASILE Antoine Lucien",
+"leader_coach": "PAREDES Jonathan",
+"penalties_p3": [
+[
+1086,
+1206
+]
+],
+"_box": [
+[
+1086,
+1206
+]
+]
+},
+{
+"opened_secs": 0,
+"creating_t": null,
+"trailing": "away",
+"closed_secs": 79,
+"closed_reason": "narrowed",
+"closing_t": 2479,
+"n": 1,
+"trailing_name": "ROUEN",
+"goals_in_window": [
+{
+"secs": 79,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69007",
+"date": "2026-01-02",
+"home": "GRENOBLE",
+"away": "ROUEN",
+"coach": "SZEKELY Csaba",
+"leader_coach": "TERGLAV Edo",
+"penalties_p3": [],
+"_box": []
+},
+{
+"opened_secs": 586,
+"creating_t": 2986,
+"trailing": "away",
+"closed_secs": 1088,
+"closed_reason": "widened",
+"closing_t": 3488,
+"n": 2,
+"trailing_name": "ROUEN",
+"goals_in_window": [
+{
+"secs": 1088,
+"by_trailer": false,
+"en": true,
+"closes": true
+}
+],
+"pull_segments": [
+{
+"empty_from": 1068,
+"empty_until": 1088,
+"end_context": "ate_ENG"
+}
+],
+"pulled": true,
+"pull_evidence_secs": 1068,
+"pull_classification": "pull",
+"season": "2026",
+"game_id": "69007",
+"date": "2026-01-02",
+"home": "GRENOBLE",
+"away": "ROUEN",
+"coach": "SZEKELY Csaba",
+"leader_coach": "TERGLAV Edo",
+"penalties_p3": [],
+"_box": []
+},
+{
+"opened_secs": 1069,
+"creating_t": 3469,
+"trailing": "away",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "CHAMONIX",
+"goals_in_window": [],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69009",
+"date": "2026-01-02",
+"home": "BORDEAUX",
+"away": "CHAMONIX",
+"coach": "BOGDANOV Anatoli",
+"leader_coach": "DIMET Olivier",
+"penalties_p3": [
+[
+910,
+1030
+]
+],
+"_box": [
+[
+910,
+1030
+]
+]
+},
+{
+"opened_secs": 62,
+"creating_t": 2462,
+"trailing": "away",
+"closed_secs": 103,
+"closed_reason": "widened",
+"closing_t": 2503,
+"n": 1,
+"trailing_name": "BRIAN\u00c7ON",
+"goals_in_window": [
+{
+"secs": 103,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69011",
+"date": "2026-01-02",
+"home": "CERGY-PONTOISE",
+"away": "BRIAN\u00c7ON",
+"coach": "BERGERON Pierre",
+"leader_coach": "DA COSTA Kevin",
+"penalties_p3": [
+[
+76,
+376
+]
+],
+"_box": [
+[
+76,
+376
+]
+]
+},
+{
+"opened_secs": 0,
+"creating_t": null,
+"trailing": "away",
+"closed_secs": 475,
+"closed_reason": "widened",
+"closing_t": 2875,
+"n": 1,
+"trailing_name": "AMIENS",
+"goals_in_window": [
+{
+"secs": 475,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69013",
+"date": "2026-01-04",
+"home": "ROUEN",
+"away": "AMIENS",
+"coach": "RAYMOND BERGIN Kevin",
+"leader_coach": "SZEKELY Csaba",
+"penalties_p3": [],
+"_box": []
+},
+{
+"opened_secs": 1072,
+"creating_t": 3472,
+"trailing": "away",
+"closed_secs": 1109,
+"closed_reason": "narrowed",
+"closing_t": 3509,
+"n": 1,
+"trailing_name": "GAP",
+"goals_in_window": [
+{
+"secs": 1109,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"carryover_empty_at_open": true,
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69014",
+"date": "2026-01-04",
+"home": "ANGLET",
+"away": "GAP",
+"coach": "BASILE Antoine Lucien",
+"leader_coach": "BARIN St\u00e9phane",
+"penalties_p3": [
+[
+0,
+38
+],
+[
+492,
+612
+],
+[
+677,
+797
+],
+[
+829,
+949
+],
+[
+854,
+918
+],
+[
+1120,
+1240
+],
+[
+1153,
+1273
+],
+[
+1153,
+1273
+],
+[
+0,
+38
+],
+[
+434,
+554
+],
+[
+492,
+612
+],
+[
+829,
+949
+],
+[
+934,
+1043
+],
+[
+1153,
+1273
+],
+[
+1153,
+1273
+]
+],
+"_box": [
+[
+0,
+38
+],
+[
+492,
+612
+],
+[
+677,
+797
+],
+[
+829,
+949
+],
+[
+854,
+918
+],
+[
+1120,
+1240
+],
+[
+1153,
+1273
+],
+[
+1153,
+1273
+],
+[
+0,
+38
+],
+[
+434,
+554
+],
+[
+492,
+612
+],
+[
+829,
+949
+],
+[
+934,
+1043
+],
+[
+1153,
+1273
+],
+[
+1153,
+1273
+]
+]
+},
+{
+"opened_secs": 1077,
+"creating_t": 3477,
+"trailing": "away",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "BORDEAUX",
+"goals_in_window": [],
+"pull_segments": [
+{
+"empty_from": 1147,
+"empty_until": 1200,
+"end_context": "horn"
+}
+],
+"pulled": true,
+"pull_evidence_secs": 1147,
+"pull_classification": "pull",
+"season": "2026",
+"game_id": "69016",
+"date": "2026-01-04",
+"home": "ANGERS",
+"away": "BORDEAUX",
+"coach": "DIMET Olivier",
+"leader_coach": "PAREDES Jonathan",
+"penalties_p3": [
+[
+0,
+7
+]
+],
+"_box": [
+[
+0,
+7
+]
+]
+},
+{
+"opened_secs": 0,
+"creating_t": null,
+"trailing": "home",
+"closed_secs": 446,
+"closed_reason": "narrowed",
+"closing_t": 2846,
+"n": 1,
+"trailing_name": "GAP",
+"goals_in_window": [
+{
+"secs": 446,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69018",
+"date": "2026-01-09",
+"home": "GAP",
+"away": "ROUEN",
+"coach": "BASILE Antoine Lucien",
+"leader_coach": "SZEKELY Csaba",
+"penalties_p3": [
+[
+410,
+446
+],
+[
+1135,
+1255
+],
+[
+1159,
+1279
+]
+],
+"_box": [
+[
+410,
+446
+],
+[
+1135,
+1255
+],
+[
+1159,
+1279
+]
+]
+},
+{
+"opened_secs": 577,
+"creating_t": 2977,
+"trailing": "home",
+"closed_secs": 674,
+"closed_reason": "widened",
+"closing_t": 3074,
+"n": 2,
+"trailing_name": "GAP",
+"goals_in_window": [
+{
+"secs": 674,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69018",
+"date": "2026-01-09",
+"home": "GAP",
+"away": "ROUEN",
+"coach": "BASILE Antoine Lucien",
+"leader_coach": "SZEKELY Csaba",
+"penalties_p3": [
+[
+410,
+446
+],
+[
+1135,
+1255
+],
+[
+1159,
+1279
+]
+],
+"_box": [
+[
+410,
+446
+],
+[
+1135,
+1255
+],
+[
+1159,
+1279
+]
+]
+},
+{
+"opened_secs": 704,
+"creating_t": 3104,
+"trailing": "away",
+"closed_secs": 993,
+"closed_reason": "widened",
+"closing_t": 3393,
+"n": 1,
+"trailing_name": "ANGLET",
+"goals_in_window": [
+{
+"secs": 993,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69022",
+"date": "2026-01-09",
+"home": "BORDEAUX",
+"away": "ANGLET",
+"coach": "BARIN St\u00e9phane",
+"leader_coach": "DIMET Olivier",
+"penalties_p3": [
+[
+0,
+17
+],
+[
+798,
+918
+],
+[
+558,
+678
+],
+[
+1153,
+1200
+]
+],
+"_box": [
+[
+0,
+17
+],
+[
+798,
+918
+],
+[
+558,
+678
+],
+[
+1153,
+1200
+]
+]
+},
+{
+"opened_secs": 0,
+"creating_t": null,
+"trailing": "home",
+"closed_secs": 812,
+"closed_reason": "widened",
+"closing_t": 3212,
+"n": 1,
+"trailing_name": "NICE",
+"goals_in_window": [
+{
+"secs": 812,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69026",
+"date": "2026-01-13",
+"home": "NICE",
+"away": "GRENOBLE",
+"coach": "MARGERIT Pascal",
+"leader_coach": "TERGLAV Edo",
+"penalties_p3": [
+[
+244,
+364
+],
+[
+458,
+578
+],
+[
+1056,
+1134
+],
+[
+1134,
+1254
+]
+],
+"_box": [
+[
+244,
+364
+],
+[
+458,
+578
+],
+[
+1056,
+1134
+],
+[
+1134,
+1254
+]
+]
+},
+{
+"opened_secs": 1134,
+"creating_t": 3534,
+"trailing": "home",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 2,
+"trailing_name": "NICE",
+"goals_in_window": [],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69026",
+"date": "2026-01-13",
+"home": "NICE",
+"away": "GRENOBLE",
+"coach": "MARGERIT Pascal",
+"leader_coach": "TERGLAV Edo",
+"penalties_p3": [
+[
+244,
+364
+],
+[
+458,
+578
+],
+[
+1056,
+1134
+],
+[
+1134,
+1254
+]
+],
+"_box": [
+[
+244,
+364
+],
+[
+458,
+578
+],
+[
+1056,
+1134
+],
+[
+1134,
+1254
+]
+]
+},
+{
+"opened_secs": 734,
+"creating_t": 3134,
+"trailing": "away",
+"closed_secs": 828,
+"closed_reason": "widened",
+"closing_t": 3228,
+"n": 1,
+"trailing_name": "BORDEAUX",
+"goals_in_window": [
+{
+"secs": 828,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69027",
+"date": "2026-01-13",
+"home": "ROUEN",
+"away": "BORDEAUX",
+"coach": "DIMET Olivier",
+"leader_coach": "SZEKELY Csaba",
+"penalties_p3": [
+[
+0,
+7
+],
+[
+782,
+828
+]
+],
+"_box": [
+[
+0,
+7
+],
+[
+782,
+828
+]
+]
+},
+{
+"opened_secs": 445,
+"creating_t": 2845,
+"trailing": "away",
+"closed_secs": 456,
+"closed_reason": "widened",
+"closing_t": 2856,
+"n": 1,
+"trailing_name": "ANGLET",
+"goals_in_window": [
+{
+"secs": 456,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69030",
+"date": "2026-01-16",
+"home": "CHAMONIX",
+"away": "ANGLET",
+"coach": "BARIN St\u00e9phane",
+"leader_coach": "BOGDANOV Anatoli",
+"penalties_p3": [
+[
+291,
+411
+]
+],
+"_box": [
+[
+291,
+411
+]
+]
+},
+{
+"opened_secs": 0,
+"creating_t": null,
+"trailing": "away",
+"closed_secs": 853,
+"closed_reason": "widened",
+"closing_t": 3253,
+"n": 1,
+"trailing_name": "CERGY-PONTOISE",
+"goals_in_window": [
+{
+"secs": 853,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69035",
+"date": "2026-01-16",
+"home": "GRENOBLE",
+"away": "CERGY-PONTOISE",
+"coach": "DA COSTA Kevin",
+"leader_coach": "TERGLAV Edo",
+"penalties_p3": [],
+"_box": []
+},
+{
+"opened_secs": 233,
+"creating_t": 2633,
+"trailing": "away",
+"closed_secs": 441,
+"closed_reason": "widened",
+"closing_t": 2841,
+"n": 1,
+"trailing_name": "CHAMONIX",
+"goals_in_window": [
+{
+"secs": 441,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69036",
+"date": "2026-01-20",
+"home": "ROUEN",
+"away": "CHAMONIX",
+"coach": "BOGDANOV Anatoli",
+"leader_coach": "SZEKELY Csaba",
+"penalties_p3": [],
+"_box": []
+},
+{
+"opened_secs": 1028,
+"creating_t": 3428,
+"trailing": "away",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "AMIENS",
+"goals_in_window": [],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69038",
+"date": "2026-01-20",
+"home": "GRENOBLE",
+"away": "AMIENS",
+"coach": "RAYMOND BERGIN Kevin",
+"leader_coach": "TERGLAV Edo",
+"penalties_p3": [],
+"_box": []
+},
+{
+"opened_secs": 57,
+"creating_t": 2457,
+"trailing": "home",
+"closed_secs": 230,
+"closed_reason": "widened",
+"closing_t": 2630,
+"n": 1,
+"trailing_name": "GAP",
+"goals_in_window": [
+{
+"secs": 230,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69043",
+"date": "2026-01-23",
+"home": "GAP",
+"away": "GRENOBLE",
+"coach": "BASILE Antoine Lucien",
+"leader_coach": "TERGLAV Edo",
+"penalties_p3": [
+[
+0,
+61
+],
+[
+0,
+34
+],
+[
+0,
+61
+],
+[
+0,
+34
+],
+[
+877,
+997
+]
+],
+"_box": [
+[
+0,
+61
+],
+[
+0,
+34
+],
+[
+0,
+61
+],
+[
+0,
+34
+],
+[
+877,
+997
+]
+]
+},
+{
+"opened_secs": 372,
+"creating_t": 2772,
+"trailing": "home",
+"closed_secs": 646,
+"closed_reason": "widened",
+"closing_t": 3046,
+"n": 2,
+"trailing_name": "GAP",
+"goals_in_window": [
+{
+"secs": 646,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69043",
+"date": "2026-01-23",
+"home": "GAP",
+"away": "GRENOBLE",
+"coach": "BASILE Antoine Lucien",
+"leader_coach": "TERGLAV Edo",
+"penalties_p3": [
+[
+0,
+61
+],
+[
+0,
+34
+],
+[
+0,
+61
+],
+[
+0,
+34
+],
+[
+877,
+997
+]
+],
+"_box": [
+[
+0,
+61
+],
+[
+0,
+34
+],
+[
+0,
+61
+],
+[
+0,
+34
+],
+[
+877,
+997
+]
+]
+},
+{
+"opened_secs": 113,
+"creating_t": 2513,
+"trailing": "away",
+"closed_secs": 706,
+"closed_reason": "narrowed",
+"closing_t": 3106,
+"n": 1,
+"trailing_name": "AMIENS",
+"goals_in_window": [
+{
+"secs": 706,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69045",
+"date": "2026-01-23",
+"home": "CHAMONIX",
+"away": "AMIENS",
+"coach": "RAYMOND BERGIN Kevin",
+"leader_coach": "BOGDANOV Anatoli",
+"penalties_p3": [
+[
+271,
+391
+],
+[
+961,
+1081
+]
+],
+"_box": [
+[
+271,
+391
+],
+[
+961,
+1081
+]
+]
+},
+{
+"opened_secs": 1059,
+"creating_t": 3459,
+"trailing": "away",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "CERGY-PONTOISE",
+"goals_in_window": [],
+"carryover_empty_at_open": true,
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69046",
+"date": "2026-01-23",
+"home": "BORDEAUX",
+"away": "CERGY-PONTOISE",
+"coach": "DA COSTA Kevin",
+"leader_coach": "DIMET Olivier",
+"penalties_p3": [
+[
+477,
+597
+],
+[
+814,
+934
+]
+],
+"_box": [
+[
+477,
+597
+],
+[
+814,
+934
+]
+]
+},
+{
+"opened_secs": 64,
+"creating_t": 2464,
+"trailing": "home",
+"closed_secs": 577,
+"closed_reason": "widened",
+"closing_t": 2977,
+"n": 1,
+"trailing_name": "MARSEILLE",
+"goals_in_window": [
+{
+"secs": 577,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69051",
+"date": "2026-01-27",
+"home": "MARSEILLE",
+"away": "ROUEN",
+"coach": "TARDIF Luc",
+"leader_coach": "SZEKELY Csaba",
+"penalties_p3": [
+[
+0,
+67
+]
+],
+"_box": [
+[
+0,
+67
+]
+]
+},
+{
+"opened_secs": 406,
+"creating_t": 2806,
+"trailing": "away",
+"closed_secs": 1046,
+"closed_reason": "narrowed",
+"closing_t": 3446,
+"n": 1,
+"trailing_name": "BORDEAUX",
+"goals_in_window": [
+{
+"secs": 1046,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [
+{
+"empty_from": 977,
+"empty_until": 1046,
+"end_context": "scored_6v5"
+}
+],
+"pulled": true,
+"pull_evidence_secs": 977,
+"pull_classification": "pp_pull",
+"season": "2026",
+"game_id": "69052",
+"date": "2026-01-27",
+"home": "GRENOBLE",
+"away": "BORDEAUX",
+"coach": "DIMET Olivier",
+"leader_coach": "TERGLAV Edo",
+"penalties_p3": [
+[
+228,
+348
+],
+[
+947,
+1046
+]
+],
+"_box": [
+[
+228,
+348
+],
+[
+947,
+1046
+]
+]
+},
+{
+"opened_secs": 102,
+"creating_t": 2502,
+"trailing": "away",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "GAP",
+"goals_in_window": [],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69054",
+"date": "2026-01-30",
+"home": "CHAMONIX",
+"away": "GAP",
+"coach": "BASILE Antoine Lucien",
+"leader_coach": "BOGDANOV Anatoli",
+"penalties_p3": [
+[
+275,
+395
+],
+[
+637,
+757
+]
+],
+"_box": [
+[
+275,
+395
+],
+[
+637,
+757
+]
+]
+},
+{
+"opened_secs": 0,
+"creating_t": null,
+"trailing": "away",
+"closed_secs": 49,
+"closed_reason": "narrowed",
+"closing_t": 2449,
+"n": 1,
+"trailing_name": "AMIENS",
+"goals_in_window": [
+{
+"secs": 49,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69059",
+"date": "2026-01-30",
+"home": "BORDEAUX",
+"away": "AMIENS",
+"coach": "RAYMOND BERGIN Kevin",
+"leader_coach": "DIMET Olivier",
+"penalties_p3": [
+[
+341,
+461
+],
+[
+608,
+728
+]
+],
+"_box": [
+[
+341,
+461
+],
+[
+608,
+728
+]
+]
+},
+{
+"opened_secs": 138,
+"creating_t": 2538,
+"trailing": "away",
+"closed_secs": 1016,
+"closed_reason": "widened",
+"closing_t": 3416,
+"n": 2,
+"trailing_name": "AMIENS",
+"goals_in_window": [
+{
+"secs": 1016,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69059",
+"date": "2026-01-30",
+"home": "BORDEAUX",
+"away": "AMIENS",
+"coach": "RAYMOND BERGIN Kevin",
+"leader_coach": "DIMET Olivier",
+"penalties_p3": [
+[
+341,
+461
+],
+[
+608,
+728
+]
+],
+"_box": [
+[
+341,
+461
+],
+[
+608,
+728
+]
+]
+},
+{
+"opened_secs": 0,
+"creating_t": null,
+"trailing": "home",
+"closed_secs": 69,
+"closed_reason": "widened",
+"closing_t": 2469,
+"n": 1,
+"trailing_name": "CERGY-PONTOISE",
+"goals_in_window": [
+{
+"secs": 69,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69064",
+"date": "2026-02-06",
+"home": "CERGY-PONTOISE",
+"away": "ROUEN",
+"coach": "DA COSTA Kevin",
+"leader_coach": "SZEKELY Csaba",
+"penalties_p3": [
+[
+0,
+120
+],
+[
+569,
+610
+],
+[
+767,
+887
+]
+],
+"_box": [
+[
+0,
+120
+],
+[
+569,
+610
+],
+[
+767,
+887
+]
+]
+},
+{
+"opened_secs": 610,
+"creating_t": 3010,
+"trailing": "home",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 2,
+"trailing_name": "CERGY-PONTOISE",
+"goals_in_window": [],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69064",
+"date": "2026-02-06",
+"home": "CERGY-PONTOISE",
+"away": "ROUEN",
+"coach": "DA COSTA Kevin",
+"leader_coach": "SZEKELY Csaba",
+"penalties_p3": [
+[
+0,
+120
+],
+[
+569,
+610
+],
+[
+767,
+887
+]
+],
+"_box": [
+[
+0,
+120
+],
+[
+569,
+610
+],
+[
+767,
+887
+]
+]
+},
+{
+"opened_secs": 1173,
+"creating_t": 3573,
+"trailing": "away",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "CHAMONIX",
+"goals_in_window": [],
+"carryover_empty_at_open": true,
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69065",
+"date": "2026-02-06",
+"home": "MARSEILLE",
+"away": "CHAMONIX",
+"coach": "BOGDANOV Anatoli",
+"leader_coach": "ZWIKEL Jonathan",
+"penalties_p3": [
+[
+0,
+9
+],
+[
+940,
+1060
+]
+],
+"_box": [
+[
+0,
+9
+],
+[
+940,
+1060
+]
+]
+},
+{
+"opened_secs": 793,
+"creating_t": 3193,
+"trailing": "away",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "GAP",
+"goals_in_window": [],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69066",
+"date": "2026-02-26",
+"home": "ANGERS",
+"away": "GAP",
+"coach": "BASILE Antoine Lucien",
+"leader_coach": "PAREDES Jonathan",
+"penalties_p3": [],
+"_box": []
+},
+{
+"opened_secs": 745,
+"creating_t": 3145,
+"trailing": "home",
+"closed_secs": 1095,
+"closed_reason": "narrowed",
+"closing_t": 3495,
+"n": 1,
+"trailing_name": "MARSEILLE",
+"goals_in_window": [
+{
+"secs": 1095,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69069",
+"date": "2026-02-19",
+"home": "MARSEILLE",
+"away": "NICE",
+"coach": "TARDIF Luc",
+"leader_coach": "MARGERIT Pascal",
+"penalties_p3": [
+[
+916,
+1036
+],
+[
+1143,
+1263
+],
+[
+1143,
+1263
+]
+],
+"_box": [
+[
+916,
+1036
+],
+[
+1143,
+1263
+],
+[
+1143,
+1263
+]
+]
+},
+{
+"opened_secs": 1199,
+"creating_t": 3599,
+"trailing": "home",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 2,
+"trailing_name": "MARSEILLE",
+"goals_in_window": [],
+"carryover_empty_at_open": true,
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69069",
+"date": "2026-02-19",
+"home": "MARSEILLE",
+"away": "NICE",
+"coach": "TARDIF Luc",
+"leader_coach": "MARGERIT Pascal",
+"penalties_p3": [
+[
+916,
+1036
+],
+[
+1143,
+1263
+],
+[
+1143,
+1263
+]
+],
+"_box": [
+[
+916,
+1036
+],
+[
+1143,
+1263
+],
+[
+1143,
+1263
+]
+]
+},
+{
+"opened_secs": 837,
+"creating_t": 3237,
+"trailing": "away",
+"closed_secs": 916,
+"closed_reason": "widened",
+"closing_t": 3316,
+"n": 1,
+"trailing_name": "BORDEAUX",
+"goals_in_window": [
+{
+"secs": 916,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69070",
+"date": "2026-02-19",
+"home": "CHAMONIX",
+"away": "BORDEAUX",
+"coach": "DIMET Olivier",
+"leader_coach": "BOGDANOV Anatoli",
+"penalties_p3": [
+[
+1084,
+1200
+],
+[
+1100,
+1200
+]
+],
+"_box": [
+[
+1084,
+1200
+],
+[
+1100,
+1200
+]
+]
+},
+{
+"opened_secs": 200,
+"creating_t": 2600,
+"trailing": "away",
+"closed_secs": 388,
+"closed_reason": "narrowed",
+"closing_t": 2788,
+"n": 1,
+"trailing_name": "CERGY-PONTOISE",
+"goals_in_window": [
+{
+"secs": 388,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69071",
+"date": "2026-02-19",
+"home": "BRIAN\u00c7ON",
+"away": "CERGY-PONTOISE",
+"coach": "DA COSTA Kevin",
+"leader_coach": "BERGERON Pierre",
+"penalties_p3": [
+[
+0,
+117
+],
+[
+213,
+333
+],
+[
+945,
+1065
+]
+],
+"_box": [
+[
+0,
+117
+],
+[
+213,
+333
+],
+[
+945,
+1065
+]
+]
+},
+{
+"opened_secs": 1055,
+"creating_t": 3455,
+"trailing": "away",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "BRIAN\u00c7ON",
+"goals_in_window": [],
+"carryover_empty_at_open": true,
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69074",
+"date": "2026-02-24",
+"home": "GRENOBLE",
+"away": "BRIAN\u00c7ON",
+"coach": "BERGERON Pierre",
+"leader_coach": "TERGLAV Edo",
+"penalties_p3": [
+[
+799,
+919
+]
+],
+"_box": [
+[
+799,
+919
+]
+]
+},
+{
+"opened_secs": 131,
+"creating_t": 2531,
+"trailing": "home",
+"closed_secs": 698,
+"closed_reason": "narrowed",
+"closing_t": 3098,
+"n": 1,
+"trailing_name": "NICE",
+"goals_in_window": [
+{
+"secs": 698,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69081",
+"date": "2026-02-27",
+"home": "NICE",
+"away": "CERGY-PONTOISE",
+"coach": "MARGERIT Pascal",
+"leader_coach": "DA COSTA Kevin",
+"penalties_p3": [
+[
+0,
+55
+]
+],
+"_box": [
+[
+0,
+55
+]
+]
+},
+{
+"opened_secs": 1090,
+"creating_t": 3490,
+"trailing": "home",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "MARSEILLE",
+"goals_in_window": [],
+"carryover_empty_at_open": true,
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69083",
+"date": "2026-02-27",
+"home": "MARSEILLE",
+"away": "GRENOBLE",
+"coach": "TARDIF Luc",
+"leader_coach": "TERGLAV Edo",
+"penalties_p3": [
+[
+0,
+116
+],
+[
+266,
+386
+],
+[
+700,
+820
+]
+],
+"_box": [
+[
+0,
+116
+],
+[
+266,
+386
+],
+[
+700,
+820
+]
+]
+},
+{
+"opened_secs": 0,
+"creating_t": null,
+"trailing": "home",
+"closed_secs": 589,
+"closed_reason": "widened",
+"closing_t": 2989,
+"n": 1,
+"trailing_name": "CHAMONIX",
+"goals_in_window": [
+{
+"secs": 589,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69089",
+"date": "2026-03-01",
+"home": "CHAMONIX",
+"away": "CERGY-PONTOISE",
+"coach": "BURNET St\u00e9phane",
+"leader_coach": "DA COSTA Kevin",
+"penalties_p3": [
+[
+329,
+449
+]
+],
+"_box": [
+[
+329,
+449
+]
+]
+},
+{
+"opened_secs": 1125,
+"creating_t": 3525,
+"trailing": "home",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "NICE",
+"goals_in_window": [],
+"carryover_empty_at_open": true,
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69092",
+"date": "2026-03-04",
+"home": "NICE",
+"away": "AMIENS",
+"coach": "MARGERIT Pascal",
+"leader_coach": "RAYMOND BERGIN Kevin",
+"penalties_p3": [],
+"_box": []
+},
+{
+"opened_secs": 0,
+"creating_t": null,
+"trailing": "home",
+"closed_secs": 761,
+"closed_reason": "widened",
+"closing_t": 3161,
+"n": 1,
+"trailing_name": "CERGY-PONTOISE",
+"goals_in_window": [
+{
+"secs": 761,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69093",
+"date": "2026-03-04",
+"home": "CERGY-PONTOISE",
+"away": "GRENOBLE",
+"coach": "DA COSTA Kevin",
+"leader_coach": "TERGLAV Edo",
+"penalties_p3": [
+[
+0,
+120
+],
+[
+1182,
+1302
+]
+],
+"_box": [
+[
+0,
+120
+],
+[
+1182,
+1302
+]
+]
+},
+{
+"opened_secs": 1182,
+"creating_t": 3582,
+"trailing": "home",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 2,
+"trailing_name": "CERGY-PONTOISE",
+"goals_in_window": [],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69093",
+"date": "2026-03-04",
+"home": "CERGY-PONTOISE",
+"away": "GRENOBLE",
+"coach": "DA COSTA Kevin",
+"leader_coach": "TERGLAV Edo",
+"penalties_p3": [
+[
+0,
+120
+],
+[
+1182,
+1302
+]
+],
+"_box": [
+[
+0,
+120
+],
+[
+1182,
+1302
+]
+]
+},
+{
+"opened_secs": 737,
+"creating_t": 3137,
+"trailing": "home",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "CHAMONIX",
+"goals_in_window": [],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69098",
+"date": "2026-03-06",
+"home": "CHAMONIX",
+"away": "GRENOBLE",
+"coach": "BURNET St\u00e9phane",
+"leader_coach": "TERGLAV Edo",
+"penalties_p3": [
+[
+932,
+1052
+]
+],
+"_box": [
+[
+932,
+1052
+]
+]
+},
+{
+"opened_secs": 0,
+"creating_t": null,
+"trailing": "away",
+"closed_secs": 691,
+"closed_reason": "narrowed",
+"closing_t": 3091,
+"n": 1,
+"trailing_name": "NICE",
+"goals_in_window": [
+{
+"secs": 691,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69099",
+"date": "2026-03-06",
+"home": "GAP",
+"away": "NICE",
+"coach": "MARGERIT Pascal",
+"leader_coach": "BASILE Antoine Lucien",
+"penalties_p3": [],
+"_box": []
+},
+{
+"opened_secs": 1093,
+"creating_t": 3493,
+"trailing": "away",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 2,
+"trailing_name": "NICE",
+"goals_in_window": [],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69099",
+"date": "2026-03-06",
+"home": "GAP",
+"away": "NICE",
+"coach": "MARGERIT Pascal",
+"leader_coach": "BASILE Antoine Lucien",
+"penalties_p3": [],
+"_box": []
+},
+{
+"opened_secs": 0,
+"creating_t": null,
+"trailing": "home",
+"closed_secs": 465,
+"closed_reason": "narrowed",
+"closing_t": 2865,
+"n": 1,
+"trailing_name": "AMIENS",
+"goals_in_window": [
+{
+"secs": 465,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69100",
+"date": "2026-03-06",
+"home": "AMIENS",
+"away": "CERGY-PONTOISE",
+"coach": "RAYMOND BERGIN Kevin",
+"leader_coach": "DA COSTA Kevin",
+"penalties_p3": [],
+"_box": []
+},
+{
+"opened_secs": 604,
+"creating_t": 3004,
+"trailing": "away",
+"closed_secs": 993,
+"closed_reason": "narrowed",
+"closing_t": 3393,
+"n": 1,
+"trailing_name": "MARSEILLE",
+"goals_in_window": [
+{
+"secs": 993,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "69101",
+"date": "2026-03-06",
+"home": "BORDEAUX",
+"away": "MARSEILLE",
+"coach": "TARDIF Luc",
+"leader_coach": "DIMET Olivier",
+"penalties_p3": [
+[
+339,
+459
+],
+[
+1032,
+1115
+],
+[
+1080,
+1200
+]
+],
+"_box": [
+[
+339,
+459
+],
+[
+1032,
+1115
+],
+[
+1080,
+1200
+]
+]
+},
+{
+"opened_secs": 0,
+"creating_t": null,
+"trailing": "away",
+"closed_secs": 663,
+"closed_reason": "widened",
+"closing_t": 3063,
+"n": 1,
+"trailing_name": "GAP",
+"goals_in_window": [
+{
+"secs": 663,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "77183",
+"date": "2026-03-24",
+"home": "CHAMONIX",
+"away": "GAP",
+"coach": "BASILE Antoine Lucien",
+"leader_coach": "BURNET St\u00e9phane",
+"penalties_p3": [
+[
+463,
+583
+]
+],
+"_box": [
+[
+463,
+583
+]
+]
+},
+{
+"opened_secs": 550,
+"creating_t": 2950,
+"trailing": "home",
+"closed_secs": 633,
+"closed_reason": "narrowed",
+"closing_t": 3033,
+"n": 1,
+"trailing_name": "GAP",
+"goals_in_window": [
+{
+"secs": 633,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "77188",
+"date": "2026-04-03",
+"home": "GAP",
+"away": "ANGLET",
+"coach": "ROHAT S\u00e9bastien",
+"leader_coach": "CYR Mathieu",
+"penalties_p3": [
+[
+0,
+6
+]
+],
+"_box": [
+[
+0,
+6
+]
+]
+},
+{
+"opened_secs": 0,
+"creating_t": null,
+"trailing": "away",
+"closed_secs": 335,
+"closed_reason": "widened",
+"closing_t": 2735,
+"n": 1,
+"trailing_name": "AMIENS",
+"goals_in_window": [
+{
+"secs": 335,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "77191",
+"date": "2026-03-13",
+"home": "ROUEN",
+"away": "AMIENS",
+"coach": "RAYMOND BERGIN Kevin",
+"leader_coach": "SZEKELY Csaba",
+"penalties_p3": [
+[
+278,
+398
+],
+[
+572,
+692
+],
+[
+721,
+841
+]
+],
+"_box": [
+[
+278,
+398
+],
+[
+572,
+692
+],
+[
+721,
+841
+]
+]
+},
+{
+"opened_secs": 0,
+"creating_t": null,
+"trailing": "home",
+"closed_secs": 530,
+"closed_reason": "widened",
+"closing_t": 2930,
+"n": 1,
+"trailing_name": "AMIENS",
+"goals_in_window": [
+{
+"secs": 530,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "77196",
+"date": "2026-03-17",
+"home": "AMIENS",
+"away": "ROUEN",
+"coach": "RAYMOND BERGIN Kevin",
+"leader_coach": "SZEKELY Csaba",
+"penalties_p3": [],
+"_box": []
+},
+{
+"opened_secs": 1188,
+"creating_t": 3588,
+"trailing": "away",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "BRIAN\u00c7ON",
+"goals_in_window": [],
+"carryover_empty_at_open": true,
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "77198",
+"date": "2026-03-13",
+"home": "GRENOBLE",
+"away": "BRIAN\u00c7ON",
+"coach": "BERGERON Pierre",
+"leader_coach": "TERGLAV Edo",
+"penalties_p3": [],
+"_box": []
+},
+{
+"opened_secs": 1150,
+"creating_t": 3550,
+"trailing": "away",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "GRENOBLE",
+"goals_in_window": [],
+"pull_segments": [
+{
+"empty_from": 1199,
+"empty_until": 1200,
+"synthetic": true,
+"end_context": "horn"
+}
+],
+"pulled": true,
+"pull_evidence_secs": 1199,
+"synthetic_pull_evidence": true,
+"pull_classification": "pull",
+"season": "2026",
+"game_id": "77200",
+"date": "2026-03-17",
+"home": "BRIAN\u00c7ON",
+"away": "GRENOBLE",
+"coach": "TERGLAV Edo",
+"leader_coach": "BERGERON Pierre",
+"penalties_p3": [
+[
+227,
+347
+],
+[
+1021,
+1141
+],
+[
+746,
+866
+]
+],
+"_box": [
+[
+227,
+347
+],
+[
+1021,
+1141
+],
+[
+746,
+866
+]
+]
+},
+{
+"opened_secs": 1062,
+"creating_t": 3462,
+"trailing": "away",
+"closed_secs": 1098,
+"closed_reason": "widened",
+"closing_t": 3498,
+"n": 1,
+"trailing_name": "BRIAN\u00c7ON",
+"goals_in_window": [
+{
+"secs": 1098,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "77202",
+"date": "2026-03-21",
+"home": "GRENOBLE",
+"away": "BRIAN\u00c7ON",
+"coach": "BERGERON Pierre",
+"leader_coach": "TERGLAV Edo",
+"penalties_p3": [],
+"_box": []
+},
+{
+"opened_secs": 1068,
+"creating_t": 3468,
+"trailing": "home",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "NICE",
+"goals_in_window": [],
+"carryover_empty_at_open": true,
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "77209",
+"date": "2026-03-17",
+"home": "NICE",
+"away": "ANGERS",
+"coach": "MARGERIT Pascal",
+"leader_coach": "PAREDES Jonathan",
+"penalties_p3": [],
+"_box": []
+},
+{
+"opened_secs": 1108,
+"creating_t": 3508,
+"trailing": "away",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "MARSEILLE",
+"goals_in_window": [],
+"carryover_empty_at_open": true,
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "77217",
+"date": "2026-03-14",
+"home": "BORDEAUX",
+"away": "MARSEILLE",
+"coach": "TARDIF Luc",
+"leader_coach": "DIMET Olivier",
+"penalties_p3": [
+[
+33,
+153
+],
+[
+724,
+844
+]
+],
+"_box": [
+[
+33,
+153
+],
+[
+724,
+844
+]
+]
+},
+{
+"opened_secs": 102,
+"creating_t": 2502,
+"trailing": "home",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "ROUEN",
+"goals_in_window": [],
+"pull_segments": [
+{
+"empty_from": 1048,
+"empty_until": 1200,
+"end_context": "horn"
+}
+],
+"pulled": true,
+"pull_evidence_secs": 1048,
+"pull_classification": "pp_pull",
+"season": "2026",
+"game_id": "77219",
+"date": "2026-03-27",
+"home": "ROUEN",
+"away": "BORDEAUX",
+"coach": "SZEKELY Csaba",
+"leader_coach": "DIMET Olivier",
+"penalties_p3": [
+[
+135,
+255
+],
+[
+541,
+661
+],
+[
+661,
+961
+],
+[
+602,
+902
+],
+[
+993,
+1113
+]
+],
+"_box": [
+[
+135,
+255
+],
+[
+541,
+661
+],
+[
+661,
+961
+],
+[
+602,
+902
+],
+[
+993,
+1113
+]
+]
+},
+{
+"opened_secs": 1068,
+"creating_t": 3468,
+"trailing": "away",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 1,
+"trailing_name": "ANGERS",
+"goals_in_window": [],
+"carryover_empty_at_open": true,
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "77227",
+"date": "2026-03-28",
+"home": "GRENOBLE",
+"away": "ANGERS",
+"coach": "PAREDES Jonathan",
+"leader_coach": "TERGLAV Edo",
+"penalties_p3": [],
+"_box": []
+},
+{
+"opened_secs": 307,
+"creating_t": 2707,
+"trailing": "away",
+"closed_secs": 429,
+"closed_reason": "narrowed",
+"closing_t": 2829,
+"n": 1,
+"trailing_name": "GRENOBLE",
+"goals_in_window": [
+{
+"secs": 429,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "77231",
+"date": "2026-04-06",
+"home": "ANGERS",
+"away": "GRENOBLE",
+"coach": "TERGLAV Edo",
+"leader_coach": "PAREDES Jonathan",
+"penalties_p3": [
+[
+0,
+19
+],
+[
+338,
+429
+],
+[
+388,
+491
+],
+[
+942,
+1062
+],
+[
+227,
+307
+],
+[
+942,
+1062
+]
+],
+"_box": [
+[
+0,
+19
+],
+[
+338,
+429
+],
+[
+388,
+491
+],
+[
+942,
+1062
+],
+[
+227,
+307
+],
+[
+942,
+1062
+]
+]
+},
+{
+"opened_secs": 1085,
+"creating_t": 3485,
+"trailing": "away",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 2,
+"trailing_name": "GRENOBLE",
+"goals_in_window": [],
+"carryover_empty_at_open": true,
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "77231",
+"date": "2026-04-06",
+"home": "ANGERS",
+"away": "GRENOBLE",
+"coach": "TERGLAV Edo",
+"leader_coach": "PAREDES Jonathan",
+"penalties_p3": [
+[
+0,
+19
+],
+[
+338,
+429
+],
+[
+388,
+491
+],
+[
+942,
+1062
+],
+[
+227,
+307
+],
+[
+942,
+1062
+]
+],
+"_box": [
+[
+0,
+19
+],
+[
+338,
+429
+],
+[
+388,
+491
+],
+[
+942,
+1062
+],
+[
+227,
+307
+],
+[
+942,
+1062
+]
+]
+},
+{
+"opened_secs": 568,
+"creating_t": 2968,
+"trailing": "away",
+"closed_secs": 681,
+"closed_reason": "widened",
+"closing_t": 3081,
+"n": 1,
+"trailing_name": "ANGERS",
+"goals_in_window": [
+{
+"secs": 681,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "77232",
+"date": "2026-04-08",
+"home": "GRENOBLE",
+"away": "ANGERS",
+"coach": "PAREDES Jonathan",
+"leader_coach": "TERGLAV Edo",
+"penalties_p3": [
+[
+927,
+1047
+],
+[
+608,
+681
+],
+[
+927,
+1047
+]
+],
+"_box": [
+[
+927,
+1047
+],
+[
+608,
+681
+],
+[
+927,
+1047
+]
+]
+},
+{
+"opened_secs": 247,
+"creating_t": 2647,
+"trailing": "away",
+"closed_secs": 431,
+"closed_reason": "narrowed",
+"closing_t": 2831,
+"n": 1,
+"trailing_name": "GRENOBLE",
+"goals_in_window": [
+{
+"secs": 431,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "77235",
+"date": "2026-04-14",
+"home": "BORDEAUX",
+"away": "GRENOBLE",
+"coach": "TERGLAV Edo",
+"leader_coach": "DIMET Olivier",
+"penalties_p3": [
+[
+0,
+23
+],
+[
+370,
+670
+],
+[
+1075,
+1195
+],
+[
+0,
+23
+],
+[
+879,
+1179
+],
+[
+1075,
+1195
+]
+],
+"_box": [
+[
+0,
+23
+],
+[
+370,
+670
+],
+[
+1075,
+1195
+],
+[
+0,
+23
+],
+[
+879,
+1179
+],
+[
+1075,
+1195
+]
+]
+},
+{
+"opened_secs": 388,
+"creating_t": 2788,
+"trailing": "away",
+"closed_secs": 985,
+"closed_reason": "widened",
+"closing_t": 3385,
+"n": 1,
+"trailing_name": "GRENOBLE",
+"goals_in_window": [
+{
+"secs": 985,
+"by_trailer": false,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "77236",
+"date": "2026-04-15",
+"home": "BORDEAUX",
+"away": "GRENOBLE",
+"coach": "TERGLAV Edo",
+"leader_coach": "DIMET Olivier",
+"penalties_p3": [
+[
+462,
+582
+]
+],
+"_box": [
+[
+462,
+582
+]
+]
+},
+{
+"opened_secs": 0,
+"creating_t": null,
+"trailing": "home",
+"closed_secs": 225,
+"closed_reason": "narrowed",
+"closing_t": 2625,
+"n": 1,
+"trailing_name": "GRENOBLE",
+"goals_in_window": [
+{
+"secs": 225,
+"by_trailer": true,
+"en": false,
+"closes": true
+}
+],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "77237",
+"date": "2026-04-18",
+"home": "GRENOBLE",
+"away": "BORDEAUX",
+"coach": "TERGLAV Edo",
+"leader_coach": "DIMET Olivier",
+"penalties_p3": [
+[
+823,
+943
+]
+],
+"_box": [
+[
+823,
+943
+]
+]
+},
+{
+"opened_secs": 249,
+"creating_t": 2649,
+"trailing": "home",
+"closed_secs": 1200,
+"closed_reason": "end_of_game",
+"closing_t": null,
+"n": 2,
+"trailing_name": "GRENOBLE",
+"goals_in_window": [],
+"pull_segments": [],
+"pulled": false,
+"pull_evidence_secs": null,
+"pull_classification": null,
+"season": "2026",
+"game_id": "77237",
+"date": "2026-04-18",
+"home": "GRENOBLE",
+"away": "BORDEAUX",
+"coach": "TERGLAV Edo",
+"leader_coach": "DIMET Olivier",
+"penalties_p3": [
+[
+823,
+943
+]
+],
+"_box": [
+[
+823,
+943
+]
+]
+}
+]

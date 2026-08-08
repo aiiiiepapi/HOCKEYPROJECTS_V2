@@ -259,7 +259,7 @@ def test_ahl_liiga_derived_instances():
 def test_ahl_liiga_clean_window():
     """Structural gates over the interval-league ledgers + profiles (rule 14).
     Mestis added 2026-08-03, same bar."""
-    for lg in ("ahl", "liiga", "mestis", "shl"):
+    for lg in ("ahl", "liiga", "mestis", "shl", "magnus"):
         cw = json.load(open(DER / f"{lg}_clean_window.json"))
         prof = json.load(open(DER / f"{lg}_coach_profiles.json"))
         rows, meta = cw["rows"], cw["meta"]
@@ -669,3 +669,56 @@ def test_shl_random_audit():
     sample, bad = audit("shl")
     assert len(sample) == 60
     assert not bad, bad
+
+
+def test_magnus_ground_truth_batch1():
+    """Magnus batch 1 (10 sheets from the verified 2025-26 lake, hand-traced
+    from raw coordinate dumps 2026-08-08 during the Manager's lake
+    verification). Pins the fix round mandated by that verification:
+    GK TOI sanity gate (repair fires ONLY above 3900 - 68882 repaired,
+    69059 relief-interleave left alone), stretched GK layout variant
+    (68861/68987), bench-penalty 'E' (68850), clock-noise floor +
+    sub-threshold rule, multi-pull ambiguity honesty (68841/68987 =
+    synthetic, never a fabricated single interval), EN-anchor fits
+    (68842/68861), OT/shootout no-phantom (69034/68862), and the
+    missed-pull recovery 68988. See
+    docs/ground_truth_traces/magnus_batch1_2026-08-08.md."""
+    from hockeycore.leagues.magnus import parse_game
+    gt = json.load(open(ROOT / "tests" / "ground_truth_magnus_batch1.json"))
+    for gid, gg in gt["games"].items():
+        g = parse_game(str(ROOT / f"tests/reference_raw/magnus/{gid}.pdf"))
+        assert (g["home"], g["away"]) == (gg["home"], gg["away"]), gid
+        for sd in ("home", "away"):
+            got = [tuple(x) for x in g["empty"][sd]]
+            assert got == [tuple(x) for x in gg["empty"][sd]], (gid, sd, got)
+        for f in gg.get("flags_require", []):
+            assert f in g["flags"], (gid, f, g["flags"])
+        for f in gg.get("flags_forbid", []):
+            assert f not in g["flags"], (gid, f)
+        if "coach_home" in gg:
+            assert g["coach_home"] == gg["coach_home"], gid
+        if "pen_pin" in gg:
+            pp = gg["pen_pin"]
+            assert any(p["side"] == pp["side"] and p["begin"] == pp["begin"]
+                       and p["end"] == pp["end"] for p in g["penalties"]), gid
+
+
+def test_magnus_derived_instances():
+    """Rule-14 structural gate over the Magnus 2025-26 extraction
+    (2026-08-08): 314 sheets -> 147 gap-3 instances (0.47/game, Liiga-
+    density ~0.45), 17 pulled (14 EV), 100% trailing-coach attribution
+    from the sheets themselves, P3 windows within bounds. Magnus is
+    COACH INTEL ONLY - NO-GO for real money until a 26-27 blind pass
+    or Seb override (no pricer may exist for it; this gate pins that)."""
+    rows = json.load(open(DER / "magnus_instances_gap3.json"))
+    assert 120 <= len(rows) <= 175, len(rows)
+    assert all(r["coach"] for r in rows)
+    assert all(0 <= r["opened_secs"] < r["closed_secs"] <= 1200 for r in rows)
+    pulled = [r for r in rows if r["pulled"]]
+    assert 10 <= len(pulled) <= 30, len(pulled)
+    for r in pulled:
+        if r.get("pull_evidence_secs") is not None:
+            assert r["opened_secs"] <= r["pull_evidence_secs"] <= 1200, r["game_id"]
+    # NO-GO pin: a Magnus pricing artifact must not exist
+    assert not (DER / "lines_10ev_magnus.csv").exists(), \
+        "Magnus lines exist but Magnus is NO-GO (needs Seb override ruling)"

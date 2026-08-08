@@ -78,8 +78,13 @@ def parse_sheet(path):
     gk_y = min((w[1] for i, w in enumerate(words)
                 if w[4] == "Gardien" and i + 1 < len(words) and words[i + 1][4] == "en"),
                default=10**9)
+    # 'Tirs' stop added 2026-08-08: on shootout sheets the "Tirs après
+    # prolongation" section header follows the coach name with no other stop
+    # word, contaminating the name (seen on ROUEN/CERGY sheets in the
+    # 2025-26 census). Coach identity feeds the ledger — must be clean.
     coaches = re.findall(
-        r"Entraîneur principal\s*:\s*(.+?)\s+(?:Entraîneur|Equipe|Gardien|Résultat)", full)
+        r"Entraîneur principal\s*:\s*(.+?)\s+(?:Entraîneur|Equipe|Gardien|Résultat|Tirs|N°)",
+        full)
 
     for k, (ay, side, name) in enumerate(anchors):
         by = anchors[k + 1][0] if k + 1 < len(anchors) else gk_y
@@ -126,16 +131,39 @@ def parse_sheet(path):
                 "fin": _secs(fi[0]) if fi else _secs(h[0]) + int(mi[0]) * 60})
         out["teams"].append(team)
 
+    # GK rows: STRUCTURAL parse (2026-08-08). Two sheet layout variants exist
+    # in the 2025-26 census — the original fixed ga/gb column bands (68838:
+    # jerseys at x~194/212) and a stretched variant (68861/68987/69046/77228:
+    # jerseys at x~201/226, where 226 collides with the old 'total' band and
+    # the row was silently dropped — 4 games lost their GK table entirely).
+    # New rule: a GK row = [start mm:ss ... jersey int ... total mm:ss] in
+    # the x window; SIDE comes from roster GB membership (authority), with
+    # the two-column x split as fallback for jersey collisions.
     out["gk"] = {"A": [], "B": []}
-    for r in _grid(words, 150, 315, gk_y + 5, gk_y + 40 + PAGE_H * 2):
-        st = _col(r, GK_COLS, "start")
-        tot = _col(r, GK_COLS, "total")
-        ga = [x for x in _col(r, GK_COLS, "ga") if x.isdigit()]
-        gb = [x for x in _col(r, GK_COLS, "gb") if x.isdigit()]
-        if (st and re.match(r"^\d{2}:\d{2}$", st[0]) and tot
-                and re.match(r"^\d{2}:\d{2}$", tot[0]) and (ga or gb)):
-            out["gk"]["A" if ga else "B"].append(
-                {"start": _secs(st[0]), "num": int((ga or gb)[0]), "toi": _secs(tot[0])})
+    gk_rows = []
+    for r in _grid(words, 150, 260, gk_y + 5, gk_y + 40 + PAGE_H * 2):
+        times = [(w[0], w[4]) for w in r if re.match(r"^\d{2}:\d{2}$", w[4])]
+        if len(times) < 2:
+            continue
+        nums = [(w[0], w[4]) for w in r
+                if times[0][0] < w[0] < times[-1][0] and w[4].isdigit()]
+        if not nums:
+            continue
+        gk_rows.append({"start": _secs(times[0][1]), "num": int(nums[0][1]),
+                        "x": nums[0][0], "toi": _secs(times[-1][1])})
+    gbsets = [{n for n, v in t["roster"].items() if v["pos"] == "GB"}
+              for t in out["teams"]] if len(out["teams"]) == 2 else [set(), set()]
+    xs = sorted(g["x"] for g in gk_rows)
+    for g in gk_rows:
+        in_a, in_b = g["num"] in gbsets[0], g["num"] in gbsets[1]
+        if in_a != in_b:
+            side = "A" if in_a else "B"
+        elif xs[-1] - xs[0] > 6:
+            side = "A" if g["x"] < (xs[0] + xs[-1]) / 2 else "B"
+        else:
+            side = "A"  # unresolvable single-column collision; census: none
+        out["gk"][side].append({"start": g["start"], "num": g["num"],
+                                "toi": g["toi"]})
     if len(out["teams"]) == 2 and not out["teams"][0]["roster"] and not out["teams"][1]["roster"]:
         out["sheet_empty"] = True
     return out
@@ -163,11 +191,38 @@ def parse_game(path):
         return None
     A, B = sh["teams"]
     side_of = {"A": "home", "B": "away"}
+    # GK TOI SANITY GATE (2026-08-08, mandated by the Magnus lake
+    # verification): the sheet itself can carry impossible TOI — 68882
+    # ANGERS #29 shows 90:42 in a 60:00 game (truth: swap at 30:42; the
+    # raw-typo read produced a false 1,842s "pull" in the lake session's
+    # ledger AND inflated this adapter's duration to 7200). Rules:
+    # (a) overlapping stints are repaired: prev.toi := next.start -
+    #     prev.start (flag toi_repaired);
+    # (b) game length = max(3600, stint sums) but NEVER above 3900
+    #     (regulation + 5:00 OT); a post-repair sum > 3900 flags
+    #     toi_insane and that side's timing is unusable.
+    # NOTE the repair fires ONLY when the side's TOI sum is impossible
+    # (> 3900): stint 'start' is a first-entry time and TOI a per-goalie
+    # TOTAL, so relief spells legitimately interleave (69059 BORDEAUX:
+    # #32 start 0:00 toi 58:52 + #31 start 8:56 toi 1:08 = exactly 60:00
+    # — an unconditional overlap-repair corrupted this into a fake 868s
+    # pull; caught same day).
+    toi_flags = []
+    for s in ("A", "B"):
+        st = sorted(sh["gk"][s], key=lambda x: x["start"])
+        if sum(x["toi"] for x in st) > 3900:
+            for j in range(1, len(st)):
+                if st[j - 1]["start"] + st[j - 1]["toi"] > st[j]["start"]:
+                    st[j - 1]["toi"] = st[j]["start"] - st[j - 1]["start"]
+                    toi_flags.append(f"toi_repaired_{s}")
+        sh["gk"][s] = st
     duration = 3600
     for s in ("A", "B"):
         tot = sum(x["toi"] for x in sh["gk"][s])
-        if tot > duration:
+        if duration < tot <= 3900:
             duration = tot          # OT: duration from the sheet, never assumed
+        elif tot > 3900:
+            toi_flags.append(f"toi_insane_{s}")
     gb = {s: {n for n, v in t["roster"].items() if v["pos"] == "GB"}
           for s, t in (("A", A), ("B", B))}
     rost = {s: set(t["roster"]) for s, t in (("A", A), ("B", B))}
@@ -177,7 +232,7 @@ def parse_game(path):
            "home": A["name"], "away": B["name"],
            "coach_home": A["coach"], "coach_away": B["coach"],
            "goals": [], "empty": {"home": [], "away": []}, "penalties": [],
-           "flags": []}
+           "flags": list(toi_flags)}
 
     # goals with EN from the CONCEDING team's J list (no GB present)
     for s, t in (("A", A), ("B", B)):
@@ -201,13 +256,25 @@ def parse_game(path):
                                      "misconduct": p["mins"] >= 10})
 
     # ---- net-empty inference from TOI + anchors (the four cases) ----------
+    # CLOCK-NOISE FLOOR (2026-08-08, from the lake cross-derivation): the
+    # scorekeeper's stoppage accounting shifts BOTH goalies' TOI equally, so
+    # a shortfall common to both sides is clock noise, not two empty nets
+    # (68926: raw shortfalls 8s/39s -> real evidence 0s/31s; 8 games in the
+    # census show the pattern; no game has two genuine simultaneous pulls).
+    # Subtract min(shortfall_A, shortfall_B) from both before inference.
+    raw_off = {}
+    for s in ("A", "B"):
+        st = sh["gk"][s]
+        raw_off[s] = (duration - sum(x["toi"] for x in st)) if st else 0
+    floor = min(raw_off.values())
+    if floor > 0:
+        out["flags"].append(f"clock_noise_floor_{floor}s")
     for s, t in (("A", A), ("B", B)):
-        stints = sorted(sh["gk"][s], key=lambda x: x["start"])
+        stints = sh["gk"][s]
         if not stints:
             out["flags"].append(f"no_gk_rows_{s}")
             continue
-        covered = sum(x["toi"] for x in stints)
-        off = duration - covered
+        off = raw_off[s] - max(floor, 0)
         if off <= 0:
             continue
         # anchors, latest first: (abs_second, kind)
@@ -230,6 +297,14 @@ def parse_game(path):
         # >=0. Without EN anchors: latest own-pen début, else horn.
         en_anchors = sorted(a for a, k in anchors
                             if k in ("en_against", "own_goal_empty"))
+        # SUB-THRESHOLD NOISE (2026-08-08): a residual shortfall under 15s
+        # with NO J-confirmed EN moment is delayed-penalty scramble or clock
+        # slop, not a pull (matches the lake session's dp_or_noise class,
+        # now a named adapter rule; 16 such events in the 2025-26 census,
+        # all <=15s, none with an EN goal). No interval emitted.
+        if off < 15 and not en_anchors:
+            out["flags"].append(f"subthreshold_noise_{s}_{off}s")
+            continue
         seg = None
         if en_anchors:
             at = en_anchors[-1]

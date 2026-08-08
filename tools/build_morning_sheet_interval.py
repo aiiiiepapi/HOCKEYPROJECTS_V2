@@ -11,7 +11,7 @@ from collections import defaultdict
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 LG = sys.argv[1]
-RECENT = {"ahl": ("86", "90"), "liiga": ("2025", "2026"), "mestis": ("2025", "2026"), "shl": ("2025", "2026")}[LG]
+RECENT = {"ahl": ("86", "90"), "liiga": ("2025", "2026"), "mestis": ("2025", "2026"), "shl": ("2025", "2026"), "magnus": ("2025", "2026")}[LG]
 SEASON_START = "2025-09-01"
 prof = json.load(open(ROOT / f"data/derived/{LG}_coach_profiles.json"))
 inst = json.load(open(ROOT / f"data/derived/{LG}_instances_gap3.json"))
@@ -48,6 +48,11 @@ elif LG == "shl":
 elif LG == "mestis":
     L.append("STATUS: Mestis = PROVISIONAL paper-trade from September (ruling 43, "
              "pooled multi-fold pass 2026-08-03). Rule 28: base % < 40 = NO-BET.")
+elif LG == "magnus":
+    L.append("STATUS: Magnus = COACH INTEL ONLY, NO-GO for real money until a 26-27 "
+             "blind pass or Seb override. ONE season of data (2025-26), pull timing "
+             "TOI-inferred from the sheets (not evented); multi-pull games carry "
+             "timing-unusable synthetic evidence. Rule 28: base % < 40 = NO-BET.")
 else:
     L.append("STATUS: Liiga = paper-trade from September (ruling 25, provisional). "
              "Rule 28: base % < 40 = NO-BET.")

@@ -235,3 +235,6 @@ if __name__ == "__main__":
     if which in ("shl", "all"):
         # SHL swe Events channel complete all 4 seasons
         build("shl", "shl_instances_gap3.json")
+    if which in ("magnus", "all"):
+        # Magnus 2025-26 only (single-season lake); rows carry _box directly
+        build("magnus", "magnus_instances_gap3.json")
